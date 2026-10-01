@@ -12,7 +12,3 @@ build-backend = "setuptools.build_meta"
 
 [tool.setuptools.packages.find]
 include = ["agplan*"]
-
-[tool.pytest.ini_options]
-testpaths = ["tests"]
-addopts = "-q"

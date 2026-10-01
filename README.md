@@ -1,9 +1,5 @@
 # AGCP: Abstraction-based Grammar-Constrained Planning
 
-Code, saved experiment outputs and verification scripts for
-
-> **Where Does Plan Validity Live in Grammar-Constrained LLM Planning? An Applicability Mask Induced from Environment Rollouts.** Nijesh Upreti. Findings of AACL-IJCNLP 2026.
-
 AGCP induces lifted action schemas from environment rollouts, compiles the applicable and goal-reaching action sequences into a context-free grammar, and enforces that grammar as a token mask during LLM decoding (XGrammar). Natural-language goals are parsed into predicate atoms under a JSON schema and corrected with verifier feedback. The paper evaluates on PlanBench, the IPC 2023 learning track, AutoPlanBench and ALFWorld.
 
 ## Contents
@@ -14,7 +10,6 @@ scripts/           experiment, analysis and verification scripts (run from this 
 scripts/figures/   figure scripts for Fig. 2 and Fig. 3
 runs/              saved outputs behind every reported number (JSON/JSONL)
 domains/           PDDL domains and sample instances (PlanBench, IPC 2023)
-tests/             unit tests (pytest)
 ```
 
 Every number in the paper can be checked against `runs/` without a GPU or an API key:
@@ -84,12 +79,6 @@ python scripts/run_agcp_on_apb_simple.py --apb_root external/autoplanbench/autop
 - `mask_isolation_syntax_mystery.jsonl` was produced with the syntax-only grammar, which does not depend on the Mystery obfuscation map, so its candidates coincide with the Blocksworld syntax arm.
 - `run_agcp_on_planbench.py` counts completed instances only on success and `score_agcp_planbench.py` skips instances with an empty response. All reported PlanBench cells use pinned instance sets (`--specific_instances`; N=10 and the matched N=30 set), and `val_audit.py` cross-checks them with VAL.
 - `runs/planbench_responses/` holds the raw PlanBench-format decodes behind Table 1 and App. K; `score_agcp_planbench.py` reads such directories through `--plan_bench_root`.
-
-## Tests
-
-```bash
-python -m pytest
-```
 
 ## License
 

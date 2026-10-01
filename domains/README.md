@@ -15,7 +15,7 @@ domains/
 │   ├── depots/
 │   └── mystery_blocksworld/    # obfuscated Blocksworld
 └── ipc2023_learning/           # IPC 2023 learning track, 10 domains
-    └── <domain>/               # domain.pddl + training/easy, testing/{easy,medium,hard}
+    └── <domain>/               # domain.pddl + training/easy, testing/{easy,medium}
                                 #   with 5 problems per sub-track
 ```
 

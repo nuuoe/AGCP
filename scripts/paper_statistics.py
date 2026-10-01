@@ -266,11 +266,7 @@ def failure_category(r):
 
 
 def check_failures():
-    data = load_json(INDUCED_PLANNER)
-    rows = data.get("results")
-    if not rows:
-        with open(os.path.join(ROOT, INDUCED_PLANNER + ".rows.jsonl")) as f:
-            rows = [json.loads(line) for line in f if line.strip()]
+    rows = load_json(INDUCED_PLANNER)["results"]
     parses = {r["task_id"]: r for r in load_json(INDUCED_PLANNER_PARSES)["rows"]}
     failures = [r for r in rows if not r["execution_success"]]
     mapping = collections.Counter()

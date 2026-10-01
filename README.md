@@ -1,5 +1,9 @@
 # AGCP: Abstraction-based Grammar-Constrained Planning
 
+Code, saved experiment outputs and verification scripts for
+
+> **Where Does Plan Validity Live in Grammar-Constrained LLM Planning? An Applicability Mask Induced from Environment Rollouts.** Nijesh Upreti. Findings of AACL-IJCNLP 2026.
+
 AGCP induces lifted action schemas from environment rollouts, compiles the applicable and goal-reaching action sequences into a context-free grammar, and enforces that grammar as a token mask during LLM decoding (XGrammar). Natural-language goals are parsed into predicate atoms under a JSON schema and corrected with verifier feedback. The paper evaluates on PlanBench, the IPC 2023 learning track, AutoPlanBench and ALFWorld.
 
 ## Contents

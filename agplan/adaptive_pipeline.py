@@ -32,8 +32,7 @@ class PipelineMemory:
 
     def few_shot_for(self, stage: str, context_tag: str = "",
                       k: int = 3) -> list[dict]:
-        """Return up to k most recent accepted proposals matching
-        stage+tag, for in-context use."""
+        """The k most recent accepted proposals for this stage and tag."""
         matches = [e for e in reversed(self.accepted)
                    if e["stage"] == stage
                    and (not context_tag or e["context_tag"] == context_tag)]
@@ -50,14 +49,14 @@ class AdaptiveStage:
     verifier: Callable[[Any], float]
     baseline: Any
     threshold: float = 0.9
-    # ordered list of (model_id, max_new_tokens) to try in escalation order
+    # (model_id, max_new_tokens), tried in this order
     model_ladder: list[tuple[str, int]] = field(default_factory=lambda: [
         ("Qwen/Qwen2.5-0.5B-Instruct", 256),
         ("Qwen/Qwen2.5-1.5B-Instruct", 384),
         ("Qwen/Qwen2.5-7B-Instruct", 512),
     ])
     context_tag: str = ""
-    # If baseline verifier score >= skip_threshold, skip LLM
+    # a baseline score at or above this skips the LLM
     skip_threshold: float = 0.95
 
 
@@ -68,12 +67,9 @@ def run_adaptive_stage(
     mock_value: Any = None,
     **prompt_kwargs,
 ) -> dict:
-    """Run one stage adaptively.
-
-    Returns dict with: final, accepted_llm, accuracy, model_used,
-    skipped_llm, fallback_used.
-    """
-    # (A) ADAPTIVE INVOCATION: check baseline first
+    """Run one stage; returns a dict with final, accepted_llm, accuracy,
+    model_used, skipped_llm and fallback_used."""
+    # Skip the LLM when the baseline already passes.
     baseline_acc = stage.verifier(stage.baseline)
     if baseline_acc >= stage.skip_threshold:
         return {
@@ -85,7 +81,7 @@ def run_adaptive_stage(
             "fallback_used": False,
         }
 
-    # (C) FEW-SHOT MEMORY: prepend matching prior accepted proposals
+    # Append matching accepted proposals as in-context examples.
     few_shot = memory.few_shot_for(stage.name, stage.context_tag, k=3)
     fs_text = ""
     if few_shot:
@@ -95,7 +91,7 @@ def run_adaptive_stage(
 
     prompt = stage.build_prompt(**prompt_kwargs) + fs_text
 
-    # (B) CAPACITY ESCALATION: try smallest model first
+    # Smallest model first; escalate on verification failure.
     result = None
     for model_id, max_tokens in stage.model_ladder:
         final, info = propose_verify_fallback(
@@ -129,27 +125,23 @@ def run_adaptive_stage(
 
 @dataclass
 class IncrementalInductor:
-    """Maintains running per-action transition stats; updates
-    incrementally rather than re-running intersection-stats from
-    scratch each round."""
+    """Per-action transition store that grows across rounds; induction
+    reruns over the whole store."""
     # action -> list of (sb, args, sa) tuples
     transitions: dict = field(default_factory=lambda: defaultdict(list))
-    # action -> running predicate counts
+    # action -> predicate set
     pre_inter: dict = field(default_factory=lambda: defaultdict(set))
 
     def add_transitions(self, new_trs: list):
-        """Append new transitions; update running statistics."""
+        """Append transitions to the store."""
         for sb, action, args, sa in new_trs:
             if sb == sa:  # skip no-ops
                 continue
             self.transitions[action].append((sb, args, sa))
 
     def induce(self) -> dict:
-        """Recompute models from the current store via the shared
-        intersection-stats induction.
-        """
-        # Reuse the shared induction (already handles causal effects)
-        # by constructing the flat transition list it expects.
+        """Induce lifted models from the whole store."""
+        # induce_lifted_models expects a flat (sb, action, args, sa) list.
         all_trs = []
         for action, items in self.transitions.items():
             for sb, args, sa in items:
@@ -160,11 +152,11 @@ class IncrementalInductor:
 
 def prune_vocabulary(models: dict,
                       vocab: set[str]) -> set[str]:
-    """(E) Remove from vocab any predicate NAME that does not
-    appear in any action's pre/eff_add/eff_del. Compares predicate
-    NAMES (the bit before the parenthesis) so that templated
-    predicates in the model can be matched against ground
-    predicates in the vocab.
+    """Keep the vocabulary predicates whose name occurs in some action's
+    preconditions or effects.
+
+    Names (the part before the parenthesis) are compared so that lifted
+    predicates in the models match ground predicates in the vocabulary.
     """
     import re
     def _name(p: str) -> str:
@@ -219,9 +211,8 @@ class SchemaMemory:
 
     def candidates_for(self, action_name: str,
                         observed_predicate_names: set) -> list[dict]:
-        """Return memory entries whose schema's signature is a
-        subset of the observed predicate vocabulary. These are the
-        candidates to TRY before fresh induction."""
+        """Stored schemas for action_name whose signature is a subset of
+        the observed predicate names, most-verified first."""
         out = []
         for (a_name, sig), entry in self.schemas.items():
             if a_name != action_name:
@@ -229,20 +220,14 @@ class SchemaMemory:
             sig_names = set(sig.split(","))
             if sig_names <= observed_predicate_names:
                 out.append(entry)
-        # Sort by verification count (more-verified first)
         return sorted(out, key=lambda e: -e.get("n_verified", 0))
 
     def structural_candidates(self, observed_predicate_names: set
                                ) -> list[dict]:
-        """Return ALL memory entries (regardless of original action
-        name) whose predicate-name signature is a subset of the
-        observed vocabulary. Used for cross-domain compositional
-        reuse where action names differ between source and target
-        domain (e.g., Logistics's `drive-truck` vs Depots's `Drive`,
-        Blocksworld's `stack` vs Depots's `Drop`).
-
-        Caller verifies each candidate against held-out transitions
-        and accepts the first that exceeds the threshold."""
+        """Like candidates_for, ignoring the action name: for reuse across
+        domains whose action names differ (Logistics drive-truck and
+        Depots Drive). The caller verifies each candidate on held-out
+        transitions."""
         out = []
         for (a_name, sig), entry in self.schemas.items():
             sig_names = set(sig.split(","))
@@ -258,11 +243,8 @@ def try_schema_reuse(
     verifier: Callable[[dict, list], float],
     accept_threshold: float = 0.9,
 ) -> Optional[dict]:
-    """For each candidate schema for `action_name`, verify on the
-    domain's held-out transitions. Return the first that passes,
-    else None (caller falls back to fresh induction).
-    """
-    # Collect observed predicate names from held-out
+    """The first stored schema for action_name that passes the verifier on
+    the held-out transitions, else None."""
     import re
     obs_names = set()
     for t in held_out_transitions:

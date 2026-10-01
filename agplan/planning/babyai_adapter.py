@@ -39,12 +39,12 @@ _MINIGRID_TO_AGPLAN: dict[Actions, Action] = {v: k for k, v in _AGPLAN_TO_MINIGR
 
 
 def to_minigrid(action: Action) -> int:
-    """agplan Action → MiniGrid action int."""
+    """agplan Action to MiniGrid action int."""
     return int(_AGPLAN_TO_MINIGRID[action])
 
 
 def from_minigrid(action_int: int) -> Action:
-    """MiniGrid action int → agplan Action."""
+    """MiniGrid action int to agplan Action."""
     return _MINIGRID_TO_AGPLAN[Actions(action_int)]
 
 
@@ -53,15 +53,12 @@ def to_minigrid_seq(actions: tuple[Action, ...]) -> list[int]:
 
 
 def render_grid_text(env: Any) -> str:
-    """Return a compact ASCII rendering of the full MiniGrid state.
+    """Compact text rendering of the whole MiniGrid state.
 
-    Each non-empty cell is `<2-char-type><1-char-color>`:
-      Ba=ball, Bx=box, Ke=key, Do=door, Wa=wall, Fl=floor,
-      Go=goal, La=lava
-    plus a single character for the color (r=red, g=green, b=blue,
-    p=purple, y=yellow, w=white, s=grey, etc.).
-    Empty cells are `.`. The agent is `> v < ^` by direction.
-    Rows are space-separated, one per line.
+    A non-empty cell is a two-letter type prefix (see _TYPE_PREFIX) plus
+    one colour letter (r, g, b, p, y, w; s for grey); an empty cell is
+    `.`; the agent is `>`, `v`, `<` or `^` by direction. One row per
+    line, cells separated by spaces.
     """
     u = env.unwrapped
     agent_pos = (int(u.agent_pos[0]), int(u.agent_pos[1]))

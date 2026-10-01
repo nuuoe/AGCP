@@ -55,7 +55,7 @@ def build_lessons(relevant_failures: list[dict]) -> str:
 
 
 def make_enum_prompt_with_lessons(nl: str, lessons: str) -> str:
-    """Insert the lessons block just before the 'Your task' section of the base prompt."""
+    """Insert the lessons block immediately before the 'Your task' section of the base prompt."""
     base = make_enum_prompt(nl)
     if not lessons:
         return base

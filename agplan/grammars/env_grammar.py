@@ -36,7 +36,7 @@ def _is_passable(grid, x: int, y: int) -> bool:
 
 
 def _step(grid, x: int, y: int, d: int, action: str) -> Optional[tuple[int, int, int]]:
-    """Apply an action to (x, y, d). Return new state or None if invalid/no-op-illegal."""
+    """Apply an action to (x, y, d); None for a blocked move or non-navigation action."""
     if action == "turn_left":
         return (x, y, (d - 1) % 4)
     if action == "turn_right":
@@ -59,14 +59,9 @@ def _find_red_ball(grid) -> Optional[tuple[int, int]]:
     return None
 
 
-# Mission parsing: determine the target object(s) from the mission
-# text. BabyAI mission strings follow patterns like:
-#   "go to the red ball"
-#   "go to a key"
-#   "pick up the blue box on your right"
-#   "open the green door"
-# The parser extracts object type, optional color, and the terminating
-# action.
+# Mission parsing. BabyAI missions read "go to the red ball", "go to a
+# key", "pick up the blue box on your right", "open the green door"; the
+# parser extracts the terminating action, object type and colour.
 
 _TYPES = ("ball", "box", "key", "door")
 _COLORS = ("red", "green", "blue", "purple", "yellow", "grey", "gray", "white")
@@ -167,16 +162,13 @@ def _bfs_distance(
 
 
 def compile_gotoredball_grammar(env: Any, max_extra: int = 8) -> Optional[str]:
-    """Build an EBNF for GoToRedBall from the current env state.
+    """EBNF for GoToRedBall from the current env state.
 
-    The grammar admits action sequences from init to a goal-adjacent
-    facing state, restricted to plans of length at most
-    (shortest-path + max_extra). This bounds plan length so the LLM
-    cannot wander arbitrarily; without this bound the grammar admits
-    paths of unbounded length and the LLM exhausts its token budget.
-
-    Returns None if no red ball found (env not solvable as written).
-    Returns the EBNF text otherwise.
+    The grammar admits the action sequences from the initial state to a
+    state adjacent to and facing the red ball, of length at most shortest
+    path + max_extra; without the bound the grammar admits unbounded
+    paths and the model exhausts its token budget. Returns None when
+    there is no red ball or no path to it.
     """
     u = env.unwrapped
     grid = u.grid
@@ -189,19 +181,14 @@ def compile_gotoredball_grammar(env: Any, max_extra: int = 8) -> Optional[str]:
     reachable, trans = _reachable_states(grid, init, actions)
     if not (goals & reachable):
         return None  # goal unreachable
-    # Compute distance from each reachable state to nearest goal.
     dist = _bfs_distance(init, goals & reachable, trans)
     shortest = dist.get(init)
     if shortest is None:
         return None  # no path
     max_len = shortest + max_extra
-    # Build (state, remaining_budget) BFS forward to enumerate states
-    # that participate in any path of length <= max_len.
-    # State here: (pos, dir, steps_taken). Productions only continue
-    # while steps_taken + dist(ns) <= max_len.
-    # The budget is baked into the production names directly.
-
-    # Length-budgeted state names: s{x}_{y}_{d}_b{budget_remaining}
+    # Nonterminals are (state, remaining budget) pairs named
+    # s{x}_{y}_{d}_b{budget}; a production continues only while
+    # dist(ns) <= remaining budget.
     def name(s: tuple[int, int, int], budget: int) -> str:
         return f"s{s[0]}_{s[1]}_{s[2]}_b{budget}"
 
@@ -214,8 +201,7 @@ def compile_gotoredball_grammar(env: Any, max_extra: int = 8) -> Optional[str]:
     )
     productions.append(f"action_seq ::= {name(init, max_len)}")
 
-    # BFS over (state, budget) to enumerate productions reachable
-    # within budget that can still reach goal.
+    # Forward BFS over (state, budget).
     visited: set[tuple[tuple[int, int, int], int]] = set()
     q = deque([(init, max_len)])
     while q:
@@ -224,9 +210,8 @@ def compile_gotoredball_grammar(env: Any, max_extra: int = 8) -> Optional[str]:
             continue
         visited.add((s, b))
         if b == 0:
-            # No budget left; only terminating productions allowed,
-            # but a terminating production needs at least 1 action.
-            # So a state with budget=0 has no productions (dead).
+            # A terminating production still needs one action, so a node
+            # with no budget is dead.
             continue
         rules: list[str] = []
         for a in actions:
@@ -235,12 +220,9 @@ def compile_gotoredball_grammar(env: Any, max_extra: int = 8) -> Optional[str]:
                 continue
             ns_budget = b - 1
             if ns in goals:
-                # Terminating production: emit this action and stop.
-                # Goal states do not continue (env auto-terminates).
+                # Goal reached: terminate; the env ends the episode here.
                 rules.append(f'"\\"{a}\\""')
             elif ns_budget > 0 and dist.get(ns, 10**9) <= ns_budget:
-                # Continuation: ns is non-goal and there's a path
-                # forward from ns to a goal within remaining budget.
                 rules.append(f'"\\"{a}\\"," {name(ns, ns_budget)}')
                 q.append((ns, ns_budget))
         if not rules:
@@ -251,14 +233,9 @@ def compile_gotoredball_grammar(env: Any, max_extra: int = 8) -> Optional[str]:
 
 
 def _get_targets_from_env(env: Any) -> Optional[list[tuple[int, int]]]:
-    """Try to extract target object positions from the env's
-    instruction object. BabyAI envs store the verified target list
-    as `env.unwrapped.instrs.desc.obj_poss`.
-
-    This works for instructions with spatial constraints
-    (``in front of you'', ``behind you'', ``on your left'',
-    ``on your right'') which the mission-text parser cannot resolve
-    on its own. Returns None if the attribute is unavailable.
+    """Target positions from env.unwrapped.instrs.desc.obj_poss, or None if
+    absent. These resolve spatial qualifiers ("in front of you", "on your
+    left") that the mission text parser cannot.
     """
     u = env.unwrapped
     if not hasattr(u, "instrs"):
@@ -274,26 +251,19 @@ def _get_targets_from_env(env: Any) -> Optional[list[tuple[int, int]]]:
 
 
 def compile_env_grammar(env: Any, mission: str, max_extra: int = 8) -> Optional[str]:
-    """General BabyAI G_env compiler. Parses mission text to extract
-    target object and terminating action, then builds an EBNF that
-    admits only goal-achieving plans.
+    """G_env compiler for BabyAI missions of the forms 'go to X', 'pick up X'
+    and 'open X'.
 
-    Supports:
-      - 'go to X'    : goal = adjacent + facing X (no extra action)
-      - 'pick up X'  : goal = adjacent + facing X + final pickup action
-      - 'open X'     : goal = adjacent + facing door X + final toggle
-
-    For missions with spatial constraints (``in front of you'', etc.)
-    we use env.instrs.desc.obj_poss as the authoritative target list,
-    falling back to mission-text type/color matching otherwise.
+    The goal is a state adjacent to and facing X; 'pick up' and 'open'
+    plans end with a pickup or toggle action. Targets come from
+    env.instrs.desc.obj_poss when available, otherwise from type and
+    colour matching on the mission text.
     """
     spec = _parse_mission(mission)
     u = env.unwrapped
     grid = u.grid
     init = (int(u.agent_pos[0]), int(u.agent_pos[1]), int(u.agent_dir))
-    # Prefer env-supplied target positions when available -- these are
-    # the positions the env's verifier actually checks against, and
-    # encode spatial constraints the mission-text parser can't.
+    # The env's own target list is what its verifier checks against.
     env_targets = _get_targets_from_env(env)
     if env_targets:
         targets = env_targets
@@ -331,12 +301,7 @@ def compile_env_grammar(env: Any, mission: str, max_extra: int = 8) -> Optional[
     )
     productions.append(f"action_seq ::= {name(init, max_len)}")
 
-    # Terminating action depends on mission type:
-    # goto: when next state is goal-state, terminating production
-    #       emits the navigation action without continuation.
-    # pickup: when next state is goal-state, terminating must emit
-    #         the navigation action AND a pickup action after.
-    # open:   similarly, navigation action then toggle.
+    # The terminating production appends the mission's final action.
     term_action = spec["action"]
 
     visited: set[tuple[tuple[int, int, int], int]] = set()
@@ -355,8 +320,6 @@ def compile_env_grammar(env: Any, mission: str, max_extra: int = 8) -> Optional[
                 continue
             ns_budget = b - 1
             if ns in nav_goals:
-                # Goal reached after this action. Terminating production
-                # depends on mission type.
                 if term_action == "goto":
                     rules.append(f'"\\"{a}\\""')
                 elif term_action == "pickup":

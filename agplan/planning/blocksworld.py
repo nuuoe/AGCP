@@ -1,19 +1,14 @@
-"""Minimal Blocksworld environment for cross-domain validation.
+"""Minimal Blocksworld environment.
 
-A pure-Python implementation of the classical AI-planning Blocksworld:
-N labelled blocks, each in one of three states (on table / on top of
-another block / held by gripper). Actions:
-  pickup(b)   : block b must be clear and on table; gripper empty
-  unstack(b,c): block b on top of c, b clear; gripper empty
-  putdown(b)  : block b in gripper, place on table
-  stack(b,c)  : block b in gripper, block c clear; place b on c
+Pure Python, with a gymnasium-style reset/step interface. Each block is
+on the table, on another block or held by the gripper. Actions:
+  pickup(b)   : b clear and on the table, gripper empty
+  unstack(b,c): b clear and on c, gripper empty
+  putdown(b)  : b held; placed on the table
+  stack(b,c)  : b held and c clear; placed on c
 
-Goal: a list of `(b, on_top_of)` tuples specifying the target stack
-configuration. `on_top_of` is either another block name or 'TABLE'.
-Episode terminates with success when goal predicates hold.
-
-This env is hand-rolled so it has no external dependencies; the
-gymnasium-style API is preserved (reset/step/observe).
+The goal is a tuple of (block, support) pairs, support being another
+block or 'TABLE'; the episode ends with reward 1 when it holds.
 """
 from __future__ import annotations
 
@@ -87,7 +82,6 @@ class BlocksworldEnv:
         rng.shuffle(order)
         self.support = {}
         used_supports = {"TABLE"}
-        # TABLE is always a choice, biasing toward solvable configurations.
         for b in order:
             choices = ["TABLE"] + [
                 x for x in self.support if self.is_clear_dict_only(x, self.support)
@@ -131,12 +125,7 @@ class BlocksworldEnv:
         }
 
     def render_text(self) -> str:
-        """ASCII-style text rendering of the current state.
-
-        Returns lines describing each tower from table up. Useful for
-        prompting the LLM with the full state.
-        """
-        # Build towers from base up.
+        """Text rendering of the towers, the held block and the goal, for prompts."""
         bases = [b for b, sup in self.support.items() if sup == "TABLE"]
         towers: list[list[str]] = []
         for base in sorted(bases):

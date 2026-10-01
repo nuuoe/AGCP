@@ -125,9 +125,9 @@ def main():
               f"last{q}: {l_w}/{q} = {100*l_w/q:.0f}%; "
               f"delta: {100*(l_w-e_w)/q:+.0f}pp")
 
-    # --- Cost ---
+    # --- Call budget ---
     print("\n" + "-" * 78)
-    print("COST (LLM calls)")
+    print("LLM call budget")
     print("-" * 78)
     base_calls = sum(r.get("llm_calls", 0) for r in base_results)
     ref_e4 = ref.get("total_e4_calls", sum(r.get("llm_calls", 0) for r in ref_results))
@@ -141,8 +141,6 @@ def main():
           f"({ref_rule/n_ref:.2f}/task)")
     print(f"  refinement TOTAL:         {ref_total:5d} calls "
           f"({ref_total/n_ref:.2f}/task)")
-    # Sonnet pricing (~$3/Mtok in, ~$15/Mtok out) gives roughly $0.01-0.03 per call.
-    print(f"  estimated cost @$0.02/call: ${ref_total*0.02:.2f}")
     print(f"  wall seconds (refinement run): {ref.get('wall_seconds', 0):.1f}s")
 
     # --- Diff vs baseline at task level ---

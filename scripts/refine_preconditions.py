@@ -151,7 +151,7 @@ def main():
     dom, _ = load_task(args.domain, probs[0])
     gt = ground_truth_models(dom)
     print(f"Domain: {args.domain}")
-    print(f"Action          Induced-F1    Refined-F1    Dropped")
+    print("Per-action precondition F1 before and after refinement")
     print("-" * 70)
     for action in sorted(gt):
         if action not in refined: continue
@@ -161,7 +161,7 @@ def main():
         ind_f1 = f1(ind_pre, gt_pre)[2]
         ref_f1 = f1(ref_pre, gt_pre)[2]
         dropped = [d["atom"] for d in log[action]["dropped"]]
-        print(f"  {action:25s}  pre F1 {ind_f1:.2f} → {ref_f1:.2f}  dropped: {dropped}")
+        print(f"  {action:25s}  pre F1 {ind_f1:.2f} -> {ref_f1:.2f}  dropped: {dropped}")
 
     Path(args.out).parent.mkdir(parents=True, exist_ok=True)
     with open(args.out, "w") as f:

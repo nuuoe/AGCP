@@ -197,9 +197,7 @@ def main():
     args = ap.parse_args()
 
     discovered = discover_domains(args.base_dir)
-    print("=" * 60)
-    print(f"IPC-2023 LEARNING BREADTH — {len(discovered)} domains found")
-    print("=" * 60)
+    print(f"IPC-2023 learning breadth: {len(discovered)} domains found")
 
     memory = SchemaMemory()
     results = {}
@@ -240,9 +238,7 @@ def main():
             print(f"    {action} [{tag}]: pre={s['pre_f1']:.2f} "
                   f"add={s['add_f1']:.2f} del={s['del_f1']:.2f}")
 
-    print("\n" + "=" * 60)
-    print("BREADTH SUMMARY")
-    print("=" * 60)
+    print("\nSummary")
     total_actions = 0
     total_perfect = 0
     total_reused = 0

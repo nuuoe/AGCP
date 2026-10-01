@@ -371,7 +371,7 @@ def check_c10_adversarial() -> list[Row]:
     ]
 
 
-# B12: Table 8, regex extraction confounded by the ICL example.
+# C11: Table 8, regex extraction confounded by the ICL example.
 def check_b12_icl_regex() -> Row:
     pattern = re.compile(r"My goal is to have that (.+?)(?:\.|$)", re.DOTALL)
     prompt_file = (EXTERNAL / "LLMs-Planning" / "plan-bench" / "prompts"
@@ -391,31 +391,31 @@ def check_b12_icl_regex() -> Row:
     )
     hits = [h.strip() for h in pattern.findall(query)]
     first = hits[0] if hits else ""
-    print(f"  B12: {len(hits)} matches in the {source}; first = \"{first[:60]}\"")
+    print(f"  C11: {len(hits)} matches in the {source}; first = \"{first[:60]}\"")
     reproduced = len(hits) >= 2 and first != hits[-1]
-    return ("B12 Table 8: regex extraction confounded by the ICL example",
+    return ("C11 Table 8: regex extraction confounded by the ICL example",
             "pattern reproduced",
             f"first match is the example goal, not the instance goal ({source})"
             if reproduced else f"{len(hits)} match(es); pattern not reproduced",
             EXPECTED if reproduced else FAIL)
 
 
-# B13: SCI-ReDuce class-indexed productions (App. P).
+# C12: SCI-ReDuce class-indexed productions (App. P).
 def check_b13_reduce_s() -> Row:
-    claim = "B13 App. P: SCI-ReDuce emits class-indexed productions N_c -> M N_c'"
+    claim = "C12 App. P: SCI-ReDuce emits class-indexed productions N_c -> M N_c'"
     f = REPO_ROOT / "agplan" / "grammar_learning" / "reduce_s.py"
     if not f.exists():
         return (claim, "compile_state_aware_ebnf builds them", "missing module", FAIL)
     txt = f.read_text()
     has_compile = "def compile_state_aware_ebnf" in txt
     has_rule = 'ws "," ws {_class_name(dst)}' in txt
-    print(f"  B13: compile_state_aware_ebnf={has_compile}, class-indexed rule builder={has_rule}")
+    print(f"  C12: compile_state_aware_ebnf={has_compile}, class-indexed rule builder={has_rule}")
     return (claim, "compile_state_aware_ebnf builds them",
             "present" if has_compile and has_rule else "not found",
             status(has_compile and has_rule))
 
 
-# Tier 4: pipeline trace on a bundled Blocksworld instance with a mocked LLM.
+# C13: pipeline trace on a bundled Blocksworld instance with a mocked LLM.
 # E1 induces schemas from random rollouts, E2 compiles G_env from them, E3 and
 # E4 stand in for the LLM with the BFS plan and the instance goal, E5 stores
 # and retrieves the schemas, E6 executes the plan and verifies it against the
@@ -434,10 +434,10 @@ def tier4_pipeline_trace() -> list[Row]:
         problems = sorted((ext / "generated_basic_3").glob("instance-*.pddl"),
                           key=lambda p: first_int(p.stem) or 0)
     if not dom_path.exists() or not problems:
-        return [("Tier4 Blocksworld inputs", "domains/planbench/blocksworld present",
+        return [("C13 Blocksworld inputs", "domains/planbench/blocksworld present",
                  "missing", FAIL)]
     inst_path = problems[0]
-    print(f"  Tier4: {inst_path.relative_to(REPO_ROOT)}")
+    print(f"  C13: {inst_path.relative_to(REPO_ROOT)}")
 
     sys.path.insert(0, str(REPO_ROOT))
     try:
@@ -450,7 +450,7 @@ def tier4_pipeline_trace() -> list[Row]:
         from agplan.adaptive_pipeline import SchemaMemory
         from agplan.llm_propose import propose_verify_fallback
     except Exception as e:
-        return [("Tier4 imports", "pyperplan and agplan importable",
+        return [("C13 imports", "pyperplan and agplan importable",
                  f"{type(e).__name__}: {e}", FAIL)]
 
     # E1: rollouts -> induced schemas
@@ -462,11 +462,11 @@ def tier4_pipeline_trace() -> list[Row]:
         trs = [t for t in trs if t[0] != t[-1]]
         models = induce_lifted_models_positional(trs)
         e1_ok = bool(models) and all("pre_pos" in m and "eff_add" in m for m in models.values())
-        out.append(("Tier4 E1 trajectories -> induced schemas", "schemas induced",
+        out.append(("C13 E1 trajectories -> induced schemas", "schemas induced",
                     f"{len(models)} schemas from {len(trs)} transitions: {sorted(models)}",
                     status(e1_ok)))
     except Exception as e:
-        out.append(("Tier4 E1 trajectories -> induced schemas", "schemas induced",
+        out.append(("C13 E1 trajectories -> induced schemas", "schemas induced",
                     f"{type(e).__name__}: {e}", FAIL))
         return out
 
@@ -484,13 +484,13 @@ def tier4_pipeline_trace() -> list[Row]:
         cfg = compile_from_action_models(models, init_state, parsed_goal, objects=objects,
                                          max_extra=4, ground_op_filter=ground_ops)
         e2_ok = bool(cfg)
-        out.append(("Tier4 E2 induced schemas -> G_env", "grammar compiled",
+        out.append(("C13 E2 induced schemas -> G_env", "grammar compiled",
                     f"{len(cfg)} chars" if e2_ok else "no grammar (BFS exhausted)",
                     status(e2_ok)))
         if not e2_ok:
             return out
     except Exception as e:
-        out.append(("Tier4 E2 induced schemas -> G_env", "grammar compiled",
+        out.append(("C13 E2 induced schemas -> G_env", "grammar compiled",
                     f"{type(e).__name__}: {e}", FAIL))
         return out
 
@@ -527,11 +527,11 @@ def tier4_pipeline_trace() -> list[Row]:
         )
         e3_ok = (info.get("accepted_llm") is True and not info.get("fallback_used")
                  and plan_obj.get("plan") == mock_plan["plan"] and goal_state is not None)
-        out.append(("Tier4 E3 decoding under the mask (mocked)", "mock accepted, no fallback",
+        out.append(("C13 E3 decoding under the mask (mocked)", "mock accepted, no fallback",
                     f"{len(mock_plan['plan'])}-step plan accepted (fallback={info.get('fallback_used')})",
                     status(e3_ok)))
     except Exception as e:
-        out.append(("Tier4 E3 decoding under the mask (mocked)", "mock accepted, no fallback",
+        out.append(("C13 E3 decoding under the mask (mocked)", "mock accepted, no fallback",
                     f"{type(e).__name__}: {e}", FAIL))
         return out
 
@@ -554,11 +554,11 @@ def tier4_pipeline_trace() -> list[Row]:
         )
         accepted = info_good.get("accepted_llm") is True and set(good.get("goal", [])) == parsed_goal
         reported = info_bad.get("fallback_used") is True and set(bad.get("goal", [])) == parsed_goal
-        out.append(("Tier4 E4 NL-goal parse (mocked)", "sound parse accepted, fallback reported",
+        out.append(("C13 E4 NL-goal parse (mocked)", "sound parse accepted, fallback reported",
                     f"sound parse accepted={accepted}; rejected parse falls back and reports it={reported}",
                     status(accepted and reported)))
     except Exception as e:
-        out.append(("Tier4 E4 NL-goal parse (mocked)", "sound parse accepted, fallback reported",
+        out.append(("C13 E4 NL-goal parse (mocked)", "sound parse accepted, fallback reported",
                     f"{type(e).__name__}: {e}", FAIL))
         return out
 
@@ -577,11 +577,11 @@ def tier4_pipeline_trace() -> list[Row]:
         probe = next(iter(models))
         cands = mem.candidates_for(probe, observed)
         e5_ok = len(mem.schemas) == len(models) and len(cands) >= 1
-        out.append(("Tier4 E5 schema library store and lookup", "stored and retrieved",
+        out.append(("C13 E5 schema library store and lookup", "stored and retrieved",
                     f"stored {len(mem.schemas)}, lookup for {probe} found {len(cands)}",
                     status(e5_ok)))
     except Exception as e:
-        out.append(("Tier4 E5 schema library store and lookup", "stored and retrieved",
+        out.append(("C13 E5 schema library store and lookup", "stored and retrieved",
                     f"{type(e).__name__}: {e}", FAIL))
         return out
 
@@ -599,17 +599,17 @@ def tier4_pipeline_trace() -> list[Row]:
             n_applied += 1
         reached = parsed_goal <= set(state_to_predicates(state))
         e6_ok = n_applied == len(steps) and reached
-        out.append(("Tier4 E6 execute and verify against the parsed goal", "plan applies, goal reached",
+        out.append(("C13 E6 execute and verify against the parsed goal", "plan applies, goal reached",
                     f"applied {n_applied}/{len(steps)} actions; parsed goal reached={reached}",
                     status(e6_ok)))
     except Exception as e:
-        out.append(("Tier4 E6 execute and verify against the parsed goal", "plan applies, goal reached",
+        out.append(("C13 E6 execute and verify against the parsed goal", "plan applies, goal reached",
                     f"{type(e).__name__}: {e}", FAIL))
         return out
 
     statuses = [r[3] for r in out]
     chain = " -> ".join(f"E{i + 1} {s}" for i, s in enumerate(statuses))
-    out.append(("Tier4 pipeline trace", "all six edges OK",
+    out.append(("C13 pipeline trace", "all six edges OK",
                 f"{chain} ({time.time() - t0:.1f}s)", status(all(s == OK for s in statuses))))
     return out
 
@@ -625,9 +625,9 @@ SECTIONS = [
     ("C8 IPC-2023 component F1", check_c8_ipc),
     ("C9 Depots schema replay", check_c9_depots_replay),
     ("C10 jailbreak prompts", check_c10_adversarial),
-    ("B12 ICL-example regex confound", check_b12_icl_regex),
-    ("B13 SCI-ReDuce productions", check_b13_reduce_s),
-    ("Tier 4 pipeline trace", tier4_pipeline_trace),
+    ("C11 ICL-example regex confound", check_b12_icl_regex),
+    ("C12 SCI-ReDuce productions", check_b13_reduce_s),
+    ("C13 pipeline trace", tier4_pipeline_trace),
 ]
 
 

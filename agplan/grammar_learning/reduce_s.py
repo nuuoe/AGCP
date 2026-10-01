@@ -32,7 +32,7 @@ class StateAwareTrajectory:
 
     actions: action strings, length L.
     states: predicate sets at each step, length L+1. states[i] is the
-            state BEFORE action i; states[L] is the final state.
+            state before action i; states[L] is the final state.
     Each state is represented as a frozenset of true-predicate strings
     (e.g. {"on(A,B)", "clear(C)", "handempty"} for Blocksworld).
     """
@@ -67,14 +67,10 @@ class StateClass:
 
 
 def flatten_macro(nt: NTSymbol, grammar: Grammar) -> tuple[str, ...]:
-    """Expand a nonterminal to its terminal-only body, recursively.
+    """Expand a nonterminal to its action terminals.
 
-    Returns the concatenated sequence of action terminals. Raises if
-    the production has alternations (>1 body) since ReDuce's
-    single-body invariant should hold for macros.
-    StarRepeat is expanded as its inner symbol once (1+ semantics
-    apply elsewhere; here the canonical single occurrence is used
-    for substring matching).
+    Raises on a production with alternations. A StarRepeat contributes
+    its inner symbol once, the canonical form used for substring matching.
     """
     seen: set[NTSymbol] = set()
 
@@ -107,8 +103,7 @@ def flatten_macro(nt: NTSymbol, grammar: Grammar) -> tuple[str, ...]:
 
 def find_substring_positions(seq: tuple[str, ...],
                              pattern: tuple[str, ...]) -> list[int]:
-    """Return all start indices where `pattern` occurs as a contiguous
-    substring of `seq`. Non-overlapping (advance by len(pattern))."""
+    """Start indices of the non-overlapping occurrences of pattern in seq."""
     if not pattern:
         return []
     out: list[int] = []
@@ -163,25 +158,20 @@ class MacroProfile:
 
 def refine_entry_class(profile: MacroProfile,
                        predicate_vocab: frozenset[str]) -> list[MacroProfile]:
-    """Split a profile until each refined entry class produces a
-    single exit signature ("effect-determinism").
+    """Split a profile until each part has a single exit signature.
 
-    Returns a list of refined profiles, each carrying a subset of
-    `profile.occurrences`. The list is empty if `profile.occurrences`
-    is empty.
-
-    Algorithm: if all exits are identical, return [profile]. Otherwise
-    pick the predicate p in vocab whose value across occurrences
-    splits the exit set most. Recurse on (p-present, p-absent)
-    partitions until each is effect-deterministic or singleton.
+    Each split is on the vocabulary predicate whose presence at entry best
+    separates the exit signatures, and both parts are refined recursively.
+    Returns the refined profiles, each with a subset of the occurrences;
+    empty for a profile without occurrences.
     """
     if not profile.occurrences:
         return []
     if len({o.exit_state for o in profile.occurrences}) <= 1:
         return [profile]
 
-    # Try predicates from the vocab one at a time, picking the one
-    # that reduces exit-signature entropy fastest. Greedy.
+    # Greedy choice: minimise the larger side's number of distinct exit
+    # signatures.
     best_split: Optional[tuple[str, list[MacroOccurrence],
                                list[MacroOccurrence]]] = None
     best_drop = -1
@@ -199,8 +189,8 @@ def refine_entry_class(profile: MacroProfile,
             best_split = (p, with_p, without_p)
 
     if best_split is None:
-        # No predicate splits; admit as-is with multi-exit (will be
-        # handled at grammar build by emitting alternation).
+        # No predicate separates the occurrences; the multi-exit profile
+        # compiles to an alternation.
         return [profile]
 
     p, with_p, without_p = best_split
@@ -227,7 +217,7 @@ def refine_entry_class(profile: MacroProfile,
 
 @dataclass
 class StateAwareGrammar:
-    """ReDuce-S output.
+    """SCI-ReDuce output.
 
     base_grammar: the underlying ReDuce grammar over actions.
     profiles: per-macro state-class profiles, keyed by either a
@@ -243,7 +233,7 @@ class StateAwareGrammar:
 def induce_state_aware(
     trajectories: Iterable[StateAwareTrajectory],
 ) -> StateAwareGrammar:
-    """Run ReDuce-S over a set of state-annotated trajectories."""
+    """Run SCI-ReDuce over state-annotated trajectories."""
     trajectories = list(trajectories)
     if not trajectories:
         raise ValueError("no trajectories")
@@ -258,12 +248,9 @@ def induce_state_aware(
         *(s for t in trajectories for s in t.states)
     )
 
-    # Enumerate macros. Two sources:
-    #   (a) non-start nonterminals (folded multi-action sequences)
-    #   (b) atomic actions that appear anywhere -- treated as
-    #       "trivial macros" of length 1 so the induced grammar's
-    #       class graph can navigate via single actions when no
-    #       longer macro is admissible.
+    # Macros are the non-start nonterminals (folded sequences) plus every
+    # atomic action as a length-1 macro, so the class graph can still
+    # move by single actions where no longer macro is admissible.
     macros: dict[object, tuple[str, ...]] = {}
     for nt in base_grammar.productions:
         if nt is base_grammar.start:
@@ -277,8 +264,7 @@ def induce_state_aware(
         for a in traj.actions:
             if a not in seen_actions:
                 seen_actions.add(a)
-                # Use action string itself as a key (distinct from
-                # NTSymbol keys above).
+                # Keyed by ("action", a), distinct from the NTSymbol keys.
                 macros[("action", a)] = (a,)
 
     # Find occurrences and record entry/exit states.
@@ -316,11 +302,8 @@ def induce_state_aware(
 
 def macro_admissible(profile: MacroProfile,
                      current_state: frozenset[str]) -> bool:
-    """A macro is admissible at `current_state` if the state entails
-    the macro's entry class (positive predicates all true).
-
-    Used by the decoder to gate macro emission at runtime.
-    """
+    """True when current_state entails the macro's entry class; gates macro
+    emission in the decoder."""
     return profile.entry_class().entails(current_state)
 
 
@@ -385,11 +368,7 @@ def blocksworld_predicates(
 
 
 def _action_seq_to_json_array(actions: tuple[str, ...]) -> str:
-    """Render a flat action sequence as the inner of a JSON array.
-
-    Each action becomes a quoted JSON string; separators are commas
-    with optional whitespace. Quotes are escaped for embedding in EBNF.
-    """
+    """EBNF for the inside of a JSON array holding the given actions."""
     return ' ws "," ws '.join(f'"\\"{a}\\""' for a in actions)
 
 
@@ -404,29 +383,18 @@ def compile_state_aware_ebnf(
     max_depth: int = 20,
     include_base_actions: tuple[str, ...] = (),
 ) -> Optional[str]:
-    """Compile a state-class indexed EBNF from a SCI-ReDuce grammar.
+    """Compile the state-class indexed EBNF for one task.
 
-    Args:
-        grammar: SCI-ReDuce output.
-        initial_state: predicate set at s_0 for the task.
-        goal_check: returns True iff a predicate set satisfies the goal.
-        max_depth: BFS depth cap on macro applications.
-        include_base_actions: if non-empty, every state-class nonterminal
-            also admits any of these base action strings.
-
-    Returns:
-        EBNF string for XGrammar, or None if no goal class is reachable
-        within max_depth. The entry nonterminal is action_seq; each class
-        nonterminal expands to a macro body followed by the post-state class,
-        or to the empty string at a goal class.
+    A BFS from initial_state over the macro edges, capped by max_depth,
+    gives the reachable classes. Each becomes a nonterminal that expands
+    to a macro body followed by the post-state class, or to the empty
+    string at a goal class (goal_check on the predicate set). With
+    include_base_actions, every class also admits any of those actions.
+    The entry nonterminal is action_seq. Returns None when no goal class
+    is reachable.
     """
-    # Build state-class transitions from profiles. After refinement,
-    # each profile carries a single entry-class (intersection of
-    # entries) and an exit-class set. The empirical entry class is the
-    # admissibility precondition; one rule is emitted per
-    # (admissible class, profile, exit) triple.
-
-    # Collect all (entry_class, body, exit_state) edges.
+    # One edge per (entry class, body, observed exit state); the refined
+    # entry class is the admissibility precondition.
     edges: list[tuple[StateClass, tuple[str, ...],
                       frozenset[str]]] = []
     for profile_list in grammar.profiles.values():
@@ -470,8 +438,8 @@ def compile_state_aware_ebnf(
             transitions.append((sidx, body, tidx))
 
     if not any(idx in goal_idx for idx in visited.values()):
-        # Add a permissive goal check: any visited state passing
-        # goal_check counts.
+        # States reached but never dequeued under the depth cap may still
+        # satisfy the goal.
         for st, idx in visited.items():
             if goal_check(st):
                 goal_idx.add(idx)
@@ -498,12 +466,11 @@ def compile_state_aware_ebnf(
             if alt not in seen:
                 alts.append(alt)
                 seen.add(alt)
-        # Allow goal termination from this class if applicable.
+        # A goal class may also terminate here.
         if src in goal_idx and '""' not in seen:
             alts.append('""')
         if include_base_actions:
-            # Permissive fallback: a single base action followed by
-            # recursion to a "free" base sequence
+            # Any base action, staying in the same class.
             base_alts = " | ".join(
                 f'"\\"{a}\\""' for a in include_base_actions
             )
@@ -521,12 +488,8 @@ def compile_state_aware_ebnf(
 
 
 def wrap_state_aware_ebnf_in_plan_schema(action_seq_ebnf: str) -> str:
-    """Wrap the action_seq EBNF inside our standard JSON plan schema.
-
-    Same wrapper as agplan.grammar_learning.reduce.wrap_in_plan_schema
-    but takes the compiled action_seq fragment as input (the start
-    nonterminal is named `action_seq` by convention).
-    """
+    """Wrap the compiled action_seq EBNF in the JSON plan schema; the same
+    wrapper as reduce.wrap_in_plan_schema."""
     header = (
         'root ::= "{" ws "\\"subgoals\\"" ws ":" ws "[" ws subgoal ws "]" ws "}"\n'
         'subgoal ::= "{" ws "\\"name\\"" ws ":" ws "\\"go\\"" ws "," ws '
@@ -537,12 +500,8 @@ def wrap_state_aware_ebnf_in_plan_schema(action_seq_ebnf: str) -> str:
 
 
 def wrap_state_aware_ebnf_in_plan_array(action_seq_ebnf: str) -> str:
-    """Wrap action_seq EBNF inside the simpler `{"plan":[...]}`
-    schema used by run_bootstrap.py and run_genv_planbench.py.
-
-    Use this for Blocksworld/Mystery experiments where the prompt
-    template asks for `{"plan": ["action(arg)", ...]}` output.
-    """
+    """Wrap the action_seq EBNF in the `{"plan": [...]}` schema that
+    run_genv_planbench.py and the Blocksworld/Mystery prompts use."""
     header = (
         'root ::= "{" ws "\\"plan\\"" ws ":" ws "[" ws action_seq ws "]" ws "}"\n'
     )

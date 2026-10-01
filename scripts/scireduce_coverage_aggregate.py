@@ -1,28 +1,20 @@
 """Rebuild runs/sci_reduce_coverage_curve.json (Fig. 2, Table 4) from the
-per-seed leave-out files and check it against the stored aggregate.
+per-seed leave-out files and compare it with the stored aggregate.
 
-Each runs/scireduce_leaveout/leaveout_real_mystery*_s<seed>.jsonl is one run
-of scripts/run_leave_out_n.py, one row per held-out trajectory with a
-"coverage" flag. The held-out size is the row count and the training size is
-50 minus it (total_trajectories_available in the stored file). Per training
-size the first four seeds (n_seeds_per_setting) give "values", the coverage
-in whole percent, with the mean and the sample standard deviation to one
-decimal. Every entry of the stored file is compared with the rebuilt one; the
-exit code is non-zero if an entry mismatches or cannot be rebuilt. --out
-writes the rebuilt aggregate in the stored format.
+Each runs/scireduce_leaveout/*.jsonl is one run of scripts/run_leave_out_n.py
+with one row per held-out trajectory and a "coverage" flag; the row count
+gives the held-out size and 50 minus it the training size. For each training
+size the first four seeds give the coverage values in whole percent, their
+mean and sample standard deviation. Exit code is non-zero if any stored entry
+differs or cannot be rebuilt; --out writes the rebuilt aggregate.
 
-The curve is the sweep over training sizes 10, 15, 20, 25, 30, 35 and 40
-(held-out 40 down to 10) with seeds 0 to 3. The untagged
-leaveout_real_mystery_s<seed>.jsonl files are the holdout-10 (training size
-40) runs, of which s4 is an extra seed the stored curve does not use; the
-leaveout_real_mystery_n<train>_s<seed>.jsonl files hold the other sizes.
-The runner is deterministic given the seed, and the whole sweep regenerates
-in a few seconds with
+The sweep (training sizes 10 to 40 in steps of 5, seeds 0 to 3) regenerates
+deterministically with
 
     for n in 10 15 20 25 30 35 40; do for s in 0 1 2 3; do
-      PYTHONPATH=. python3 scripts/run_leave_out_n.py \\
-        --mystery_jsonl runs/scireduce_input/mystery.jsonl --domain mystery \\
-        --n_holdout $((50 - n)) --seed $s \\
+      PYTHONPATH=. python3 scripts/run_leave_out_n.py \
+        --mystery_jsonl runs/scireduce_input/mystery.jsonl --domain mystery \
+        --n_holdout $((50 - n)) --seed $s \
         --out runs/scireduce_leaveout/leaveout_real_mystery_n${n}_s${s}.jsonl
     done; done
 """

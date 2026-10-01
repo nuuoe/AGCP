@@ -16,7 +16,7 @@ from pathlib import Path
 
 # Three paraphrase rewriters that preserve meaning but vary surface form.
 def paraphrase_v1(nl: str) -> str:
-    """V1: swap "X is on top of Y" → "Y has X on top of it"."""
+    """Rewrite "X is on top of Y" as "Y has X on top of it"."""
     return re.sub(
         r"the (\w+) block is on top of the (\w+) block",
         r"the \2 block has the \1 block on top of it",
@@ -25,12 +25,12 @@ def paraphrase_v1(nl: str) -> str:
 
 
 def paraphrase_v2(nl: str) -> str:
-    """V2: replace "on top of" → "stacked above"."""
+    """Replace "is on top of" with "is stacked above"."""
     return nl.replace(" is on top of ", " is stacked above ")
 
 
 def paraphrase_v3(nl: str) -> str:
-    """V3: replace "the X block" → "block X" + comma chains."""
+    """Replace "the X block" with "block X" and put a comma before each "and"."""
     s = re.sub(r"the (\w+) block", r"block \1", nl)
     s = re.sub(r" and ", ", and ", s)
     return s

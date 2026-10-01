@@ -1,4 +1,4 @@
-"""Rescore the logistics NL-goal parse run after canonicalising object names.
+"""Rescore the logistics NL-goal parse run after canonicalizing object names.
 
 Verbose names in LLM proposals (package_0, location_1_0) are mapped to the
 PDDL aliases (p0, l1-0) and the verifier is re-applied; the LLM is not
@@ -13,17 +13,8 @@ from pathlib import Path
 
 
 def build_alias_map(obj_set: set, domain_hint: str = "") -> dict:
-    """Build verbose→short alias map for common naming patterns.
-
-    Detects patterns by looking at obj_set:
-      pN     ← package_N
-      lX-Y   ← location_X_Y
-      tN     ← truck_N
-      aN     ← airplane_N
-      cN     ← city_N
-      crateN ← (no alias, short = long)
-      depotN ← (no alias, short = long)
-    """
+    """Map verbose object names (package_N, location_X_Y, truck_N, airplane_N,
+    city_N) to the short PDDL aliases present in obj_set (pN, lX-Y, tN, aN, cN)."""
     alias = {}
     for o in obj_set:
         m = re.match(r"^p(\d+)$", o)

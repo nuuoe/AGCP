@@ -20,9 +20,8 @@ class Scored:
     pcfg_score: float
     cache_score: float
     total_score: float
-    # If set (e.g. by the verifier-pick condition), holds the env
-    # execution result attached during scoring so main() does not have
-    # to re-run the verifier.
+    # Execution result attached by the verifier-pick condition, so the
+    # caller need not re-run the verifier.
     cached_verifier_result: object = None
 
 
@@ -41,9 +40,8 @@ def rerank_candidates(
 
         base + lambda_pcfg * pcfg_score + lambda_adaptor * cache_score
 
-    Either prior may be None (then its term is 0). Unparseable candidates
-    get total_score = -inf so they sort last. Returns sorted descending
-    by total_score (best first).
+    Either prior may be None (its term is then 0). Unparseable candidates
+    get total_score = -inf and sort last. Returns the list best first.
     """
     if base_logprobs is None:
         base_logprobs = [0.0] * len(candidates)

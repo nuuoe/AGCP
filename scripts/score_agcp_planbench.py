@@ -113,11 +113,9 @@ def main():
     n_solved = sum(1 for r in results if r["success"])
     n_total = len(results)
     rate = 100 * n_solved / max(n_total, 1)
-    print("\n" + "=" * 60)
-    print(f"AGCP on PlanBench / {domain_name} / {args.task} / "
+    print(f"\nAGCP on PlanBench / {domain_name} / {args.task} / "
           f"{args.engine_label}:")
     print(f"  {n_solved}/{n_total} = {rate:.1f}% success")
-    print("=" * 60)
 
     out_path = args.out or os.path.join(
         args.plan_bench_root, "responses", domain_name,

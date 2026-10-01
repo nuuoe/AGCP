@@ -140,7 +140,7 @@ def fmt_cell_latex(stats: dict) -> str:
 
 
 def print_wide_table(all_stats: dict[str, dict]) -> None:
-    """Pretty plain-text wide table to stdout."""
+    """Plain-text wide table to stdout."""
     headers = ["system"] + [TASK_SHORT[t] for t in TASK_TYPES] + ["POOLED"]
     rows_txt = []
     for sysname, stats in all_stats.items():
@@ -276,24 +276,24 @@ def compute_findings(all_stats: dict[str, dict]) -> dict:
 
 
 def print_findings(findings: dict) -> None:
-    print("\n===== KEY FINDINGS =====")
+    print("\n===== Findings =====")
     for split, f in findings.items():
         print(f"\n--- {split} ---")
         b = f["best_llm_task_type"]
         w = f["worst_llm_task_type"]
         g = f["max_llm_minus_regex_gap"]
-        print(f"(a) LLMs do BEST on '{b['task_type']}' (mean accept = {b['mean_rate']*100:.1f}%) "
-              f"and WORST on '{w['task_type']}' (mean accept = {w['mean_rate']*100:.1f}%).")
+        print(f"(a) LLM mean accept is highest on '{b['task_type']}' ({b['mean_rate']*100:.1f}%) "
+              f"and lowest on '{w['task_type']}' ({w['mean_rate']*100:.1f}%).")
         print(f"(b) Largest LLM-over-regex gap: '{g['task_type']}' "
               f"({g['best_llm_name']}: {g['best_llm_rate']*100:.1f}% vs regex: {g['regex_rate']*100:.1f}%, "
               f"gap = {g['gap']*100:+.1f} pp).")
         rtw = f["regex_ties_or_beats_best_llm"]
         if rtw:
             for tt, info in rtw.items():
-                print(f"(c) regex TIES/BEATS best LLM on '{tt}' "
+                print(f"(c) regex ties or beats the best LLM on '{tt}' "
                       f"(regex: {info['regex_rate']*100:.1f}% vs best LLM: {info['best_llm_rate']*100:.1f}%).")
         else:
-            print("(c) regex does NOT tie or beat the best LLM on any task type in this split.")
+            print("(c) regex does not tie or beat the best LLM on any task type in this split.")
 
 
 def main() -> None:

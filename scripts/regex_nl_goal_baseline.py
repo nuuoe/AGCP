@@ -219,7 +219,7 @@ def main():
           f"{pooled_accept:>5}/{pooled_total:<4} "
           f"{pooled_perfect:>9}")
     print()
-    print(f"=> regex baseline: {pooled_accept}/{pooled_total} = "
+    print(f"regex baseline: {pooled_accept}/{pooled_total} = "
           f"{100*pooled_accept/max(pooled_total,1):.1f}% "
           f"accept at F1>={args.threshold}")
 

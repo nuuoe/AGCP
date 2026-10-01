@@ -65,7 +65,7 @@ Scripts import `agplan` and each other as `scripts.<name>`, so run them from the
 | Table 8 patterns 1, 3, 4, 5 | `demo_closed_loop.py`, `demo_closed_loop_no_gt_fallback.py`, `alfworld_enum_constrained.py`, `alfworld_nl_parse.py`, `alfworld_smart_score.py` | `n4_*.json`, `alfworld_enum_constrained*.json`, `alfworld_n1_parse*.json`, `alfworld_smart_score*.json` |
 | App. K predicate discovery, reuse probe, ablation ladder, AutoPlanBench breadth | `llm_predicate_discovery_strict.py`, `benchmark_n3_llm_reuse.py`, `run_ablation_ladder.py`, `run_agcp_on_apb_simple.py` | `n2_strict_N15.json`, `n3_improved.json`, `ablation_ladder.json`, `final_apb_*.json` |
 
-Four experiments ran on a cluster; the invocations were
+The four GPU experiments were run with these invocations:
 
 ```bash
 python scripts/run_adversarial_robustness.py --instances_dir <planbench blocksworld instances> \

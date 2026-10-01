@@ -31,11 +31,8 @@ class NTSymbol:
 
 @dataclass(frozen=True)
 class StarRepeat:
-    """Regex-star wrapper around a single symbol (one or more repeats).
-
-    We use 'one or more' (*+ in regex sense) because zero-length runs
-    of an action are not informative for plans.
-    """
+    """One-or-more repetition of a single symbol (regex +); zero-length
+    runs of an action carry no information for plans."""
     inner: Union[str, NTSymbol]
 
     def __repr__(self) -> str:
@@ -49,10 +46,10 @@ Symbol = Union[str, NTSymbol, StarRepeat]
 class Grammar:
     """Hierarchical grammar produced by ReDuce.
 
-    productions[name] = list of bodies (each a list of Symbol).
-    Multiple bodies = alternation. We mainly produce single-body
-    productions during ReDuce; alternation is added when star-repeats
-    expand to "one occurrence | recursive case".
+    productions[nt] is a list of bodies, each a list of Symbol; several
+    bodies mean alternation. Folding produces single-body productions;
+    only the start symbol of induce_from_trajectories has one body per
+    plan.
     """
     start: NTSymbol
     productions: dict[NTSymbol, list[list[Symbol]]] = field(default_factory=dict)
@@ -119,12 +116,8 @@ def star_replace(g: Grammar) -> Grammar:
 
 
 def _max_frequency_pair(g: Grammar) -> Optional[tuple[Symbol, Symbol]]:
-    """Find the most frequent adjacent pair (x, y) across all
-    production bodies. Returns None if no pair appears more than once.
-
-    Pairs that span StarRepeat boundaries are not counted (we only
-    fold contiguous adjacent symbols).
-    """
+    """Most frequent adjacent pair over all bodies, or None if no pair
+    occurs twice. A StarRepeat node counts as one symbol."""
     counts: dict[tuple[Symbol, Symbol], int] = {}
     for _nt, body in g.all_bodies():
         for k in range(len(body) - 1):
@@ -141,8 +134,7 @@ def _max_frequency_pair(g: Grammar) -> Optional[tuple[Symbol, Symbol]]:
 def _substitute_pair_in_body(
     body: list[Symbol], pair: tuple[Symbol, Symbol], replacement: NTSymbol
 ) -> list[Symbol]:
-    """Replace every non-overlapping adjacent occurrence of `pair`
-    with `replacement`. Left-to-right scan."""
+    """Replace non-overlapping occurrences of pair, scanning left to right."""
     out: list[Symbol] = []
     i = 0
     n = len(body)
@@ -173,10 +165,7 @@ def define_and_substitute_all(
 
 
 def reduce_grammar(seq: list[str]) -> Grammar:
-    """ReDuce(seq) -> hierarchical grammar.
-
-    Implementation of Muggleton Algorithm 1.
-    """
+    """ReDuce over one sequence (Muggleton 2025, Algorithm 1)."""
     g = _initial_grammar_from_sequence(seq)
     g = star_replace(g)
     while True:
@@ -192,22 +181,12 @@ def reduce_grammar(seq: list[str]) -> Grammar:
 
 
 def _ebnf_quote(action: str) -> str:
-    """Quote an action terminal for an EBNF that accepts JSON strings.
-
-    We produce an EBNF that wraps each action with double quotes,
-    matching the JSON action representation in our plan schema.
-    """
+    """Quote an action terminal as a JSON string literal inside EBNF."""
     return f'"\\"{action}\\""'
 
 
 def _symbol_to_ebnf(sym: Symbol, ws: str = "ws") -> str:
-    """Render a single Symbol to its EBNF surface form for an
-    action-list grammar with comma separators.
-
-    For terminals: emits `"\"action\""`.
-    For nonterminals: emits the nonterminal name.
-    For StarRepeat(inner): emits `(inner)+` syntax.
-    """
+    """EBNF surface form of one symbol."""
     if isinstance(sym, str):
         return _ebnf_quote(sym)
     if isinstance(sym, NTSymbol):
@@ -218,27 +197,17 @@ def _symbol_to_ebnf(sym: Symbol, ws: str = "ws") -> str:
 
 
 def grammar_to_action_seq_ebnf(g: Grammar) -> str:
-    """Translate a ReDuce grammar over actions into the action_seq
-    fragment of our plan EBNF.
+    """Translate a ReDuce grammar into the action_seq productions of the plan EBNF.
 
-    The output is a set of EBNF productions where:
-      - the start non-terminal expands the full action_seq
-      - each NTSymbol becomes a nonterminal n{idx}
-      - terminals are JSON-quoted action strings
-      - body items are spliced with ws "," ws separators
-      - StarRepeat(inner) at body level expands to
-        inner (ws "," ws inner)* so that JSON commas appear between
-        every pair of repeated occurrences.
+    Each NTSymbol becomes n{idx}, terminals are JSON-quoted action
+    strings, body items are joined by ws "," ws, and a StarRepeat expands
+    to inner (ws "," ws inner)* so that a comma separates every pair of
+    repeated occurrences.
     """
     lines: list[str] = []
 
     def _expand_body(body: list[Symbol]) -> str:
-        """Emit body items separated by ws "," ws.
-
-        StarRepeat is expanded inline as `inner (ws "," ws inner)*`
-        which produces 1+ comma-separated occurrences of `inner` in
-        the spot where the StarRepeat sits.
-        """
+        """Join body items with ws "," ws, expanding StarRepeat inline."""
         parts: list[str] = []
         for sym in body:
             if isinstance(sym, StarRepeat):
@@ -248,7 +217,6 @@ def grammar_to_action_seq_ebnf(g: Grammar) -> str:
                 parts.append(_symbol_to_ebnf(sym))
         return ' ws "," ws '.join(parts)
 
-    # Production for each NTSymbol
     for nt in g.productions:
         bodies = g.productions[nt]
         body_strs = [_expand_body(b) for b in bodies]
@@ -259,12 +227,8 @@ def grammar_to_action_seq_ebnf(g: Grammar) -> str:
 
 
 def wrap_in_plan_schema(action_seq_ebnf: str, start_nt: NTSymbol) -> str:
-    """Wrap the action_seq EBNF inside our standard JSON plan schema.
-
-    Output is a complete EBNF for XGrammar that accepts plans of the
-    form:
-        {"subgoals": [{"name": "go", "actions": [<reduced-action-seq>]}]}
-    """
+    """Wrap the action_seq EBNF in the JSON plan schema, giving a complete
+    XGrammar grammar for {"subgoals": [{"name": "go", "actions": [...]}]}."""
     header = (
         'root ::= "{" ws "\\"subgoals\\"" ws ":" ws "[" ws subgoal ws "]" ws "}"\n'
         'subgoal ::= "{" ws "\\"name\\"" ws ":" ws "\\"go\\"" ws "," ws '
@@ -282,14 +246,9 @@ def wrap_in_plan_schema_hybrid(
         "pickup", "drop", "toggle", "done",
     )
 ) -> str:
-    """Hybrid wrapper: action_seq accepts EITHER the ReDuce-induced
-    grammar OR a free base-action sequence.
-
-    The fixed adaptor-grammar interpretation: the LLM may invoke a
-    learned macro OR derive from the base alphabet. The mask
-    enforces validity in either case but does not RESTRICT the
-    language to demo patterns.
-    """
+    """Wrapper whose action_seq accepts either the ReDuce-induced grammar
+    or a free sequence over base_actions, so the mask enforces validity
+    without restricting the language to the demonstrated patterns."""
     base_alts = " | ".join(f'"\\"{a}\\""' for a in base_actions)
     header = (
         'root ::= "{" ws "\\"subgoals\\"" ws ":" ws "[" ws subgoal ws "]" ws "}"\n'
@@ -307,19 +266,13 @@ def wrap_in_plan_schema_hybrid(
 
 
 def induce_from_trajectories(plans: list[list[str]]) -> Grammar:
-    """Induce a grammar over a SET of successful action sequences.
+    """Induce one grammar over several action sequences.
 
-    We concatenate the plans into a single sequence (with a sentinel
-    separator the caller does not use) and run ReDuce on the joined
-    body, but with the start production tracking the original boundaries.
-
-    Implementation: introduce one top-level production whose body is
-    the disjunction of plans; ReDuce then folds shared subsequences
+    The start symbol gets one body per plan, so folding finds pairs shared
     across plans.
     """
     if not plans:
         raise ValueError("no plans to induce from")
-    # Build initial grammar with start = N_0, body alternation over plans.
     g = Grammar(start=NTSymbol(0))
     g.next_idx = 1
     g.productions[g.start] = [list(p) for p in plans]

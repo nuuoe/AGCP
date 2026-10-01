@@ -16,7 +16,7 @@ from pathlib import Path
 from agplan.llm_propose import propose_verify_fallback
 
 
-# Color → letter map (PlanBench BW convention)
+# Color -> letter map (PlanBench BW convention)
 COLOR_TO_LETTER = {
     "red": "a", "blue": "b", "orange": "c", "yellow": "d",
     "white": "e", "magenta": "f", "black": "g", "cyan": "h",
@@ -181,7 +181,7 @@ def build_vocab(domain_path: str, instance_path: str) -> dict:
 
 
 def map_colors_to_letters(nl: str, objs: list) -> str:
-    """Replace 'the red block' → 'a' etc."""
+    """Replace 'the red block' with 'a' etc."""
     s = nl
     for color, letter in COLOR_TO_LETTER.items():
         if letter in objs:

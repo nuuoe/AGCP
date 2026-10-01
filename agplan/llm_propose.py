@@ -1,9 +1,9 @@
 """Propose with an LLM, verify against held-out evidence, fall back to a baseline.
 
 Every LLM stage (predicate discovery, family selection, goal parsing,
-action-model synthesis) formats a prompt, decodes JSON under an XGrammar
-schema mask, parses the proposal, scores it with a verifier and accepts it
-only above a threshold. This module holds that pattern once.
+action-model synthesis) follows the same pattern: format a prompt, decode
+JSON under an XGrammar schema mask, parse the proposal, score it with a
+verifier and accept it only above a threshold.
 """
 from __future__ import annotations
 
@@ -28,18 +28,12 @@ def propose_verify_fallback(
 ) -> tuple[Any, dict]:
     """Decode a JSON proposal, verify it, and return it or the baseline.
 
-    Args:
-        prompt: full prompt text.
-        schema_json: JSON schema that constrains decoding.
-        verifier: maps the parsed proposal to an accuracy in [0, 1].
-        baseline: value returned when verification fails.
-        threshold: accuracy required to accept the proposal (default 0.9).
-        model_name: Hugging Face model id.
-        use_mock, mock_value: return mock_value instead of calling the model.
-
-    Returns:
-        (value, info) with info keys accepted_llm, proposal, accuracy and
-        fallback_used.
+    verifier maps a parsed proposal to an accuracy in [0, 1]. The best of
+    the sampled candidates (and a greedy decode when n_samples > 1) is
+    accepted at or above threshold; otherwise baseline is returned. With
+    use_mock, mock_value stands in for the model output. Returns (value,
+    info) where info has accepted_llm, proposal, accuracy, fallback_used,
+    n_candidates_tried, refine_rounds and refine_history.
     """
     if use_mock:
         proposal = mock_value if mock_value is not None else baseline
@@ -52,10 +46,9 @@ def propose_verify_fallback(
             decoder = XGrammarConstrainedDecoder(
                 model_name=model_name, schema=schema_json,
             )
-            # Sample n_samples candidates at temperature to allow
-            # exploration. Small LLMs under tight JSON-schema masks
-            # often get stuck at greedy; sampling reaches valid
-            # proposals more often.
+            # Small models under a tight schema mask often stall under
+            # greedy decoding; sampled candidates reach valid proposals
+            # more often.
             cfg = DecodeConfig(do_sample=(n_samples > 1),
                                 temperature=temperature,
                                 top_p=0.95,
@@ -69,7 +62,7 @@ def propose_verify_fallback(
                     proposals_tried.append(json.loads(r))
                 except Exception:
                     pass
-            # Use greedy too as a deterministic fallback candidate
+            # Greedy decode as one more candidate.
             if n_samples > 1:
                 try:
                     greedy_cfg = DecodeConfig(do_sample=False,
@@ -86,10 +79,8 @@ def propose_verify_fallback(
             proposal = {"error": f"{type(e).__name__}: {e}"}
             proposals_tried = [proposal]
 
-    # Evaluate each candidate; pick the best-scoring. A verifier
-    # exception is printed to stderr the first time it occurs per
-    # call; the candidate then scores 0.0 so that aggregate
-    # pipelines keep running.
+    # A verifier exception is reported once per call and scores the
+    # candidate 0.0, so batch runs keep going.
     best_acc = 0.0
     best_proposal = proposal
     _verifier_err_logged = False
@@ -111,11 +102,8 @@ def propose_verify_fallback(
     acc = best_acc
     proposal = best_proposal
 
-    # --- ITERATIVE REFINEMENT WITH VERIFIER FEEDBACK ---
-    # If best candidate falls below threshold, give the LLM
-    # structured feedback (from feedback_fn) and let it revise.
-    # Up to max_refine_rounds iterations. Each round samples
-    # n_samples fresh candidates with the feedback appended.
+    # Refinement: below threshold, append verifier feedback (feedback_fn)
+    # to the prompt and resample, up to max_refine_rounds times.
     refine_history = []
     if not use_mock and max_refine_rounds > 0 and acc < threshold:
         try:
@@ -132,7 +120,6 @@ def propose_verify_fallback(
         while (decoder is not None and round_idx < max_refine_rounds
                 and acc < threshold):
             round_idx += 1
-            # Build feedback message
             if feedback_fn is not None:
                 try:
                     fb = feedback_fn(proposal, acc)

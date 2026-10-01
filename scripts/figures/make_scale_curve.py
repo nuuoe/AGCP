@@ -2,21 +2,14 @@
 
 Accept counts are read from the Table 2 run files: n_accept (n_llm_accept
 for the Qwen-1.5B fair-eval files) over n_total rows, from runs/ for the
-IID split and runs/ood/ for the OOD split.
-
-Visual design:
-- Color-coded by the descriptive grouping of Sec. 5.2 (band boundaries
-  visible in the pairwise McNemar matrices of App. I):
-    lower band  (regex, Qwen-1.5B)                     -> neutral grey
-    middle band (GPT-3.5, Qwen-7B, Llama-70B, 4o-mini) -> muted blue
-    higher band (Haiku, GPT-4o, Sonnet)                -> rich orange
-- Light band background shading (alpha ~0.08-0.10).
-- IID  = filled circle, OOD = open triangle.
-- Wilson 95% CIs as errorbars.
-- Annotations: shortened model name next to each IID point.
-
-Palette is colorblind-safe (Paul Tol "bright"/"muted" hex codes).
-No seaborn-style sheet (avoids deprecated "seaborn-X" names).
+IID split and runs/ood/ for the OOD split. Systems are coloured by the
+three bands of Sec. 5.2 (band boundaries visible in the pairwise McNemar
+matrices of App. I): grey for regex and Qwen-1.5B, blue for GPT-3.5,
+Qwen-7B, Llama-70B and 4o-mini, orange for Haiku, GPT-4o and Sonnet, with
+light background shading per band. IID points are filled circles, OOD
+points open triangles, both with Wilson 95% intervals; each IID point is
+labelled with a short model name. The palette is colourblind-safe (Paul
+Tol).
 """
 import json
 import math
@@ -36,13 +29,11 @@ def wilson(k, n, z=1.96):
     return p, c - h, c + h
 
 
-# ---------------------------------------------------------------------------
-# Tier palette (colorblind-safe; Paul Tol-style)
-# Picked to remain distinguishable in grayscale + Deuteranopia / Protanopia.
-# ---------------------------------------------------------------------------
-COLOR_TIER1 = "#777777"   # neutral grey
-COLOR_TIER2 = "#5B8AC8"   # muted blue (Tol "muted" cb-safe)
-COLOR_TIER3 = "#E07B39"   # rich orange (Tol "muted" cb-safe)
+# Band palette (Paul Tol), distinguishable in greyscale and under
+# deuteranopia and protanopia.
+COLOR_BAND1 = "#777777"   # neutral grey
+COLOR_BAND2 = "#5B8AC8"   # muted blue (Tol "muted" cb-safe)
+COLOR_BAND3 = "#E07B39"   # rich orange (Tol "muted" cb-safe)
 
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..")
 
@@ -79,18 +70,16 @@ SYSTEMS = [
     for full, short, iid, ood, x, band in SYSTEM_FILES
 ]
 
-TIER_COLOR = {1: COLOR_TIER1, 2: COLOR_TIER2, 3: COLOR_TIER3}
+BAND_COLOR = {1: COLOR_BAND1, 2: COLOR_BAND2, 3: COLOR_BAND3}
 
-# Tier y-bands for background shading.
-TIER_BANDS = [
-    (0.275, 0.355, COLOR_TIER1, "Lower band"),
-    (0.39,  0.50,  COLOR_TIER2, "Middle band"),
-    (0.50,  0.72,  COLOR_TIER3, "Frontier group"),
+# Band y-bands for background shading.
+BANDS = [
+    (0.275, 0.355, COLOR_BAND1, "Lower band"),
+    (0.39,  0.50,  COLOR_BAND2, "Middle band"),
+    (0.50,  0.72,  COLOR_BAND3, "Frontier group"),
 ]
 
-# ---------------------------------------------------------------------------
-# Figure
-# ---------------------------------------------------------------------------
+# Figure.
 plt.rcParams.update({
     "font.size": 10,
     "axes.labelsize": 11,
@@ -104,18 +93,17 @@ plt.rcParams.update({
 
 fig, ax = plt.subplots(figsize=(7, 4.5))
 
-# Background tier bands (very light, no legend entry).
-for y_lo, y_hi, color, _ in TIER_BANDS:
+# Background band bands (very light, no legend entry).
+for y_lo, y_hi, color, _ in BANDS:
     ax.axhspan(y_lo, y_hi, facecolor=color, alpha=0.09, zorder=0)
 
-# Plot each system as two points (IID filled circle, OOD open triangle),
-# colored by tier. Tier-grouped lines drawn separately for visual cohesion.
-for tier in (1, 2, 3):
-    color = TIER_COLOR[tier]
+# One line per band; IID filled circles, OOD open triangles.
+for band in (1, 2, 3):
+    color = BAND_COLOR[band]
     xs_i, ys_i, lo_i, hi_i = [], [], [], []
     xs_o, ys_o, lo_o, hi_o = [], [], [], []
     for _, _, iid, ood, x, t in SYSTEMS:
-        if t != tier:
+        if t != band:
             continue
         if iid is not None:
             k, n = iid
@@ -128,7 +116,7 @@ for tier in (1, 2, 3):
             xs_o.append(x); ys_o.append(p)
             lo_o.append(p - lo); hi_o.append(hi - p)
 
-    # Sort by x so the connecting line goes left->right.
+    # Sort by x so the line runs left to right.
     order_i = np.argsort(xs_i)
     xs_i = np.array(xs_i)[order_i]; ys_i = np.array(ys_i)[order_i]
     lo_i = np.array(lo_i)[order_i]; hi_i = np.array(hi_i)[order_i]
@@ -146,8 +134,7 @@ for tier in (1, 2, 3):
                 markersize=8, linewidth=1.0, capsize=3,
                 alpha=0.95, zorder=3)
 
-# Annotate each IID point with shortened model name.
-# Tuned per-system offsets so labels don't overlap the errorbars/lines.
+# Label offsets chosen so the labels clear the error bars.
 ANNOTATE_OFFSETS = {
     "Regex":       (6, -12),
     "Qwen-1.5B":   (6, -14),
@@ -159,20 +146,20 @@ ANNOTATE_OFFSETS = {
     "GPT-4o":      (6, -12),
     "Sonnet":      (-12, 9),
 }
-for _, short, iid, _, x, tier in SYSTEMS:
+for _, short, iid, _, x, band in SYSTEMS:
     k, n = iid
     p, _, _ = wilson(k, n)
     dx, dy = ANNOTATE_OFFSETS.get(short, (6, -12))
     ax.annotate(short, (x, p), xytext=(dx, dy),
                 textcoords='offset points', fontsize=8.5,
-                color=TIER_COLOR[tier], fontweight='medium')
+                color=BAND_COLOR[band], fontweight='medium')
 
-# Regex baseline horizontal line (subtle).
+# Regex baseline.
 regex_p, _, _ = wilson(*SYSTEMS[0][2])
-ax.axhline(y=regex_p, color=COLOR_TIER1, linestyle=':',
+ax.axhline(y=regex_p, color=COLOR_BAND1, linestyle=':',
            alpha=0.55, linewidth=1.0, zorder=1)
 
-# Axes / labels / title.
+# Axes.
 ax.set_xscale('log')
 ax.set_xlabel("Model scale (B parameters; regex at 0.5 for layout)",
               fontsize=11)
@@ -186,14 +173,14 @@ ax.grid(True, which='major', axis='y', alpha=0.25, linewidth=0.7)
 ax.grid(True, which='minor', axis='y', alpha=0.0)
 ax.tick_params(axis='both', which='major', length=4)
 
-# Custom 2-block legend: tiers (color) + IID/OOD (marker shape).
+# Two legends: bands by colour, splits by marker.
 from matplotlib.lines import Line2D
-tier_handles = [
-    Line2D([0], [0], color=COLOR_TIER1, marker='o', linestyle='-',
+band_handles = [
+    Line2D([0], [0], color=COLOR_BAND1, marker='o', linestyle='-',
            markersize=7, label='Lower band (regex + 1.5B)'),
-    Line2D([0], [0], color=COLOR_TIER2, marker='o', linestyle='-',
+    Line2D([0], [0], color=COLOR_BAND2, marker='o', linestyle='-',
            markersize=7, label='Middle band (3.5 / 7B / 70B / 4o-mini)'),
-    Line2D([0], [0], color=COLOR_TIER3, marker='o', linestyle='-',
+    Line2D([0], [0], color=COLOR_BAND3, marker='o', linestyle='-',
            markersize=7, label='Frontier group (Haiku / 4o / Sonnet)'),
 ]
 split_handles = [
@@ -203,7 +190,7 @@ split_handles = [
            markerfacecolor='white', markeredgewidth=1.5,
            markersize=7, label='Out-of-distribution (unseen)'),
 ]
-leg1 = ax.legend(handles=tier_handles, loc='upper left',
+leg1 = ax.legend(handles=band_handles, loc='upper left',
                  fontsize=8, frameon=True, framealpha=0.9,
                  edgecolor='#cccccc')
 ax.add_artist(leg1)

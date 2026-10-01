@@ -84,7 +84,7 @@ def evaluate_one_domain(name, dom_path, prob_paths,
                           induce_fn, apply_refinement: bool,
                           keep_irrelevant: bool,
                           n_problems=8):
-    """Run one config on one domain. Return per-action F1 dict."""
+    """Run one config on one domain; return (per-action F1 dict, n_perfect, n_actions)."""
     trs_ok, err = collect_trs(dom_path, prob_paths,
                                  n_problems=n_problems,
                                  keep_irrelevant=keep_irrelevant)
@@ -157,9 +157,7 @@ def main():
     ap.add_argument("--out", required=True)
     args = ap.parse_args()
 
-    print("=" * 70)
-    print("ABLATION LADDER — IPC-2023 learning")
-    print("=" * 70)
+    print("Ablation ladder: IPC-2023 learning domains")
     results = {}
     for config_name, cfg in CONFIGS.items():
         print(f"\n[CONFIG] {config_name}: {cfg}")
@@ -210,9 +208,7 @@ def main():
               f"{total_perfect}/{total_actions} F1>=0.9, "
               f"{n_domains_parsed}/10 domains parsed")
 
-    print("\n" + "=" * 70)
-    print("ABLATION LADDER — SUMMARY")
-    print("=" * 70)
+    print("\nSummary")
     print(f"{'Config':10s}  {'Domains':10s}  {'F1>=0.9':15s}  {'Pct':6s}")
     for cname in CONFIGS:
         r = results[cname]

@@ -44,11 +44,9 @@ def _parse_atoms(body: str) -> list[tuple[str, ...]]:
     return atoms
 
 
-# Mystery Blocksworld uses obfuscated predicate / action names.
-# Same semantics, but agent must reason without natural-language priors.
-# This is a known hard test for LLMs (Valmeekam et al. 2023): GPT-4
-# success drops dramatically. G_env should be unaffected because the
-# construction depends on transition semantics, not symbol names.
+# Mystery Blocksworld (Valmeekam et al. 2023) renames predicates and
+# actions; the semantics are unchanged, so the grammar construction is
+# unaffected.
 
 MYSTERY_PREDICATE_MAP = {
     # Mystery name -> Blocksworld name
@@ -71,17 +69,13 @@ MYSTERY_ACTION_NAMES = {
 def parse_pddl_instance(text: str, domain: str = "blocksworld") -> dict:
     """Parse a PlanBench Blocksworld PDDL instance.
 
-    `domain`: 'blocksworld' (default) or 'mystery'. Mystery uses
-    obfuscated predicate names which we translate back to Blocksworld
-    semantics for grammar compilation; the grammar then emits
-    Mystery-style action names so the LLM sees the obfuscated task.
+    With domain='mystery' the obfuscated predicate names are mapped back
+    to Blocksworld ones for grammar compilation; the grammar then emits
+    Mystery action names, so the model sees the obfuscated task.
 
-    Returns dict with:
-      labels: list of block names (lowercased)
-      initial_support: dict block -> support ('TABLE' or another block)
-      goal_pairs: list of (block, support) constraints from :goal
-      held: optionally a block (None if handempty)
-      domain: 'blocksworld' or 'mystery' (passed through)
+    Returns a dict with labels (block names), initial_support (block ->
+    'TABLE' or the block below), goal_pairs (tuple of (block, support)
+    constraints), held (the held block or None) and domain.
     """
     text = _strip_pddl_comments(text)
     # Object list: (:objects a b c d)

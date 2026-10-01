@@ -159,7 +159,7 @@ def main():
     print(f"Tasks flipped (repro lose, orig win): {len(flipped_repro_lose_orig_win_idx)}")
 
     print("\n" + "=" * 72)
-    print("CRITICAL TEST: K=1 vs K=3-repro (does iteration help?)")
+    print("K=1 vs K=3-repro: does iteration help?")
     print("=" * 72)
     print(f"K=1:           {n_k1_win}/{n} = {100 * p_k1_rate:.1f}% "
           f"(95% CI {100 * ci_k1[0]:.1f}–{100 * ci_k1[1]:.1f}%)")
@@ -322,16 +322,14 @@ def main():
     print(f"  Cohen's h:                {cohens_h_repro:.3f}")
 
     if delta_pp_k > 3.0 and mcnemar_p_repro < 0.05:
-        print("\nFINAL: Iterative E4 IS a real, statistically significant contribution.")
+        print("\nK=3 lift over K=1 exceeds 3pp and is significant (p<0.05).")
     elif delta_pp_k > 3.0:
-        print("\nFINAL: Iterative E4 lifts numbers >3pp but McNemar NOT significant. "
-              "NEEDS-MORE-DATA.")
+        print("\nK=3 lift over K=1 exceeds 3pp but is not significant "
+              "at this N.")
     elif delta_pp_k > 0:
-        print("\nFINAL: Iterative E4 lift <3pp; LIKELY SAMPLING NOISE. "
-              "Drop the novelty claim.")
+        print("\nK=3 lift over K=1 is under 3pp: within sampling noise.")
     else:
-        print("\nFINAL: Iterative E4 HURTS or makes no difference. "
-              "DO NOT ship as a novelty.")
+        print("\nK=3 does not improve on K=1.")
 
 
 if __name__ == "__main__":

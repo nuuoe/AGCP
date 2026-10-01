@@ -151,9 +151,7 @@ def main():
         "general": {"training_method": "dagger"},
         "dagger": {"training": {"max_nb_steps_per_episode": 50}},
     }
-    print("=" * 60)
-    print("ALFWORLD INDUCTION")
-    print("=" * 60)
+    print("ALFWorld induction")
     env = AlfredTWEnv(config, train_eval="train")
     tw = env.init_env(batch_size=1)
 
@@ -162,17 +160,17 @@ def main():
         n_steps_per_episode=args.n_steps_per_episode,
     )
     trs_ok = [t for t in transitions if t[0] != t[-1]]
-    print(f"\n[1] Collected {len(transitions)} transitions "
+    print(f"\nCollected {len(transitions)} transitions "
           f"({len(trs_ok)} non-noop)")
 
     by_action = defaultdict(int)
     for _sb, action, _args, _sa in trs_ok:
         by_action[action] += 1
-    print(f"[2] Action distribution:")
+    print(f"Action distribution:")
     for a, c in sorted(by_action.items(), key=lambda x: -x[1]):
         print(f"    {a}: {c}")
 
-    print(f"\n[3] Inducing lifted action schemas...")
+    print(f"\nInducing lifted action schemas...")
     models = induce_lifted_models_positional(trs_ok)
     for action, m in sorted(models.items()):
         print(f"\n  {action}  (n={m['n_examples']})")

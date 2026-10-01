@@ -141,11 +141,8 @@ def _extract_objects(atom: str) -> list[str]:
 
 
 def _llm_json_to_planbench_plan(raw: str) -> str:
-    """Convert AGCP's JSON-wrapped plan to PlanBench's LISP one-per-line
-    format. e.g.
-      {"plan": ["pick-up(red)", "stack(red,orange)"]}
-        -> "(pick-up red)\\n(stack red orange)"
-    """
+    """Convert the JSON plan {"plan": ["pick-up(red)", ...]} to PlanBench's
+    LISP form, one "(pick-up red)" line per action."""
     import json as _json
     try:
         obj = _json.loads(raw)
@@ -255,7 +252,7 @@ def main():
         else:
             planbench_plan = _llm_json_to_planbench_plan(plan_text)
             instance["llm_raw_response"] = planbench_plan
-            instance["agcp_raw_plan"] = plan_text  # keep for debug
+            instance["agcp_raw_plan"] = plan_text
             n_lines = len(planbench_plan.splitlines())
             print(f"plan ({n_lines} actions)")
             n_done += 1

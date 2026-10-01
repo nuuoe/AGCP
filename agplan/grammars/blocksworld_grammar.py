@@ -1,18 +1,10 @@
 """Verifier-induced grammar (G_env) for Blocksworld.
 
-Blocksworld is the canonical AI-planning testbed: N labelled blocks
-that can be stacked or placed on the table, with a gripper that holds
-one block at a time. Goal: a target stack configuration.
-
-This module compiles a per-task EBNF grammar such that every plan
-accepted by the grammar is goal-achieving from the current state.
-The construction mirrors `env_grammar.compile_env_grammar` for BabyAI:
-BFS over (state, budget) where state = (support_dict, held), and
-goal-checking is a configuration-equality test.
-
-Length bound: max_extra extra actions beyond the optimal plan length,
-which we estimate by counting the number of misplaced blocks plus a
-small constant for gripper movement.
+Compiles a per-task EBNF whose every accepted plan reaches the goal from
+the given state, by the construction of `env_grammar.compile_env_grammar`:
+BFS over (state, budget) with state = (support map, held block) and a
+goal test on the configuration. The budget is the BFS-shortest plan
+length plus max_extra.
 """
 from __future__ import annotations
 
@@ -93,12 +85,8 @@ def _all_actions(labels: list[str]) -> list[tuple]:
 
 
 def _action_to_json(action: tuple, action_name_map: Optional[dict] = None) -> str:
-    """JSON encoding of an action: "op(b)" or "op(b,c)".
-
-    Optionally remap action names via action_name_map (e.g.
-    {'pickup': 'attack', 'unstack': 'feast', ...} for Mystery
-    Blocksworld).
-    """
+    """JSON encoding of an action, "op(b)" or "op(b,c)", with op renamed
+    through action_name_map if given (Mystery Blocksworld)."""
     op = action[0]
     if action_name_map:
         op = action_name_map.get(op, op)
@@ -110,12 +98,9 @@ def _action_to_json(action: tuple, action_name_map: Optional[dict] = None) -> st
 def _goal_states(
     goal_pairs: tuple, reachable: set[State], strict: bool = True
 ) -> set[State]:
-    """States matching goal: held=None and:
-      - if strict: support matches goal_pairs exactly
-      - if not strict (PlanBench-style partial goal): every (b, sup)
-        constraint in goal_pairs is satisfied (i.e. support[b] == sup),
-        with no requirement on other blocks.
-    """
+    """Reachable states with nothing held whose support map equals
+    goal_pairs (strict) or satisfies every (block, support) constraint in
+    it (PlanBench partial goals)."""
     goal_dict = dict(goal_pairs)
     goals = set()
     for s in reachable:
@@ -127,7 +112,6 @@ def _goal_states(
             if support == goal_dict:
                 goals.add(s)
         else:
-            # Partial goal: every constraint must hold; others free.
             if all(support.get(b) == sup for b, sup in goal_pairs):
                 goals.add(s)
     return goals
@@ -185,16 +169,13 @@ def compile_blocksworld_grammar(
     strict_goal: bool = True,
     action_name_map: Optional[dict] = None,
 ) -> Optional[str]:
-    """Compile EBNF that admits only goal-achieving plans for
-    Blocksworld from the given initial state.
+    """Compile the EBNF of goal-reaching Blocksworld plans from initial_support.
 
-    initial_support: dict block -> support ('TABLE' or another block)
-    goal_pairs: tuple of (block, support) pairs the goal requires
-    labels: list of block labels (e.g. ['A','B','C','D'])
-    max_extra: budget = shortest_path + max_extra
-    strict_goal: if False, accept any state satisfying the partial
-                 goal constraints (PlanBench-style). If True, the
-                 full support config must match goal_pairs.
+    initial_support: block -> 'TABLE' or the block below.
+    goal_pairs: (block, support) pairs the goal requires.
+    max_extra: budget = shortest path + max_extra.
+    strict_goal: the whole support map must match goal_pairs; otherwise
+                 any state satisfying the listed constraints is a goal.
     """
     init: State = (frozenset(initial_support.items()), None)
     actions = _all_actions(labels)
@@ -250,10 +231,8 @@ def shortest_path_length(
     labels: list[str],
     held: Optional[str] = None,
 ) -> Optional[int]:
-    """Return BFS-optimal plan length from initial_support to any
-    goal state. None if goal is unreachable. Uses partial-goal
-    semantics (PlanBench-style).
-    """
+    """BFS-shortest plan length under partial-goal semantics, or None if
+    the goal is unreachable."""
     init: State = (frozenset(initial_support.items()), held)
     actions = _all_actions(labels)
     reachable, trans = _reachable_states(init, actions)

@@ -16,10 +16,8 @@ def update_cache_from_plan(
     min_n: int = 2,
     max_n: int = 6,
 ) -> None:
-    """Add every n-gram of `plan` to `cache`, only if `success=True`.
-
-    Updates are positive-only: failed plans leave the cache unchanged.
-    """
+    """Add every n-gram of a successful plan to the cache; a failed plan
+    leaves it unchanged."""
     if not success:
         return
     for fragment in extract_action_ngrams(plan, min_n=min_n, max_n=max_n):
@@ -47,15 +45,12 @@ def score_plan_by_cache(
     length_normalize: bool = False,
     empty_penalty: float = -math.inf,
 ) -> float:
-    """Sum (or mean if length_normalize) of cache log-priors over a plan's n-grams.
+    """Sum (or mean, with length_normalize) of cache log-priors over a plan's n-grams.
 
-    Plans whose fragments are well-represented in the cache score
-    higher (less negative). With length_normalize=True we use the
-    mean instead of the sum, which removes the implicit short-plan
-    preference of the unnormalised score. Plans too short to
-    produce any fragment of length min_n receive `empty_penalty`
-    (default -inf so the reranker drops them); a finite floor keeps
-    them rankable.
+    The mean removes the short-plan preference of the sum. A plan too
+    short to yield a fragment of length min_n scores `empty_penalty`
+    (default -inf, so the reranker drops it; a finite value keeps it
+    rankable).
     """
     fragments = extract_action_ngrams(plan, min_n=min_n, max_n=max_n)
     if not fragments:
@@ -75,11 +70,9 @@ def score_plan_by_mle(
 ) -> float:
     """Sum (or mean) of unsmoothed maximum-likelihood log-priors over a plan's n-grams.
 
-    For each n-gram f with cache count c_f and total N: log(c_f / N) if
-    c_f > 0 else `floor`. The Pitman-Yor discount and concentration are
-    ignored. With length_normalize=True we return the mean.
-    Plans too short to produce any fragment of length min_n receive
-    `empty_penalty` (default -inf so the reranker drops them).
+    Each n-gram with count c > 0 scores log(c / N); unseen n-grams score
+    `floor`. The Pitman-Yor discount and strength are ignored. A plan with
+    no fragment of length min_n scores `empty_penalty`.
     """
     fragments = extract_action_ngrams(plan, min_n=min_n, max_n=max_n)
     if not fragments:

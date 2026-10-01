@@ -590,7 +590,7 @@ def main() -> None:
     args = ap.parse_args()
 
     if args.reinduce or not os.path.exists(INDUCTION_CACHE):
-        print("Inducing schemas from fresh rollouts (v2 normalization)...")
+        print("Inducing schemas from fresh rollouts...")
         ind = collect_and_induce(args.n_games, args.n_episodes_per_game,
                                  args.n_steps)
     else:

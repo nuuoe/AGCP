@@ -56,7 +56,6 @@ class XGrammarConstrainedDecoder:
         ebnf: Optional[str] = None,
         device: Optional[str] = None,
     ):
-        # Allow re-compile of the schema later (for dynamic vocabulary).
         if (schema is None) == (ebnf is None):
             raise ValueError("provide exactly one of `schema` or `ebnf`")
 
@@ -65,8 +64,7 @@ class XGrammarConstrainedDecoder:
 
         self.tokenizer = AutoTokenizer.from_pretrained(model_name)
         self.config = AutoConfig.from_pretrained(model_name)
-        # transformers 4.x uses `torch_dtype`; 5.x uses `dtype`. Try
-        # the newer signature first, fall back to legacy.
+        # transformers 5.x takes `dtype`, 4.x `torch_dtype`.
         _dt = torch.float16 if self.device == "cuda" else torch.float32
         try:
             self.model = AutoModelForCausalLM.from_pretrained(

@@ -1,25 +1,12 @@
-"""COMPOSITIONAL ABSTRACTION REUSE on Depots (IPC-2002).
+"""Cross-domain schema reuse on Depots (IPC-2002).
 
-Depots is the canonical compositional planning benchmark: its
-action set is literally Blocksworld (stack/unstack via hoists)
-PLUS Logistics (drive trucks between depots). Each action uses
-predicates from a clearly identifiable subdomain.
-
-Pipeline:
-  1. Induce lifted schemas on LOGISTICS problems → SchemaMemory.
-  2. Induce lifted schemas on BLOCKSWORLD problems → SchemaMemory.
-  3. Collect Depots transitions from random rollouts.
-  4. For each Depots action: attempt STRUCTURAL reuse from
-     SchemaMemory (cross-action-name, signature-subset match)
-     against held-out Depots transitions. Accept if verifier
-     accuracy ≥ threshold. Else fresh-induce from Depots
-     transitions.
-  5. Compare resulting Depots model F1 vs ground-truth PDDL.
-  6. Report: actions reused (and from which source domain),
-     actions fresh-induced, total compute saved.
-
-This demonstrates the compositional-abstraction-reuse claim on
-a REAL IPC benchmark, not a hand-crafted hybrid.
+Depots combines Blocksworld-style stacking (via hoists) with Logistics-style
+truck movement. Schemas induced on Logistics and Blocksworld problems go into
+a SchemaMemory; each Depots action is matched structurally against that memory
+(any source action name, scored on held-out Depots transitions) and induced
+from Depots transitions only when no stored schema reaches --accept_threshold.
+Reports per-action F1 against the Depots PDDL and which actions were reused;
+writes --out.
 """
 from __future__ import annotations
 
@@ -38,12 +25,8 @@ from scripts.grounding import ground_lifted
 
 def grounded_verifier(schema: dict, held_out: list,
                        min_n: int = 5) -> float:
-    """Apply lifted schema to each held-out transition. Score =
-    fraction where predicted state_after matches observed.
-
-    Returns 0 if held_out has < min_n samples (insufficient evidence
-    — refuse to claim reuse on too-few examples).
-    """
+    """Fraction of held-out transitions whose observed successor state equals
+    the one predicted by the schema's effects; 0.0 below min_n samples."""
     if len(held_out) < min_n:
         return 0.0
     add_t = set(schema.get("eff_add", []))
@@ -62,10 +45,9 @@ def try_structural_reuse(memory: SchemaMemory,
                           held_out: list,
                           accept_threshold: float = 0.9,
                           ) -> tuple:
-    """Try every memory schema (regardless of original name)
-    against held_out. Return (matched_entry, score) for the best
-    match, or (None, 0.0) if none meets threshold.
-    """
+    """Score every memory schema against held_out regardless of its original
+    action name; return (entry, score) for the best match, or (None, best_score)
+    if none reaches accept_threshold."""
     obs_names = set()
     for sb, _act, _args, sa in held_out:
         for p in sb | sa:
@@ -106,32 +88,30 @@ def main():
     ap.add_argument("--out", required=True)
     args = ap.parse_args()
 
-    print("=" * 60)
-    print("COMPOSITIONAL ABSTRACTION REUSE — Depots = BW + Logistics")
-    print("=" * 60)
+    print("Schema reuse on Depots (Blocksworld + Logistics)")
 
-    # ---- STEP 1: Logistics → memory ----
-    print("\n[1] Inducing on LOGISTICS...")
+    # Logistics schemas into memory.
+    print("\nInducing on Logistics...")
     log_paths = sorted(glob.glob(args.log_problems))[
         :args.n_problems_per_domain]
     log_trs = collect_transitions(args.log_domain, log_paths,
                                     steps_per_problem=args.steps_per_problem)
     log_models = induce_lifted_models(log_trs)
-    print(f"  {len(log_trs)} transitions → {len(log_models)} schemas: "
+    print(f"  {len(log_trs)} transitions -> {len(log_models)} schemas: "
           f"{sorted(log_models.keys())}")
 
     memory = SchemaMemory()
     for op, m in log_models.items():
         memory.add(op, m, provenance="logistics")
 
-    # ---- STEP 2: Blocksworld → memory ----
-    print("\n[2] Inducing on BLOCKSWORLD...")
+    # Blocksworld schemas into memory.
+    print("\nInducing on Blocksworld...")
     bw_paths = sorted(glob.glob(args.bw_problems))[
         :args.n_problems_per_domain]
     bw_trs = collect_transitions(args.bw_domain, bw_paths,
                                    steps_per_problem=args.steps_per_problem)
     bw_models = induce_lifted_models(bw_trs)
-    print(f"  {len(bw_trs)} transitions → {len(bw_models)} schemas: "
+    print(f"  {len(bw_trs)} transitions -> {len(bw_models)} schemas: "
           f"{sorted(bw_models.keys())}")
 
     for op, m in bw_models.items():
@@ -139,8 +119,8 @@ def main():
 
     print(f"\n  Total memory: {len(memory.schemas)} schemas from 2 domains")
 
-    # ---- STEP 3: Depots transitions ----
-    print("\n[3] Collecting DEPOTS rollouts...")
+    # Depots transitions.
+    print("\nCollecting Depots rollouts...")
     depots_paths = sorted(glob.glob(args.depots_problems))[
         :args.n_problems_per_domain]
     depots_trs = collect_transitions(args.depots_domain, depots_paths,
@@ -154,8 +134,8 @@ def main():
         by_action.setdefault(action, []).append((sb, action, args_t, sa))
     print(f"  Depots action set: {sorted(by_action.keys())}")
 
-    # ---- STEP 4: Per-action structural reuse vs fresh induction ----
-    print("\n[4] Per-action: try reuse, else fresh-induce...")
+    # Per-action structural reuse, else fresh induction.
+    print("\nPer action: try reuse, else induce afresh...")
     final_models = {}
     reuse_report = {}
     fresh_trs_for_reinduction = []
@@ -201,8 +181,8 @@ def main():
                 }
                 print(f"    {op}: FRESH-induced ({m['n_examples']} examples)")
 
-    # ---- STEP 5: F1 vs Depots ground-truth ----
-    print("\n[5] Compare composite model vs Depots GT...")
+    # F1 against the Depots ground truth.
+    print("\nComparing the composite model with the Depots ground truth...")
     dom, _task = load_task(args.depots_domain, depots_paths[0])
     gt = ground_truth_models(dom)
     overall = []
@@ -221,12 +201,11 @@ def main():
         print(f"  {action} [{marker}]: pre F1={pp[2]:.2f} "
               f"add F1={aa[2]:.2f} del F1={dd[2]:.2f}")
 
-    # ---- STEP 6: Summary ----
+    # Summary.
     n_reused = sum(1 for v in reuse_report.values() if v["reused"])
     n_total = len(by_action)
-    print("\n" + "=" * 60)
-    print(f"COMPOSITIONAL REUSE: {n_reused}/{n_total} Depots actions "
-          f"reused schemas from prior subdomains")
+    print(f"\nReuse: {n_reused}/{n_total} Depots actions "
+          f"reused schemas from the source domains")
     print(f"  ({n_total - n_reused} fresh-induced from Depots transitions)")
     if overall:
         mean_pre = sum(pp[2] for _, pp, _, _ in overall) / len(overall)
@@ -234,7 +213,6 @@ def main():
         mean_del = sum(dd[2] for _, _, _, dd in overall) / len(overall)
         print(f"  Final-model mean F1: pre={mean_pre:.2f} "
               f"add={mean_add:.2f} del={mean_del:.2f}")
-    print("=" * 60)
 
     Path(args.out).parent.mkdir(parents=True, exist_ok=True)
     with open(args.out, "w") as f:

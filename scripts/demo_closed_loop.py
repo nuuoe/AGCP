@@ -1,27 +1,10 @@
-"""N4: Closed-loop end-to-end demonstration.
+"""Closed-loop PlanBench demo on one instance, from rollouts to execution.
 
-ONE concrete trace through the full AGCP architecture, start to
-finish, with no shortcuts:
-
-  Step 1.  Random env rollouts (no PDDL, no NL goal)
-  Step 2.  Lifted action-schema induction (intersection-stats +
-           positional templating + pre-minimality refinement)
-  Step 3.  LLM parses NL goal description → structured goal
-           predicates (verifier-gated, may refine)
-  Step 4.  CFG mask compilation from induced schemas + parsed goal
-           (BFS multi-plan, A* fallback)
-  Step 5.  LLM-under-mask plan generation (XGrammar-constrained
-           Qwen decoding)
-  Step 6.  Execute plan in env, check goal satisfied
-  Step 7.  Report full trace + per-stage timing
-
-Every step writes a trace entry. The output is a single JSON file
-that documents the entire closed loop on one instance. This is
-the "aha" demo for the paper.
-
-Domain: PlanBench Mystery Blocksworld (the canonical hard LLM-
-planning benchmark where stock LLMs fail at ~1%, our pipeline
-solves at 100%). NL goal description in PlanBench's prompts.
+Random rollouts, lifted-schema induction, verifier-gated LLM parse of the
+NL goal, G_env CFG compilation (bounded BFS, A* fallback), XGrammar-
+constrained decoding and execution against the PDDL goal; per-stage
+outputs and timings are written as a trace to --out. Default instance:
+PlanBench Mystery Blocksworld, instance 2.
 """
 from __future__ import annotations
 
@@ -241,7 +224,6 @@ def main():
 
     trace = {}
 
-    # Step 1
     print("[Step 1] Random env rollouts ...")
     s1, trs_ok, task = step1_rollouts(domain_path, instance_path)
     print(f"  {s1['n_transitions']} transitions, "
@@ -249,7 +231,6 @@ def main():
           f"{s1['seconds']:.1f}s")
     trace["step1_rollouts"] = s1
 
-    # Step 2
     print("\n[Step 2] Lifted-schema induction ...")
     s2, models = step2_induce_schemas(trs_ok)
     print(f"  Induced {s2['n_actions_induced']} action models in "
@@ -259,7 +240,6 @@ def main():
               f"add={m['eff_add'][:2]}, del={m['eff_del'][:2]}")
     trace["step2_induction"] = s2
 
-    # Step 3: parse NL goal
     print("\n[Step 3] LLM parses NL goal (verifier-gated) ...")
     # Read NL goal from PlanBench prompt
     prompts_json = os.path.join(args.plan_bench_root, "prompts",
@@ -301,7 +281,6 @@ def main():
           f"{s3.get('seconds', 0):.1f}s")
     trace["step3_nl_parse"] = s3
 
-    # Step 4: build CFG
     print("\n[Step 4] Compile G_env CFG mask ...")
     from scripts.induce_pddl_generic import state_to_predicates
     init_state = state_to_predicates(task.initial_state)
@@ -312,7 +291,6 @@ def main():
           f"{s4['seconds']:.1f}s")
     trace["step4_cfg"] = s4
 
-    # Step 5: decode plan
     print("\n[Step 5] LLM-under-mask plan decoding ...")
     s5, raw = step5_decode_plan(cfg_obj, args.model)
     if isinstance(s5, tuple):
@@ -321,7 +299,6 @@ def main():
     print(f"  {s5.get('seconds', 0):.1f}s")
     trace["step5_decode"] = s5
 
-    # Step 6: execute
     print("\n[Step 6] Execute plan + check goal ...")
     s6, success = step6_execute_plan(raw, task)
     print(f"  Applied {s6['n_applied']} actions")
@@ -334,7 +311,7 @@ def main():
                   if isinstance(s, dict))
     print("\n" + "=" * 70)
     print(f"CLOSED LOOP COMPLETE in {total:.1f}s")
-    print(f"  Rollouts → Induction → NL parse → CFG → Decode → Execute")
+    print(f"  Rollouts -> Induction -> NL parse -> CFG -> Decode -> Execute")
     print(f"  Goal achieved: {success}")
     print("=" * 70)
 

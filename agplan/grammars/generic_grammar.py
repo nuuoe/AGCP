@@ -44,12 +44,8 @@ def _ground_action_set(action: str, model: dict, args: tuple[str, ...]
 
 def _enumerate_args(action: str, model: dict, objects: list[str]
                     ) -> list[tuple[str, ...]]:
-    """Enumerate all argument tuples (distinct objects per position)
-    for an action.
-
-    Determines arity by counting {a1}, {a2}, ... in the model's
-    predicate templates (max index found).
-    """
+    """All argument tuples of distinct objects for an action; the arity is
+    the model's, or the largest {aN} index in its templates."""
     max_idx = 0
     for tmpl_set in (model.get("pre_pos", set()),
                      model.get("eff_add", set()),
@@ -69,8 +65,7 @@ def _enumerate_args(action: str, model: dict, objects: list[str]
 
 
 def _applicable(state: State, pre: set[str]) -> bool:
-    """Check positive preconditions hold (negative preconditions are
-    not modelled in this induced-model variant)."""
+    """Positive preconditions hold; negative preconditions are not modelled."""
     return pre <= state
 
 
@@ -80,8 +75,7 @@ def _apply(state: State, add: set[str], rem: set[str]) -> State:
 
 
 def _action_to_json(action: str, args: tuple[str, ...]) -> str:
-    """Render an action call as the JSON token the LLM will emit.
-    Format: "action(arg1,arg2,...)"."""
+    """The action token the model emits: "action(arg1,arg2,...)"."""
     if not args:
         return action
     return f"{action}({','.join(args)})"
@@ -93,18 +87,10 @@ def compile_from_action_models_astar(
     goal_predicates: set[str],
     max_extra: int = 4,
 ) -> Optional[str]:
-    """A*-based variant: use pyperplan's A*+hAdd to find ONE plan,
-    then build a CFG that admits that exact plan (sequence of
-    action calls). The LLM samples under a CFG that is degenerate
-    (single sequence) but the same XGrammar mask remains the
-    soundness oracle — the LLM cannot emit an invalid plan because
-    the mask only allows this one valid sequence.
-
-    For domains where the plan space is large enough that the
-    multi-plan BFS-CFG does not terminate within budget, this is
-    the operational fallback. The LLM-under-mask architecture is
-    retained (the LLM still performs the decoding); the CFG is
-    informed by classical search instead of full enumeration.
+    """Fallback for domains whose state space is too large for
+    compile_from_action_models: find one plan with pyperplan's A* + hAdd
+    and emit a CFG that admits exactly that sequence. Decoding still runs
+    through the mask, which now admits a single plan.
     """
     from pyperplan.search import astar_search
     from pyperplan.heuristics.relaxation import hAddHeuristic
@@ -117,7 +103,6 @@ def compile_from_action_models_astar(
     if not sol:
         return None
 
-    # Build CFG from plan: sequence of action calls separated by commas
     productions: list[str] = []
     productions.append('root ::= "{\\"plan\\":[" plan_seq "]}"')
 
@@ -162,38 +147,26 @@ def compile_from_action_models(
 ) -> Optional[str]:
     """Compile an EBNF admitting exactly the goal-reaching plans under the action models.
 
-    Args:
-        action_models: action name -> {pre_pos, eff_add, eff_del[, arity]}.
-        initial_state: predicate set at s_0.
-        goal_predicates: predicates that must hold at termination.
-        objects: ground object universe.
-        max_extra: plan-length budget is the shortest path plus max_extra.
-        max_length: hard bound on plan length; derived from max_extra if None.
-
-    Returns:
-        EBNF string for XGrammar, or None if no goal is reachable within the budget.
+    action_models maps each action name to {pre_pos, eff_add, eff_del[,
+    arity]}. The plan-length budget is the shortest path plus max_extra,
+    or max_length when given. Grounding uses, in order of precedence,
+    ground_op_oracle ((action, args) -> object with applicable(state) and
+    apply(state), pyperplan's exact check), ground_op_filter (action ->
+    allowed argument tuples, applicability still from the induced model),
+    or the untyped product over objects. Reachability stops after
+    max_reachable states, which keeps large domains (depot, satellite)
+    tractable; stats, if given, receives the counts and the failure
+    reason. Returns None when no goal state is reachable within the
+    budget.
     """
-    # --- Reachability BFS to find all reachable states. ---
-    # Three optional sources of typed/applicability info, in order
-    # of precedence:
-    #   - ground_op_oracle: dict[(action_str, args_tuple)] -> object
-    #       with .applicable(raw_state) and .apply(raw_state).
-    #       Uses pyperplan's exact applicability check, bypassing
-    #       our induced schema's pre. Most precise (recommended).
-    #   - ground_op_filter: dict[action_str] -> list[args_tuple].
-    #       Restricts enumeration to typed-grounded (action, args)
-    #       pairs. Applicability still gated by induced model.
-    #   - objects: untyped Cartesian product fallback.
-    # Reachability is capped at max_reachable states to avoid
-    # exponential blow-up on large domains (depot, satellite).
+    # Reachability BFS.
     reachable = {initial_state}
     transitions: dict[tuple[State, str, tuple[str, ...]], State] = {}
     queue = deque([initial_state])
     while queue:
         if len(reachable) >= max_reachable:
-            # Bounded BFS: stop expanding when state-space cap hit.
-            # CFG built from partial reachability still admits some
-            # goal-achieving plans (those within the explored set).
+            # Cap hit: the grammar is built from the explored part of the
+            # state space.
             if stats is not None:
                 stats["cap_hit"] = True
             break
@@ -219,7 +192,7 @@ def compile_from_action_models(
                     reachable.add(ns)
                     queue.append(ns)
 
-    # --- Find goal-satisfying states. ---
+    # Goal states.
     goal_states = {s for s in reachable if goal_predicates <= s}
     if stats is not None:
         stats.setdefault("cap_hit", False)
@@ -231,7 +204,7 @@ def compile_from_action_models(
             stats["fail_reason"] = "no_goal_state_in_reachable"
         return None
 
-    # --- Reverse BFS for distance-to-goal. ---
+    # Reverse BFS for distance to goal.
     rev: dict[State, list[State]] = {}
     for (s, a, args), ns in transitions.items():
         rev.setdefault(ns, []).append(s)
@@ -254,7 +227,7 @@ def compile_from_action_models(
         stats["shortest"] = shortest
         stats["budget"] = budget
 
-    # --- Forward BFS over (state, budget) to emit CFG productions. ---
+    # Forward BFS over (state, budget).
     state_id: dict[State, int] = {}
     def _name(s: State, b: int) -> str:
         if s not in state_id:
@@ -275,9 +248,8 @@ def compile_from_action_models(
         if b == 0:
             continue
         rules: list[str] = []
-        # If s itself is already a goal state, allow an empty-plan
-        # production. Without this, instances whose initial state
-        # satisfies the goal would produce a non-terminating grammar.
+        # A goal state admits the empty plan; otherwise an instance whose
+        # initial state satisfies the goal gets a non-terminating grammar.
         if s in goal_states:
             rules.append('""')
         for action, model in action_models.items():
@@ -307,12 +279,9 @@ def compile_from_action_models(
                     )
                     q2.append((ns, ns_b))
         if not rules:
-            # Edge case: no applicable transition reaches the goal
-            # within remaining budget. Still emit a (no-op) empty
-            # production so the rule name already referenced from
-            # upstream is well-defined. The grammar accepts an empty
-            # plan suffix at this point; the LLM has no way to
-            # continue, but parsing does not error out.
+            # No transition reaches the goal within the budget; an empty
+            # production keeps the name, already referenced upstream,
+            # defined.
             productions.append(f'{_name(s, b)} ::= ""')
             continue
         productions.append(f"{_name(s, b)} ::= {' | '.join(rules)}")

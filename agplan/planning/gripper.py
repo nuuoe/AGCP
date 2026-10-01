@@ -65,8 +65,8 @@ class GripperEnv:
         }
 
     def raw_state(self):
-        """Expose the state as a structured dict (the input to
-        predicate discovery / induction). No predicate vocabulary."""
+        """Structured state dict, the input to predicate discovery; no
+        predicate vocabulary."""
         return {
             "robby_at": self.robby_at,
             "ball_at": dict(self.ball_at),

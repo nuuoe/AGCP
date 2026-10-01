@@ -356,7 +356,7 @@ def main() -> None:
         json.dump(out, f, indent=2, default=str)
     cov_m = sum(s["coverage"] for s in per_seed) / len(per_seed)
     e2e_m = sum(s["e2e_success"] for s in per_seed) / len(per_seed)
-    print(f"\nMEAN over {len(per_seed)} seeds (n_holdout={args.n_holdout}): "
+    print(f"\nMean over {len(per_seed)} seeds (n_holdout={args.n_holdout}): "
           f"coverage {cov_m:.1f}/10  e2e {e2e_m:.1f}/10")
     print(f"wrote: {args.out}")
 

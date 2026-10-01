@@ -49,11 +49,11 @@ def featurise(
     macro_min_n: int = 2,
     macro_max_n: int = 4,
 ) -> list[float]:
-    """Return a list[float] in the order of FEATURE_NAMES.
+    """Feature vector in FEATURE_NAMES order.
 
-    Missing priors return 0 for the corresponding feature. Empty plans
-    return zeros for length-dependent features and 0 for all log-prior
-    features (so they sort low under any positive coefficient)."""
+    A prior that is None contributes 0 to its features. A plan too short
+    to yield a fragment scores -50 on the cache features, and an empty
+    plan -inf on the PCFG features."""
     actions = plan.flat_actions()
     n = len(actions)
     counts = {a: 0 for a in Action}

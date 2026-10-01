@@ -1,4 +1,4 @@
-"""Tests for ReDuce-S (state-aware grammar induction)."""
+"""Tests for SCI-ReDuce (state-class indexed grammar induction)."""
 from __future__ import annotations
 
 import pytest
@@ -98,8 +98,8 @@ def test_induce_state_aware_smoke():
 
 
 def test_compile_state_aware_ebnf_smoke():
-    """End-to-end: induce ReDuce-S from 2-block Blocksworld
-    trajectories, compile EBNF, check it's syntactically reasonable."""
+    """Induce SCI-ReDuce from 2-block Blocksworld trajectories and compile
+    the EBNF."""
     # Simple traj: pickup A, stack A B
     s0 = frozenset({"handempty", "ontable(A)", "ontable(B)",
                     "clear(A)", "clear(B)"})
@@ -123,9 +123,8 @@ def test_compile_state_aware_ebnf_smoke():
 
 
 def test_plan_admits_basic():
-    """The _plan_admits parser should recognize plans whose
-    action sequence corresponds to a valid path through the
-    state-class EBNF productions."""
+    """_plan_admits accepts exactly the action sequences that are paths
+    through the state-class productions."""
     from scripts.run_leave_out_n import _plan_admits
 
     ebnf = (
@@ -139,9 +138,7 @@ def test_plan_admits_basic():
 
 
 def test_plan_admits_with_intermediate_class():
-    """Two-step EBNF: sc0 -> action , sc1 ; sc1 -> action.
-    Both intermediate class hops and terminal alternative should
-    parse correctly."""
+    """Intermediate class hops and the terminal alternative both parse."""
     from scripts.run_leave_out_n import _plan_admits
 
     ebnf = (

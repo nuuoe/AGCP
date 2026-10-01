@@ -64,9 +64,9 @@ def paired(a_map: dict, b_map: dict) -> tuple[int, int, int, float]:
     return len(ids), a_only, b_only, mcnemar_two_sided(a_only, a_only + b_only)
 
 
-# 1. isolation
+# Mask isolation
 def check_mask_isolation() -> None:
-    print("\n[1] Mask-isolation ablation (§5.1)")
+    print("\n[1] Mask-isolation ablation (Sec. 5.1)")
     for tag, domain, expected_success in [
         ("syntax_bw", "Blocksworld syntax-only", 0),
         ("syntax_mystery", "Mystery syntax-only", 0),
@@ -87,9 +87,9 @@ def check_mask_isolation() -> None:
                   sum(1 for r in rows if r.get("first_success_idx") == 0))
 
 
-# 2. paraphrase
+# Paraphrase control
 def check_decontamination() -> None:
-    print("\n[2] Post-cutoff paraphrase control (§5.2)")
+    print("\n[2] Post-cutoff paraphrase control (Sec. 5.2)")
     for cond, system, expected in [
         ("struct", "regex", "2/251"),
         ("struct", "gpt4o", "158/251"),
@@ -133,7 +133,7 @@ def check_decontamination() -> None:
         check(name, expected, f"{d[key]}/{d['n_total']}")
 
 
-# 3. E6 planners
+# E6 planners
 def _exec_map(path: str) -> dict | None:
     d = load(path)
     if d is None:
@@ -142,7 +142,7 @@ def _exec_map(path: str) -> dict | None:
 
 
 def check_e6_planners() -> None:
-    print("\n[3] Three-planner E6 comparison (§5.4)")
+    print("\n[3] Three-planner E6 comparison (Sec. 5.4)")
     induced = _exec_map("runs/alfworld_e6_induced_planner.json")
     llm = _exec_map("runs/alfworld_closed_loop_e6_llm_planner.json")
     llm80 = load("runs/alfworld_closed_loop_e6_llm_planner_cap80.json")
@@ -154,7 +154,7 @@ def check_e6_planners() -> None:
           f"{sum(induced.values())}/{len(induced)}")
 
     # The paper quotes the LLM-as-planner twice, on two denominators:
-    # 43/119 over the raw stream (§5.4 text) and 42/114 on the set paired
+    # 43/119 over the raw stream (Sec. 5.4 text) and 42/114 on the set paired
     # against the induced planner (Table 3b). Both are checked.
     llm_raw = load("runs/alfworld_closed_loop_e6_llm_planner.json")
     check("LLM-as-planner, raw stream (30-step cap)", "43/119",
@@ -176,9 +176,9 @@ def check_e6_planners() -> None:
     check("induced vs LLM-planner: p = 1.0", 1.0, round(p, 6))
 
 
-# 4. fallback
+# Fallback provenance
 def check_fallback_provenance() -> None:
-    print("\n[4] Corrected fallback provenance (§3.3)")
+    print("\n[4] Fallback provenance (Sec. 3.3)")
     d = load("runs/compile_provenance_planbench_fixed.json")
     if d is not None:
         agg = d["aggregate"]
@@ -206,9 +206,9 @@ def check_fallback_provenance() -> None:
         check("AutoPlanBench A* recovers", f"93/{need}", f"{ok}/{need}")
 
 
-# 5. SCI-ReDuce
+# SCI-ReDuce end-to-end
 def check_scireduce_e2e() -> None:
-    print("\n[5] SCI-ReDuce end-to-end (§5.4)")
+    print("\n[5] SCI-ReDuce end-to-end (Sec. 5.4)")
     raw = load("runs/scireduce_e2e_raw.json")
     if raw is not None:
         seeds = raw["per_seed"]
@@ -229,9 +229,9 @@ def check_scireduce_e2e() -> None:
         check("compile failures (the whole loss)", "25/40", f"{n - compiled}/{n}")
 
 
-# 6/7. RQ3
+# RQ3 chain and its GPT-4o replication
 def check_rq3() -> None:
-    print("\n[6] RQ3 uniform paired chain (§5.3)")
+    print("\n[6] RQ3 uniform paired chain (Sec. 5.3)")
     d = load("runs/rq3_parse_level.json")
     if d is not None:
         runs, pairs = d["runs"], d["pairs"]
@@ -263,7 +263,7 @@ def check_rq3() -> None:
               (8, 1), (pairs["LayerA_K3->LayerB_refine:acc0.9"]["wins_b_only"],
                        pairs["LayerA_K3->LayerB_refine:acc0.9"]["wins_a_only"]))
 
-    print("\n[7] Cross-model RQ3 replication, GPT-4o (§5.3)")
+    print("\n[7] Cross-model RQ3 replication, GPT-4o (Sec. 5.3)")
     for label, path, expected in [
         ("one-shot 67.2%", "runs/alfworld_iterative_e4_gpt4o_K1.json", 80),
         ("Layer A 71.4%", "runs/alfworld_iterative_e4_gpt4o.json", 85),
@@ -276,9 +276,9 @@ def check_rq3() -> None:
         check(f"GPT-4o {label} denominator", 119, d["n_total"])
 
 
-# Table 1 match
+# Table 1 matched denominators
 def check_table1_matched() -> None:
-    print("\n[8] Table 1 matched denominators (§5.1)")
+    print("\n[8] Table 1 matched denominators (Sec. 5.1)")
     d = load("runs/llm_removal_depots_n30.json")
     if d is not None:
         check("No-LLM Depots at N=30", "30/30",
@@ -296,9 +296,9 @@ def check_table1_matched() -> None:
           f"{pooled_k}/{pooled_n}")
 
 
-# 8. syntax-only failure modes
+# Syntax-only failure modes
 def check_syntax_failure_modes() -> None:
-    """§5.1's breakdown of why the syntax-only samples fail."""
+    """Sec. 5.1's breakdown of why the syntax-only samples fail."""
     import collections
     pooled: collections.Counter = collections.Counter()
     for tag in ("syntax_bw", "syntax_mystery"):
@@ -320,7 +320,7 @@ def check_syntax_failure_modes() -> None:
     check("ran to the horizon", 2, horizon)
 
 
-# 9. adversarial mask (Ethics)
+# Adversarial mask (Ethics section)
 def check_adversarial() -> None:
     rows = load_jsonl(
         "runs/adversarial_q7/adversarial.jsonl"
@@ -340,7 +340,7 @@ def check_adversarial() -> None:
           len({r["adversarial"] for r in rows}))
 
 
-# 10. AutoPlanBench breadth
+# AutoPlanBench breadth
 def check_apb_breadth() -> None:
     import glob
     solved = total = 0
@@ -355,7 +355,7 @@ def check_apb_breadth() -> None:
     check("APB breadth scan: solved", "63/96", f"{solved}/{total}")
 
 
-# 11. SCI-ReDuce sample counts
+# SCI-ReDuce sample counts
 def check_scireduce_samples() -> None:
     raw = load("runs/scireduce_e2e_raw.json")
     bud = load("runs/scireduce_e2e_budget.json")
@@ -376,7 +376,7 @@ def check_scireduce_samples() -> None:
           f"/{len(b_comp) * bud['k']}")
 
 
-# 12. regex NL-parse baseline
+# Regex NL-parse baseline
 def check_regex_baseline() -> None:
     import glob
     acc = tot = 0
@@ -391,9 +391,7 @@ def check_regex_baseline() -> None:
 
 
 def main() -> None:
-    print("=" * 78)
     print("Reported-number check")
-    print("=" * 78)
     check_mask_isolation()
     check_decontamination()
     check_e6_planners()
@@ -406,9 +404,9 @@ def main() -> None:
     check_apb_breadth()
     check_scireduce_samples()
     check_regex_baseline()
-    print("\n" + "=" * 78)
+    print()
     if FAILURES:
-        print(f"{len(FAILURES)} PROBLEM(S) out of {CHECKED} checks:")
+        print(f"{len(FAILURES)} problem(s) out of {CHECKED} checks:")
         for f in FAILURES:
             print(f"  - {f}")
         sys.exit(1)

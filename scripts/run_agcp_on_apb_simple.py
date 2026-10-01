@@ -30,7 +30,7 @@ def parse_lisp_plan(text: str) -> list[tuple]:
 
 
 def _llm_json_to_lisp(raw: str) -> str:
-    """{"plan":["pick-up(a)",...]} → "(pick-up a)\\n..."."""
+    """Convert {"plan": ["pick-up(a)", ...]} to one "(pick-up a)" line per action."""
     import json as _json
     try:
         obj = _json.loads(raw)
@@ -49,8 +49,7 @@ def _llm_json_to_lisp(raw: str) -> str:
 
 
 def _with_timeout(seconds: int, fn, *args, **kwargs):
-    """Run fn with a SIGALRM-based wall-clock timeout. Returns
-    (result, None) or (None, "timeout")."""
+    """Run fn under a SIGALRM wall-clock timeout; return (result, None) or (None, reason)."""
     import signal
     class _TimeoutError(Exception): pass
     def _h(signum, frame): raise _TimeoutError()
@@ -250,10 +249,8 @@ def main():
 
     total_solved = sum(s["n_solved"] for s in summary.values())
     total = sum(s["n_total"] for s in summary.values())
-    print("\n" + "=" * 60)
-    print(f"AGCP on AutoPlanBench: {total_solved}/{total} = "
+    print(f"\nAGCP on AutoPlanBench: {total_solved}/{total} = "
           f"{100*total_solved/max(total,1):.1f}% across {len(summary)} domains")
-    print("=" * 60)
 
     Path(args.out).parent.mkdir(parents=True, exist_ok=True)
     with open(args.out, "w") as f:

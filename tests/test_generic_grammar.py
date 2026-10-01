@@ -45,8 +45,8 @@ def test_generic_compiler_smoke_blocksworld():
     assert "pickup(a)" in ebnf
     assert "stack(a,b)" in ebnf
     assert ebnf.count("::=") >= 3
-    # Goal already-satisfied check: empty plan should NOT be accepted
-    # (a not on b at start)
+    # The initial state does not satisfy the goal, so the empty plan is
+    # not admitted.
     assert '"{\\"plan\\":[]}"' not in ebnf
 
 
@@ -60,13 +60,10 @@ def test_arity_inference_from_templates():
         },
     }
     initial = frozenset({"p(x)", "q(y)"})
-    goal: set[str] = set()  # vacuous; should still compile or return None
+    goal: set[str] = set()  # satisfied by every state
     out = compile_from_action_models(models, initial, goal,
                                       objects=["x", "y"], max_extra=1)
-    # No transitions reach a non-trivial new state -> goal may not be
-    # reachable depending on the empty-goal semantics; this only
-    # checks that the arity inference path does not crash.
-    # (Goal is empty set, satisfied by any state.)
+    # Only exercises the arity inference path.
     assert out is None or "act" in out or out == ""
 
 
@@ -89,7 +86,7 @@ def test_zero_arity_action():
 
 
 def test_unreachable_goal_returns_none():
-    """Goal that no action sequence can reach -> None."""
+    """A goal no action sequence reaches gives None."""
     models = {
         "a": {
             "pre_pos": set(),

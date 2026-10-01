@@ -82,7 +82,7 @@ python scripts/run_agcp_on_apb_simple.py --apb_root external/autoplanbench/autop
 
 ## License
 
-The code is released under the Apache License 2.0 (see `LICENSE`). Benchmark files under `domains/` and `runs/planbench_responses/` derive from PlanBench (MIT License) and the IPC 2023 learning-track benchmarks and remain under their own terms.
+Copyright 2026 Nijesh Upreti. The code is released under the Apache License 2.0 (see `LICENSE` and `NOTICE`). Benchmark files under `domains/` and `runs/planbench_responses/` derive from PlanBench (MIT License) and the IPC 2023 learning-track benchmarks and remain under their own terms.
 
 ## Citation
 

@@ -201,6 +201,7 @@ ax.legend(handles=split_handles, loc='lower right',
 plt.tight_layout()
 
 out_path = os.path.join(os.path.dirname(__file__), "..", "..", "figures", "alfworld_scale_curve.pdf")
+os.makedirs(os.path.dirname(out_path), exist_ok=True)
 plt.savefig(out_path, bbox_inches='tight')
 print(f"wrote: {out_path}")
 plt.savefig(out_path.replace('.pdf', '.png'),

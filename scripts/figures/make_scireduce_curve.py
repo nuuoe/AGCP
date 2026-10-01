@@ -71,6 +71,7 @@ ax.legend(loc='upper left', fontsize=9, frameon=True,
 
 plt.tight_layout()
 out_path = os.path.join(ROOT, "figures", "scireduce_curve.pdf")
+os.makedirs(os.path.dirname(out_path), exist_ok=True)
 plt.savefig(out_path, bbox_inches='tight')
 plt.savefig(out_path.replace('.pdf', '.png'),
             bbox_inches='tight', dpi=200)

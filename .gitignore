@@ -8,3 +8,4 @@ __pycache__/
 external/
 outputs/
 .DS_Store
+figures/

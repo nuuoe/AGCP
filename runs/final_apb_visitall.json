@@ -1,0 +1,48 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "n_rollouts": 5,
+  "max_instances": 3,
+  "summary": {
+    "visitall": {
+      "n_solved": 3,
+      "n_total": 3,
+      "success_rate": 1.0
+    }
+  },
+  "rows": [
+    {
+      "domain": "visitall",
+      "n_solved": 3,
+      "n_total": 3,
+      "success_rate": 1.0,
+      "per_instance": [
+        {
+          "instance_id": 1,
+          "success": true,
+          "n_applied": 3,
+          "error": "",
+          "seconds": 20.0610191822052,
+          "plan": "(move loc-x1-y0 loc-x1-y1)\n(move loc-x1-y1 loc-x0-y1)\n(move loc-x0-y1 loc-x0-y0)"
+        },
+        {
+          "instance_id": 11,
+          "success": true,
+          "n_applied": 3,
+          "error": "",
+          "seconds": 13.444706201553345,
+          "plan": "(move loc-x0-y0 loc-x0-y1)\n(move loc-x0-y1 loc-x1-y1)\n(move loc-x1-y1 loc-x1-y2)"
+        },
+        {
+          "instance_id": 12,
+          "success": true,
+          "n_applied": 5,
+          "error": "",
+          "seconds": 19.218189001083374,
+          "plan": "(move loc-x0-y2 loc-x0-y1)\n(move loc-x0-y1 loc-x0-y0)\n(move loc-x0-y0 loc-x1-y0)\n(move loc-x1-y0 loc-x1-y1)\n(move loc-x1-y1 loc-x1-y2)"
+        }
+      ]
+    }
+  ],
+  "total_solved": 3,
+  "total": 3
+}

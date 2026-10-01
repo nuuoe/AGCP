@@ -1,0 +1,42 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "n_rollouts": 5,
+  "max_instances": 3,
+  "summary": {
+    "mprime98": {
+      "n_solved": 0,
+      "n_total": 3,
+      "success_rate": 0.0
+    }
+  },
+  "rows": [
+    {
+      "domain": "mprime98",
+      "n_solved": 0,
+      "n_total": 3,
+      "success_rate": 0.0,
+      "per_instance": [
+        {
+          "instance_id": 1,
+          "success": false,
+          "error": "load_task: 'Error unknown predicate not used in precondition of action'",
+          "seconds": 4.490742921829224
+        },
+        {
+          "instance_id": 10,
+          "success": false,
+          "error": "load_task: 'Error unknown predicate not used in precondition of action'",
+          "seconds": 0.00034999847412109375
+        },
+        {
+          "instance_id": 11,
+          "success": false,
+          "error": "load_task: 'Error unknown predicate not used in precondition of action'",
+          "seconds": 0.0005629062652587891
+        }
+      ]
+    }
+  ],
+  "total_solved": 0,
+  "total": 3
+}

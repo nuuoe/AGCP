@@ -1,0 +1,142 @@
+{
+  "n_pre": 17,
+  "n_post": 22,
+  "n_total": 30,
+  "new_accepts": 5,
+  "examples": [
+    {
+      "inst": 3,
+      "before": [
+        "at(package_0, location_1_0)",
+        "at(package_1, location_1_0)"
+      ],
+      "after": [
+        "at(p0,l1-0)",
+        "at(p1,l1-0)"
+      ],
+      "gt": [
+        "at(p0,l1-0)",
+        "at(p1,l1-0)"
+      ],
+      "f1_post": 1.0
+    },
+    {
+      "inst": 4,
+      "before": [
+        "at(package_0, location_0_0)",
+        "at(package_1, location_0_0)"
+      ],
+      "after": [
+        "at(p0,l0-0)",
+        "at(p1,l0-0)"
+      ],
+      "gt": [
+        "at(p0,l0-0)",
+        "at(p1,l0-0)"
+      ],
+      "f1_post": 1.0
+    },
+    {
+      "inst": 5,
+      "before": [
+        "at(package_0, location_1_0)",
+        "at(package_1, location_0_0)"
+      ],
+      "after": [
+        "at(p0,l1-0)",
+        "at(p1,l0-0)"
+      ],
+      "gt": [
+        "at(p0,l1-0)",
+        "at(p1,l0-0)"
+      ],
+      "f1_post": 1.0
+    },
+    {
+      "inst": 9,
+      "before": [
+        "at(package_0, location_1_0)",
+        "at(package_1, location_0_0)"
+      ],
+      "after": [
+        "at(p0,l1-0)",
+        "at(p1,l0-0)"
+      ],
+      "gt": [
+        "at(p0,l1-0)",
+        "at(p1,l0-0)"
+      ],
+      "f1_post": 1.0
+    },
+    {
+      "inst": 10,
+      "before": [
+        "at(package_0, location_0_1)",
+        "at(package_1, location_0_1)"
+      ],
+      "after": [
+        "at(p0,l0-1)",
+        "at(p1,l0-1)"
+      ],
+      "gt": [
+        "at(p0,l0-1)",
+        "at(p1,l0-1)"
+      ],
+      "f1_post": 1.0
+    },
+    {
+      "inst": 12,
+      "before": [
+        "at(p0, location_1_0)",
+        "at(p1, location_1_0)",
+        "at(p2, location_1_0)"
+      ],
+      "after": [
+        "at(p0,l1-0)",
+        "at(p1,l1-0)",
+        "at(p2,l1-0)"
+      ],
+      "gt": [
+        "at(p0,l1-0)",
+        "at(p1,l1-0)",
+        "at(p2,l1-0)"
+      ],
+      "f1_post": 1.0
+    },
+    {
+      "inst": 25,
+      "before": [
+        "at(package_0, location_1_1)",
+        "at(package_1, location_1_0)"
+      ],
+      "after": [
+        "at(p0,l1-1)",
+        "at(p1,l1-0)"
+      ],
+      "gt": [
+        "at(p0,l1-1)",
+        "at(p1,l1-0)"
+      ],
+      "f1_post": 1.0
+    },
+    {
+      "inst": 26,
+      "before": [
+        "at(p0,location_1_0)",
+        "at(p1,location_1_0)",
+        "at(p2,location_1_2)"
+      ],
+      "after": [
+        "at(p0,l1-0)",
+        "at(p1,l1-0)",
+        "at(p2,l1-2)"
+      ],
+      "gt": [
+        "at(p0,l1-0)",
+        "at(p1,l1-0)",
+        "at(p2,l1-2)"
+      ],
+      "f1_post": 1.0
+    }
+  ]
+}

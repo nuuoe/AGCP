@@ -1,0 +1,48 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "n_rollouts": 5,
+  "max_instances": 3,
+  "summary": {
+    "tpp06-bfs": {
+      "n_solved": 3,
+      "n_total": 3,
+      "success_rate": 1.0
+    }
+  },
+  "rows": [
+    {
+      "domain": "tpp06-bfs",
+      "n_solved": 3,
+      "n_total": 3,
+      "success_rate": 1.0,
+      "per_instance": [
+        {
+          "instance_id": 1,
+          "success": true,
+          "n_applied": 5,
+          "error": "",
+          "seconds": 25.348342657089233,
+          "plan": "(drive truck1 depot1 market1)\n(buy truck1 goods1 market1 level0 level1 level0 level1)\n(load goods1 truck1 market1 level0 level1 level0 level1)\n(drive truck1 market1 depot1)\n(unload goods1 truck1 depot"
+        },
+        {
+          "instance_id": 2,
+          "success": true,
+          "n_applied": 8,
+          "error": "",
+          "seconds": 30.91692590713501,
+          "plan": "(drive truck1 depot1 market1)\n(buy truck1 goods1 market1 level0 level1 level0 level1)\n(load goods1 truck1 market1 level0 level1 level0 level1)\n(buy truck1 goods2 market1 level0 level1 level0 level1)\n("
+        },
+        {
+          "instance_id": 3,
+          "success": true,
+          "n_applied": 13,
+          "error": "",
+          "seconds": 45.66838884353638,
+          "plan": "(drive truck1 depot1 market1)\n(buy truck1 goods1 market1 level0 level1 level0 level1)\n(load goods1 truck1 market1 level0 level1 level0 level1)\n(buy truck1 goods2 market1 level0 level1 level0 level1)\n("
+        }
+      ]
+    }
+  ],
+  "total_solved": 3,
+  "total": 3
+}

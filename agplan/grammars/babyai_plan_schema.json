@@ -1,0 +1,25 @@
+{
+  "type": "object",
+  "properties": {
+    "subgoals": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {"type": "string"},
+          "actions": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": ["turn_left", "turn_right", "move_forward", "pickup", "drop", "toggle", "done"]
+            }
+          }
+        },
+        "required": ["name", "actions"],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": ["subgoals"],
+  "additionalProperties": false
+}

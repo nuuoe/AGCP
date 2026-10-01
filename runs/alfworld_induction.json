@@ -1,0 +1,107 @@
+{
+  "n_transitions": 283,
+  "action_counts": {
+    "goto": 241,
+    "take": 8,
+    "help": 4,
+    "examine": 14,
+    "look": 8,
+    "move": 3,
+    "inventory": 2,
+    "open": 2,
+    "slice_with": 1
+  },
+  "models": {
+    "goto": {
+      "pre_pos": [],
+      "eff_add": [],
+      "eff_del": [],
+      "n_examples": 241
+    },
+    "take": {
+      "pre_pos": [
+        "inreceptacle({a1},{a2})",
+        "pickupable({a1})"
+      ],
+      "eff_add": [
+        "holds(agent1,{a1})",
+        "not_inreceptacle({a1},{a2})"
+      ],
+      "eff_del": [
+        "inreceptacle({a1},{a2})",
+        "objectatlocation({a1},loc_1)",
+        "objectatlocation({a1},loc_14)",
+        "objectatlocation({a1},loc_28)",
+        "objectatlocation({a1},loc_32)",
+        "objectatlocation({a1},loc_33)",
+        "objectatlocation({a1},loc_7)"
+      ],
+      "n_examples": 8
+    },
+    "help": {
+      "pre_pos": [],
+      "eff_add": [],
+      "eff_del": [],
+      "n_examples": 4
+    },
+    "examine": {
+      "pre_pos": [],
+      "eff_add": [
+        "checked({a1})"
+      ],
+      "eff_del": [],
+      "n_examples": 14
+    },
+    "look": {
+      "pre_pos": [],
+      "eff_add": [],
+      "eff_del": [],
+      "n_examples": 8
+    },
+    "move": {
+      "pre_pos": [],
+      "eff_add": [],
+      "eff_del": [],
+      "n_examples": 3
+    },
+    "inventory": {
+      "pre_pos": [],
+      "eff_add": [],
+      "eff_del": [],
+      "n_examples": 2
+    },
+    "open": {
+      "pre_pos": [
+        "openable({a1})"
+      ],
+      "eff_add": [
+        "checked({a1})",
+        "opened({a1})"
+      ],
+      "eff_del": [],
+      "n_examples": 2
+    },
+    "slice_with": {
+      "pre_pos": [
+        "cleanable({a2})",
+        "coolable({a1})",
+        "heatable({a1})",
+        "holds(agent1,{a2})",
+        "inreceptacle({a1},countertop_3)",
+        "not_inreceptacle({a2},countertop_3)",
+        "not_objectatlocation({a2},loc_33)",
+        "objectatlocation({a1},loc_33)",
+        "objecttype({a1},breadtype)",
+        "objecttype({a2},knifetype)",
+        "pickupable({a1})",
+        "pickupable({a2})",
+        "sliceable({a1})"
+      ],
+      "eff_add": [
+        "issliced({a1})"
+      ],
+      "eff_del": [],
+      "n_examples": 1
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "n_rollouts": 5,
+  "max_instances": 3,
+  "summary": {
+    "zenotravel02": {
+      "n_solved": 1,
+      "n_total": 3,
+      "success_rate": 0.3333333333333333
+    }
+  },
+  "rows": [
+    {
+      "domain": "zenotravel02",
+      "n_solved": 1,
+      "n_total": 3,
+      "success_rate": 0.3333333333333333,
+      "per_instance": [
+        {
+          "instance_id": 1,
+          "success": true,
+          "n_applied": 1,
+          "error": "",
+          "seconds": 18.762163877487183,
+          "plan": "(fly plane1 city0 city1 fl1 fl0)"
+        },
+        {
+          "instance_id": 10,
+          "success": false,
+          "error": "compile (BFS+A*): no plan",
+          "seconds": 62.97444701194763
+        },
+        {
+          "instance_id": 11,
+          "success": false,
+          "error": "compile (BFS+A*): no plan",
+          "seconds": 64.82045483589172
+        }
+      ]
+    }
+  ],
+  "total_solved": 1,
+  "total": 3
+}

@@ -1,0 +1,48 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "n_rollouts": 5,
+  "max_instances": 3,
+  "summary": {
+    "pegsol08": {
+      "n_solved": 3,
+      "n_total": 3,
+      "success_rate": 1.0
+    }
+  },
+  "rows": [
+    {
+      "domain": "pegsol08",
+      "n_solved": 3,
+      "n_total": 3,
+      "success_rate": 1.0,
+      "per_instance": [
+        {
+          "instance_id": 10,
+          "success": true,
+          "n_applied": 19,
+          "error": "",
+          "seconds": 60.418659925460815,
+          "plan": "(jump-new-move pos-2-3 pos-2-2 pos-2-1)\n(end-move pos-2-1)\n(jump-new-move pos-5-3 pos-4-3 pos-3-3)\n(end-move pos-3-3)\n(jump-new-move pos-0-3 pos-1-3 pos-2-3)\n(end-move pos-2-3)\n(jump-new-move pos-0-2 "
+        },
+        {
+          "instance_id": 11,
+          "success": true,
+          "n_applied": 19,
+          "error": "",
+          "seconds": 56.89836025238037,
+          "plan": "(jump-new-move pos-3-4 pos-4-4 pos-5-4)\n(end-move pos-5-4)\n(jump-new-move pos-6-2 pos-5-2 pos-4-2)\n(end-move pos-4-2)\n(jump-new-move pos-5-4 pos-5-3 pos-5-2)\n(jump-continue-move pos-5-2 pos-4-2 pos-3-"
+        },
+        {
+          "instance_id": 12,
+          "success": true,
+          "n_applied": 20,
+          "error": "",
+          "seconds": 55.77390170097351,
+          "plan": "(jump-new-move pos-3-2 pos-2-2 pos-1-2)\n(end-move pos-1-2)\n(jump-new-move pos-2-0 pos-2-1 pos-2-2)\n(end-move pos-2-2)\n(jump-new-move pos-1-2 pos-2-2 pos-3-2)\n(jump-continue-move pos-3-2 pos-4-2 pos-5-"
+        }
+      ]
+    }
+  ],
+  "total_solved": 3,
+  "total": 3
+}

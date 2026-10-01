@@ -1,0 +1,42 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "n_rollouts": 5,
+  "max_instances": 3,
+  "summary": {
+    "parking11": {
+      "n_solved": 0,
+      "n_total": 3,
+      "success_rate": 0.0
+    }
+  },
+  "rows": [
+    {
+      "domain": "parking11",
+      "n_solved": 0,
+      "n_total": 3,
+      "success_rate": 0.0,
+      "per_instance": [
+        {
+          "instance_id": 10,
+          "success": false,
+          "error": "compile (BFS+A*): no plan",
+          "seconds": 64.43214392662048
+        },
+        {
+          "instance_id": 11,
+          "success": false,
+          "error": "compile (BFS+A*): no plan",
+          "seconds": 60.810110092163086
+        },
+        {
+          "instance_id": 12,
+          "success": false,
+          "error": "compile (BFS+A*): no plan",
+          "seconds": 60.82797574996948
+        }
+      ]
+    }
+  ],
+  "total_solved": 0,
+  "total": 3
+}

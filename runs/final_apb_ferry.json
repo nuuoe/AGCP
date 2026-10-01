@@ -1,0 +1,48 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "n_rollouts": 5,
+  "max_instances": 3,
+  "summary": {
+    "ferry": {
+      "n_solved": 3,
+      "n_total": 3,
+      "success_rate": 1.0
+    }
+  },
+  "rows": [
+    {
+      "domain": "ferry",
+      "n_solved": 3,
+      "n_total": 3,
+      "success_rate": 1.0,
+      "per_instance": [
+        {
+          "instance_id": 1,
+          "success": true,
+          "n_applied": 4,
+          "error": "",
+          "seconds": 15.666586875915527,
+          "plan": "(sail l1 l0)\n(board c0 l0)\n(sail l0 l1)\n(debark c0 l1)"
+        },
+        {
+          "instance_id": 12,
+          "success": true,
+          "n_applied": 9,
+          "error": "",
+          "seconds": 14.551315307617188,
+          "plan": "(board c4 l2)\n(sail l2 l0)\n(debark c4 l0)\n(board c1 l0)\n(sail l0 l2)\n(debark c1 l2)\n(board c2 l2)\n(sail l2 l1)\n(debark c2 l1)"
+        },
+        {
+          "instance_id": 17,
+          "success": true,
+          "n_applied": 10,
+          "error": "",
+          "seconds": 16.527168035507202,
+          "plan": "(board c3 l2)\n(sail l2 l0)\n(debark c3 l0)\n(board c1 l0)\n(sail l0 l1)\n(debark c1 l1)\n(sail l1 l0)\n(board c0 l0)\n(sail l0 l2)\n(debark c0 l2)"
+        }
+      ]
+    }
+  ],
+  "total_solved": 3,
+  "total": 3
+}

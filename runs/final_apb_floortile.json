@@ -1,0 +1,48 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "n_rollouts": 5,
+  "max_instances": 3,
+  "summary": {
+    "floortile": {
+      "n_solved": 3,
+      "n_total": 3,
+      "success_rate": 1.0
+    }
+  },
+  "rows": [
+    {
+      "domain": "floortile",
+      "n_solved": 3,
+      "n_total": 3,
+      "success_rate": 1.0,
+      "per_instance": [
+        {
+          "instance_id": 1,
+          "success": true,
+          "n_applied": 10,
+          "error": "",
+          "seconds": 41.632373094558716,
+          "plan": "(down robot1 tile_1-2 tile_0-2)\n(paint-up robot2 tile_2-1 tile_1-1 black)\n(down robot2 tile_1-1 tile_0-1)\n(up robot1 tile_0-2 tile_1-2)\n(paint-up robot1 tile_2-2 tile_1-2 white)\n(down robot1 tile_1-2 "
+        },
+        {
+          "instance_id": 10,
+          "success": true,
+          "n_applied": 16,
+          "error": "",
+          "seconds": 53.70687294006348,
+          "plan": "(down robot2 tile_3-1 tile_2-1)\n(right robot2 tile_2-1 tile_2-2)\n(paint-up robot2 tile_3-2 tile_2-2 black)\n(left robot2 tile_2-2 tile_2-1)\n(change-color robot2 black white)\n(paint-up robot1 tile_2-2 t"
+        },
+        {
+          "instance_id": 11,
+          "success": true,
+          "n_applied": 17,
+          "error": "",
+          "seconds": 55.23093605041504,
+          "plan": "(down robot1 tile_3-2 tile_2-2)\n(change-color robot1 white black)\n(paint-up robot1 tile_3-2 tile_2-2 black)\n(change-color robot1 black white)\n(left robot1 tile_2-2 tile_2-1)\n(paint-up robot1 tile_3-1 "
+        }
+      ]
+    }
+  ],
+  "total_solved": 3,
+  "total": 3
+}

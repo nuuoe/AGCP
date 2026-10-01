@@ -1,0 +1,48 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "n_rollouts": 5,
+  "max_instances": 3,
+  "summary": {
+    "logistics": {
+      "n_solved": 3,
+      "n_total": 3,
+      "success_rate": 1.0
+    }
+  },
+  "rows": [
+    {
+      "domain": "logistics",
+      "n_solved": 3,
+      "n_total": 3,
+      "success_rate": 1.0,
+      "per_instance": [
+        {
+          "instance_id": 1,
+          "success": true,
+          "n_applied": 4,
+          "error": "",
+          "seconds": 18.11569881439209,
+          "plan": "(fly-airplane a0 l0-0 l1-0)\n(load-airplane p0 a0 l1-0)\n(fly-airplane a0 l1-0 l0-0)\n(unload-airplane p0 a0 l0-0)"
+        },
+        {
+          "instance_id": 10,
+          "success": true,
+          "n_applied": 5,
+          "error": "",
+          "seconds": 15.394735336303711,
+          "plan": "(load-truck p1 t0 l0-0)\n(load-truck p0 t0 l0-0)\n(drive-truck t0 l0-0 l0-1 c0)\n(unload-truck p1 t0 l0-1)\n(unload-truck p0 t0 l0-1)"
+        },
+        {
+          "instance_id": 11,
+          "success": true,
+          "n_applied": 7,
+          "error": "",
+          "seconds": 21.02451515197754,
+          "plan": "(load-truck p0 t0 l0-0)\n(drive-truck t0 l0-0 l0-1 c0)\n(unload-truck p0 t0 l0-1)\n(drive-truck t1 l1-0 l1-1 c1)\n(load-truck p1 t1 l1-1)\n(drive-truck t1 l1-1 l1-0 c1)\n(unload-truck p1 t1 l1-0)"
+        }
+      ]
+    }
+  ],
+  "total_solved": 3,
+  "total": 3
+}

@@ -1,0 +1,42 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "n_rollouts": 5,
+  "max_instances": 3,
+  "summary": {
+    "childsnack14": {
+      "n_solved": 0,
+      "n_total": 3,
+      "success_rate": 0.0
+    }
+  },
+  "rows": [
+    {
+      "domain": "childsnack14",
+      "n_solved": 0,
+      "n_total": 3,
+      "success_rate": 0.0,
+      "per_instance": [
+        {
+          "instance_id": 1,
+          "success": false,
+          "error": "compile (BFS+A*): no plan",
+          "seconds": 64.13082313537598
+        },
+        {
+          "instance_id": 10,
+          "success": false,
+          "error": "compile (BFS+A*): no plan",
+          "seconds": 60.15322494506836
+        },
+        {
+          "instance_id": 11,
+          "success": false,
+          "error": "compile (BFS+A*): no plan",
+          "seconds": 60.17861294746399
+        }
+      ]
+    }
+  ],
+  "total_solved": 0,
+  "total": 3
+}

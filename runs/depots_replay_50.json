@@ -1,0 +1,466 @@
+{
+  "reuse": {
+    "drive": "logistics",
+    "lift": "fresh",
+    "load": "fresh",
+    "unload": "fresh",
+    "drop": "fresh"
+  },
+  "results": [
+    {
+      "problem": "instance-1.pddl",
+      "gt_planned": true,
+      "gt_plan_time": 1.1807537078857422,
+      "plan_length": 15,
+      "composed_replays_successfully": true,
+      "pre_violations": 0,
+      "missing_goal_atoms": []
+    },
+    {
+      "problem": "instance-10.pddl",
+      "gt_planned": true,
+      "gt_plan_time": 0.015742063522338867,
+      "plan_length": 9,
+      "composed_replays_successfully": true,
+      "pre_violations": 0,
+      "missing_goal_atoms": []
+    },
+    {
+      "problem": "instance-100.pddl",
+      "gt_planned": true,
+      "gt_plan_time": 0.6254022121429443,
+      "plan_length": 10,
+      "composed_replays_successfully": true,
+      "pre_violations": 0,
+      "missing_goal_atoms": []
+    },
+    {
+      "problem": "instance-101.pddl",
+      "gt_planned": true,
+      "gt_plan_time": 0.03249025344848633,
+      "plan_length": 16,
+      "composed_replays_successfully": true,
+      "pre_violations": 0,
+      "missing_goal_atoms": []
+    },
+    {
+      "problem": "instance-102.pddl",
+      "gt_planned": true,
+      "gt_plan_time": 0.030186176300048828,
+      "plan_length": 16,
+      "composed_replays_successfully": true,
+      "pre_violations": 0,
+      "missing_goal_atoms": []
+    },
+    {
+      "problem": "instance-103.pddl",
+      "gt_planned": true,
+      "gt_plan_time": 0.039823055267333984,
+      "plan_length": 17,
+      "composed_replays_successfully": true,
+      "pre_violations": 0,
+      "missing_goal_atoms": []
+    },
+    {
+      "problem": "instance-104.pddl",
+      "gt_planned": true,
+      "gt_plan_time": 0.016191959381103516,
+      "plan_length": 9,
+      "composed_replays_successfully": true,
+      "pre_violations": 0,
+      "missing_goal_atoms": []
+    },
+    {
+      "problem": "instance-105.pddl",
+      "gt_planned": true,
+      "gt_plan_time": 0.1475839614868164,
+      "plan_length": 12,
+      "composed_replays_successfully": true,
+      "pre_violations": 0,
+      "missing_goal_atoms": []
+    },
+    {
+      "problem": "instance-106.pddl",
+      "gt_planned": true,
+      "gt_plan_time": 0.007688999176025391,
+      "plan_length": 5,
+      "composed_replays_successfully": true,
+      "pre_violations": 0,
+      "missing_goal_atoms": []
+    },
+    {
+      "problem": "instance-107.pddl",
+      "gt_planned": true,
+      "gt_plan_time": 0.008099079132080078,
+      "plan_length": 5,
+      "composed_replays_successfully": true,
+      "pre_violations": 0,
+      "missing_goal_atoms": []
+    },
+    {
+      "problem": "instance-108.pddl",
+      "gt_planned": true,
+      "gt_plan_time": 0.6956448554992676,
+      "plan_length": 18,
+      "composed_replays_successfully": true,
+      "pre_violations": 0,
+      "missing_goal_atoms": []
+    },
+    {
+      "problem": "instance-109.pddl",
+      "gt_planned": true,
+      "gt_plan_time": 0.03619885444641113,
+      "plan_length": 11,
+      "composed_replays_successfully": true,
+      "pre_violations": 0,
+      "missing_goal_atoms": []
+    },
+    {
+      "problem": "instance-11.pddl",
+      "gt_planned": true,
+      "gt_plan_time": 0.008100032806396484,
+      "plan_length": 5,
+      "composed_replays_successfully": true,
+      "pre_violations": 0,
+      "missing_goal_atoms": []
+    },
+    {
+      "problem": "instance-110.pddl",
+      "gt_planned": true,
+      "gt_plan_time": 0.0835111141204834,
+      "plan_length": 12,
+      "composed_replays_successfully": true,
+      "pre_violations": 0,
+      "missing_goal_atoms": []
+    },
+    {
+      "problem": "instance-111.pddl",
+      "gt_planned": true,
+      "gt_plan_time": 0.4664158821105957,
+      "plan_length": 10,
+      "composed_replays_successfully": true,
+      "pre_violations": 0,
+      "missing_goal_atoms": []
+    },
+    {
+      "problem": "instance-112.pddl",
+      "gt_planned": true,
+      "gt_plan_time": 0.01764988899230957,
+      "plan_length": 10,
+      "composed_replays_successfully": true,
+      "pre_violations": 0,
+      "missing_goal_atoms": []
+    },
+    {
+      "problem": "instance-113.pddl",
+      "gt_planned": true,
+      "gt_plan_time": 0.2820699214935303,
+      "plan_length": 11,
+      "composed_replays_successfully": true,
+      "pre_violations": 0,
+      "missing_goal_atoms": []
+    },
+    {
+      "problem": "instance-114.pddl",
+      "gt_planned": true,
+      "gt_plan_time": 0.27190613746643066,
+      "plan_length": 15,
+      "composed_replays_successfully": true,
+      "pre_violations": 0,
+      "missing_goal_atoms": []
+    },
+    {
+      "problem": "instance-115.pddl",
+      "gt_planned": true,
+      "gt_plan_time": 0.9021439552307129,
+      "plan_length": 15,
+      "composed_replays_successfully": true,
+      "pre_violations": 0,
+      "missing_goal_atoms": []
+    },
+    {
+      "problem": "instance-116.pddl",
+      "gt_planned": true,
+      "gt_plan_time": 0.24751806259155273,
+      "plan_length": 11,
+      "composed_replays_successfully": true,
+      "pre_violations": 0,
+      "missing_goal_atoms": []
+    },
+    {
+      "problem": "instance-117.pddl",
+      "gt_planned": true,
+      "gt_plan_time": 0.8741400241851807,
+      "plan_length": 17,
+      "composed_replays_successfully": true,
+      "pre_violations": 0,
+      "missing_goal_atoms": []
+    },
+    {
+      "problem": "instance-118.pddl",
+      "gt_planned": true,
+      "gt_plan_time": 0.013701915740966797,
+      "plan_length": 6,
+      "composed_replays_successfully": true,
+      "pre_violations": 0,
+      "missing_goal_atoms": []
+    },
+    {
+      "problem": "instance-119.pddl",
+      "gt_planned": true,
+      "gt_plan_time": 2.1536214351654053,
+      "plan_length": 14,
+      "composed_replays_successfully": true,
+      "pre_violations": 0,
+      "missing_goal_atoms": []
+    },
+    {
+      "problem": "instance-12.pddl",
+      "gt_planned": true,
+      "gt_plan_time": 0.044226884841918945,
+      "plan_length": 16,
+      "composed_replays_successfully": true,
+      "pre_violations": 0,
+      "missing_goal_atoms": []
+    },
+    {
+      "problem": "instance-120.pddl",
+      "gt_planned": true,
+      "gt_plan_time": 0.020802736282348633,
+      "plan_length": 11,
+      "composed_replays_successfully": true,
+      "pre_violations": 0,
+      "missing_goal_atoms": []
+    },
+    {
+      "problem": "instance-121.pddl",
+      "gt_planned": true,
+      "gt_plan_time": 0.04277396202087402,
+      "plan_length": 15,
+      "composed_replays_successfully": true,
+      "pre_violations": 0,
+      "missing_goal_atoms": []
+    },
+    {
+      "problem": "instance-122.pddl",
+      "gt_planned": true,
+      "gt_plan_time": 0.03949117660522461,
+      "plan_length": 15,
+      "composed_replays_successfully": true,
+      "pre_violations": 0,
+      "missing_goal_atoms": []
+    },
+    {
+      "problem": "instance-123.pddl",
+      "gt_planned": true,
+      "gt_plan_time": 0.016551971435546875,
+      "plan_length": 9,
+      "composed_replays_successfully": true,
+      "pre_violations": 0,
+      "missing_goal_atoms": []
+    },
+    {
+      "problem": "instance-124.pddl",
+      "gt_planned": true,
+      "gt_plan_time": 1.0512471199035645,
+      "plan_length": 15,
+      "composed_replays_successfully": true,
+      "pre_violations": 0,
+      "missing_goal_atoms": []
+    },
+    {
+      "problem": "instance-125.pddl",
+      "gt_planned": true,
+      "gt_plan_time": 1.6672377586364746,
+      "plan_length": 13,
+      "composed_replays_successfully": true,
+      "pre_violations": 0,
+      "missing_goal_atoms": []
+    },
+    {
+      "problem": "instance-126.pddl",
+      "gt_planned": true,
+      "gt_plan_time": 2.9103689193725586,
+      "plan_length": 16,
+      "composed_replays_successfully": true,
+      "pre_violations": 0,
+      "missing_goal_atoms": []
+    },
+    {
+      "problem": "instance-127.pddl",
+      "gt_planned": true,
+      "gt_plan_time": 0.14246296882629395,
+      "plan_length": 12,
+      "composed_replays_successfully": true,
+      "pre_violations": 0,
+      "missing_goal_atoms": []
+    },
+    {
+      "problem": "instance-128.pddl",
+      "gt_planned": true,
+      "gt_plan_time": 1.1822869777679443,
+      "plan_length": 17,
+      "composed_replays_successfully": true,
+      "pre_violations": 0,
+      "missing_goal_atoms": []
+    },
+    {
+      "problem": "instance-129.pddl",
+      "gt_planned": true,
+      "gt_plan_time": 1.8885862827301025,
+      "plan_length": 15,
+      "composed_replays_successfully": true,
+      "pre_violations": 0,
+      "missing_goal_atoms": []
+    },
+    {
+      "problem": "instance-13.pddl",
+      "gt_planned": true,
+      "gt_plan_time": 0.5225260257720947,
+      "plan_length": 15,
+      "composed_replays_successfully": true,
+      "pre_violations": 0,
+      "missing_goal_atoms": []
+    },
+    {
+      "problem": "instance-130.pddl",
+      "gt_planned": true,
+      "gt_plan_time": 0.0349578857421875,
+      "plan_length": 12,
+      "composed_replays_successfully": true,
+      "pre_violations": 0,
+      "missing_goal_atoms": []
+    },
+    {
+      "problem": "instance-131.pddl",
+      "gt_planned": true,
+      "gt_plan_time": 0.014615774154663086,
+      "plan_length": 6,
+      "composed_replays_successfully": true,
+      "pre_violations": 0,
+      "missing_goal_atoms": []
+    },
+    {
+      "problem": "instance-132.pddl",
+      "gt_planned": true,
+      "gt_plan_time": 0.018573999404907227,
+      "plan_length": 10,
+      "composed_replays_successfully": true,
+      "pre_violations": 0,
+      "missing_goal_atoms": []
+    },
+    {
+      "problem": "instance-133.pddl",
+      "gt_planned": true,
+      "gt_plan_time": 17.540436029434204,
+      "plan_length": 20,
+      "composed_replays_successfully": true,
+      "pre_violations": 0,
+      "missing_goal_atoms": []
+    },
+    {
+      "problem": "instance-134.pddl",
+      "gt_planned": true,
+      "gt_plan_time": 2.1049649715423584,
+      "plan_length": 10,
+      "composed_replays_successfully": true,
+      "pre_violations": 0,
+      "missing_goal_atoms": []
+    },
+    {
+      "problem": "instance-135.pddl",
+      "gt_planned": true,
+      "gt_plan_time": 0.020501136779785156,
+      "plan_length": 11,
+      "composed_replays_successfully": true,
+      "pre_violations": 0,
+      "missing_goal_atoms": []
+    },
+    {
+      "problem": "instance-136.pddl",
+      "gt_planned": true,
+      "gt_plan_time": 0.03254890441894531,
+      "plan_length": 15,
+      "composed_replays_successfully": true,
+      "pre_violations": 0,
+      "missing_goal_atoms": []
+    },
+    {
+      "problem": "instance-137.pddl",
+      "gt_planned": true,
+      "gt_plan_time": 1.1209969520568848,
+      "plan_length": 9,
+      "composed_replays_successfully": true,
+      "pre_violations": 0,
+      "missing_goal_atoms": []
+    },
+    {
+      "problem": "instance-138.pddl",
+      "gt_planned": true,
+      "gt_plan_time": 0.027194738388061523,
+      "plan_length": 14,
+      "composed_replays_successfully": true,
+      "pre_violations": 0,
+      "missing_goal_atoms": []
+    },
+    {
+      "problem": "instance-139.pddl",
+      "gt_planned": true,
+      "gt_plan_time": 1.318843126296997,
+      "plan_length": 17,
+      "composed_replays_successfully": true,
+      "pre_violations": 0,
+      "missing_goal_atoms": []
+    },
+    {
+      "problem": "instance-14.pddl",
+      "gt_planned": true,
+      "gt_plan_time": 0.01894211769104004,
+      "plan_length": 11,
+      "composed_replays_successfully": true,
+      "pre_violations": 0,
+      "missing_goal_atoms": []
+    },
+    {
+      "problem": "instance-140.pddl",
+      "gt_planned": true,
+      "gt_plan_time": 0.007144927978515625,
+      "plan_length": 5,
+      "composed_replays_successfully": true,
+      "pre_violations": 0,
+      "missing_goal_atoms": []
+    },
+    {
+      "problem": "instance-141.pddl",
+      "gt_planned": true,
+      "gt_plan_time": 0.6638338565826416,
+      "plan_length": 16,
+      "composed_replays_successfully": true,
+      "pre_violations": 0,
+      "missing_goal_atoms": []
+    },
+    {
+      "problem": "instance-142.pddl",
+      "gt_planned": true,
+      "gt_plan_time": 0.3841888904571533,
+      "plan_length": 13,
+      "composed_replays_successfully": true,
+      "pre_violations": 0,
+      "missing_goal_atoms": []
+    },
+    {
+      "problem": "instance-143.pddl",
+      "gt_planned": true,
+      "gt_plan_time": 0.43892908096313477,
+      "plan_length": 15,
+      "composed_replays_successfully": true,
+      "pre_violations": 0,
+      "missing_goal_atoms": []
+    }
+  ],
+  "summary": {
+    "n_replayable": 50,
+    "n_gt_planned": 50,
+    "replay_rate": 1.0
+  }
+}

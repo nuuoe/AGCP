@@ -1,0 +1,20 @@
+{"instance_id": "instance-24", "compiled": false, "coverage": false, "n_actions": 12}
+{"instance_id": "instance-33", "compiled": false, "coverage": false, "n_actions": 14}
+{"instance_id": "instance-49", "compiled": true, "coverage": true, "n_actions": 14, "ebnf_size": 9748}
+{"instance_id": "instance-35", "compiled": false, "coverage": false, "n_actions": 10}
+{"instance_id": "instance-6", "compiled": false, "coverage": false, "n_actions": 14}
+{"instance_id": "instance-15", "compiled": true, "coverage": true, "n_actions": 10, "ebnf_size": 9615}
+{"instance_id": "instance-4", "compiled": false, "coverage": false, "n_actions": 14}
+{"instance_id": "instance-22", "compiled": false, "coverage": false, "n_actions": 12}
+{"instance_id": "instance-9", "compiled": false, "coverage": false, "n_actions": 14}
+{"instance_id": "instance-29", "compiled": false, "coverage": false, "n_actions": 14}
+{"instance_id": "instance-34", "compiled": false, "coverage": false, "n_actions": 6}
+{"instance_id": "instance-21", "compiled": false, "coverage": false, "n_actions": 6}
+{"instance_id": "instance-18", "compiled": false, "coverage": false, "n_actions": 14}
+{"instance_id": "instance-39", "compiled": false, "coverage": false, "n_actions": 14}
+{"instance_id": "instance-26", "compiled": true, "coverage": true, "n_actions": 8, "ebnf_size": 9685}
+{"instance_id": "instance-20", "compiled": false, "coverage": false, "n_actions": 12}
+{"instance_id": "instance-7", "compiled": true, "coverage": true, "n_actions": 12, "ebnf_size": 9381}
+{"instance_id": "instance-43", "compiled": false, "coverage": false, "n_actions": 12}
+{"instance_id": "instance-17", "compiled": true, "coverage": false, "n_actions": 12, "ebnf_size": 9530}
+{"instance_id": "instance-47", "compiled": false, "coverage": false, "n_actions": 14}

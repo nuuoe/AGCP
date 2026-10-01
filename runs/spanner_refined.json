@@ -1,0 +1,93 @@
+{
+  "refined": {
+    "walk": {
+      "pre_pos": [
+        "at({a3},{a1})"
+      ],
+      "eff_add": [
+        "at({a3},{a2})"
+      ],
+      "eff_del": [
+        "at({a3},{a1})"
+      ]
+    },
+    "pickup_spanner": {
+      "pre_pos": [
+        "at({a2},{a1})",
+        "at({a3},{a1})"
+      ],
+      "eff_add": [
+        "carrying({a3},{a2})"
+      ],
+      "eff_del": [
+        "at({a2},{a1})"
+      ]
+    },
+    "tighten_nut": {
+      "pre_pos": [
+        "at({a3},{a1})",
+        "at({a4},{a1})",
+        "carrying({a3},{a2})",
+        "loose({a4})",
+        "usable({a2})"
+      ],
+      "eff_add": [
+        "tightened({a4})"
+      ],
+      "eff_del": [
+        "loose({a4})",
+        "usable({a2})"
+      ]
+    }
+  },
+  "refinement_log": {
+    "walk": {
+      "induced_pre": [
+        "at({a3},{a1})"
+      ],
+      "refined_pre": [
+        "at({a3},{a1})"
+      ],
+      "dropped": []
+    },
+    "pickup_spanner": {
+      "induced_pre": [
+        "at({a2},{a1})",
+        "at({a3},{a1})",
+        "usable({a2})"
+      ],
+      "refined_pre": [
+        "at({a2},{a1})",
+        "at({a3},{a1})"
+      ],
+      "dropped": [
+        {
+          "atom": "usable({a2})",
+          "evidence_args": [
+            "location1",
+            "spanner1",
+            "bob"
+          ],
+          "grounded_atom_dropped": "usable(spanner1)"
+        }
+      ]
+    },
+    "tighten_nut": {
+      "induced_pre": [
+        "at({a3},{a1})",
+        "at({a4},{a1})",
+        "carrying({a3},{a2})",
+        "loose({a4})",
+        "usable({a2})"
+      ],
+      "refined_pre": [
+        "at({a3},{a1})",
+        "at({a4},{a1})",
+        "carrying({a3},{a2})",
+        "loose({a4})",
+        "usable({a2})"
+      ],
+      "dropped": []
+    }
+  }
+}

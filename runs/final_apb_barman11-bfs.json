@@ -1,0 +1,42 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "n_rollouts": 5,
+  "max_instances": 3,
+  "summary": {
+    "barman11-bfs": {
+      "n_solved": 0,
+      "n_total": 3,
+      "success_rate": 0.0
+    }
+  },
+  "rows": [
+    {
+      "domain": "barman11-bfs",
+      "n_solved": 0,
+      "n_total": 3,
+      "success_rate": 0.0,
+      "per_instance": [
+        {
+          "instance_id": 1,
+          "success": false,
+          "error": "compile (BFS+A*): no plan",
+          "seconds": 63.06529426574707
+        },
+        {
+          "instance_id": 2,
+          "success": false,
+          "error": "compile (BFS+A*): no plan",
+          "seconds": 60.09702801704407
+        },
+        {
+          "instance_id": 3,
+          "success": false,
+          "error": "compile (BFS+A*): no plan",
+          "seconds": 60.06605887413025
+        }
+      ]
+    }
+  ],
+  "total_solved": 0,
+  "total": 3
+}

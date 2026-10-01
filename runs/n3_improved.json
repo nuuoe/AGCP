@@ -1,0 +1,51 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "sig_reuses": 1,
+  "llm_reuses": 1,
+  "rows": [
+    {
+      "target": "ferry",
+      "target_action": "sail",
+      "sig_match": null,
+      "llm_match": null
+    },
+    {
+      "target": "ferry",
+      "target_action": "board",
+      "sig_match": null,
+      "llm_match": null
+    },
+    {
+      "target": "ferry",
+      "target_action": "debark",
+      "sig_match": null,
+      "llm_match": null
+    },
+    {
+      "target": "transport",
+      "target_action": "pick-up",
+      "sig_match": null,
+      "llm_match": null
+    },
+    {
+      "target": "transport",
+      "target_action": "drop",
+      "sig_match": null,
+      "llm_match": null
+    },
+    {
+      "target": "transport",
+      "target_action": "drive",
+      "sig_match": [
+        "rovers",
+        "navigate",
+        1.0
+      ],
+      "llm_match": [
+        "rovers",
+        "navigate",
+        1.0
+      ]
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "n_rollouts": 5,
+  "max_instances": 3,
+  "summary": {
+    "grid": {
+      "n_solved": 3,
+      "n_total": 3,
+      "success_rate": 1.0
+    }
+  },
+  "rows": [
+    {
+      "domain": "grid",
+      "n_solved": 3,
+      "n_total": 3,
+      "success_rate": 1.0,
+      "per_instance": [
+        {
+          "instance_id": 1,
+          "success": true,
+          "n_applied": 4,
+          "error": "",
+          "seconds": 19.032341957092285,
+          "plan": "(pickup pos1-0 key0)\n(unlock pos1-0 pos1-1 key0 shape0)\n(move pos1-0 pos1-1)\n(putdown pos1-1 key0)"
+        },
+        {
+          "instance_id": 10,
+          "success": true,
+          "n_applied": 9,
+          "error": "",
+          "seconds": 23.79295587539673,
+          "plan": "(move pos0-2 pos0-1)\n(move pos0-1 pos1-1)\n(pickup pos1-1 key1)\n(unlock pos1-1 pos1-0 key1 shape1)\n(move pos1-1 pos1-0)\n(pickup-and-loose pos1-0 key0 key1)\n(move pos1-0 pos1-1)\n(move pos1-1 pos0-1)\n(pu"
+        },
+        {
+          "instance_id": 12,
+          "success": true,
+          "n_applied": 7,
+          "error": "",
+          "seconds": 17.776024103164673,
+          "plan": "(move pos1-2 pos1-1)\n(move pos1-1 pos1-0)\n(pickup pos1-0 key1)\n(move pos1-0 pos1-1)\n(move pos1-1 pos2-1)\n(move pos2-1 pos2-2)\n(putdown pos2-2 key1)"
+        }
+      ]
+    }
+  ],
+  "total_solved": 3,
+  "total": 3
+}

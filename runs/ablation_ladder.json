@@ -1,0 +1,1463 @@
+{
+  "configs": {
+    "full": {
+      "strip_adl": true,
+      "keep_irrelevant": true,
+      "induce_positional": true,
+      "refine": true
+    },
+    "no_F4": {
+      "strip_adl": true,
+      "keep_irrelevant": true,
+      "induce_positional": true,
+      "refine": false
+    },
+    "no_F3": {
+      "strip_adl": true,
+      "keep_irrelevant": true,
+      "induce_positional": false,
+      "refine": true
+    },
+    "no_F2": {
+      "strip_adl": true,
+      "keep_irrelevant": false,
+      "induce_positional": true,
+      "refine": true
+    },
+    "no_F1": {
+      "strip_adl": false,
+      "keep_irrelevant": true,
+      "induce_positional": true,
+      "refine": true
+    }
+  },
+  "results": {
+    "full": {
+      "config": {
+        "strip_adl": true,
+        "keep_irrelevant": true,
+        "induce_positional": true,
+        "refine": true
+      },
+      "n_domains_parsed": 10,
+      "n_actions_total": 46,
+      "n_perfect": 46,
+      "per_domain": {
+        "blocksworld": {
+          "n_actions": 4,
+          "n_perfect": 4,
+          "per_action": {
+            "pickup": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "putdown": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "stack": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "unstack": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            }
+          }
+        },
+        "childsnack": {
+          "n_actions": 6,
+          "n_perfect": 6,
+          "per_action": {
+            "make_sandwich_no_gluten": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "make_sandwich": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "put_on_tray": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "serve_sandwich_no_gluten": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "serve_sandwich": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "move_tray": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            }
+          }
+        },
+        "ferry": {
+          "n_actions": 3,
+          "n_perfect": 3,
+          "per_action": {
+            "sail": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "board": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "debark": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            }
+          }
+        },
+        "floortile": {
+          "n_actions": 7,
+          "n_perfect": 7,
+          "per_action": {
+            "change_color": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "paint_up": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "paint_down": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "move_up": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "move_down": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "move_right": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "move_left": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            }
+          }
+        },
+        "miconic": {
+          "n_actions": 4,
+          "n_perfect": 4,
+          "per_action": {
+            "board": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "depart": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "up": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "down": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            }
+          }
+        },
+        "rovers": {
+          "n_actions": 9,
+          "n_perfect": 9,
+          "per_action": {
+            "navigate": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "sample_soil": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "sample_rock": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "drop": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "calibrate": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "take_image": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "communicate_soil_data": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "communicate_rock_data": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "communicate_image_data": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            }
+          }
+        },
+        "satellite": {
+          "n_actions": 5,
+          "n_perfect": 5,
+          "per_action": {
+            "turn_to": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "switch_on": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "switch_off": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "calibrate": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "take_image": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            }
+          }
+        },
+        "sokoban": {
+          "n_actions": 2,
+          "n_perfect": 2,
+          "per_action": {
+            "move": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "push": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            }
+          }
+        },
+        "spanner": {
+          "n_actions": 3,
+          "n_perfect": 3,
+          "per_action": {
+            "walk": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "pickup_spanner": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "tighten_nut": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            }
+          }
+        },
+        "transport": {
+          "n_actions": 3,
+          "n_perfect": 3,
+          "per_action": {
+            "drive": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "pick-up": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "drop": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            }
+          }
+        }
+      }
+    },
+    "no_F4": {
+      "config": {
+        "strip_adl": true,
+        "keep_irrelevant": true,
+        "induce_positional": true,
+        "refine": false
+      },
+      "n_domains_parsed": 10,
+      "n_actions_total": 46,
+      "n_perfect": 43,
+      "per_domain": {
+        "blocksworld": {
+          "n_actions": 4,
+          "n_perfect": 4,
+          "per_action": {
+            "pickup": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "putdown": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "stack": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "unstack": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            }
+          }
+        },
+        "childsnack": {
+          "n_actions": 6,
+          "n_perfect": 6,
+          "per_action": {
+            "make_sandwich_no_gluten": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "make_sandwich": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "put_on_tray": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "serve_sandwich_no_gluten": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "serve_sandwich": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "move_tray": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            }
+          }
+        },
+        "ferry": {
+          "n_actions": 3,
+          "n_perfect": 3,
+          "per_action": {
+            "sail": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "board": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "debark": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            }
+          }
+        },
+        "floortile": {
+          "n_actions": 7,
+          "n_perfect": 7,
+          "per_action": {
+            "change_color": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "paint_up": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "paint_down": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "move_up": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "move_down": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "move_right": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "move_left": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            }
+          }
+        },
+        "miconic": {
+          "n_actions": 4,
+          "n_perfect": 4,
+          "per_action": {
+            "board": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "depart": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "up": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "down": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            }
+          }
+        },
+        "rovers": {
+          "n_actions": 9,
+          "n_perfect": 9,
+          "per_action": {
+            "navigate": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "sample_soil": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "sample_rock": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "drop": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "calibrate": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "take_image": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "communicate_soil_data": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "communicate_rock_data": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "communicate_image_data": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            }
+          }
+        },
+        "satellite": {
+          "n_actions": 5,
+          "n_perfect": 5,
+          "per_action": {
+            "turn_to": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "switch_on": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "switch_off": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "calibrate": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "take_image": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            }
+          }
+        },
+        "sokoban": {
+          "n_actions": 2,
+          "n_perfect": 0,
+          "per_action": {
+            "move": {
+              "pre_f1": 0.8,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "push": {
+              "pre_f1": 0.8571428571428571,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            }
+          }
+        },
+        "spanner": {
+          "n_actions": 3,
+          "n_perfect": 2,
+          "per_action": {
+            "walk": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "pickup_spanner": {
+              "pre_f1": 0.8,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "tighten_nut": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            }
+          }
+        },
+        "transport": {
+          "n_actions": 3,
+          "n_perfect": 3,
+          "per_action": {
+            "drive": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "pick-up": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "drop": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            }
+          }
+        }
+      }
+    },
+    "no_F3": {
+      "config": {
+        "strip_adl": true,
+        "keep_irrelevant": true,
+        "induce_positional": false,
+        "refine": true
+      },
+      "n_domains_parsed": 10,
+      "n_actions_total": 46,
+      "n_perfect": 44,
+      "per_domain": {
+        "blocksworld": {
+          "n_actions": 4,
+          "n_perfect": 4,
+          "per_action": {
+            "pickup": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "putdown": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "stack": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "unstack": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            }
+          }
+        },
+        "childsnack": {
+          "n_actions": 6,
+          "n_perfect": 6,
+          "per_action": {
+            "make_sandwich_no_gluten": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "make_sandwich": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "put_on_tray": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "serve_sandwich_no_gluten": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "serve_sandwich": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "move_tray": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            }
+          }
+        },
+        "ferry": {
+          "n_actions": 3,
+          "n_perfect": 3,
+          "per_action": {
+            "sail": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "board": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "debark": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            }
+          }
+        },
+        "floortile": {
+          "n_actions": 7,
+          "n_perfect": 7,
+          "per_action": {
+            "change_color": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "paint_up": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "paint_down": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "move_up": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "move_down": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "move_right": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "move_left": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            }
+          }
+        },
+        "miconic": {
+          "n_actions": 4,
+          "n_perfect": 4,
+          "per_action": {
+            "board": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "depart": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "up": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "down": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            }
+          }
+        },
+        "rovers": {
+          "n_actions": 9,
+          "n_perfect": 7,
+          "per_action": {
+            "navigate": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "sample_soil": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "sample_rock": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "drop": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "calibrate": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "take_image": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "communicate_soil_data": {
+              "pre_f1": 0.6666666666666666,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "communicate_rock_data": {
+              "pre_f1": 0.6666666666666666,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "communicate_image_data": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            }
+          }
+        },
+        "satellite": {
+          "n_actions": 5,
+          "n_perfect": 5,
+          "per_action": {
+            "turn_to": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "switch_on": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "switch_off": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "calibrate": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "take_image": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            }
+          }
+        },
+        "sokoban": {
+          "n_actions": 2,
+          "n_perfect": 2,
+          "per_action": {
+            "move": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "push": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            }
+          }
+        },
+        "spanner": {
+          "n_actions": 3,
+          "n_perfect": 3,
+          "per_action": {
+            "walk": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "pickup_spanner": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "tighten_nut": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            }
+          }
+        },
+        "transport": {
+          "n_actions": 3,
+          "n_perfect": 3,
+          "per_action": {
+            "drive": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "pick-up": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "drop": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            }
+          }
+        }
+      }
+    },
+    "no_F2": {
+      "config": {
+        "strip_adl": true,
+        "keep_irrelevant": false,
+        "induce_positional": true,
+        "refine": true
+      },
+      "n_domains_parsed": 10,
+      "n_actions_total": 46,
+      "n_perfect": 39,
+      "per_domain": {
+        "blocksworld": {
+          "n_actions": 4,
+          "n_perfect": 4,
+          "per_action": {
+            "pickup": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "putdown": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "stack": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "unstack": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            }
+          }
+        },
+        "childsnack": {
+          "n_actions": 6,
+          "n_perfect": 5,
+          "per_action": {
+            "make_sandwich_no_gluten": {
+              "pre_f1": 1.0,
+              "add_f1": 0.6666666666666666,
+              "del_f1": 1.0
+            },
+            "make_sandwich": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "put_on_tray": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "serve_sandwich_no_gluten": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "serve_sandwich": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "move_tray": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            }
+          }
+        },
+        "ferry": {
+          "n_actions": 3,
+          "n_perfect": 3,
+          "per_action": {
+            "sail": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "board": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "debark": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            }
+          }
+        },
+        "floortile": {
+          "n_actions": 7,
+          "n_perfect": 5,
+          "per_action": {
+            "change_color": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "paint_up": {
+              "pre_f1": 1.0,
+              "add_f1": 0.0,
+              "del_f1": 1.0
+            },
+            "paint_down": {
+              "pre_f1": 1.0,
+              "add_f1": 0.0,
+              "del_f1": 1.0
+            },
+            "move_up": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "move_down": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "move_right": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "move_left": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            }
+          }
+        },
+        "miconic": {
+          "n_actions": 4,
+          "n_perfect": 4,
+          "per_action": {
+            "board": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "depart": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "up": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "down": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            }
+          }
+        },
+        "rovers": {
+          "n_actions": 9,
+          "n_perfect": 6,
+          "per_action": {
+            "navigate": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "sample_soil": {
+              "pre_f1": 1.0,
+              "add_f1": 0.6666666666666666,
+              "del_f1": 1.0
+            },
+            "sample_rock": {
+              "pre_f1": 1.0,
+              "add_f1": 0.6666666666666666,
+              "del_f1": 1.0
+            },
+            "drop": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "calibrate": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "take_image": {
+              "pre_f1": 1.0,
+              "add_f1": 0.0,
+              "del_f1": 1.0
+            },
+            "communicate_soil_data": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "communicate_rock_data": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "communicate_image_data": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            }
+          }
+        },
+        "satellite": {
+          "n_actions": 5,
+          "n_perfect": 5,
+          "per_action": {
+            "turn_to": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "switch_on": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "switch_off": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "calibrate": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "take_image": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            }
+          }
+        },
+        "sokoban": {
+          "n_actions": 2,
+          "n_perfect": 1,
+          "per_action": {
+            "move": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "push": {
+              "pre_f1": 1.0,
+              "add_f1": 0.8,
+              "del_f1": 1.0
+            }
+          }
+        },
+        "spanner": {
+          "n_actions": 3,
+          "n_perfect": 3,
+          "per_action": {
+            "walk": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "pickup_spanner": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "tighten_nut": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            }
+          }
+        },
+        "transport": {
+          "n_actions": 3,
+          "n_perfect": 3,
+          "per_action": {
+            "drive": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "pick-up": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "drop": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            }
+          }
+        }
+      }
+    },
+    "no_F1": {
+      "config": {
+        "strip_adl": false,
+        "keep_irrelevant": true,
+        "induce_positional": true,
+        "refine": true
+      },
+      "n_domains_parsed": 7,
+      "n_actions_total": 32,
+      "n_perfect": 32,
+      "per_domain": {
+        "blocksworld": {
+          "n_actions": 4,
+          "n_perfect": 4,
+          "per_action": {
+            "pickup": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "putdown": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "stack": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "unstack": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            }
+          }
+        },
+        "floortile": {
+          "n_actions": 7,
+          "n_perfect": 7,
+          "per_action": {
+            "change_color": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "paint_up": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "paint_down": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "move_up": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "move_down": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "move_right": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "move_left": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            }
+          }
+        },
+        "miconic": {
+          "n_actions": 4,
+          "n_perfect": 4,
+          "per_action": {
+            "board": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "depart": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "up": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "down": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            }
+          }
+        },
+        "rovers": {
+          "n_actions": 9,
+          "n_perfect": 9,
+          "per_action": {
+            "navigate": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "sample_soil": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "sample_rock": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "drop": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "calibrate": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "take_image": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "communicate_soil_data": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "communicate_rock_data": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "communicate_image_data": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            }
+          }
+        },
+        "sokoban": {
+          "n_actions": 2,
+          "n_perfect": 2,
+          "per_action": {
+            "move": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "push": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            }
+          }
+        },
+        "spanner": {
+          "n_actions": 3,
+          "n_perfect": 3,
+          "per_action": {
+            "walk": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "pickup_spanner": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "tighten_nut": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            }
+          }
+        },
+        "transport": {
+          "n_actions": 3,
+          "n_perfect": 3,
+          "per_action": {
+            "drive": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "pick-up": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            },
+            "drop": {
+              "pre_f1": 1.0,
+              "add_f1": 1.0,
+              "del_f1": 1.0
+            }
+          }
+        }
+      }
+    }
+  }
+}

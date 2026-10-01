@@ -1,0 +1,48 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "n_rollouts": 5,
+  "max_instances": 3,
+  "summary": {
+    "satellite": {
+      "n_solved": 3,
+      "n_total": 3,
+      "success_rate": 1.0
+    }
+  },
+  "rows": [
+    {
+      "domain": "satellite",
+      "n_solved": 3,
+      "n_total": 3,
+      "success_rate": 1.0,
+      "per_instance": [
+        {
+          "instance_id": 1,
+          "success": true,
+          "n_applied": 5,
+          "error": "",
+          "seconds": 23.56407880783081,
+          "plan": "(switch_on instrument1 satellite0)\n(turn_to satellite0 groundstation1 star2)\n(calibrate satellite0 instrument1 groundstation1)\n(turn_to satellite0 star2 groundstation1)\n(take_image satellite0 star2 in"
+        },
+        {
+          "instance_id": 10,
+          "success": true,
+          "n_applied": 7,
+          "error": "",
+          "seconds": 24.59434700012207,
+          "plan": "(switch_on instrument0 satellite0)\n(turn_to satellite0 groundstation0 groundstation1)\n(calibrate satellite0 instrument0 groundstation0)\n(turn_to satellite0 phenomenon3 groundstation0)\n(take_image sate"
+        },
+        {
+          "instance_id": 11,
+          "success": true,
+          "n_applied": 6,
+          "error": "",
+          "seconds": 22.54820680618286,
+          "plan": "(switch_on instrument0 satellite0)\n(calibrate satellite0 instrument0 groundstation0)\n(turn_to satellite0 phenomenon3 groundstation0)\n(take_image satellite0 phenomenon3 instrument0 spectrograph2)\n(turn"
+        }
+      ]
+    }
+  ],
+  "total_solved": 3,
+  "total": 3
+}

@@ -1,0 +1,1030 @@
+{
+  "threshold": 0.9,
+  "task_types": [
+    "look_at_obj_in_light",
+    "pick_and_place_simple",
+    "pick_clean_then_place_in_recep",
+    "pick_cool_then_place_in_recep",
+    "pick_heat_then_place_in_recep",
+    "pick_two_obj_and_place",
+    "pick_and_place_with_movable_recep"
+  ],
+  "systems": {
+    "regex_v2 (IID)": {
+      "split": "IID",
+      "per_task_type": {
+        "look_at_obj_in_light": {
+          "n_accept": 9,
+          "n_total": 29,
+          "accept_rate": 0.3103448275862069,
+          "ci_lo": 0.17275424489768068,
+          "ci_hi": 0.49230470472718546
+        },
+        "pick_and_place_simple": {
+          "n_accept": 19,
+          "n_total": 46,
+          "accept_rate": 0.41304347826086957,
+          "ci_lo": 0.2828839329710102,
+          "ci_hi": 0.5566075761298211
+        },
+        "pick_clean_then_place_in_recep": {
+          "n_accept": 9,
+          "n_total": 37,
+          "accept_rate": 0.24324324324324326,
+          "ci_lo": 0.13361203432663304,
+          "ci_hi": 0.4011760249070895
+        },
+        "pick_cool_then_place_in_recep": {
+          "n_accept": 11,
+          "n_total": 38,
+          "accept_rate": 0.2894736842105263,
+          "ci_lo": 0.17003106263656131,
+          "ci_hi": 0.44757438266189764
+        },
+        "pick_heat_then_place_in_recep": {
+          "n_accept": 14,
+          "n_total": 34,
+          "accept_rate": 0.4117647058823529,
+          "ci_lo": 0.26365737785688864,
+          "ci_hi": 0.5777869585348072
+        },
+        "pick_two_obj_and_place": {
+          "n_accept": 15,
+          "n_total": 33,
+          "accept_rate": 0.45454545454545453,
+          "ci_lo": 0.298426891258915,
+          "ci_hi": 0.6201434205625044
+        },
+        "pick_and_place_with_movable_recep": {
+          "n_accept": 0,
+          "n_total": 34,
+          "accept_rate": 0.0,
+          "ci_lo": 0.0,
+          "ci_hi": 0.10151790621961015
+        },
+        "POOLED": {
+          "n_accept": 77,
+          "n_total": 251,
+          "accept_rate": 0.30677290836653387,
+          "ci_lo": 0.25299117874331,
+          "ci_hi": 0.36638022686707705
+        }
+      }
+    },
+    "fair_eval/LLM (IID)": {
+      "split": "IID",
+      "per_task_type": {
+        "look_at_obj_in_light": {
+          "n_accept": 10,
+          "n_total": 29,
+          "accept_rate": 0.3448275862068966,
+          "ci_lo": 0.19940508749190483,
+          "ci_hi": 0.5265522349284402
+        },
+        "pick_and_place_simple": {
+          "n_accept": 14,
+          "n_total": 46,
+          "accept_rate": 0.30434782608695654,
+          "ci_lo": 0.19079670807448904,
+          "ci_hi": 0.4480591874023817
+        },
+        "pick_clean_then_place_in_recep": {
+          "n_accept": 9,
+          "n_total": 37,
+          "accept_rate": 0.24324324324324326,
+          "ci_lo": 0.13361203432663304,
+          "ci_hi": 0.4011760249070895
+        },
+        "pick_cool_then_place_in_recep": {
+          "n_accept": 18,
+          "n_total": 38,
+          "accept_rate": 0.47368421052631576,
+          "ci_lo": 0.3247877880894159,
+          "ci_hi": 0.6274128925728913
+        },
+        "pick_heat_then_place_in_recep": {
+          "n_accept": 9,
+          "n_total": 34,
+          "accept_rate": 0.2647058823529412,
+          "ci_lo": 0.14601027541553796,
+          "ci_hi": 0.4311746216289845
+        },
+        "pick_two_obj_and_place": {
+          "n_accept": 14,
+          "n_total": 33,
+          "accept_rate": 0.42424242424242425,
+          "ci_lo": 0.272353589950299,
+          "ci_hi": 0.5919302630853998
+        },
+        "pick_and_place_with_movable_recep": {
+          "n_accept": 0,
+          "n_total": 34,
+          "accept_rate": 0.0,
+          "ci_lo": 0.0,
+          "ci_hi": 0.10151790621961015
+        },
+        "POOLED": {
+          "n_accept": 74,
+          "n_total": 251,
+          "accept_rate": 0.2948207171314741,
+          "ci_lo": 0.24184614371330385,
+          "ci_hi": 0.3539812251307155
+        }
+      }
+    },
+    "GPT-3.5 (IID)": {
+      "split": "IID",
+      "per_task_type": {
+        "look_at_obj_in_light": {
+          "n_accept": 13,
+          "n_total": 29,
+          "accept_rate": 0.4482758620689655,
+          "ci_lo": 0.2841291114874579,
+          "ci_hi": 0.6245233293193238
+        },
+        "pick_and_place_simple": {
+          "n_accept": 18,
+          "n_total": 46,
+          "accept_rate": 0.391304347826087,
+          "ci_lo": 0.2639302235524884,
+          "ci_hi": 0.5354341628235508
+        },
+        "pick_clean_then_place_in_recep": {
+          "n_accept": 12,
+          "n_total": 37,
+          "accept_rate": 0.32432432432432434,
+          "ci_lo": 0.19633077820815478,
+          "ci_hi": 0.48536631495176064
+        },
+        "pick_cool_then_place_in_recep": {
+          "n_accept": 22,
+          "n_total": 38,
+          "accept_rate": 0.5789473684210527,
+          "ci_lo": 0.42192070613127325,
+          "ci_hi": 0.7214772518818047
+        },
+        "pick_heat_then_place_in_recep": {
+          "n_accept": 22,
+          "n_total": 34,
+          "accept_rate": 0.6470588235294118,
+          "ci_lo": 0.4791365883001342,
+          "ci_hi": 0.7851228510470394
+        },
+        "pick_two_obj_and_place": {
+          "n_accept": 14,
+          "n_total": 33,
+          "accept_rate": 0.42424242424242425,
+          "ci_lo": 0.272353589950299,
+          "ci_hi": 0.5919302630853998
+        },
+        "pick_and_place_with_movable_recep": {
+          "n_accept": 0,
+          "n_total": 34,
+          "accept_rate": 0.0,
+          "ci_lo": 0.0,
+          "ci_hi": 0.10151790621961015
+        },
+        "POOLED": {
+          "n_accept": 101,
+          "n_total": 251,
+          "accept_rate": 0.40239043824701193,
+          "ci_lo": 0.34363596927525,
+          "ci_hi": 0.46408773046607954
+        }
+      }
+    },
+    "OpenAI mini (IID)": {
+      "split": "IID",
+      "per_task_type": {
+        "look_at_obj_in_light": {
+          "n_accept": 9,
+          "n_total": 29,
+          "accept_rate": 0.3103448275862069,
+          "ci_lo": 0.17275424489768068,
+          "ci_hi": 0.49230470472718546
+        },
+        "pick_and_place_simple": {
+          "n_accept": 21,
+          "n_total": 46,
+          "accept_rate": 0.45652173913043476,
+          "ci_lo": 0.32154510421121985,
+          "ci_hi": 0.5982006503391957
+        },
+        "pick_clean_then_place_in_recep": {
+          "n_accept": 14,
+          "n_total": 37,
+          "accept_rate": 0.3783783783783784,
+          "ci_lo": 0.2406378746389103,
+          "ci_hi": 0.5389985744718004
+        },
+        "pick_cool_then_place_in_recep": {
+          "n_accept": 24,
+          "n_total": 38,
+          "accept_rate": 0.631578947368421,
+          "ci_lo": 0.47283672824260115,
+          "ci_hi": 0.7661598684458619
+        },
+        "pick_heat_then_place_in_recep": {
+          "n_accept": 25,
+          "n_total": 34,
+          "accept_rate": 0.7352941176470589,
+          "ci_lo": 0.5688253783710155,
+          "ci_hi": 0.8539897245844621
+        },
+        "pick_two_obj_and_place": {
+          "n_accept": 17,
+          "n_total": 33,
+          "accept_rate": 0.5151515151515151,
+          "ci_lo": 0.3521810458621024,
+          "ci_hi": 0.6749621835307578
+        },
+        "pick_and_place_with_movable_recep": {
+          "n_accept": 0,
+          "n_total": 34,
+          "accept_rate": 0.0,
+          "ci_lo": 0.0,
+          "ci_hi": 0.10151790621961015
+        },
+        "POOLED": {
+          "n_accept": 110,
+          "n_total": 251,
+          "accept_rate": 0.43824701195219123,
+          "ci_lo": 0.3782517479243477,
+          "ci_hi": 0.5001040621160854
+        }
+      }
+    },
+    "GPT-4o (IID)": {
+      "split": "IID",
+      "per_task_type": {
+        "look_at_obj_in_light": {
+          "n_accept": 15,
+          "n_total": 29,
+          "accept_rate": 0.5172413793103449,
+          "ci_lo": 0.3443073797056916,
+          "ci_hi": 0.6861418066920478
+        },
+        "pick_and_place_simple": {
+          "n_accept": 27,
+          "n_total": 46,
+          "accept_rate": 0.5869565217391305,
+          "ci_lo": 0.4433924238701789,
+          "ci_hi": 0.7171160670289898
+        },
+        "pick_clean_then_place_in_recep": {
+          "n_accept": 22,
+          "n_total": 37,
+          "accept_rate": 0.5945945945945946,
+          "ci_lo": 0.4348568313132931,
+          "ci_hi": 0.7365370416005986
+        },
+        "pick_cool_then_place_in_recep": {
+          "n_accept": 25,
+          "n_total": 38,
+          "accept_rate": 0.6578947368421053,
+          "ci_lo": 0.49891811629074545,
+          "ci_hi": 0.7878777997354105
+        },
+        "pick_heat_then_place_in_recep": {
+          "n_accept": 25,
+          "n_total": 34,
+          "accept_rate": 0.7352941176470589,
+          "ci_lo": 0.5688253783710155,
+          "ci_hi": 0.8539897245844621
+        },
+        "pick_two_obj_and_place": {
+          "n_accept": 25,
+          "n_total": 33,
+          "accept_rate": 0.7575757575757576,
+          "ci_lo": 0.5897505131450971,
+          "ci_hi": 0.8716843865335271
+        },
+        "pick_and_place_with_movable_recep": {
+          "n_accept": 2,
+          "n_total": 34,
+          "accept_rate": 0.058823529411764705,
+          "ci_lo": 0.016282313063842452,
+          "ci_hi": 0.1909393688946371
+        },
+        "POOLED": {
+          "n_accept": 141,
+          "n_total": 251,
+          "accept_rate": 0.5617529880478087,
+          "ci_lo": 0.4998959378839147,
+          "ci_hi": 0.6217482520756523
+        }
+      }
+    },
+    "Claude Haiku (IID)": {
+      "split": "IID",
+      "per_task_type": {
+        "look_at_obj_in_light": {
+          "n_accept": 13,
+          "n_total": 29,
+          "accept_rate": 0.4482758620689655,
+          "ci_lo": 0.2841291114874579,
+          "ci_hi": 0.6245233293193238
+        },
+        "pick_and_place_simple": {
+          "n_accept": 24,
+          "n_total": 46,
+          "accept_rate": 0.5217391304347826,
+          "ci_lo": 0.38137172148151327,
+          "ci_hi": 0.6587554012432788
+        },
+        "pick_clean_then_place_in_recep": {
+          "n_accept": 16,
+          "n_total": 37,
+          "accept_rate": 0.43243243243243246,
+          "ci_lo": 0.2867148684035131,
+          "ci_hi": 0.5908609366579929
+        },
+        "pick_cool_then_place_in_recep": {
+          "n_accept": 25,
+          "n_total": 38,
+          "accept_rate": 0.6578947368421053,
+          "ci_lo": 0.49891811629074545,
+          "ci_hi": 0.7878777997354105
+        },
+        "pick_heat_then_place_in_recep": {
+          "n_accept": 26,
+          "n_total": 34,
+          "accept_rate": 0.7647058823529411,
+          "ci_lo": 0.6000353719173557,
+          "ci_hi": 0.8756316189075566
+        },
+        "pick_two_obj_and_place": {
+          "n_accept": 18,
+          "n_total": 33,
+          "accept_rate": 0.5454545454545454,
+          "ci_lo": 0.3798565794374957,
+          "ci_hi": 0.701573108741085
+        },
+        "pick_and_place_with_movable_recep": {
+          "n_accept": 0,
+          "n_total": 34,
+          "accept_rate": 0.0,
+          "ci_lo": 0.0,
+          "ci_hi": 0.10151790621961015
+        },
+        "POOLED": {
+          "n_accept": 122,
+          "n_total": 251,
+          "accept_rate": 0.4860557768924303,
+          "ci_lo": 0.42490044611856254,
+          "ci_hi": 0.5476315109873419
+        }
+      }
+    },
+    "Claude Sonnet (IID)": {
+      "split": "IID",
+      "per_task_type": {
+        "look_at_obj_in_light": {
+          "n_accept": 18,
+          "n_total": 29,
+          "accept_rate": 0.6206896551724138,
+          "ci_lo": 0.4400222620928496,
+          "ci_hi": 0.7731220426913266
+        },
+        "pick_and_place_simple": {
+          "n_accept": 23,
+          "n_total": 46,
+          "accept_rate": 0.5,
+          "ci_lo": 0.3611870167007236,
+          "ci_hi": 0.6388129832992764
+        },
+        "pick_clean_then_place_in_recep": {
+          "n_accept": 19,
+          "n_total": 37,
+          "accept_rate": 0.5135135135135135,
+          "ci_lo": 0.3589463722598092,
+          "ci_hi": 0.6655384667278896
+        },
+        "pick_cool_then_place_in_recep": {
+          "n_accept": 28,
+          "n_total": 38,
+          "accept_rate": 0.7368421052631579,
+          "ci_lo": 0.5799084979362465,
+          "ci_hi": 0.8502853761029869
+        },
+        "pick_heat_then_place_in_recep": {
+          "n_accept": 27,
+          "n_total": 34,
+          "accept_rate": 0.7941176470588235,
+          "ci_lo": 0.6320128389178601,
+          "ci_hi": 0.8965060397764868
+        },
+        "pick_two_obj_and_place": {
+          "n_accept": 25,
+          "n_total": 33,
+          "accept_rate": 0.7575757575757576,
+          "ci_lo": 0.5897505131450971,
+          "ci_hi": 0.8716843865335271
+        },
+        "pick_and_place_with_movable_recep": {
+          "n_accept": 11,
+          "n_total": 34,
+          "accept_rate": 0.3235294117647059,
+          "ci_lo": 0.19131451326458573,
+          "ci_hi": 0.4915741595188061
+        },
+        "POOLED": {
+          "n_accept": 151,
+          "n_total": 251,
+          "accept_rate": 0.601593625498008,
+          "ci_lo": 0.5399341813154469,
+          "ci_hi": 0.6601901311986796
+        }
+      }
+    },
+    "Qwen-7B (IID)": {
+      "split": "IID",
+      "per_task_type": {
+        "look_at_obj_in_light": {
+          "n_accept": 12,
+          "n_total": 29,
+          "accept_rate": 0.41379310344827586,
+          "ci_lo": 0.2551293527964552,
+          "ci_hi": 0.5926247152148476
+        },
+        "pick_and_place_simple": {
+          "n_accept": 20,
+          "n_total": 46,
+          "accept_rate": 0.43478260869565216,
+          "ci_lo": 0.3020904595919057,
+          "ci_hi": 0.5775281722337178
+        },
+        "pick_clean_then_place_in_recep": {
+          "n_accept": 12,
+          "n_total": 37,
+          "accept_rate": 0.32432432432432434,
+          "ci_lo": 0.19633077820815478,
+          "ci_hi": 0.48536631495176064
+        },
+        "pick_cool_then_place_in_recep": {
+          "n_accept": 22,
+          "n_total": 38,
+          "accept_rate": 0.5789473684210527,
+          "ci_lo": 0.42192070613127325,
+          "ci_hi": 0.7214772518818047
+        },
+        "pick_heat_then_place_in_recep": {
+          "n_accept": 24,
+          "n_total": 34,
+          "accept_rate": 0.7058823529411765,
+          "ci_lo": 0.5383077411853625,
+          "ci_hi": 0.8316554739006805
+        },
+        "pick_two_obj_and_place": {
+          "n_accept": 16,
+          "n_total": 33,
+          "accept_rate": 0.48484848484848486,
+          "ci_lo": 0.32503781646924224,
+          "ci_hi": 0.6478189541378976
+        },
+        "pick_and_place_with_movable_recep": {
+          "n_accept": 0,
+          "n_total": 34,
+          "accept_rate": 0.0,
+          "ci_lo": 0.0,
+          "ci_hi": 0.10151790621961015
+        },
+        "POOLED": {
+          "n_accept": 106,
+          "n_total": 251,
+          "accept_rate": 0.42231075697211157,
+          "ci_lo": 0.3628270924517025,
+          "ci_hi": 0.48413666856690685
+        }
+      }
+    },
+    "Llama-70B (IID)": {
+      "split": "IID",
+      "per_task_type": {
+        "look_at_obj_in_light": {
+          "n_accept": 12,
+          "n_total": 29,
+          "accept_rate": 0.41379310344827586,
+          "ci_lo": 0.2551293527964552,
+          "ci_hi": 0.5926247152148476
+        },
+        "pick_and_place_simple": {
+          "n_accept": 15,
+          "n_total": 46,
+          "accept_rate": 0.32608695652173914,
+          "ci_lo": 0.20865764564493358,
+          "ci_hi": 0.47032537255672924
+        },
+        "pick_clean_then_place_in_recep": {
+          "n_accept": 15,
+          "n_total": 37,
+          "accept_rate": 0.40540540540540543,
+          "ci_lo": 0.26346295839940137,
+          "ci_hi": 0.565143168686707
+        },
+        "pick_cool_then_place_in_recep": {
+          "n_accept": 23,
+          "n_total": 38,
+          "accept_rate": 0.6052631578947368,
+          "ci_lo": 0.4471758699869596,
+          "ci_hi": 0.7440214073638108
+        },
+        "pick_heat_then_place_in_recep": {
+          "n_accept": 23,
+          "n_total": 34,
+          "accept_rate": 0.6764705882352942,
+          "ci_lo": 0.5084258404811939,
+          "ci_hi": 0.8086854867354143
+        },
+        "pick_two_obj_and_place": {
+          "n_accept": 15,
+          "n_total": 33,
+          "accept_rate": 0.45454545454545453,
+          "ci_lo": 0.298426891258915,
+          "ci_hi": 0.6201434205625044
+        },
+        "pick_and_place_with_movable_recep": {
+          "n_accept": 0,
+          "n_total": 34,
+          "accept_rate": 0.0,
+          "ci_lo": 0.0,
+          "ci_hi": 0.10151790621961015
+        },
+        "POOLED": {
+          "n_accept": 103,
+          "n_total": 251,
+          "accept_rate": 0.4103585657370518,
+          "ci_lo": 0.35130034846667657,
+          "ci_hi": 0.47211937578556495
+        }
+      }
+    },
+    "regex_v2 (OOD)": {
+      "split": "OOD",
+      "per_task_type": {
+        "look_at_obj_in_light": {
+          "n_accept": 16,
+          "n_total": 50,
+          "accept_rate": 0.32,
+          "ci_lo": 0.20758044093999403,
+          "ci_hi": 0.45810557136276076
+        },
+        "pick_and_place_simple": {
+          "n_accept": 17,
+          "n_total": 30,
+          "accept_rate": 0.5666666666666667,
+          "ci_lo": 0.3919700954540873,
+          "ci_hi": 0.7262276256938489
+        },
+        "pick_clean_then_place_in_recep": {
+          "n_accept": 15,
+          "n_total": 36,
+          "accept_rate": 0.4166666666666667,
+          "ci_lo": 0.2714033350508729,
+          "ci_hi": 0.5780003033572231
+        },
+        "pick_cool_then_place_in_recep": {
+          "n_accept": 14,
+          "n_total": 36,
+          "accept_rate": 0.3888888888888889,
+          "ci_lo": 0.24784655417822943,
+          "ci_hi": 0.5513582970325652
+        },
+        "pick_heat_then_place_in_recep": {
+          "n_accept": 9,
+          "n_total": 42,
+          "accept_rate": 0.21428571428571427,
+          "ci_lo": 0.11705668531051237,
+          "ci_hi": 0.3594013789804373
+        },
+        "pick_two_obj_and_place": {
+          "n_accept": 9,
+          "n_total": 24,
+          "accept_rate": 0.375,
+          "ci_lo": 0.21159133433631458,
+          "ci_hi": 0.5729038096209293
+        },
+        "pick_and_place_with_movable_recep": {
+          "n_accept": 0,
+          "n_total": 33,
+          "accept_rate": 0.0,
+          "ci_lo": 0.0,
+          "ci_hi": 0.10427343003561192
+        },
+        "POOLED": {
+          "n_accept": 80,
+          "n_total": 251,
+          "accept_rate": 0.3187250996015936,
+          "ci_lo": 0.26418009030305073,
+          "ci_hi": 0.3787353520737042
+        }
+      }
+    },
+    "OpenAI mini (OOD)": {
+      "split": "OOD",
+      "per_task_type": {
+        "look_at_obj_in_light": {
+          "n_accept": 22,
+          "n_total": 50,
+          "accept_rate": 0.44,
+          "ci_lo": 0.3116198721023534,
+          "ci_hi": 0.5769421319985648
+        },
+        "pick_and_place_simple": {
+          "n_accept": 18,
+          "n_total": 30,
+          "accept_rate": 0.6,
+          "ci_lo": 0.42320052498273836,
+          "ci_hi": 0.7540960567391659
+        },
+        "pick_clean_then_place_in_recep": {
+          "n_accept": 20,
+          "n_total": 36,
+          "accept_rate": 0.5555555555555556,
+          "ci_lo": 0.3958078731600341,
+          "ci_hi": 0.7045897012345685
+        },
+        "pick_cool_then_place_in_recep": {
+          "n_accept": 28,
+          "n_total": 36,
+          "accept_rate": 0.7777777777777778,
+          "ci_lo": 0.6191498017214091,
+          "ci_hi": 0.882838070251604
+        },
+        "pick_heat_then_place_in_recep": {
+          "n_accept": 36,
+          "n_total": 42,
+          "accept_rate": 0.8571428571428571,
+          "ci_lo": 0.7215861764782122,
+          "ci_hi": 0.9328412431581007
+        },
+        "pick_two_obj_and_place": {
+          "n_accept": 10,
+          "n_total": 24,
+          "accept_rate": 0.4166666666666667,
+          "ci_lo": 0.24467347246538232,
+          "ci_hi": 0.6116566235061137
+        },
+        "pick_and_place_with_movable_recep": {
+          "n_accept": 0,
+          "n_total": 33,
+          "accept_rate": 0.0,
+          "ci_lo": 0.0,
+          "ci_hi": 0.10427343003561192
+        },
+        "POOLED": {
+          "n_accept": 134,
+          "n_total": 251,
+          "accept_rate": 0.5338645418326693,
+          "ci_lo": 0.47210383915985454,
+          "ci_hi": 0.594604265011521
+        }
+      }
+    },
+    "GPT-4o (OOD)": {
+      "split": "OOD",
+      "per_task_type": {
+        "look_at_obj_in_light": {
+          "n_accept": 27,
+          "n_total": 50,
+          "accept_rate": 0.54,
+          "ci_lo": 0.40398634328388083,
+          "ci_hi": 0.6703056539821737
+        },
+        "pick_and_place_simple": {
+          "n_accept": 21,
+          "n_total": 30,
+          "accept_rate": 0.7,
+          "ci_lo": 0.5212387898833981,
+          "ci_hi": 0.8333543735604105
+        },
+        "pick_clean_then_place_in_recep": {
+          "n_accept": 25,
+          "n_total": 36,
+          "accept_rate": 0.6944444444444444,
+          "ci_lo": 0.5314342132091627,
+          "ci_hi": 0.8199572971719464
+        },
+        "pick_cool_then_place_in_recep": {
+          "n_accept": 28,
+          "n_total": 36,
+          "accept_rate": 0.7777777777777778,
+          "ci_lo": 0.6191498017214091,
+          "ci_hi": 0.882838070251604
+        },
+        "pick_heat_then_place_in_recep": {
+          "n_accept": 35,
+          "n_total": 42,
+          "accept_rate": 0.8333333333333334,
+          "ci_lo": 0.693957037952257,
+          "ci_hi": 0.916841887041635
+        },
+        "pick_two_obj_and_place": {
+          "n_accept": 18,
+          "n_total": 24,
+          "accept_rate": 0.75,
+          "ci_lo": 0.5510017468789357,
+          "ci_hi": 0.8800079652065766
+        },
+        "pick_and_place_with_movable_recep": {
+          "n_accept": 2,
+          "n_total": 33,
+          "accept_rate": 0.06060606060606061,
+          "ci_lo": 0.016780530429070947,
+          "ci_hi": 0.19606581717798194
+        },
+        "POOLED": {
+          "n_accept": 156,
+          "n_total": 251,
+          "accept_rate": 0.6215139442231076,
+          "ci_lo": 0.5601054568556619,
+          "ci_hi": 0.6792589169357443
+        }
+      }
+    },
+    "Claude Haiku (OOD)": {
+      "split": "OOD",
+      "per_task_type": {
+        "look_at_obj_in_light": {
+          "n_accept": 26,
+          "n_total": 50,
+          "accept_rate": 0.52,
+          "ci_lo": 0.3851151225880844,
+          "ci_hi": 0.6520308760449429
+        },
+        "pick_and_place_simple": {
+          "n_accept": 21,
+          "n_total": 30,
+          "accept_rate": 0.7,
+          "ci_lo": 0.5212387898833981,
+          "ci_hi": 0.8333543735604105
+        },
+        "pick_clean_then_place_in_recep": {
+          "n_accept": 20,
+          "n_total": 36,
+          "accept_rate": 0.5555555555555556,
+          "ci_lo": 0.3958078731600341,
+          "ci_hi": 0.7045897012345685
+        },
+        "pick_cool_then_place_in_recep": {
+          "n_accept": 27,
+          "n_total": 36,
+          "accept_rate": 0.75,
+          "ci_lo": 0.5892923231679656,
+          "ci_hi": 0.8624967616077461
+        },
+        "pick_heat_then_place_in_recep": {
+          "n_accept": 35,
+          "n_total": 42,
+          "accept_rate": 0.8333333333333334,
+          "ci_lo": 0.693957037952257,
+          "ci_hi": 0.916841887041635
+        },
+        "pick_two_obj_and_place": {
+          "n_accept": 14,
+          "n_total": 24,
+          "accept_rate": 0.5833333333333334,
+          "ci_lo": 0.3883433764938864,
+          "ci_hi": 0.7553265275346177
+        },
+        "pick_and_place_with_movable_recep": {
+          "n_accept": 0,
+          "n_total": 33,
+          "accept_rate": 0.0,
+          "ci_lo": 0.0,
+          "ci_hi": 0.10427343003561192
+        },
+        "POOLED": {
+          "n_accept": 143,
+          "n_total": 251,
+          "accept_rate": 0.5697211155378487,
+          "ci_lo": 0.5078717303471626,
+          "ci_hi": 0.6294684841233164
+        }
+      }
+    },
+    "Claude Sonnet (OOD)": {
+      "split": "OOD",
+      "per_task_type": {
+        "look_at_obj_in_light": {
+          "n_accept": 31,
+          "n_total": 50,
+          "accept_rate": 0.62,
+          "ci_lo": 0.4815019502239357,
+          "ci_hi": 0.7413740415742278
+        },
+        "pick_and_place_simple": {
+          "n_accept": 17,
+          "n_total": 30,
+          "accept_rate": 0.5666666666666667,
+          "ci_lo": 0.3919700954540873,
+          "ci_hi": 0.7262276256938489
+        },
+        "pick_clean_then_place_in_recep": {
+          "n_accept": 28,
+          "n_total": 36,
+          "accept_rate": 0.7777777777777778,
+          "ci_lo": 0.6191498017214091,
+          "ci_hi": 0.882838070251604
+        },
+        "pick_cool_then_place_in_recep": {
+          "n_accept": 28,
+          "n_total": 36,
+          "accept_rate": 0.7777777777777778,
+          "ci_lo": 0.6191498017214091,
+          "ci_hi": 0.882838070251604
+        },
+        "pick_heat_then_place_in_recep": {
+          "n_accept": 36,
+          "n_total": 42,
+          "accept_rate": 0.8571428571428571,
+          "ci_lo": 0.7215861764782122,
+          "ci_hi": 0.9328412431581007
+        },
+        "pick_two_obj_and_place": {
+          "n_accept": 18,
+          "n_total": 24,
+          "accept_rate": 0.75,
+          "ci_lo": 0.5510017468789357,
+          "ci_hi": 0.8800079652065766
+        },
+        "pick_and_place_with_movable_recep": {
+          "n_accept": 11,
+          "n_total": 33,
+          "accept_rate": 0.3333333333333333,
+          "ci_lo": 0.19750029467803698,
+          "ci_hi": 0.5039241820005003
+        },
+        "POOLED": {
+          "n_accept": 169,
+          "n_total": 251,
+          "accept_rate": 0.6733067729083665,
+          "ci_lo": 0.6130516119555338,
+          "ci_hi": 0.7283369211567994
+        }
+      }
+    }
+  },
+  "findings": {
+    "IID": {
+      "llm_mean_accept_rate_by_task_type": {
+        "look_at_obj_in_light": 0.43965517241379304,
+        "pick_and_place_simple": 0.4402173913043479,
+        "pick_clean_then_place_in_recep": 0.402027027027027,
+        "pick_cool_then_place_in_recep": 0.6151315789473685,
+        "pick_heat_then_place_in_recep": 0.6654411764705883,
+        "pick_two_obj_and_place": 0.5454545454545454,
+        "pick_and_place_with_movable_recep": 0.04779411764705883
+      },
+      "best_llm_task_type": {
+        "task_type": "pick_heat_then_place_in_recep",
+        "mean_rate": 0.6654411764705883
+      },
+      "worst_llm_task_type": {
+        "task_type": "pick_and_place_with_movable_recep",
+        "mean_rate": 0.04779411764705883
+      },
+      "max_llm_minus_regex_gap": {
+        "task_type": "pick_cool_then_place_in_recep",
+        "gap": 0.4473684210526315,
+        "regex_rate": 0.2894736842105263,
+        "best_llm_rate": 0.7368421052631579,
+        "best_llm_name": "Claude Sonnet (IID)"
+      },
+      "regex_ties_or_beats_best_llm": {},
+      "per_task_gaps": {
+        "look_at_obj_in_light": {
+          "regex_rate": 0.3103448275862069,
+          "best_llm_rate": 0.6206896551724138,
+          "best_llm_name": "Claude Sonnet (IID)",
+          "gap": 0.3103448275862069
+        },
+        "pick_and_place_simple": {
+          "regex_rate": 0.41304347826086957,
+          "best_llm_rate": 0.5869565217391305,
+          "best_llm_name": "GPT-4o (IID)",
+          "gap": 0.17391304347826092
+        },
+        "pick_clean_then_place_in_recep": {
+          "regex_rate": 0.24324324324324326,
+          "best_llm_rate": 0.5945945945945946,
+          "best_llm_name": "GPT-4o (IID)",
+          "gap": 0.35135135135135137
+        },
+        "pick_cool_then_place_in_recep": {
+          "regex_rate": 0.2894736842105263,
+          "best_llm_rate": 0.7368421052631579,
+          "best_llm_name": "Claude Sonnet (IID)",
+          "gap": 0.4473684210526315
+        },
+        "pick_heat_then_place_in_recep": {
+          "regex_rate": 0.4117647058823529,
+          "best_llm_rate": 0.7941176470588235,
+          "best_llm_name": "Claude Sonnet (IID)",
+          "gap": 0.38235294117647056
+        },
+        "pick_two_obj_and_place": {
+          "regex_rate": 0.45454545454545453,
+          "best_llm_rate": 0.7575757575757576,
+          "best_llm_name": "GPT-4o (IID)",
+          "gap": 0.30303030303030304
+        },
+        "pick_and_place_with_movable_recep": {
+          "regex_rate": 0.0,
+          "best_llm_rate": 0.3235294117647059,
+          "best_llm_name": "Claude Sonnet (IID)",
+          "gap": 0.3235294117647059
+        }
+      },
+      "regex_system_name": "regex_v2 (IID)",
+      "llm_systems_in_split": [
+        "fair_eval/LLM (IID)",
+        "GPT-3.5 (IID)",
+        "OpenAI mini (IID)",
+        "GPT-4o (IID)",
+        "Claude Haiku (IID)",
+        "Claude Sonnet (IID)",
+        "Qwen-7B (IID)",
+        "Llama-70B (IID)"
+      ]
+    },
+    "OOD": {
+      "llm_mean_accept_rate_by_task_type": {
+        "look_at_obj_in_light": 0.53,
+        "pick_and_place_simple": 0.6416666666666666,
+        "pick_clean_then_place_in_recep": 0.6458333333333334,
+        "pick_cool_then_place_in_recep": 0.7708333333333333,
+        "pick_heat_then_place_in_recep": 0.8452380952380952,
+        "pick_two_obj_and_place": 0.625,
+        "pick_and_place_with_movable_recep": 0.09848484848484848
+      },
+      "best_llm_task_type": {
+        "task_type": "pick_heat_then_place_in_recep",
+        "mean_rate": 0.8452380952380952
+      },
+      "worst_llm_task_type": {
+        "task_type": "pick_and_place_with_movable_recep",
+        "mean_rate": 0.09848484848484848
+      },
+      "max_llm_minus_regex_gap": {
+        "task_type": "pick_heat_then_place_in_recep",
+        "gap": 0.6428571428571428,
+        "regex_rate": 0.21428571428571427,
+        "best_llm_rate": 0.8571428571428571,
+        "best_llm_name": "OpenAI mini (OOD)"
+      },
+      "regex_ties_or_beats_best_llm": {},
+      "per_task_gaps": {
+        "look_at_obj_in_light": {
+          "regex_rate": 0.32,
+          "best_llm_rate": 0.62,
+          "best_llm_name": "Claude Sonnet (OOD)",
+          "gap": 0.3
+        },
+        "pick_and_place_simple": {
+          "regex_rate": 0.5666666666666667,
+          "best_llm_rate": 0.7,
+          "best_llm_name": "GPT-4o (OOD)",
+          "gap": 0.1333333333333333
+        },
+        "pick_clean_then_place_in_recep": {
+          "regex_rate": 0.4166666666666667,
+          "best_llm_rate": 0.7777777777777778,
+          "best_llm_name": "Claude Sonnet (OOD)",
+          "gap": 0.3611111111111111
+        },
+        "pick_cool_then_place_in_recep": {
+          "regex_rate": 0.3888888888888889,
+          "best_llm_rate": 0.7777777777777778,
+          "best_llm_name": "OpenAI mini (OOD)",
+          "gap": 0.3888888888888889
+        },
+        "pick_heat_then_place_in_recep": {
+          "regex_rate": 0.21428571428571427,
+          "best_llm_rate": 0.8571428571428571,
+          "best_llm_name": "OpenAI mini (OOD)",
+          "gap": 0.6428571428571428
+        },
+        "pick_two_obj_and_place": {
+          "regex_rate": 0.375,
+          "best_llm_rate": 0.75,
+          "best_llm_name": "GPT-4o (OOD)",
+          "gap": 0.375
+        },
+        "pick_and_place_with_movable_recep": {
+          "regex_rate": 0.0,
+          "best_llm_rate": 0.3333333333333333,
+          "best_llm_name": "Claude Sonnet (OOD)",
+          "gap": 0.3333333333333333
+        }
+      },
+      "regex_system_name": "regex_v2 (OOD)",
+      "llm_systems_in_split": [
+        "OpenAI mini (OOD)",
+        "GPT-4o (OOD)",
+        "Claude Haiku (OOD)",
+        "Claude Sonnet (OOD)"
+      ]
+    }
+  }
+}

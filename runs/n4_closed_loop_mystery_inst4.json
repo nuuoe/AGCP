@@ -1,0 +1,136 @@
+{
+  "domain": "mystery_blocksworld_3",
+  "instance": "instance-4.pddl",
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "trace": {
+    "step1_rollouts": {
+      "n_transitions": 500,
+      "n_actions_observed": 4,
+      "actions": [
+        "attack",
+        "feast",
+        "overcome",
+        "succumb"
+      ],
+      "seconds": 0.0060901641845703125
+    },
+    "step2_induction": {
+      "n_actions_induced": 4,
+      "models": {
+        "feast": {
+          "pre_pos": [
+            "craves({a1},{a2})",
+            "harmony",
+            "province({a1})"
+          ],
+          "eff_add": [
+            "pain({a1})",
+            "province({a2})"
+          ],
+          "eff_del": [
+            "craves({a1},{a2})",
+            "harmony",
+            "province({a1})"
+          ],
+          "n_examples": 149
+        },
+        "overcome": {
+          "pre_pos": [
+            "pain({a1})",
+            "province({a2})"
+          ],
+          "eff_add": [
+            "craves({a1},{a2})",
+            "harmony",
+            "province({a1})"
+          ],
+          "eff_del": [
+            "pain({a1})",
+            "province({a2})"
+          ],
+          "n_examples": 140
+        },
+        "succumb": {
+          "pre_pos": [
+            "pain({a1})"
+          ],
+          "eff_add": [
+            "harmony",
+            "planet({a1})",
+            "province({a1})"
+          ],
+          "eff_del": [
+            "pain({a1})"
+          ],
+          "n_examples": 110
+        },
+        "attack": {
+          "pre_pos": [
+            "harmony",
+            "planet({a1})",
+            "province({a1})"
+          ],
+          "eff_add": [
+            "pain({a1})"
+          ],
+          "eff_del": [
+            "harmony",
+            "planet({a1})",
+            "province({a1})"
+          ],
+          "n_examples": 101
+        }
+      },
+      "seconds": 0.011249065399169922
+    },
+    "step3_nl_parse": {
+      "nl_goal": "object b craves object a and object c craves object b",
+      "nl_mapped": "object b craves object a and object c craves object b",
+      "parsed_goal": [
+        "craves(b, a)",
+        "craves(c, b)"
+      ],
+      "llm_accepted": true,
+      "verifier_score": 0.6666666666666666,
+      "refine_rounds": 0,
+      "seconds": 114.53904581069946
+    },
+    "step4_cfg": {
+      "cfg_built": true,
+      "cfg_size_chars": 132,
+      "used_astar_fallback": true,
+      "n_objects": 3,
+      "seconds": 0.03767585754394531
+    },
+    "step5_decode": {
+      "raw_plan_json": "{\"plan\":[\"feast(a,b)\",\"succumb(a)\",\"feast(b,c)\",\"overcome(b,a)\"]}",
+      "seconds": 10.401010751724243
+    },
+    "step6_execute": {
+      "success": true,
+      "n_applied": 4,
+      "plan_lisp": "(feast a b)\n(succumb a)\n(feast b c)\n(overcome b a)",
+      "plan_log": [
+        {
+          "action": "(feast a b)",
+          "applied": true
+        },
+        {
+          "action": "(succumb a)",
+          "applied": true
+        },
+        {
+          "action": "(feast b c)",
+          "applied": true
+        },
+        {
+          "action": "(overcome b a)",
+          "applied": true
+        }
+      ],
+      "seconds": 0.0003859996795654297
+    }
+  },
+  "total_seconds": 124.99545764923096,
+  "goal_achieved": true
+}

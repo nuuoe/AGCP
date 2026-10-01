@@ -1,0 +1,77 @@
+{
+  "n_solved": 10,
+  "n_total": 10,
+  "success_rate": 1.0,
+  "per_instance": [
+    {
+      "instance_id": 2,
+      "n_actions_in_plan": 8,
+      "n_applied": 8,
+      "success": true,
+      "error": ""
+    },
+    {
+      "instance_id": 3,
+      "n_actions_in_plan": 12,
+      "n_applied": 12,
+      "success": true,
+      "error": ""
+    },
+    {
+      "instance_id": 4,
+      "n_actions_in_plan": 8,
+      "n_applied": 8,
+      "success": true,
+      "error": ""
+    },
+    {
+      "instance_id": 5,
+      "n_actions_in_plan": 12,
+      "n_applied": 12,
+      "success": true,
+      "error": ""
+    },
+    {
+      "instance_id": 6,
+      "n_actions_in_plan": 10,
+      "n_applied": 10,
+      "success": true,
+      "error": ""
+    },
+    {
+      "instance_id": 7,
+      "n_actions_in_plan": 10,
+      "n_applied": 10,
+      "success": true,
+      "error": ""
+    },
+    {
+      "instance_id": 8,
+      "n_actions_in_plan": 6,
+      "n_applied": 6,
+      "success": true,
+      "error": ""
+    },
+    {
+      "instance_id": 9,
+      "n_actions_in_plan": 8,
+      "n_applied": 8,
+      "success": true,
+      "error": ""
+    },
+    {
+      "instance_id": 10,
+      "n_actions_in_plan": 10,
+      "n_applied": 10,
+      "success": true,
+      "error": ""
+    },
+    {
+      "instance_id": 11,
+      "n_actions_in_plan": 12,
+      "n_applied": 12,
+      "success": true,
+      "error": ""
+    }
+  ]
+}

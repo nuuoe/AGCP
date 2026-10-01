@@ -1,0 +1,68 @@
+{
+  "config": "blocksworld_3",
+  "method": "pure_classical_no_llm",
+  "n_solved": 10,
+  "n_total": 10,
+  "rows": [
+    {
+      "inst": 2,
+      "solved": true,
+      "n_actions": 4,
+      "wallclock_sec": 0.001230001449584961
+    },
+    {
+      "inst": 3,
+      "solved": true,
+      "n_actions": 8,
+      "wallclock_sec": 0.0009562969207763672
+    },
+    {
+      "inst": 4,
+      "solved": true,
+      "n_actions": 4,
+      "wallclock_sec": 0.0006992816925048828
+    },
+    {
+      "inst": 5,
+      "solved": true,
+      "n_actions": 8,
+      "wallclock_sec": 0.0007898807525634766
+    },
+    {
+      "inst": 6,
+      "solved": true,
+      "n_actions": 6,
+      "wallclock_sec": 0.0006608963012695312
+    },
+    {
+      "inst": 7,
+      "solved": true,
+      "n_actions": 6,
+      "wallclock_sec": 0.000789642333984375
+    },
+    {
+      "inst": 8,
+      "solved": true,
+      "n_actions": 2,
+      "wallclock_sec": 0.0006239414215087891
+    },
+    {
+      "inst": 9,
+      "solved": true,
+      "n_actions": 4,
+      "wallclock_sec": 0.0006079673767089844
+    },
+    {
+      "inst": 10,
+      "solved": true,
+      "n_actions": 6,
+      "wallclock_sec": 0.0008339881896972656
+    },
+    {
+      "inst": 11,
+      "solved": true,
+      "n_actions": 8,
+      "wallclock_sec": 0.0009462833404541016
+    }
+  ]
+}

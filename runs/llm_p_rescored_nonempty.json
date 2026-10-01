@@ -1,0 +1,23 @@
+{
+  "criterion": "strict = orig_success AND plan_length > 0",
+  "summary": [
+    {
+      "path": "runs/llm_p_depots_lexsorted.json",
+      "n_total": 30,
+      "n_orig_success": 12,
+      "n_strict_success": 0,
+      "n_trivial_init_eq_goal": 12,
+      "orig_rate": 0.4,
+      "strict_rate": 0.0
+    },
+    {
+      "path": "runs/llm_p_depots_matched_n30.json",
+      "n_total": 30,
+      "n_orig_success": 10,
+      "n_strict_success": 0,
+      "n_trivial_init_eq_goal": 10,
+      "orig_rate": 0.3333333333333333,
+      "strict_rate": 0.0
+    }
+  ]
+}

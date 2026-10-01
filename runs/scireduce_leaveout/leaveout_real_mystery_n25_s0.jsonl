@@ -1,0 +1,25 @@
+{"instance_id": "instance-43", "compiled": false, "coverage": false, "n_actions": 12}
+{"instance_id": "instance-1", "compiled": true, "coverage": false, "n_actions": 8, "ebnf_size": 7266}
+{"instance_id": "instance-28", "compiled": false, "coverage": false, "n_actions": 14}
+{"instance_id": "instance-14", "compiled": false, "coverage": false, "n_actions": 16}
+{"instance_id": "instance-36", "compiled": true, "coverage": true, "n_actions": 10, "ebnf_size": 7908}
+{"instance_id": "instance-12", "compiled": true, "coverage": false, "n_actions": 8, "ebnf_size": 8016}
+{"instance_id": "instance-0", "compiled": false, "coverage": false, "n_actions": 14}
+{"instance_id": "instance-27", "compiled": false, "coverage": false, "n_actions": 12}
+{"instance_id": "instance-47", "compiled": false, "coverage": false, "n_actions": 14}
+{"instance_id": "instance-7", "compiled": false, "coverage": false, "n_actions": 12}
+{"instance_id": "instance-33", "compiled": true, "coverage": true, "n_actions": 14, "ebnf_size": 7950}
+{"instance_id": "instance-34", "compiled": false, "coverage": false, "n_actions": 6}
+{"instance_id": "instance-20", "compiled": false, "coverage": false, "n_actions": 12}
+{"instance_id": "instance-49", "compiled": false, "coverage": false, "n_actions": 14}
+{"instance_id": "instance-5", "compiled": true, "coverage": false, "n_actions": 6, "ebnf_size": 143}
+{"instance_id": "instance-38", "compiled": false, "coverage": false, "n_actions": 14}
+{"instance_id": "instance-11", "compiled": false, "coverage": false, "n_actions": 10}
+{"instance_id": "instance-23", "compiled": true, "coverage": false, "n_actions": 10, "ebnf_size": 8015}
+{"instance_id": "instance-40", "compiled": false, "coverage": false, "n_actions": 16}
+{"instance_id": "instance-15", "compiled": true, "coverage": true, "n_actions": 10, "ebnf_size": 8094}
+{"instance_id": "instance-10", "compiled": false, "coverage": false, "n_actions": 12}
+{"instance_id": "instance-21", "compiled": false, "coverage": false, "n_actions": 6}
+{"instance_id": "instance-46", "compiled": false, "coverage": false, "n_actions": 6}
+{"instance_id": "instance-3", "compiled": false, "coverage": false, "n_actions": 14}
+{"instance_id": "instance-9", "compiled": false, "coverage": false, "n_actions": 14}

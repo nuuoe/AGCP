@@ -1,0 +1,131 @@
+{
+  "instance_id": 20,
+  "step1": {
+    "n_transitions": 500,
+    "n_actions_observed": 4,
+    "actions": [
+      "attack",
+      "feast",
+      "overcome",
+      "succumb"
+    ],
+    "seconds": 0.0033750534057617188
+  },
+  "step2": {
+    "n_actions_induced": 4,
+    "models": {
+      "feast": {
+        "pre_pos": [
+          "craves({a1},{a2})",
+          "harmony",
+          "province({a1})"
+        ],
+        "eff_add": [
+          "pain({a1})",
+          "province({a2})"
+        ],
+        "eff_del": [
+          "craves({a1},{a2})",
+          "harmony",
+          "province({a1})"
+        ],
+        "n_examples": 139
+      },
+      "overcome": {
+        "pre_pos": [
+          "pain({a1})",
+          "province({a2})"
+        ],
+        "eff_add": [
+          "craves({a1},{a2})",
+          "harmony",
+          "province({a1})"
+        ],
+        "eff_del": [
+          "pain({a1})",
+          "province({a2})"
+        ],
+        "n_examples": 141
+      },
+      "attack": {
+        "pre_pos": [
+          "harmony",
+          "planet({a1})",
+          "province({a1})"
+        ],
+        "eff_add": [
+          "pain({a1})"
+        ],
+        "eff_del": [
+          "harmony",
+          "planet({a1})",
+          "province({a1})"
+        ],
+        "n_examples": 111
+      },
+      "succumb": {
+        "pre_pos": [
+          "pain({a1})"
+        ],
+        "eff_add": [
+          "harmony",
+          "planet({a1})",
+          "province({a1})"
+        ],
+        "eff_del": [
+          "pain({a1})"
+        ],
+        "n_examples": 109
+      }
+    },
+    "seconds": 0.008085966110229492
+  },
+  "step3_nl_parse": {
+    "nl_goal": "object b craves object a",
+    "nl_mapped": "object b craves object a",
+    "parsed_goal": [
+      "craves(b, a)"
+    ],
+    "llm_accepted": true,
+    "verifier_score": 1.0,
+    "refine_rounds": 0,
+    "seconds": 14.955399751663208
+  },
+  "gt_atoms": [
+    "craves(b,a)"
+  ],
+  "parsed_goal": [
+    "craves(b, a)"
+  ],
+  "llm_e4_succeeded": true,
+  "step4": {
+    "cfg_built": true,
+    "cfg_size_chars": 89,
+    "used_astar_fallback": true,
+    "n_objects": 3,
+    "seconds": 0.0002789497375488281
+  },
+  "step5": {
+    "raw_plan_json": "{\"plan\":[\"attack(b)\",\"overcome(b,a)\"]}",
+    "seconds": 5.586612939834595
+  },
+  "step6": {
+    "success_against_parsed": false,
+    "success_against_gt": true,
+    "n_applied": 2,
+    "plan_lisp": "(attack b)\n(overcome b a)",
+    "plan_log": [
+      {
+        "action": "(attack b)",
+        "applied": true
+      },
+      {
+        "action": "(overcome b a)",
+        "applied": true
+      }
+    ],
+    "seconds": 7.176399230957031e-05
+  },
+  "success_against_parsed": false,
+  "success_against_gt": true
+}

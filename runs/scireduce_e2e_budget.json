@@ -1,0 +1,404 @@
+{
+  "mystery_jsonl": "runs/scireduce_input/mystery.jsonl",
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "k": 8,
+  "variant": "budget",
+  "n_holdout": 10,
+  "per_seed": [
+    {
+      "seed": 0,
+      "n": 10,
+      "compiled": 5,
+      "coverage": 4,
+      "e2e_success": 5
+    },
+    {
+      "seed": 1,
+      "n": 10,
+      "compiled": 2,
+      "coverage": 2,
+      "e2e_success": 2
+    },
+    {
+      "seed": 2,
+      "n": 10,
+      "compiled": 3,
+      "coverage": 3,
+      "e2e_success": 3
+    },
+    {
+      "seed": 3,
+      "n": 10,
+      "compiled": 5,
+      "coverage": 4,
+      "e2e_success": 5
+    }
+  ],
+  "rows": [
+    {
+      "seed": 0,
+      "instance_id": "instance-43",
+      "n_gold_actions": 12,
+      "compiled": false,
+      "coverage": false,
+      "e2e_success": false
+    },
+    {
+      "seed": 0,
+      "instance_id": "instance-1",
+      "n_gold_actions": 8,
+      "compiled": true,
+      "coverage": false,
+      "e2e_success": true,
+      "n_goal_reaching_samples": 8,
+      "k": 8,
+      "wall_seconds": 43.1
+    },
+    {
+      "seed": 0,
+      "instance_id": "instance-28",
+      "n_gold_actions": 14,
+      "compiled": false,
+      "coverage": false,
+      "e2e_success": false
+    },
+    {
+      "seed": 0,
+      "instance_id": "instance-14",
+      "n_gold_actions": 16,
+      "compiled": false,
+      "coverage": false,
+      "e2e_success": false
+    },
+    {
+      "seed": 0,
+      "instance_id": "instance-36",
+      "n_gold_actions": 10,
+      "compiled": true,
+      "coverage": true,
+      "e2e_success": true,
+      "n_goal_reaching_samples": 8,
+      "k": 8,
+      "wall_seconds": 53.5
+    },
+    {
+      "seed": 0,
+      "instance_id": "instance-12",
+      "n_gold_actions": 8,
+      "compiled": true,
+      "coverage": true,
+      "e2e_success": true,
+      "n_goal_reaching_samples": 8,
+      "k": 8,
+      "wall_seconds": 47.8
+    },
+    {
+      "seed": 0,
+      "instance_id": "instance-0",
+      "n_gold_actions": 14,
+      "compiled": false,
+      "coverage": false,
+      "e2e_success": false
+    },
+    {
+      "seed": 0,
+      "instance_id": "instance-27",
+      "n_gold_actions": 12,
+      "compiled": true,
+      "coverage": true,
+      "e2e_success": true,
+      "n_goal_reaching_samples": 8,
+      "k": 8,
+      "wall_seconds": 60.1
+    },
+    {
+      "seed": 0,
+      "instance_id": "instance-47",
+      "n_gold_actions": 14,
+      "compiled": false,
+      "coverage": false,
+      "e2e_success": false
+    },
+    {
+      "seed": 0,
+      "instance_id": "instance-7",
+      "n_gold_actions": 12,
+      "compiled": true,
+      "coverage": true,
+      "e2e_success": true,
+      "n_goal_reaching_samples": 8,
+      "k": 8,
+      "wall_seconds": 59.7
+    },
+    {
+      "seed": 1,
+      "instance_id": "instance-2",
+      "n_gold_actions": 8,
+      "compiled": false,
+      "coverage": false,
+      "e2e_success": false
+    },
+    {
+      "seed": 1,
+      "instance_id": "instance-15",
+      "n_gold_actions": 10,
+      "compiled": true,
+      "coverage": true,
+      "e2e_success": true,
+      "n_goal_reaching_samples": 8,
+      "k": 8,
+      "wall_seconds": 52.9
+    },
+    {
+      "seed": 1,
+      "instance_id": "instance-47",
+      "n_gold_actions": 14,
+      "compiled": false,
+      "coverage": false,
+      "e2e_success": false
+    },
+    {
+      "seed": 1,
+      "instance_id": "instance-9",
+      "n_gold_actions": 14,
+      "compiled": false,
+      "coverage": false,
+      "e2e_success": false
+    },
+    {
+      "seed": 1,
+      "instance_id": "instance-21",
+      "n_gold_actions": 6,
+      "compiled": false,
+      "coverage": false,
+      "e2e_success": false
+    },
+    {
+      "seed": 1,
+      "instance_id": "instance-29",
+      "n_gold_actions": 14,
+      "compiled": false,
+      "coverage": false,
+      "e2e_success": false
+    },
+    {
+      "seed": 1,
+      "instance_id": "instance-48",
+      "n_gold_actions": 10,
+      "compiled": false,
+      "coverage": false,
+      "e2e_success": false
+    },
+    {
+      "seed": 1,
+      "instance_id": "instance-5",
+      "n_gold_actions": 6,
+      "compiled": false,
+      "coverage": false,
+      "e2e_success": false
+    },
+    {
+      "seed": 1,
+      "instance_id": "instance-46",
+      "n_gold_actions": 6,
+      "compiled": true,
+      "coverage": true,
+      "e2e_success": true,
+      "n_goal_reaching_samples": 8,
+      "k": 8,
+      "wall_seconds": 39.5
+    },
+    {
+      "seed": 1,
+      "instance_id": "instance-14",
+      "n_gold_actions": 16,
+      "compiled": false,
+      "coverage": false,
+      "e2e_success": false
+    },
+    {
+      "seed": 2,
+      "instance_id": "instance-24",
+      "n_gold_actions": 12,
+      "compiled": false,
+      "coverage": false,
+      "e2e_success": false
+    },
+    {
+      "seed": 2,
+      "instance_id": "instance-33",
+      "n_gold_actions": 14,
+      "compiled": true,
+      "coverage": true,
+      "e2e_success": true,
+      "n_goal_reaching_samples": 7,
+      "k": 8,
+      "wall_seconds": 79.2
+    },
+    {
+      "seed": 2,
+      "instance_id": "instance-49",
+      "n_gold_actions": 14,
+      "compiled": true,
+      "coverage": true,
+      "e2e_success": true,
+      "n_goal_reaching_samples": 8,
+      "k": 8,
+      "wall_seconds": 76.4
+    },
+    {
+      "seed": 2,
+      "instance_id": "instance-35",
+      "n_gold_actions": 10,
+      "compiled": false,
+      "coverage": false,
+      "e2e_success": false
+    },
+    {
+      "seed": 2,
+      "instance_id": "instance-6",
+      "n_gold_actions": 14,
+      "compiled": false,
+      "coverage": false,
+      "e2e_success": false
+    },
+    {
+      "seed": 2,
+      "instance_id": "instance-15",
+      "n_gold_actions": 10,
+      "compiled": true,
+      "coverage": true,
+      "e2e_success": true,
+      "n_goal_reaching_samples": 8,
+      "k": 8,
+      "wall_seconds": 51.9
+    },
+    {
+      "seed": 2,
+      "instance_id": "instance-4",
+      "n_gold_actions": 14,
+      "compiled": false,
+      "coverage": false,
+      "e2e_success": false
+    },
+    {
+      "seed": 2,
+      "instance_id": "instance-22",
+      "n_gold_actions": 12,
+      "compiled": false,
+      "coverage": false,
+      "e2e_success": false
+    },
+    {
+      "seed": 2,
+      "instance_id": "instance-9",
+      "n_gold_actions": 14,
+      "compiled": false,
+      "coverage": false,
+      "e2e_success": false
+    },
+    {
+      "seed": 2,
+      "instance_id": "instance-29",
+      "n_gold_actions": 14,
+      "compiled": false,
+      "coverage": false,
+      "e2e_success": false
+    },
+    {
+      "seed": 3,
+      "instance_id": "instance-25",
+      "n_gold_actions": 8,
+      "compiled": true,
+      "coverage": true,
+      "e2e_success": true,
+      "n_goal_reaching_samples": 8,
+      "k": 8,
+      "wall_seconds": 54.3
+    },
+    {
+      "seed": 3,
+      "instance_id": "instance-49",
+      "n_gold_actions": 14,
+      "compiled": true,
+      "coverage": true,
+      "e2e_success": true,
+      "n_goal_reaching_samples": 8,
+      "k": 8,
+      "wall_seconds": 75.5
+    },
+    {
+      "seed": 3,
+      "instance_id": "instance-11",
+      "n_gold_actions": 10,
+      "compiled": false,
+      "coverage": false,
+      "e2e_success": false
+    },
+    {
+      "seed": 3,
+      "instance_id": "instance-17",
+      "n_gold_actions": 12,
+      "compiled": true,
+      "coverage": true,
+      "e2e_success": true,
+      "n_goal_reaching_samples": 8,
+      "k": 8,
+      "wall_seconds": 62.6
+    },
+    {
+      "seed": 3,
+      "instance_id": "instance-3",
+      "n_gold_actions": 14,
+      "compiled": false,
+      "coverage": false,
+      "e2e_success": false
+    },
+    {
+      "seed": 3,
+      "instance_id": "instance-22",
+      "n_gold_actions": 12,
+      "compiled": false,
+      "coverage": false,
+      "e2e_success": false
+    },
+    {
+      "seed": 3,
+      "instance_id": "instance-19",
+      "n_gold_actions": 12,
+      "compiled": false,
+      "coverage": false,
+      "e2e_success": false
+    },
+    {
+      "seed": 3,
+      "instance_id": "instance-46",
+      "n_gold_actions": 6,
+      "compiled": true,
+      "coverage": true,
+      "e2e_success": true,
+      "n_goal_reaching_samples": 8,
+      "k": 8,
+      "wall_seconds": 39.5
+    },
+    {
+      "seed": 3,
+      "instance_id": "instance-10",
+      "n_gold_actions": 12,
+      "compiled": false,
+      "coverage": false,
+      "e2e_success": false
+    },
+    {
+      "seed": 3,
+      "instance_id": "instance-6",
+      "n_gold_actions": 14,
+      "compiled": true,
+      "coverage": false,
+      "e2e_success": true,
+      "n_goal_reaching_samples": 7,
+      "k": 8,
+      "wall_seconds": 104.8
+    }
+  ]
+}

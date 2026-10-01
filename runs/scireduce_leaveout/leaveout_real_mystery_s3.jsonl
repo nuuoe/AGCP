@@ -1,0 +1,10 @@
+{"instance_id": "instance-25", "compiled": true, "coverage": true, "n_actions": 8, "ebnf_size": 13239}
+{"instance_id": "instance-49", "compiled": true, "coverage": true, "n_actions": 14, "ebnf_size": 14703}
+{"instance_id": "instance-11", "compiled": false, "coverage": false, "n_actions": 10}
+{"instance_id": "instance-17", "compiled": true, "coverage": true, "n_actions": 12, "ebnf_size": 14314}
+{"instance_id": "instance-3", "compiled": false, "coverage": false, "n_actions": 14}
+{"instance_id": "instance-22", "compiled": false, "coverage": false, "n_actions": 12}
+{"instance_id": "instance-19", "compiled": false, "coverage": false, "n_actions": 12}
+{"instance_id": "instance-46", "compiled": true, "coverage": true, "n_actions": 6, "ebnf_size": 13191}
+{"instance_id": "instance-10", "compiled": false, "coverage": false, "n_actions": 12}
+{"instance_id": "instance-6", "compiled": true, "coverage": false, "n_actions": 14, "ebnf_size": 14382}

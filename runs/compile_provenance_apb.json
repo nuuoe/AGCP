@@ -1,0 +1,4919 @@
+{
+  "suite": "apb",
+  "timeout": 60,
+  "fix_format": false,
+  "aggregate": {
+    "barman11-bfs": {
+      "n": 3,
+      "bfs_ok": 0,
+      "cap_hit": 0,
+      "astar_needed": 3,
+      "astar_ok": 0,
+      "load_or_rollout_error": 0
+    },
+    "barman14-bfs": {
+      "n": 3,
+      "bfs_ok": 0,
+      "cap_hit": 0,
+      "astar_needed": 3,
+      "astar_ok": 0,
+      "load_or_rollout_error": 0
+    },
+    "blocks00": {
+      "n": 3,
+      "bfs_ok": 0,
+      "cap_hit": 0,
+      "astar_needed": 3,
+      "astar_ok": 3,
+      "load_or_rollout_error": 0
+    },
+    "blocksworld": {
+      "n": 3,
+      "bfs_ok": 0,
+      "cap_hit": 0,
+      "astar_needed": 3,
+      "astar_ok": 3,
+      "load_or_rollout_error": 0
+    },
+    "blocksworld-templates": {
+      "n": 3,
+      "bfs_ok": 0,
+      "cap_hit": 0,
+      "astar_needed": 3,
+      "astar_ok": 3,
+      "load_or_rollout_error": 0
+    },
+    "blocksworld_planbench": {
+      "n": 3,
+      "bfs_ok": 0,
+      "cap_hit": 0,
+      "astar_needed": 3,
+      "astar_ok": 3,
+      "load_or_rollout_error": 0
+    },
+    "blocksworld_scaled": {
+      "n": 3,
+      "bfs_ok": 0,
+      "cap_hit": 0,
+      "astar_needed": 3,
+      "astar_ok": 3,
+      "load_or_rollout_error": 0
+    },
+    "blocksworld_scaled-templates": {
+      "n": 3,
+      "bfs_ok": 0,
+      "cap_hit": 0,
+      "astar_needed": 3,
+      "astar_ok": 3,
+      "load_or_rollout_error": 0
+    },
+    "childsnack14": {
+      "n": 3,
+      "bfs_ok": 0,
+      "cap_hit": 0,
+      "astar_needed": 3,
+      "astar_ok": 0,
+      "load_or_rollout_error": 0
+    },
+    "data-network18": {
+      "n": 3,
+      "bfs_ok": 0,
+      "cap_hit": 0,
+      "astar_needed": 0,
+      "astar_ok": 0,
+      "load_or_rollout_error": 3
+    },
+    "depot": {
+      "n": 3,
+      "bfs_ok": 0,
+      "cap_hit": 0,
+      "astar_needed": 3,
+      "astar_ok": 3,
+      "load_or_rollout_error": 0
+    },
+    "depot-templates": {
+      "n": 3,
+      "bfs_ok": 0,
+      "cap_hit": 0,
+      "astar_needed": 3,
+      "astar_ok": 3,
+      "load_or_rollout_error": 0
+    },
+    "depot02": {
+      "n": 3,
+      "bfs_ok": 0,
+      "cap_hit": 0,
+      "astar_needed": 3,
+      "astar_ok": 1,
+      "load_or_rollout_error": 0
+    },
+    "depot_planbench": {
+      "n": 3,
+      "bfs_ok": 0,
+      "cap_hit": 0,
+      "astar_needed": 3,
+      "astar_ok": 3,
+      "load_or_rollout_error": 0
+    },
+    "driverlog02-bfs": {
+      "n": 3,
+      "bfs_ok": 0,
+      "cap_hit": 0,
+      "astar_needed": 3,
+      "astar_ok": 3,
+      "load_or_rollout_error": 0
+    },
+    "elevators08": {
+      "n": 3,
+      "bfs_ok": 0,
+      "cap_hit": 0,
+      "astar_needed": 3,
+      "astar_ok": 3,
+      "load_or_rollout_error": 0
+    },
+    "elevators11": {
+      "n": 3,
+      "bfs_ok": 0,
+      "cap_hit": 0,
+      "astar_needed": 3,
+      "astar_ok": 3,
+      "load_or_rollout_error": 0
+    },
+    "ferry": {
+      "n": 3,
+      "bfs_ok": 0,
+      "cap_hit": 0,
+      "astar_needed": 3,
+      "astar_ok": 3,
+      "load_or_rollout_error": 0
+    },
+    "ferry-templates": {
+      "n": 3,
+      "bfs_ok": 0,
+      "cap_hit": 0,
+      "astar_needed": 3,
+      "astar_ok": 3,
+      "load_or_rollout_error": 0
+    },
+    "ferry_scaled": {
+      "n": 3,
+      "bfs_ok": 0,
+      "cap_hit": 0,
+      "astar_needed": 3,
+      "astar_ok": 3,
+      "load_or_rollout_error": 0
+    },
+    "ferry_scaled-templates": {
+      "n": 3,
+      "bfs_ok": 0,
+      "cap_hit": 0,
+      "astar_needed": 3,
+      "astar_ok": 3,
+      "load_or_rollout_error": 0
+    },
+    "floortile": {
+      "n": 3,
+      "bfs_ok": 0,
+      "cap_hit": 0,
+      "astar_needed": 3,
+      "astar_ok": 3,
+      "load_or_rollout_error": 0
+    },
+    "floortile-templates": {
+      "n": 3,
+      "bfs_ok": 0,
+      "cap_hit": 0,
+      "astar_needed": 3,
+      "astar_ok": 3,
+      "load_or_rollout_error": 0
+    },
+    "floortile11": {
+      "n": 3,
+      "bfs_ok": 0,
+      "cap_hit": 0,
+      "astar_needed": 3,
+      "astar_ok": 3,
+      "load_or_rollout_error": 0
+    },
+    "floortile14": {
+      "n": 3,
+      "bfs_ok": 0,
+      "cap_hit": 0,
+      "astar_needed": 3,
+      "astar_ok": 2,
+      "load_or_rollout_error": 0
+    },
+    "freecell00-bfs": {
+      "n": 3,
+      "bfs_ok": 0,
+      "cap_hit": 0,
+      "astar_needed": 3,
+      "astar_ok": 3,
+      "load_or_rollout_error": 0
+    },
+    "ged14": {
+      "n": 3,
+      "bfs_ok": 0,
+      "cap_hit": 0,
+      "astar_needed": 0,
+      "astar_ok": 0,
+      "load_or_rollout_error": 3
+    },
+    "goldminer": {
+      "n": 3,
+      "bfs_ok": 0,
+      "cap_hit": 0,
+      "astar_needed": 3,
+      "astar_ok": 3,
+      "load_or_rollout_error": 0
+    },
+    "goldminer-templates": {
+      "n": 3,
+      "bfs_ok": 0,
+      "cap_hit": 0,
+      "astar_needed": 3,
+      "astar_ok": 3,
+      "load_or_rollout_error": 0
+    },
+    "grid": {
+      "n": 3,
+      "bfs_ok": 0,
+      "cap_hit": 0,
+      "astar_needed": 3,
+      "astar_ok": 3,
+      "load_or_rollout_error": 0
+    },
+    "grid-templates": {
+      "n": 3,
+      "bfs_ok": 0,
+      "cap_hit": 0,
+      "astar_needed": 3,
+      "astar_ok": 3,
+      "load_or_rollout_error": 0
+    },
+    "gripper": {
+      "n": 3,
+      "bfs_ok": 0,
+      "cap_hit": 0,
+      "astar_needed": 0,
+      "astar_ok": 0,
+      "load_or_rollout_error": 3
+    },
+    "gripper-templates": {
+      "n": 3,
+      "bfs_ok": 0,
+      "cap_hit": 0,
+      "astar_needed": 0,
+      "astar_ok": 0,
+      "load_or_rollout_error": 3
+    },
+    "gripper98": {
+      "n": 3,
+      "bfs_ok": 0,
+      "cap_hit": 0,
+      "astar_needed": 3,
+      "astar_ok": 0,
+      "load_or_rollout_error": 0
+    },
+    "gripper_scaled": {
+      "n": 3,
+      "bfs_ok": 0,
+      "cap_hit": 0,
+      "astar_needed": 0,
+      "astar_ok": 0,
+      "load_or_rollout_error": 3
+    },
+    "gripper_scaled-templates": {
+      "n": 3,
+      "bfs_ok": 0,
+      "cap_hit": 0,
+      "astar_needed": 0,
+      "astar_ok": 0,
+      "load_or_rollout_error": 3
+    },
+    "hiking14": {
+      "n": 3,
+      "bfs_ok": 0,
+      "cap_hit": 0,
+      "astar_needed": 0,
+      "astar_ok": 0,
+      "load_or_rollout_error": 3
+    },
+    "labyrinth23": {
+      "n": 3,
+      "bfs_ok": 0,
+      "cap_hit": 0,
+      "astar_needed": 0,
+      "astar_ok": 0,
+      "load_or_rollout_error": 3
+    },
+    "logistics": {
+      "n": 3,
+      "bfs_ok": 0,
+      "cap_hit": 0,
+      "astar_needed": 3,
+      "astar_ok": 3,
+      "load_or_rollout_error": 0
+    },
+    "logistics-templates": {
+      "n": 3,
+      "bfs_ok": 0,
+      "cap_hit": 0,
+      "astar_needed": 3,
+      "astar_ok": 3,
+      "load_or_rollout_error": 0
+    },
+    "logistics00": {
+      "n": 3,
+      "bfs_ok": 0,
+      "cap_hit": 0,
+      "astar_needed": 3,
+      "astar_ok": 1,
+      "load_or_rollout_error": 0
+    },
+    "logistics98-bfs": {
+      "n": 2,
+      "bfs_ok": 0,
+      "cap_hit": 0,
+      "astar_needed": 2,
+      "astar_ok": 2,
+      "load_or_rollout_error": 0
+    },
+    "logistics_planbench": {
+      "n": 3,
+      "bfs_ok": 0,
+      "cap_hit": 0,
+      "astar_needed": 3,
+      "astar_ok": 3,
+      "load_or_rollout_error": 0
+    },
+    "movie-complex": {
+      "n": 3,
+      "bfs_ok": 0,
+      "cap_hit": 0,
+      "astar_needed": 0,
+      "astar_ok": 0,
+      "load_or_rollout_error": 3
+    },
+    "movie-complex-templates": {
+      "n": 3,
+      "bfs_ok": 0,
+      "cap_hit": 0,
+      "astar_needed": 0,
+      "astar_ok": 0,
+      "load_or_rollout_error": 3
+    },
+    "movie98": {
+      "n": 3,
+      "bfs_ok": 0,
+      "cap_hit": 0,
+      "astar_needed": 3,
+      "astar_ok": 3,
+      "load_or_rollout_error": 0
+    },
+    "mprime98": {
+      "n": 3,
+      "bfs_ok": 0,
+      "cap_hit": 0,
+      "astar_needed": 0,
+      "astar_ok": 0,
+      "load_or_rollout_error": 3
+    },
+    "mystery98": {
+      "n": 3,
+      "bfs_ok": 0,
+      "cap_hit": 0,
+      "astar_needed": 3,
+      "astar_ok": 3,
+      "load_or_rollout_error": 0
+    },
+    "nomystery11-bfs": {
+      "n": 3,
+      "bfs_ok": 0,
+      "cap_hit": 0,
+      "astar_needed": 3,
+      "astar_ok": 3,
+      "load_or_rollout_error": 0
+    },
+    "parking11": {
+      "n": 3,
+      "bfs_ok": 0,
+      "cap_hit": 0,
+      "astar_needed": 3,
+      "astar_ok": 0,
+      "load_or_rollout_error": 0
+    },
+    "pegsol08": {
+      "n": 3,
+      "bfs_ok": 0,
+      "cap_hit": 0,
+      "astar_needed": 3,
+      "astar_ok": 3,
+      "load_or_rollout_error": 0
+    },
+    "pegsol11": {
+      "n": 3,
+      "bfs_ok": 0,
+      "cap_hit": 0,
+      "astar_needed": 3,
+      "astar_ok": 3,
+      "load_or_rollout_error": 0
+    },
+    "pipesworld-notankage04-bfs": {
+      "n": 3,
+      "bfs_ok": 0,
+      "cap_hit": 0,
+      "astar_needed": 3,
+      "astar_ok": 3,
+      "load_or_rollout_error": 0
+    },
+    "pipesworld-tankage04-bfs": {
+      "n": 3,
+      "bfs_ok": 0,
+      "cap_hit": 0,
+      "astar_needed": 3,
+      "astar_ok": 1,
+      "load_or_rollout_error": 0
+    },
+    "rovers": {
+      "n": 3,
+      "bfs_ok": 0,
+      "cap_hit": 0,
+      "astar_needed": 3,
+      "astar_ok": 3,
+      "load_or_rollout_error": 0
+    },
+    "rovers-templates": {
+      "n": 3,
+      "bfs_ok": 0,
+      "cap_hit": 0,
+      "astar_needed": 3,
+      "astar_ok": 3,
+      "load_or_rollout_error": 0
+    },
+    "rovers06-bfs": {
+      "n": 3,
+      "bfs_ok": 0,
+      "cap_hit": 0,
+      "astar_needed": 3,
+      "astar_ok": 3,
+      "load_or_rollout_error": 0
+    },
+    "satellite": {
+      "n": 3,
+      "bfs_ok": 0,
+      "cap_hit": 0,
+      "astar_needed": 3,
+      "astar_ok": 3,
+      "load_or_rollout_error": 0
+    },
+    "satellite-templates": {
+      "n": 3,
+      "bfs_ok": 0,
+      "cap_hit": 0,
+      "astar_needed": 3,
+      "astar_ok": 3,
+      "load_or_rollout_error": 0
+    },
+    "satellite02-bfs": {
+      "n": 3,
+      "bfs_ok": 0,
+      "cap_hit": 0,
+      "astar_needed": 3,
+      "astar_ok": 3,
+      "load_or_rollout_error": 0
+    },
+    "scanalyzer08": {
+      "n": 3,
+      "bfs_ok": 0,
+      "cap_hit": 0,
+      "astar_needed": 3,
+      "astar_ok": 2,
+      "load_or_rollout_error": 0
+    },
+    "scanalyzer11": {
+      "n": 3,
+      "bfs_ok": 0,
+      "cap_hit": 0,
+      "astar_needed": 3,
+      "astar_ok": 3,
+      "load_or_rollout_error": 0
+    },
+    "snake18-bfs": {
+      "n": 3,
+      "bfs_ok": 0,
+      "cap_hit": 0,
+      "astar_needed": 0,
+      "astar_ok": 0,
+      "load_or_rollout_error": 3
+    },
+    "termes18-bfs": {
+      "n": 3,
+      "bfs_ok": 0,
+      "cap_hit": 0,
+      "astar_needed": 0,
+      "astar_ok": 0,
+      "load_or_rollout_error": 3
+    },
+    "tpp06-bfs": {
+      "n": 3,
+      "bfs_ok": 0,
+      "cap_hit": 0,
+      "astar_needed": 3,
+      "astar_ok": 3,
+      "load_or_rollout_error": 0
+    },
+    "transport08-bfs": {
+      "n": 3,
+      "bfs_ok": 0,
+      "cap_hit": 0,
+      "astar_needed": 3,
+      "astar_ok": 3,
+      "load_or_rollout_error": 0
+    },
+    "transport11": {
+      "n": 3,
+      "bfs_ok": 0,
+      "cap_hit": 0,
+      "astar_needed": 3,
+      "astar_ok": 2,
+      "load_or_rollout_error": 0
+    },
+    "transport14": {
+      "n": 3,
+      "bfs_ok": 0,
+      "cap_hit": 0,
+      "astar_needed": 3,
+      "astar_ok": 1,
+      "load_or_rollout_error": 0
+    },
+    "visitall": {
+      "n": 3,
+      "bfs_ok": 0,
+      "cap_hit": 0,
+      "astar_needed": 3,
+      "astar_ok": 3,
+      "load_or_rollout_error": 0
+    },
+    "visitall-templates": {
+      "n": 3,
+      "bfs_ok": 0,
+      "cap_hit": 0,
+      "astar_needed": 3,
+      "astar_ok": 3,
+      "load_or_rollout_error": 0
+    },
+    "visitall11-bfs": {
+      "n": 3,
+      "bfs_ok": 0,
+      "cap_hit": 0,
+      "astar_needed": 3,
+      "astar_ok": 3,
+      "load_or_rollout_error": 0
+    },
+    "visitall14-bfs": {
+      "n": 3,
+      "bfs_ok": 0,
+      "cap_hit": 0,
+      "astar_needed": 3,
+      "astar_ok": 3,
+      "load_or_rollout_error": 0
+    },
+    "visitall_scaled": {
+      "n": 3,
+      "bfs_ok": 0,
+      "cap_hit": 0,
+      "astar_needed": 3,
+      "astar_ok": 3,
+      "load_or_rollout_error": 0
+    },
+    "visitall_scaled-templates": {
+      "n": 3,
+      "bfs_ok": 0,
+      "cap_hit": 0,
+      "astar_needed": 3,
+      "astar_ok": 3,
+      "load_or_rollout_error": 0
+    },
+    "woodworking08": {
+      "n": 3,
+      "bfs_ok": 0,
+      "cap_hit": 0,
+      "astar_needed": 3,
+      "astar_ok": 2,
+      "load_or_rollout_error": 0
+    },
+    "woodworking11": {
+      "n": 3,
+      "bfs_ok": 0,
+      "cap_hit": 0,
+      "astar_needed": 3,
+      "astar_ok": 3,
+      "load_or_rollout_error": 0
+    },
+    "zenotravel02": {
+      "n": 3,
+      "bfs_ok": 0,
+      "cap_hit": 0,
+      "astar_needed": 3,
+      "astar_ok": 1,
+      "load_or_rollout_error": 0
+    }
+  },
+  "rows": [
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/barman11-bfs/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/barman11-bfs/orig_problems/instance-1.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 60.04,
+      "astar_grammar": false,
+      "astar_error": null,
+      "suite": "apb",
+      "domain": "barman11-bfs",
+      "instance_id": 1
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/barman11-bfs/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/barman11-bfs/orig_problems/instance-2.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 60.03,
+      "astar_grammar": false,
+      "astar_error": null,
+      "suite": "apb",
+      "domain": "barman11-bfs",
+      "instance_id": 2
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/barman11-bfs/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/barman11-bfs/orig_problems/instance-3.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 60.04,
+      "astar_grammar": false,
+      "astar_error": null,
+      "suite": "apb",
+      "domain": "barman11-bfs",
+      "instance_id": 3
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/barman14-bfs/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/barman14-bfs/orig_problems/instance-1.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 60.03,
+      "astar_grammar": false,
+      "astar_error": null,
+      "suite": "apb",
+      "domain": "barman14-bfs",
+      "instance_id": 1
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/barman14-bfs/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/barman14-bfs/orig_problems/instance-2.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 60.02,
+      "astar_grammar": false,
+      "astar_error": null,
+      "suite": "apb",
+      "domain": "barman14-bfs",
+      "instance_id": 2
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/barman14-bfs/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/barman14-bfs/orig_problems/instance-3.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 60.02,
+      "astar_grammar": false,
+      "astar_error": null,
+      "suite": "apb",
+      "domain": "barman14-bfs",
+      "instance_id": 3
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/blocks00/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/blocks00/orig_problems/instance-1.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.68,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 19,
+      "suite": "apb",
+      "domain": "blocks00",
+      "instance_id": 1
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/blocks00/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/blocks00/orig_problems/instance-10.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 7.3,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 26,
+      "suite": "apb",
+      "domain": "blocks00",
+      "instance_id": 10
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/blocks00/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/blocks00/orig_problems/instance-11.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 30.64,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 27,
+      "suite": "apb",
+      "domain": "blocks00",
+      "instance_id": 11
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/blocksworld/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/blocksworld/orig_problems/instance-1.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.0,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 2,
+      "suite": "apb",
+      "domain": "blocksworld",
+      "instance_id": 1
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/blocksworld/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/blocksworld/orig_problems/instance-10.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.0,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 4,
+      "suite": "apb",
+      "domain": "blocksworld",
+      "instance_id": 10
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/blocksworld/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/blocksworld/orig_problems/instance-11.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.0,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 3,
+      "suite": "apb",
+      "domain": "blocksworld",
+      "instance_id": 11
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/blocksworld-templates/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/blocksworld-templates/orig_problems/instance-1.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.0,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 2,
+      "suite": "apb",
+      "domain": "blocksworld-templates",
+      "instance_id": 1
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/blocksworld-templates/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/blocksworld-templates/orig_problems/instance-10.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.0,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 4,
+      "suite": "apb",
+      "domain": "blocksworld-templates",
+      "instance_id": 10
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/blocksworld-templates/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/blocksworld-templates/orig_problems/instance-11.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.0,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 3,
+      "suite": "apb",
+      "domain": "blocksworld-templates",
+      "instance_id": 11
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/blocksworld_planbench/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/blocksworld_planbench/orig_problems/instance-1.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.0,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 2,
+      "suite": "apb",
+      "domain": "blocksworld_planbench",
+      "instance_id": 1
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/blocksworld_planbench/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/blocksworld_planbench/orig_problems/instance-10.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.0,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 4,
+      "suite": "apb",
+      "domain": "blocksworld_planbench",
+      "instance_id": 10
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/blocksworld_planbench/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/blocksworld_planbench/orig_problems/instance-11.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.0,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 3,
+      "suite": "apb",
+      "domain": "blocksworld_planbench",
+      "instance_id": 11
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/blocksworld_scaled/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/blocksworld_scaled/orig_problems/instance-10.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.37,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 16,
+      "suite": "apb",
+      "domain": "blocksworld_scaled",
+      "instance_id": 10
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/blocksworld_scaled/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/blocksworld_scaled/orig_problems/instance-13.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 7.15,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 17,
+      "suite": "apb",
+      "domain": "blocksworld_scaled",
+      "instance_id": 13
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/blocksworld_scaled/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/blocksworld_scaled/orig_problems/instance-19.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.4,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 14,
+      "suite": "apb",
+      "domain": "blocksworld_scaled",
+      "instance_id": 19
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/blocksworld_scaled-templates/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/blocksworld_scaled-templates/orig_problems/instance-10.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.37,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 16,
+      "suite": "apb",
+      "domain": "blocksworld_scaled-templates",
+      "instance_id": 10
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/blocksworld_scaled-templates/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/blocksworld_scaled-templates/orig_problems/instance-13.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 7.09,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 17,
+      "suite": "apb",
+      "domain": "blocksworld_scaled-templates",
+      "instance_id": 13
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/blocksworld_scaled-templates/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/blocksworld_scaled-templates/orig_problems/instance-19.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.4,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 14,
+      "suite": "apb",
+      "domain": "blocksworld_scaled-templates",
+      "instance_id": 19
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/childsnack14/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/childsnack14/orig_problems/instance-1.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 60.05,
+      "astar_grammar": false,
+      "astar_error": null,
+      "suite": "apb",
+      "domain": "childsnack14",
+      "instance_id": 1
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/childsnack14/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/childsnack14/orig_problems/instance-10.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 60.03,
+      "astar_grammar": false,
+      "astar_error": null,
+      "suite": "apb",
+      "domain": "childsnack14",
+      "instance_id": 10
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/childsnack14/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/childsnack14/orig_problems/instance-11.pddl",
+      "bfs_seconds": 0.01,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 60.03,
+      "astar_grammar": false,
+      "astar_error": null,
+      "suite": "apb",
+      "domain": "childsnack14",
+      "instance_id": 11
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/data-network18/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/data-network18/orig_problems/instance-1.pddl",
+      "error": "load_task: 'Error unknown predicate not used in precondition of action'",
+      "suite": "apb",
+      "domain": "data-network18",
+      "instance_id": 1
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/data-network18/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/data-network18/orig_problems/instance-10.pddl",
+      "error": "load_task: 'Error unknown predicate not used in precondition of action'",
+      "suite": "apb",
+      "domain": "data-network18",
+      "instance_id": 10
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/data-network18/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/data-network18/orig_problems/instance-11.pddl",
+      "error": "load_task: 'Error unknown predicate not used in precondition of action'",
+      "suite": "apb",
+      "domain": "data-network18",
+      "instance_id": 11
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/depot/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/depot/orig_problems/instance-1.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 1.64,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 7,
+      "suite": "apb",
+      "domain": "depot",
+      "instance_id": 1
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/depot/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/depot/orig_problems/instance-10.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.02,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 4,
+      "suite": "apb",
+      "domain": "depot",
+      "instance_id": 10
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/depot/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/depot/orig_problems/instance-11.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.01,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 2,
+      "suite": "apb",
+      "domain": "depot",
+      "instance_id": 11
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/depot-templates/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/depot-templates/orig_problems/instance-1.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 1.64,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 7,
+      "suite": "apb",
+      "domain": "depot-templates",
+      "instance_id": 1
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/depot-templates/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/depot-templates/orig_problems/instance-10.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.02,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 4,
+      "suite": "apb",
+      "domain": "depot-templates",
+      "instance_id": 10
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/depot-templates/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/depot-templates/orig_problems/instance-11.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.01,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 2,
+      "suite": "apb",
+      "domain": "depot-templates",
+      "instance_id": 11
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/depot02/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/depot02/orig_problems/instance-1.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.01,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 5,
+      "suite": "apb",
+      "domain": "depot02",
+      "instance_id": 1
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/depot02/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/depot02/orig_problems/instance-10.pddl",
+      "bfs_seconds": 0.12,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 60.01,
+      "astar_grammar": false,
+      "astar_error": null,
+      "suite": "apb",
+      "domain": "depot02",
+      "instance_id": 10
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/depot02/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/depot02/orig_problems/instance-11.pddl",
+      "bfs_seconds": 0.1,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 60.01,
+      "astar_grammar": false,
+      "astar_error": null,
+      "suite": "apb",
+      "domain": "depot02",
+      "instance_id": 11
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/depot_planbench/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/depot_planbench/orig_problems/instance-1.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 1.62,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 7,
+      "suite": "apb",
+      "domain": "depot_planbench",
+      "instance_id": 1
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/depot_planbench/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/depot_planbench/orig_problems/instance-10.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.02,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 4,
+      "suite": "apb",
+      "domain": "depot_planbench",
+      "instance_id": 10
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/depot_planbench/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/depot_planbench/orig_problems/instance-11.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.01,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 2,
+      "suite": "apb",
+      "domain": "depot_planbench",
+      "instance_id": 11
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/driverlog02-bfs/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/driverlog02-bfs/orig_problems/instance-1.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.0,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 4,
+      "suite": "apb",
+      "domain": "driverlog02-bfs",
+      "instance_id": 1
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/driverlog02-bfs/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/driverlog02-bfs/orig_problems/instance-12.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.23,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 9,
+      "suite": "apb",
+      "domain": "driverlog02-bfs",
+      "instance_id": 12
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/driverlog02-bfs/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/driverlog02-bfs/orig_problems/instance-14.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.01,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 6,
+      "suite": "apb",
+      "domain": "driverlog02-bfs",
+      "instance_id": 14
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/elevators08/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/elevators08/orig_problems/instance-1.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.03,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 7,
+      "suite": "apb",
+      "domain": "elevators08",
+      "instance_id": 1
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/elevators08/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/elevators08/orig_problems/instance-10.pddl",
+      "bfs_seconds": 0.01,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 4.74,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 15,
+      "suite": "apb",
+      "domain": "elevators08",
+      "instance_id": 10
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/elevators08/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/elevators08/orig_problems/instance-11.pddl",
+      "bfs_seconds": 0.01,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.07,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 9,
+      "suite": "apb",
+      "domain": "elevators08",
+      "instance_id": 11
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/elevators11/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/elevators11/orig_problems/instance-1.pddl",
+      "bfs_seconds": 0.01,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.07,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 9,
+      "suite": "apb",
+      "domain": "elevators11",
+      "instance_id": 1
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/elevators11/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/elevators11/orig_problems/instance-10.pddl",
+      "bfs_seconds": 0.01,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 3.43,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 11,
+      "suite": "apb",
+      "domain": "elevators11",
+      "instance_id": 10
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/elevators11/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/elevators11/orig_problems/instance-11.pddl",
+      "bfs_seconds": 0.03,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 13.55,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 12,
+      "suite": "apb",
+      "domain": "elevators11",
+      "instance_id": 11
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/ferry/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/ferry/orig_problems/instance-1.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.0,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 2,
+      "suite": "apb",
+      "domain": "ferry",
+      "instance_id": 1
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/ferry/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/ferry/orig_problems/instance-12.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.0,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 4,
+      "suite": "apb",
+      "domain": "ferry",
+      "instance_id": 12
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/ferry/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/ferry/orig_problems/instance-17.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.0,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 5,
+      "suite": "apb",
+      "domain": "ferry",
+      "instance_id": 17
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/ferry-templates/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/ferry-templates/orig_problems/instance-1.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.0,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 2,
+      "suite": "apb",
+      "domain": "ferry-templates",
+      "instance_id": 1
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/ferry-templates/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/ferry-templates/orig_problems/instance-12.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.0,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 4,
+      "suite": "apb",
+      "domain": "ferry-templates",
+      "instance_id": 12
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/ferry-templates/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/ferry-templates/orig_problems/instance-17.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.0,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 5,
+      "suite": "apb",
+      "domain": "ferry-templates",
+      "instance_id": 17
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/ferry_scaled/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/ferry_scaled/orig_problems/instance-19.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.02,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 20,
+      "suite": "apb",
+      "domain": "ferry_scaled",
+      "instance_id": 19
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/ferry_scaled/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/ferry_scaled/orig_problems/instance-219.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.02,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 19,
+      "suite": "apb",
+      "domain": "ferry_scaled",
+      "instance_id": 219
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/ferry_scaled/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/ferry_scaled/orig_problems/instance-343.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.06,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 25,
+      "suite": "apb",
+      "domain": "ferry_scaled",
+      "instance_id": 343
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/ferry_scaled-templates/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/ferry_scaled-templates/orig_problems/instance-19.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.02,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 20,
+      "suite": "apb",
+      "domain": "ferry_scaled-templates",
+      "instance_id": 19
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/ferry_scaled-templates/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/ferry_scaled-templates/orig_problems/instance-219.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.02,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 19,
+      "suite": "apb",
+      "domain": "ferry_scaled-templates",
+      "instance_id": 219
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/ferry_scaled-templates/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/ferry_scaled-templates/orig_problems/instance-343.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.05,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 25,
+      "suite": "apb",
+      "domain": "ferry_scaled-templates",
+      "instance_id": 343
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/floortile/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/floortile/orig_problems/instance-1.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.0,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 5,
+      "suite": "apb",
+      "domain": "floortile",
+      "instance_id": 1
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/floortile/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/floortile/orig_problems/instance-10.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.05,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 8,
+      "suite": "apb",
+      "domain": "floortile",
+      "instance_id": 10
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/floortile/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/floortile/orig_problems/instance-11.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.04,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 8,
+      "suite": "apb",
+      "domain": "floortile",
+      "instance_id": 11
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/floortile-templates/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/floortile-templates/orig_problems/instance-1.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.0,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 5,
+      "suite": "apb",
+      "domain": "floortile-templates",
+      "instance_id": 1
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/floortile-templates/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/floortile-templates/orig_problems/instance-10.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.05,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 8,
+      "suite": "apb",
+      "domain": "floortile-templates",
+      "instance_id": 10
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/floortile-templates/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/floortile-templates/orig_problems/instance-11.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.04,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 8,
+      "suite": "apb",
+      "domain": "floortile-templates",
+      "instance_id": 11
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/floortile11/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/floortile11/orig_problems/instance-1.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.47,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 11,
+      "suite": "apb",
+      "domain": "floortile11",
+      "instance_id": 1
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/floortile11/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/floortile11/orig_problems/instance-2.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.32,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 12,
+      "suite": "apb",
+      "domain": "floortile11",
+      "instance_id": 2
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/floortile11/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/floortile11/orig_problems/instance-3.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 18.29,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 18,
+      "suite": "apb",
+      "domain": "floortile11",
+      "instance_id": 3
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/floortile14/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/floortile14/orig_problems/instance-1.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 50.24,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 17,
+      "suite": "apb",
+      "domain": "floortile14",
+      "instance_id": 1
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/floortile14/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/floortile14/orig_problems/instance-14.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 56.0,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 18,
+      "suite": "apb",
+      "domain": "floortile14",
+      "instance_id": 14
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/floortile14/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/floortile14/orig_problems/instance-15.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 60.09,
+      "astar_grammar": false,
+      "astar_error": null,
+      "suite": "apb",
+      "domain": "floortile14",
+      "instance_id": 15
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/freecell00-bfs/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/freecell00-bfs/orig_problems/instance-1.pddl",
+      "bfs_seconds": 0.02,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.03,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 5,
+      "suite": "apb",
+      "domain": "freecell00-bfs",
+      "instance_id": 1
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/freecell00-bfs/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/freecell00-bfs/orig_problems/instance-12.pddl",
+      "bfs_seconds": 0.04,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.11,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 8,
+      "suite": "apb",
+      "domain": "freecell00-bfs",
+      "instance_id": 12
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/freecell00-bfs/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/freecell00-bfs/orig_problems/instance-14.pddl",
+      "bfs_seconds": 0.05,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.17,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 9,
+      "suite": "apb",
+      "domain": "freecell00-bfs",
+      "instance_id": 14
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/ged14/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/ged14/orig_problems/instance-1.pddl",
+      "error": "load_task: 'Error unknown predicate not used in precondition of action'",
+      "suite": "apb",
+      "domain": "ged14",
+      "instance_id": 1
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/ged14/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/ged14/orig_problems/instance-10.pddl",
+      "error": "load_task: 'Error unknown predicate not used in precondition of action'",
+      "suite": "apb",
+      "domain": "ged14",
+      "instance_id": 10
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/ged14/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/ged14/orig_problems/instance-11.pddl",
+      "error": "load_task: 'Error unknown predicate not used in precondition of action'",
+      "suite": "apb",
+      "domain": "ged14",
+      "instance_id": 11
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/goldminer/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/goldminer/orig_problems/instance-1.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.0,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 2,
+      "suite": "apb",
+      "domain": "goldminer",
+      "instance_id": 1
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/goldminer/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/goldminer/orig_problems/instance-10.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.33,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 9,
+      "suite": "apb",
+      "domain": "goldminer",
+      "instance_id": 10
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/goldminer/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/goldminer/orig_problems/instance-11.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.04,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 6,
+      "suite": "apb",
+      "domain": "goldminer",
+      "instance_id": 11
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/goldminer-templates/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/goldminer-templates/orig_problems/instance-1.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.0,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 2,
+      "suite": "apb",
+      "domain": "goldminer-templates",
+      "instance_id": 1
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/goldminer-templates/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/goldminer-templates/orig_problems/instance-10.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.34,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 9,
+      "suite": "apb",
+      "domain": "goldminer-templates",
+      "instance_id": 10
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/goldminer-templates/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/goldminer-templates/orig_problems/instance-11.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.03,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 6,
+      "suite": "apb",
+      "domain": "goldminer-templates",
+      "instance_id": 11
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/grid/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/grid/orig_problems/instance-1.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.0,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 2,
+      "suite": "apb",
+      "domain": "grid",
+      "instance_id": 1
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/grid/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/grid/orig_problems/instance-10.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.0,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 4,
+      "suite": "apb",
+      "domain": "grid",
+      "instance_id": 10
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/grid/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/grid/orig_problems/instance-12.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.0,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 3,
+      "suite": "apb",
+      "domain": "grid",
+      "instance_id": 12
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/grid-templates/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/grid-templates/orig_problems/instance-1.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.0,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 2,
+      "suite": "apb",
+      "domain": "grid-templates",
+      "instance_id": 1
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/grid-templates/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/grid-templates/orig_problems/instance-10.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.0,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 4,
+      "suite": "apb",
+      "domain": "grid-templates",
+      "instance_id": 10
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/grid-templates/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/grid-templates/orig_problems/instance-12.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.0,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 3,
+      "suite": "apb",
+      "domain": "grid-templates",
+      "instance_id": 12
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/gripper/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/gripper/orig_problems/instance-1.pddl",
+      "error": "load_task: 'str' object has no attribute 'parent'",
+      "suite": "apb",
+      "domain": "gripper",
+      "instance_id": 1
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/gripper/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/gripper/orig_problems/instance-11.pddl",
+      "error": "load_task: 'str' object has no attribute 'parent'",
+      "suite": "apb",
+      "domain": "gripper",
+      "instance_id": 11
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/gripper/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/gripper/orig_problems/instance-13.pddl",
+      "error": "load_task: 'str' object has no attribute 'parent'",
+      "suite": "apb",
+      "domain": "gripper",
+      "instance_id": 13
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/gripper-templates/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/gripper-templates/orig_problems/instance-1.pddl",
+      "error": "load_task: 'str' object has no attribute 'parent'",
+      "suite": "apb",
+      "domain": "gripper-templates",
+      "instance_id": 1
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/gripper-templates/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/gripper-templates/orig_problems/instance-11.pddl",
+      "error": "load_task: 'str' object has no attribute 'parent'",
+      "suite": "apb",
+      "domain": "gripper-templates",
+      "instance_id": 11
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/gripper-templates/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/gripper-templates/orig_problems/instance-13.pddl",
+      "error": "load_task: 'str' object has no attribute 'parent'",
+      "suite": "apb",
+      "domain": "gripper-templates",
+      "instance_id": 13
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/gripper98/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/gripper98/orig_problems/instance-10.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 60.07,
+      "astar_grammar": false,
+      "astar_error": null,
+      "suite": "apb",
+      "domain": "gripper98",
+      "instance_id": 10
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/gripper98/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/gripper98/orig_problems/instance-11.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 60.06,
+      "astar_grammar": false,
+      "astar_error": null,
+      "suite": "apb",
+      "domain": "gripper98",
+      "instance_id": 11
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/gripper98/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/gripper98/orig_problems/instance-12.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 60.05,
+      "astar_grammar": false,
+      "astar_error": null,
+      "suite": "apb",
+      "domain": "gripper98",
+      "instance_id": 12
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/gripper_scaled/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/gripper_scaled/orig_problems/instance-10.pddl",
+      "error": "load_task: 'str' object has no attribute 'parent'",
+      "suite": "apb",
+      "domain": "gripper_scaled",
+      "instance_id": 10
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/gripper_scaled/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/gripper_scaled/orig_problems/instance-11.pddl",
+      "error": "load_task: 'str' object has no attribute 'parent'",
+      "suite": "apb",
+      "domain": "gripper_scaled",
+      "instance_id": 11
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/gripper_scaled/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/gripper_scaled/orig_problems/instance-12.pddl",
+      "error": "load_task: 'str' object has no attribute 'parent'",
+      "suite": "apb",
+      "domain": "gripper_scaled",
+      "instance_id": 12
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/gripper_scaled-templates/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/gripper_scaled-templates/orig_problems/instance-10.pddl",
+      "error": "load_task: 'str' object has no attribute 'parent'",
+      "suite": "apb",
+      "domain": "gripper_scaled-templates",
+      "instance_id": 10
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/gripper_scaled-templates/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/gripper_scaled-templates/orig_problems/instance-11.pddl",
+      "error": "load_task: 'str' object has no attribute 'parent'",
+      "suite": "apb",
+      "domain": "gripper_scaled-templates",
+      "instance_id": 11
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/gripper_scaled-templates/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/gripper_scaled-templates/orig_problems/instance-12.pddl",
+      "error": "load_task: 'str' object has no attribute 'parent'",
+      "suite": "apb",
+      "domain": "gripper_scaled-templates",
+      "instance_id": 12
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/hiking14/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/hiking14/orig_problems/instance-1.pddl",
+      "error": "load_task: 'Error unknown predicate not used in precondition of action'",
+      "suite": "apb",
+      "domain": "hiking14",
+      "instance_id": 1
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/hiking14/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/hiking14/orig_problems/instance-10.pddl",
+      "error": "load_task: 'Error unknown predicate not used in precondition of action'",
+      "suite": "apb",
+      "domain": "hiking14",
+      "instance_id": 10
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/hiking14/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/hiking14/orig_problems/instance-11.pddl",
+      "error": "load_task: 'Error unknown predicate not used in precondition of action'",
+      "suite": "apb",
+      "domain": "hiking14",
+      "instance_id": 11
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/labyrinth23/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/labyrinth23/orig_problems/instance-1.pddl",
+      "error": "load_task: 'Error unknown predicate not used in precondition of action'",
+      "suite": "apb",
+      "domain": "labyrinth23",
+      "instance_id": 1
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/labyrinth23/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/labyrinth23/orig_problems/instance-2.pddl",
+      "error": "load_task: 'Error unknown predicate not used in precondition of action'",
+      "suite": "apb",
+      "domain": "labyrinth23",
+      "instance_id": 2
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/labyrinth23/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/labyrinth23/orig_problems/instance-3.pddl",
+      "error": "load_task: 'Error unknown predicate not used in precondition of action'",
+      "suite": "apb",
+      "domain": "labyrinth23",
+      "instance_id": 3
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/logistics/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/logistics/orig_problems/instance-1.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.0,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 2,
+      "suite": "apb",
+      "domain": "logistics",
+      "instance_id": 1
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/logistics/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/logistics/orig_problems/instance-10.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.0,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 2,
+      "suite": "apb",
+      "domain": "logistics",
+      "instance_id": 10
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/logistics/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/logistics/orig_problems/instance-11.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.0,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 3,
+      "suite": "apb",
+      "domain": "logistics",
+      "instance_id": 11
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/logistics-templates/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/logistics-templates/orig_problems/instance-1.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.0,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 2,
+      "suite": "apb",
+      "domain": "logistics-templates",
+      "instance_id": 1
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/logistics-templates/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/logistics-templates/orig_problems/instance-10.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.0,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 2,
+      "suite": "apb",
+      "domain": "logistics-templates",
+      "instance_id": 10
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/logistics-templates/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/logistics-templates/orig_problems/instance-11.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.0,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 3,
+      "suite": "apb",
+      "domain": "logistics-templates",
+      "instance_id": 11
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/logistics00/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/logistics00/orig_problems/instance-1.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 24.63,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 24,
+      "suite": "apb",
+      "domain": "logistics00",
+      "instance_id": 1
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/logistics00/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/logistics00/orig_problems/instance-10.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 60.03,
+      "astar_grammar": false,
+      "astar_error": null,
+      "suite": "apb",
+      "domain": "logistics00",
+      "instance_id": 10
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/logistics00/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/logistics00/orig_problems/instance-11.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 60.02,
+      "astar_grammar": false,
+      "astar_error": null,
+      "suite": "apb",
+      "domain": "logistics00",
+      "instance_id": 11
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/logistics98-bfs/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/logistics98-bfs/orig_problems/instance-31.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.02,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 6,
+      "suite": "apb",
+      "domain": "logistics98-bfs",
+      "instance_id": 31
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/logistics98-bfs/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/logistics98-bfs/orig_problems/instance-32.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.07,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 10,
+      "suite": "apb",
+      "domain": "logistics98-bfs",
+      "instance_id": 32
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/logistics_planbench/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/logistics_planbench/orig_problems/instance-1.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.0,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 2,
+      "suite": "apb",
+      "domain": "logistics_planbench",
+      "instance_id": 1
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/logistics_planbench/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/logistics_planbench/orig_problems/instance-10.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.0,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 2,
+      "suite": "apb",
+      "domain": "logistics_planbench",
+      "instance_id": 10
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/logistics_planbench/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/logistics_planbench/orig_problems/instance-11.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.0,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 3,
+      "suite": "apb",
+      "domain": "logistics_planbench",
+      "instance_id": 11
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/movie-complex/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/movie-complex/orig_problems/instance-1.pddl",
+      "error": "load_task: 'Error unknown predicate not used in precondition of action'",
+      "suite": "apb",
+      "domain": "movie-complex",
+      "instance_id": 1
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/movie-complex/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/movie-complex/orig_problems/instance-10.pddl",
+      "error": "load_task: 'Error unknown predicate not used in precondition of action'",
+      "suite": "apb",
+      "domain": "movie-complex",
+      "instance_id": 10
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/movie-complex/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/movie-complex/orig_problems/instance-11.pddl",
+      "error": "load_task: 'Error unknown predicate not used in precondition of action'",
+      "suite": "apb",
+      "domain": "movie-complex",
+      "instance_id": 11
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/movie-complex-templates/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/movie-complex-templates/orig_problems/instance-1.pddl",
+      "error": "load_task: 'Error unknown predicate not used in precondition of action'",
+      "suite": "apb",
+      "domain": "movie-complex-templates",
+      "instance_id": 1
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/movie-complex-templates/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/movie-complex-templates/orig_problems/instance-10.pddl",
+      "error": "load_task: 'Error unknown predicate not used in precondition of action'",
+      "suite": "apb",
+      "domain": "movie-complex-templates",
+      "instance_id": 10
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/movie-complex-templates/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/movie-complex-templates/orig_problems/instance-11.pddl",
+      "error": "load_task: 'Error unknown predicate not used in precondition of action'",
+      "suite": "apb",
+      "domain": "movie-complex-templates",
+      "instance_id": 11
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/movie98/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/movie98/orig_problems/instance-1.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 128,
+        "n_transitions": 3456,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.0,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 3,
+      "suite": "apb",
+      "domain": "movie98",
+      "instance_id": 1
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/movie98/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/movie98/orig_problems/instance-10.pddl",
+      "bfs_seconds": 0.01,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 128,
+        "n_transitions": 9216,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.01,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 3,
+      "suite": "apb",
+      "domain": "movie98",
+      "instance_id": 10
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/movie98/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/movie98/orig_problems/instance-11.pddl",
+      "bfs_seconds": 0.01,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 128,
+        "n_transitions": 9856,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.01,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 3,
+      "suite": "apb",
+      "domain": "movie98",
+      "instance_id": 11
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/mprime98/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/mprime98/orig_problems/instance-1.pddl",
+      "error": "load_task: 'Error unknown predicate not used in precondition of action'",
+      "suite": "apb",
+      "domain": "mprime98",
+      "instance_id": 1
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/mprime98/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/mprime98/orig_problems/instance-10.pddl",
+      "error": "load_task: 'Error unknown predicate not used in precondition of action'",
+      "suite": "apb",
+      "domain": "mprime98",
+      "instance_id": 10
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/mprime98/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/mprime98/orig_problems/instance-11.pddl",
+      "error": "load_task: 'Error unknown predicate not used in precondition of action'",
+      "suite": "apb",
+      "domain": "mprime98",
+      "instance_id": 11
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/mystery98/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/mystery98/orig_problems/instance-1.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.0,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 2,
+      "suite": "apb",
+      "domain": "mystery98",
+      "instance_id": 1
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/mystery98/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/mystery98/orig_problems/instance-10.pddl",
+      "bfs_seconds": 0.07,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.63,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 3,
+      "suite": "apb",
+      "domain": "mystery98",
+      "instance_id": 10
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/mystery98/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/mystery98/orig_problems/instance-11.pddl",
+      "bfs_seconds": 0.07,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.31,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 2,
+      "suite": "apb",
+      "domain": "mystery98",
+      "instance_id": 11
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/nomystery11-bfs/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/nomystery11-bfs/orig_problems/instance-1.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.01,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 5,
+      "suite": "apb",
+      "domain": "nomystery11-bfs",
+      "instance_id": 1
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/nomystery11-bfs/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/nomystery11-bfs/orig_problems/instance-11.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.01,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 6,
+      "suite": "apb",
+      "domain": "nomystery11-bfs",
+      "instance_id": 11
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/nomystery11-bfs/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/nomystery11-bfs/orig_problems/instance-12.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.13,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 7,
+      "suite": "apb",
+      "domain": "nomystery11-bfs",
+      "instance_id": 12
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/parking11/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/parking11/orig_problems/instance-10.pddl",
+      "bfs_seconds": 0.03,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 60.01,
+      "astar_grammar": false,
+      "astar_error": null,
+      "suite": "apb",
+      "domain": "parking11",
+      "instance_id": 10
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/parking11/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/parking11/orig_problems/instance-11.pddl",
+      "bfs_seconds": 0.05,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 60.01,
+      "astar_grammar": false,
+      "astar_error": null,
+      "suite": "apb",
+      "domain": "parking11",
+      "instance_id": 11
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/parking11/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/parking11/orig_problems/instance-12.pddl",
+      "bfs_seconds": 0.05,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 60.01,
+      "astar_grammar": false,
+      "astar_error": null,
+      "suite": "apb",
+      "domain": "parking11",
+      "instance_id": 12
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/pegsol08/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/pegsol08/orig_problems/instance-10.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.14,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 10,
+      "suite": "apb",
+      "domain": "pegsol08",
+      "instance_id": 10
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/pegsol08/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/pegsol08/orig_problems/instance-11.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.06,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 9,
+      "suite": "apb",
+      "domain": "pegsol08",
+      "instance_id": 11
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/pegsol08/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/pegsol08/orig_problems/instance-12.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.19,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 10,
+      "suite": "apb",
+      "domain": "pegsol08",
+      "instance_id": 12
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/pegsol11/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/pegsol11/orig_problems/instance-1.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.03,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 8,
+      "suite": "apb",
+      "domain": "pegsol11",
+      "instance_id": 1
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/pegsol11/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/pegsol11/orig_problems/instance-10.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.11,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 13,
+      "suite": "apb",
+      "domain": "pegsol11",
+      "instance_id": 10
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/pegsol11/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/pegsol11/orig_problems/instance-11.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.03,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 12,
+      "suite": "apb",
+      "domain": "pegsol11",
+      "instance_id": 11
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/pipesworld-notankage04-bfs/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/pipesworld-notankage04-bfs/orig_problems/instance-1.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.0,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 2,
+      "suite": "apb",
+      "domain": "pipesworld-notankage04-bfs",
+      "instance_id": 1
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/pipesworld-notankage04-bfs/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/pipesworld-notankage04-bfs/orig_problems/instance-10.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.75,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 11,
+      "suite": "apb",
+      "domain": "pipesworld-notankage04-bfs",
+      "instance_id": 10
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/pipesworld-notankage04-bfs/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/pipesworld-notankage04-bfs/orig_problems/instance-11.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.19,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 10,
+      "suite": "apb",
+      "domain": "pipesworld-notankage04-bfs",
+      "instance_id": 11
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/pipesworld-tankage04-bfs/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/pipesworld-tankage04-bfs/orig_problems/instance-12.pddl",
+      "bfs_seconds": 0.02,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 12.94,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 11,
+      "suite": "apb",
+      "domain": "pipesworld-tankage04-bfs",
+      "instance_id": 12
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/pipesworld-tankage04-bfs/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/pipesworld-tankage04-bfs/orig_problems/instance-13.pddl",
+      "bfs_seconds": 0.02,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 60.01,
+      "astar_grammar": false,
+      "astar_error": null,
+      "suite": "apb",
+      "domain": "pipesworld-tankage04-bfs",
+      "instance_id": 13
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/pipesworld-tankage04-bfs/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/pipesworld-tankage04-bfs/orig_problems/instance-16.pddl",
+      "bfs_seconds": 0.03,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 60.01,
+      "astar_grammar": false,
+      "astar_error": null,
+      "suite": "apb",
+      "domain": "pipesworld-tankage04-bfs",
+      "instance_id": 16
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/rovers/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/rovers/orig_problems/instance-1.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.0,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 5,
+      "suite": "apb",
+      "domain": "rovers",
+      "instance_id": 1
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/rovers/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/rovers/orig_problems/instance-10.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.0,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 5,
+      "suite": "apb",
+      "domain": "rovers",
+      "instance_id": 10
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/rovers/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/rovers/orig_problems/instance-11.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.01,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 5,
+      "suite": "apb",
+      "domain": "rovers",
+      "instance_id": 11
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/rovers-templates/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/rovers-templates/orig_problems/instance-1.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.0,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 5,
+      "suite": "apb",
+      "domain": "rovers-templates",
+      "instance_id": 1
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/rovers-templates/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/rovers-templates/orig_problems/instance-10.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.0,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 5,
+      "suite": "apb",
+      "domain": "rovers-templates",
+      "instance_id": 10
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/rovers-templates/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/rovers-templates/orig_problems/instance-11.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.01,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 5,
+      "suite": "apb",
+      "domain": "rovers-templates",
+      "instance_id": 11
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/rovers06-bfs/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/rovers06-bfs/orig_problems/instance-1.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.0,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 5,
+      "suite": "apb",
+      "domain": "rovers06-bfs",
+      "instance_id": 1
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/rovers06-bfs/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/rovers06-bfs/orig_problems/instance-2.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.0,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 4,
+      "suite": "apb",
+      "domain": "rovers06-bfs",
+      "instance_id": 2
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/rovers06-bfs/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/rovers06-bfs/orig_problems/instance-3.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.02,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 6,
+      "suite": "apb",
+      "domain": "rovers06-bfs",
+      "instance_id": 3
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/satellite/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/satellite/orig_problems/instance-1.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.0,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 2,
+      "suite": "apb",
+      "domain": "satellite",
+      "instance_id": 1
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/satellite/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/satellite/orig_problems/instance-10.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.0,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 3,
+      "suite": "apb",
+      "domain": "satellite",
+      "instance_id": 10
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/satellite/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/satellite/orig_problems/instance-11.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.0,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 3,
+      "suite": "apb",
+      "domain": "satellite",
+      "instance_id": 11
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/satellite-templates/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/satellite-templates/orig_problems/instance-1.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.0,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 2,
+      "suite": "apb",
+      "domain": "satellite-templates",
+      "instance_id": 1
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/satellite-templates/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/satellite-templates/orig_problems/instance-10.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.0,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 3,
+      "suite": "apb",
+      "domain": "satellite-templates",
+      "instance_id": 10
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/satellite-templates/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/satellite-templates/orig_problems/instance-11.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.0,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 3,
+      "suite": "apb",
+      "domain": "satellite-templates",
+      "instance_id": 11
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/satellite02-bfs/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/satellite02-bfs/orig_problems/instance-1.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.0,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 4,
+      "suite": "apb",
+      "domain": "satellite02-bfs",
+      "instance_id": 1
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/satellite02-bfs/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/satellite02-bfs/orig_problems/instance-2.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.01,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 6,
+      "suite": "apb",
+      "domain": "satellite02-bfs",
+      "instance_id": 2
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/satellite02-bfs/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/satellite02-bfs/orig_problems/instance-3.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.01,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 5,
+      "suite": "apb",
+      "domain": "satellite02-bfs",
+      "instance_id": 3
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/scanalyzer08/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/scanalyzer08/orig_problems/instance-1.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.02,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 3,
+      "suite": "apb",
+      "domain": "scanalyzer08",
+      "instance_id": 1
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/scanalyzer08/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/scanalyzer08/orig_problems/instance-10.pddl",
+      "bfs_seconds": 0.03,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 3.12,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 6,
+      "suite": "apb",
+      "domain": "scanalyzer08",
+      "instance_id": 10
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/scanalyzer08/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/scanalyzer08/orig_problems/instance-11.pddl",
+      "bfs_seconds": 0.02,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 60.01,
+      "astar_grammar": false,
+      "astar_error": null,
+      "suite": "apb",
+      "domain": "scanalyzer08",
+      "instance_id": 11
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/scanalyzer11/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/scanalyzer11/orig_problems/instance-1.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.0,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 2,
+      "suite": "apb",
+      "domain": "scanalyzer11",
+      "instance_id": 1
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/scanalyzer11/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/scanalyzer11/orig_problems/instance-10.pddl",
+      "bfs_seconds": 0.1,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 29.6,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 8,
+      "suite": "apb",
+      "domain": "scanalyzer11",
+      "instance_id": 10
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/scanalyzer11/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/scanalyzer11/orig_problems/instance-11.pddl",
+      "bfs_seconds": 0.29,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 2.21,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 5,
+      "suite": "apb",
+      "domain": "scanalyzer11",
+      "instance_id": 11
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/snake18-bfs/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/snake18-bfs/orig_problems/instance-1.pddl",
+      "error": "load_task: 'Error unknown predicate not used in precondition of action'",
+      "suite": "apb",
+      "domain": "snake18-bfs",
+      "instance_id": 1
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/snake18-bfs/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/snake18-bfs/orig_problems/instance-10.pddl",
+      "error": "load_task: 'Error unknown predicate not used in precondition of action'",
+      "suite": "apb",
+      "domain": "snake18-bfs",
+      "instance_id": 10
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/snake18-bfs/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/snake18-bfs/orig_problems/instance-11.pddl",
+      "error": "load_task: 'Error unknown predicate not used in precondition of action'",
+      "suite": "apb",
+      "domain": "snake18-bfs",
+      "instance_id": 11
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/termes18-bfs/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/termes18-bfs/orig_problems/instance-1.pddl",
+      "error": "load_task: 'Error unknown predicate not used in precondition of action'",
+      "suite": "apb",
+      "domain": "termes18-bfs",
+      "instance_id": 1
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/termes18-bfs/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/termes18-bfs/orig_problems/instance-11.pddl",
+      "error": "load_task: 'Error unknown predicate not used in precondition of action'",
+      "suite": "apb",
+      "domain": "termes18-bfs",
+      "instance_id": 11
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/termes18-bfs/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/termes18-bfs/orig_problems/instance-12.pddl",
+      "error": "load_task: 'Error unknown predicate not used in precondition of action'",
+      "suite": "apb",
+      "domain": "termes18-bfs",
+      "instance_id": 12
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/tpp06-bfs/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/tpp06-bfs/orig_problems/instance-1.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.0,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 2,
+      "suite": "apb",
+      "domain": "tpp06-bfs",
+      "instance_id": 1
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/tpp06-bfs/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/tpp06-bfs/orig_problems/instance-2.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.0,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 4,
+      "suite": "apb",
+      "domain": "tpp06-bfs",
+      "instance_id": 2
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/tpp06-bfs/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/tpp06-bfs/orig_problems/instance-3.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.0,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 6,
+      "suite": "apb",
+      "domain": "tpp06-bfs",
+      "instance_id": 3
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/transport08-bfs/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/transport08-bfs/orig_problems/instance-1.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.0,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 2,
+      "suite": "apb",
+      "domain": "transport08-bfs",
+      "instance_id": 1
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/transport08-bfs/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/transport08-bfs/orig_problems/instance-11.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.0,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 4,
+      "suite": "apb",
+      "domain": "transport08-bfs",
+      "instance_id": 11
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/transport08-bfs/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/transport08-bfs/orig_problems/instance-12.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.2,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 9,
+      "suite": "apb",
+      "domain": "transport08-bfs",
+      "instance_id": 12
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/transport11/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/transport11/orig_problems/instance-1.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.21,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 8,
+      "suite": "apb",
+      "domain": "transport11",
+      "instance_id": 1
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/transport11/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/transport11/orig_problems/instance-10.pddl",
+      "bfs_seconds": 0.01,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.39,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 19,
+      "suite": "apb",
+      "domain": "transport11",
+      "instance_id": 10
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/transport11/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/transport11/orig_problems/instance-11.pddl",
+      "bfs_seconds": 0.01,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 60.01,
+      "astar_grammar": false,
+      "astar_error": null,
+      "suite": "apb",
+      "domain": "transport11",
+      "instance_id": 11
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/transport14/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/transport14/orig_problems/instance-1.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.04,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 7,
+      "suite": "apb",
+      "domain": "transport14",
+      "instance_id": 1
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/transport14/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/transport14/orig_problems/instance-10.pddl",
+      "bfs_seconds": 0.01,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 60.01,
+      "astar_grammar": false,
+      "astar_error": null,
+      "suite": "apb",
+      "domain": "transport14",
+      "instance_id": 10
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/transport14/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/transport14/orig_problems/instance-11.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 60.0,
+      "astar_grammar": false,
+      "astar_error": null,
+      "suite": "apb",
+      "domain": "transport14",
+      "instance_id": 11
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/visitall/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/visitall/orig_problems/instance-1.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.0,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 1,
+      "suite": "apb",
+      "domain": "visitall",
+      "instance_id": 1
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/visitall/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/visitall/orig_problems/instance-11.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.0,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 1,
+      "suite": "apb",
+      "domain": "visitall",
+      "instance_id": 11
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/visitall/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/visitall/orig_problems/instance-12.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.0,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 2,
+      "suite": "apb",
+      "domain": "visitall",
+      "instance_id": 12
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/visitall-templates/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/visitall-templates/orig_problems/instance-1.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.0,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 1,
+      "suite": "apb",
+      "domain": "visitall-templates",
+      "instance_id": 1
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/visitall-templates/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/visitall-templates/orig_problems/instance-11.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.0,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 1,
+      "suite": "apb",
+      "domain": "visitall-templates",
+      "instance_id": 11
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/visitall-templates/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/visitall-templates/orig_problems/instance-12.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.0,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 2,
+      "suite": "apb",
+      "domain": "visitall-templates",
+      "instance_id": 12
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/visitall11-bfs/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/visitall11-bfs/orig_problems/instance-1.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.0,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 1,
+      "suite": "apb",
+      "domain": "visitall11-bfs",
+      "instance_id": 1
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/visitall11-bfs/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/visitall11-bfs/orig_problems/instance-10.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.15,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 20,
+      "suite": "apb",
+      "domain": "visitall11-bfs",
+      "instance_id": 10
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/visitall11-bfs/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/visitall11-bfs/orig_problems/instance-2.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.0,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 0,
+      "suite": "apb",
+      "domain": "visitall11-bfs",
+      "instance_id": 2
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/visitall14-bfs/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/visitall14-bfs/orig_problems/instance-16.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.08,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 29,
+      "suite": "apb",
+      "domain": "visitall14-bfs",
+      "instance_id": 16
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/visitall14-bfs/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/visitall14-bfs/orig_problems/instance-2.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.06,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 21,
+      "suite": "apb",
+      "domain": "visitall14-bfs",
+      "instance_id": 2
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/visitall14-bfs/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/visitall14-bfs/orig_problems/instance-3.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.22,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 23,
+      "suite": "apb",
+      "domain": "visitall14-bfs",
+      "instance_id": 3
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/visitall_scaled/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/visitall_scaled/orig_problems/instance-10.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.02,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 29,
+      "suite": "apb",
+      "domain": "visitall_scaled",
+      "instance_id": 10
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/visitall_scaled/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/visitall_scaled/orig_problems/instance-11.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.02,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 39,
+      "suite": "apb",
+      "domain": "visitall_scaled",
+      "instance_id": 11
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/visitall_scaled/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/visitall_scaled/orig_problems/instance-12.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.02,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 44,
+      "suite": "apb",
+      "domain": "visitall_scaled",
+      "instance_id": 12
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/visitall_scaled-templates/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/visitall_scaled-templates/orig_problems/instance-10.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.02,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 29,
+      "suite": "apb",
+      "domain": "visitall_scaled-templates",
+      "instance_id": 10
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/visitall_scaled-templates/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/visitall_scaled-templates/orig_problems/instance-11.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.02,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 39,
+      "suite": "apb",
+      "domain": "visitall_scaled-templates",
+      "instance_id": 11
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/visitall_scaled-templates/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/visitall_scaled-templates/orig_problems/instance-12.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.02,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 44,
+      "suite": "apb",
+      "domain": "visitall_scaled-templates",
+      "instance_id": 12
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/woodworking08/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/woodworking08/orig_problems/instance-1.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.05,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 5,
+      "suite": "apb",
+      "domain": "woodworking08",
+      "instance_id": 1
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/woodworking08/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/woodworking08/orig_problems/instance-10.pddl",
+      "bfs_seconds": 0.09,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 60.02,
+      "astar_grammar": false,
+      "astar_error": null,
+      "suite": "apb",
+      "domain": "woodworking08",
+      "instance_id": 10
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/woodworking08/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/woodworking08/orig_problems/instance-11.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.02,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 4,
+      "suite": "apb",
+      "domain": "woodworking08",
+      "instance_id": 11
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/woodworking11/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/woodworking11/orig_problems/instance-1.pddl",
+      "bfs_seconds": 0.01,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.03,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 6,
+      "suite": "apb",
+      "domain": "woodworking11",
+      "instance_id": 1
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/woodworking11/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/woodworking11/orig_problems/instance-10.pddl",
+      "bfs_seconds": 0.02,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 6.0,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 8,
+      "suite": "apb",
+      "domain": "woodworking11",
+      "instance_id": 10
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/woodworking11/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/woodworking11/orig_problems/instance-11.pddl",
+      "bfs_seconds": 0.02,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.4,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 8,
+      "suite": "apb",
+      "domain": "woodworking11",
+      "instance_id": 11
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/zenotravel02/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/zenotravel02/orig_problems/instance-1.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.0,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 0,
+      "suite": "apb",
+      "domain": "zenotravel02",
+      "instance_id": 1
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/zenotravel02/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/zenotravel02/orig_problems/instance-10.pddl",
+      "bfs_seconds": 0.06,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 60.01,
+      "astar_grammar": false,
+      "astar_error": null,
+      "suite": "apb",
+      "domain": "zenotravel02",
+      "instance_id": 10
+    },
+    {
+      "domain_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/zenotravel02/domain.pddl",
+      "instance_file": "external/autoplanbench/autoplanbench_dataset/apb2.0_dataset/zenotravel02/orig_problems/instance-11.pddl",
+      "bfs_seconds": 0.08,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1,
+        "n_transitions": 0,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 60.0,
+      "astar_grammar": false,
+      "astar_error": null,
+      "suite": "apb",
+      "domain": "zenotravel02",
+      "instance_id": 11
+    }
+  ]
+}

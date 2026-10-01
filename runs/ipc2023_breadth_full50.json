@@ -1,0 +1,760 @@
+{
+  "discovered_domains": [
+    "blocksworld",
+    "childsnack",
+    "ferry",
+    "floortile",
+    "miconic",
+    "rovers",
+    "satellite",
+    "sokoban",
+    "spanner",
+    "transport"
+  ],
+  "results": {
+    "blocksworld": {
+      "n_transitions": 50000,
+      "n_actions_observed": 4,
+      "n_actions_gt": 4,
+      "per_action": {
+        "pickup": {
+          "pre_f1": 1.0,
+          "add_f1": 1.0,
+          "del_f1": 1.0,
+          "reused": false,
+          "reuse_source": null,
+          "reuse_score": 0,
+          "n_examples": 7903
+        },
+        "putdown": {
+          "pre_f1": 1.0,
+          "add_f1": 1.0,
+          "del_f1": 1.0,
+          "reused": false,
+          "reuse_source": null,
+          "reuse_score": 0,
+          "n_examples": 8145
+        },
+        "stack": {
+          "pre_f1": 1.0,
+          "add_f1": 1.0,
+          "del_f1": 1.0,
+          "reused": false,
+          "reuse_source": null,
+          "reuse_score": 0,
+          "n_examples": 16855
+        },
+        "unstack": {
+          "pre_f1": 1.0,
+          "add_f1": 1.0,
+          "del_f1": 1.0,
+          "reused": false,
+          "reuse_source": null,
+          "reuse_score": 0,
+          "n_examples": 17097
+        }
+      },
+      "reuse": {
+        "pickup": {
+          "reused": false,
+          "best_score": 0.0,
+          "n": 7903
+        },
+        "stack": {
+          "reused": false,
+          "best_score": 0.0,
+          "n": 16855
+        },
+        "unstack": {
+          "reused": false,
+          "best_score": 0.0,
+          "n": 17097
+        },
+        "putdown": {
+          "reused": false,
+          "best_score": 0.0,
+          "n": 8145
+        }
+      }
+    },
+    "childsnack": {
+      "n_transitions": 36987,
+      "n_actions_observed": 6,
+      "n_actions_gt": 6,
+      "per_action": {
+        "make_sandwich_no_gluten": {
+          "pre_f1": 1.0,
+          "add_f1": 1.0,
+          "del_f1": 1.0,
+          "reused": false,
+          "reuse_source": null,
+          "reuse_score": 0,
+          "n_examples": 68
+        },
+        "make_sandwich": {
+          "pre_f1": 1.0,
+          "add_f1": 1.0,
+          "del_f1": 1.0,
+          "reused": false,
+          "reuse_source": null,
+          "reuse_score": 0,
+          "n_examples": 1012
+        },
+        "put_on_tray": {
+          "pre_f1": 1.0,
+          "add_f1": 1.0,
+          "del_f1": 1.0,
+          "reused": false,
+          "reuse_source": null,
+          "reuse_score": 0,
+          "n_examples": 1080
+        },
+        "serve_sandwich_no_gluten": {
+          "pre_f1": 1.0,
+          "add_f1": 1.0,
+          "del_f1": 1.0,
+          "reused": false,
+          "reuse_source": null,
+          "reuse_score": 0,
+          "n_examples": 26
+        },
+        "serve_sandwich": {
+          "pre_f1": 1.0,
+          "add_f1": 1.0,
+          "del_f1": 1.0,
+          "reused": false,
+          "reuse_source": null,
+          "reuse_score": 0,
+          "n_examples": 1024
+        },
+        "move_tray": {
+          "pre_f1": 1.0,
+          "add_f1": 1.0,
+          "del_f1": 1.0,
+          "reused": false,
+          "reuse_source": null,
+          "reuse_score": 0,
+          "n_examples": 33777
+        }
+      },
+      "reuse": {
+        "make_sandwich": {
+          "reused": false,
+          "best_score": 0.0,
+          "n": 1012
+        },
+        "move_tray": {
+          "reused": false,
+          "best_score": 0.0,
+          "n": 33777
+        },
+        "put_on_tray": {
+          "reused": false,
+          "best_score": 0.0,
+          "n": 1080
+        },
+        "serve_sandwich": {
+          "reused": false,
+          "best_score": 0.0,
+          "n": 1024
+        },
+        "make_sandwich_no_gluten": {
+          "reused": false,
+          "best_score": 0.0,
+          "n": 68
+        },
+        "serve_sandwich_no_gluten": {
+          "reused": false,
+          "best_score": 0.0,
+          "n": 26
+        }
+      }
+    },
+    "ferry": {
+      "n_transitions": 41381,
+      "n_actions_observed": 3,
+      "n_actions_gt": 3,
+      "per_action": {
+        "sail": {
+          "pre_f1": 1.0,
+          "add_f1": 1.0,
+          "del_f1": 1.0,
+          "reused": false,
+          "reuse_source": null,
+          "reuse_score": 0,
+          "n_examples": 35216
+        },
+        "board": {
+          "pre_f1": 1.0,
+          "add_f1": 1.0,
+          "del_f1": 1.0,
+          "reused": false,
+          "reuse_source": null,
+          "reuse_score": 0,
+          "n_examples": 3137
+        },
+        "debark": {
+          "pre_f1": 1.0,
+          "add_f1": 1.0,
+          "del_f1": 1.0,
+          "reused": false,
+          "reuse_source": null,
+          "reuse_score": 0,
+          "n_examples": 3028
+        }
+      },
+      "reuse": {
+        "sail": {
+          "reused": false,
+          "best_score": 0.0,
+          "n": 35216
+        },
+        "board": {
+          "reused": false,
+          "best_score": 0.0,
+          "n": 3137
+        },
+        "debark": {
+          "reused": false,
+          "best_score": 0.0,
+          "n": 3028
+        }
+      }
+    },
+    "floortile": {
+      "n_transitions": 31316,
+      "n_actions_observed": 7,
+      "n_actions_gt": 7,
+      "per_action": {
+        "change_color": {
+          "pre_f1": 1.0,
+          "add_f1": 1.0,
+          "del_f1": 1.0,
+          "reused": false,
+          "reuse_source": null,
+          "reuse_score": 0,
+          "n_examples": 18864
+        },
+        "paint_up": {
+          "pre_f1": 1.0,
+          "add_f1": 1.0,
+          "del_f1": 1.0,
+          "reused": false,
+          "reuse_source": null,
+          "reuse_score": 0,
+          "n_examples": 840
+        },
+        "paint_down": {
+          "pre_f1": 1.0,
+          "add_f1": 1.0,
+          "del_f1": 1.0,
+          "reused": false,
+          "reuse_source": null,
+          "reuse_score": 0,
+          "n_examples": 789
+        },
+        "move_up": {
+          "pre_f1": 1.0,
+          "add_f1": 1.0,
+          "del_f1": 1.0,
+          "reused": false,
+          "reuse_source": null,
+          "reuse_score": 0,
+          "n_examples": 915
+        },
+        "move_down": {
+          "pre_f1": 1.0,
+          "add_f1": 1.0,
+          "del_f1": 1.0,
+          "reused": false,
+          "reuse_source": null,
+          "reuse_score": 0,
+          "n_examples": 904
+        },
+        "move_right": {
+          "pre_f1": 1.0,
+          "add_f1": 1.0,
+          "del_f1": 1.0,
+          "reused": false,
+          "reuse_source": null,
+          "reuse_score": 0,
+          "n_examples": 4490
+        },
+        "move_left": {
+          "pre_f1": 1.0,
+          "add_f1": 1.0,
+          "del_f1": 1.0,
+          "reused": false,
+          "reuse_source": null,
+          "reuse_score": 0,
+          "n_examples": 4514
+        }
+      },
+      "reuse": {
+        "move_up": {
+          "reused": false,
+          "best_score": 0.0,
+          "n": 915
+        },
+        "move_down": {
+          "reused": false,
+          "best_score": 0.0,
+          "n": 904
+        },
+        "change_color": {
+          "reused": false,
+          "best_score": 0.0,
+          "n": 18864
+        },
+        "paint_up": {
+          "reused": false,
+          "best_score": 0.0,
+          "n": 840
+        },
+        "paint_down": {
+          "reused": false,
+          "best_score": 0.0,
+          "n": 789
+        },
+        "move_right": {
+          "reused": false,
+          "best_score": 0.0,
+          "n": 4490
+        },
+        "move_left": {
+          "reused": false,
+          "best_score": 0.0,
+          "n": 4514
+        }
+      }
+    },
+    "miconic": {
+      "n_transitions": 50000,
+      "n_actions_observed": 4,
+      "n_actions_gt": 4,
+      "per_action": {
+        "board": {
+          "pre_f1": 1.0,
+          "add_f1": 1.0,
+          "del_f1": 1.0,
+          "reused": false,
+          "reuse_source": null,
+          "reuse_score": 0,
+          "n_examples": 544
+        },
+        "depart": {
+          "pre_f1": 1.0,
+          "add_f1": 1.0,
+          "del_f1": 1.0,
+          "reused": false,
+          "reuse_source": null,
+          "reuse_score": 0,
+          "n_examples": 472
+        },
+        "up": {
+          "pre_f1": 1.0,
+          "add_f1": 1.0,
+          "del_f1": 1.0,
+          "reused": false,
+          "reuse_source": null,
+          "reuse_score": 0,
+          "n_examples": 24451
+        },
+        "down": {
+          "pre_f1": 1.0,
+          "add_f1": 1.0,
+          "del_f1": 1.0,
+          "reused": false,
+          "reuse_source": null,
+          "reuse_score": 0,
+          "n_examples": 24533
+        }
+      },
+      "reuse": {
+        "down": {
+          "reused": false,
+          "best_score": 0.0,
+          "n": 24533
+        },
+        "up": {
+          "reused": false,
+          "best_score": 0.0,
+          "n": 24451
+        },
+        "board": {
+          "reused": false,
+          "best_score": 0.0,
+          "n": 544
+        },
+        "depart": {
+          "reused": false,
+          "best_score": 0.0,
+          "n": 472
+        }
+      }
+    },
+    "rovers": {
+      "n_transitions": 28950,
+      "n_actions_observed": 9,
+      "n_actions_gt": 9,
+      "per_action": {
+        "navigate": {
+          "pre_f1": 1.0,
+          "add_f1": 1.0,
+          "del_f1": 1.0,
+          "reused": true,
+          "reuse_source": "childsnack",
+          "reuse_score": 1.0,
+          "n_examples": 16293
+        },
+        "sample_soil": {
+          "pre_f1": 1.0,
+          "add_f1": 1.0,
+          "del_f1": 1.0,
+          "reused": false,
+          "reuse_source": null,
+          "reuse_score": 0,
+          "n_examples": 589
+        },
+        "sample_rock": {
+          "pre_f1": 1.0,
+          "add_f1": 1.0,
+          "del_f1": 1.0,
+          "reused": false,
+          "reuse_source": null,
+          "reuse_score": 0,
+          "n_examples": 541
+        },
+        "drop": {
+          "pre_f1": 1.0,
+          "add_f1": 1.0,
+          "del_f1": 1.0,
+          "reused": false,
+          "reuse_source": null,
+          "reuse_score": 0,
+          "n_examples": 1119
+        },
+        "calibrate": {
+          "pre_f1": 1.0,
+          "add_f1": 1.0,
+          "del_f1": 1.0,
+          "reused": false,
+          "reuse_source": null,
+          "reuse_score": 0,
+          "n_examples": 4041
+        },
+        "take_image": {
+          "pre_f1": 1.0,
+          "add_f1": 1.0,
+          "del_f1": 1.0,
+          "reused": false,
+          "reuse_source": null,
+          "reuse_score": 0,
+          "n_examples": 3967
+        },
+        "communicate_soil_data": {
+          "pre_f1": 1.0,
+          "add_f1": 1.0,
+          "del_f1": 1.0,
+          "reused": false,
+          "reuse_source": null,
+          "reuse_score": 0,
+          "n_examples": 560
+        },
+        "communicate_rock_data": {
+          "pre_f1": 1.0,
+          "add_f1": 1.0,
+          "del_f1": 1.0,
+          "reused": false,
+          "reuse_source": null,
+          "reuse_score": 0,
+          "n_examples": 525
+        },
+        "communicate_image_data": {
+          "pre_f1": 1.0,
+          "add_f1": 1.0,
+          "del_f1": 1.0,
+          "reused": false,
+          "reuse_source": null,
+          "reuse_score": 0,
+          "n_examples": 1315
+        }
+      },
+      "reuse": {
+        "navigate": {
+          "reused": true,
+          "source": "childsnack",
+          "score": 1.0,
+          "n": 16293
+        },
+        "calibrate": {
+          "reused": false,
+          "best_score": 0.0,
+          "n": 4041
+        },
+        "take_image": {
+          "reused": false,
+          "best_score": 0.0,
+          "n": 3967
+        },
+        "communicate_image_data": {
+          "reused": false,
+          "best_score": 0.0,
+          "n": 1315
+        },
+        "sample_soil": {
+          "reused": false,
+          "best_score": 0.0,
+          "n": 589
+        },
+        "drop": {
+          "reused": false,
+          "best_score": 0.0,
+          "n": 1119
+        },
+        "communicate_soil_data": {
+          "reused": false,
+          "best_score": 0.0,
+          "n": 560
+        },
+        "sample_rock": {
+          "reused": false,
+          "best_score": 0.0,
+          "n": 541
+        },
+        "communicate_rock_data": {
+          "reused": false,
+          "best_score": 0.0,
+          "n": 525
+        }
+      }
+    },
+    "satellite": {
+      "n_transitions": 40216,
+      "n_actions_observed": 5,
+      "n_actions_gt": 5,
+      "per_action": {
+        "turn_to": {
+          "pre_f1": 1.0,
+          "add_f1": 1.0,
+          "del_f1": 1.0,
+          "reused": false,
+          "reuse_source": null,
+          "reuse_score": 0,
+          "n_examples": 28846
+        },
+        "switch_on": {
+          "pre_f1": 1.0,
+          "add_f1": 1.0,
+          "del_f1": 1.0,
+          "reused": false,
+          "reuse_source": null,
+          "reuse_score": 0,
+          "n_examples": 5280
+        },
+        "switch_off": {
+          "pre_f1": 1.0,
+          "add_f1": 1.0,
+          "del_f1": 1.0,
+          "reused": false,
+          "reuse_source": null,
+          "reuse_score": 0,
+          "n_examples": 4742
+        },
+        "calibrate": {
+          "pre_f1": 1.0,
+          "add_f1": 1.0,
+          "del_f1": 1.0,
+          "reused": false,
+          "reuse_source": null,
+          "reuse_score": 0,
+          "n_examples": 928
+        },
+        "take_image": {
+          "pre_f1": 1.0,
+          "add_f1": 1.0,
+          "del_f1": 1.0,
+          "reused": false,
+          "reuse_source": null,
+          "reuse_score": 0,
+          "n_examples": 420
+        }
+      },
+      "reuse": {
+        "turn_to": {
+          "reused": false,
+          "best_score": 0.0,
+          "n": 28846
+        },
+        "switch_on": {
+          "reused": false,
+          "best_score": 0.0,
+          "n": 5280
+        },
+        "calibrate": {
+          "reused": false,
+          "best_score": 0.0,
+          "n": 928
+        },
+        "switch_off": {
+          "reused": false,
+          "best_score": 0.0,
+          "n": 4742
+        },
+        "take_image": {
+          "reused": false,
+          "best_score": 0.0,
+          "n": 420
+        }
+      }
+    },
+    "sokoban": {
+      "n_transitions": 50000,
+      "n_actions_observed": 2,
+      "n_actions_gt": 2,
+      "per_action": {
+        "move": {
+          "pre_f1": 1.0,
+          "add_f1": 1.0,
+          "del_f1": 1.0,
+          "reused": false,
+          "reuse_source": null,
+          "reuse_score": 0,
+          "n_examples": 49170
+        },
+        "push": {
+          "pre_f1": 1.0,
+          "add_f1": 1.0,
+          "del_f1": 1.0,
+          "reused": false,
+          "reuse_source": null,
+          "reuse_score": 0,
+          "n_examples": 830
+        }
+      },
+      "reuse": {
+        "move": {
+          "reused": false,
+          "best_score": 0.0,
+          "n": 49170
+        },
+        "push": {
+          "reused": false,
+          "best_score": 0.0,
+          "n": 830
+        }
+      }
+    },
+    "spanner": {
+      "n_transitions": 2168,
+      "n_actions_observed": 3,
+      "n_actions_gt": 3,
+      "per_action": {
+        "walk": {
+          "pre_f1": 1.0,
+          "add_f1": 1.0,
+          "del_f1": 1.0,
+          "reused": false,
+          "reuse_source": null,
+          "reuse_score": 0,
+          "n_examples": 1420
+        },
+        "pickup_spanner": {
+          "pre_f1": 1.0,
+          "add_f1": 1.0,
+          "del_f1": 1.0,
+          "reused": false,
+          "reuse_source": null,
+          "reuse_score": 0,
+          "n_examples": 403
+        },
+        "tighten_nut": {
+          "pre_f1": 1.0,
+          "add_f1": 1.0,
+          "del_f1": 1.0,
+          "reused": false,
+          "reuse_source": null,
+          "reuse_score": 0,
+          "n_examples": 345
+        }
+      },
+      "reuse": {
+        "walk": {
+          "reused": false,
+          "best_score": 0.0,
+          "n": 1420
+        },
+        "pickup_spanner": {
+          "reused": false,
+          "best_score": 0.0,
+          "n": 403
+        },
+        "tighten_nut": {
+          "reused": false,
+          "best_score": 0.0,
+          "n": 345
+        }
+      }
+    },
+    "transport": {
+      "n_transitions": 50000,
+      "n_actions_observed": 3,
+      "n_actions_gt": 3,
+      "per_action": {
+        "drive": {
+          "pre_f1": 1.0,
+          "add_f1": 1.0,
+          "del_f1": 1.0,
+          "reused": true,
+          "reuse_source": "childsnack",
+          "reuse_score": 1.0,
+          "n_examples": 39214
+        },
+        "pick-up": {
+          "pre_f1": 1.0,
+          "add_f1": 1.0,
+          "del_f1": 1.0,
+          "reused": false,
+          "reuse_source": null,
+          "reuse_score": 0,
+          "n_examples": 5564
+        },
+        "drop": {
+          "pre_f1": 1.0,
+          "add_f1": 1.0,
+          "del_f1": 1.0,
+          "reused": false,
+          "reuse_source": null,
+          "reuse_score": 0,
+          "n_examples": 5222
+        }
+      },
+      "reuse": {
+        "pick-up": {
+          "reused": false,
+          "best_score": 0.0,
+          "n": 5564
+        },
+        "drop": {
+          "reused": false,
+          "best_score": 0.0,
+          "n": 5222
+        },
+        "drive": {
+          "reused": true,
+          "source": "childsnack",
+          "score": 1.0,
+          "n": 39214
+        }
+      }
+    }
+  },
+  "summary": {
+    "n_domains_parsed": 10,
+    "n_total_actions": 46,
+    "n_perfect": 46,
+    "n_reused": 2,
+    "n_missing": 0,
+    "memory_size_final": 46
+  }
+}

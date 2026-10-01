@@ -1,0 +1,18 @@
+[project]
+name = "agplan"
+version = "1.0.0"
+description = "Abstraction-based Grammar-Constrained Planning (AGCP): applicability masks induced from environment rollouts for LLM planning"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["agplan*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

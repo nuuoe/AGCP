@@ -1,0 +1,150 @@
+{
+  "instance_id": 10,
+  "step1": {
+    "n_transitions": 500,
+    "n_actions_observed": 4,
+    "actions": [
+      "attack",
+      "feast",
+      "overcome",
+      "succumb"
+    ],
+    "seconds": 0.004480838775634766
+  },
+  "step2": {
+    "n_actions_induced": 4,
+    "models": {
+      "feast": {
+        "pre_pos": [
+          "craves({a1},{a2})",
+          "harmony",
+          "province({a1})"
+        ],
+        "eff_add": [
+          "pain({a1})",
+          "province({a2})"
+        ],
+        "eff_del": [
+          "craves({a1},{a2})",
+          "harmony",
+          "province({a1})"
+        ],
+        "n_examples": 139
+      },
+      "overcome": {
+        "pre_pos": [
+          "pain({a1})",
+          "province({a2})"
+        ],
+        "eff_add": [
+          "craves({a1},{a2})",
+          "harmony",
+          "province({a1})"
+        ],
+        "eff_del": [
+          "pain({a1})",
+          "province({a2})"
+        ],
+        "n_examples": 141
+      },
+      "attack": {
+        "pre_pos": [
+          "harmony",
+          "planet({a1})",
+          "province({a1})"
+        ],
+        "eff_add": [
+          "pain({a1})"
+        ],
+        "eff_del": [
+          "harmony",
+          "planet({a1})",
+          "province({a1})"
+        ],
+        "n_examples": 111
+      },
+      "succumb": {
+        "pre_pos": [
+          "pain({a1})"
+        ],
+        "eff_add": [
+          "harmony",
+          "planet({a1})",
+          "province({a1})"
+        ],
+        "eff_del": [
+          "pain({a1})"
+        ],
+        "n_examples": 109
+      }
+    },
+    "seconds": 0.010411977767944336
+  },
+  "step3_nl_parse": {
+    "nl_goal": "object a craves object c and object c craves object b",
+    "nl_mapped": "object a craves object c and object c craves object b",
+    "parsed_goal": [
+      "craves(a, c)",
+      "craves(c, b)"
+    ],
+    "llm_accepted": true,
+    "verifier_score": 1.0,
+    "refine_rounds": 0,
+    "seconds": 107.84764695167542
+  },
+  "gt_atoms": [
+    "craves(a,c)",
+    "craves(c,b)"
+  ],
+  "parsed_goal": [
+    "craves(a, c)",
+    "craves(c, b)"
+  ],
+  "llm_e4_succeeded": true,
+  "step4": {
+    "cfg_built": true,
+    "cfg_size_chars": 175,
+    "used_astar_fallback": true,
+    "n_objects": 3,
+    "seconds": 0.0067288875579833984
+  },
+  "step5": {
+    "raw_plan_json": "{\"plan\":[\"feast(b,c)\",\"succumb(b)\",\"attack(c)\",\"overcome(c,b)\",\"attack(a)\",\"overcome(a,c)\"]}",
+    "seconds": 103.16787219047546
+  },
+  "step6": {
+    "success_against_parsed": false,
+    "success_against_gt": true,
+    "n_applied": 6,
+    "plan_lisp": "(feast b c)\n(succumb b)\n(attack c)\n(overcome c b)\n(attack a)\n(overcome a c)",
+    "plan_log": [
+      {
+        "action": "(feast b c)",
+        "applied": true
+      },
+      {
+        "action": "(succumb b)",
+        "applied": true
+      },
+      {
+        "action": "(attack c)",
+        "applied": true
+      },
+      {
+        "action": "(overcome c b)",
+        "applied": true
+      },
+      {
+        "action": "(attack a)",
+        "applied": true
+      },
+      {
+        "action": "(overcome a c)",
+        "applied": true
+      }
+    ],
+    "seconds": 0.002711057662963867
+  },
+  "success_against_parsed": false,
+  "success_against_gt": true
+}

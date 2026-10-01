@@ -1,0 +1,46 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "n_rollouts": 5,
+  "max_instances": 3,
+  "summary": {
+    "scanalyzer08": {
+      "n_solved": 2,
+      "n_total": 3,
+      "success_rate": 0.6666666666666666
+    }
+  },
+  "rows": [
+    {
+      "domain": "scanalyzer08",
+      "n_solved": 2,
+      "n_total": 3,
+      "success_rate": 0.6666666666666666,
+      "per_instance": [
+        {
+          "instance_id": 1,
+          "success": true,
+          "n_applied": 6,
+          "error": "",
+          "seconds": 37.95530080795288,
+          "plan": "(analyze-2 seg-in-2 seg-out-3 car-in-2 car-out-3)\n(analyze-2 seg-in-2 seg-out-3 car-out-3 car-in-2)\n(analyze-2 seg-in-1 seg-out-2 car-in-1 car-out-2)\n(analyze-2 seg-in-1 seg-out-2 car-out-2 car-in-1)\n"
+        },
+        {
+          "instance_id": 10,
+          "success": true,
+          "n_applied": 12,
+          "error": "",
+          "seconds": 59.21955895423889,
+          "plan": "(analyze-2 seg-in-5 seg-out-6 car-in-5 car-out-6)\n(analyze-2 seg-in-5 seg-out-6 car-out-6 car-in-5)\n(analyze-2 seg-in-6 seg-out-4 car-in-6 car-out-4)\n(analyze-2 seg-in-6 seg-out-4 car-out-4 car-in-6)\n"
+        },
+        {
+          "instance_id": 11,
+          "success": false,
+          "error": "compile (BFS+A*): no plan",
+          "seconds": 60.30689215660095
+        }
+      ]
+    }
+  ],
+  "total_solved": 2,
+  "total": 3
+}

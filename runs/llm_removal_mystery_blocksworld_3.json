@@ -1,0 +1,68 @@
+{
+  "config": "mystery_blocksworld_3",
+  "method": "pure_classical_no_llm",
+  "n_solved": 10,
+  "n_total": 10,
+  "rows": [
+    {
+      "inst": 2,
+      "solved": true,
+      "n_actions": 4,
+      "wallclock_sec": 0.0019431114196777344
+    },
+    {
+      "inst": 3,
+      "solved": true,
+      "n_actions": 8,
+      "wallclock_sec": 0.0009398460388183594
+    },
+    {
+      "inst": 4,
+      "solved": true,
+      "n_actions": 4,
+      "wallclock_sec": 0.0007488727569580078
+    },
+    {
+      "inst": 5,
+      "solved": true,
+      "n_actions": 8,
+      "wallclock_sec": 0.0009188652038574219
+    },
+    {
+      "inst": 6,
+      "solved": true,
+      "n_actions": 6,
+      "wallclock_sec": 0.0008513927459716797
+    },
+    {
+      "inst": 7,
+      "solved": true,
+      "n_actions": 6,
+      "wallclock_sec": 0.0008990764617919922
+    },
+    {
+      "inst": 8,
+      "solved": true,
+      "n_actions": 2,
+      "wallclock_sec": 0.0006740093231201172
+    },
+    {
+      "inst": 9,
+      "solved": true,
+      "n_actions": 4,
+      "wallclock_sec": 0.0008068084716796875
+    },
+    {
+      "inst": 10,
+      "solved": true,
+      "n_actions": 6,
+      "wallclock_sec": 0.0010271072387695312
+    },
+    {
+      "inst": 11,
+      "solved": true,
+      "n_actions": 8,
+      "wallclock_sec": 0.0009951591491699219
+    }
+  ]
+}

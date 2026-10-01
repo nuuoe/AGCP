@@ -1,0 +1,1548 @@
+{
+  "counts": {
+    "blocksworld_3": {
+      "ARG_SWAP": 5,
+      "OTHER": 5,
+      "EXTRA_ATOMS": 4,
+      "ALIAS": 11,
+      "CORRECT": 2,
+      "MISSING_ATOMS": 3
+    },
+    "mystery_blocksworld_3": {
+      "ARG_SWAP": 6,
+      "OTHER": 5,
+      "EXTRA_ATOMS": 4,
+      "ALIAS": 12,
+      "CORRECT": 1,
+      "MISSING_ATOMS": 2
+    },
+    "logistics": {
+      "CORRECT": 4,
+      "HALLUCINATED_HEAD": 3,
+      "HALLUCINATED_OBJ": 8,
+      "OTHER": 11,
+      "ALIAS": 3,
+      "MISSING_ATOMS": 1
+    },
+    "depots": {
+      "ALIAS": 20,
+      "OTHER": 10
+    }
+  },
+  "examples": {
+    "blocksworld_3": {
+      "ARG_SWAP": [
+        {
+          "inst": 2,
+          "nl_goal": "the red block is on top of the blue block and the orange block is on top of the red block",
+          "gt_atoms": [
+            "on(a,c)",
+            "on(b,a)"
+          ],
+          "llm_proposal": [
+            "on(a, b)",
+            "on(c, a)"
+          ]
+        },
+        {
+          "inst": 9,
+          "nl_goal": "the red block is on top of the orange block",
+          "gt_atoms": [
+            "on(c,a)"
+          ],
+          "llm_proposal": [
+            "on(a, c)"
+          ]
+        },
+        {
+          "inst": 14,
+          "nl_goal": "the blue block is on top of the orange block and the orange block is on top of the red block",
+          "gt_atoms": [
+            "on(a,c)",
+            "on(c,b)"
+          ],
+          "llm_proposal": [
+            "on(b, c)",
+            "on(c, a)"
+          ]
+        },
+        {
+          "inst": 17,
+          "nl_goal": "the red block is on top of the orange block and the blue block is on top of the red block",
+          "gt_atoms": [
+            "on(a,b)",
+            "on(c,a)"
+          ],
+          "llm_proposal": [
+            "on(a, c)",
+            "on(b, a)"
+          ]
+        },
+        {
+          "inst": 25,
+          "nl_goal": "the red block is on top of the blue block and the blue block is on top of the orange block",
+          "gt_atoms": [
+            "on(b,a)",
+            "on(c,b)"
+          ],
+          "llm_proposal": [
+            "on(a, b)",
+            "on(b, c)"
+          ]
+        }
+      ],
+      "OTHER": [
+        {
+          "inst": 3,
+          "nl_goal": "the red block is on top of the orange block and the blue block is on top of the red block",
+          "gt_atoms": [
+            "on(b,a)",
+            "on(c,b)"
+          ],
+          "llm_proposal": [
+            "on(a, c)",
+            "on(b, a)"
+          ]
+        },
+        {
+          "inst": 7,
+          "nl_goal": "the blue block is on top of the orange block and the orange block is on top of the red block",
+          "gt_atoms": [
+            "on(a,b)",
+            "on(b,c)"
+          ],
+          "llm_proposal": [
+            "on(b, c)",
+            "on(c, a)"
+          ]
+        },
+        {
+          "inst": 11,
+          "nl_goal": "the red block is on top of the orange block and the orange block is on top of the blue block",
+          "gt_atoms": [
+            "on(b,a)",
+            "on(c,b)"
+          ],
+          "llm_proposal": [
+            "on(a, c)",
+            "on(c, b)"
+          ]
+        },
+        {
+          "inst": 13,
+          "nl_goal": "the red block is on top of the blue block and the orange block is on top of the red block",
+          "gt_atoms": [
+            "on(b,c)",
+            "on(c,a)"
+          ],
+          "llm_proposal": [
+            "on(a, b)",
+            "on(c, a)"
+          ]
+        },
+        {
+          "inst": 19,
+          "nl_goal": "the red block is on top of the orange block and the orange block is on top of the blue block",
+          "gt_atoms": [
+            "on(a,c)",
+            "on(b,a)"
+          ],
+          "llm_proposal": [
+            "on(a, c)",
+            "on(c, b)"
+          ]
+        }
+      ],
+      "EXTRA_ATOMS": [
+        {
+          "inst": 4,
+          "nl_goal": "the blue block is on top of the red block and the orange block is on top of the blue block",
+          "gt_atoms": [
+            "on(b,a)"
+          ],
+          "llm_proposal": [
+            "on(b, a)",
+            "on(c, b)"
+          ]
+        },
+        {
+          "inst": 20,
+          "nl_goal": "the red block is on top of the orange block and the blue block is on top of the red block",
+          "gt_atoms": [
+            "on(b,a)"
+          ],
+          "llm_proposal": [
+            "on(a, c)",
+            "on(b, a)"
+          ]
+        },
+        {
+          "inst": 26,
+          "nl_goal": "the blue block is on top of the red block and the orange block is on top of the blue block",
+          "gt_atoms": [
+            "on(c,b)"
+          ],
+          "llm_proposal": [
+            "on(b, a)",
+            "on(c, b)"
+          ]
+        },
+        {
+          "inst": 30,
+          "nl_goal": "the red block is on top of the orange block and the blue block is on top of the red block",
+          "gt_atoms": [
+            "on(a,c)"
+          ],
+          "llm_proposal": [
+            "on(a, c)",
+            "on(b, a)"
+          ]
+        }
+      ],
+      "ALIAS": [
+        {
+          "inst": 5,
+          "nl_goal": "the blue block is on top of the red block",
+          "gt_atoms": [
+            "on(b,c)",
+            "on(c,a)"
+          ],
+          "llm_proposal": [
+            "on(b,a)"
+          ]
+        },
+        {
+          "inst": 8,
+          "nl_goal": "the red block is on top of the blue block and the blue block is on top of the orange block",
+          "gt_atoms": [
+            "on(a,c)"
+          ],
+          "llm_proposal": [
+            "on(a, b)",
+            "on(b, c)"
+          ]
+        },
+        {
+          "inst": 10,
+          "nl_goal": "the orange block is on top of the red block",
+          "gt_atoms": [
+            "on(a,c)",
+            "on(c,b)"
+          ],
+          "llm_proposal": [
+            "on(c, a)"
+          ]
+        },
+        {
+          "inst": 12,
+          "nl_goal": "the blue block is on top of the red block and the orange block is on top of the blue block",
+          "gt_atoms": [
+            "on(a,b)",
+            "on(c,a)"
+          ],
+          "llm_proposal": [
+            "on(b, a)",
+            "on(c, b)"
+          ]
+        },
+        {
+          "inst": 15,
+          "nl_goal": "the red block is on top of the orange block and the orange block is on top of the blue block",
+          "gt_atoms": [
+            "on(a,b)"
+          ],
+          "llm_proposal": [
+            "on(a, c)",
+            "on(c, b)"
+          ]
+        },
+        {
+          "inst": 18,
+          "nl_goal": "the red block is on top of the blue block and the orange block is on top of the red block",
+          "gt_atoms": [
+            "on(a,c)",
+            "on(c,b)"
+          ],
+          "llm_proposal": [
+            "on(a, b)",
+            "on(c, a)"
+          ]
+        },
+        {
+          "inst": 22,
+          "nl_goal": "the red block is on top of the orange block and the blue block is on top of the red block",
+          "gt_atoms": [
+            "on(b,c)"
+          ],
+          "llm_proposal": [
+            "on(a, c)",
+            "on(b, a)"
+          ]
+        },
+        {
+          "inst": 24,
+          "nl_goal": "the orange block is on top of the blue block",
+          "gt_atoms": [
+            "on(a,b)",
+            "on(b,c)"
+          ],
+          "llm_proposal": [
+            "on(c, b)"
+          ]
+        },
+        {
+          "inst": 28,
+          "nl_goal": "the red block is on top of the orange block and the orange block is on top of the blue block",
+          "gt_atoms": [
+            "on(a,b)",
+            "on(b,c)"
+          ],
+          "llm_proposal": [
+            "on(a, c)",
+            "on(c, b)"
+          ]
+        },
+        {
+          "inst": 29,
+          "nl_goal": "the red block is on top of the blue block and the blue block is on top of the orange block",
+          "gt_atoms": [
+            "on(a,c)",
+            "on(b,a)"
+          ],
+          "llm_proposal": [
+            "on(a, b)",
+            "on(b, c)"
+          ]
+        },
+        {
+          "inst": 31,
+          "nl_goal": "the red block is on top of the orange block",
+          "gt_atoms": [
+            "on(c,b)"
+          ],
+          "llm_proposal": [
+            "on(a, c)"
+          ]
+        }
+      ],
+      "CORRECT": [
+        {
+          "inst": 6,
+          "nl_goal": "the blue block is on top of the orange block and the orange block is on top of the red block",
+          "gt_atoms": [
+            "on(b,c)",
+            "on(c,a)"
+          ],
+          "llm_proposal": [
+            "on(b, c)",
+            "on(c, a)"
+          ]
+        },
+        {
+          "inst": 23,
+          "nl_goal": "the blue block is on top of the orange block",
+          "gt_atoms": [
+            "on(c,b)"
+          ],
+          "llm_proposal": [
+            "on(c,b)"
+          ]
+        }
+      ],
+      "MISSING_ATOMS": [
+        {
+          "inst": 16,
+          "nl_goal": "the red block is on top of the blue block",
+          "gt_atoms": [
+            "on(a,c)",
+            "on(b,a)"
+          ],
+          "llm_proposal": [
+            "on(b,a)"
+          ]
+        },
+        {
+          "inst": 21,
+          "nl_goal": "the blue block is on top of the red block",
+          "gt_atoms": [
+            "on(a,c)",
+            "on(b,a)"
+          ],
+          "llm_proposal": [
+            "on(b,a)"
+          ]
+        },
+        {
+          "inst": 27,
+          "nl_goal": "the orange block is on top of the blue block",
+          "gt_atoms": [
+            "on(a,c)",
+            "on(c,b)"
+          ],
+          "llm_proposal": [
+            "on(c, b)"
+          ]
+        }
+      ]
+    },
+    "mystery_blocksworld_3": {
+      "ARG_SWAP": [
+        {
+          "inst": 2,
+          "nl_goal": "object a craves object b and object c craves object a",
+          "gt_atoms": [
+            "craves(a,c)",
+            "craves(b,a)"
+          ],
+          "llm_proposal": [
+            "craves(a, b)",
+            "craves(c, a)"
+          ]
+        },
+        {
+          "inst": 9,
+          "nl_goal": "object a craves object c",
+          "gt_atoms": [
+            "craves(c,a)"
+          ],
+          "llm_proposal": [
+            "craves(a, c)"
+          ]
+        },
+        {
+          "inst": 14,
+          "nl_goal": "object b craves object c and object c craves object a",
+          "gt_atoms": [
+            "craves(a,c)",
+            "craves(c,b)"
+          ],
+          "llm_proposal": [
+            "craves(b, c)",
+            "craves(c, a)"
+          ]
+        },
+        {
+          "inst": 17,
+          "nl_goal": "object a craves object c and object b craves object a",
+          "gt_atoms": [
+            "craves(a,b)",
+            "craves(c,a)"
+          ],
+          "llm_proposal": [
+            "craves(a, c)",
+            "craves(b, a)"
+          ]
+        },
+        {
+          "inst": 23,
+          "nl_goal": "object b craves object c",
+          "gt_atoms": [
+            "craves(c,b)"
+          ],
+          "llm_proposal": [
+            "craves(b, c)"
+          ]
+        },
+        {
+          "inst": 25,
+          "nl_goal": "object a craves object b and object b craves object c",
+          "gt_atoms": [
+            "craves(b,a)",
+            "craves(c,b)"
+          ],
+          "llm_proposal": [
+            "craves(a, b)",
+            "craves(b, c)"
+          ]
+        }
+      ],
+      "OTHER": [
+        {
+          "inst": 3,
+          "nl_goal": "object a craves object c and object b craves object a",
+          "gt_atoms": [
+            "craves(b,a)",
+            "craves(c,b)"
+          ],
+          "llm_proposal": [
+            "craves(a, c)",
+            "craves(b, a)"
+          ]
+        },
+        {
+          "inst": 7,
+          "nl_goal": "object b craves object c and object c craves object a",
+          "gt_atoms": [
+            "craves(a,b)",
+            "craves(b,c)"
+          ],
+          "llm_proposal": [
+            "craves(b, c)",
+            "craves(c, a)"
+          ]
+        },
+        {
+          "inst": 11,
+          "nl_goal": "object a craves object c and object c craves object b",
+          "gt_atoms": [
+            "craves(b,a)",
+            "craves(c,b)"
+          ],
+          "llm_proposal": [
+            "craves(a, c)",
+            "craves(c, b)"
+          ]
+        },
+        {
+          "inst": 13,
+          "nl_goal": "object a craves object b and object c craves object a",
+          "gt_atoms": [
+            "craves(b,c)",
+            "craves(c,a)"
+          ],
+          "llm_proposal": [
+            "craves(a, b)",
+            "craves(c, a)"
+          ]
+        },
+        {
+          "inst": 19,
+          "nl_goal": "object a craves object c and object c craves object b",
+          "gt_atoms": [
+            "craves(a,c)",
+            "craves(b,a)"
+          ],
+          "llm_proposal": [
+            "craves(a, c)",
+            "craves(c, b)"
+          ]
+        }
+      ],
+      "EXTRA_ATOMS": [
+        {
+          "inst": 4,
+          "nl_goal": "object b craves object a and object c craves object b",
+          "gt_atoms": [
+            "craves(b,a)"
+          ],
+          "llm_proposal": [
+            "craves(b, a)",
+            "craves(c, b)"
+          ]
+        },
+        {
+          "inst": 20,
+          "nl_goal": "object a craves object c and object b craves object a",
+          "gt_atoms": [
+            "craves(b,a)"
+          ],
+          "llm_proposal": [
+            "craves(a, c)",
+            "craves(b, a)"
+          ]
+        },
+        {
+          "inst": 26,
+          "nl_goal": "object b craves object a and object c craves object b",
+          "gt_atoms": [
+            "craves(c,b)"
+          ],
+          "llm_proposal": [
+            "craves(b, a)",
+            "craves(c, b)"
+          ]
+        },
+        {
+          "inst": 30,
+          "nl_goal": "object a craves object c and object b craves object a",
+          "gt_atoms": [
+            "craves(a,c)"
+          ],
+          "llm_proposal": [
+            "craves(a, c)",
+            "craves(b, a)"
+          ]
+        }
+      ],
+      "ALIAS": [
+        {
+          "inst": 5,
+          "nl_goal": "object b craves object a",
+          "gt_atoms": [
+            "craves(b,c)",
+            "craves(c,a)"
+          ],
+          "llm_proposal": [
+            "craves(b, a)"
+          ]
+        },
+        {
+          "inst": 8,
+          "nl_goal": "object a craves object b and object b craves object c",
+          "gt_atoms": [
+            "craves(a,c)"
+          ],
+          "llm_proposal": [
+            "craves(a, b)",
+            "craves(b, c)"
+          ]
+        },
+        {
+          "inst": 10,
+          "nl_goal": "object c craves object a",
+          "gt_atoms": [
+            "craves(a,c)",
+            "craves(c,b)"
+          ],
+          "llm_proposal": [
+            "craves(c, a)"
+          ]
+        },
+        {
+          "inst": 12,
+          "nl_goal": "object b craves object a and object c craves object b",
+          "gt_atoms": [
+            "craves(a,b)",
+            "craves(c,a)"
+          ],
+          "llm_proposal": [
+            "craves(b, a)",
+            "craves(c, b)"
+          ]
+        },
+        {
+          "inst": 15,
+          "nl_goal": "object a craves object c and object c craves object b",
+          "gt_atoms": [
+            "craves(a,b)"
+          ],
+          "llm_proposal": [
+            "craves(a, c)",
+            "craves(c, b)"
+          ]
+        },
+        {
+          "inst": 16,
+          "nl_goal": "object a craves object b",
+          "gt_atoms": [
+            "craves(a,c)",
+            "craves(b,a)"
+          ],
+          "llm_proposal": [
+            "craves(a, b)"
+          ]
+        },
+        {
+          "inst": 18,
+          "nl_goal": "object a craves object b and object c craves object a",
+          "gt_atoms": [
+            "craves(a,c)",
+            "craves(c,b)"
+          ],
+          "llm_proposal": [
+            "craves(a, b)",
+            "craves(c, a)"
+          ]
+        },
+        {
+          "inst": 22,
+          "nl_goal": "object a craves object c and object b craves object a",
+          "gt_atoms": [
+            "craves(b,c)"
+          ],
+          "llm_proposal": [
+            "craves(a, c)",
+            "craves(b, a)"
+          ]
+        },
+        {
+          "inst": 24,
+          "nl_goal": "object c craves object b",
+          "gt_atoms": [
+            "craves(a,b)",
+            "craves(b,c)"
+          ],
+          "llm_proposal": [
+            "craves(c, b)"
+          ]
+        },
+        {
+          "inst": 28,
+          "nl_goal": "object a craves object c and object c craves object b",
+          "gt_atoms": [
+            "craves(a,b)",
+            "craves(b,c)"
+          ],
+          "llm_proposal": [
+            "craves(a, c)",
+            "craves(c, b)"
+          ]
+        },
+        {
+          "inst": 29,
+          "nl_goal": "object a craves object b and object b craves object c",
+          "gt_atoms": [
+            "craves(a,c)",
+            "craves(b,a)"
+          ],
+          "llm_proposal": [
+            "craves(a, b)",
+            "craves(b, c)"
+          ]
+        },
+        {
+          "inst": 31,
+          "nl_goal": "object a craves object c",
+          "gt_atoms": [
+            "craves(c,b)"
+          ],
+          "llm_proposal": [
+            "craves(a, c)"
+          ]
+        }
+      ],
+      "CORRECT": [
+        {
+          "inst": 6,
+          "nl_goal": "object b craves object c and object c craves object a",
+          "gt_atoms": [
+            "craves(b,c)",
+            "craves(c,a)"
+          ],
+          "llm_proposal": [
+            "craves(b, c)",
+            "craves(c, a)"
+          ]
+        }
+      ],
+      "MISSING_ATOMS": [
+        {
+          "inst": 21,
+          "nl_goal": "object b craves object a",
+          "gt_atoms": [
+            "craves(a,c)",
+            "craves(b,a)"
+          ],
+          "llm_proposal": [
+            "craves(b, a)"
+          ]
+        },
+        {
+          "inst": 27,
+          "nl_goal": "object c craves object b",
+          "gt_atoms": [
+            "craves(a,c)",
+            "craves(c,b)"
+          ],
+          "llm_proposal": [
+            "craves(c, b)"
+          ]
+        }
+      ]
+    },
+    "logistics": {
+      "CORRECT": [
+        {
+          "inst": 2,
+          "nl_goal": "package_0 is at location_0_0",
+          "gt_atoms": [
+            "at(p0,l0-0)"
+          ],
+          "llm_proposal": [
+            "at(p0, l0-0)"
+          ]
+        },
+        {
+          "inst": 8,
+          "nl_goal": "package_0 is at location_1_0",
+          "gt_atoms": [
+            "at(p0,l0-0)"
+          ],
+          "llm_proposal": [
+            "at(p0, l0-0)"
+          ]
+        },
+        {
+          "inst": 18,
+          "nl_goal": "package_0 is at location_0_0, package_1 is at location_1_1, package_2 is at location_0_1 and package_3 is at location_1_1",
+          "gt_atoms": [
+            "at(p0,l0-0)",
+            "at(p1,l1-1)",
+            "at(p2,l0-1)",
+            "at(p3,l1-1)"
+          ],
+          "llm_proposal": [
+            "at(p0, l0-0)",
+            "at(p1, l1-1)",
+            "at(p2, l0-1)",
+            "at(p3, l1-1)"
+          ]
+        },
+        {
+          "inst": 28,
+          "nl_goal": "package_0 is at location_0_0, package_1 is at location_1_1 and package_2 is at location_1_2",
+          "gt_atoms": [
+            "at(p0,l0-0)",
+            "at(p1,l1-1)",
+            "at(p2,l1-2)"
+          ],
+          "llm_proposal": [
+            "at(p0, l0-0)",
+            "at(p1, l1-1)",
+            "at(p2, l1-2)"
+          ]
+        }
+      ],
+      "HALLUCINATED_HEAD": [
+        {
+          "inst": 3,
+          "nl_goal": "package_0 is at location_0_0",
+          "gt_atoms": [
+            "at(p0,l1-0)",
+            "at(p1,l1-0)"
+          ],
+          "llm_proposal": [
+            "on(package_0, location_0_0)"
+          ]
+        },
+        {
+          "inst": 7,
+          "nl_goal": "package_0 is at location_1_1",
+          "gt_atoms": [
+            "at(p0,l1-0)"
+          ],
+          "llm_proposal": [
+            "on(package_0, location_1_1)"
+          ]
+        },
+        {
+          "inst": 9,
+          "nl_goal": "package_0 is at location_0_0",
+          "gt_atoms": [
+            "at(p0,l1-0)",
+            "at(p1,l0-0)"
+          ],
+          "llm_proposal": [
+            "on(package_0, location_0_0)"
+          ]
+        }
+      ],
+      "HALLUCINATED_OBJ": [
+        {
+          "inst": 4,
+          "nl_goal": "package_0 is at location_1_0 and package_1 is at location_1_0",
+          "gt_atoms": [
+            "at(p0,l0-0)",
+            "at(p1,l0-0)"
+          ],
+          "llm_proposal": [
+            "at(package_0, location_1_0)",
+            "at(package_1, location_1_0)"
+          ]
+        },
+        {
+          "inst": 6,
+          "nl_goal": "package_0 is at location_1_0 and package_1 is at location_0_0",
+          "gt_atoms": [
+            "at(p0,l1-1)"
+          ],
+          "llm_proposal": [
+            "at(package_0, location_1_0)",
+            "at(package_1, location_0_0)"
+          ]
+        },
+        {
+          "inst": 10,
+          "nl_goal": "package_0 is at location_1_0 and package_1 is at location_0_0",
+          "gt_atoms": [
+            "at(p0,l0-1)",
+            "at(p1,l0-1)"
+          ],
+          "llm_proposal": [
+            "at(package_0, location_1_0)",
+            "at(package_1, location_0_0)"
+          ]
+        },
+        {
+          "inst": 11,
+          "nl_goal": "package_0 is at location_0_1 and package_1 is at location_0_1",
+          "gt_atoms": [
+            "at(p0,l0-1)",
+            "at(p1,l1-0)"
+          ],
+          "llm_proposal": [
+            "at(package_0, location_0_1)",
+            "at(package_1, location_0_1)"
+          ]
+        },
+        {
+          "inst": 13,
+          "nl_goal": "package_0 is at location_1_0, package_1 is at location_1_0 and package_2 is at location_1_0",
+          "gt_atoms": [
+            "at(p0,l0-1)",
+            "at(p1,l1-1)",
+            "at(p2,l1-0)"
+          ],
+          "llm_proposal": [
+            "at(p0, location_1_0)",
+            "at(p1, location_1_0)",
+            "at(p2, location_1_0)"
+          ]
+        },
+        {
+          "inst": 16,
+          "nl_goal": "package_0 is at location_0_1, package_1 is at location_0_1 and package_2 is at location_0_1",
+          "gt_atoms": [
+            "at(p0,l0-1)",
+            "at(p1,l0-1)",
+            "at(p2,l1-0)",
+            "at(p3,l1-0)"
+          ],
+          "llm_proposal": [
+            "at(p0, location_0_1)",
+            "at(p1, location_0_1)",
+            "at(p2, location_0_1)"
+          ]
+        },
+        {
+          "inst": 26,
+          "nl_goal": "package_0 is at location_1_1 and package_1 is at location_1_0",
+          "gt_atoms": [
+            "at(p0,l1-0)",
+            "at(p1,l1-0)",
+            "at(p2,l1-2)"
+          ],
+          "llm_proposal": [
+            "at(package_0, location_1_1)",
+            "at(package_1, location_1_0)"
+          ]
+        },
+        {
+          "inst": 27,
+          "nl_goal": "package_0 is at location_1_0, package_1 is at location_1_0 and package_2 is at location_1_2",
+          "gt_atoms": [
+            "at(p0,l0-0)",
+            "at(p1,l1-1)",
+            "at(p2,l1-2)"
+          ],
+          "llm_proposal": [
+            "at(p0,location_1_0)",
+            "at(p1,location_1_0)",
+            "at(p2,location_1_2)"
+          ]
+        }
+      ],
+      "OTHER": [
+        {
+          "inst": 5,
+          "nl_goal": "package_0 is at location_0_0 and package_1 is at location_0_0",
+          "gt_atoms": [
+            "at(p0,l1-0)",
+            "at(p1,l0-0)"
+          ],
+          "llm_proposal": [
+            "at(p0,l0-0)",
+            "at(p1,l0-0)"
+          ]
+        },
+        {
+          "inst": 12,
+          "nl_goal": "package_0 is at location_0_1 and package_1 is at location_1_0",
+          "gt_atoms": [
+            "at(p0,l1-0)",
+            "at(p1,l1-0)",
+            "at(p2,l1-0)"
+          ],
+          "llm_proposal": [
+            "at(p0, l0-0)",
+            "at(p1, l1-0)"
+          ]
+        },
+        {
+          "inst": 14,
+          "nl_goal": "package_0 is at location_0_1, package_1 is at location_1_1 and package_2 is at location_1_0",
+          "gt_atoms": [
+            "at(p0,l0-1)",
+            "at(p1,l1-1)",
+            "at(p2,l1-0)"
+          ],
+          "llm_proposal": [
+            "at(p0, l0-0)",
+            "at(p1, l0-1)",
+            "at(p2, l1-0)"
+          ]
+        },
+        {
+          "inst": 15,
+          "nl_goal": "package_0 is at location_0_1, package_1 is at location_1_1 and package_2 is at location_1_0",
+          "gt_atoms": [
+            "at(p0,l0-1)",
+            "at(p1,l0-1)",
+            "at(p2,l0-1)"
+          ],
+          "llm_proposal": [
+            "at(p0, l0-0)",
+            "at(p1, l0-1)",
+            "at(p2, l1-0)"
+          ]
+        },
+        {
+          "inst": 17,
+          "nl_goal": "package_0 is at location_0_1, package_1 is at location_0_1, package_2 is at location_1_0 and package_3 is at location_1_0",
+          "gt_atoms": [
+            "at(p0,l0-0)",
+            "at(p1,l1-1)",
+            "at(p2,l0-1)",
+            "at(p3,l1-1)"
+          ],
+          "llm_proposal": [
+            "at(p0, l0-0)",
+            "at(p1, l0-0)",
+            "at(p2, l1-0)",
+            "at(p3, l1-0)"
+          ]
+        },
+        {
+          "inst": 19,
+          "nl_goal": "package_0 is at location_0_0, package_1 is at location_1_1, package_2 is at location_0_1 and package_3 is at location_1_1",
+          "gt_atoms": [
+            "at(p0,l0-0)",
+            "at(p1,l1-0)",
+            "at(p2,l0-1)",
+            "at(p3,l1-1)"
+          ],
+          "llm_proposal": [
+            "at(p0, l0-0)",
+            "at(p1, l1-1)",
+            "at(p2, l0-1)",
+            "at(p3, l1-1)"
+          ]
+        },
+        {
+          "inst": 24,
+          "nl_goal": "package_0 is at location_0_2 and package_1 is at location_0_0",
+          "gt_atoms": [
+            "at(p0,l0-2)",
+            "at(p1,l1-0)"
+          ],
+          "llm_proposal": [
+            "at(p0, l0-2)",
+            "at(p1, l0-0)"
+          ]
+        },
+        {
+          "inst": 25,
+          "nl_goal": "package_0 is at location_0_2 and package_1 is at location_1_0",
+          "gt_atoms": [
+            "at(p0,l1-1)",
+            "at(p1,l1-0)"
+          ],
+          "llm_proposal": [
+            "at(p0,l0-0)",
+            "at(p1,l1-0)"
+          ]
+        },
+        {
+          "inst": 29,
+          "nl_goal": "package_0 is at location_0_0, package_1 is at location_1_1 and package_2 is at location_1_2",
+          "gt_atoms": [
+            "at(p0,l1-1)",
+            "at(p1,l1-1)",
+            "at(p2,l1-0)"
+          ],
+          "llm_proposal": [
+            "at(p0, l0-0)",
+            "at(p1, l1-1)",
+            "at(p2, l1-2)"
+          ]
+        },
+        {
+          "inst": 30,
+          "nl_goal": "package_0 is at location_1_1, package_1 is at location_1_1 and package_2 is at location_1_0",
+          "gt_atoms": [
+            "at(p0,l1-1)",
+            "at(p1,l1-0)",
+            "at(p2,l0-0)",
+            "at(p3,l0-2)"
+          ],
+          "llm_proposal": [
+            "at(p0, l0-0)",
+            "at(p1, l0-0)",
+            "at(p2, l0-0)"
+          ]
+        },
+        {
+          "inst": 31,
+          "nl_goal": "package_0 is at location_1_1, package_1 is at location_1_0, package_2 is at location_0_0 and package_3 is at location_0_2",
+          "gt_atoms": [
+            "at(p0,l1-2)",
+            "at(p1,l0-1)",
+            "at(p2,l1-2)",
+            "at(p3,l0-2)"
+          ],
+          "llm_proposal": [
+            "at(p0, l0-0)",
+            "at(p1, l0-1)",
+            "at(p2, l0-2)",
+            "at(p3, l1-2)"
+          ]
+        }
+      ],
+      "ALIAS": [
+        {
+          "inst": 20,
+          "nl_goal": "package_0 is at location_0_0, package_1 is at location_1_0, package_2 is at location_0_1 and package_3 is at location_1_1",
+          "gt_atoms": [
+            "at(p0,l1-2)"
+          ],
+          "llm_proposal": [
+            "at(p0, l0-0)",
+            "at(p1, l1-0)",
+            "at(p2, l0-1)",
+            "at(p3, l1-1)"
+          ]
+        },
+        {
+          "inst": 21,
+          "nl_goal": "package_0 is at location_1_2",
+          "gt_atoms": [
+            "at(p0,l1-1)"
+          ],
+          "llm_proposal": [
+            "at(p0,l1-2)"
+          ]
+        },
+        {
+          "inst": 22,
+          "nl_goal": "package_0 is at location_1_1",
+          "gt_atoms": [
+            "at(p0,l1-2)"
+          ],
+          "llm_proposal": [
+            "at(p0,l1-1)"
+          ]
+        }
+      ],
+      "MISSING_ATOMS": [
+        {
+          "inst": 23,
+          "nl_goal": "package_0 is at location_1_2",
+          "gt_atoms": [
+            "at(p0,l0-2)",
+            "at(p1,l0-0)"
+          ],
+          "llm_proposal": [
+            "at(p0,l0-2)"
+          ]
+        }
+      ]
+    },
+    "depots": {
+      "ALIAS": [
+        {
+          "inst": 2,
+          "nl_goal": "crate0 is on crate1, crate1 is on pallet3 and crate2 is on pallet1",
+          "gt_atoms": [
+            "on(crate1,pallet1)",
+            "on(crate2,pallet3)"
+          ],
+          "llm_proposal": [
+            "on(crate0, crate1)",
+            "on(crate1, pallet3)",
+            "on(crate2, pallet1)"
+          ]
+        },
+        {
+          "inst": 3,
+          "nl_goal": "crate1 is on pallet1 and crate2 is on pallet3",
+          "gt_atoms": [
+            "on(crate0,pallet3)",
+            "on(crate1,pallet0)",
+            "on(crate2,crate0)"
+          ],
+          "llm_proposal": [
+            "on(crate1, pallet1)",
+            "on(crate2, pallet3)"
+          ]
+        },
+        {
+          "inst": 6,
+          "nl_goal": "crate0 is on pallet0, crate1 is on pallet1 and crate2 is on pallet3",
+          "gt_atoms": [
+            "on(crate0,pallet1)",
+            "on(crate1,crate0)",
+            "on(crate2,pallet0)"
+          ],
+          "llm_proposal": [
+            "on(crate0, pallet0)",
+            "on(crate1, pallet1)",
+            "on(crate2, pallet3)"
+          ]
+        },
+        {
+          "inst": 7,
+          "nl_goal": "crate0 is on pallet1, crate1 is on crate0 and crate2 is on pallet0",
+          "gt_atoms": [
+            "on(crate1,pallet1)",
+            "on(crate2,pallet2)"
+          ],
+          "llm_proposal": [
+            "on(crate0,pallet1)",
+            "on(crate1,crate0)",
+            "on(crate2,pallet0)"
+          ]
+        },
+        {
+          "inst": 8,
+          "nl_goal": "crate1 is on pallet1 and crate2 is on pallet2",
+          "gt_atoms": [
+            "on(crate0,crate2)",
+            "on(crate1,pallet2)",
+            "on(crate2,pallet1)"
+          ],
+          "llm_proposal": [
+            "on(crate1, pallet1)",
+            "on(crate2, pallet2)"
+          ]
+        },
+        {
+          "inst": 11,
+          "nl_goal": "crate0 is on pallet0 and crate2 is on pallet1",
+          "gt_atoms": [
+            "on(crate0,pallet1)",
+            "on(crate1,pallet2)",
+            "on(crate2,pallet0)"
+          ],
+          "llm_proposal": [
+            "on(crate0, pallet0)",
+            "on(crate2, pallet1)"
+          ]
+        },
+        {
+          "inst": 12,
+          "nl_goal": "crate0 is on pallet1, crate1 is on pallet2 and crate2 is on pallet0",
+          "gt_atoms": [
+            "on(crate0,pallet2)",
+            "on(crate1,pallet0)",
+            "on(crate2,pallet1)"
+          ],
+          "llm_proposal": [
+            "on(crate0, pallet1)",
+            "on(crate1, pallet2)",
+            "on(crate2, pallet0)"
+          ]
+        },
+        {
+          "inst": 13,
+          "nl_goal": "crate0 is on pallet2, crate1 is on pallet0 and crate2 is on pallet1",
+          "gt_atoms": [
+            "on(crate0,pallet1)",
+            "on(crate1,crate2)",
+            "on(crate2,pallet0)"
+          ],
+          "llm_proposal": [
+            "on(crate0, pallet2)",
+            "on(crate1, pallet0)",
+            "on(crate2, pallet1)"
+          ]
+        },
+        {
+          "inst": 14,
+          "nl_goal": "crate0 is on pallet1, crate1 is on crate2 and crate2 is on pallet0",
+          "gt_atoms": [
+            "on(crate0,crate1)",
+            "on(crate1,pallet3)",
+            "on(crate2,pallet1)"
+          ],
+          "llm_proposal": [
+            "on(crate0, pallet1)",
+            "on(crate1, crate2)",
+            "on(crate2, pallet0)"
+          ]
+        },
+        {
+          "inst": 15,
+          "nl_goal": "crate0 is on crate1, crate1 is on pallet3 and crate2 is on pallet1",
+          "gt_atoms": [
+            "on(crate0,pallet1)",
+            "on(crate2,crate0)"
+          ],
+          "llm_proposal": [
+            "on(crate0, crate1)",
+            "on(crate1, pallet3)",
+            "on(crate2, pallet1)"
+          ]
+        },
+        {
+          "inst": 16,
+          "nl_goal": "crate0 is on pallet1 and crate2 is on crate0",
+          "gt_atoms": [
+            "on(crate0,pallet0)",
+            "on(crate1,pallet2)",
+            "on(crate2,pallet1)"
+          ],
+          "llm_proposal": [
+            "on(crate0, pallet1)",
+            "on(crate2, crate0)"
+          ]
+        },
+        {
+          "inst": 17,
+          "nl_goal": "crate0 is on pallet0, crate1 is on pallet2 and crate2 is on pallet1",
+          "gt_atoms": [
+            "on(crate0,pallet3)",
+            "on(crate1,crate2)",
+            "on(crate2,pallet2)"
+          ],
+          "llm_proposal": [
+            "on(crate0, pallet0)",
+            "on(crate1, pallet2)",
+            "on(crate2, pallet1)"
+          ]
+        },
+        {
+          "inst": 19,
+          "nl_goal": "crate0 is on crate1, crate1 is on pallet0 and crate2 is on pallet2",
+          "gt_atoms": [
+            "on(crate0,pallet0)",
+            "on(crate1,pallet2)",
+            "on(crate2,pallet3)"
+          ],
+          "llm_proposal": [
+            "on(crate0, crate1)",
+            "on(crate1, pallet0)",
+            "on(crate2, pallet2)"
+          ]
+        },
+        {
+          "inst": 21,
+          "nl_goal": "crate0 is on crate2, crate1 is on pallet2 and crate2 is on pallet3",
+          "gt_atoms": [
+            "on(crate0,crate1)",
+            "on(crate1,pallet1)"
+          ],
+          "llm_proposal": [
+            "on(crate0, crate2)",
+            "on(crate1, pallet2)",
+            "on(crate2, pallet3)"
+          ]
+        },
+        {
+          "inst": 25,
+          "nl_goal": "crate0 is on crate1 and crate1 is on pallet0",
+          "gt_atoms": [
+            "on(crate0,pallet2)",
+            "on(crate1,crate0)",
+            "on(crate2,pallet0)"
+          ],
+          "llm_proposal": [
+            "on(crate0, crate1)",
+            "on(crate1, pallet0)"
+          ]
+        },
+        {
+          "inst": 27,
+          "nl_goal": "crate0 is on crate2, crate1 is on pallet2 and crate2 is on pallet0",
+          "gt_atoms": [
+            "on(crate1,crate2)",
+            "on(crate2,pallet2)"
+          ],
+          "llm_proposal": [
+            "on(crate0, crate2)",
+            "on(crate1, pallet2)",
+            "on(crate2, pallet0)"
+          ]
+        },
+        {
+          "inst": 28,
+          "nl_goal": "crate1 is on crate2 and crate2 is on pallet2",
+          "gt_atoms": [
+            "on(crate0,pallet2)",
+            "on(crate1,pallet3)",
+            "on(crate2,pallet1)"
+          ],
+          "llm_proposal": [
+            "on(crate1, crate2)",
+            "on(crate2, pallet2)"
+          ]
+        },
+        {
+          "inst": 29,
+          "nl_goal": "crate0 is on pallet2, crate1 is on pallet3 and crate2 is on pallet1",
+          "gt_atoms": [
+            "on(crate0,pallet3)",
+            "on(crate1,pallet0)"
+          ],
+          "llm_proposal": [
+            "on(crate0, pallet2)",
+            "on(crate1, pallet3)",
+            "on(crate2, pallet1)"
+          ]
+        },
+        {
+          "inst": 30,
+          "nl_goal": "crate0 is on pallet3 and crate1 is on pallet0",
+          "gt_atoms": [
+            "on(crate0,crate2)",
+            "on(crate1,crate0)",
+            "on(crate2,pallet0)"
+          ],
+          "llm_proposal": [
+            "on(crate0, pallet3)",
+            "on(crate1, pallet0)"
+          ]
+        },
+        {
+          "inst": 31,
+          "nl_goal": "crate0 is on crate2, crate1 is on crate0 and crate2 is on pallet0",
+          "gt_atoms": [
+            "on(crate1,pallet1)",
+            "on(crate2,pallet2)"
+          ],
+          "llm_proposal": [
+            "on(crate0, crate2)",
+            "on(crate1, crate0)",
+            "on(crate2, pallet0)"
+          ]
+        }
+      ],
+      "OTHER": [
+        {
+          "inst": 4,
+          "nl_goal": "crate0 is on pallet3, crate1 is on pallet0 and crate2 is on crate0",
+          "gt_atoms": [
+            "on(crate1,pallet0)",
+            "on(crate2,pallet3)"
+          ],
+          "llm_proposal": [
+            "on(crate0,pallet3)",
+            "on(crate1,pallet0)",
+            "on(crate2,crate0)"
+          ]
+        },
+        {
+          "inst": 5,
+          "nl_goal": "crate1 is on pallet0 and crate2 is on pallet3",
+          "gt_atoms": [
+            "on(crate0,pallet0)",
+            "on(crate1,pallet1)",
+            "on(crate2,pallet3)"
+          ],
+          "llm_proposal": [
+            "on(crate1, pallet0)",
+            "on(crate2, pallet3)"
+          ]
+        },
+        {
+          "inst": 9,
+          "nl_goal": "crate0 is on crate2, crate1 is on pallet2 and crate2 is on pallet1",
+          "gt_atoms": [
+            "on(crate0,pallet3)",
+            "on(crate1,crate2)",
+            "on(crate2,pallet1)"
+          ],
+          "llm_proposal": [
+            "on(crate0, crate2)",
+            "on(crate1, pallet2)",
+            "on(crate2, pallet1)"
+          ]
+        },
+        {
+          "inst": 10,
+          "nl_goal": "crate0 is on pallet3, crate1 is on crate2 and crate2 is on pallet1",
+          "gt_atoms": [
+            "on(crate0,pallet0)",
+            "on(crate2,pallet1)"
+          ],
+          "llm_proposal": [
+            "on(crate0, pallet3)",
+            "on(crate1, crate2)",
+            "on(crate2, pallet1)"
+          ]
+        },
+        {
+          "inst": 18,
+          "nl_goal": "crate0 is on pallet3, crate1 is on crate2 and crate2 is on pallet2",
+          "gt_atoms": [
+            "on(crate0,crate1)",
+            "on(crate1,pallet0)",
+            "on(crate2,pallet2)"
+          ],
+          "llm_proposal": [
+            "on(crate0, pallet3)",
+            "on(crate1, crate2)",
+            "on(crate2, pallet2)"
+          ]
+        },
+        {
+          "inst": 20,
+          "nl_goal": "crate0 is on pallet0, crate1 is on pallet2 and crate2 is on pallet3",
+          "gt_atoms": [
+            "on(crate0,crate2)",
+            "on(crate1,pallet2)",
+            "on(crate2,pallet3)"
+          ],
+          "llm_proposal": [
+            "on(crate0, pallet0)",
+            "on(crate1, pallet2)",
+            "on(crate2, pallet3)"
+          ]
+        },
+        {
+          "inst": 22,
+          "nl_goal": "crate0 is on crate1 and crate1 is on pallet1",
+          "gt_atoms": [
+            "on(crate0,pallet2)",
+            "on(crate1,pallet1)",
+            "on(crate2,pallet0)"
+          ],
+          "llm_proposal": [
+            "on(crate0, crate1)",
+            "on(crate1, pallet1)"
+          ]
+        },
+        {
+          "inst": 23,
+          "nl_goal": "crate0 is on pallet2, crate1 is on pallet1 and crate2 is on pallet0",
+          "gt_atoms": [
+            "on(crate0,pallet2)",
+            "on(crate1,pallet0)",
+            "on(crate2,crate1)"
+          ],
+          "llm_proposal": [
+            "on(crate0, pallet2)",
+            "on(crate1, pallet1)",
+            "on(crate2, pallet0)"
+          ]
+        },
+        {
+          "inst": 24,
+          "nl_goal": "crate0 is on pallet2, crate1 is on pallet0 and crate2 is on crate1",
+          "gt_atoms": [
+            "on(crate0,crate1)",
+            "on(crate1,pallet0)"
+          ],
+          "llm_proposal": [
+            "on(crate0,pallet2)",
+            "on(crate1,pallet0)",
+            "on(crate2,crate1)"
+          ]
+        },
+        {
+          "inst": 26,
+          "nl_goal": "crate0 is on pallet2, crate1 is on crate0 and crate2 is on pallet0",
+          "gt_atoms": [
+            "on(crate0,crate2)",
+            "on(crate1,pallet2)",
+            "on(crate2,pallet0)"
+          ],
+          "llm_proposal": [
+            "on(crate0,pallet2)",
+            "on(crate1,crate0)",
+            "on(crate2,pallet0)"
+          ]
+        }
+      ]
+    }
+  }
+}

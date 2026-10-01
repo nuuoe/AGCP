@@ -1,0 +1,611 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "config": "depots",
+  "n_parsed": 30,
+  "n_llm_accepted": 1,
+  "llm_accept_rate": 0.03333333333333333,
+  "classical_baseline": 0.0,
+  "rows": [
+    {
+      "inst": 2,
+      "nl_goal": "crate0 is on crate1, crate1 is on pallet3 and crate2 is on pallet1",
+      "gt_atoms": [
+        "on(crate1,pallet1)",
+        "on(crate2,pallet3)"
+      ],
+      "parsed_final": [
+        "on(crate1,pallet1)",
+        "on(crate2,pallet3)"
+      ],
+      "llm_proposal": [
+        "on(crate0, crate1)",
+        "on(crate1, pallet3)",
+        "on(crate2, pallet1)"
+      ],
+      "llm_accepted": false,
+      "accuracy": 0.0
+    },
+    {
+      "inst": 3,
+      "nl_goal": "crate1 is on pallet1 and crate2 is on pallet3",
+      "gt_atoms": [
+        "on(crate0,pallet3)",
+        "on(crate1,pallet0)",
+        "on(crate2,crate0)"
+      ],
+      "parsed_final": [
+        "on(crate0,pallet3)",
+        "on(crate2,crate0)",
+        "on(crate1,pallet0)"
+      ],
+      "llm_proposal": [
+        "on(crate1, pallet1)",
+        "on(crate2, pallet3)"
+      ],
+      "llm_accepted": false,
+      "accuracy": 0.0
+    },
+    {
+      "inst": 4,
+      "nl_goal": "crate0 is on pallet3, crate1 is on pallet0 and crate2 is on crate0",
+      "gt_atoms": [
+        "on(crate1,pallet0)",
+        "on(crate2,pallet3)"
+      ],
+      "parsed_final": [
+        "on(crate2,pallet3)",
+        "on(crate1,pallet0)"
+      ],
+      "llm_proposal": [
+        "on(crate0,pallet3)",
+        "on(crate1,pallet0)",
+        "on(crate2,crate0)"
+      ],
+      "llm_accepted": false,
+      "accuracy": 0.4
+    },
+    {
+      "inst": 5,
+      "nl_goal": "crate1 is on pallet0 and crate2 is on pallet3",
+      "gt_atoms": [
+        "on(crate0,pallet0)",
+        "on(crate1,pallet1)",
+        "on(crate2,pallet3)"
+      ],
+      "parsed_final": [
+        "on(crate1,pallet1)",
+        "on(crate2,pallet3)",
+        "on(crate0,pallet0)"
+      ],
+      "llm_proposal": [
+        "on(crate1, pallet0)",
+        "on(crate2, pallet3)"
+      ],
+      "llm_accepted": false,
+      "accuracy": 0.4
+    },
+    {
+      "inst": 6,
+      "nl_goal": "crate0 is on pallet0, crate1 is on pallet1 and crate2 is on pallet3",
+      "gt_atoms": [
+        "on(crate0,pallet1)",
+        "on(crate1,crate0)",
+        "on(crate2,pallet0)"
+      ],
+      "parsed_final": [
+        "on(crate1,crate0)",
+        "on(crate0,pallet1)",
+        "on(crate2,pallet0)"
+      ],
+      "llm_proposal": [
+        "on(crate0, pallet0)",
+        "on(crate1, pallet1)",
+        "on(crate2, pallet3)"
+      ],
+      "llm_accepted": false,
+      "accuracy": 0.0
+    },
+    {
+      "inst": 7,
+      "nl_goal": "crate0 is on pallet1, crate1 is on crate0 and crate2 is on pallet0",
+      "gt_atoms": [
+        "on(crate1,pallet1)",
+        "on(crate2,pallet2)"
+      ],
+      "parsed_final": [
+        "on(crate1,pallet1)",
+        "on(crate2,pallet2)"
+      ],
+      "llm_proposal": [
+        "on(crate0,pallet1)",
+        "on(crate1,crate0)",
+        "on(crate2,pallet0)"
+      ],
+      "llm_accepted": false,
+      "accuracy": 0.0
+    },
+    {
+      "inst": 8,
+      "nl_goal": "crate1 is on pallet1 and crate2 is on pallet2",
+      "gt_atoms": [
+        "on(crate0,crate2)",
+        "on(crate1,pallet2)",
+        "on(crate2,pallet1)"
+      ],
+      "parsed_final": [
+        "on(crate1,pallet2)",
+        "on(crate2,pallet1)",
+        "on(crate0,crate2)"
+      ],
+      "llm_proposal": [
+        "on(crate1, pallet1)",
+        "on(crate2, pallet2)"
+      ],
+      "llm_accepted": false,
+      "accuracy": 0.0
+    },
+    {
+      "inst": 9,
+      "nl_goal": "crate0 is on crate2, crate1 is on pallet2 and crate2 is on pallet1",
+      "gt_atoms": [
+        "on(crate0,pallet3)",
+        "on(crate1,crate2)",
+        "on(crate2,pallet1)"
+      ],
+      "parsed_final": [
+        "on(crate0,pallet3)",
+        "on(crate1,crate2)",
+        "on(crate2,pallet1)"
+      ],
+      "llm_proposal": [
+        "on(crate0, crate2)",
+        "on(crate1, pallet2)",
+        "on(crate2, pallet1)"
+      ],
+      "llm_accepted": false,
+      "accuracy": 0.3333333333333333
+    },
+    {
+      "inst": 10,
+      "nl_goal": "crate0 is on pallet3, crate1 is on crate2 and crate2 is on pallet1",
+      "gt_atoms": [
+        "on(crate0,pallet0)",
+        "on(crate2,pallet1)"
+      ],
+      "parsed_final": [
+        "on(crate2,pallet1)",
+        "on(crate0,pallet0)"
+      ],
+      "llm_proposal": [
+        "on(crate0, pallet3)",
+        "on(crate1, crate2)",
+        "on(crate2, pallet1)"
+      ],
+      "llm_accepted": false,
+      "accuracy": 0.4
+    },
+    {
+      "inst": 11,
+      "nl_goal": "crate0 is on pallet0 and crate2 is on pallet1",
+      "gt_atoms": [
+        "on(crate0,pallet1)",
+        "on(crate1,pallet2)",
+        "on(crate2,pallet0)"
+      ],
+      "parsed_final": [
+        "on(crate1,pallet2)",
+        "on(crate0,pallet1)",
+        "on(crate2,pallet0)"
+      ],
+      "llm_proposal": [
+        "on(crate0, pallet0)",
+        "on(crate2, pallet1)"
+      ],
+      "llm_accepted": false,
+      "accuracy": 0.0
+    },
+    {
+      "inst": 12,
+      "nl_goal": "crate0 is on pallet1, crate1 is on pallet2 and crate2 is on pallet0",
+      "gt_atoms": [
+        "on(crate0,pallet2)",
+        "on(crate1,pallet0)",
+        "on(crate2,pallet1)"
+      ],
+      "parsed_final": [
+        "on(crate2,pallet1)",
+        "on(crate0,pallet2)",
+        "on(crate1,pallet0)"
+      ],
+      "llm_proposal": [
+        "on(crate0, pallet1)",
+        "on(crate1, pallet2)",
+        "on(crate2, pallet0)"
+      ],
+      "llm_accepted": false,
+      "accuracy": 0.0
+    },
+    {
+      "inst": 13,
+      "nl_goal": "crate0 is on pallet2, crate1 is on pallet0 and crate2 is on pallet1",
+      "gt_atoms": [
+        "on(crate0,pallet1)",
+        "on(crate1,crate2)",
+        "on(crate2,pallet0)"
+      ],
+      "parsed_final": [
+        "on(crate1,crate2)",
+        "on(crate0,pallet1)",
+        "on(crate2,pallet0)"
+      ],
+      "llm_proposal": [
+        "on(crate0, pallet2)",
+        "on(crate1, pallet0)",
+        "on(crate2, pallet1)"
+      ],
+      "llm_accepted": false,
+      "accuracy": 0.0
+    },
+    {
+      "inst": 14,
+      "nl_goal": "crate0 is on pallet1, crate1 is on crate2 and crate2 is on pallet0",
+      "gt_atoms": [
+        "on(crate0,crate1)",
+        "on(crate1,pallet3)",
+        "on(crate2,pallet1)"
+      ],
+      "parsed_final": [
+        "on(crate1,pallet3)",
+        "on(crate2,pallet1)",
+        "on(crate0,crate1)"
+      ],
+      "llm_proposal": [
+        "on(crate0, pallet1)",
+        "on(crate1, crate2)",
+        "on(crate2, pallet0)"
+      ],
+      "llm_accepted": false,
+      "accuracy": 0.0
+    },
+    {
+      "inst": 15,
+      "nl_goal": "crate0 is on crate1, crate1 is on pallet3 and crate2 is on pallet1",
+      "gt_atoms": [
+        "on(crate0,pallet1)",
+        "on(crate2,crate0)"
+      ],
+      "parsed_final": [
+        "on(crate0,pallet1)",
+        "on(crate2,crate0)"
+      ],
+      "llm_proposal": [
+        "on(crate0, crate1)",
+        "on(crate1, pallet3)",
+        "on(crate2, pallet1)"
+      ],
+      "llm_accepted": false,
+      "accuracy": 0.0
+    },
+    {
+      "inst": 16,
+      "nl_goal": "crate0 is on pallet1 and crate2 is on crate0",
+      "gt_atoms": [
+        "on(crate0,pallet0)",
+        "on(crate1,pallet2)",
+        "on(crate2,pallet1)"
+      ],
+      "parsed_final": [
+        "on(crate1,pallet2)",
+        "on(crate2,pallet1)",
+        "on(crate0,pallet0)"
+      ],
+      "llm_proposal": [
+        "on(crate0, pallet1)",
+        "on(crate2, crate0)"
+      ],
+      "llm_accepted": false,
+      "accuracy": 0.0
+    },
+    {
+      "inst": 17,
+      "nl_goal": "crate0 is on pallet0, crate1 is on pallet2 and crate2 is on pallet1",
+      "gt_atoms": [
+        "on(crate0,pallet3)",
+        "on(crate1,crate2)",
+        "on(crate2,pallet2)"
+      ],
+      "parsed_final": [
+        "on(crate0,pallet3)",
+        "on(crate1,crate2)",
+        "on(crate2,pallet2)"
+      ],
+      "llm_proposal": [
+        "on(crate0, pallet0)",
+        "on(crate1, pallet2)",
+        "on(crate2, pallet1)"
+      ],
+      "llm_accepted": false,
+      "accuracy": 0.0
+    },
+    {
+      "inst": 18,
+      "nl_goal": "crate0 is on pallet3, crate1 is on crate2 and crate2 is on pallet2",
+      "gt_atoms": [
+        "on(crate0,crate1)",
+        "on(crate1,pallet0)",
+        "on(crate2,pallet2)"
+      ],
+      "parsed_final": [
+        "on(crate2,pallet2)",
+        "on(crate0,crate1)",
+        "on(crate1,pallet0)"
+      ],
+      "llm_proposal": [
+        "on(crate0, pallet3)",
+        "on(crate1, crate2)",
+        "on(crate2, pallet2)"
+      ],
+      "llm_accepted": false,
+      "accuracy": 0.3333333333333333
+    },
+    {
+      "inst": 19,
+      "nl_goal": "crate0 is on crate1, crate1 is on pallet0 and crate2 is on pallet2",
+      "gt_atoms": [
+        "on(crate0,pallet0)",
+        "on(crate1,pallet2)",
+        "on(crate2,pallet3)"
+      ],
+      "parsed_final": [
+        "on(crate1,pallet2)",
+        "on(crate2,pallet3)",
+        "on(crate0,pallet0)"
+      ],
+      "llm_proposal": [
+        "on(crate0, crate1)",
+        "on(crate1, pallet0)",
+        "on(crate2, pallet2)"
+      ],
+      "llm_accepted": false,
+      "accuracy": 0.0
+    },
+    {
+      "inst": 20,
+      "nl_goal": "crate0 is on pallet0, crate1 is on pallet2 and crate2 is on pallet3",
+      "gt_atoms": [
+        "on(crate0,crate2)",
+        "on(crate1,pallet2)",
+        "on(crate2,pallet3)"
+      ],
+      "parsed_final": [
+        "on(crate0, pallet0)",
+        "on(crate1, pallet2)",
+        "on(crate2, pallet3)"
+      ],
+      "llm_proposal": [
+        "on(crate0, pallet0)",
+        "on(crate1, pallet2)",
+        "on(crate2, pallet3)"
+      ],
+      "llm_accepted": true,
+      "accuracy": 0.6666666666666666
+    },
+    {
+      "inst": 21,
+      "nl_goal": "crate0 is on crate2, crate1 is on pallet2 and crate2 is on pallet3",
+      "gt_atoms": [
+        "on(crate0,crate1)",
+        "on(crate1,pallet1)"
+      ],
+      "parsed_final": [
+        "on(crate1,pallet1)",
+        "on(crate0,crate1)"
+      ],
+      "llm_proposal": [
+        "on(crate0, crate2)",
+        "on(crate1, pallet2)",
+        "on(crate2, pallet3)"
+      ],
+      "llm_accepted": false,
+      "accuracy": 0.0
+    },
+    {
+      "inst": 22,
+      "nl_goal": "crate0 is on crate1 and crate1 is on pallet1",
+      "gt_atoms": [
+        "on(crate0,pallet2)",
+        "on(crate1,pallet1)",
+        "on(crate2,pallet0)"
+      ],
+      "parsed_final": [
+        "on(crate1,pallet1)",
+        "on(crate0,pallet2)",
+        "on(crate2,pallet0)"
+      ],
+      "llm_proposal": [
+        "on(crate0, crate1)",
+        "on(crate1, pallet1)"
+      ],
+      "llm_accepted": false,
+      "accuracy": 0.4
+    },
+    {
+      "inst": 23,
+      "nl_goal": "crate0 is on pallet2, crate1 is on pallet1 and crate2 is on pallet0",
+      "gt_atoms": [
+        "on(crate0,pallet2)",
+        "on(crate1,pallet0)",
+        "on(crate2,crate1)"
+      ],
+      "parsed_final": [
+        "on(crate2,crate1)",
+        "on(crate0,pallet2)",
+        "on(crate1,pallet0)"
+      ],
+      "llm_proposal": [
+        "on(crate0, pallet2)",
+        "on(crate1, pallet1)",
+        "on(crate2, pallet0)"
+      ],
+      "llm_accepted": false,
+      "accuracy": 0.3333333333333333
+    },
+    {
+      "inst": 24,
+      "nl_goal": "crate0 is on pallet2, crate1 is on pallet0 and crate2 is on crate1",
+      "gt_atoms": [
+        "on(crate0,crate1)",
+        "on(crate1,pallet0)"
+      ],
+      "parsed_final": [
+        "on(crate0,crate1)",
+        "on(crate1,pallet0)"
+      ],
+      "llm_proposal": [
+        "on(crate0,pallet2)",
+        "on(crate1,pallet0)",
+        "on(crate2,crate1)"
+      ],
+      "llm_accepted": false,
+      "accuracy": 0.4
+    },
+    {
+      "inst": 25,
+      "nl_goal": "crate0 is on crate1 and crate1 is on pallet0",
+      "gt_atoms": [
+        "on(crate0,pallet2)",
+        "on(crate1,crate0)",
+        "on(crate2,pallet0)"
+      ],
+      "parsed_final": [
+        "on(crate1,crate0)",
+        "on(crate0,pallet2)",
+        "on(crate2,pallet0)"
+      ],
+      "llm_proposal": [
+        "on(crate0, crate1)",
+        "on(crate1, pallet0)"
+      ],
+      "llm_accepted": false,
+      "accuracy": 0.0
+    },
+    {
+      "inst": 26,
+      "nl_goal": "crate0 is on pallet2, crate1 is on crate0 and crate2 is on pallet0",
+      "gt_atoms": [
+        "on(crate0,crate2)",
+        "on(crate1,pallet2)",
+        "on(crate2,pallet0)"
+      ],
+      "parsed_final": [
+        "on(crate1,pallet2)",
+        "on(crate0,crate2)",
+        "on(crate2,pallet0)"
+      ],
+      "llm_proposal": [
+        "on(crate0,pallet2)",
+        "on(crate1,crate0)",
+        "on(crate2,pallet0)"
+      ],
+      "llm_accepted": false,
+      "accuracy": 0.3333333333333333
+    },
+    {
+      "inst": 27,
+      "nl_goal": "crate0 is on crate2, crate1 is on pallet2 and crate2 is on pallet0",
+      "gt_atoms": [
+        "on(crate1,crate2)",
+        "on(crate2,pallet2)"
+      ],
+      "parsed_final": [
+        "on(crate1,crate2)",
+        "on(crate2,pallet2)"
+      ],
+      "llm_proposal": [
+        "on(crate0, crate2)",
+        "on(crate1, pallet2)",
+        "on(crate2, pallet0)"
+      ],
+      "llm_accepted": false,
+      "accuracy": 0.0
+    },
+    {
+      "inst": 28,
+      "nl_goal": "crate1 is on crate2 and crate2 is on pallet2",
+      "gt_atoms": [
+        "on(crate0,pallet2)",
+        "on(crate1,pallet3)",
+        "on(crate2,pallet1)"
+      ],
+      "parsed_final": [
+        "on(crate1,pallet3)",
+        "on(crate2,pallet1)",
+        "on(crate0,pallet2)"
+      ],
+      "llm_proposal": [
+        "on(crate1, crate2)",
+        "on(crate2, pallet2)"
+      ],
+      "llm_accepted": false,
+      "accuracy": 0.0
+    },
+    {
+      "inst": 29,
+      "nl_goal": "crate0 is on pallet2, crate1 is on pallet3 and crate2 is on pallet1",
+      "gt_atoms": [
+        "on(crate0,pallet3)",
+        "on(crate1,pallet0)"
+      ],
+      "parsed_final": [
+        "on(crate0,pallet3)",
+        "on(crate1,pallet0)"
+      ],
+      "llm_proposal": [
+        "on(crate0, pallet2)",
+        "on(crate1, pallet3)",
+        "on(crate2, pallet1)"
+      ],
+      "llm_accepted": false,
+      "accuracy": 0.0
+    },
+    {
+      "inst": 30,
+      "nl_goal": "crate0 is on pallet3 and crate1 is on pallet0",
+      "gt_atoms": [
+        "on(crate0,crate2)",
+        "on(crate1,crate0)",
+        "on(crate2,pallet0)"
+      ],
+      "parsed_final": [
+        "on(crate1,crate0)",
+        "on(crate0,crate2)",
+        "on(crate2,pallet0)"
+      ],
+      "llm_proposal": [
+        "on(crate0, pallet3)",
+        "on(crate1, pallet0)"
+      ],
+      "llm_accepted": false,
+      "accuracy": 0.0
+    },
+    {
+      "inst": 31,
+      "nl_goal": "crate0 is on crate2, crate1 is on crate0 and crate2 is on pallet0",
+      "gt_atoms": [
+        "on(crate1,pallet1)",
+        "on(crate2,pallet2)"
+      ],
+      "parsed_final": [
+        "on(crate1,pallet1)",
+        "on(crate2,pallet2)"
+      ],
+      "llm_proposal": [
+        "on(crate0, crate2)",
+        "on(crate1, crate0)",
+        "on(crate2, pallet0)"
+      ],
+      "llm_accepted": false,
+      "accuracy": 0.0
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "n_rollouts": 5,
+  "max_instances": 3,
+  "summary": {
+    "woodworking08": {
+      "n_solved": 2,
+      "n_total": 3,
+      "success_rate": 0.6666666666666666
+    }
+  },
+  "rows": [
+    {
+      "domain": "woodworking08",
+      "n_solved": 2,
+      "n_total": 3,
+      "success_rate": 0.6666666666666666,
+      "per_instance": [
+        {
+          "instance_id": 1,
+          "success": true,
+          "n_applied": 10,
+          "error": "",
+          "seconds": 49.487497091293335,
+          "plan": "(do-saw-medium b0 p0 saw0 beech rough s3 s2 s1)\n(do-saw-medium b1 p1 saw0 cherry rough s3 s2 s1)\n(do-glaze p1 glazer0 green)\n(do-plane p0 planer0 rough natural untreated)\n(do-grind p0 grinder0 smooth "
+        },
+        {
+          "instance_id": 10,
+          "success": false,
+          "error": "compile (BFS+A*): no plan",
+          "seconds": 91.0005669593811
+        },
+        {
+          "instance_id": 11,
+          "success": true,
+          "n_applied": 8,
+          "error": "",
+          "seconds": 59.616652965545654,
+          "plan": "(do-saw-small b0 p0 saw0 teak rough s2 s1)\n(do-saw-medium b1 p1 saw0 oak rough s3 s2 s1)\n(do-glaze p1 glazer0 blue)\n(do-plane p0 planer0 rough natural untreated)\n(do-plane p2 planer0 verysmooth red va"
+        }
+      ]
+    }
+  ],
+  "total_solved": 2,
+  "total": 3
+}

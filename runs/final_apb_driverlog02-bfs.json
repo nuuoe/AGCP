@@ -1,0 +1,48 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "n_rollouts": 5,
+  "max_instances": 3,
+  "summary": {
+    "driverlog02-bfs": {
+      "n_solved": 3,
+      "n_total": 3,
+      "success_rate": 1.0
+    }
+  },
+  "rows": [
+    {
+      "domain": "driverlog02-bfs",
+      "n_solved": 3,
+      "n_total": 3,
+      "success_rate": 1.0,
+      "per_instance": [
+        {
+          "instance_id": 1,
+          "success": true,
+          "n_applied": 7,
+          "error": "",
+          "seconds": 24.617480993270874,
+          "plan": "(walk driver1 s2 p1-2)\n(walk driver1 p1-2 s1)\n(walk driver1 s1 p1-0)\n(walk driver1 p1-0 s0)\n(board-truck driver1 truck1 s0)\n(drive-truck truck1 s0 s1 driver1)\n(disembark-truck driver1 truck1 s1)"
+        },
+        {
+          "instance_id": 12,
+          "success": true,
+          "n_applied": 19,
+          "error": "",
+          "seconds": 45.74781799316406,
+          "plan": "(board-truck driver1 truck1 s0)\n(walk driver2 s0 p0-1)\n(walk driver2 p0-1 s1)\n(load-truck package2 truck2 s1)\n(board-truck driver2 truck2 s1)\n(load-truck package3 truck2 s1)\n(drive-truck truck1 s0 s2 "
+        },
+        {
+          "instance_id": 14,
+          "success": true,
+          "n_applied": 13,
+          "error": "",
+          "seconds": 30.375893115997314,
+          "plan": "(board-truck driver1 truck1 s1)\n(load-truck package3 truck1 s1)\n(walk driver2 s0 p2-0)\n(walk driver2 p2-0 s2)\n(drive-truck truck1 s1 s0 driver1)\n(load-truck package1 truck1 s0)\n(load-truck package2 tr"
+        }
+      ]
+    }
+  ],
+  "total_solved": 3,
+  "total": 3
+}

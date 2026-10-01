@@ -1,0 +1,522 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "config": "blocksworld_3",
+  "n_parsed": 30,
+  "n_llm_accepted": 14,
+  "llm_accept_rate": 0.4666666666666667,
+  "classical_baseline": 0.0,
+  "rows": [
+    {
+      "inst": 2,
+      "nl_goal": "the red block is on top of the blue block and the orange block is on top of the red block",
+      "gt_atoms": [
+        "on(a,c)",
+        "on(b,a)"
+      ],
+      "parsed_final": [
+        "on(b,a)",
+        "on(a,c)"
+      ],
+      "llm_proposal": [
+        "on(a, b)",
+        "on(c, a)"
+      ],
+      "llm_accepted": false,
+      "accuracy": 0.0
+    },
+    {
+      "inst": 3,
+      "nl_goal": "the red block is on top of the orange block and the blue block is on top of the red block",
+      "gt_atoms": [
+        "on(b,a)",
+        "on(c,b)"
+      ],
+      "parsed_final": [
+        "on(a, c)",
+        "on(b, a)"
+      ],
+      "llm_proposal": [
+        "on(a, c)",
+        "on(b, a)"
+      ],
+      "llm_accepted": true,
+      "accuracy": 0.5
+    },
+    {
+      "inst": 4,
+      "nl_goal": "the blue block is on top of the red block and the orange block is on top of the blue block",
+      "gt_atoms": [
+        "on(b,a)"
+      ],
+      "parsed_final": [
+        "on(b, a)",
+        "on(c, b)"
+      ],
+      "llm_proposal": [
+        "on(b, a)",
+        "on(c, b)"
+      ],
+      "llm_accepted": true,
+      "accuracy": 0.6666666666666666
+    },
+    {
+      "inst": 5,
+      "nl_goal": "the blue block is on top of the red block",
+      "gt_atoms": [
+        "on(b,c)",
+        "on(c,a)"
+      ],
+      "parsed_final": [
+        "on(b,c)",
+        "on(c,a)"
+      ],
+      "llm_proposal": [
+        "on(b,a)"
+      ],
+      "llm_accepted": false,
+      "accuracy": 0.0
+    },
+    {
+      "inst": 6,
+      "nl_goal": "the blue block is on top of the orange block and the orange block is on top of the red block",
+      "gt_atoms": [
+        "on(b,c)",
+        "on(c,a)"
+      ],
+      "parsed_final": [
+        "on(b, c)",
+        "on(c, a)"
+      ],
+      "llm_proposal": [
+        "on(b, c)",
+        "on(c, a)"
+      ],
+      "llm_accepted": true,
+      "accuracy": 1.0
+    },
+    {
+      "inst": 7,
+      "nl_goal": "the blue block is on top of the orange block and the orange block is on top of the red block",
+      "gt_atoms": [
+        "on(a,b)",
+        "on(b,c)"
+      ],
+      "parsed_final": [
+        "on(b, c)",
+        "on(c, a)"
+      ],
+      "llm_proposal": [
+        "on(b, c)",
+        "on(c, a)"
+      ],
+      "llm_accepted": true,
+      "accuracy": 0.5
+    },
+    {
+      "inst": 8,
+      "nl_goal": "the red block is on top of the blue block and the blue block is on top of the orange block",
+      "gt_atoms": [
+        "on(a,c)"
+      ],
+      "parsed_final": [
+        "on(a,c)"
+      ],
+      "llm_proposal": [
+        "on(a, b)",
+        "on(b, c)"
+      ],
+      "llm_accepted": false,
+      "accuracy": 0.0
+    },
+    {
+      "inst": 9,
+      "nl_goal": "the red block is on top of the orange block",
+      "gt_atoms": [
+        "on(c,a)"
+      ],
+      "parsed_final": [
+        "on(c,a)"
+      ],
+      "llm_proposal": [
+        "on(a, c)"
+      ],
+      "llm_accepted": false,
+      "accuracy": 0.0
+    },
+    {
+      "inst": 10,
+      "nl_goal": "the orange block is on top of the red block",
+      "gt_atoms": [
+        "on(a,c)",
+        "on(c,b)"
+      ],
+      "parsed_final": [
+        "on(c,b)",
+        "on(a,c)"
+      ],
+      "llm_proposal": [
+        "on(c, a)"
+      ],
+      "llm_accepted": false,
+      "accuracy": 0.0
+    },
+    {
+      "inst": 11,
+      "nl_goal": "the red block is on top of the orange block and the orange block is on top of the blue block",
+      "gt_atoms": [
+        "on(b,a)",
+        "on(c,b)"
+      ],
+      "parsed_final": [
+        "on(a, c)",
+        "on(c, b)"
+      ],
+      "llm_proposal": [
+        "on(a, c)",
+        "on(c, b)"
+      ],
+      "llm_accepted": true,
+      "accuracy": 0.5
+    },
+    {
+      "inst": 12,
+      "nl_goal": "the blue block is on top of the red block and the orange block is on top of the blue block",
+      "gt_atoms": [
+        "on(a,b)",
+        "on(c,a)"
+      ],
+      "parsed_final": [
+        "on(a,b)",
+        "on(c,a)"
+      ],
+      "llm_proposal": [
+        "on(b, a)",
+        "on(c, b)"
+      ],
+      "llm_accepted": false,
+      "accuracy": 0.0
+    },
+    {
+      "inst": 13,
+      "nl_goal": "the red block is on top of the blue block and the orange block is on top of the red block",
+      "gt_atoms": [
+        "on(b,c)",
+        "on(c,a)"
+      ],
+      "parsed_final": [
+        "on(a, b)",
+        "on(c, a)"
+      ],
+      "llm_proposal": [
+        "on(a, b)",
+        "on(c, a)"
+      ],
+      "llm_accepted": true,
+      "accuracy": 0.5
+    },
+    {
+      "inst": 14,
+      "nl_goal": "the blue block is on top of the orange block and the orange block is on top of the red block",
+      "gt_atoms": [
+        "on(a,c)",
+        "on(c,b)"
+      ],
+      "parsed_final": [
+        "on(c,b)",
+        "on(a,c)"
+      ],
+      "llm_proposal": [
+        "on(b, c)",
+        "on(c, a)"
+      ],
+      "llm_accepted": false,
+      "accuracy": 0.0
+    },
+    {
+      "inst": 15,
+      "nl_goal": "the red block is on top of the orange block and the orange block is on top of the blue block",
+      "gt_atoms": [
+        "on(a,b)"
+      ],
+      "parsed_final": [
+        "on(a,b)"
+      ],
+      "llm_proposal": [
+        "on(a, c)",
+        "on(c, b)"
+      ],
+      "llm_accepted": false,
+      "accuracy": 0.0
+    },
+    {
+      "inst": 16,
+      "nl_goal": "the red block is on top of the blue block",
+      "gt_atoms": [
+        "on(a,c)",
+        "on(b,a)"
+      ],
+      "parsed_final": [
+        "on(b,a)"
+      ],
+      "llm_proposal": [
+        "on(b,a)"
+      ],
+      "llm_accepted": true,
+      "accuracy": 0.6666666666666666
+    },
+    {
+      "inst": 17,
+      "nl_goal": "the red block is on top of the orange block and the blue block is on top of the red block",
+      "gt_atoms": [
+        "on(a,b)",
+        "on(c,a)"
+      ],
+      "parsed_final": [
+        "on(a,b)",
+        "on(c,a)"
+      ],
+      "llm_proposal": [
+        "on(a, c)",
+        "on(b, a)"
+      ],
+      "llm_accepted": false,
+      "accuracy": 0.0
+    },
+    {
+      "inst": 18,
+      "nl_goal": "the red block is on top of the blue block and the orange block is on top of the red block",
+      "gt_atoms": [
+        "on(a,c)",
+        "on(c,b)"
+      ],
+      "parsed_final": [
+        "on(c,b)",
+        "on(a,c)"
+      ],
+      "llm_proposal": [
+        "on(a, b)",
+        "on(c, a)"
+      ],
+      "llm_accepted": false,
+      "accuracy": 0.0
+    },
+    {
+      "inst": 19,
+      "nl_goal": "the red block is on top of the orange block and the orange block is on top of the blue block",
+      "gt_atoms": [
+        "on(a,c)",
+        "on(b,a)"
+      ],
+      "parsed_final": [
+        "on(a, c)",
+        "on(c, b)"
+      ],
+      "llm_proposal": [
+        "on(a, c)",
+        "on(c, b)"
+      ],
+      "llm_accepted": true,
+      "accuracy": 0.5
+    },
+    {
+      "inst": 20,
+      "nl_goal": "the red block is on top of the orange block and the blue block is on top of the red block",
+      "gt_atoms": [
+        "on(b,a)"
+      ],
+      "parsed_final": [
+        "on(a, c)",
+        "on(b, a)"
+      ],
+      "llm_proposal": [
+        "on(a, c)",
+        "on(b, a)"
+      ],
+      "llm_accepted": true,
+      "accuracy": 0.6666666666666666
+    },
+    {
+      "inst": 21,
+      "nl_goal": "the blue block is on top of the red block",
+      "gt_atoms": [
+        "on(a,c)",
+        "on(b,a)"
+      ],
+      "parsed_final": [
+        "on(b,a)"
+      ],
+      "llm_proposal": [
+        "on(b,a)"
+      ],
+      "llm_accepted": true,
+      "accuracy": 0.6666666666666666
+    },
+    {
+      "inst": 22,
+      "nl_goal": "the red block is on top of the orange block and the blue block is on top of the red block",
+      "gt_atoms": [
+        "on(b,c)"
+      ],
+      "parsed_final": [
+        "on(b,c)"
+      ],
+      "llm_proposal": [
+        "on(a, c)",
+        "on(b, a)"
+      ],
+      "llm_accepted": false,
+      "accuracy": 0.0
+    },
+    {
+      "inst": 23,
+      "nl_goal": "the blue block is on top of the orange block",
+      "gt_atoms": [
+        "on(c,b)"
+      ],
+      "parsed_final": [
+        "on(c,b)"
+      ],
+      "llm_proposal": [
+        "on(c,b)"
+      ],
+      "llm_accepted": true,
+      "accuracy": 1.0
+    },
+    {
+      "inst": 24,
+      "nl_goal": "the orange block is on top of the blue block",
+      "gt_atoms": [
+        "on(a,b)",
+        "on(b,c)"
+      ],
+      "parsed_final": [
+        "on(b,c)",
+        "on(a,b)"
+      ],
+      "llm_proposal": [
+        "on(c, b)"
+      ],
+      "llm_accepted": false,
+      "accuracy": 0.0
+    },
+    {
+      "inst": 25,
+      "nl_goal": "the red block is on top of the blue block and the blue block is on top of the orange block",
+      "gt_atoms": [
+        "on(b,a)",
+        "on(c,b)"
+      ],
+      "parsed_final": [
+        "on(c,b)",
+        "on(b,a)"
+      ],
+      "llm_proposal": [
+        "on(a, b)",
+        "on(b, c)"
+      ],
+      "llm_accepted": false,
+      "accuracy": 0.0
+    },
+    {
+      "inst": 26,
+      "nl_goal": "the blue block is on top of the red block and the orange block is on top of the blue block",
+      "gt_atoms": [
+        "on(c,b)"
+      ],
+      "parsed_final": [
+        "on(b, a)",
+        "on(c, b)"
+      ],
+      "llm_proposal": [
+        "on(b, a)",
+        "on(c, b)"
+      ],
+      "llm_accepted": true,
+      "accuracy": 0.6666666666666666
+    },
+    {
+      "inst": 27,
+      "nl_goal": "the orange block is on top of the blue block",
+      "gt_atoms": [
+        "on(a,c)",
+        "on(c,b)"
+      ],
+      "parsed_final": [
+        "on(c, b)"
+      ],
+      "llm_proposal": [
+        "on(c, b)"
+      ],
+      "llm_accepted": true,
+      "accuracy": 0.6666666666666666
+    },
+    {
+      "inst": 28,
+      "nl_goal": "the red block is on top of the orange block and the orange block is on top of the blue block",
+      "gt_atoms": [
+        "on(a,b)",
+        "on(b,c)"
+      ],
+      "parsed_final": [
+        "on(b,c)",
+        "on(a,b)"
+      ],
+      "llm_proposal": [
+        "on(a, c)",
+        "on(c, b)"
+      ],
+      "llm_accepted": false,
+      "accuracy": 0.0
+    },
+    {
+      "inst": 29,
+      "nl_goal": "the red block is on top of the blue block and the blue block is on top of the orange block",
+      "gt_atoms": [
+        "on(a,c)",
+        "on(b,a)"
+      ],
+      "parsed_final": [
+        "on(b,a)",
+        "on(a,c)"
+      ],
+      "llm_proposal": [
+        "on(a, b)",
+        "on(b, c)"
+      ],
+      "llm_accepted": false,
+      "accuracy": 0.0
+    },
+    {
+      "inst": 30,
+      "nl_goal": "the red block is on top of the orange block and the blue block is on top of the red block",
+      "gt_atoms": [
+        "on(a,c)"
+      ],
+      "parsed_final": [
+        "on(a, c)",
+        "on(b, a)"
+      ],
+      "llm_proposal": [
+        "on(a, c)",
+        "on(b, a)"
+      ],
+      "llm_accepted": true,
+      "accuracy": 0.6666666666666666
+    },
+    {
+      "inst": 31,
+      "nl_goal": "the red block is on top of the orange block",
+      "gt_atoms": [
+        "on(c,b)"
+      ],
+      "parsed_final": [
+        "on(c,b)"
+      ],
+      "llm_proposal": [
+        "on(a, c)"
+      ],
+      "llm_accepted": false,
+      "accuracy": 0.0
+    }
+  ]
+}

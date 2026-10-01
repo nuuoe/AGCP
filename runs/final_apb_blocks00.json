@@ -1,0 +1,46 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "n_rollouts": 5,
+  "max_instances": 3,
+  "summary": {
+    "blocks00": {
+      "n_solved": 2,
+      "n_total": 3,
+      "success_rate": 0.6666666666666666
+    }
+  },
+  "rows": [
+    {
+      "domain": "blocks00",
+      "n_solved": 2,
+      "n_total": 3,
+      "success_rate": 0.6666666666666666,
+      "per_instance": [
+        {
+          "instance_id": 1,
+          "success": true,
+          "n_applied": 38,
+          "error": "",
+          "seconds": 3529.964787006378,
+          "plan": "(unstack c e)\n(stack c f)\n(unstack e j)\n(put-down e)\n(unstack j b)\n(stack j e)\n(unstack b g)\n(put-down b)\n(unstack g h)\n(put-down g)\n(unstack h a)\n(put-down h)\n(unstack a d)\n(put-down a)\n(unstack d i)"
+        },
+        {
+          "instance_id": 10,
+          "success": true,
+          "n_applied": 52,
+          "error": "",
+          "seconds": 57.42745518684387,
+          "plan": "(unstack j e)\n(put-down j)\n(unstack e d)\n(put-down e)\n(unstack d c)\n(put-down d)\n(unstack c a)\n(stack c j)\n(unstack a l)\n(stack a e)\n(unstack l h)\n(put-down l)\n(unstack h g)\n(put-down h)\n(unstack g m)"
+        },
+        {
+          "instance_id": 11,
+          "success": false,
+          "error": "compile (BFS+A*): no plan",
+          "seconds": 60.09054088592529
+        }
+      ]
+    }
+  ],
+  "total_solved": 2,
+  "total": 3
+}

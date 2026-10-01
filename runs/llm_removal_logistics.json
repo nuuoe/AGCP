@@ -1,0 +1,68 @@
+{
+  "config": "logistics",
+  "method": "pure_classical_no_llm",
+  "n_solved": 10,
+  "n_total": 10,
+  "rows": [
+    {
+      "inst": 2,
+      "solved": true,
+      "n_actions": 3,
+      "wallclock_sec": 0.0026712417602539062
+    },
+    {
+      "inst": 3,
+      "solved": true,
+      "n_actions": 4,
+      "wallclock_sec": 0.001605987548828125
+    },
+    {
+      "inst": 4,
+      "solved": true,
+      "n_actions": 5,
+      "wallclock_sec": 0.0014328956604003906
+    },
+    {
+      "inst": 5,
+      "solved": true,
+      "n_actions": 4,
+      "wallclock_sec": 0.0024271011352539062
+    },
+    {
+      "inst": 6,
+      "solved": true,
+      "n_actions": 3,
+      "wallclock_sec": 0.0018029212951660156
+    },
+    {
+      "inst": 7,
+      "solved": true,
+      "n_actions": 7,
+      "wallclock_sec": 0.002054929733276367
+    },
+    {
+      "inst": 8,
+      "solved": true,
+      "n_actions": 6,
+      "wallclock_sec": 0.0021271705627441406
+    },
+    {
+      "inst": 9,
+      "solved": true,
+      "n_actions": 3,
+      "wallclock_sec": 0.0017731189727783203
+    },
+    {
+      "inst": 10,
+      "solved": true,
+      "n_actions": 5,
+      "wallclock_sec": 0.002630949020385742
+    },
+    {
+      "inst": 11,
+      "solved": true,
+      "n_actions": 7,
+      "wallclock_sec": 0.002763986587524414
+    }
+  ]
+}

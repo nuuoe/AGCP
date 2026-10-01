@@ -1,0 +1,48 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "n_rollouts": 5,
+  "max_instances": 3,
+  "summary": {
+    "mystery98": {
+      "n_solved": 3,
+      "n_total": 3,
+      "success_rate": 1.0
+    }
+  },
+  "rows": [
+    {
+      "domain": "mystery98",
+      "n_solved": 3,
+      "n_total": 3,
+      "success_rate": 1.0,
+      "per_instance": [
+        {
+          "instance_id": 1,
+          "success": true,
+          "n_applied": 5,
+          "error": "",
+          "seconds": 26.42600989341736,
+          "plan": "(overcome abrasion rest pork uranus venus)\n(feast rest pork lamb alsace quebec)\n(feast rest lamb flounder surrey pennsylvania)\n(feast rest flounder rice pennsylvania alsace)\n(succumb abrasion rest ric"
+        },
+        {
+          "instance_id": 10,
+          "success": true,
+          "n_applied": 6,
+          "error": "",
+          "seconds": 29.87878704071045,
+          "plan": "(overcome jealousy satisfaction pistachio neptune earth)\n(feast satisfaction pistachio broccoli surrey moravia)\n(feast satisfaction broccoli lemon surrey moravia)\n(feast satisfaction lemon cod bavaria"
+        },
+        {
+          "instance_id": 11,
+          "success": true,
+          "n_applied": 4,
+          "error": "",
+          "seconds": 23.684289932250977,
+          "plan": "(feast satisfaction potato yogurt guanabara bosnia)\n(overcome abrasion satisfaction yogurt mercury saturn)\n(feast satisfaction yogurt wonderbread guanabara bosnia)\n(succumb abrasion satisfaction wonde"
+        }
+      ]
+    }
+  ],
+  "total_solved": 3,
+  "total": 3
+}

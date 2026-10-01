@@ -1,0 +1,83 @@
+{
+  "refined": {
+    "move": {
+      "pre_pos": [
+        "at-robot({a1})",
+        "clear({a2})"
+      ],
+      "eff_add": [
+        "at-robot({a2})"
+      ],
+      "eff_del": [
+        "at-robot({a1})"
+      ]
+    },
+    "push": {
+      "pre_pos": [
+        "at({a5},{a2})",
+        "at-robot({a1})",
+        "clear({a3})"
+      ],
+      "eff_add": [
+        "at({a5},{a3})",
+        "at-robot({a2})",
+        "clear({a2})"
+      ],
+      "eff_del": [
+        "at({a5},{a2})",
+        "at-robot({a1})",
+        "clear({a3})"
+      ]
+    }
+  },
+  "refinement_log": {
+    "move": {
+      "induced_pre": [
+        "at-robot({a1})",
+        "clear({a1})",
+        "clear({a2})"
+      ],
+      "refined_pre": [
+        "at-robot({a1})",
+        "clear({a2})"
+      ],
+      "dropped": [
+        {
+          "atom": "clear({a1})",
+          "evidence_args": [
+            "loc_6_4",
+            "loc_5_4",
+            "up"
+          ],
+          "grounded_atom_dropped": "clear(loc_6_4)"
+        }
+      ]
+    },
+    "push": {
+      "induced_pre": [
+        "at({a5},{a2})",
+        "at-robot({a1})",
+        "clear({a1})",
+        "clear({a3})"
+      ],
+      "refined_pre": [
+        "at({a5},{a2})",
+        "at-robot({a1})",
+        "clear({a3})"
+      ],
+      "dropped": [
+        {
+          "atom": "clear({a1})",
+          "evidence_args": [
+            "loc_5_4",
+            "loc_4_4",
+            "loc_3_4",
+            "up",
+            "box1"
+          ],
+          "grounded_atom_dropped": "clear(loc_5_4)"
+        }
+      ]
+    }
+  }
+}

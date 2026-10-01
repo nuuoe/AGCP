@@ -1,0 +1,48 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "n_rollouts": 5,
+  "max_instances": 3,
+  "summary": {
+    "rovers": {
+      "n_solved": 3,
+      "n_total": 3,
+      "success_rate": 1.0
+    }
+  },
+  "rows": [
+    {
+      "domain": "rovers",
+      "n_solved": 3,
+      "n_total": 3,
+      "success_rate": 1.0,
+      "per_instance": [
+        {
+          "instance_id": 1,
+          "success": true,
+          "n_applied": 11,
+          "error": "",
+          "seconds": 42.880507707595825,
+          "plan": "(navigate rover0 waypoint0 waypoint2)\n(calibrate rover0 camera0 objective0 waypoint2)\n(take_image rover0 waypoint2 objective0 camera0 colour)\n(communicate_image_data rover0 general objective0 colour w"
+        },
+        {
+          "instance_id": 10,
+          "success": true,
+          "n_applied": 11,
+          "error": "",
+          "seconds": 37.546268939971924,
+          "plan": "(navigate rover0 waypoint1 waypoint0)\n(calibrate rover0 camera0 objective2 waypoint0)\n(calibrate rover0 camera1 objective1 waypoint0)\n(take_image rover0 waypoint0 objective2 camera1 colour)\n(take_imag"
+        },
+        {
+          "instance_id": 11,
+          "success": true,
+          "n_applied": 10,
+          "error": "",
+          "seconds": 37.22084903717041,
+          "plan": "(calibrate rover0 camera0 objective0 waypoint2)\n(take_image rover0 waypoint2 objective2 camera0 high_res)\n(communicate_image_data rover0 general objective2 high_res waypoint2 waypoint0)\n(sample_rock r"
+        }
+      ]
+    }
+  ],
+  "total_solved": 3,
+  "total": 3
+}

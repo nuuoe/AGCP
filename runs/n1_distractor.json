@@ -1,0 +1,569 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "n_instances": 10,
+  "per_tag": {
+    "orig": 10,
+    "prefix_easy": 0,
+    "prefix_hard": 5,
+    "suffix": 10,
+    "sandwich": 8
+  },
+  "rows": [
+    {
+      "inst": 2,
+      "nl_orig": "the red block is on top of the orange block and the blue block is on top of the red block",
+      "gt_atoms": [
+        "on(a,c)",
+        "on(b,a)"
+      ],
+      "results": {
+        "orig": {
+          "distractor_nl": "the red block is on top of the orange block and the blue block is on top of the red block",
+          "llm_accepted": true,
+          "accuracy": 1.0,
+          "proposal": [
+            "on(a, c)",
+            "on(b, a)"
+          ]
+        },
+        "prefix_easy": {
+          "distractor_nl": "Note: the kitchen is clean. the red block is on top of the orange block and the blue block is on top of the red block",
+          "llm_accepted": false,
+          "accuracy": 0.8,
+          "proposal": [
+            "clear(a)",
+            "on(a, c)",
+            "on(b, a)"
+          ]
+        },
+        "prefix_hard": {
+          "distractor_nl": "Some people prefer that the blue block is on top of the orange block. However, the red block is on top of the orange block and the blue block is on top of the red block",
+          "llm_accepted": true,
+          "accuracy": 1.0,
+          "proposal": [
+            "craves(b, c)",
+            "on(a, c)",
+            "on(b, a)"
+          ]
+        },
+        "suffix": {
+          "distractor_nl": "the red block is on top of the orange block and the blue block is on top of the red block Also, the weather is nice today.",
+          "llm_accepted": true,
+          "accuracy": 1.0,
+          "proposal": [
+            "on(a, c)",
+            "on(b, a)"
+          ]
+        },
+        "sandwich": {
+          "distractor_nl": "Some people prefer that the blue block is on top of the orange block. However, the red block is on top of the orange block and the blue block is on top of the red block Also, the weather is nice today.",
+          "llm_accepted": true,
+          "accuracy": 1.0,
+          "proposal": [
+            "craves(b, c)",
+            "on(a, c)",
+            "on(b, a)"
+          ]
+        }
+      }
+    },
+    {
+      "inst": 3,
+      "nl_orig": "the blue block is on top of the red block and the orange block is on top of the blue block",
+      "gt_atoms": [
+        "on(b,a)",
+        "on(c,b)"
+      ],
+      "results": {
+        "orig": {
+          "distractor_nl": "the blue block is on top of the red block and the orange block is on top of the blue block",
+          "llm_accepted": true,
+          "accuracy": 1.0,
+          "proposal": [
+            "on(b, a)",
+            "on(c, b)"
+          ]
+        },
+        "prefix_easy": {
+          "distractor_nl": "Note: the kitchen is clean. the blue block is on top of the red block and the orange block is on top of the blue block",
+          "llm_accepted": false,
+          "accuracy": 0.0,
+          "proposal": [
+            "clear(a)",
+            "clear(b)",
+            "on(a, b)"
+          ]
+        },
+        "prefix_hard": {
+          "distractor_nl": "Some people prefer that the blue block is on top of the orange block. However, the blue block is on top of the red block and the orange block is on top of the blue block",
+          "llm_accepted": false,
+          "accuracy": 0.5,
+          "proposal": [
+            "on(b, c)",
+            "on(c, b)"
+          ]
+        },
+        "suffix": {
+          "distractor_nl": "the blue block is on top of the red block and the orange block is on top of the blue block Also, the weather is nice today.",
+          "llm_accepted": true,
+          "accuracy": 1.0,
+          "proposal": [
+            "on(b, a)",
+            "on(c, b)"
+          ]
+        },
+        "sandwich": {
+          "distractor_nl": "Some people prefer that the blue block is on top of the orange block. However, the blue block is on top of the red block and the orange block is on top of the blue block Also, the weather is nice today.",
+          "llm_accepted": true,
+          "accuracy": 1.0,
+          "proposal": [
+            "craves(b, c)",
+            "on(b, a)",
+            "on(c, b)"
+          ]
+        }
+      }
+    },
+    {
+      "inst": 4,
+      "nl_orig": "the blue block is on top of the red block",
+      "gt_atoms": [
+        "on(b,a)"
+      ],
+      "results": {
+        "orig": {
+          "distractor_nl": "the blue block is on top of the red block",
+          "llm_accepted": true,
+          "accuracy": 1.0,
+          "proposal": [
+            "on(b, a)"
+          ]
+        },
+        "prefix_easy": {
+          "distractor_nl": "Note: the kitchen is clean. the blue block is on top of the red block",
+          "llm_accepted": false,
+          "accuracy": 0.0,
+          "proposal": [
+            "clear(a)",
+            "clear(b)"
+          ]
+        },
+        "prefix_hard": {
+          "distractor_nl": "Some people prefer that the blue block is on top of the orange block. However, the blue block is on top of the red block",
+          "llm_accepted": false,
+          "accuracy": 0.0,
+          "proposal": [
+            "craves(b, c)"
+          ]
+        },
+        "suffix": {
+          "distractor_nl": "the blue block is on top of the red block Also, the weather is nice today.",
+          "llm_accepted": true,
+          "accuracy": 1.0,
+          "proposal": [
+            "on(b, a)",
+            "clear(weather)"
+          ]
+        },
+        "sandwich": {
+          "distractor_nl": "Some people prefer that the blue block is on top of the orange block. However, the blue block is on top of the red block Also, the weather is nice today.",
+          "llm_accepted": true,
+          "accuracy": 1.0,
+          "proposal": [
+            "craves(b, c)",
+            "on(b, a)"
+          ]
+        }
+      }
+    },
+    {
+      "inst": 5,
+      "nl_orig": "the blue block is on top of the orange block and the orange block is on top of the red block",
+      "gt_atoms": [
+        "on(b,c)",
+        "on(c,a)"
+      ],
+      "results": {
+        "orig": {
+          "distractor_nl": "the blue block is on top of the orange block and the orange block is on top of the red block",
+          "llm_accepted": true,
+          "accuracy": 1.0,
+          "proposal": [
+            "on(b, c)",
+            "on(c, a)"
+          ]
+        },
+        "prefix_easy": {
+          "distractor_nl": "Note: the kitchen is clean. the blue block is on top of the orange block and the orange block is on top of the red block",
+          "llm_accepted": false,
+          "accuracy": 0.8,
+          "proposal": [
+            "clear(b)",
+            "on(b, c)",
+            "on(c, a)"
+          ]
+        },
+        "prefix_hard": {
+          "distractor_nl": "Some people prefer that the blue block is on top of the orange block. However, the blue block is on top of the orange block and the orange block is on top of the red block",
+          "llm_accepted": true,
+          "accuracy": 1.0,
+          "proposal": [
+            "on(b, c)",
+            "on(c, a)"
+          ]
+        },
+        "suffix": {
+          "distractor_nl": "the blue block is on top of the orange block and the orange block is on top of the red block Also, the weather is nice today.",
+          "llm_accepted": true,
+          "accuracy": 1.0,
+          "proposal": [
+            "on(b, c)",
+            "on(c, a)"
+          ]
+        },
+        "sandwich": {
+          "distractor_nl": "Some people prefer that the blue block is on top of the orange block. However, the blue block is on top of the orange block and the orange block is on top of the red block Also, the weather is nice today.",
+          "llm_accepted": true,
+          "accuracy": 1.0,
+          "proposal": [
+            "craves(b, c)",
+            "on(b, c)",
+            "on(c, a)"
+          ]
+        }
+      }
+    },
+    {
+      "inst": 6,
+      "nl_orig": "the blue block is on top of the orange block and the orange block is on top of the red block",
+      "gt_atoms": [
+        "on(b,c)",
+        "on(c,a)"
+      ],
+      "results": {
+        "orig": {
+          "distractor_nl": "the blue block is on top of the orange block and the orange block is on top of the red block",
+          "llm_accepted": true,
+          "accuracy": 1.0,
+          "proposal": [
+            "on(b, c)",
+            "on(c, a)"
+          ]
+        },
+        "prefix_easy": {
+          "distractor_nl": "Note: the kitchen is clean. the blue block is on top of the orange block and the orange block is on top of the red block",
+          "llm_accepted": false,
+          "accuracy": 0.8,
+          "proposal": [
+            "clear(b)",
+            "on(b, c)",
+            "on(c, a)"
+          ]
+        },
+        "prefix_hard": {
+          "distractor_nl": "Some people prefer that the blue block is on top of the orange block. However, the blue block is on top of the orange block and the orange block is on top of the red block",
+          "llm_accepted": true,
+          "accuracy": 1.0,
+          "proposal": [
+            "on(b, c)",
+            "on(c, a)"
+          ]
+        },
+        "suffix": {
+          "distractor_nl": "the blue block is on top of the orange block and the orange block is on top of the red block Also, the weather is nice today.",
+          "llm_accepted": true,
+          "accuracy": 1.0,
+          "proposal": [
+            "on(b, c)",
+            "on(c, a)"
+          ]
+        },
+        "sandwich": {
+          "distractor_nl": "Some people prefer that the blue block is on top of the orange block. However, the blue block is on top of the orange block and the orange block is on top of the red block Also, the weather is nice today.",
+          "llm_accepted": true,
+          "accuracy": 1.0,
+          "proposal": [
+            "craves(b, c)",
+            "on(b, c)",
+            "on(c, a)"
+          ]
+        }
+      }
+    },
+    {
+      "inst": 7,
+      "nl_orig": "the red block is on top of the blue block and the blue block is on top of the orange block",
+      "gt_atoms": [
+        "on(a,b)",
+        "on(b,c)"
+      ],
+      "results": {
+        "orig": {
+          "distractor_nl": "the red block is on top of the blue block and the blue block is on top of the orange block",
+          "llm_accepted": true,
+          "accuracy": 1.0,
+          "proposal": [
+            "on(a, b)",
+            "on(b, c)"
+          ]
+        },
+        "prefix_easy": {
+          "distractor_nl": "Note: the kitchen is clean. the red block is on top of the blue block and the blue block is on top of the orange block",
+          "llm_accepted": false,
+          "accuracy": 0.4,
+          "proposal": [
+            "clear(a)",
+            "clear(b)",
+            "on(a, b)"
+          ]
+        },
+        "prefix_hard": {
+          "distractor_nl": "Some people prefer that the blue block is on top of the orange block. However, the red block is on top of the blue block and the blue block is on top of the orange block",
+          "llm_accepted": true,
+          "accuracy": 1.0,
+          "proposal": [
+            "on(b, c)",
+            "on(a, b)"
+          ]
+        },
+        "suffix": {
+          "distractor_nl": "the red block is on top of the blue block and the blue block is on top of the orange block Also, the weather is nice today.",
+          "llm_accepted": true,
+          "accuracy": 1.0,
+          "proposal": [
+            "on(a, b)",
+            "on(b, c)"
+          ]
+        },
+        "sandwich": {
+          "distractor_nl": "Some people prefer that the blue block is on top of the orange block. However, the red block is on top of the blue block and the blue block is on top of the orange block Also, the weather is nice today.",
+          "llm_accepted": false,
+          "accuracy": 0.6666666666666666,
+          "proposal": [
+            "craves(b, c)",
+            "on(b, c)"
+          ]
+        }
+      }
+    },
+    {
+      "inst": 8,
+      "nl_orig": "the red block is on top of the orange block",
+      "gt_atoms": [
+        "on(a,c)"
+      ],
+      "results": {
+        "orig": {
+          "distractor_nl": "the red block is on top of the orange block",
+          "llm_accepted": true,
+          "accuracy": 1.0,
+          "proposal": [
+            "on(a, c)"
+          ]
+        },
+        "prefix_easy": {
+          "distractor_nl": "Note: the kitchen is clean. the red block is on top of the orange block",
+          "llm_accepted": false,
+          "accuracy": 0.6666666666666666,
+          "proposal": [
+            "clear(a)",
+            "on(a, c)"
+          ]
+        },
+        "prefix_hard": {
+          "distractor_nl": "Some people prefer that the blue block is on top of the orange block. However, the red block is on top of the orange block",
+          "llm_accepted": false,
+          "accuracy": 0.0,
+          "proposal": [
+            "craves(b, c)",
+            "on(b, c)"
+          ]
+        },
+        "suffix": {
+          "distractor_nl": "the red block is on top of the orange block Also, the weather is nice today.",
+          "llm_accepted": true,
+          "accuracy": 1.0,
+          "proposal": [
+            "on(a, c)",
+            "clear(weather)"
+          ]
+        },
+        "sandwich": {
+          "distractor_nl": "Some people prefer that the blue block is on top of the orange block. However, the red block is on top of the orange block Also, the weather is nice today.",
+          "llm_accepted": false,
+          "accuracy": 0.0,
+          "proposal": [
+            "craves(b, c)"
+          ]
+        }
+      }
+    },
+    {
+      "inst": 9,
+      "nl_orig": "the orange block is on top of the red block",
+      "gt_atoms": [
+        "on(c,a)"
+      ],
+      "results": {
+        "orig": {
+          "distractor_nl": "the orange block is on top of the red block",
+          "llm_accepted": true,
+          "accuracy": 1.0,
+          "proposal": [
+            "on(c, a)"
+          ]
+        },
+        "prefix_easy": {
+          "distractor_nl": "Note: the kitchen is clean. the orange block is on top of the red block",
+          "llm_accepted": false,
+          "accuracy": 0.6666666666666666,
+          "proposal": [
+            "clear(a)",
+            "on(c, a)"
+          ]
+        },
+        "prefix_hard": {
+          "distractor_nl": "Some people prefer that the blue block is on top of the orange block. However, the orange block is on top of the red block",
+          "llm_accepted": true,
+          "accuracy": 1.0,
+          "proposal": [
+            "craves(b, c)",
+            "on(c, a)"
+          ]
+        },
+        "suffix": {
+          "distractor_nl": "the orange block is on top of the red block Also, the weather is nice today.",
+          "llm_accepted": true,
+          "accuracy": 1.0,
+          "proposal": [
+            "on(c, a)",
+            "clear(weather)"
+          ]
+        },
+        "sandwich": {
+          "distractor_nl": "Some people prefer that the blue block is on top of the orange block. However, the orange block is on top of the red block Also, the weather is nice today.",
+          "llm_accepted": true,
+          "accuracy": 1.0,
+          "proposal": [
+            "craves(b, c)",
+            "on(c, a)"
+          ]
+        }
+      }
+    },
+    {
+      "inst": 10,
+      "nl_orig": "the red block is on top of the orange block and the orange block is on top of the blue block",
+      "gt_atoms": [
+        "on(a,c)",
+        "on(c,b)"
+      ],
+      "results": {
+        "orig": {
+          "distractor_nl": "the red block is on top of the orange block and the orange block is on top of the blue block",
+          "llm_accepted": true,
+          "accuracy": 1.0,
+          "proposal": [
+            "on(a, c)",
+            "on(c, b)"
+          ]
+        },
+        "prefix_easy": {
+          "distractor_nl": "Note: the kitchen is clean. the red block is on top of the orange block and the orange block is on top of the blue block",
+          "llm_accepted": false,
+          "accuracy": 0.8,
+          "proposal": [
+            "clear(a)",
+            "on(a, c)",
+            "on(c, b)"
+          ]
+        },
+        "prefix_hard": {
+          "distractor_nl": "Some people prefer that the blue block is on top of the orange block. However, the red block is on top of the orange block and the orange block is on top of the blue block",
+          "llm_accepted": false,
+          "accuracy": 0.0,
+          "proposal": [
+            "on(b, c)",
+            "on(c, a)"
+          ]
+        },
+        "suffix": {
+          "distractor_nl": "the red block is on top of the orange block and the orange block is on top of the blue block Also, the weather is nice today.",
+          "llm_accepted": true,
+          "accuracy": 1.0,
+          "proposal": [
+            "on(a, c)",
+            "on(c, b)"
+          ]
+        },
+        "sandwich": {
+          "distractor_nl": "Some people prefer that the blue block is on top of the orange block. However, the red block is on top of the orange block and the orange block is on top of the blue block Also, the weather is nice today.",
+          "llm_accepted": true,
+          "accuracy": 1.0,
+          "proposal": [
+            "craves(b, c)",
+            "on(a, c)",
+            "on(c, b)"
+          ]
+        }
+      }
+    },
+    {
+      "inst": 11,
+      "nl_orig": "the blue block is on top of the red block and the orange block is on top of the blue block",
+      "gt_atoms": [
+        "on(b,a)",
+        "on(c,b)"
+      ],
+      "results": {
+        "orig": {
+          "distractor_nl": "the blue block is on top of the red block and the orange block is on top of the blue block",
+          "llm_accepted": true,
+          "accuracy": 1.0,
+          "proposal": [
+            "on(b, a)",
+            "on(c, b)"
+          ]
+        },
+        "prefix_easy": {
+          "distractor_nl": "Note: the kitchen is clean. the blue block is on top of the red block and the orange block is on top of the blue block",
+          "llm_accepted": false,
+          "accuracy": 0.0,
+          "proposal": [
+            "clear(a)",
+            "clear(b)",
+            "on(a, b)"
+          ]
+        },
+        "prefix_hard": {
+          "distractor_nl": "Some people prefer that the blue block is on top of the orange block. However, the blue block is on top of the red block and the orange block is on top of the blue block",
+          "llm_accepted": false,
+          "accuracy": 0.5,
+          "proposal": [
+            "on(b, c)",
+            "on(c, b)"
+          ]
+        },
+        "suffix": {
+          "distractor_nl": "the blue block is on top of the red block and the orange block is on top of the blue block Also, the weather is nice today.",
+          "llm_accepted": true,
+          "accuracy": 1.0,
+          "proposal": [
+            "on(b, a)",
+            "on(c, b)"
+          ]
+        },
+        "sandwich": {
+          "distractor_nl": "Some people prefer that the blue block is on top of the orange block. However, the blue block is on top of the red block and the orange block is on top of the blue block Also, the weather is nice today.",
+          "llm_accepted": true,
+          "accuracy": 1.0,
+          "proposal": [
+            "craves(b, c)",
+            "on(b, a)",
+            "on(c, b)"
+          ]
+        }
+      }
+    }
+  ]
+}

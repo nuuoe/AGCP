@@ -1,0 +1,186 @@
+{
+  "blocksworld_3": {
+    "n_val_valid": 10,
+    "n_total": 10,
+    "per_instance": [
+      {
+        "inst": 2,
+        "val_valid": true
+      },
+      {
+        "inst": 3,
+        "val_valid": true
+      },
+      {
+        "inst": 4,
+        "val_valid": true
+      },
+      {
+        "inst": 5,
+        "val_valid": true
+      },
+      {
+        "inst": 6,
+        "val_valid": true
+      },
+      {
+        "inst": 7,
+        "val_valid": true
+      },
+      {
+        "inst": 8,
+        "val_valid": true
+      },
+      {
+        "inst": 9,
+        "val_valid": true
+      },
+      {
+        "inst": 10,
+        "val_valid": true
+      },
+      {
+        "inst": 11,
+        "val_valid": true
+      }
+    ]
+  },
+  "mystery_blocksworld_3": {
+    "n_val_valid": 10,
+    "n_total": 10,
+    "per_instance": [
+      {
+        "inst": 2,
+        "val_valid": true
+      },
+      {
+        "inst": 3,
+        "val_valid": true
+      },
+      {
+        "inst": 4,
+        "val_valid": true
+      },
+      {
+        "inst": 5,
+        "val_valid": true
+      },
+      {
+        "inst": 6,
+        "val_valid": true
+      },
+      {
+        "inst": 7,
+        "val_valid": true
+      },
+      {
+        "inst": 8,
+        "val_valid": true
+      },
+      {
+        "inst": 9,
+        "val_valid": true
+      },
+      {
+        "inst": 10,
+        "val_valid": true
+      },
+      {
+        "inst": 11,
+        "val_valid": true
+      }
+    ]
+  },
+  "logistics": {
+    "n_val_valid": 10,
+    "n_total": 10,
+    "per_instance": [
+      {
+        "inst": 2,
+        "val_valid": true
+      },
+      {
+        "inst": 3,
+        "val_valid": true
+      },
+      {
+        "inst": 4,
+        "val_valid": true
+      },
+      {
+        "inst": 5,
+        "val_valid": true
+      },
+      {
+        "inst": 6,
+        "val_valid": true
+      },
+      {
+        "inst": 7,
+        "val_valid": true
+      },
+      {
+        "inst": 8,
+        "val_valid": true
+      },
+      {
+        "inst": 9,
+        "val_valid": true
+      },
+      {
+        "inst": 10,
+        "val_valid": true
+      },
+      {
+        "inst": 11,
+        "val_valid": true
+      }
+    ]
+  },
+  "depots": {
+    "n_val_valid": 10,
+    "n_total": 10,
+    "per_instance": [
+      {
+        "inst": 2,
+        "val_valid": true
+      },
+      {
+        "inst": 3,
+        "val_valid": true
+      },
+      {
+        "inst": 4,
+        "val_valid": true
+      },
+      {
+        "inst": 5,
+        "val_valid": true
+      },
+      {
+        "inst": 6,
+        "val_valid": true
+      },
+      {
+        "inst": 7,
+        "val_valid": true
+      },
+      {
+        "inst": 8,
+        "val_valid": true
+      },
+      {
+        "inst": 9,
+        "val_valid": true
+      },
+      {
+        "inst": 10,
+        "val_valid": true
+      },
+      {
+        "inst": 11,
+        "val_valid": true
+      }
+    ]
+  }
+}

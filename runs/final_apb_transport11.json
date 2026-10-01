@@ -1,0 +1,46 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "n_rollouts": 5,
+  "max_instances": 3,
+  "summary": {
+    "transport11": {
+      "n_solved": 2,
+      "n_total": 3,
+      "success_rate": 0.6666666666666666
+    }
+  },
+  "rows": [
+    {
+      "domain": "transport11",
+      "n_solved": 2,
+      "n_total": 3,
+      "success_rate": 0.6666666666666666,
+      "per_instance": [
+        {
+          "instance_id": 1,
+          "success": true,
+          "n_applied": 17,
+          "error": "",
+          "seconds": 81.56300687789917,
+          "plan": "(drive truck-1 city-1-loc-3 city-1-loc-2)\n(pick-up truck-1 city-1-loc-2 package-2 capacity-2 capacity-3)\n(pick-up truck-1 city-1-loc-2 package-4 capacity-1 capacity-2)\n(drive truck-1 city-1-loc-2 city"
+        },
+        {
+          "instance_id": 10,
+          "success": true,
+          "n_applied": 37,
+          "error": "",
+          "seconds": 132.22095584869385,
+          "plan": "(drive truck-2 city-loc-11 city-loc-1)\n(drive truck-1 city-loc-4 city-loc-7)\n(drive truck-1 city-loc-7 city-loc-9)\n(pick-up truck-3 city-loc-12 package-2 capacity-3 capacity-4)\n(drive truck-3 city-loc"
+        },
+        {
+          "instance_id": 11,
+          "success": false,
+          "error": "compile (BFS+A*): no plan",
+          "seconds": 60.14129304885864
+        }
+      ]
+    }
+  ],
+  "total_solved": 2,
+  "total": 3
+}

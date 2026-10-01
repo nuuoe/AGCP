@@ -1,0 +1,1213 @@
+{
+  "suite": "planbench",
+  "timeout": 60,
+  "fix_format": true,
+  "aggregate": {
+    "blocksworld_3": {
+      "n": 10,
+      "bfs_ok": 10,
+      "cap_hit": 0,
+      "astar_needed": 0,
+      "astar_ok": 0,
+      "load_or_rollout_error": 0
+    },
+    "mystery_blocksworld_3": {
+      "n": 10,
+      "bfs_ok": 10,
+      "cap_hit": 0,
+      "astar_needed": 0,
+      "astar_ok": 0,
+      "load_or_rollout_error": 0
+    },
+    "logistics": {
+      "n": 10,
+      "bfs_ok": 10,
+      "cap_hit": 0,
+      "astar_needed": 0,
+      "astar_ok": 0,
+      "load_or_rollout_error": 0
+    },
+    "depots": {
+      "n": 30,
+      "bfs_ok": 0,
+      "cap_hit": 30,
+      "astar_needed": 30,
+      "astar_ok": 30,
+      "load_or_rollout_error": 0
+    }
+  },
+  "rows": [
+    {
+      "domain_file": "external/LLMs-Planning/plan-bench/instances/blocksworld/generated_domain.pddl",
+      "instance_file": "external/LLMs-Planning/plan-bench/instances/blocksworld/generated_basic_3/instance-2.pddl",
+      "bfs_seconds": 0.01,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 22,
+        "n_transitions": 42,
+        "n_goal_states": 1,
+        "shortest": 4,
+        "budget": 8
+      },
+      "bfs_grammar": true,
+      "bfs_error": null,
+      "suite": "planbench",
+      "domain": "blocksworld_3",
+      "instance_id": 2
+    },
+    {
+      "domain_file": "external/LLMs-Planning/plan-bench/instances/blocksworld/generated_domain.pddl",
+      "instance_file": "external/LLMs-Planning/plan-bench/instances/blocksworld/generated_basic_3/instance-3.pddl",
+      "bfs_seconds": 0.01,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 22,
+        "n_transitions": 42,
+        "n_goal_states": 1,
+        "shortest": 8,
+        "budget": 12
+      },
+      "bfs_grammar": true,
+      "bfs_error": null,
+      "suite": "planbench",
+      "domain": "blocksworld_3",
+      "instance_id": 3
+    },
+    {
+      "domain_file": "external/LLMs-Planning/plan-bench/instances/blocksworld/generated_domain.pddl",
+      "instance_file": "external/LLMs-Planning/plan-bench/instances/blocksworld/generated_basic_3/instance-4.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 22,
+        "n_transitions": 42,
+        "n_goal_states": 4,
+        "shortest": 4,
+        "budget": 8
+      },
+      "bfs_grammar": true,
+      "bfs_error": null,
+      "suite": "planbench",
+      "domain": "blocksworld_3",
+      "instance_id": 4
+    },
+    {
+      "domain_file": "external/LLMs-Planning/plan-bench/instances/blocksworld/generated_domain.pddl",
+      "instance_file": "external/LLMs-Planning/plan-bench/instances/blocksworld/generated_basic_3/instance-5.pddl",
+      "bfs_seconds": 0.01,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 22,
+        "n_transitions": 42,
+        "n_goal_states": 1,
+        "shortest": 8,
+        "budget": 12
+      },
+      "bfs_grammar": true,
+      "bfs_error": null,
+      "suite": "planbench",
+      "domain": "blocksworld_3",
+      "instance_id": 5
+    },
+    {
+      "domain_file": "external/LLMs-Planning/plan-bench/instances/blocksworld/generated_domain.pddl",
+      "instance_file": "external/LLMs-Planning/plan-bench/instances/blocksworld/generated_basic_3/instance-6.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 22,
+        "n_transitions": 42,
+        "n_goal_states": 1,
+        "shortest": 6,
+        "budget": 10
+      },
+      "bfs_grammar": true,
+      "bfs_error": null,
+      "suite": "planbench",
+      "domain": "blocksworld_3",
+      "instance_id": 6
+    },
+    {
+      "domain_file": "external/LLMs-Planning/plan-bench/instances/blocksworld/generated_domain.pddl",
+      "instance_file": "external/LLMs-Planning/plan-bench/instances/blocksworld/generated_basic_3/instance-7.pddl",
+      "bfs_seconds": 0.01,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 22,
+        "n_transitions": 42,
+        "n_goal_states": 1,
+        "shortest": 6,
+        "budget": 10
+      },
+      "bfs_grammar": true,
+      "bfs_error": null,
+      "suite": "planbench",
+      "domain": "blocksworld_3",
+      "instance_id": 7
+    },
+    {
+      "domain_file": "external/LLMs-Planning/plan-bench/instances/blocksworld/generated_domain.pddl",
+      "instance_file": "external/LLMs-Planning/plan-bench/instances/blocksworld/generated_basic_3/instance-8.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 22,
+        "n_transitions": 42,
+        "n_goal_states": 4,
+        "shortest": 2,
+        "budget": 6
+      },
+      "bfs_grammar": true,
+      "bfs_error": null,
+      "suite": "planbench",
+      "domain": "blocksworld_3",
+      "instance_id": 8
+    },
+    {
+      "domain_file": "external/LLMs-Planning/plan-bench/instances/blocksworld/generated_domain.pddl",
+      "instance_file": "external/LLMs-Planning/plan-bench/instances/blocksworld/generated_basic_3/instance-9.pddl",
+      "bfs_seconds": 0.01,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 22,
+        "n_transitions": 42,
+        "n_goal_states": 4,
+        "shortest": 4,
+        "budget": 8
+      },
+      "bfs_grammar": true,
+      "bfs_error": null,
+      "suite": "planbench",
+      "domain": "blocksworld_3",
+      "instance_id": 9
+    },
+    {
+      "domain_file": "external/LLMs-Planning/plan-bench/instances/blocksworld/generated_domain.pddl",
+      "instance_file": "external/LLMs-Planning/plan-bench/instances/blocksworld/generated_basic_3/instance-10.pddl",
+      "bfs_seconds": 0.01,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 22,
+        "n_transitions": 42,
+        "n_goal_states": 1,
+        "shortest": 6,
+        "budget": 10
+      },
+      "bfs_grammar": true,
+      "bfs_error": null,
+      "suite": "planbench",
+      "domain": "blocksworld_3",
+      "instance_id": 10
+    },
+    {
+      "domain_file": "external/LLMs-Planning/plan-bench/instances/blocksworld/generated_domain.pddl",
+      "instance_file": "external/LLMs-Planning/plan-bench/instances/blocksworld/generated_basic_3/instance-11.pddl",
+      "bfs_seconds": 0.01,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 22,
+        "n_transitions": 42,
+        "n_goal_states": 1,
+        "shortest": 8,
+        "budget": 12
+      },
+      "bfs_grammar": true,
+      "bfs_error": null,
+      "suite": "planbench",
+      "domain": "blocksworld_3",
+      "instance_id": 11
+    },
+    {
+      "domain_file": "external/LLMs-Planning/plan-bench/instances/blocksworld/mystery/generated_domain.pddl",
+      "instance_file": "external/LLMs-Planning/plan-bench/instances/blocksworld/mystery/generated_basic_3/instance-2.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 22,
+        "n_transitions": 42,
+        "n_goal_states": 1,
+        "shortest": 4,
+        "budget": 8
+      },
+      "bfs_grammar": true,
+      "bfs_error": null,
+      "suite": "planbench",
+      "domain": "mystery_blocksworld_3",
+      "instance_id": 2
+    },
+    {
+      "domain_file": "external/LLMs-Planning/plan-bench/instances/blocksworld/mystery/generated_domain.pddl",
+      "instance_file": "external/LLMs-Planning/plan-bench/instances/blocksworld/mystery/generated_basic_3/instance-3.pddl",
+      "bfs_seconds": 0.01,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 22,
+        "n_transitions": 42,
+        "n_goal_states": 1,
+        "shortest": 8,
+        "budget": 12
+      },
+      "bfs_grammar": true,
+      "bfs_error": null,
+      "suite": "planbench",
+      "domain": "mystery_blocksworld_3",
+      "instance_id": 3
+    },
+    {
+      "domain_file": "external/LLMs-Planning/plan-bench/instances/blocksworld/mystery/generated_domain.pddl",
+      "instance_file": "external/LLMs-Planning/plan-bench/instances/blocksworld/mystery/generated_basic_3/instance-4.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 22,
+        "n_transitions": 42,
+        "n_goal_states": 4,
+        "shortest": 4,
+        "budget": 8
+      },
+      "bfs_grammar": true,
+      "bfs_error": null,
+      "suite": "planbench",
+      "domain": "mystery_blocksworld_3",
+      "instance_id": 4
+    },
+    {
+      "domain_file": "external/LLMs-Planning/plan-bench/instances/blocksworld/mystery/generated_domain.pddl",
+      "instance_file": "external/LLMs-Planning/plan-bench/instances/blocksworld/mystery/generated_basic_3/instance-5.pddl",
+      "bfs_seconds": 0.01,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 22,
+        "n_transitions": 42,
+        "n_goal_states": 1,
+        "shortest": 8,
+        "budget": 12
+      },
+      "bfs_grammar": true,
+      "bfs_error": null,
+      "suite": "planbench",
+      "domain": "mystery_blocksworld_3",
+      "instance_id": 5
+    },
+    {
+      "domain_file": "external/LLMs-Planning/plan-bench/instances/blocksworld/mystery/generated_domain.pddl",
+      "instance_file": "external/LLMs-Planning/plan-bench/instances/blocksworld/mystery/generated_basic_3/instance-6.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 22,
+        "n_transitions": 42,
+        "n_goal_states": 1,
+        "shortest": 6,
+        "budget": 10
+      },
+      "bfs_grammar": true,
+      "bfs_error": null,
+      "suite": "planbench",
+      "domain": "mystery_blocksworld_3",
+      "instance_id": 6
+    },
+    {
+      "domain_file": "external/LLMs-Planning/plan-bench/instances/blocksworld/mystery/generated_domain.pddl",
+      "instance_file": "external/LLMs-Planning/plan-bench/instances/blocksworld/mystery/generated_basic_3/instance-7.pddl",
+      "bfs_seconds": 0.01,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 22,
+        "n_transitions": 42,
+        "n_goal_states": 1,
+        "shortest": 6,
+        "budget": 10
+      },
+      "bfs_grammar": true,
+      "bfs_error": null,
+      "suite": "planbench",
+      "domain": "mystery_blocksworld_3",
+      "instance_id": 7
+    },
+    {
+      "domain_file": "external/LLMs-Planning/plan-bench/instances/blocksworld/mystery/generated_domain.pddl",
+      "instance_file": "external/LLMs-Planning/plan-bench/instances/blocksworld/mystery/generated_basic_3/instance-8.pddl",
+      "bfs_seconds": 0.0,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 22,
+        "n_transitions": 42,
+        "n_goal_states": 4,
+        "shortest": 2,
+        "budget": 6
+      },
+      "bfs_grammar": true,
+      "bfs_error": null,
+      "suite": "planbench",
+      "domain": "mystery_blocksworld_3",
+      "instance_id": 8
+    },
+    {
+      "domain_file": "external/LLMs-Planning/plan-bench/instances/blocksworld/mystery/generated_domain.pddl",
+      "instance_file": "external/LLMs-Planning/plan-bench/instances/blocksworld/mystery/generated_basic_3/instance-9.pddl",
+      "bfs_seconds": 0.01,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 22,
+        "n_transitions": 42,
+        "n_goal_states": 4,
+        "shortest": 4,
+        "budget": 8
+      },
+      "bfs_grammar": true,
+      "bfs_error": null,
+      "suite": "planbench",
+      "domain": "mystery_blocksworld_3",
+      "instance_id": 9
+    },
+    {
+      "domain_file": "external/LLMs-Planning/plan-bench/instances/blocksworld/mystery/generated_domain.pddl",
+      "instance_file": "external/LLMs-Planning/plan-bench/instances/blocksworld/mystery/generated_basic_3/instance-10.pddl",
+      "bfs_seconds": 0.01,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 22,
+        "n_transitions": 42,
+        "n_goal_states": 1,
+        "shortest": 6,
+        "budget": 10
+      },
+      "bfs_grammar": true,
+      "bfs_error": null,
+      "suite": "planbench",
+      "domain": "mystery_blocksworld_3",
+      "instance_id": 10
+    },
+    {
+      "domain_file": "external/LLMs-Planning/plan-bench/instances/blocksworld/mystery/generated_domain.pddl",
+      "instance_file": "external/LLMs-Planning/plan-bench/instances/blocksworld/mystery/generated_basic_3/instance-11.pddl",
+      "bfs_seconds": 0.01,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 22,
+        "n_transitions": 42,
+        "n_goal_states": 1,
+        "shortest": 8,
+        "budget": 12
+      },
+      "bfs_grammar": true,
+      "bfs_error": null,
+      "suite": "planbench",
+      "domain": "mystery_blocksworld_3",
+      "instance_id": 11
+    },
+    {
+      "domain_file": "external/LLMs-Planning/plan-bench/instances/logistics/generated_domain.pddl",
+      "instance_file": "external/LLMs-Planning/plan-bench/instances/logistics/generated_basic/instance-2.pddl",
+      "bfs_seconds": 0.01,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 24,
+        "n_transitions": 128,
+        "n_goal_states": 4,
+        "shortest": 3,
+        "budget": 7
+      },
+      "bfs_grammar": true,
+      "bfs_error": null,
+      "suite": "planbench",
+      "domain": "logistics",
+      "instance_id": 2
+    },
+    {
+      "domain_file": "external/LLMs-Planning/plan-bench/instances/logistics/generated_domain.pddl",
+      "instance_file": "external/LLMs-Planning/plan-bench/instances/logistics/generated_basic/instance-3.pddl",
+      "bfs_seconds": 0.01,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 50,
+        "n_transitions": 220,
+        "n_goal_states": 2,
+        "shortest": 4,
+        "budget": 8
+      },
+      "bfs_grammar": true,
+      "bfs_error": null,
+      "suite": "planbench",
+      "domain": "logistics",
+      "instance_id": 3
+    },
+    {
+      "domain_file": "external/LLMs-Planning/plan-bench/instances/logistics/generated_domain.pddl",
+      "instance_file": "external/LLMs-Planning/plan-bench/instances/logistics/generated_basic/instance-4.pddl",
+      "bfs_seconds": 0.02,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 50,
+        "n_transitions": 220,
+        "n_goal_states": 2,
+        "shortest": 5,
+        "budget": 9
+      },
+      "bfs_grammar": true,
+      "bfs_error": null,
+      "suite": "planbench",
+      "domain": "logistics",
+      "instance_id": 4
+    },
+    {
+      "domain_file": "external/LLMs-Planning/plan-bench/instances/logistics/generated_domain.pddl",
+      "instance_file": "external/LLMs-Planning/plan-bench/instances/logistics/generated_basic/instance-5.pddl",
+      "bfs_seconds": 0.06,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 144,
+        "n_transitions": 960,
+        "n_goal_states": 4,
+        "shortest": 4,
+        "budget": 8
+      },
+      "bfs_grammar": true,
+      "bfs_error": null,
+      "suite": "planbench",
+      "domain": "logistics",
+      "instance_id": 5
+    },
+    {
+      "domain_file": "external/LLMs-Planning/plan-bench/instances/logistics/generated_domain.pddl",
+      "instance_file": "external/LLMs-Planning/plan-bench/instances/logistics/generated_basic/instance-6.pddl",
+      "bfs_seconds": 0.02,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 56,
+        "n_transitions": 384,
+        "n_goal_states": 8,
+        "shortest": 3,
+        "budget": 7
+      },
+      "bfs_grammar": true,
+      "bfs_error": null,
+      "suite": "planbench",
+      "domain": "logistics",
+      "instance_id": 6
+    },
+    {
+      "domain_file": "external/LLMs-Planning/plan-bench/instances/logistics/generated_domain.pddl",
+      "instance_file": "external/LLMs-Planning/plan-bench/instances/logistics/generated_basic/instance-7.pddl",
+      "bfs_seconds": 0.03,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 56,
+        "n_transitions": 384,
+        "n_goal_states": 8,
+        "shortest": 7,
+        "budget": 11
+      },
+      "bfs_grammar": true,
+      "bfs_error": null,
+      "suite": "planbench",
+      "domain": "logistics",
+      "instance_id": 7
+    },
+    {
+      "domain_file": "external/LLMs-Planning/plan-bench/instances/logistics/generated_domain.pddl",
+      "instance_file": "external/LLMs-Planning/plan-bench/instances/logistics/generated_basic/instance-8.pddl",
+      "bfs_seconds": 0.09,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 128,
+        "n_transitions": 1152,
+        "n_goal_states": 16,
+        "shortest": 6,
+        "budget": 10
+      },
+      "bfs_grammar": true,
+      "bfs_error": null,
+      "suite": "planbench",
+      "domain": "logistics",
+      "instance_id": 8
+    },
+    {
+      "domain_file": "external/LLMs-Planning/plan-bench/instances/logistics/generated_domain.pddl",
+      "instance_file": "external/LLMs-Planning/plan-bench/instances/logistics/generated_basic/instance-9.pddl",
+      "bfs_seconds": 0.15,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 392,
+        "n_transitions": 3024,
+        "n_goal_states": 8,
+        "shortest": 3,
+        "budget": 7
+      },
+      "bfs_grammar": true,
+      "bfs_error": null,
+      "suite": "planbench",
+      "domain": "logistics",
+      "instance_id": 9
+    },
+    {
+      "domain_file": "external/LLMs-Planning/plan-bench/instances/logistics/generated_domain.pddl",
+      "instance_file": "external/LLMs-Planning/plan-bench/instances/logistics/generated_basic/instance-10.pddl",
+      "bfs_seconds": 0.18,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 392,
+        "n_transitions": 3024,
+        "n_goal_states": 8,
+        "shortest": 5,
+        "budget": 9
+      },
+      "bfs_grammar": true,
+      "bfs_error": null,
+      "suite": "planbench",
+      "domain": "logistics",
+      "instance_id": 10
+    },
+    {
+      "domain_file": "external/LLMs-Planning/plan-bench/instances/logistics/generated_domain.pddl",
+      "instance_file": "external/LLMs-Planning/plan-bench/instances/logistics/generated_basic/instance-11.pddl",
+      "bfs_seconds": 0.69,
+      "bfs_stats": {
+        "cap_hit": false,
+        "n_reachable": 1024,
+        "n_transitions": 10240,
+        "n_goal_states": 16,
+        "shortest": 7,
+        "budget": 11
+      },
+      "bfs_grammar": true,
+      "bfs_error": null,
+      "suite": "planbench",
+      "domain": "logistics",
+      "instance_id": 11
+    },
+    {
+      "domain_file": "external/LLMs-Planning/plan-bench/instances/depots/generated_domain.pddl",
+      "instance_file": "external/LLMs-Planning/plan-bench/instances/depots/generated_basic/instance-2.pddl",
+      "bfs_seconds": 38.86,
+      "bfs_stats": {
+        "cap_hit": true,
+        "n_reachable": 5000,
+        "n_transitions": 37687,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.81,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 6,
+      "suite": "planbench",
+      "domain": "depots",
+      "instance_id": 2
+    },
+    {
+      "domain_file": "external/LLMs-Planning/plan-bench/instances/depots/generated_domain.pddl",
+      "instance_file": "external/LLMs-Planning/plan-bench/instances/depots/generated_basic/instance-3.pddl",
+      "bfs_seconds": 40.3,
+      "bfs_stats": {
+        "cap_hit": true,
+        "n_reachable": 5000,
+        "n_transitions": 37976,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.43,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 7,
+      "suite": "planbench",
+      "domain": "depots",
+      "instance_id": 3
+    },
+    {
+      "domain_file": "external/LLMs-Planning/plan-bench/instances/depots/generated_domain.pddl",
+      "instance_file": "external/LLMs-Planning/plan-bench/instances/depots/generated_basic/instance-4.pddl",
+      "bfs_seconds": 60.01,
+      "bfs_stats": {
+        "cap_hit": true,
+        "n_reachable": 5000,
+        "n_transitions": 37846,
+        "n_goal_states": 75,
+        "shortest": 5,
+        "budget": 9
+      },
+      "bfs_grammar": false,
+      "bfs_error": "timeout after 60s",
+      "astar_seconds": 0.01,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 2,
+      "suite": "planbench",
+      "domain": "depots",
+      "instance_id": 4
+    },
+    {
+      "domain_file": "external/LLMs-Planning/plan-bench/instances/depots/generated_domain.pddl",
+      "instance_file": "external/LLMs-Planning/plan-bench/instances/depots/generated_basic/instance-5.pddl",
+      "bfs_seconds": 44.3,
+      "bfs_stats": {
+        "cap_hit": true,
+        "n_reachable": 5002,
+        "n_transitions": 41814,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.05,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 8,
+      "suite": "planbench",
+      "domain": "depots",
+      "instance_id": 5
+    },
+    {
+      "domain_file": "external/LLMs-Planning/plan-bench/instances/depots/generated_domain.pddl",
+      "instance_file": "external/LLMs-Planning/plan-bench/instances/depots/generated_basic/instance-6.pddl",
+      "bfs_seconds": 44.59,
+      "bfs_stats": {
+        "cap_hit": true,
+        "n_reachable": 5001,
+        "n_transitions": 40753,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 2.09,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 7,
+      "suite": "planbench",
+      "domain": "depots",
+      "instance_id": 6
+    },
+    {
+      "domain_file": "external/LLMs-Planning/plan-bench/instances/depots/generated_domain.pddl",
+      "instance_file": "external/LLMs-Planning/plan-bench/instances/depots/generated_basic/instance-7.pddl",
+      "bfs_seconds": 40.99,
+      "bfs_stats": {
+        "cap_hit": true,
+        "n_reachable": 5000,
+        "n_transitions": 36378,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.04,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 5,
+      "suite": "planbench",
+      "domain": "depots",
+      "instance_id": 7
+    },
+    {
+      "domain_file": "external/LLMs-Planning/plan-bench/instances/depots/generated_domain.pddl",
+      "instance_file": "external/LLMs-Planning/plan-bench/instances/depots/generated_basic/instance-8.pddl",
+      "bfs_seconds": 44.56,
+      "bfs_stats": {
+        "cap_hit": true,
+        "n_reachable": 5001,
+        "n_transitions": 40481,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.69,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 8,
+      "suite": "planbench",
+      "domain": "depots",
+      "instance_id": 8
+    },
+    {
+      "domain_file": "external/LLMs-Planning/plan-bench/instances/depots/generated_domain.pddl",
+      "instance_file": "external/LLMs-Planning/plan-bench/instances/depots/generated_basic/instance-9.pddl",
+      "bfs_seconds": 41.19,
+      "bfs_stats": {
+        "cap_hit": true,
+        "n_reachable": 5004,
+        "n_transitions": 38585,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 3.3,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 7,
+      "suite": "planbench",
+      "domain": "depots",
+      "instance_id": 9
+    },
+    {
+      "domain_file": "external/LLMs-Planning/plan-bench/instances/depots/generated_domain.pddl",
+      "instance_file": "external/LLMs-Planning/plan-bench/instances/depots/generated_basic/instance-10.pddl",
+      "bfs_seconds": 41.2,
+      "bfs_stats": {
+        "cap_hit": true,
+        "n_reachable": 5001,
+        "n_transitions": 37728,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.02,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 4,
+      "suite": "planbench",
+      "domain": "depots",
+      "instance_id": 10
+    },
+    {
+      "domain_file": "external/LLMs-Planning/plan-bench/instances/depots/generated_domain.pddl",
+      "instance_file": "external/LLMs-Planning/plan-bench/instances/depots/generated_basic/instance-11.pddl",
+      "bfs_seconds": 60.02,
+      "bfs_stats": {
+        "cap_hit": true,
+        "n_reachable": 5000,
+        "n_transitions": 41748,
+        "n_goal_states": 40,
+        "shortest": 5,
+        "budget": 9
+      },
+      "bfs_grammar": false,
+      "bfs_error": "timeout after 60s",
+      "astar_seconds": 0.01,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 2,
+      "suite": "planbench",
+      "domain": "depots",
+      "instance_id": 11
+    },
+    {
+      "domain_file": "external/LLMs-Planning/plan-bench/instances/depots/generated_domain.pddl",
+      "instance_file": "external/LLMs-Planning/plan-bench/instances/depots/generated_basic/instance-12.pddl",
+      "bfs_seconds": 43.57,
+      "bfs_stats": {
+        "cap_hit": true,
+        "n_reachable": 5002,
+        "n_transitions": 39975,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.06,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 8,
+      "suite": "planbench",
+      "domain": "depots",
+      "instance_id": 12
+    },
+    {
+      "domain_file": "external/LLMs-Planning/plan-bench/instances/depots/generated_domain.pddl",
+      "instance_file": "external/LLMs-Planning/plan-bench/instances/depots/generated_basic/instance-13.pddl",
+      "bfs_seconds": 40.7,
+      "bfs_stats": {
+        "cap_hit": true,
+        "n_reachable": 5000,
+        "n_transitions": 36141,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.65,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 7,
+      "suite": "planbench",
+      "domain": "depots",
+      "instance_id": 13
+    },
+    {
+      "domain_file": "external/LLMs-Planning/plan-bench/instances/depots/generated_domain.pddl",
+      "instance_file": "external/LLMs-Planning/plan-bench/instances/depots/generated_basic/instance-14.pddl",
+      "bfs_seconds": 44.38,
+      "bfs_stats": {
+        "cap_hit": true,
+        "n_reachable": 5001,
+        "n_transitions": 39689,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.03,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 6,
+      "suite": "planbench",
+      "domain": "depots",
+      "instance_id": 14
+    },
+    {
+      "domain_file": "external/LLMs-Planning/plan-bench/instances/depots/generated_domain.pddl",
+      "instance_file": "external/LLMs-Planning/plan-bench/instances/depots/generated_basic/instance-15.pddl",
+      "bfs_seconds": 45.3,
+      "bfs_stats": {
+        "cap_hit": true,
+        "n_reachable": 5000,
+        "n_transitions": 41557,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 2.03,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 4,
+      "suite": "planbench",
+      "domain": "depots",
+      "instance_id": 15
+    },
+    {
+      "domain_file": "external/LLMs-Planning/plan-bench/instances/depots/generated_domain.pddl",
+      "instance_file": "external/LLMs-Planning/plan-bench/instances/depots/generated_basic/instance-16.pddl",
+      "bfs_seconds": 45.12,
+      "bfs_stats": {
+        "cap_hit": true,
+        "n_reachable": 5003,
+        "n_transitions": 39496,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.04,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 7,
+      "suite": "planbench",
+      "domain": "depots",
+      "instance_id": 16
+    },
+    {
+      "domain_file": "external/LLMs-Planning/plan-bench/instances/depots/generated_domain.pddl",
+      "instance_file": "external/LLMs-Planning/plan-bench/instances/depots/generated_basic/instance-17.pddl",
+      "bfs_seconds": 42.6,
+      "bfs_stats": {
+        "cap_hit": true,
+        "n_reachable": 5002,
+        "n_transitions": 37920,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.76,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 8,
+      "suite": "planbench",
+      "domain": "depots",
+      "instance_id": 17
+    },
+    {
+      "domain_file": "external/LLMs-Planning/plan-bench/instances/depots/generated_domain.pddl",
+      "instance_file": "external/LLMs-Planning/plan-bench/instances/depots/generated_basic/instance-18.pddl",
+      "bfs_seconds": 41.93,
+      "bfs_stats": {
+        "cap_hit": true,
+        "n_reachable": 5003,
+        "n_transitions": 37764,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.48,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 7,
+      "suite": "planbench",
+      "domain": "depots",
+      "instance_id": 18
+    },
+    {
+      "domain_file": "external/LLMs-Planning/plan-bench/instances/depots/generated_domain.pddl",
+      "instance_file": "external/LLMs-Planning/plan-bench/instances/depots/generated_basic/instance-19.pddl",
+      "bfs_seconds": 42.15,
+      "bfs_stats": {
+        "cap_hit": true,
+        "n_reachable": 5000,
+        "n_transitions": 37918,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.1,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 8,
+      "suite": "planbench",
+      "domain": "depots",
+      "instance_id": 19
+    },
+    {
+      "domain_file": "external/LLMs-Planning/plan-bench/instances/depots/generated_domain.pddl",
+      "instance_file": "external/LLMs-Planning/plan-bench/instances/depots/generated_basic/instance-20.pddl",
+      "bfs_seconds": 42.83,
+      "bfs_stats": {
+        "cap_hit": true,
+        "n_reachable": 5000,
+        "n_transitions": 39605,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.07,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 5,
+      "suite": "planbench",
+      "domain": "depots",
+      "instance_id": 20
+    },
+    {
+      "domain_file": "external/LLMs-Planning/plan-bench/instances/depots/generated_domain.pddl",
+      "instance_file": "external/LLMs-Planning/plan-bench/instances/depots/generated_basic/instance-21.pddl",
+      "bfs_seconds": 42.0,
+      "bfs_stats": {
+        "cap_hit": true,
+        "n_reachable": 5000,
+        "n_transitions": 37750,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.57,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 5,
+      "suite": "planbench",
+      "domain": "depots",
+      "instance_id": 21
+    },
+    {
+      "domain_file": "external/LLMs-Planning/plan-bench/instances/depots/generated_domain.pddl",
+      "instance_file": "external/LLMs-Planning/plan-bench/instances/depots/generated_basic/instance-22.pddl",
+      "bfs_seconds": 46.17,
+      "bfs_stats": {
+        "cap_hit": true,
+        "n_reachable": 5000,
+        "n_transitions": 41748,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.02,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 5,
+      "suite": "planbench",
+      "domain": "depots",
+      "instance_id": 22
+    },
+    {
+      "domain_file": "external/LLMs-Planning/plan-bench/instances/depots/generated_domain.pddl",
+      "instance_file": "external/LLMs-Planning/plan-bench/instances/depots/generated_basic/instance-23.pddl",
+      "bfs_seconds": 48.09,
+      "bfs_stats": {
+        "cap_hit": true,
+        "n_reachable": 5001,
+        "n_transitions": 39673,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 6.85,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 8,
+      "suite": "planbench",
+      "domain": "depots",
+      "instance_id": 23
+    },
+    {
+      "domain_file": "external/LLMs-Planning/plan-bench/instances/depots/generated_domain.pddl",
+      "instance_file": "external/LLMs-Planning/plan-bench/instances/depots/generated_basic/instance-24.pddl",
+      "bfs_seconds": 46.13,
+      "bfs_stats": {
+        "cap_hit": true,
+        "n_reachable": 5002,
+        "n_transitions": 39276,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 1.94,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 5,
+      "suite": "planbench",
+      "domain": "depots",
+      "instance_id": 24
+    },
+    {
+      "domain_file": "external/LLMs-Planning/plan-bench/instances/depots/generated_domain.pddl",
+      "instance_file": "external/LLMs-Planning/plan-bench/instances/depots/generated_basic/instance-25.pddl",
+      "bfs_seconds": 47.86,
+      "bfs_stats": {
+        "cap_hit": true,
+        "n_reachable": 5002,
+        "n_transitions": 39591,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 2.73,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 7,
+      "suite": "planbench",
+      "domain": "depots",
+      "instance_id": 25
+    },
+    {
+      "domain_file": "external/LLMs-Planning/plan-bench/instances/depots/generated_domain.pddl",
+      "instance_file": "external/LLMs-Planning/plan-bench/instances/depots/generated_basic/instance-26.pddl",
+      "bfs_seconds": 45.18,
+      "bfs_stats": {
+        "cap_hit": true,
+        "n_reachable": 5001,
+        "n_transitions": 39412,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 1.89,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 8,
+      "suite": "planbench",
+      "domain": "depots",
+      "instance_id": 26
+    },
+    {
+      "domain_file": "external/LLMs-Planning/plan-bench/instances/depots/generated_domain.pddl",
+      "instance_file": "external/LLMs-Planning/plan-bench/instances/depots/generated_basic/instance-27.pddl",
+      "bfs_seconds": 44.65,
+      "bfs_stats": {
+        "cap_hit": true,
+        "n_reachable": 5000,
+        "n_transitions": 36923,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 4.07,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 7,
+      "suite": "planbench",
+      "domain": "depots",
+      "instance_id": 27
+    },
+    {
+      "domain_file": "external/LLMs-Planning/plan-bench/instances/depots/generated_domain.pddl",
+      "instance_file": "external/LLMs-Planning/plan-bench/instances/depots/generated_basic/instance-28.pddl",
+      "bfs_seconds": 43.94,
+      "bfs_stats": {
+        "cap_hit": true,
+        "n_reachable": 5000,
+        "n_transitions": 39495,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.04,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 7,
+      "suite": "planbench",
+      "domain": "depots",
+      "instance_id": 28
+    },
+    {
+      "domain_file": "external/LLMs-Planning/plan-bench/instances/depots/generated_domain.pddl",
+      "instance_file": "external/LLMs-Planning/plan-bench/instances/depots/generated_basic/instance-29.pddl",
+      "bfs_seconds": 42.91,
+      "bfs_stats": {
+        "cap_hit": true,
+        "n_reachable": 5002,
+        "n_transitions": 37920,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.02,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 4,
+      "suite": "planbench",
+      "domain": "depots",
+      "instance_id": 29
+    },
+    {
+      "domain_file": "external/LLMs-Planning/plan-bench/instances/depots/generated_domain.pddl",
+      "instance_file": "external/LLMs-Planning/plan-bench/instances/depots/generated_basic/instance-30.pddl",
+      "bfs_seconds": 46.33,
+      "bfs_stats": {
+        "cap_hit": true,
+        "n_reachable": 5000,
+        "n_transitions": 41169,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 4.3,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 7,
+      "suite": "planbench",
+      "domain": "depots",
+      "instance_id": 30
+    },
+    {
+      "domain_file": "external/LLMs-Planning/plan-bench/instances/depots/generated_domain.pddl",
+      "instance_file": "external/LLMs-Planning/plan-bench/instances/depots/generated_basic/instance-31.pddl",
+      "bfs_seconds": 40.73,
+      "bfs_stats": {
+        "cap_hit": true,
+        "n_reachable": 5000,
+        "n_transitions": 37571,
+        "n_goal_states": 0,
+        "fail_reason": "no_goal_state_in_reachable"
+      },
+      "bfs_grammar": false,
+      "bfs_error": "no_goal_state_in_reachable",
+      "astar_seconds": 0.04,
+      "astar_grammar": true,
+      "astar_error": null,
+      "astar_plan_len": 5,
+      "suite": "planbench",
+      "domain": "depots",
+      "instance_id": 31
+    }
+  ]
+}

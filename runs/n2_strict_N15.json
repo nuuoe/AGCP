@@ -1,0 +1,647 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "n_seeds": 15,
+  "n_llm_accepted": 11,
+  "llm_accept_rate": 0.7333333333333333,
+  "verifier": {
+    "min_distinct": 3,
+    "rel_threshold": 0.6,
+    "icl_exemplar": "abstract-warehouse (not Blocksworld)"
+  },
+  "rows": [
+    {
+      "seed": 0,
+      "llm_accepted": true,
+      "accuracy": 0.6666666666666666,
+      "n_unique_predicates": 3,
+      "llm_proposal": {
+        "predicates": [
+          {
+            "name": "cart_empty",
+            "arity": 0,
+            "kind": "field_eq_value",
+            "field": "support",
+            "value": null
+          },
+          {
+            "name": "at_c_table",
+            "arity": 2,
+            "kind": "field_at_X_eq_Y",
+            "field": "support",
+            "value": "TABLE"
+          },
+          {
+            "name": "no_d_on_table",
+            "arity": 1,
+            "kind": "forall_K_field_at_K_neq_X",
+            "field": "support",
+            "value": "TABLE"
+          }
+        ]
+      }
+    },
+    {
+      "seed": 1,
+      "llm_accepted": false,
+      "accuracy": 0.0,
+      "n_unique_predicates": 0,
+      "llm_proposal": {
+        "predicates": [
+          {
+            "name": "empty_support_d",
+            "arity": 0,
+            "kind": "field_eq_value",
+            "field": "support.d"
+          },
+          {
+            "name": "same_held_state",
+            "arity": 1,
+            "kind": "exists_K_field_at_K_eq_X",
+            "field": "held"
+          },
+          {
+            "name": "different_pos_c",
+            "arity": 1,
+            "kind": "forall_K_field_at_K_neq_X",
+            "field": "pos.c"
+          }
+        ]
+      }
+    },
+    {
+      "seed": 2,
+      "llm_accepted": true,
+      "accuracy": 0.8,
+      "n_unique_predicates": 5,
+      "llm_proposal": {
+        "predicates": [
+          {
+            "name": "in_support_c_d",
+            "arity": 0,
+            "kind": "exists_K_field_at_K_eq_X",
+            "field": "support",
+            "value": "c d"
+          },
+          {
+            "name": "in_support_c_d_held",
+            "arity": 0,
+            "kind": "exists_K_field_at_K_eq_X",
+            "field": "held",
+            "value": "null"
+          },
+          {
+            "name": "at_table",
+            "arity": 1,
+            "kind": "forall_K_field_at_K_neq_X",
+            "field": "support",
+            "value": "TABLE"
+          },
+          {
+            "name": "not_in_support_b",
+            "arity": 0,
+            "kind": "exists_K_field_at_K_eq_X",
+            "field": "support",
+            "value": "b"
+          },
+          {
+            "name": "no_supporter_for_a",
+            "arity": 0,
+            "kind": "exists_K_field_at_K_eq_X",
+            "field": "support",
+            "value": "a"
+          }
+        ]
+      }
+    },
+    {
+      "seed": 3,
+      "llm_accepted": false,
+      "accuracy": 0.0,
+      "n_unique_predicates": 0,
+      "llm_proposal": {
+        "predicates": [
+          {
+            "name": "empty_support_d",
+            "arity": 0,
+            "kind": "field_eq_value",
+            "field": "support.d"
+          },
+          {
+            "name": "holding_c_on_table",
+            "arity": 1,
+            "kind": "exists_K_field_at_K_eq_X",
+            "field": "held",
+            "value": "c"
+          },
+          {
+            "name": "no_table_between_a_and_b",
+            "arity": 1,
+            "kind": "forall_K_field_at_K_neq_X",
+            "field": "support.a",
+            "value": "TABLE"
+          }
+        ]
+      }
+    },
+    {
+      "seed": 4,
+      "llm_accepted": true,
+      "accuracy": 0.6,
+      "n_unique_predicates": 5,
+      "llm_proposal": {
+        "predicates": [
+          {
+            "name": "empty_support_c",
+            "arity": 0,
+            "kind": "field_eq_value",
+            "field": "support.c"
+          },
+          {
+            "name": "full_support_d",
+            "arity": 0,
+            "kind": "field_eq_value",
+            "field": "support.d"
+          },
+          {
+            "name": "at_b_on_table",
+            "arity": 1,
+            "kind": "field_at_X_eq_Y",
+            "field": "support",
+            "value": "TABLE"
+          },
+          {
+            "name": "at_c_on_table",
+            "arity": 1,
+            "kind": "field_at_X_eq_Y",
+            "field": "support",
+            "value": "TABLE"
+          },
+          {
+            "name": "at_d_on_table",
+            "arity": 1,
+            "kind": "field_at_X_eq_Y",
+            "field": "support",
+            "value": "TABLE"
+          }
+        ]
+      }
+    },
+    {
+      "seed": 5,
+      "llm_accepted": true,
+      "accuracy": 0.6,
+      "n_unique_predicates": 5,
+      "llm_proposal": {
+        "predicates": [
+          {
+            "name": "has_table_d",
+            "arity": 0,
+            "kind": "exists_K_field_at_K_eq_X",
+            "field": "support",
+            "value": "TABLE"
+          },
+          {
+            "name": "empty_held",
+            "arity": 0,
+            "kind": "field_eq_value",
+            "field": "held",
+            "value": ""
+          },
+          {
+            "name": "at_c_table",
+            "arity": 2,
+            "kind": "field_at_X_eq_Y",
+            "field": "support",
+            "value": "TABLE"
+          },
+          {
+            "name": "no_blocked_support",
+            "arity": 1,
+            "kind": "forall_K_field_at_K_neq_X",
+            "field": "support",
+            "value": ""
+          },
+          {
+            "name": "holding_b",
+            "arity": 1,
+            "kind": "exists_K_field_at_K_eq_X",
+            "field": "held",
+            "value": "b"
+          }
+        ]
+      }
+    },
+    {
+      "seed": 6,
+      "llm_accepted": true,
+      "accuracy": 0.7142857142857143,
+      "n_unique_predicates": 7,
+      "llm_proposal": {
+        "predicates": [
+          {
+            "name": "has_item_d",
+            "arity": 0,
+            "kind": "field_eq_value",
+            "field": "held",
+            "value": "d"
+          },
+          {
+            "name": "has_item_c",
+            "arity": 0,
+            "kind": "field_eq_value",
+            "field": "held",
+            "value": "c"
+          },
+          {
+            "name": "is_empty_support_table",
+            "arity": 0,
+            "kind": "field_eq_value",
+            "field": "support",
+            "value": ""
+          },
+          {
+            "name": "supports_b_and_c",
+            "arity": 1,
+            "kind": "exists_K_field_at_K_eq_X",
+            "field": "support",
+            "value": "TABLE"
+          },
+          {
+            "name": "holds_object_a_or_b",
+            "arity": 0,
+            "kind": "exists_K_field_at_K_eq_X",
+            "field": "held",
+            "value": "a"
+          },
+          {
+            "name": "position_of_a_is_same_as_position_of_b",
+            "arity": 1,
+            "kind": "forall_K_field_at_K_neq_X",
+            "field": "support",
+            "value": "a"
+          },
+          {
+            "name": "has_item_b_on_top_of_a",
+            "arity": 1,
+            "kind": "exists_K_field_at_K_eq_X",
+            "field": "support",
+            "value": "TABLE"
+          }
+        ]
+      }
+    },
+    {
+      "seed": 7,
+      "llm_accepted": false,
+      "accuracy": 0.0,
+      "n_unique_predicates": 0,
+      "llm_proposal": {
+        "predicates": [
+          {
+            "name": "empty_support_d",
+            "arity": 0,
+            "kind": "field_eq_value",
+            "field": "support.d"
+          },
+          {
+            "name": "held_a_state1",
+            "arity": 1,
+            "kind": "exists_K_field_at_K_eq_X",
+            "field": "held",
+            "value": "a"
+          },
+          {
+            "name": "no_table_holder_state2",
+            "arity": 1,
+            "kind": "forall_K_field_at_K_neq_X",
+            "field": "held",
+            "value": "null"
+          },
+          {
+            "name": "in_cart_c_state3",
+            "arity": 1,
+            "kind": "exists_K_field_at_K_eq_X",
+            "field": "held",
+            "value": "c"
+          },
+          {
+            "name": "all_tables_held_state4",
+            "arity": 0,
+            "kind": "field_eq_value",
+            "field": "held",
+            "value": ""
+          }
+        ]
+      }
+    },
+    {
+      "seed": 8,
+      "llm_accepted": true,
+      "accuracy": 0.7692307692307693,
+      "n_unique_predicates": 13,
+      "llm_proposal": {
+        "predicates": [
+          {
+            "name": "empty_support_a",
+            "arity": 0,
+            "kind": "field_eq_value",
+            "field": "support.a",
+            "value": null
+          },
+          {
+            "name": "empty_support_c",
+            "arity": 0,
+            "kind": "field_eq_value",
+            "field": "support.c",
+            "value": null
+          },
+          {
+            "name": "empty_support_d",
+            "arity": 0,
+            "kind": "field_eq_value",
+            "field": "support.d",
+            "value": null
+          },
+          {
+            "name": "empty_held",
+            "arity": 0,
+            "kind": "field_eq_value",
+            "field": "held",
+            "value": null
+          },
+          {
+            "name": "table_on_table_a",
+            "arity": 2,
+            "kind": "field_at_X_eq_Y",
+            "field": "support",
+            "value": {
+              "a": "TABLE"
+            }
+          },
+          {
+            "name": "table_on_table_c",
+            "arity": 2,
+            "kind": "field_at_X_eq_Y",
+            "field": "support",
+            "value": {
+              "c": "TABLE"
+            }
+          },
+          {
+            "name": "table_on_table_d",
+            "arity": 2,
+            "kind": "field_at_X_eq_Y",
+            "field": "support",
+            "value": {
+              "d": "TABLE"
+            }
+          },
+          {
+            "name": "blocker_a",
+            "arity": 1,
+            "kind": "exists_K_field_at_K_eq_X",
+            "field": "support",
+            "value": "a"
+          },
+          {
+            "name": "blocker_c",
+            "arity": 1,
+            "kind": "exists_K_field_at_K_eq_X",
+            "field": "support",
+            "value": "c"
+          },
+          {
+            "name": "blocker_d",
+            "arity": 1,
+            "kind": "exists_K_field_at_K_eq_X",
+            "field": "support",
+            "value": "d"
+          },
+          {
+            "name": "no_table_on_a",
+            "arity": 1,
+            "kind": "forall_K_field_at_K_neq_X",
+            "field": "support",
+            "value": "a"
+          },
+          {
+            "name": "no_table_on_c",
+            "arity": 1,
+            "kind": "forall_K_field_at_K_neq_X",
+            "field": "support",
+            "value": "c"
+          },
+          {
+            "name": "no_table_on_d",
+            "arity": 1,
+            "kind": "forall_K_field_at_K_neq_X",
+            "field": "support",
+            "value": "d"
+          }
+        ]
+      }
+    },
+    {
+      "seed": 9,
+      "llm_accepted": true,
+      "accuracy": 0.6666666666666666,
+      "n_unique_predicates": 3,
+      "llm_proposal": {
+        "predicates": [
+          {
+            "name": "no_table_on_left",
+            "arity": 1,
+            "kind": "forall_K_field_at_K_neq_X",
+            "field": "support",
+            "value": "TABLE"
+          },
+          {
+            "name": "no_table_on_right",
+            "arity": 1,
+            "kind": "forall_K_field_at_K_neq_X",
+            "field": "support",
+            "value": "TABLE"
+          },
+          {
+            "name": "table_is_not_held",
+            "arity": 1,
+            "kind": "exists_K_field_at_K_eq_X",
+            "field": "held",
+            "value": null
+          }
+        ]
+      }
+    },
+    {
+      "seed": 10,
+      "llm_accepted": true,
+      "accuracy": 0.6666666666666666,
+      "n_unique_predicates": 3,
+      "llm_proposal": {
+        "predicates": [
+          {
+            "name": "cart_empty",
+            "arity": 0,
+            "kind": "field_eq_value",
+            "field": "support"
+          },
+          {
+            "name": "at_table_pos",
+            "arity": 2,
+            "kind": "field_at_X_eq_value",
+            "field": "support",
+            "value": "TABLE"
+          },
+          {
+            "name": "not_in_support",
+            "arity": 1,
+            "kind": "forall_K_field_at_K_neq_X",
+            "field": "support"
+          }
+        ]
+      }
+    },
+    {
+      "seed": 11,
+      "llm_accepted": true,
+      "accuracy": 1.0,
+      "n_unique_predicates": 5,
+      "llm_proposal": {
+        "predicates": [
+          {
+            "name": "has_table_support",
+            "arity": 0,
+            "kind": "exists_K_field_at_K_eq_X",
+            "field": "support",
+            "value": "TABLE"
+          },
+          {
+            "name": "empty_held",
+            "arity": 0,
+            "kind": "field_eq_value",
+            "field": "held",
+            "value": null
+          },
+          {
+            "name": "no_c_table",
+            "arity": 0,
+            "kind": "forall_K_field_at_K_neq_X",
+            "field": "support",
+            "value": "TABLE"
+          },
+          {
+            "name": "table_on_right",
+            "arity": 2,
+            "kind": "field_at_X_eq_Y",
+            "field": "support",
+            "value": "c"
+          },
+          {
+            "name": "table_on_left",
+            "arity": 2,
+            "kind": "field_at_X_eq_Y",
+            "field": "support",
+            "value": "a"
+          }
+        ]
+      }
+    },
+    {
+      "seed": 12,
+      "llm_accepted": false,
+      "accuracy": 0.0,
+      "n_unique_predicates": 0,
+      "llm_proposal": {
+        "predicates": [
+          {
+            "name": "empty_support",
+            "arity": 0,
+            "kind": "field_eq_value",
+            "field": "support",
+            "value": null
+          },
+          {
+            "name": "held_by_c",
+            "arity": 1,
+            "kind": "exists_K_field_at_K_eq_X",
+            "field": "held",
+            "value": "c"
+          }
+        ]
+      }
+    },
+    {
+      "seed": 13,
+      "llm_accepted": true,
+      "accuracy": 0.6666666666666666,
+      "n_unique_predicates": 3,
+      "llm_proposal": {
+        "predicates": [
+          {
+            "name": "no_table_on_left",
+            "arity": 0,
+            "kind": "forall_K_field_at_K_neq_X",
+            "field": "support"
+          },
+          {
+            "name": "table_is_not_c",
+            "arity": 1,
+            "kind": "exists_K_field_at_K_eq_X",
+            "field": "support"
+          },
+          {
+            "name": "item_held_a_or_b",
+            "arity": 1,
+            "kind": "exists_K_field_at_K_eq_X",
+            "field": "held"
+          }
+        ]
+      }
+    },
+    {
+      "seed": 14,
+      "llm_accepted": true,
+      "accuracy": 0.8,
+      "n_unique_predicates": 5,
+      "llm_proposal": {
+        "predicates": [
+          {
+            "name": "has_table_support",
+            "arity": 0,
+            "kind": "exists_K_field_at_K_eq_X",
+            "field": "support",
+            "value": "TABLE"
+          },
+          {
+            "name": "empty_held",
+            "arity": 0,
+            "kind": "field_eq_value",
+            "field": "held",
+            "value": null
+          },
+          {
+            "name": "no_c_on_left",
+            "arity": 1,
+            "kind": "forall_K_field_at_K_neq_X",
+            "field": "support",
+            "value": "c"
+          },
+          {
+            "name": "in_support_of_d",
+            "arity": 1,
+            "kind": "exists_K_field_at_K_eq_X",
+            "field": "support",
+            "value": "d"
+          },
+          {
+            "name": "at_destination",
+            "arity": 1,
+            "kind": "field_at_X_eq_value",
+            "field": "support",
+            "value": "DEST"
+          }
+        ]
+      }
+    }
+  ]
+}

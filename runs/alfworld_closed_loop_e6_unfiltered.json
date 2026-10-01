@@ -1,0 +1,4343 @@
+{
+  "parsed_json": "code/runs/alfworld_cloud_claude_sonnet.json",
+  "min_f1": 0.0,
+  "n_total": 100,
+  "n_planner_success": 93,
+  "n_execution_success": 65,
+  "planner_success_rate": 0.93,
+  "planner_success_ci95": [
+    0.8625032899347026,
+    0.9656811756359359
+  ],
+  "execution_success_rate": 0.65,
+  "execution_success_ci95": [
+    0.5525426042919797,
+    0.7363589534652197
+  ],
+  "wall_seconds": 176.42494797706604,
+  "results": [
+    {
+      "task_id": "look_at_obj_in_light-Bowl-None-DeskLamp-316",
+      "task_type": "look_at_obj_in_light",
+      "parsed_params": {
+        "object_target": "Bowl",
+        "mrecep_target": "",
+        "parent_target": "",
+        "toggle_target": "DeskLamp",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "gt_params": {
+        "object_target": "Bowl",
+        "mrecep_target": "",
+        "parent_target": "",
+        "toggle_target": "DeskLamp",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": true,
+      "plan_length": 10,
+      "trajectory_head": [
+        "go to sidetable 1",
+        "go to shelf 1",
+        "go to garbagecan 1",
+        "go to drawer 1",
+        "go to drawer 2"
+      ],
+      "trajectory_tail": [
+        "open drawer 2",
+        "close drawer 2",
+        "go to desk 1",
+        "take bowl 1 from desk 1",
+        "use desklamp 1"
+      ],
+      "stage_failed": null,
+      "seconds": 0.60552978515625
+    },
+    {
+      "task_id": "look_at_obj_in_light-CD-None-DeskLamp-302",
+      "task_type": "look_at_obj_in_light",
+      "parsed_params": {
+        "object_target": "CD",
+        "mrecep_target": "Shelf",
+        "parent_target": "",
+        "toggle_target": "DeskLamp",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "gt_params": {
+        "object_target": "CD",
+        "mrecep_target": "",
+        "parent_target": "",
+        "toggle_target": "DeskLamp",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": true,
+      "plan_length": 8,
+      "trajectory_head": [
+        "go to sidetable 1",
+        "go to sidetable 2",
+        "go to shelf 1",
+        "go to shelf 2",
+        "go to shelf 3"
+      ],
+      "trajectory_tail": [
+        "go to shelf 2",
+        "go to shelf 3",
+        "take cd 1 from shelf 3",
+        "go to sidetable 2",
+        "use desklamp 1"
+      ],
+      "stage_failed": null,
+      "seconds": 0.5295000076293945
+    },
+    {
+      "task_id": "look_at_obj_in_light-AlarmClock-None-DeskLamp-323",
+      "task_type": "look_at_obj_in_light",
+      "parsed_params": {
+        "object_target": "AlarmClock",
+        "mrecep_target": "",
+        "parent_target": "",
+        "toggle_target": "DeskLamp",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "gt_params": {
+        "object_target": "AlarmClock",
+        "mrecep_target": "",
+        "parent_target": "",
+        "toggle_target": "DeskLamp",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": true,
+      "plan_length": 4,
+      "trajectory_head": [
+        "go to sidetable 1",
+        "take alarmclock 3 from sidetable 1",
+        "go to sidetable 2",
+        "use desklamp 2"
+      ],
+      "trajectory_tail": [
+        "go to sidetable 1",
+        "take alarmclock 3 from sidetable 1",
+        "go to sidetable 2",
+        "use desklamp 2"
+      ],
+      "stage_failed": null,
+      "seconds": 0.584632158279419
+    },
+    {
+      "task_id": "look_at_obj_in_light-CD-None-DeskLamp-320",
+      "task_type": "look_at_obj_in_light",
+      "parsed_params": {
+        "object_target": "CD",
+        "mrecep_target": "",
+        "parent_target": "",
+        "toggle_target": "DeskLamp",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "gt_params": {
+        "object_target": "CD",
+        "mrecep_target": "",
+        "parent_target": "",
+        "toggle_target": "DeskLamp",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": true,
+      "plan_length": 4,
+      "trajectory_head": [
+        "go to shelf 1",
+        "take cd 2 from shelf 1",
+        "go to shelf 2",
+        "use desklamp 1"
+      ],
+      "trajectory_tail": [
+        "go to shelf 1",
+        "take cd 2 from shelf 1",
+        "go to shelf 2",
+        "use desklamp 1"
+      ],
+      "stage_failed": null,
+      "seconds": 0.34608888626098633
+    },
+    {
+      "task_id": "look_at_obj_in_light-Pillow-None-DeskLamp-323",
+      "task_type": "look_at_obj_in_light",
+      "parsed_params": {
+        "object_target": "Pillow",
+        "mrecep_target": "",
+        "parent_target": "",
+        "toggle_target": "FloorLamp",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "gt_params": {
+        "object_target": "Pillow",
+        "mrecep_target": "",
+        "parent_target": "",
+        "toggle_target": "DeskLamp",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": false,
+      "plan_length": 80,
+      "trajectory_head": [
+        "go to bed 1",
+        "go to bed 2",
+        "take pillow 1 from bed 2",
+        "go to sidetable 1",
+        "go to sidetable 2"
+      ],
+      "trajectory_tail": [
+        "go to drawer 10",
+        "open drawer 10",
+        "close drawer 10",
+        "go to drawer 11",
+        "open drawer 11"
+      ],
+      "stage_failed": "goal_check",
+      "seconds": 2.116377830505371
+    },
+    {
+      "task_id": "look_at_obj_in_light-Vase-None-DeskLamp-303",
+      "task_type": "look_at_obj_in_light",
+      "parsed_params": {
+        "object_target": "CD",
+        "mrecep_target": "",
+        "parent_target": "",
+        "toggle_target": "DeskLamp",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "gt_params": {
+        "object_target": "Vase",
+        "mrecep_target": "",
+        "parent_target": "",
+        "toggle_target": "DeskLamp",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": false,
+      "plan_length": 80,
+      "trajectory_head": [
+        "go to sidetable 1",
+        "go to shelf 1",
+        "go to shelf 2",
+        "go to shelf 3",
+        "go to shelf 4"
+      ],
+      "trajectory_tail": [
+        "use desklamp 1",
+        "use desklamp 1",
+        "use desklamp 1",
+        "use desklamp 1",
+        "use desklamp 1"
+      ],
+      "stage_failed": "goal_check",
+      "seconds": 2.5475828647613525
+    },
+    {
+      "task_id": "look_at_obj_in_light-Bowl-None-DeskLamp-301",
+      "task_type": "look_at_obj_in_light",
+      "parsed_params": {
+        "object_target": "Bowl",
+        "mrecep_target": "",
+        "parent_target": "",
+        "toggle_target": "DeskLamp",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "gt_params": {
+        "object_target": "Bowl",
+        "mrecep_target": "",
+        "parent_target": "",
+        "toggle_target": "DeskLamp",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": true,
+      "plan_length": 39,
+      "trajectory_head": [
+        "go to shelf 1",
+        "go to shelf 2",
+        "go to shelf 3",
+        "go to shelf 4",
+        "go to shelf 5"
+      ],
+      "trajectory_tail": [
+        "go to drawer 17",
+        "go to desk 1",
+        "take bowl 1 from desk 1",
+        "go to dresser 1",
+        "use desklamp 1"
+      ],
+      "stage_failed": null,
+      "seconds": 1.5919952392578125
+    },
+    {
+      "task_id": "look_at_obj_in_light-Pillow-None-DeskLamp-302",
+      "task_type": "look_at_obj_in_light",
+      "parsed_params": {
+        "object_target": "Pillow",
+        "mrecep_target": "",
+        "parent_target": "",
+        "toggle_target": "FloorLamp",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "gt_params": {
+        "object_target": "Pillow",
+        "mrecep_target": "",
+        "parent_target": "",
+        "toggle_target": "DeskLamp",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": false,
+      "plan_length": 80,
+      "trajectory_head": [
+        "go to bed 1",
+        "take pillow 1 from bed 1",
+        "go to sidetable 1",
+        "go to sidetable 2",
+        "go to shelf 1"
+      ],
+      "trajectory_tail": [
+        "open drawer 3",
+        "close drawer 3",
+        "go to bed 1",
+        "go to sidetable 1",
+        "go to sidetable 2"
+      ],
+      "stage_failed": "goal_check",
+      "seconds": 1.712702989578247
+    },
+    {
+      "task_id": "look_at_obj_in_light-Box-None-DeskLamp-205",
+      "task_type": "look_at_obj_in_light",
+      "parsed_params": {
+        "object_target": "Box",
+        "mrecep_target": "",
+        "parent_target": "",
+        "toggle_target": "FloorLamp",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "gt_params": {
+        "object_target": "Box",
+        "mrecep_target": "",
+        "parent_target": "",
+        "toggle_target": "DeskLamp",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": false,
+      "plan_length": 80,
+      "trajectory_head": [
+        "go to sofa 1",
+        "go to sidetable 1",
+        "go to sidetable 2",
+        "go to sidetable 3",
+        "go to ottoman 1"
+      ],
+      "trajectory_tail": [
+        "close drawer 2",
+        "go to drawer 3",
+        "open drawer 3",
+        "close drawer 3",
+        "go to drawer 4"
+      ],
+      "stage_failed": "goal_check",
+      "seconds": 1.691403865814209
+    },
+    {
+      "task_id": "look_at_obj_in_light-CD-None-DeskLamp-314",
+      "task_type": "look_at_obj_in_light",
+      "parsed_params": {
+        "object_target": "CD",
+        "mrecep_target": "",
+        "parent_target": "",
+        "toggle_target": "DeskLamp",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "gt_params": {
+        "object_target": "CD",
+        "mrecep_target": "",
+        "parent_target": "",
+        "toggle_target": "DeskLamp",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": true,
+      "plan_length": 20,
+      "trajectory_head": [
+        "go to garbagecan 1",
+        "take cd 1 from garbagecan 1",
+        "go to dresser 1",
+        "go to drawer 1",
+        "open drawer 1"
+      ],
+      "trajectory_tail": [
+        "go to drawer 5",
+        "open drawer 5",
+        "close drawer 5",
+        "go to desk 1",
+        "use desklamp 1"
+      ],
+      "stage_failed": null,
+      "seconds": 0.5842268466949463
+    },
+    {
+      "task_id": "look_at_obj_in_light-Laptop-None-DeskLamp-328",
+      "task_type": "look_at_obj_in_light",
+      "parsed_params": {
+        "object_target": "Laptop",
+        "mrecep_target": "",
+        "parent_target": "",
+        "toggle_target": "DeskLamp",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "gt_params": {
+        "object_target": "Laptop",
+        "mrecep_target": "",
+        "parent_target": "",
+        "toggle_target": "DeskLamp",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": true,
+      "plan_length": 4,
+      "trajectory_head": [
+        "go to sidetable 1",
+        "go to desk 1",
+        "take laptop 1 from desk 1",
+        "use desklamp 1"
+      ],
+      "trajectory_tail": [
+        "go to sidetable 1",
+        "go to desk 1",
+        "take laptop 1 from desk 1",
+        "use desklamp 1"
+      ],
+      "stage_failed": null,
+      "seconds": 0.3825109004974365
+    },
+    {
+      "task_id": "look_at_obj_in_light-KeyChain-None-DeskLamp-327",
+      "task_type": "look_at_obj_in_light",
+      "parsed_params": {
+        "object_target": "KeyChain",
+        "mrecep_target": "",
+        "parent_target": "",
+        "toggle_target": "DeskLamp",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "gt_params": {
+        "object_target": "KeyChain",
+        "mrecep_target": "",
+        "parent_target": "",
+        "toggle_target": "DeskLamp",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": true,
+      "plan_length": 9,
+      "trajectory_head": [
+        "go to shelf 1",
+        "take keychain 2 from shelf 1",
+        "go to shelf 2",
+        "go to shelf 3",
+        "go to shelf 4"
+      ],
+      "trajectory_tail": [
+        "go to shelf 4",
+        "go to shelf 5",
+        "go to garbagecan 1",
+        "go to dresser 1",
+        "use desklamp 1"
+      ],
+      "stage_failed": null,
+      "seconds": 0.6964468955993652
+    },
+    {
+      "task_id": "look_at_obj_in_light-Statue-None-DeskLamp-216",
+      "task_type": "look_at_obj_in_light",
+      "parsed_params": {
+        "object_target": "Statue",
+        "mrecep_target": "",
+        "parent_target": "",
+        "toggle_target": "DeskLamp",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "gt_params": {
+        "object_target": "Statue",
+        "mrecep_target": "",
+        "parent_target": "",
+        "toggle_target": "DeskLamp",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": true,
+      "plan_length": 3,
+      "trajectory_head": [
+        "go to sidetable 1",
+        "take statue 2 from sidetable 1",
+        "use desklamp 1"
+      ],
+      "trajectory_tail": [
+        "go to sidetable 1",
+        "take statue 2 from sidetable 1",
+        "use desklamp 1"
+      ],
+      "stage_failed": null,
+      "seconds": 0.446868896484375
+    },
+    {
+      "task_id": "pick_and_place_simple-Mug-None-Dresser-311",
+      "task_type": "pick_and_place_simple",
+      "parsed_params": {
+        "object_target": "Mug",
+        "mrecep_target": "",
+        "parent_target": "Dresser",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "gt_params": {
+        "object_target": "Mug",
+        "mrecep_target": "",
+        "parent_target": "Dresser",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": true,
+      "plan_length": 14,
+      "trajectory_head": [
+        "go to sidetable 1",
+        "go to laundryhamper 1",
+        "go to garbagecan 1",
+        "go to dresser 1",
+        "go to drawer 1"
+      ],
+      "trajectory_tail": [
+        "close drawer 2",
+        "go to diningtable 1",
+        "take mug 1 from diningtable 1",
+        "go to dresser 1",
+        "move mug 1 to dresser 1"
+      ],
+      "stage_failed": null,
+      "seconds": 0.5751419067382812
+    },
+    {
+      "task_id": "pick_and_place_simple-SprayBottle-None-GarbageCan-409",
+      "task_type": "pick_and_place_simple",
+      "parsed_params": {
+        "object_target": "SprayBottle",
+        "mrecep_target": "",
+        "parent_target": "GarbageCan",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "gt_params": {
+        "object_target": "SprayBottle",
+        "mrecep_target": "",
+        "parent_target": "GarbageCan",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": true,
+      "plan_length": 4,
+      "trajectory_head": [
+        "go to toilet 1",
+        "take spraybottle 1 from toilet 1",
+        "go to garbagecan 1",
+        "move spraybottle 1 to garbagecan 1"
+      ],
+      "trajectory_tail": [
+        "go to toilet 1",
+        "take spraybottle 1 from toilet 1",
+        "go to garbagecan 1",
+        "move spraybottle 1 to garbagecan 1"
+      ],
+      "stage_failed": null,
+      "seconds": 0.43834614753723145
+    },
+    {
+      "task_id": "pick_and_place_simple-Pencil-None-Dresser-330",
+      "task_type": "pick_and_place_simple",
+      "parsed_params": {
+        "object_target": "Pencil",
+        "mrecep_target": "NightStand",
+        "parent_target": "Dresser",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "gt_params": {
+        "object_target": "Pencil",
+        "mrecep_target": "",
+        "parent_target": "Dresser",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": true,
+      "plan_length": 4,
+      "trajectory_head": [
+        "go to sidetable 1",
+        "take pencil 1 from sidetable 1",
+        "go to dresser 1",
+        "move pencil 1 to dresser 1"
+      ],
+      "trajectory_tail": [
+        "go to sidetable 1",
+        "take pencil 1 from sidetable 1",
+        "go to dresser 1",
+        "move pencil 1 to dresser 1"
+      ],
+      "stage_failed": null,
+      "seconds": 0.6734569072723389
+    },
+    {
+      "task_id": "pick_and_place_simple-Tomato-None-Microwave-13",
+      "task_type": "pick_and_place_simple",
+      "parsed_params": {
+        "object_target": "Tomato",
+        "mrecep_target": "",
+        "parent_target": "Microwave",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "gt_params": {
+        "object_target": "Tomato",
+        "mrecep_target": "",
+        "parent_target": "Microwave",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": true,
+      "plan_length": 5,
+      "trajectory_head": [
+        "go to sinkbasin 1",
+        "take tomato 1 from sinkbasin 1",
+        "go to microwave 1",
+        "open microwave 1",
+        "move tomato 1 to microwave 1"
+      ],
+      "trajectory_tail": [
+        "go to sinkbasin 1",
+        "take tomato 1 from sinkbasin 1",
+        "go to microwave 1",
+        "open microwave 1",
+        "move tomato 1 to microwave 1"
+      ],
+      "stage_failed": null,
+      "seconds": 1.763401985168457
+    },
+    {
+      "task_id": "pick_and_place_simple-SprayBottle-None-Cabinet-413",
+      "task_type": "pick_and_place_simple",
+      "parsed_params": {
+        "object_target": "SprayBottle",
+        "mrecep_target": "",
+        "parent_target": "Cabinet",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "gt_params": {
+        "object_target": "SprayBottle",
+        "mrecep_target": "",
+        "parent_target": "Cabinet",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": true,
+      "plan_length": 5,
+      "trajectory_head": [
+        "go to toilet 1",
+        "take spraybottle 3 from toilet 1",
+        "go to cabinet 1",
+        "open cabinet 1",
+        "move spraybottle 3 to cabinet 1"
+      ],
+      "trajectory_tail": [
+        "go to toilet 1",
+        "take spraybottle 3 from toilet 1",
+        "go to cabinet 1",
+        "open cabinet 1",
+        "move spraybottle 3 to cabinet 1"
+      ],
+      "stage_failed": null,
+      "seconds": 0.5370750427246094
+    },
+    {
+      "task_id": "pick_and_place_simple-CreditCard-None-Drawer-227",
+      "task_type": "pick_and_place_simple",
+      "parsed_params": {
+        "object_target": "CreditCard",
+        "mrecep_target": "",
+        "parent_target": "Drawer",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "gt_params": {
+        "object_target": "CreditCard",
+        "mrecep_target": "",
+        "parent_target": "Drawer",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": true,
+      "plan_length": 40,
+      "trajectory_head": [
+        "go to sofa 1",
+        "go to shelf 1",
+        "go to shelf 2",
+        "go to shelf 3",
+        "go to shelf 4"
+      ],
+      "trajectory_tail": [
+        "go to diningtable 1",
+        "take creditcard 1 from diningtable 1",
+        "go to drawer 1",
+        "open drawer 1",
+        "move creditcard 1 to drawer 1"
+      ],
+      "stage_failed": null,
+      "seconds": 2.398000955581665
+    },
+    {
+      "task_id": "pick_and_place_simple-Book-None-Sofa-229",
+      "task_type": "pick_and_place_simple",
+      "parsed_params": {
+        "object_target": "Book",
+        "mrecep_target": "Desk",
+        "parent_target": "ArmChair",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "gt_params": {
+        "object_target": "Book",
+        "mrecep_target": "",
+        "parent_target": "Sofa",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": false,
+      "plan_length": 80,
+      "trajectory_head": [
+        "go to sofa 1",
+        "go to sidetable 1",
+        "go to sidetable 2",
+        "go to sidetable 3",
+        "take book 1 from sidetable 3"
+      ],
+      "trajectory_tail": [
+        "move book 1 to sidetable 3",
+        "move book 1 to sidetable 3",
+        "move book 1 to sidetable 3",
+        "move book 1 to sidetable 3",
+        "move book 1 to sidetable 3"
+      ],
+      "stage_failed": "goal_check",
+      "seconds": 1.7049391269683838
+    },
+    {
+      "task_id": "pick_and_place_simple-Vase-None-CoffeeTable-207",
+      "task_type": "pick_and_place_simple",
+      "parsed_params": {
+        "object_target": "Vase",
+        "mrecep_target": "",
+        "parent_target": "CoffeeTable",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "gt_params": {
+        "object_target": "Vase",
+        "mrecep_target": "",
+        "parent_target": "CoffeeTable",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": true,
+      "plan_length": 10,
+      "trajectory_head": [
+        "go to shelf 1",
+        "go to shelf 2",
+        "go to shelf 3",
+        "go to shelf 4",
+        "go to shelf 5"
+      ],
+      "trajectory_tail": [
+        "go to shelf 6",
+        "go to shelf 7",
+        "take vase 2 from shelf 7",
+        "go to coffeetable 1",
+        "move vase 2 to coffeetable 1"
+      ],
+      "stage_failed": null,
+      "seconds": 0.5551517009735107
+    },
+    {
+      "task_id": "pick_and_place_simple-CellPhone-None-Bed-324",
+      "task_type": "pick_and_place_simple",
+      "parsed_params": {
+        "object_target": "CellPhone",
+        "mrecep_target": "Dresser",
+        "parent_target": "Bed",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "gt_params": {
+        "object_target": "CellPhone",
+        "mrecep_target": "",
+        "parent_target": "Bed",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": true,
+      "plan_length": 11,
+      "trajectory_head": [
+        "go to shelf 1",
+        "go to shelf 2",
+        "go to shelf 3",
+        "go to shelf 4",
+        "go to shelf 5"
+      ],
+      "trajectory_tail": [
+        "go to shelf 7",
+        "go to dresser 1",
+        "take cellphone 1 from dresser 1",
+        "go to bed 1",
+        "move cellphone 1 to bed 1"
+      ],
+      "stage_failed": null,
+      "seconds": 0.8035736083984375
+    },
+    {
+      "task_id": "pick_and_place_simple-Egg-None-Microwave-4",
+      "task_type": "pick_and_place_simple",
+      "parsed_params": {
+        "object_target": "Egg",
+        "mrecep_target": "",
+        "parent_target": "Microwave",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "gt_params": {
+        "object_target": "Egg",
+        "mrecep_target": "",
+        "parent_target": "Microwave",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": true,
+      "plan_length": 5,
+      "trajectory_head": [
+        "go to sinkbasin 1",
+        "take egg 2 from sinkbasin 1",
+        "go to microwave 1",
+        "open microwave 1",
+        "move egg 2 to microwave 1"
+      ],
+      "trajectory_tail": [
+        "go to sinkbasin 1",
+        "take egg 2 from sinkbasin 1",
+        "go to microwave 1",
+        "open microwave 1",
+        "move egg 2 to microwave 1"
+      ],
+      "stage_failed": null,
+      "seconds": 0.9161190986633301
+    },
+    {
+      "task_id": "pick_and_place_simple-Candle-None-Cart-401",
+      "stage_failed": "planner_init",
+      "error": "'object_target'",
+      "planner_success": false,
+      "execution_success": false,
+      "plan_length": 0,
+      "seconds": 0.37328195571899414,
+      "parsed_params": {},
+      "gt_params": {
+        "object_target": "Candle",
+        "mrecep_target": "",
+        "parent_target": "Cart",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "task_type": "pick_and_place_simple"
+    },
+    {
+      "task_id": "pick_and_place_simple-Watch-None-SideTable-222",
+      "task_type": "pick_and_place_simple",
+      "parsed_params": {
+        "object_target": "Watch",
+        "mrecep_target": "",
+        "parent_target": "SideTable",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "gt_params": {
+        "object_target": "Watch",
+        "mrecep_target": "",
+        "parent_target": "SideTable",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": true,
+      "plan_length": 24,
+      "trajectory_head": [
+        "go to sidetable 1",
+        "go to sidetable 2",
+        "go to sidetable 3",
+        "go to drawer 1",
+        "open drawer 1"
+      ],
+      "trajectory_tail": [
+        "close drawer 7",
+        "go to coffeetable 1",
+        "take watch 2 from coffeetable 1",
+        "go to sidetable 1",
+        "move watch 2 to sidetable 1"
+      ],
+      "stage_failed": null,
+      "seconds": 0.8892109394073486
+    },
+    {
+      "task_id": "pick_and_place_simple-Candle-None-Toilet-429",
+      "task_type": "pick_and_place_simple",
+      "parsed_params": {
+        "object_target": "Bottle",
+        "mrecep_target": "Newspaper",
+        "parent_target": "",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "gt_params": {
+        "object_target": "Candle",
+        "mrecep_target": "",
+        "parent_target": "Toilet",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "planner_success": false,
+      "planner_error": "KeyError: 'Bottle'",
+      "execution_success": false,
+      "plan_length": 0,
+      "trajectory_head": [],
+      "trajectory_tail": [],
+      "stage_failed": "planner",
+      "seconds": 0.32686471939086914
+    },
+    {
+      "task_id": "pick_and_place_simple-Bowl-None-CoffeeTable-201",
+      "task_type": "pick_and_place_simple",
+      "parsed_params": {
+        "object_target": "Bowl",
+        "mrecep_target": "DiningTable",
+        "parent_target": "CoffeeTable",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "gt_params": {
+        "object_target": "Bowl",
+        "mrecep_target": "",
+        "parent_target": "CoffeeTable",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": true,
+      "plan_length": 16,
+      "trajectory_head": [
+        "go to tvstand 1",
+        "go to sofa 1",
+        "go to sidetable 1",
+        "go to sidetable 2",
+        "go to garbagecan 1"
+      ],
+      "trajectory_tail": [
+        "go to diningtable 1",
+        "go to diningtable 2",
+        "take bowl 1 from diningtable 2",
+        "go to coffeetable 1",
+        "move bowl 1 to coffeetable 1"
+      ],
+      "stage_failed": null,
+      "seconds": 0.7145280838012695
+    },
+    {
+      "task_id": "pick_and_place_simple-TissueBox-None-Toilet-426",
+      "task_type": "pick_and_place_simple",
+      "parsed_params": {
+        "object_target": "TissueBox",
+        "mrecep_target": "",
+        "parent_target": "Toilet",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "gt_params": {
+        "object_target": "TissueBox",
+        "mrecep_target": "",
+        "parent_target": "Toilet",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": true,
+      "plan_length": 11,
+      "trajectory_head": [
+        "go to toilet 1",
+        "go to garbagecan 1",
+        "go to drawer 1",
+        "open drawer 1",
+        "close drawer 1"
+      ],
+      "trajectory_tail": [
+        "open drawer 2",
+        "take tissuebox 1 from drawer 2",
+        "close drawer 2",
+        "go to toilet 1",
+        "move tissuebox 1 to toilet 1"
+      ],
+      "stage_failed": null,
+      "seconds": 0.6678290367126465
+    },
+    {
+      "task_id": "pick_and_place_simple-CellPhone-None-ArmChair-318",
+      "task_type": "pick_and_place_simple",
+      "parsed_params": {
+        "object_target": "CellPhone",
+        "mrecep_target": "",
+        "parent_target": "Chair",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "gt_params": {
+        "object_target": "CellPhone",
+        "mrecep_target": "",
+        "parent_target": "ArmChair",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": false,
+      "plan_length": 80,
+      "trajectory_head": [
+        "go to dresser 1",
+        "go to dresser 2",
+        "take cellphone 3 from dresser 2",
+        "go to garbagecan 1",
+        "go to dresser 1"
+      ],
+      "trajectory_tail": [
+        "close drawer 11",
+        "go to drawer 12",
+        "open drawer 12",
+        "close drawer 12",
+        "go to drawer 13"
+      ],
+      "stage_failed": "goal_check",
+      "seconds": 2.672498941421509
+    },
+    {
+      "task_id": "pick_and_place_simple-CreditCard-None-ArmChair-201",
+      "task_type": "pick_and_place_simple",
+      "parsed_params": {
+        "object_target": "CreditCard",
+        "mrecep_target": "",
+        "parent_target": "Chair",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "gt_params": {
+        "object_target": "CreditCard",
+        "mrecep_target": "",
+        "parent_target": "ArmChair",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": false,
+      "plan_length": 80,
+      "trajectory_head": [
+        "go to sofa 1",
+        "take creditcard 3 from sofa 1",
+        "go to tvstand 1",
+        "go to sidetable 1",
+        "go to sidetable 2"
+      ],
+      "trajectory_tail": [
+        "go to coffeetable 1",
+        "go to armchair 2",
+        "go to tvstand 1",
+        "go to sofa 1",
+        "go to sidetable 1"
+      ],
+      "stage_failed": "goal_check",
+      "seconds": 1.7817268371582031
+    },
+    {
+      "task_id": "pick_and_place_simple-Mug-None-SideTable-329",
+      "task_type": "pick_and_place_simple",
+      "parsed_params": {
+        "object_target": "Mug",
+        "mrecep_target": "",
+        "parent_target": "NightStand",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "gt_params": {
+        "object_target": "Mug",
+        "mrecep_target": "",
+        "parent_target": "SideTable",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "planner_success": false,
+      "planner_error": "KeyError: 'NightStand'",
+      "execution_success": false,
+      "plan_length": 13,
+      "trajectory_head": [
+        "go to sidetable 1",
+        "go to sidetable 2",
+        "go to garbagecan 1",
+        "go to drawer 1",
+        "open drawer 1"
+      ],
+      "trajectory_tail": [
+        "close drawer 2",
+        "go to drawer 3",
+        "go to drawer 4",
+        "go to diningtable 1",
+        "take mug 1 from diningtable 1"
+      ],
+      "stage_failed": "planner",
+      "seconds": 0.5180859565734863
+    },
+    {
+      "task_id": "pick_and_place_simple-SprayBottle-None-Toilet-418",
+      "task_type": "pick_and_place_simple",
+      "parsed_params": {
+        "object_target": "SprayBottle",
+        "mrecep_target": "",
+        "parent_target": "Toilet",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "gt_params": {
+        "object_target": "SprayBottle",
+        "mrecep_target": "",
+        "parent_target": "Toilet",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": true,
+      "plan_length": 6,
+      "trajectory_head": [
+        "go to toilet 1",
+        "go to garbagecan 1",
+        "go to countertop 1",
+        "take spraybottle 2 from countertop 1",
+        "go to toilet 1"
+      ],
+      "trajectory_tail": [
+        "go to garbagecan 1",
+        "go to countertop 1",
+        "take spraybottle 2 from countertop 1",
+        "go to toilet 1",
+        "move spraybottle 2 to toilet 1"
+      ],
+      "stage_failed": null,
+      "seconds": 0.4771871566772461
+    },
+    {
+      "task_id": "pick_and_place_simple-Watch-None-SideTable-222",
+      "task_type": "pick_and_place_simple",
+      "parsed_params": {
+        "object_target": "Watch",
+        "mrecep_target": "",
+        "parent_target": "DiningTable",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "gt_params": {
+        "object_target": "Watch",
+        "mrecep_target": "",
+        "parent_target": "SideTable",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": false,
+      "plan_length": 80,
+      "trajectory_head": [
+        "go to sidetable 1",
+        "go to sidetable 2",
+        "go to sidetable 3",
+        "go to drawer 1",
+        "open drawer 1"
+      ],
+      "trajectory_tail": [
+        "go to sidetable 1",
+        "go to sidetable 2",
+        "go to sidetable 3",
+        "go to garbagecan 1",
+        "go to drawer 1"
+      ],
+      "stage_failed": "goal_check",
+      "seconds": 1.960066795349121
+    },
+    {
+      "task_id": "pick_and_place_simple-Newspaper-None-Sofa-224",
+      "task_type": "pick_and_place_simple",
+      "parsed_params": {
+        "object_target": "Newspaper",
+        "mrecep_target": "",
+        "parent_target": "Sofa",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "gt_params": {
+        "object_target": "Newspaper",
+        "mrecep_target": "",
+        "parent_target": "Sofa",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": true,
+      "plan_length": 7,
+      "trajectory_head": [
+        "go to sofa 1",
+        "go to sidetable 1",
+        "go to sidetable 2",
+        "go to sidetable 3",
+        "take newspaper 1 from sidetable 3"
+      ],
+      "trajectory_tail": [
+        "go to sidetable 2",
+        "go to sidetable 3",
+        "take newspaper 1 from sidetable 3",
+        "go to sofa 1",
+        "move newspaper 1 to sofa 1"
+      ],
+      "stage_failed": null,
+      "seconds": 0.959881067276001
+    },
+    {
+      "task_id": "pick_and_place_simple-SoapBottle-None-CounterTop-417",
+      "task_type": "pick_and_place_simple",
+      "parsed_params": {
+        "object_target": "SoapBottle",
+        "mrecep_target": "",
+        "parent_target": "CounterTop",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "gt_params": {
+        "object_target": "SoapBottle",
+        "mrecep_target": "",
+        "parent_target": "CounterTop",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": true,
+      "plan_length": 4,
+      "trajectory_head": [
+        "go to toilet 1",
+        "take soapbottle 3 from toilet 1",
+        "go to countertop 1",
+        "move soapbottle 3 to countertop 1"
+      ],
+      "trajectory_tail": [
+        "go to toilet 1",
+        "take soapbottle 3 from toilet 1",
+        "go to countertop 1",
+        "move soapbottle 3 to countertop 1"
+      ],
+      "stage_failed": null,
+      "seconds": 0.45192384719848633
+    },
+    {
+      "task_id": "pick_and_place_simple-RemoteControl-None-ArmChair-230",
+      "task_type": "pick_and_place_simple",
+      "parsed_params": {
+        "object_target": "RemoteControl",
+        "mrecep_target": "",
+        "parent_target": "Chair",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "gt_params": {
+        "object_target": "RemoteControl",
+        "mrecep_target": "",
+        "parent_target": "ArmChair",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": false,
+      "plan_length": 80,
+      "trajectory_head": [
+        "go to sofa 1",
+        "go to sidetable 1",
+        "go to sidetable 2",
+        "go to diningtable 1",
+        "take remotecontrol 3 from diningtable 1"
+      ],
+      "trajectory_tail": [
+        "go to coffeetable 2",
+        "go to armchair 2",
+        "go to sofa 1",
+        "go to sidetable 1",
+        "go to sidetable 2"
+      ],
+      "stage_failed": "goal_check",
+      "seconds": 1.4640591144561768
+    },
+    {
+      "task_id": "pick_and_place_simple-WineBottle-None-Shelf-7",
+      "task_type": "pick_and_place_simple",
+      "parsed_params": {
+        "object_target": "WineBottle",
+        "mrecep_target": "",
+        "parent_target": "Cabinet",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "gt_params": {
+        "object_target": "WineBottle",
+        "mrecep_target": "",
+        "parent_target": "Shelf",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": false,
+      "plan_length": 80,
+      "trajectory_head": [
+        "go to shelf 1",
+        "go to shelf 2",
+        "go to shelf 3",
+        "go to garbagecan 1",
+        "go to fridge 1"
+      ],
+      "trajectory_tail": [
+        "move winebottle 1 to diningtable 1",
+        "move winebottle 1 to diningtable 1",
+        "move winebottle 1 to diningtable 1",
+        "move winebottle 1 to diningtable 1",
+        "move winebottle 1 to diningtable 1"
+      ],
+      "stage_failed": "goal_check",
+      "seconds": 4.953716993331909
+    },
+    {
+      "task_id": "pick_and_place_simple-Candle-None-Toilet-407",
+      "task_type": "pick_and_place_simple",
+      "parsed_params": {
+        "object_target": "Candle",
+        "mrecep_target": "",
+        "parent_target": "Toilet",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "gt_params": {
+        "object_target": "Candle",
+        "mrecep_target": "",
+        "parent_target": "Toilet",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": true,
+      "plan_length": 5,
+      "trajectory_head": [
+        "go to toilet 1",
+        "go to countertop 1",
+        "take candle 4 from countertop 1",
+        "go to toilet 1",
+        "move candle 4 to toilet 1"
+      ],
+      "trajectory_tail": [
+        "go to toilet 1",
+        "go to countertop 1",
+        "take candle 4 from countertop 1",
+        "go to toilet 1",
+        "move candle 4 to toilet 1"
+      ],
+      "stage_failed": null,
+      "seconds": 0.45533323287963867
+    },
+    {
+      "task_id": "pick_and_place_simple-Book-None-SideTable-329",
+      "task_type": "pick_and_place_simple",
+      "parsed_params": {
+        "object_target": "Magazine",
+        "mrecep_target": "Bed",
+        "parent_target": "DiningTable",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "gt_params": {
+        "object_target": "Book",
+        "mrecep_target": "",
+        "parent_target": "SideTable",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "planner_success": false,
+      "planner_error": "KeyError: 'Magazine'",
+      "execution_success": false,
+      "plan_length": 0,
+      "trajectory_head": [],
+      "trajectory_tail": [],
+      "stage_failed": "planner",
+      "seconds": 0.3942070007324219
+    },
+    {
+      "task_id": "pick_and_place_simple-Box-None-Dresser-224",
+      "task_type": "pick_and_place_simple",
+      "parsed_params": {
+        "object_target": "Box",
+        "mrecep_target": "",
+        "parent_target": "Dresser",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "gt_params": {
+        "object_target": "Box",
+        "mrecep_target": "",
+        "parent_target": "Dresser",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": true,
+      "plan_length": 4,
+      "trajectory_head": [
+        "go to sofa 1",
+        "take box 3 from sofa 1",
+        "go to dresser 1",
+        "move box 3 to dresser 1"
+      ],
+      "trajectory_tail": [
+        "go to sofa 1",
+        "take box 3 from sofa 1",
+        "go to dresser 1",
+        "move box 3 to dresser 1"
+      ],
+      "stage_failed": null,
+      "seconds": 0.7786319255828857
+    },
+    {
+      "task_id": "pick_and_place_simple-Knife-None-SideTable-3",
+      "task_type": "pick_and_place_simple",
+      "parsed_params": {
+        "object_target": "Knife",
+        "mrecep_target": "",
+        "parent_target": "Microwave",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "gt_params": {
+        "object_target": "Knife",
+        "mrecep_target": "",
+        "parent_target": "SideTable",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": false,
+      "plan_length": 80,
+      "trajectory_head": [
+        "go to sinkbasin 1",
+        "go to sidetable 1",
+        "go to drawer 1",
+        "open drawer 1",
+        "close drawer 1"
+      ],
+      "trajectory_tail": [
+        "examine microwave 1",
+        "examine microwave 1",
+        "examine microwave 1",
+        "examine microwave 1",
+        "examine microwave 1"
+      ],
+      "stage_failed": "goal_check",
+      "seconds": 3.0100700855255127
+    },
+    {
+      "task_id": "pick_and_place_simple-SprayBottle-None-Cabinet-413",
+      "task_type": "pick_and_place_simple",
+      "parsed_params": {
+        "object_target": "SprayBottle",
+        "mrecep_target": "",
+        "parent_target": "Drawer",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "gt_params": {
+        "object_target": "SprayBottle",
+        "mrecep_target": "",
+        "parent_target": "Cabinet",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": false,
+      "plan_length": 80,
+      "trajectory_head": [
+        "go to toilet 1",
+        "take spraybottle 3 from toilet 1",
+        "go to drawer 1",
+        "move spraybottle 3 to drawer 1",
+        "go to toilet 1"
+      ],
+      "trajectory_tail": [
+        "move spraybottle 3 to toilet 1",
+        "move spraybottle 3 to toilet 1",
+        "move spraybottle 3 to toilet 1",
+        "move spraybottle 3 to toilet 1",
+        "move spraybottle 3 to toilet 1"
+      ],
+      "stage_failed": "goal_check",
+      "seconds": 2.0741591453552246
+    },
+    {
+      "task_id": "pick_and_place_simple-SoapBar-None-Cart-401",
+      "task_type": "pick_and_place_simple",
+      "parsed_params": {
+        "object_target": "SoapBar",
+        "mrecep_target": "",
+        "parent_target": "TowelHolder",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "gt_params": {
+        "object_target": "SoapBar",
+        "mrecep_target": "",
+        "parent_target": "Cart",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": false,
+      "plan_length": 80,
+      "trajectory_head": [
+        "go to toilet 1",
+        "go to sinkbasin 1",
+        "go to shelf 1",
+        "go to shelf 2",
+        "take soapbar 1 from shelf 2"
+      ],
+      "trajectory_tail": [
+        "examine towelholder 1",
+        "examine towelholder 1",
+        "examine towelholder 1",
+        "examine towelholder 1",
+        "examine towelholder 1"
+      ],
+      "stage_failed": "goal_check",
+      "seconds": 1.6800789833068848
+    },
+    {
+      "task_id": "pick_and_place_simple-SoapBottle-None-Cabinet-414",
+      "task_type": "pick_and_place_simple",
+      "parsed_params": {
+        "object_target": "Bottle",
+        "mrecep_target": "CounterTop",
+        "parent_target": "Drawer",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "gt_params": {
+        "object_target": "SoapBottle",
+        "mrecep_target": "",
+        "parent_target": "Cabinet",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "planner_success": false,
+      "planner_error": "KeyError: 'Bottle'",
+      "execution_success": false,
+      "plan_length": 0,
+      "trajectory_head": [],
+      "trajectory_tail": [],
+      "stage_failed": "planner",
+      "seconds": 0.46468091011047363
+    },
+    {
+      "task_id": "pick_and_place_simple-SprayBottle-None-Toilet-415",
+      "task_type": "pick_and_place_simple",
+      "parsed_params": {
+        "object_target": "SprayBottle",
+        "mrecep_target": "",
+        "parent_target": "Toilet",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "gt_params": {
+        "object_target": "SprayBottle",
+        "mrecep_target": "",
+        "parent_target": "Toilet",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": true,
+      "plan_length": 5,
+      "trajectory_head": [
+        "go to toilet 1",
+        "go to shelf 1",
+        "take spraybottle 2 from shelf 1",
+        "go to toilet 1",
+        "move spraybottle 2 to toilet 1"
+      ],
+      "trajectory_tail": [
+        "go to toilet 1",
+        "go to shelf 1",
+        "take spraybottle 2 from shelf 1",
+        "go to toilet 1",
+        "move spraybottle 2 to toilet 1"
+      ],
+      "stage_failed": null,
+      "seconds": 0.5901169776916504
+    },
+    {
+      "task_id": "pick_and_place_simple-ToiletPaper-None-ToiletPaperHanger-415",
+      "task_type": "pick_and_place_simple",
+      "parsed_params": {
+        "object_target": "ToiletPaper",
+        "mrecep_target": "",
+        "parent_target": "ToiletPaperHanger",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "gt_params": {
+        "object_target": "ToiletPaper",
+        "mrecep_target": "",
+        "parent_target": "ToiletPaperHanger",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": true,
+      "plan_length": 5,
+      "trajectory_head": [
+        "go to toiletpaperhanger 1",
+        "go to toilet 1",
+        "take toiletpaper 2 from toilet 1",
+        "go to toiletpaperhanger 1",
+        "move toiletpaper 2 to toiletpaperhanger 1"
+      ],
+      "trajectory_tail": [
+        "go to toiletpaperhanger 1",
+        "go to toilet 1",
+        "take toiletpaper 2 from toilet 1",
+        "go to toiletpaperhanger 1",
+        "move toiletpaper 2 to toiletpaperhanger 1"
+      ],
+      "stage_failed": null,
+      "seconds": 0.5627138614654541
+    },
+    {
+      "task_id": "pick_and_place_simple-ToiletPaper-None-ToiletPaperHanger-406",
+      "task_type": "pick_and_place_simple",
+      "parsed_params": {
+        "object_target": "ToiletPaperRoll",
+        "mrecep_target": "",
+        "parent_target": "ToiletPaperHanger",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "gt_params": {
+        "object_target": "ToiletPaper",
+        "mrecep_target": "",
+        "parent_target": "ToiletPaperHanger",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": false,
+      "plan_length": 80,
+      "trajectory_head": [
+        "go to toiletpaperhanger 1",
+        "go to toilet 1",
+        "go to garbagecan 1",
+        "go to countertop 1",
+        "go to cabinet 1"
+      ],
+      "trajectory_tail": [
+        "close cabinet 2",
+        "go to towelholder 1",
+        "go to sinkbasin 1",
+        "go to handtowelholder 1",
+        "go to toiletpaperhanger 1"
+      ],
+      "stage_failed": "goal_check",
+      "seconds": 1.3596909046173096
+    },
+    {
+      "task_id": "pick_and_place_simple-Mug-None-SideTable-329",
+      "task_type": "pick_and_place_simple",
+      "parsed_params": {
+        "object_target": "CD",
+        "mrecep_target": "",
+        "parent_target": "DiningTable",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "gt_params": {
+        "object_target": "Mug",
+        "mrecep_target": "",
+        "parent_target": "SideTable",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": false,
+      "plan_length": 80,
+      "trajectory_head": [
+        "go to sidetable 1",
+        "go to sidetable 2",
+        "go to garbagecan 1",
+        "go to drawer 1",
+        "open drawer 1"
+      ],
+      "trajectory_tail": [
+        "move cd 1 to diningtable 1",
+        "move cd 1 to diningtable 1",
+        "move cd 1 to diningtable 1",
+        "move cd 1 to diningtable 1",
+        "move cd 1 to diningtable 1"
+      ],
+      "stage_failed": "goal_check",
+      "seconds": 1.3206257820129395
+    },
+    {
+      "task_id": "pick_and_place_simple-RemoteControl-None-Sofa-207",
+      "task_type": "pick_and_place_simple",
+      "parsed_params": {
+        "object_target": "RemoteControl",
+        "mrecep_target": "DiningTable",
+        "parent_target": "Sofa",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "gt_params": {
+        "object_target": "RemoteControl",
+        "mrecep_target": "",
+        "parent_target": "Sofa",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": true,
+      "plan_length": 13,
+      "trajectory_head": [
+        "go to sofa 1",
+        "go to shelf 1",
+        "go to shelf 2",
+        "go to shelf 3",
+        "go to shelf 4"
+      ],
+      "trajectory_tail": [
+        "go to shelf 8",
+        "go to coffeetable 1",
+        "take remotecontrol 3 from coffeetable 1",
+        "go to sofa 1",
+        "move remotecontrol 3 to sofa 1"
+      ],
+      "stage_failed": null,
+      "seconds": 0.6428849697113037
+    },
+    {
+      "task_id": "pick_and_place_simple-Pencil-None-Desk-310",
+      "task_type": "pick_and_place_simple",
+      "parsed_params": {
+        "object_target": "Pencil",
+        "mrecep_target": "",
+        "parent_target": "Desk",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "gt_params": {
+        "object_target": "Pencil",
+        "mrecep_target": "",
+        "parent_target": "Desk",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": true,
+      "plan_length": 5,
+      "trajectory_head": [
+        "go to sidetable 1",
+        "go to shelf 1",
+        "take pencil 3 from shelf 1",
+        "go to desk 1",
+        "move pencil 3 to desk 1"
+      ],
+      "trajectory_tail": [
+        "go to sidetable 1",
+        "go to shelf 1",
+        "take pencil 3 from shelf 1",
+        "go to desk 1",
+        "move pencil 3 to desk 1"
+      ],
+      "stage_failed": null,
+      "seconds": 0.5092909336090088
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-ButterKnife-None-Drawer-30",
+      "task_type": "pick_clean_then_place_in_recep",
+      "parsed_params": {
+        "object_target": "Knife",
+        "mrecep_target": "",
+        "parent_target": "Drawer",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "gt_params": {
+        "object_target": "ButterKnife",
+        "mrecep_target": "",
+        "parent_target": "Drawer",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": false,
+      "plan_length": 80,
+      "trajectory_head": [
+        "go to sinkbasin 1",
+        "go to drawer 1",
+        "open drawer 1",
+        "close drawer 1",
+        "go to drawer 2"
+      ],
+      "trajectory_tail": [
+        "open drawer 26",
+        "close drawer 26",
+        "go to drawer 27",
+        "open drawer 27",
+        "close drawer 27"
+      ],
+      "stage_failed": "goal_check",
+      "seconds": 6.582871913909912
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-Fork-None-Drawer-8",
+      "task_type": "pick_clean_then_place_in_recep",
+      "parsed_params": {
+        "object_target": "Fork",
+        "mrecep_target": "",
+        "parent_target": "Drawer",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "gt_params": {
+        "object_target": "Fork",
+        "mrecep_target": "",
+        "parent_target": "Drawer",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": true,
+      "plan_length": 31,
+      "trajectory_head": [
+        "go to sinkbasin 1",
+        "go to drawer 1",
+        "open drawer 1",
+        "close drawer 1",
+        "go to drawer 2"
+      ],
+      "trajectory_tail": [
+        "go to sinkbasin 1",
+        "clean fork 1 with sinkbasin 1",
+        "go to drawer 1",
+        "open drawer 1",
+        "move fork 1 to drawer 1"
+      ],
+      "stage_failed": null,
+      "seconds": 2.9031291007995605
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-Spatula-None-DiningTable-4",
+      "task_type": "pick_clean_then_place_in_recep",
+      "parsed_params": {
+        "object_target": "Spatula",
+        "mrecep_target": "",
+        "parent_target": "DiningTable",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "gt_params": {
+        "object_target": "Spatula",
+        "mrecep_target": "",
+        "parent_target": "DiningTable",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": true,
+      "plan_length": 23,
+      "trajectory_head": [
+        "go to sinkbasin 1",
+        "go to drawer 1",
+        "open drawer 1",
+        "close drawer 1",
+        "go to drawer 2"
+      ],
+      "trajectory_tail": [
+        "take spatula 2 from diningtable 1",
+        "go to sinkbasin 1",
+        "clean spatula 2 with sinkbasin 1",
+        "go to diningtable 1",
+        "move spatula 2 to diningtable 1"
+      ],
+      "stage_failed": null,
+      "seconds": 1.4309792518615723
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-SoapBar-None-Toilet-428",
+      "task_type": "pick_clean_then_place_in_recep",
+      "parsed_params": {
+        "object_target": "SoapBar",
+        "mrecep_target": "",
+        "parent_target": "Toilet",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "gt_params": {
+        "object_target": "SoapBar",
+        "mrecep_target": "",
+        "parent_target": "Toilet",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": true,
+      "plan_length": 6,
+      "trajectory_head": [
+        "go to toilet 1",
+        "take soapbar 2 from toilet 1",
+        "go to sinkbasin 2",
+        "clean soapbar 2 with sinkbasin 2",
+        "go to toilet 1"
+      ],
+      "trajectory_tail": [
+        "take soapbar 2 from toilet 1",
+        "go to sinkbasin 2",
+        "clean soapbar 2 with sinkbasin 2",
+        "go to toilet 1",
+        "move soapbar 2 to toilet 1"
+      ],
+      "stage_failed": null,
+      "seconds": 0.48312807083129883
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-Ladle-None-CounterTop-8",
+      "task_type": "pick_clean_then_place_in_recep",
+      "parsed_params": {
+        "object_target": "Ladle",
+        "mrecep_target": "",
+        "parent_target": "CounterTop",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "gt_params": {
+        "object_target": "Ladle",
+        "mrecep_target": "",
+        "parent_target": "CounterTop",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": true,
+      "plan_length": 30,
+      "trajectory_head": [
+        "go to sinkbasin 1",
+        "go to drawer 1",
+        "open drawer 1",
+        "close drawer 1",
+        "go to drawer 2"
+      ],
+      "trajectory_tail": [
+        "take ladle 1 from countertop 3",
+        "go to sinkbasin 1",
+        "clean ladle 1 with sinkbasin 1",
+        "go to countertop 1",
+        "move ladle 1 to countertop 1"
+      ],
+      "stage_failed": null,
+      "seconds": 2.703340768814087
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-DishSponge-None-CounterTop-403",
+      "task_type": "pick_clean_then_place_in_recep",
+      "parsed_params": {
+        "object_target": "DishSponge",
+        "mrecep_target": "",
+        "parent_target": "CounterTop",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "gt_params": {
+        "object_target": "DishSponge",
+        "mrecep_target": "",
+        "parent_target": "CounterTop",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": true,
+      "plan_length": 6,
+      "trajectory_head": [
+        "go to toilet 1",
+        "take dishsponge 3 from toilet 1",
+        "go to sinkbasin 2",
+        "clean dishsponge 3 with sinkbasin 2",
+        "go to countertop 1"
+      ],
+      "trajectory_tail": [
+        "take dishsponge 3 from toilet 1",
+        "go to sinkbasin 2",
+        "clean dishsponge 3 with sinkbasin 2",
+        "go to countertop 1",
+        "move dishsponge 3 to countertop 1"
+      ],
+      "stage_failed": null,
+      "seconds": 0.6133608818054199
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-Plate-None-CounterTop-19",
+      "task_type": "pick_clean_then_place_in_recep",
+      "parsed_params": {
+        "object_target": "Plate",
+        "mrecep_target": "",
+        "parent_target": "CounterTop",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "gt_params": {
+        "object_target": "Plate",
+        "mrecep_target": "",
+        "parent_target": "CounterTop",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": true,
+      "plan_length": 18,
+      "trajectory_head": [
+        "go to toaster 1",
+        "go to stoveburner 1",
+        "go to stoveburner 2",
+        "go to stoveburner 3",
+        "go to stoveburner 4"
+      ],
+      "trajectory_tail": [
+        "go to sinkbasin 1",
+        "clean plate 1 with sinkbasin 1",
+        "close fridge 1",
+        "go to countertop 1",
+        "move plate 1 to countertop 1"
+      ],
+      "stage_failed": null,
+      "seconds": 1.9463889598846436
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-SoapBar-None-Drawer-423",
+      "task_type": "pick_clean_then_place_in_recep",
+      "parsed_params": {
+        "object_target": "SoapBar",
+        "mrecep_target": "",
+        "parent_target": "",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "gt_params": {
+        "object_target": "SoapBar",
+        "mrecep_target": "",
+        "parent_target": "Drawer",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "planner_success": false,
+      "planner_error": "KeyError: ''",
+      "execution_success": false,
+      "plan_length": 32,
+      "trajectory_head": [
+        "go to toilet 1",
+        "go to sinkbasin 1",
+        "go to sinkbasin 2",
+        "go to garbagecan 1",
+        "go to drawer 1"
+      ],
+      "trajectory_tail": [
+        "close drawer 8",
+        "go to countertop 1",
+        "take soapbar 2 from countertop 1",
+        "go to sinkbasin 2",
+        "clean soapbar 2 with sinkbasin 2"
+      ],
+      "stage_failed": "planner",
+      "seconds": 1.3004248142242432
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-ButterKnife-None-CounterTop-8",
+      "task_type": "pick_clean_then_place_in_recep",
+      "parsed_params": {
+        "object_target": "ButterKnife",
+        "mrecep_target": "",
+        "parent_target": "CounterTop",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "gt_params": {
+        "object_target": "ButterKnife",
+        "mrecep_target": "",
+        "parent_target": "CounterTop",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": true,
+      "plan_length": 29,
+      "trajectory_head": [
+        "go to sinkbasin 1",
+        "go to drawer 1",
+        "open drawer 1",
+        "close drawer 1",
+        "go to drawer 2"
+      ],
+      "trajectory_tail": [
+        "take butterknife 1 from countertop 2",
+        "go to sinkbasin 1",
+        "clean butterknife 1 with sinkbasin 1",
+        "go to countertop 1",
+        "move butterknife 1 to countertop 1"
+      ],
+      "stage_failed": null,
+      "seconds": 2.8648159503936768
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-Mug-None-CoffeeMachine-26",
+      "task_type": "pick_clean_then_place_in_recep",
+      "parsed_params": {
+        "object_target": "Mug",
+        "mrecep_target": "",
+        "parent_target": "CoffeeMachine",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "gt_params": {
+        "object_target": "Mug",
+        "mrecep_target": "",
+        "parent_target": "CoffeeMachine",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": true,
+      "plan_length": 18,
+      "trajectory_head": [
+        "go to toaster 1",
+        "go to stoveburner 1",
+        "go to stoveburner 2",
+        "go to stoveburner 3",
+        "go to stoveburner 4"
+      ],
+      "trajectory_tail": [
+        "go to sinkbasin 1",
+        "clean mug 1 with sinkbasin 1",
+        "close fridge 1",
+        "go to coffeemachine 1",
+        "move mug 1 to coffeemachine 1"
+      ],
+      "stage_failed": null,
+      "seconds": 1.3756768703460693
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-SoapBar-None-Toilet-410",
+      "task_type": "pick_clean_then_place_in_recep",
+      "parsed_params": {
+        "object_target": "SoapBar",
+        "mrecep_target": "",
+        "parent_target": "Toilet",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "gt_params": {
+        "object_target": "SoapBar",
+        "mrecep_target": "",
+        "parent_target": "Toilet",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": true,
+      "plan_length": 9,
+      "trajectory_head": [
+        "go to toilet 1",
+        "go to sinkbasin 1",
+        "go to sinkbasin 2",
+        "go to garbagecan 1",
+        "take soapbar 3 from garbagecan 1"
+      ],
+      "trajectory_tail": [
+        "take soapbar 3 from garbagecan 1",
+        "go to sinkbasin 2",
+        "clean soapbar 3 with sinkbasin 2",
+        "go to toilet 1",
+        "move soapbar 3 to toilet 1"
+      ],
+      "stage_failed": null,
+      "seconds": 0.6250460147857666
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-Tomato-None-CounterTop-25",
+      "task_type": "pick_clean_then_place_in_recep",
+      "parsed_params": {
+        "object_target": "Tomato",
+        "mrecep_target": "",
+        "parent_target": "CounterTop",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "gt_params": {
+        "object_target": "Tomato",
+        "mrecep_target": "",
+        "parent_target": "CounterTop",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": true,
+      "plan_length": 13,
+      "trajectory_head": [
+        "go to sinkbasin 1",
+        "go to microwave 1",
+        "open microwave 1",
+        "close microwave 1",
+        "go to garbagecan 1"
+      ],
+      "trajectory_tail": [
+        "go to sinkbasin 1",
+        "clean tomato 1 with sinkbasin 1",
+        "close fridge 1",
+        "go to countertop 1",
+        "move tomato 1 to countertop 1"
+      ],
+      "stage_failed": null,
+      "seconds": 1.3820099830627441
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-ButterKnife-None-Drawer-8",
+      "task_type": "pick_clean_then_place_in_recep",
+      "parsed_params": {
+        "object_target": "Knife",
+        "mrecep_target": "",
+        "parent_target": "Drawer",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "gt_params": {
+        "object_target": "ButterKnife",
+        "mrecep_target": "",
+        "parent_target": "Drawer",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": false,
+      "plan_length": 80,
+      "trajectory_head": [
+        "go to sinkbasin 1",
+        "go to drawer 1",
+        "open drawer 1",
+        "take knife 1 from drawer 1",
+        "go to sinkbasin 1"
+      ],
+      "trajectory_tail": [
+        "move knife 1 to drawer 1",
+        "move knife 1 to drawer 1",
+        "move knife 1 to drawer 1",
+        "move knife 1 to drawer 1",
+        "move knife 1 to drawer 1"
+      ],
+      "stage_failed": "goal_check",
+      "seconds": 5.0409159660339355
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-DishSponge-None-Cart-401",
+      "task_type": "pick_clean_then_place_in_recep",
+      "parsed_params": {
+        "object_target": "DishSponge",
+        "mrecep_target": "",
+        "parent_target": "Drawer",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "gt_params": {
+        "object_target": "DishSponge",
+        "mrecep_target": "",
+        "parent_target": "Cart",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": false,
+      "plan_length": 80,
+      "trajectory_head": [
+        "go to toilet 1",
+        "take dishsponge 1 from toilet 1",
+        "go to sinkbasin 1",
+        "clean dishsponge 1 with sinkbasin 1",
+        "go to towelholder 1"
+      ],
+      "trajectory_tail": [
+        "go to shelf 2",
+        "go to shelf 3",
+        "go to shelf 4",
+        "go to handtowelholder 1",
+        "go to handtowelholder 2"
+      ],
+      "stage_failed": "goal_check",
+      "seconds": 1.883802890777588
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-Lettuce-None-Fridge-19",
+      "task_type": "pick_clean_then_place_in_recep",
+      "parsed_params": {
+        "object_target": "Lettuce",
+        "mrecep_target": "",
+        "parent_target": "Fridge",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "gt_params": {
+        "object_target": "Lettuce",
+        "mrecep_target": "",
+        "parent_target": "Fridge",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": true,
+      "plan_length": 13,
+      "trajectory_head": [
+        "go to sinkbasin 1",
+        "go to garbagecan 1",
+        "go to fridge 1",
+        "open fridge 1",
+        "close fridge 1"
+      ],
+      "trajectory_tail": [
+        "go to sinkbasin 1",
+        "clean lettuce 1 with sinkbasin 1",
+        "go to fridge 1",
+        "open fridge 1",
+        "move lettuce 1 to fridge 1"
+      ],
+      "stage_failed": null,
+      "seconds": 1.7437770366668701
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-Cloth-None-Drawer-423",
+      "task_type": "pick_clean_then_place_in_recep",
+      "parsed_params": {
+        "object_target": "Cloth",
+        "mrecep_target": "",
+        "parent_target": "Drawer",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "gt_params": {
+        "object_target": "Cloth",
+        "mrecep_target": "",
+        "parent_target": "Drawer",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": true,
+      "plan_length": 12,
+      "trajectory_head": [
+        "go to toilet 1",
+        "go to sinkbasin 1",
+        "go to sinkbasin 2",
+        "go to garbagecan 1",
+        "go to drawer 1"
+      ],
+      "trajectory_tail": [
+        "go to sinkbasin 2",
+        "clean cloth 1 with sinkbasin 2",
+        "close drawer 1",
+        "go to drawer 1",
+        "move cloth 1 to drawer 1"
+      ],
+      "stage_failed": null,
+      "seconds": 0.904644250869751
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-Cloth-None-Cabinet-405",
+      "task_type": "pick_clean_then_place_in_recep",
+      "parsed_params": {
+        "object_target": "Towel",
+        "mrecep_target": "",
+        "parent_target": "Cabinet",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "gt_params": {
+        "object_target": "Cloth",
+        "mrecep_target": "",
+        "parent_target": "Cabinet",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": false,
+      "plan_length": 80,
+      "trajectory_head": [
+        "go to towelholder 1",
+        "take towel 1 from towelholder 1",
+        "go to sinkbasin 1",
+        "go to sinkbasin 1",
+        "go to sinkbasin 1"
+      ],
+      "trajectory_tail": [
+        "go to sinkbasin 1",
+        "go to sinkbasin 1",
+        "go to sinkbasin 1",
+        "go to sinkbasin 1",
+        "go to sinkbasin 1"
+      ],
+      "stage_failed": "goal_check",
+      "seconds": 1.5745959281921387
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-SoapBar-None-Cabinet-402",
+      "task_type": "pick_clean_then_place_in_recep",
+      "parsed_params": {
+        "object_target": "SoapBar",
+        "mrecep_target": "",
+        "parent_target": "SinkBasin",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "gt_params": {
+        "object_target": "SoapBar",
+        "mrecep_target": "",
+        "parent_target": "Cabinet",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": false,
+      "plan_length": 80,
+      "trajectory_head": [
+        "go to toilet 1",
+        "go to sinkbasin 1",
+        "go to sinkbasin 2",
+        "go to shelf 1",
+        "take soapbar 1 from shelf 1"
+      ],
+      "trajectory_tail": [
+        "move soapbar 1 to sinkbasin 1",
+        "move soapbar 1 to sinkbasin 1",
+        "move soapbar 1 to sinkbasin 1",
+        "move soapbar 1 to sinkbasin 1",
+        "move soapbar 1 to sinkbasin 1"
+      ],
+      "stage_failed": "goal_check",
+      "seconds": 1.9033429622650146
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-Lettuce-None-CounterTop-16",
+      "task_type": "pick_clean_then_place_in_recep",
+      "parsed_params": {
+        "object_target": "Lettuce",
+        "mrecep_target": "",
+        "parent_target": "CounterTop",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "gt_params": {
+        "object_target": "Lettuce",
+        "mrecep_target": "",
+        "parent_target": "CounterTop",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": true,
+      "plan_length": 11,
+      "trajectory_head": [
+        "go to sinkbasin 1",
+        "go to garbagecan 1",
+        "go to fridge 1",
+        "open fridge 1",
+        "close fridge 1"
+      ],
+      "trajectory_tail": [
+        "take lettuce 2 from diningtable 1",
+        "go to sinkbasin 1",
+        "clean lettuce 2 with sinkbasin 1",
+        "go to countertop 1",
+        "move lettuce 2 to countertop 1"
+      ],
+      "stage_failed": null,
+      "seconds": 2.5824170112609863
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-Ladle-None-DiningTable-27",
+      "task_type": "pick_clean_then_place_in_recep",
+      "parsed_params": {
+        "object_target": "Spoon",
+        "mrecep_target": "",
+        "parent_target": "DiningTable",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "gt_params": {
+        "object_target": "Ladle",
+        "mrecep_target": "",
+        "parent_target": "DiningTable",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": false,
+      "plan_length": 80,
+      "trajectory_head": [
+        "go to sinkbasin 1",
+        "go to drawer 1",
+        "open drawer 1",
+        "close drawer 1",
+        "go to drawer 2"
+      ],
+      "trajectory_tail": [
+        "move spoon 1 to countertop 2",
+        "move spoon 1 to countertop 2",
+        "move spoon 1 to countertop 2",
+        "move spoon 1 to countertop 2",
+        "move spoon 1 to countertop 2"
+      ],
+      "stage_failed": "goal_check",
+      "seconds": 3.9091882705688477
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-Ladle-None-CounterTop-14",
+      "task_type": "pick_clean_then_place_in_recep",
+      "parsed_params": {
+        "object_target": "Spoon",
+        "mrecep_target": "",
+        "parent_target": "CounterTop",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "gt_params": {
+        "object_target": "Ladle",
+        "mrecep_target": "",
+        "parent_target": "CounterTop",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": false,
+      "plan_length": 80,
+      "trajectory_head": [
+        "go to sinkbasin 1",
+        "go to countertop 1",
+        "take spoon 1 from countertop 1",
+        "go to sinkbasin 1",
+        "clean spoon 1 with sinkbasin 1"
+      ],
+      "trajectory_tail": [
+        "move spoon 1 to countertop 1",
+        "move spoon 1 to countertop 1",
+        "move spoon 1 to countertop 1",
+        "move spoon 1 to countertop 1",
+        "move spoon 1 to countertop 1"
+      ],
+      "stage_failed": "goal_check",
+      "seconds": 2.47526216506958
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-ButterKnife-None-Drawer-2",
+      "task_type": "pick_clean_then_place_in_recep",
+      "parsed_params": {
+        "object_target": "ButterKnife",
+        "mrecep_target": "",
+        "parent_target": "Drawer",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "gt_params": {
+        "object_target": "ButterKnife",
+        "mrecep_target": "",
+        "parent_target": "Drawer",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": true,
+      "plan_length": 39,
+      "trajectory_head": [
+        "go to sinkbasin 1",
+        "go to drawer 1",
+        "open drawer 1",
+        "close drawer 1",
+        "go to drawer 2"
+      ],
+      "trajectory_tail": [
+        "go to sinkbasin 1",
+        "clean butterknife 2 with sinkbasin 1",
+        "go to drawer 1",
+        "open drawer 1",
+        "move butterknife 2 to drawer 1"
+      ],
+      "stage_failed": null,
+      "seconds": 2.7012081146240234
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-Ladle-None-DiningTable-4",
+      "task_type": "pick_clean_then_place_in_recep",
+      "parsed_params": {
+        "object_target": "Ladle",
+        "mrecep_target": "",
+        "parent_target": "DiningTable",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "gt_params": {
+        "object_target": "Ladle",
+        "mrecep_target": "",
+        "parent_target": "DiningTable",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": true,
+      "plan_length": 23,
+      "trajectory_head": [
+        "go to sinkbasin 1",
+        "go to drawer 1",
+        "open drawer 1",
+        "close drawer 1",
+        "go to drawer 2"
+      ],
+      "trajectory_tail": [
+        "take ladle 2 from diningtable 1",
+        "go to sinkbasin 1",
+        "clean ladle 2 with sinkbasin 1",
+        "go to diningtable 1",
+        "move ladle 2 to diningtable 1"
+      ],
+      "stage_failed": null,
+      "seconds": 1.4959070682525635
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-ButterKnife-None-DiningTable-16",
+      "task_type": "pick_clean_then_place_in_recep",
+      "parsed_params": {
+        "object_target": "Knife",
+        "mrecep_target": "",
+        "parent_target": "DiningTable",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "gt_params": {
+        "object_target": "ButterKnife",
+        "mrecep_target": "",
+        "parent_target": "DiningTable",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": false,
+      "plan_length": 80,
+      "trajectory_head": [
+        "go to sinkbasin 1",
+        "take knife 2 from sinkbasin 1",
+        "clean knife 2 with sinkbasin 1",
+        "go to diningtable 1",
+        "move knife 2 to diningtable 1"
+      ],
+      "trajectory_tail": [
+        "move knife 2 to sinkbasin 1",
+        "move knife 2 to sinkbasin 1",
+        "move knife 2 to sinkbasin 1",
+        "move knife 2 to sinkbasin 1",
+        "move knife 2 to sinkbasin 1"
+      ],
+      "stage_failed": "goal_check",
+      "seconds": 6.815206050872803
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-SoapBar-None-Toilet-410",
+      "task_type": "pick_clean_then_place_in_recep",
+      "parsed_params": {
+        "object_target": "SoapBar",
+        "mrecep_target": "",
+        "parent_target": "Toilet",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "gt_params": {
+        "object_target": "SoapBar",
+        "mrecep_target": "",
+        "parent_target": "Toilet",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": true,
+      "plan_length": 9,
+      "trajectory_head": [
+        "go to toilet 1",
+        "go to sinkbasin 1",
+        "go to sinkbasin 2",
+        "go to garbagecan 1",
+        "take soapbar 3 from garbagecan 1"
+      ],
+      "trajectory_tail": [
+        "take soapbar 3 from garbagecan 1",
+        "go to sinkbasin 2",
+        "clean soapbar 3 with sinkbasin 2",
+        "go to toilet 1",
+        "move soapbar 3 to toilet 1"
+      ],
+      "stage_failed": null,
+      "seconds": 0.6541812419891357
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-Ladle-None-DiningTable-16",
+      "task_type": "pick_clean_then_place_in_recep",
+      "parsed_params": {
+        "object_target": "Spoon",
+        "mrecep_target": "",
+        "parent_target": "DiningTable",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "gt_params": {
+        "object_target": "Ladle",
+        "mrecep_target": "",
+        "parent_target": "DiningTable",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": false,
+      "plan_length": 80,
+      "trajectory_head": [
+        "go to sinkbasin 1",
+        "go to drawer 1",
+        "open drawer 1",
+        "close drawer 1",
+        "go to drawer 2"
+      ],
+      "trajectory_tail": [
+        "move spoon 1 to diningtable 1",
+        "move spoon 1 to diningtable 1",
+        "move spoon 1 to diningtable 1",
+        "move spoon 1 to diningtable 1",
+        "move spoon 1 to diningtable 1"
+      ],
+      "stage_failed": "goal_check",
+      "seconds": 7.202098846435547
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-Plate-None-Fridge-5",
+      "task_type": "pick_clean_then_place_in_recep",
+      "parsed_params": {
+        "object_target": "Plate",
+        "mrecep_target": "",
+        "parent_target": "Fridge",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "gt_params": {
+        "object_target": "Plate",
+        "mrecep_target": "",
+        "parent_target": "Fridge",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": true,
+      "plan_length": 34,
+      "trajectory_head": [
+        "go to toaster 1",
+        "go to stoveburner 1",
+        "go to stoveburner 2",
+        "go to stoveburner 3",
+        "go to stoveburner 4"
+      ],
+      "trajectory_tail": [
+        "go to sinkbasin 1",
+        "clean plate 2 with sinkbasin 1",
+        "go to fridge 1",
+        "open fridge 1",
+        "move plate 2 to fridge 1"
+      ],
+      "stage_failed": null,
+      "seconds": 2.8108651638031006
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-Fork-None-CounterTop-23",
+      "task_type": "pick_clean_then_place_in_recep",
+      "parsed_params": {
+        "object_target": "Fork",
+        "mrecep_target": "",
+        "parent_target": "CounterTop",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "gt_params": {
+        "object_target": "Fork",
+        "mrecep_target": "",
+        "parent_target": "CounterTop",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": true,
+      "plan_length": 11,
+      "trajectory_head": [
+        "go to sinkbasin 1",
+        "go to drawer 1",
+        "go to drawer 2",
+        "open drawer 2",
+        "close drawer 2"
+      ],
+      "trajectory_tail": [
+        "take fork 4 from diningtable 1",
+        "go to sinkbasin 1",
+        "clean fork 4 with sinkbasin 1",
+        "go to countertop 1",
+        "move fork 4 to countertop 1"
+      ],
+      "stage_failed": null,
+      "seconds": 1.2406737804412842
+    },
+    {
+      "task_id": "pick_cool_then_place_in_recep-Pan-None-StoveBurner-18",
+      "task_type": "pick_cool_then_place_in_recep",
+      "parsed_params": {
+        "object_target": "Pan",
+        "mrecep_target": "",
+        "parent_target": "StoveBurner",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": true,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "gt_params": {
+        "object_target": "Pan",
+        "mrecep_target": "",
+        "parent_target": "StoveBurner",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": true,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": true,
+      "plan_length": 9,
+      "trajectory_head": [
+        "go to toaster 1",
+        "go to stoveburner 1",
+        "go to stoveburner 2",
+        "go to stoveburner 3",
+        "take pan 1 from stoveburner 3"
+      ],
+      "trajectory_tail": [
+        "take pan 1 from stoveburner 3",
+        "go to fridge 1",
+        "cool pan 1 with fridge 1",
+        "go to stoveburner 1",
+        "move pan 1 to stoveburner 1"
+      ],
+      "stage_failed": null,
+      "seconds": 1.6283867359161377
+    },
+    {
+      "task_id": "pick_cool_then_place_in_recep-Tomato-None-Microwave-13",
+      "task_type": "pick_cool_then_place_in_recep",
+      "parsed_params": {
+        "object_target": "Tomato",
+        "mrecep_target": "",
+        "parent_target": "Microwave",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": true,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "gt_params": {
+        "object_target": "Tomato",
+        "mrecep_target": "",
+        "parent_target": "Microwave",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": true,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": true,
+      "plan_length": 11,
+      "trajectory_head": [
+        "go to sinkbasin 1",
+        "go to microwave 1",
+        "open microwave 1",
+        "close microwave 1",
+        "go to garbagecan 1"
+      ],
+      "trajectory_tail": [
+        "go to fridge 1",
+        "cool tomato 3 with fridge 1",
+        "go to microwave 1",
+        "open microwave 1",
+        "move tomato 3 to microwave 1"
+      ],
+      "stage_failed": null,
+      "seconds": 2.4215238094329834
+    },
+    {
+      "task_id": "pick_cool_then_place_in_recep-Tomato-None-CounterTop-12",
+      "task_type": "pick_cool_then_place_in_recep",
+      "parsed_params": {
+        "object_target": "Tomato",
+        "mrecep_target": "",
+        "parent_target": "CounterTop",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": true,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "gt_params": {
+        "object_target": "Tomato",
+        "mrecep_target": "",
+        "parent_target": "CounterTop",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": true,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": true,
+      "plan_length": 10,
+      "trajectory_head": [
+        "go to sinkbasin 1",
+        "go to microwave 1",
+        "open microwave 1",
+        "close microwave 1",
+        "go to garbagecan 1"
+      ],
+      "trajectory_tail": [
+        "take tomato 2 from garbagecan 1",
+        "go to fridge 1",
+        "cool tomato 2 with fridge 1",
+        "go to countertop 1",
+        "move tomato 2 to countertop 1"
+      ],
+      "stage_failed": null,
+      "seconds": 1.5154337882995605
+    },
+    {
+      "task_id": "pick_cool_then_place_in_recep-Mug-None-CoffeeMachine-16",
+      "task_type": "pick_cool_then_place_in_recep",
+      "parsed_params": {
+        "object_target": "Mug",
+        "mrecep_target": "",
+        "parent_target": "CoffeeMachine",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": true,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "gt_params": {
+        "object_target": "Mug",
+        "mrecep_target": "",
+        "parent_target": "CoffeeMachine",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": true,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": true,
+      "plan_length": 53,
+      "trajectory_head": [
+        "go to toaster 1",
+        "go to stoveburner 1",
+        "go to stoveburner 2",
+        "go to stoveburner 3",
+        "go to stoveburner 4"
+      ],
+      "trajectory_tail": [
+        "go to countertop 1",
+        "go to countertop 2",
+        "take mug 1 from countertop 2",
+        "go to fridge 1",
+        "cool mug 1 with fridge 1"
+      ],
+      "stage_failed": null,
+      "seconds": 5.072962999343872
+    },
+    {
+      "task_id": "pick_cool_then_place_in_recep-Plate-None-CounterTop-1",
+      "task_type": "pick_cool_then_place_in_recep",
+      "parsed_params": {
+        "object_target": "Plate",
+        "mrecep_target": "",
+        "parent_target": "",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": true,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "gt_params": {
+        "object_target": "Plate",
+        "mrecep_target": "",
+        "parent_target": "CounterTop",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": true,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "planner_success": false,
+      "planner_error": "KeyError: ''",
+      "execution_success": false,
+      "plan_length": 44,
+      "trajectory_head": [
+        "go to toaster 1",
+        "go to stoveburner 1",
+        "go to stoveburner 2",
+        "go to stoveburner 3",
+        "go to stoveburner 4"
+      ],
+      "trajectory_tail": [
+        "go to countertop 1",
+        "go to countertop 2",
+        "take plate 1 from countertop 2",
+        "go to fridge 1",
+        "cool plate 1 with fridge 1"
+      ],
+      "stage_failed": "planner",
+      "seconds": 3.010161876678467
+    },
+    {
+      "task_id": "pick_cool_then_place_in_recep-Tomato-None-GarbageCan-6",
+      "task_type": "pick_cool_then_place_in_recep",
+      "parsed_params": {
+        "object_target": "Tomato",
+        "mrecep_target": "",
+        "parent_target": "GarbageCan",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": true,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "gt_params": {
+        "object_target": "Tomato",
+        "mrecep_target": "",
+        "parent_target": "GarbageCan",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": true,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": true,
+      "plan_length": 10,
+      "trajectory_head": [
+        "go to sinkbasin 1",
+        "go to microwave 1",
+        "open microwave 1",
+        "close microwave 1",
+        "go to garbagecan 1"
+      ],
+      "trajectory_tail": [
+        "take tomato 1 from garbagecan 1",
+        "go to fridge 1",
+        "cool tomato 1 with fridge 1",
+        "go to garbagecan 1",
+        "move tomato 1 to garbagecan 1"
+      ],
+      "stage_failed": null,
+      "seconds": 1.3867990970611572
+    },
+    {
+      "task_id": "pick_cool_then_place_in_recep-Pot-None-DiningTable-21",
+      "task_type": "pick_cool_then_place_in_recep",
+      "parsed_params": {
+        "object_target": "Pot",
+        "mrecep_target": "",
+        "parent_target": "DiningTable",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": true,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "gt_params": {
+        "object_target": "Pot",
+        "mrecep_target": "",
+        "parent_target": "DiningTable",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": true,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": true,
+      "plan_length": 10,
+      "trajectory_head": [
+        "go to toaster 1",
+        "go to stoveburner 1",
+        "go to stoveburner 2",
+        "go to stoveburner 3",
+        "go to stoveburner 4"
+      ],
+      "trajectory_tail": [
+        "take pot 1 from stoveburner 4",
+        "go to fridge 1",
+        "cool pot 1 with fridge 1",
+        "go to diningtable 1",
+        "move pot 1 to diningtable 1"
+      ],
+      "stage_failed": null,
+      "seconds": 0.9706389904022217
+    },
+    {
+      "task_id": "pick_cool_then_place_in_recep-Plate-None-Cabinet-27",
+      "task_type": "pick_cool_then_place_in_recep",
+      "parsed_params": {
+        "object_target": "Plate",
+        "mrecep_target": "DiningTable",
+        "parent_target": "Fridge",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "gt_params": {
+        "object_target": "Plate",
+        "mrecep_target": "",
+        "parent_target": "Cabinet",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": true,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": false,
+      "plan_length": 80,
+      "trajectory_head": [
+        "go to toaster 1",
+        "go to stoveburner 1",
+        "go to stoveburner 2",
+        "go to stoveburner 3",
+        "go to stoveburner 4"
+      ],
+      "trajectory_tail": [
+        "go to fridge 1",
+        "go to fridge 1",
+        "go to fridge 1",
+        "go to fridge 1",
+        "go to fridge 1"
+      ],
+      "stage_failed": "goal_check",
+      "seconds": 3.641848087310791
+    },
+    {
+      "task_id": "pick_cool_then_place_in_recep-Lettuce-None-CounterTop-1",
+      "task_type": "pick_cool_then_place_in_recep",
+      "parsed_params": {
+        "object_target": "Lettuce",
+        "mrecep_target": "",
+        "parent_target": "CounterTop",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": true,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "gt_params": {
+        "object_target": "Lettuce",
+        "mrecep_target": "",
+        "parent_target": "CounterTop",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": true,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": true,
+      "plan_length": 11,
+      "trajectory_head": [
+        "go to sinkbasin 1",
+        "go to garbagecan 1",
+        "go to fridge 1",
+        "open fridge 1",
+        "close fridge 1"
+      ],
+      "trajectory_tail": [
+        "take lettuce 1 from countertop 1",
+        "go to fridge 1",
+        "cool lettuce 1 with fridge 1",
+        "go to countertop 1",
+        "move lettuce 1 to countertop 1"
+      ],
+      "stage_failed": null,
+      "seconds": 1.747581958770752
+    },
+    {
+      "task_id": "pick_cool_then_place_in_recep-Tomato-None-CounterTop-12",
+      "task_type": "pick_cool_then_place_in_recep",
+      "parsed_params": {
+        "object_target": "Tomato",
+        "mrecep_target": "",
+        "parent_target": "CounterTop",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": true,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "gt_params": {
+        "object_target": "Tomato",
+        "mrecep_target": "",
+        "parent_target": "CounterTop",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": true,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": true,
+      "plan_length": 10,
+      "trajectory_head": [
+        "go to sinkbasin 1",
+        "go to microwave 1",
+        "open microwave 1",
+        "close microwave 1",
+        "go to garbagecan 1"
+      ],
+      "trajectory_tail": [
+        "take tomato 2 from garbagecan 1",
+        "go to fridge 1",
+        "cool tomato 2 with fridge 1",
+        "go to countertop 1",
+        "move tomato 2 to countertop 1"
+      ],
+      "stage_failed": null,
+      "seconds": 1.5785620212554932
+    },
+    {
+      "task_id": "pick_cool_then_place_in_recep-Bread-None-CounterTop-7",
+      "task_type": "pick_cool_then_place_in_recep",
+      "parsed_params": {
+        "object_target": "Bread",
+        "mrecep_target": "",
+        "parent_target": "StoveBurner",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": true,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "gt_params": {
+        "object_target": "Bread",
+        "mrecep_target": "",
+        "parent_target": "CounterTop",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": true,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": false,
+      "plan_length": 80,
+      "trajectory_head": [
+        "go to microwave 1",
+        "open microwave 1",
+        "close microwave 1",
+        "go to garbagecan 1",
+        "go to fridge 1"
+      ],
+      "trajectory_tail": [
+        "examine stoveburner 1",
+        "examine stoveburner 1",
+        "examine stoveburner 1",
+        "examine stoveburner 1",
+        "examine stoveburner 1"
+      ],
+      "stage_failed": "goal_check",
+      "seconds": 4.250690937042236
+    },
+    {
+      "task_id": "pick_cool_then_place_in_recep-Apple-None-Microwave-5",
+      "task_type": "pick_cool_then_place_in_recep",
+      "parsed_params": {
+        "object_target": "Apple",
+        "mrecep_target": "",
+        "parent_target": "Microwave",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": true,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "gt_params": {
+        "object_target": "Apple",
+        "mrecep_target": "",
+        "parent_target": "Microwave",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": true,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": true,
+      "plan_length": 16,
+      "trajectory_head": [
+        "go to sinkbasin 1",
+        "go to microwave 1",
+        "open microwave 1",
+        "close microwave 1",
+        "go to garbagecan 1"
+      ],
+      "trajectory_tail": [
+        "go to fridge 1",
+        "cool apple 1 with fridge 1",
+        "go to microwave 1",
+        "open microwave 1",
+        "move apple 1 to microwave 1"
+      ],
+      "stage_failed": null,
+      "seconds": 2.2325761318206787
+    },
+    {
+      "task_id": "pick_cool_then_place_in_recep-Lettuce-None-CounterTop-11",
+      "task_type": "pick_cool_then_place_in_recep",
+      "parsed_params": {
+        "object_target": "Lettuce",
+        "mrecep_target": "",
+        "parent_target": "CounterTop",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": true,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "gt_params": {
+        "object_target": "Lettuce",
+        "mrecep_target": "",
+        "parent_target": "CounterTop",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": true,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": true,
+      "plan_length": 14,
+      "trajectory_head": [
+        "go to sinkbasin 1",
+        "go to garbagecan 1",
+        "go to fridge 1",
+        "open fridge 1",
+        "close fridge 1"
+      ],
+      "trajectory_tail": [
+        "take lettuce 1 from countertop 3",
+        "go to fridge 1",
+        "cool lettuce 1 with fridge 1",
+        "go to countertop 1",
+        "move lettuce 1 to countertop 1"
+      ],
+      "stage_failed": null,
+      "seconds": 1.5067880153656006
+    },
+    {
+      "task_id": "pick_cool_then_place_in_recep-Apple-None-CounterTop-14",
+      "task_type": "pick_cool_then_place_in_recep",
+      "parsed_params": {
+        "object_target": "Apple",
+        "mrecep_target": "",
+        "parent_target": "CounterTop",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": true,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "gt_params": {
+        "object_target": "Apple",
+        "mrecep_target": "",
+        "parent_target": "CounterTop",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": true,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": true,
+      "plan_length": 9,
+      "trajectory_head": [
+        "go to sinkbasin 1",
+        "go to microwave 1",
+        "open microwave 1",
+        "take apple 1 from microwave 1",
+        "go to fridge 1"
+      ],
+      "trajectory_tail": [
+        "go to fridge 1",
+        "cool apple 1 with fridge 1",
+        "close microwave 1",
+        "go to countertop 1",
+        "move apple 1 to countertop 1"
+      ],
+      "stage_failed": null,
+      "seconds": 1.0190682411193848
+    },
+    {
+      "task_id": "pick_cool_then_place_in_recep-Pan-None-DiningTable-7",
+      "task_type": "pick_cool_then_place_in_recep",
+      "parsed_params": {
+        "object_target": "Pan",
+        "mrecep_target": "",
+        "parent_target": "DiningTable",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": true,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "gt_params": {
+        "object_target": "Pan",
+        "mrecep_target": "",
+        "parent_target": "DiningTable",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": true,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": true,
+      "plan_length": 10,
+      "trajectory_head": [
+        "go to toaster 1",
+        "go to stoveburner 1",
+        "go to stoveburner 2",
+        "go to stoveburner 3",
+        "go to stoveburner 4"
+      ],
+      "trajectory_tail": [
+        "take pan 1 from stoveburner 4",
+        "go to fridge 1",
+        "cool pan 1 with fridge 1",
+        "go to diningtable 1",
+        "move pan 1 to diningtable 1"
+      ],
+      "stage_failed": null,
+      "seconds": 1.453908920288086
+    },
+    {
+      "task_id": "pick_cool_then_place_in_recep-Tomato-None-Microwave-18",
+      "task_type": "pick_cool_then_place_in_recep",
+      "parsed_params": {
+        "object_target": "Tomato",
+        "mrecep_target": "",
+        "parent_target": "Microwave",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": true,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "gt_params": {
+        "object_target": "Tomato",
+        "mrecep_target": "",
+        "parent_target": "Microwave",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": true,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": true,
+      "plan_length": 15,
+      "trajectory_head": [
+        "go to sinkbasin 1",
+        "go to microwave 1",
+        "open microwave 1",
+        "close microwave 1",
+        "go to garbagecan 1"
+      ],
+      "trajectory_tail": [
+        "go to fridge 1",
+        "cool tomato 2 with fridge 1",
+        "go to microwave 1",
+        "open microwave 1",
+        "move tomato 2 to microwave 1"
+      ],
+      "stage_failed": null,
+      "seconds": 1.8981668949127197
+    },
+    {
+      "task_id": "pick_cool_then_place_in_recep-Plate-None-Cabinet-7",
+      "task_type": "pick_cool_then_place_in_recep",
+      "parsed_params": {
+        "object_target": "Plate",
+        "mrecep_target": "",
+        "parent_target": "Cabinet",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": true,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "gt_params": {
+        "object_target": "Plate",
+        "mrecep_target": "",
+        "parent_target": "Cabinet",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": true,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": true,
+      "plan_length": 13,
+      "trajectory_head": [
+        "go to toaster 1",
+        "go to stoveburner 1",
+        "go to stoveburner 2",
+        "go to stoveburner 3",
+        "go to stoveburner 4"
+      ],
+      "trajectory_tail": [
+        "go to fridge 1",
+        "cool plate 1 with fridge 1",
+        "go to cabinet 1",
+        "open cabinet 1",
+        "move plate 1 to cabinet 1"
+      ],
+      "stage_failed": null,
+      "seconds": 1.7481911182403564
+    },
+    {
+      "task_id": "pick_cool_then_place_in_recep-WineBottle-None-DiningTable-17",
+      "task_type": "pick_cool_then_place_in_recep",
+      "parsed_params": {
+        "object_target": "WineBottle",
+        "mrecep_target": "",
+        "parent_target": "DiningTable",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": true,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "gt_params": {
+        "object_target": "WineBottle",
+        "mrecep_target": "",
+        "parent_target": "DiningTable",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": true,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": true,
+      "plan_length": 10,
+      "trajectory_head": [
+        "go to garbagecan 1",
+        "go to fridge 1",
+        "open fridge 1",
+        "close fridge 1",
+        "go to diningtable 1"
+      ],
+      "trajectory_tail": [
+        "take winebottle 1 from diningtable 1",
+        "go to fridge 1",
+        "cool winebottle 1 with fridge 1",
+        "go to diningtable 1",
+        "move winebottle 1 to diningtable 1"
+      ],
+      "stage_failed": null,
+      "seconds": 2.0181477069854736
+    },
+    {
+      "task_id": "pick_cool_then_place_in_recep-Egg-None-Microwave-24",
+      "task_type": "pick_cool_then_place_in_recep",
+      "parsed_params": {
+        "object_target": "Egg",
+        "mrecep_target": "",
+        "parent_target": "Microwave",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": true,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "gt_params": {
+        "object_target": "Egg",
+        "mrecep_target": "",
+        "parent_target": "Microwave",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": true,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": true,
+      "plan_length": 15,
+      "trajectory_head": [
+        "go to sinkbasin 1",
+        "go to microwave 1",
+        "open microwave 1",
+        "close microwave 1",
+        "go to garbagecan 1"
+      ],
+      "trajectory_tail": [
+        "go to fridge 1",
+        "cool egg 1 with fridge 1",
+        "go to microwave 1",
+        "open microwave 1",
+        "move egg 1 to microwave 1"
+      ],
+      "stage_failed": null,
+      "seconds": 1.9720897674560547
+    },
+    {
+      "task_id": "pick_cool_then_place_in_recep-Cup-None-Microwave-17",
+      "task_type": "pick_cool_then_place_in_recep",
+      "parsed_params": {
+        "object_target": "Cup",
+        "mrecep_target": "Microwave",
+        "parent_target": "Fridge",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": true,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "gt_params": {
+        "object_target": "Cup",
+        "mrecep_target": "",
+        "parent_target": "Microwave",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": true,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": false,
+      "plan_length": 80,
+      "trajectory_head": [
+        "go to toaster 1",
+        "go to stoveburner 1",
+        "go to stoveburner 2",
+        "go to stoveburner 3",
+        "go to stoveburner 4"
+      ],
+      "trajectory_tail": [
+        "go to fridge 1",
+        "go to fridge 1",
+        "go to fridge 1",
+        "go to fridge 1",
+        "go to fridge 1"
+      ],
+      "stage_failed": "goal_check",
+      "seconds": 4.924548149108887
+    },
+    {
+      "task_id": "pick_cool_then_place_in_recep-Cup-None-SideTable-21",
+      "task_type": "pick_cool_then_place_in_recep",
+      "parsed_params": {
+        "object_target": "Cup",
+        "mrecep_target": "",
+        "parent_target": "DiningTable",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": true,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "gt_params": {
+        "object_target": "Cup",
+        "mrecep_target": "",
+        "parent_target": "SideTable",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": true,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": false,
+      "plan_length": 80,
+      "trajectory_head": [
+        "go to toaster 1",
+        "go to stoveburner 1",
+        "go to stoveburner 2",
+        "go to stoveburner 3",
+        "go to stoveburner 4"
+      ],
+      "trajectory_tail": [
+        "move cup 2 to sidetable 1",
+        "move cup 2 to sidetable 1",
+        "move cup 2 to sidetable 1",
+        "move cup 2 to sidetable 1",
+        "move cup 2 to sidetable 1"
+      ],
+      "stage_failed": "goal_check",
+      "seconds": 2.7920820713043213
+    },
+    {
+      "task_id": "pick_cool_then_place_in_recep-Apple-None-GarbageCan-2",
+      "task_type": "pick_cool_then_place_in_recep",
+      "parsed_params": {
+        "object_target": "Apple",
+        "mrecep_target": "",
+        "parent_target": "GarbageCan",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": true,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "gt_params": {
+        "object_target": "Apple",
+        "mrecep_target": "",
+        "parent_target": "GarbageCan",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": true,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "planner_success": true,
+      "planner_error": null,
+      "execution_success": true,
+      "plan_length": 15,
+      "trajectory_head": [
+        "go to sinkbasin 1",
+        "go to microwave 1",
+        "open microwave 1",
+        "close microwave 1",
+        "go to garbagecan 1"
+      ],
+      "trajectory_tail": [
+        "take apple 1 from countertop 2",
+        "go to fridge 1",
+        "cool apple 1 with fridge 1",
+        "go to garbagecan 1",
+        "move apple 1 to garbagecan 1"
+      ],
+      "stage_failed": null,
+      "seconds": 1.6925609111785889
+    }
+  ]
+}

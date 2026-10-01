@@ -1,0 +1,589 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "config": "logistics",
+  "n_parsed": 30,
+  "n_llm_accepted": 17,
+  "llm_accept_rate": 0.5666666666666667,
+  "classical_baseline": 0.0,
+  "rows": [
+    {
+      "inst": 2,
+      "nl_goal": "package_0 is at location_0_0",
+      "gt_atoms": [
+        "at(p0,l0-0)"
+      ],
+      "parsed_final": [
+        "at(p0, l0-0)"
+      ],
+      "llm_proposal": [
+        "at(p0, l0-0)"
+      ],
+      "llm_accepted": true,
+      "accuracy": 1.0
+    },
+    {
+      "inst": 3,
+      "nl_goal": "package_0 is at location_1_0 and package_1 is at location_1_0",
+      "gt_atoms": [
+        "at(p0,l1-0)",
+        "at(p1,l1-0)"
+      ],
+      "parsed_final": [
+        "at(p1,l1-0)",
+        "at(p0,l1-0)"
+      ],
+      "llm_proposal": [
+        "at(package_0, location_1_0)",
+        "at(package_1, location_1_0)"
+      ],
+      "llm_accepted": false,
+      "accuracy": 0.0
+    },
+    {
+      "inst": 4,
+      "nl_goal": "package_0 is at location_0_0 and package_1 is at location_0_0",
+      "gt_atoms": [
+        "at(p0,l0-0)",
+        "at(p1,l0-0)"
+      ],
+      "parsed_final": [
+        "at(p0,l0-0)",
+        "at(p1,l0-0)"
+      ],
+      "llm_proposal": [
+        "at(package_0, location_0_0)",
+        "at(package_1, location_0_0)"
+      ],
+      "llm_accepted": false,
+      "accuracy": 0.0
+    },
+    {
+      "inst": 5,
+      "nl_goal": "package_0 is at location_1_0 and package_1 is at location_0_0",
+      "gt_atoms": [
+        "at(p0,l1-0)",
+        "at(p1,l0-0)"
+      ],
+      "parsed_final": [
+        "at(p0,l1-0)",
+        "at(p1,l0-0)"
+      ],
+      "llm_proposal": [
+        "at(package_0, location_1_0)",
+        "at(package_1, location_0_0)"
+      ],
+      "llm_accepted": false,
+      "accuracy": 0.0
+    },
+    {
+      "inst": 6,
+      "nl_goal": "package_0 is at location_1_1",
+      "gt_atoms": [
+        "at(p0,l1-1)"
+      ],
+      "parsed_final": [
+        "at(p0, l1-1)"
+      ],
+      "llm_proposal": [
+        "at(p0, l1-1)"
+      ],
+      "llm_accepted": true,
+      "accuracy": 1.0
+    },
+    {
+      "inst": 7,
+      "nl_goal": "package_0 is at location_1_0",
+      "gt_atoms": [
+        "at(p0,l1-0)"
+      ],
+      "parsed_final": [
+        "at(p0, l1-0)"
+      ],
+      "llm_proposal": [
+        "at(p0, l1-0)"
+      ],
+      "llm_accepted": true,
+      "accuracy": 1.0
+    },
+    {
+      "inst": 8,
+      "nl_goal": "package_0 is at location_0_0",
+      "gt_atoms": [
+        "at(p0,l0-0)"
+      ],
+      "parsed_final": [
+        "at(p0, l0-0)"
+      ],
+      "llm_proposal": [
+        "at(p0, l0-0)"
+      ],
+      "llm_accepted": true,
+      "accuracy": 1.0
+    },
+    {
+      "inst": 9,
+      "nl_goal": "package_0 is at location_1_0 and package_1 is at location_0_0",
+      "gt_atoms": [
+        "at(p0,l1-0)",
+        "at(p1,l0-0)"
+      ],
+      "parsed_final": [
+        "at(p0,l1-0)",
+        "at(p1,l0-0)"
+      ],
+      "llm_proposal": [
+        "at(package_0, location_1_0)",
+        "at(package_1, location_0_0)"
+      ],
+      "llm_accepted": false,
+      "accuracy": 0.0
+    },
+    {
+      "inst": 10,
+      "nl_goal": "package_0 is at location_0_1 and package_1 is at location_0_1",
+      "gt_atoms": [
+        "at(p0,l0-1)",
+        "at(p1,l0-1)"
+      ],
+      "parsed_final": [
+        "at(p0,l0-1)",
+        "at(p1,l0-1)"
+      ],
+      "llm_proposal": [
+        "at(package_0, location_0_1)",
+        "at(package_1, location_0_1)"
+      ],
+      "llm_accepted": false,
+      "accuracy": 0.0
+    },
+    {
+      "inst": 11,
+      "nl_goal": "package_0 is at location_0_1 and package_1 is at location_1_0",
+      "gt_atoms": [
+        "at(p0,l0-1)",
+        "at(p1,l1-0)"
+      ],
+      "parsed_final": [
+        "at(p0,l0-0)",
+        "at(p1,l1-0)"
+      ],
+      "llm_proposal": [
+        "at(p0,l0-0)",
+        "at(p1,l1-0)"
+      ],
+      "llm_accepted": true,
+      "accuracy": 0.5
+    },
+    {
+      "inst": 12,
+      "nl_goal": "package_0 is at location_1_0, package_1 is at location_1_0 and package_2 is at location_1_0",
+      "gt_atoms": [
+        "at(p0,l1-0)",
+        "at(p1,l1-0)",
+        "at(p2,l1-0)"
+      ],
+      "parsed_final": [
+        "at(p1,l1-0)",
+        "at(p0,l1-0)",
+        "at(p2,l1-0)"
+      ],
+      "llm_proposal": [
+        "at(p0, location_1_0)",
+        "at(p1, location_1_0)",
+        "at(p2, location_1_0)"
+      ],
+      "llm_accepted": false,
+      "accuracy": 0.0
+    },
+    {
+      "inst": 13,
+      "nl_goal": "package_0 is at location_0_1, package_1 is at location_1_1 and package_2 is at location_1_0",
+      "gt_atoms": [
+        "at(p0,l0-1)",
+        "at(p1,l1-1)",
+        "at(p2,l1-0)"
+      ],
+      "parsed_final": [
+        "at(p0,l0-1)",
+        "at(p1,l1-1)",
+        "at(p2,l1-0)"
+      ],
+      "llm_proposal": [
+        "at(p0, l0-0)",
+        "at(p1, l0-1)",
+        "at(p2, l1-0)"
+      ],
+      "llm_accepted": false,
+      "accuracy": 0.3333333333333333
+    },
+    {
+      "inst": 14,
+      "nl_goal": "package_0 is at location_0_1, package_1 is at location_1_1 and package_2 is at location_1_0",
+      "gt_atoms": [
+        "at(p0,l0-1)",
+        "at(p1,l1-1)",
+        "at(p2,l1-0)"
+      ],
+      "parsed_final": [
+        "at(p0,l0-1)",
+        "at(p1,l1-1)",
+        "at(p2,l1-0)"
+      ],
+      "llm_proposal": [
+        "at(p0, l0-0)",
+        "at(p1, l0-1)",
+        "at(p2, l1-0)"
+      ],
+      "llm_accepted": false,
+      "accuracy": 0.3333333333333333
+    },
+    {
+      "inst": 15,
+      "nl_goal": "package_0 is at location_0_1, package_1 is at location_0_1 and package_2 is at location_0_1",
+      "gt_atoms": [
+        "at(p0,l0-1)",
+        "at(p1,l0-1)",
+        "at(p2,l0-1)"
+      ],
+      "parsed_final": [
+        "at(p0,l0-1)",
+        "at(p2,l0-1)",
+        "at(p1,l0-1)"
+      ],
+      "llm_proposal": [
+        "at(p0, l0-0)",
+        "at(p1, l0-0)",
+        "at(p2, l0-0)"
+      ],
+      "llm_accepted": false,
+      "accuracy": 0.0
+    },
+    {
+      "inst": 16,
+      "nl_goal": "package_0 is at location_0_1, package_1 is at location_0_1, package_2 is at location_1_0 and package_3 is at location_1_0",
+      "gt_atoms": [
+        "at(p0,l0-1)",
+        "at(p1,l0-1)",
+        "at(p2,l1-0)",
+        "at(p3,l1-0)"
+      ],
+      "parsed_final": [
+        "at(p0, l0-0)",
+        "at(p1, l0-0)",
+        "at(p2, l1-0)",
+        "at(p3, l1-0)"
+      ],
+      "llm_proposal": [
+        "at(p0, l0-0)",
+        "at(p1, l0-0)",
+        "at(p2, l1-0)",
+        "at(p3, l1-0)"
+      ],
+      "llm_accepted": true,
+      "accuracy": 0.5
+    },
+    {
+      "inst": 17,
+      "nl_goal": "package_0 is at location_0_0, package_1 is at location_1_1, package_2 is at location_0_1 and package_3 is at location_1_1",
+      "gt_atoms": [
+        "at(p0,l0-0)",
+        "at(p1,l1-1)",
+        "at(p2,l0-1)",
+        "at(p3,l1-1)"
+      ],
+      "parsed_final": [
+        "at(p0, l0-0)",
+        "at(p1, l1-1)",
+        "at(p2, l0-1)",
+        "at(p3, l1-1)"
+      ],
+      "llm_proposal": [
+        "at(p0, l0-0)",
+        "at(p1, l1-1)",
+        "at(p2, l0-1)",
+        "at(p3, l1-1)"
+      ],
+      "llm_accepted": true,
+      "accuracy": 1.0
+    },
+    {
+      "inst": 18,
+      "nl_goal": "package_0 is at location_0_0, package_1 is at location_1_1, package_2 is at location_0_1 and package_3 is at location_1_1",
+      "gt_atoms": [
+        "at(p0,l0-0)",
+        "at(p1,l1-1)",
+        "at(p2,l0-1)",
+        "at(p3,l1-1)"
+      ],
+      "parsed_final": [
+        "at(p0, l0-0)",
+        "at(p1, l1-1)",
+        "at(p2, l0-1)",
+        "at(p3, l1-1)"
+      ],
+      "llm_proposal": [
+        "at(p0, l0-0)",
+        "at(p1, l1-1)",
+        "at(p2, l0-1)",
+        "at(p3, l1-1)"
+      ],
+      "llm_accepted": true,
+      "accuracy": 1.0
+    },
+    {
+      "inst": 19,
+      "nl_goal": "package_0 is at location_0_0, package_1 is at location_1_0, package_2 is at location_0_1 and package_3 is at location_1_1",
+      "gt_atoms": [
+        "at(p0,l0-0)",
+        "at(p1,l1-0)",
+        "at(p2,l0-1)",
+        "at(p3,l1-1)"
+      ],
+      "parsed_final": [
+        "at(p0, l0-0)",
+        "at(p1, l1-0)",
+        "at(p2, l0-1)",
+        "at(p3, l1-1)"
+      ],
+      "llm_proposal": [
+        "at(p0, l0-0)",
+        "at(p1, l1-0)",
+        "at(p2, l0-1)",
+        "at(p3, l1-1)"
+      ],
+      "llm_accepted": true,
+      "accuracy": 1.0
+    },
+    {
+      "inst": 20,
+      "nl_goal": "package_0 is at location_1_2",
+      "gt_atoms": [
+        "at(p0,l1-2)"
+      ],
+      "parsed_final": [
+        "at(p0,l1-2)"
+      ],
+      "llm_proposal": [
+        "at(p0,l1-2)"
+      ],
+      "llm_accepted": true,
+      "accuracy": 1.0
+    },
+    {
+      "inst": 21,
+      "nl_goal": "package_0 is at location_1_1",
+      "gt_atoms": [
+        "at(p0,l1-1)"
+      ],
+      "parsed_final": [
+        "at(p0,l1-1)"
+      ],
+      "llm_proposal": [
+        "at(p0,l1-1)"
+      ],
+      "llm_accepted": true,
+      "accuracy": 1.0
+    },
+    {
+      "inst": 22,
+      "nl_goal": "package_0 is at location_1_2",
+      "gt_atoms": [
+        "at(p0,l1-2)"
+      ],
+      "parsed_final": [
+        "at(p0,l1-2)"
+      ],
+      "llm_proposal": [
+        "at(p0,l1-2)"
+      ],
+      "llm_accepted": true,
+      "accuracy": 1.0
+    },
+    {
+      "inst": 23,
+      "nl_goal": "package_0 is at location_0_2 and package_1 is at location_0_0",
+      "gt_atoms": [
+        "at(p0,l0-2)",
+        "at(p1,l0-0)"
+      ],
+      "parsed_final": [
+        "at(p0, l0-2)",
+        "at(p1, l0-0)"
+      ],
+      "llm_proposal": [
+        "at(p0, l0-2)",
+        "at(p1, l0-0)"
+      ],
+      "llm_accepted": true,
+      "accuracy": 1.0
+    },
+    {
+      "inst": 24,
+      "nl_goal": "package_0 is at location_0_2 and package_1 is at location_1_0",
+      "gt_atoms": [
+        "at(p0,l0-2)",
+        "at(p1,l1-0)"
+      ],
+      "parsed_final": [
+        "at(p0, l0-2)",
+        "at(p1, l1-0)"
+      ],
+      "llm_proposal": [
+        "at(p0, l0-2)",
+        "at(p1, l1-0)"
+      ],
+      "llm_accepted": true,
+      "accuracy": 1.0
+    },
+    {
+      "inst": 25,
+      "nl_goal": "package_0 is at location_1_1 and package_1 is at location_1_0",
+      "gt_atoms": [
+        "at(p0,l1-1)",
+        "at(p1,l1-0)"
+      ],
+      "parsed_final": [
+        "at(p1,l1-0)",
+        "at(p0,l1-1)"
+      ],
+      "llm_proposal": [
+        "at(package_0, location_1_1)",
+        "at(package_1, location_1_0)"
+      ],
+      "llm_accepted": false,
+      "accuracy": 0.0
+    },
+    {
+      "inst": 26,
+      "nl_goal": "package_0 is at location_1_0, package_1 is at location_1_0 and package_2 is at location_1_2",
+      "gt_atoms": [
+        "at(p0,l1-0)",
+        "at(p1,l1-0)",
+        "at(p2,l1-2)"
+      ],
+      "parsed_final": [
+        "at(p1,l1-0)",
+        "at(p0,l1-0)",
+        "at(p2,l1-2)"
+      ],
+      "llm_proposal": [
+        "at(p0,location_1_0)",
+        "at(p1,location_1_0)",
+        "at(p2,location_1_2)"
+      ],
+      "llm_accepted": false,
+      "accuracy": 0.0
+    },
+    {
+      "inst": 27,
+      "nl_goal": "package_0 is at location_0_0, package_1 is at location_1_1 and package_2 is at location_1_2",
+      "gt_atoms": [
+        "at(p0,l0-0)",
+        "at(p1,l1-1)",
+        "at(p2,l1-2)"
+      ],
+      "parsed_final": [
+        "at(p0, l0-0)",
+        "at(p1, l1-1)",
+        "at(p2, l1-2)"
+      ],
+      "llm_proposal": [
+        "at(p0, l0-0)",
+        "at(p1, l1-1)",
+        "at(p2, l1-2)"
+      ],
+      "llm_accepted": true,
+      "accuracy": 1.0
+    },
+    {
+      "inst": 28,
+      "nl_goal": "package_0 is at location_0_0, package_1 is at location_1_1 and package_2 is at location_1_2",
+      "gt_atoms": [
+        "at(p0,l0-0)",
+        "at(p1,l1-1)",
+        "at(p2,l1-2)"
+      ],
+      "parsed_final": [
+        "at(p0, l0-0)",
+        "at(p1, l1-1)",
+        "at(p2, l1-2)"
+      ],
+      "llm_proposal": [
+        "at(p0, l0-0)",
+        "at(p1, l1-1)",
+        "at(p2, l1-2)"
+      ],
+      "llm_accepted": true,
+      "accuracy": 1.0
+    },
+    {
+      "inst": 29,
+      "nl_goal": "package_0 is at location_1_1, package_1 is at location_1_1 and package_2 is at location_1_0",
+      "gt_atoms": [
+        "at(p0,l1-1)",
+        "at(p1,l1-1)",
+        "at(p2,l1-0)"
+      ],
+      "parsed_final": [
+        "at(p0,l1-1)",
+        "at(p1,l1-1)",
+        "at(p2,l1-0)"
+      ],
+      "llm_proposal": [
+        "at(p0, l0-0)",
+        "at(p1, l0-1)",
+        "at(p2, l0-2)"
+      ],
+      "llm_accepted": false,
+      "accuracy": 0.0
+    },
+    {
+      "inst": 30,
+      "nl_goal": "package_0 is at location_1_1, package_1 is at location_1_0, package_2 is at location_0_0 and package_3 is at location_0_2",
+      "gt_atoms": [
+        "at(p0,l1-1)",
+        "at(p1,l1-0)",
+        "at(p2,l0-0)",
+        "at(p3,l0-2)"
+      ],
+      "parsed_final": [
+        "at(p1,l1-0)",
+        "at(p0,l1-1)",
+        "at(p2,l0-0)",
+        "at(p3,l0-2)"
+      ],
+      "llm_proposal": [
+        "at(p0, l0-0)",
+        "at(p1, l0-1)",
+        "at(p2, l0-2)",
+        "at(p3, l1-2)"
+      ],
+      "llm_accepted": false,
+      "accuracy": 0.0
+    },
+    {
+      "inst": 31,
+      "nl_goal": "package_0 is at location_1_2, package_1 is at location_0_1, package_2 is at location_1_2 and package_3 is at location_0_2",
+      "gt_atoms": [
+        "at(p0,l1-2)",
+        "at(p1,l0-1)",
+        "at(p2,l1-2)",
+        "at(p3,l0-2)"
+      ],
+      "parsed_final": [
+        "at(p0, l0-2)",
+        "at(p1, l0-1)",
+        "at(p2, l1-2)",
+        "at(p3, l0-2)"
+      ],
+      "llm_proposal": [
+        "at(p0, l0-2)",
+        "at(p1, l0-1)",
+        "at(p2, l1-2)",
+        "at(p3, l0-2)"
+      ],
+      "llm_accepted": true,
+      "accuracy": 0.75
+    }
+  ]
+}

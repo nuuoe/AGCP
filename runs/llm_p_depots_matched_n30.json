@@ -1,0 +1,278 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "instance_set": "depots [2..31]",
+  "n_solved": 10,
+  "n_total": 30,
+  "results": [
+    {
+      "inst": 2,
+      "problem": "instance-2.pddl",
+      "llm_success": false,
+      "llm_time": 43.6933319568634,
+      "plan_length": null,
+      "solve_time": 7.081031799316406e-05,
+      "error": "no plan"
+    },
+    {
+      "inst": 3,
+      "problem": "instance-3.pddl",
+      "llm_success": false,
+      "llm_time": 29.847105026245117,
+      "plan_length": null,
+      "solve_time": 0,
+      "error": "parse: missing closing parenthesis"
+    },
+    {
+      "inst": 4,
+      "problem": "instance-4.pddl",
+      "llm_success": false,
+      "llm_time": 27.558385133743286,
+      "plan_length": null,
+      "solve_time": 7.700920104980469e-05,
+      "error": "no plan"
+    },
+    {
+      "inst": 5,
+      "problem": "instance-5.pddl",
+      "llm_success": true,
+      "llm_time": 30.211551904678345,
+      "plan_length": 0,
+      "solve_time": 6.4849853515625e-05,
+      "error": null
+    },
+    {
+      "inst": 6,
+      "problem": "instance-6.pddl",
+      "llm_success": false,
+      "llm_time": 28.149530172348022,
+      "plan_length": null,
+      "solve_time": 0,
+      "error": "parse: missing closing parenthesis"
+    },
+    {
+      "inst": 7,
+      "problem": "instance-7.pddl",
+      "llm_success": false,
+      "llm_time": 27.174561023712158,
+      "plan_length": null,
+      "solve_time": 0,
+      "error": "parse: missing closing parenthesis"
+    },
+    {
+      "inst": 8,
+      "problem": "instance-8.pddl",
+      "llm_success": false,
+      "llm_time": 28.11733913421631,
+      "plan_length": null,
+      "solve_time": 0,
+      "error": "parse: missing closing parenthesis"
+    },
+    {
+      "inst": 9,
+      "problem": "instance-9.pddl",
+      "llm_success": false,
+      "llm_time": 27.16820192337036,
+      "plan_length": null,
+      "solve_time": 0,
+      "error": "parse: missing closing parenthesis"
+    },
+    {
+      "inst": 10,
+      "problem": "instance-10.pddl",
+      "llm_success": true,
+      "llm_time": 26.766621828079224,
+      "plan_length": 0,
+      "solve_time": 0.0001537799835205078,
+      "error": null
+    },
+    {
+      "inst": 11,
+      "problem": "instance-11.pddl",
+      "llm_success": false,
+      "llm_time": 28.140738248825073,
+      "plan_length": null,
+      "solve_time": 0,
+      "error": "parse: missing closing parenthesis"
+    },
+    {
+      "inst": 12,
+      "problem": "instance-12.pddl",
+      "llm_success": true,
+      "llm_time": 28.66661500930786,
+      "plan_length": 0,
+      "solve_time": 5.507469177246094e-05,
+      "error": null
+    },
+    {
+      "inst": 13,
+      "problem": "instance-13.pddl",
+      "llm_success": false,
+      "llm_time": 25.70955181121826,
+      "plan_length": null,
+      "solve_time": 0,
+      "error": "parse: missing closing parenthesis"
+    },
+    {
+      "inst": 14,
+      "problem": "instance-14.pddl",
+      "llm_success": false,
+      "llm_time": 25.382296085357666,
+      "plan_length": null,
+      "solve_time": 0,
+      "error": "parse: missing closing parenthesis"
+    },
+    {
+      "inst": 15,
+      "problem": "instance-15.pddl",
+      "llm_success": false,
+      "llm_time": 25.421257972717285,
+      "plan_length": null,
+      "solve_time": 0,
+      "error": "parse: missing closing parenthesis"
+    },
+    {
+      "inst": 16,
+      "problem": "instance-16.pddl",
+      "llm_success": true,
+      "llm_time": 25.30294919013977,
+      "plan_length": 0,
+      "solve_time": 6.580352783203125e-05,
+      "error": null
+    },
+    {
+      "inst": 17,
+      "problem": "instance-17.pddl",
+      "llm_success": true,
+      "llm_time": 26.840922832489014,
+      "plan_length": 0,
+      "solve_time": 4.9114227294921875e-05,
+      "error": null
+    },
+    {
+      "inst": 18,
+      "problem": "instance-18.pddl",
+      "llm_success": true,
+      "llm_time": 26.072132110595703,
+      "plan_length": 0,
+      "solve_time": 5.0067901611328125e-05,
+      "error": null
+    },
+    {
+      "inst": 19,
+      "problem": "instance-19.pddl",
+      "llm_success": true,
+      "llm_time": 26.402532815933228,
+      "plan_length": 0,
+      "solve_time": 0.0001227855682373047,
+      "error": null
+    },
+    {
+      "inst": 20,
+      "problem": "instance-20.pddl",
+      "llm_success": false,
+      "llm_time": 27.09689688682556,
+      "plan_length": null,
+      "solve_time": 0,
+      "error": "parse: missing closing parenthesis"
+    },
+    {
+      "inst": 21,
+      "problem": "instance-21.pddl",
+      "llm_success": true,
+      "llm_time": 26.490833044052124,
+      "plan_length": 0,
+      "solve_time": 0.00011897087097167969,
+      "error": null
+    },
+    {
+      "inst": 22,
+      "problem": "instance-22.pddl",
+      "llm_success": false,
+      "llm_time": 49.13218975067139,
+      "plan_length": null,
+      "solve_time": 0,
+      "error": "parse: missing closing parenthesis"
+    },
+    {
+      "inst": 23,
+      "problem": "instance-23.pddl",
+      "llm_success": true,
+      "llm_time": 50.806511878967285,
+      "plan_length": 0,
+      "solve_time": 0.0004527568817138672,
+      "error": null
+    },
+    {
+      "inst": 24,
+      "problem": "instance-24.pddl",
+      "llm_success": false,
+      "llm_time": 35.15891885757446,
+      "plan_length": null,
+      "solve_time": 0.0003218650817871094,
+      "error": "no plan"
+    },
+    {
+      "inst": 25,
+      "problem": "instance-25.pddl",
+      "llm_success": false,
+      "llm_time": 31.826796054840088,
+      "plan_length": null,
+      "solve_time": 0,
+      "error": "parse: missing closing parenthesis"
+    },
+    {
+      "inst": 26,
+      "problem": "instance-26.pddl",
+      "llm_success": false,
+      "llm_time": 26.748867750167847,
+      "plan_length": null,
+      "solve_time": 0,
+      "error": "parse: missing closing parenthesis"
+    },
+    {
+      "inst": 27,
+      "problem": "instance-27.pddl",
+      "llm_success": false,
+      "llm_time": 22.630213022232056,
+      "plan_length": null,
+      "solve_time": 4.601478576660156e-05,
+      "error": "no plan"
+    },
+    {
+      "inst": 28,
+      "problem": "instance-28.pddl",
+      "llm_success": false,
+      "llm_time": 27.711640119552612,
+      "plan_length": null,
+      "solve_time": 0,
+      "error": "parse: missing closing parenthesis"
+    },
+    {
+      "inst": 29,
+      "problem": "instance-29.pddl",
+      "llm_success": true,
+      "llm_time": 26.46238899230957,
+      "plan_length": 0,
+      "solve_time": 6.198883056640625e-05,
+      "error": null
+    },
+    {
+      "inst": 30,
+      "problem": "instance-30.pddl",
+      "llm_success": false,
+      "llm_time": 24.983500003814697,
+      "plan_length": null,
+      "solve_time": 0,
+      "error": "parse: missing closing parenthesis"
+    },
+    {
+      "inst": 31,
+      "problem": "instance-31.pddl",
+      "llm_success": false,
+      "llm_time": 24.594255208969116,
+      "plan_length": null,
+      "solve_time": 0,
+      "error": "parse: missing closing parenthesis"
+    }
+  ]
+}

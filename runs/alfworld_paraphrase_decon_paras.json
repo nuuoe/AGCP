@@ -1,0 +1,4784 @@
+{
+  "paraphraser_model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "paraphrase_temperature": 0.7,
+  "gen_prompts": {
+    "struct": "Rewrite the following household-task instruction using a clearly different sentence structure (change the voice, clause order, or sentence form). Keep every object and location mentioned with exactly the same words. Do not add, remove, or reinterpret any information. Reply with ONLY the rewritten instruction.\n\nInstruction: {nl}",
+    "lex": "Rewrite the following household-task instruction in your own words: change the sentence structure AND use natural everyday synonyms where they fit, while keeping the meaning identical (the same objects, places, and required actions). Do not add or remove information. Reply with ONLY the rewritten instruction.\n\nInstruction: {nl}"
+  },
+  "source_json": "code/runs/ood/alfworld_cloud_gpt4o.json",
+  "generated_utc": "2026-07-11T13:41:36Z",
+  "n_total": 251,
+  "n_usable_struct": 251,
+  "n_usable_lex": 251,
+  "rows": [
+    {
+      "task_id": "look_at_obj_in_light-KeyChain-None-FloorLamp-219",
+      "task_type": "look_at_obj_in_light",
+      "task_desc": "Examine a set of keys under a tall lamp",
+      "gt": {
+        "object_target": "KeyChain",
+        "mrecep_target": "",
+        "parent_target": "",
+        "toggle_target": "FloorLamp",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "Under a tall lamp, a set of keys is to be examined.",
+      "usable_struct": true,
+      "para_lex": "Take a closer look at a bunch of keys that are situated beneath a high lamp.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "look_at_obj_in_light-Bowl-None-DeskLamp-308",
+      "task_type": "look_at_obj_in_light",
+      "task_desc": "turn on a lamp while holding a bowl",
+      "gt": {
+        "object_target": "Bowl",
+        "mrecep_target": "",
+        "parent_target": "",
+        "toggle_target": "DeskLamp",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "Holding a bowl, turn on a lamp.",
+      "usable_struct": true,
+      "para_lex": "Hold onto a bowl and switch on a lamp.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "look_at_obj_in_light-Pencil-None-DeskLamp-308",
+      "task_type": "look_at_obj_in_light",
+      "task_desc": "look at the pencil under the lamp",
+      "gt": {
+        "object_target": "Pencil",
+        "mrecep_target": "",
+        "parent_target": "",
+        "toggle_target": "DeskLamp",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "Under the lamp is where you should look at the pencil.",
+      "usable_struct": true,
+      "para_lex": "Check out the pencil that's sitting beneath the lamp.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "look_at_obj_in_light-RemoteControl-None-FloorLamp-219",
+      "task_type": "look_at_obj_in_light",
+      "task_desc": "pick up the remote and turn on the lamp",
+      "gt": {
+        "object_target": "RemoteControl",
+        "mrecep_target": "",
+        "parent_target": "",
+        "toggle_target": "FloorLamp",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "The lamp should be turned on after picking up the remote.",
+      "usable_struct": true,
+      "para_lex": "Grab the remote control and switch on the lamp.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "look_at_obj_in_light-Mug-None-DeskLamp-308",
+      "task_type": "look_at_obj_in_light",
+      "task_desc": "Look at a mug in lamp light.",
+      "gt": {
+        "object_target": "Mug",
+        "mrecep_target": "",
+        "parent_target": "",
+        "toggle_target": "DeskLamp",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "In lamp light, a mug is to be looked at.",
+      "usable_struct": true,
+      "para_lex": "Examine a mug under the lamp.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "look_at_obj_in_light-BasketBall-None-DeskLamp-308",
+      "task_type": "look_at_obj_in_light",
+      "task_desc": "Look at the basketball in the light from the lamp.",
+      "gt": {
+        "object_target": "BasketBall",
+        "mrecep_target": "",
+        "parent_target": "",
+        "toggle_target": "DeskLamp",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "In the light from the lamp, the basketball is to be looked at.",
+      "usable_struct": true,
+      "para_lex": "Check out the basketball in the glow of the lamp.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "look_at_obj_in_light-BaseballBat-None-DeskLamp-308",
+      "task_type": "look_at_obj_in_light",
+      "task_desc": "Pick up baseball bat, turn on lamp",
+      "gt": {
+        "object_target": "BaseballBat",
+        "mrecep_target": "",
+        "parent_target": "",
+        "toggle_target": "DeskLamp",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "Turning on the lamp, pick up the baseball bat.",
+      "usable_struct": true,
+      "para_lex": "Grab the baseball bat and switch on the lamp.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "look_at_obj_in_light-Newspaper-None-FloorLamp-219",
+      "task_type": "look_at_obj_in_light",
+      "task_desc": "Carry a newspaper while turning on a lamp",
+      "gt": {
+        "object_target": "Newspaper",
+        "mrecep_target": "",
+        "parent_target": "",
+        "toggle_target": "FloorLamp",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "Turning on a lamp is something you should do while carrying a newspaper.",
+      "usable_struct": true,
+      "para_lex": "Hold onto a newspaper as you switch on a lamp.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "look_at_obj_in_light-AlarmClock-None-DeskLamp-308",
+      "task_type": "look_at_obj_in_light",
+      "task_desc": "Examine the alarm clock by the light",
+      "gt": {
+        "object_target": "AlarmClock",
+        "mrecep_target": "",
+        "parent_target": "",
+        "toggle_target": "DeskLamp",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "By the light, the alarm clock is to be examined.",
+      "usable_struct": true,
+      "para_lex": "Check the alarm clock near the lamp.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "look_at_obj_in_light-Vase-None-FloorLamp-219",
+      "task_type": "look_at_obj_in_light",
+      "task_desc": "Examine a vase under a tall lamp",
+      "gt": {
+        "object_target": "Vase",
+        "mrecep_target": "",
+        "parent_target": "",
+        "toggle_target": "FloorLamp",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "Under a tall lamp, a vase is to be examined.",
+      "usable_struct": true,
+      "para_lex": "Take a close look at the vase positioned beneath the high lamp.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "look_at_obj_in_light-Mug-None-DeskLamp-308",
+      "task_type": "look_at_obj_in_light",
+      "task_desc": "Examine a mug using the light of a desk lamp. ",
+      "gt": {
+        "object_target": "Mug",
+        "mrecep_target": "",
+        "parent_target": "",
+        "toggle_target": "DeskLamp",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "Using the light of a desk lamp, examination of a mug is necessary.",
+      "usable_struct": true,
+      "para_lex": "Take a closer look at a mug by shining the light from a lamp that's on your desk.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "look_at_obj_in_light-AlarmClock-None-DeskLamp-308",
+      "task_type": "look_at_obj_in_light",
+      "task_desc": "Hold the clock and turn on the lamp.",
+      "gt": {
+        "object_target": "AlarmClock",
+        "mrecep_target": "",
+        "parent_target": "",
+        "toggle_target": "DeskLamp",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "Turn on the lamp while holding the clock.",
+      "usable_struct": true,
+      "para_lex": "Grasp the clock and switch on the lamp.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "look_at_obj_in_light-BaseballBat-None-DeskLamp-308",
+      "task_type": "look_at_obj_in_light",
+      "task_desc": "Examine the bat with the light on the desk. ",
+      "gt": {
+        "object_target": "BaseballBat",
+        "mrecep_target": "",
+        "parent_target": "",
+        "toggle_target": "DeskLamp",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "On the desk, the light is to be used to examine the bat.",
+      "usable_struct": true,
+      "para_lex": "Take a look at the bat using the lamp that's sitting on the desk.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "look_at_obj_in_light-RemoteControl-None-FloorLamp-219",
+      "task_type": "look_at_obj_in_light",
+      "task_desc": "Hold a remote and turn on the lamp.",
+      "gt": {
+        "object_target": "RemoteControl",
+        "mrecep_target": "",
+        "parent_target": "",
+        "toggle_target": "FloorLamp",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "The lamp should be turned on by holding a remote.",
+      "usable_struct": true,
+      "para_lex": "Grab the remote control and switch the lamp on.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "look_at_obj_in_light-CD-None-DeskLamp-308",
+      "task_type": "look_at_obj_in_light",
+      "task_desc": "Look at a CD under a lamp's light.",
+      "gt": {
+        "object_target": "CD",
+        "mrecep_target": "",
+        "parent_target": "",
+        "toggle_target": "DeskLamp",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "Under a lamp's light, a CD is to be looked at.",
+      "usable_struct": true,
+      "para_lex": "Check out the CD in the glow of a lamp.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "look_at_obj_in_light-Bowl-None-DeskLamp-308",
+      "task_type": "look_at_obj_in_light",
+      "task_desc": "Examine the bowl by the light on the desk. ",
+      "gt": {
+        "object_target": "Bowl",
+        "mrecep_target": "",
+        "parent_target": "",
+        "toggle_target": "DeskLamp",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "On the desk, by the light, is where you should examine the bowl.",
+      "usable_struct": true,
+      "para_lex": "Take a look at the bowl that's sitting next to the lamp on your desk.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "look_at_obj_in_light-Vase-None-FloorLamp-219",
+      "task_type": "look_at_obj_in_light",
+      "task_desc": "grab the vase from the cabinet, turn on the lamp",
+      "gt": {
+        "object_target": "Vase",
+        "mrecep_target": "",
+        "parent_target": "",
+        "toggle_target": "FloorLamp",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "Turn on the lamp after grabbing the vase from the cabinet.",
+      "usable_struct": true,
+      "para_lex": "Pick up the vase that's in the cabinet and switch on the lamp.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "look_at_obj_in_light-RemoteControl-None-FloorLamp-219",
+      "task_type": "look_at_obj_in_light",
+      "task_desc": "Turn on the living room lamp. ",
+      "gt": {
+        "object_target": "RemoteControl",
+        "mrecep_target": "",
+        "parent_target": "",
+        "toggle_target": "FloorLamp",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "The living room lamp should be turned on.",
+      "usable_struct": true,
+      "para_lex": "Switch on the lamp in the living room.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "look_at_obj_in_light-Statue-None-FloorLamp-219",
+      "task_type": "look_at_obj_in_light",
+      "task_desc": "Examine a black statue in the light of a tall lamp.",
+      "gt": {
+        "object_target": "Statue",
+        "mrecep_target": "",
+        "parent_target": "",
+        "toggle_target": "FloorLamp",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "In the light of a tall lamp, a black statue is to be examined.",
+      "usable_struct": true,
+      "para_lex": "Take a closer look at the dark-colored statue under the glow of the high lamp.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "look_at_obj_in_light-Statue-None-FloorLamp-219",
+      "task_type": "look_at_obj_in_light",
+      "task_desc": "Inspect a statue with a lamp.",
+      "gt": {
+        "object_target": "Statue",
+        "mrecep_target": "",
+        "parent_target": "",
+        "toggle_target": "FloorLamp",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "With a lamp, a statue is to be inspected.",
+      "usable_struct": true,
+      "para_lex": "Take a closer look at the statue using the lamp.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "look_at_obj_in_light-Pencil-None-DeskLamp-308",
+      "task_type": "look_at_obj_in_light",
+      "task_desc": "Pick a pencil up and turn the lamp on.",
+      "gt": {
+        "object_target": "Pencil",
+        "mrecep_target": "",
+        "parent_target": "",
+        "toggle_target": "DeskLamp",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "The lamp should be turned on after picking a pencil up.",
+      "usable_struct": true,
+      "para_lex": "Grab a pencil and switch on the lamp.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "look_at_obj_in_light-Book-None-DeskLamp-308",
+      "task_type": "look_at_obj_in_light",
+      "task_desc": "Turn on the table lamp to read the book.",
+      "gt": {
+        "object_target": "Book",
+        "mrecep_target": "",
+        "parent_target": "",
+        "toggle_target": "DeskLamp",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "To read the book, the table lamp needs to be turned on.",
+      "usable_struct": true,
+      "para_lex": "Switch on the lamp that's on the table so you can read your book.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "look_at_obj_in_light-BaseballBat-None-DeskLamp-308",
+      "task_type": "look_at_obj_in_light",
+      "task_desc": "turn on a lamp while holding a baseball bat",
+      "gt": {
+        "object_target": "BaseballBat",
+        "mrecep_target": "",
+        "parent_target": "",
+        "toggle_target": "DeskLamp",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "Holding a baseball bat, turn on a lamp.",
+      "usable_struct": true,
+      "para_lex": "Hold onto a baseball bat and flip on a lamp.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "look_at_obj_in_light-Box-None-FloorLamp-219",
+      "task_type": "look_at_obj_in_light",
+      "task_desc": "Examine the box in the light of the tall lamp. ",
+      "gt": {
+        "object_target": "Box",
+        "mrecep_target": "",
+        "parent_target": "",
+        "toggle_target": "FloorLamp",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "In the light of the tall lamp, the box is to be examined.",
+      "usable_struct": true,
+      "para_lex": "Take a closer look at the box under the bright glow of the tall lamp.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "look_at_obj_in_light-Box-None-FloorLamp-219",
+      "task_type": "look_at_obj_in_light",
+      "task_desc": "To turn on a lamp to see inside a box.  ",
+      "gt": {
+        "object_target": "Box",
+        "mrecep_target": "",
+        "parent_target": "",
+        "toggle_target": "FloorLamp",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "Inside a box can be seen by turning on a lamp.",
+      "usable_struct": true,
+      "para_lex": "Switch on the lamp so you can see what's inside the box.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "look_at_obj_in_light-Book-None-DeskLamp-308",
+      "task_type": "look_at_obj_in_light",
+      "task_desc": "Picking up a book and turning on a light to read it by",
+      "gt": {
+        "object_target": "Book",
+        "mrecep_target": "",
+        "parent_target": "",
+        "toggle_target": "DeskLamp",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "To read it by a light, turn one on and pick up a book.",
+      "usable_struct": true,
+      "para_lex": "To read, grab a book and switch on a light.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "look_at_obj_in_light-CellPhone-None-FloorLamp-219",
+      "task_type": "look_at_obj_in_light",
+      "task_desc": "Pick up the cell phone and look at it by the light of the lamp",
+      "gt": {
+        "object_target": "CellPhone",
+        "mrecep_target": "",
+        "parent_target": "",
+        "toggle_target": "FloorLamp",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "By the light of the lamp, the cell phone should be picked up and looked at.",
+      "usable_struct": true,
+      "para_lex": "Grab your phone and check it under the lamp's light.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "look_at_obj_in_light-KeyChain-None-FloorLamp-219",
+      "task_type": "look_at_obj_in_light",
+      "task_desc": "Examine a key chain by the light of a floor lamp.",
+      "gt": {
+        "object_target": "KeyChain",
+        "mrecep_target": "",
+        "parent_target": "",
+        "toggle_target": "FloorLamp",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "By the light of a floor lamp, a key chain is to be examined.",
+      "usable_struct": true,
+      "para_lex": "Take a closer look at a key chain under the glow of a nearby floor lamp.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "look_at_obj_in_light-KeyChain-None-FloorLamp-219",
+      "task_type": "look_at_obj_in_light",
+      "task_desc": "Examine a set of keys by the light of a tall lamp.",
+      "gt": {
+        "object_target": "KeyChain",
+        "mrecep_target": "",
+        "parent_target": "",
+        "toggle_target": "FloorLamp",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "By the light of a tall lamp, a set of keys is to be examined.",
+      "usable_struct": true,
+      "para_lex": "Take a closer look at a bunch of keys under the glow of a floor lamp.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "look_at_obj_in_light-TissueBox-None-FloorLamp-219",
+      "task_type": "look_at_obj_in_light",
+      "task_desc": "Look at the box of tissues under the light of the lamp.",
+      "gt": {
+        "object_target": "TissueBox",
+        "mrecep_target": "",
+        "parent_target": "",
+        "toggle_target": "FloorLamp",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "Under the light of the lamp, the box of tissues is to be looked at.",
+      "usable_struct": true,
+      "para_lex": "Check out the tissue box by the light from the lamp.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "look_at_obj_in_light-CellPhone-None-FloorLamp-219",
+      "task_type": "look_at_obj_in_light",
+      "task_desc": "grab the phone from the blue sofa, turn on the lamp in the corner",
+      "gt": {
+        "object_target": "CellPhone",
+        "mrecep_target": "",
+        "parent_target": "",
+        "toggle_target": "FloorLamp",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "In the corner, turn on the lamp, and from the blue sofa, grab the phone.",
+      "usable_struct": true,
+      "para_lex": "Pick up the phone that's on the blue sofa and switch on the lamp over in the corner.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "look_at_obj_in_light-Newspaper-None-FloorLamp-219",
+      "task_type": "look_at_obj_in_light",
+      "task_desc": "Examine a newspaper by the light of a floor lamp.",
+      "gt": {
+        "object_target": "Newspaper",
+        "mrecep_target": "",
+        "parent_target": "",
+        "toggle_target": "FloorLamp",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "By the light of a floor lamp, a newspaper is to be examined.",
+      "usable_struct": true,
+      "para_lex": "Check out a newspaper under the glow of a lamp that's standing on the floor.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "look_at_obj_in_light-Statue-None-FloorLamp-219",
+      "task_type": "look_at_obj_in_light",
+      "task_desc": "Examine a statue trophy next to the light of a tall lamp.",
+      "gt": {
+        "object_target": "Statue",
+        "mrecep_target": "",
+        "parent_target": "",
+        "toggle_target": "FloorLamp",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "Next to the light of a tall lamp, a statue trophy is to be examined.",
+      "usable_struct": true,
+      "para_lex": "Look at the trophy statue that's sitting beside a tall lamp's light.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "look_at_obj_in_light-Book-None-DeskLamp-308",
+      "task_type": "look_at_obj_in_light",
+      "task_desc": "Look at a book by the light of a lamp.",
+      "gt": {
+        "object_target": "Book",
+        "mrecep_target": "",
+        "parent_target": "",
+        "toggle_target": "DeskLamp",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "By the light of a lamp, a book is to be looked at.",
+      "usable_struct": true,
+      "para_lex": "Check out a book using the glow from a lamp.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "look_at_obj_in_light-Mug-None-DeskLamp-308",
+      "task_type": "look_at_obj_in_light",
+      "task_desc": "Turn on the desk lamp.",
+      "gt": {
+        "object_target": "Mug",
+        "mrecep_target": "",
+        "parent_target": "",
+        "toggle_target": "DeskLamp",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "The desk lamp is to be turned on.",
+      "usable_struct": true,
+      "para_lex": "Switch on the lamp that's sitting on your desk.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "look_at_obj_in_light-TissueBox-None-FloorLamp-219",
+      "task_type": "look_at_obj_in_light",
+      "task_desc": "Grab the tissue box from the closet, turn on the lamp by the sofa",
+      "gt": {
+        "object_target": "TissueBox",
+        "mrecep_target": "",
+        "parent_target": "",
+        "toggle_target": "FloorLamp",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "By the sofa, the lamp should be turned on, after grabbing the tissue box from the closet.",
+      "usable_struct": true,
+      "para_lex": "Pick up the box of tissues from the closet and switch on the lamp that's next to the sofa.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "look_at_obj_in_light-BasketBall-None-DeskLamp-308",
+      "task_type": "look_at_obj_in_light",
+      "task_desc": "Look at a basketball in the lamp light.",
+      "gt": {
+        "object_target": "BasketBall",
+        "mrecep_target": "",
+        "parent_target": "",
+        "toggle_target": "DeskLamp",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "In the lamp light, a basketball is to be looked at.",
+      "usable_struct": true,
+      "para_lex": "Check out the basketball under the lamp's glow.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "look_at_obj_in_light-Pencil-None-DeskLamp-308",
+      "task_type": "look_at_obj_in_light",
+      "task_desc": "Examine a pencil under a lamp.",
+      "gt": {
+        "object_target": "Pencil",
+        "mrecep_target": "",
+        "parent_target": "",
+        "toggle_target": "DeskLamp",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "Under a lamp, examination of a pencil is necessary.",
+      "usable_struct": true,
+      "para_lex": "Take a closer look at a pencil by placing it underneath a lamp.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "look_at_obj_in_light-CD-None-DeskLamp-308",
+      "task_type": "look_at_obj_in_light",
+      "task_desc": "examine a CD with a lamp",
+      "gt": {
+        "object_target": "CD",
+        "mrecep_target": "",
+        "parent_target": "",
+        "toggle_target": "DeskLamp",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "With a lamp, a CD is to be examined.",
+      "usable_struct": true,
+      "para_lex": "Take a closer look at a CD using a light.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "look_at_obj_in_light-BasketBall-None-DeskLamp-308",
+      "task_type": "look_at_obj_in_light",
+      "task_desc": "Examine a basketball by the light of a desk lamp.",
+      "gt": {
+        "object_target": "BasketBall",
+        "mrecep_target": "",
+        "parent_target": "",
+        "toggle_target": "DeskLamp",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "By the light of a desk lamp, a basketball is to be examined.",
+      "usable_struct": true,
+      "para_lex": "Check out the basketball under the glow of a lamp that's sitting on your desk.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "look_at_obj_in_light-Vase-None-FloorLamp-219",
+      "task_type": "look_at_obj_in_light",
+      "task_desc": "Pick up a brass candy dish and turn on a lamp.",
+      "gt": {
+        "object_target": "Vase",
+        "mrecep_target": "",
+        "parent_target": "",
+        "toggle_target": "FloorLamp",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "A lamp should be turned on after a brass candy dish is picked up.",
+      "usable_struct": true,
+      "para_lex": "Grab the brass candy dish and switch on the lamp.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "look_at_obj_in_light-Bowl-None-DeskLamp-308",
+      "task_type": "look_at_obj_in_light",
+      "task_desc": "Examine a bowl by the light of a desk lamp.",
+      "gt": {
+        "object_target": "Bowl",
+        "mrecep_target": "",
+        "parent_target": "",
+        "toggle_target": "DeskLamp",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "By the light of a desk lamp, a bowl is to be examined.",
+      "usable_struct": true,
+      "para_lex": "Take a closer look at the bowl under the glow of a lamp that's positioned on your desk.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "look_at_obj_in_light-Newspaper-None-FloorLamp-219",
+      "task_type": "look_at_obj_in_light",
+      "task_desc": "turn on the standing light with the newspaper at hand",
+      "gt": {
+        "object_target": "Newspaper",
+        "mrecep_target": "",
+        "parent_target": "",
+        "toggle_target": "FloorLamp",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "With the newspaper at hand, the standing light is to be turned on.",
+      "usable_struct": true,
+      "para_lex": "Keep the newspaper handy and switch on the floor lamp.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "look_at_obj_in_light-CellPhone-None-FloorLamp-219",
+      "task_type": "look_at_obj_in_light",
+      "task_desc": "Examine a phone by the light of the lamp in the corner. ",
+      "gt": {
+        "object_target": "CellPhone",
+        "mrecep_target": "",
+        "parent_target": "",
+        "toggle_target": "FloorLamp",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "In the corner, by the light of the lamp, a phone is to be examined.",
+      "usable_struct": true,
+      "para_lex": "Check out the phone under the glow of the lamp that's sitting in the corner.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "look_at_obj_in_light-Laptop-None-FloorLamp-219",
+      "task_type": "look_at_obj_in_light",
+      "task_desc": "Examine a computer in the lamp light. ",
+      "gt": {
+        "object_target": "Laptop",
+        "mrecep_target": "",
+        "parent_target": "",
+        "toggle_target": "FloorLamp",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "In the lamp light, a computer is to be examined.",
+      "usable_struct": true,
+      "para_lex": "Take a closer look at the computer under the lamp.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "look_at_obj_in_light-CD-None-DeskLamp-308",
+      "task_type": "look_at_obj_in_light",
+      "task_desc": "Turn on the desk lamp.",
+      "gt": {
+        "object_target": "CD",
+        "mrecep_target": "",
+        "parent_target": "",
+        "toggle_target": "DeskLamp",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "The desk lamp should be turned on.",
+      "usable_struct": true,
+      "para_lex": "Switch on the lamp that's sitting on your desk.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "look_at_obj_in_light-CreditCard-None-FloorLamp-219",
+      "task_type": "look_at_obj_in_light",
+      "task_desc": "Carry a credit card while turning on a lamp",
+      "gt": {
+        "object_target": "CreditCard",
+        "mrecep_target": "",
+        "parent_target": "",
+        "toggle_target": "FloorLamp",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "While turning on a lamp, carry a credit card.",
+      "usable_struct": true,
+      "para_lex": "While switching on the lamp, have your credit card with you.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "look_at_obj_in_light-Laptop-None-FloorLamp-219",
+      "task_type": "look_at_obj_in_light",
+      "task_desc": "Pick up laptop and turn on lamp",
+      "gt": {
+        "object_target": "Laptop",
+        "mrecep_target": "",
+        "parent_target": "",
+        "toggle_target": "FloorLamp",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "On the lamp, turn it on after picking up the laptop.",
+      "usable_struct": true,
+      "para_lex": "Grab your laptop and switch on the lamp.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "look_at_obj_in_light-Laptop-None-FloorLamp-219",
+      "task_type": "look_at_obj_in_light",
+      "task_desc": "Examine a notebook computer by the light of a lamp",
+      "gt": {
+        "object_target": "Laptop",
+        "mrecep_target": "",
+        "parent_target": "",
+        "toggle_target": "FloorLamp",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "By the light of a lamp, a notebook computer is to be examined.",
+      "usable_struct": true,
+      "para_lex": "Check out a laptop under the glow of a light.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "look_at_obj_in_light-Box-None-FloorLamp-219",
+      "task_type": "look_at_obj_in_light",
+      "task_desc": "Examine an empty box by the light of a floor lamp.",
+      "gt": {
+        "object_target": "Box",
+        "mrecep_target": "",
+        "parent_target": "",
+        "toggle_target": "FloorLamp",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "By the light of a floor lamp, an empty box is to be examined.",
+      "usable_struct": true,
+      "para_lex": "Take a closer look at an empty box under the glow of a lamp that's standing on the floor.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_and_place_simple-Watch-None-Safe-219",
+      "task_type": "pick_and_place_simple",
+      "task_desc": "Move a watch to the inside of a small safe.",
+      "gt": {
+        "object_target": "Watch",
+        "mrecep_target": "",
+        "parent_target": "Safe",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "To the inside of a small safe, move a watch.",
+      "usable_struct": true,
+      "para_lex": "Put a watch inside a little lockbox.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_and_place_simple-BaseballBat-None-Bed-308",
+      "task_type": "pick_and_place_simple",
+      "task_desc": "place a bat on the bed",
+      "gt": {
+        "object_target": "BaseballBat",
+        "mrecep_target": "",
+        "parent_target": "Bed",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "On the bed, a bat is to be placed.",
+      "usable_struct": true,
+      "para_lex": "Put the bat on the bed.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_and_place_simple-SaltShaker-None-Cabinet-10",
+      "task_type": "pick_and_place_simple",
+      "task_desc": "To acquire an odd item as place it where it is not useful.",
+      "gt": {
+        "object_target": "SaltShaker",
+        "mrecep_target": "",
+        "parent_target": "Cabinet",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "Where it is not useful is where an odd item should be placed after being acquired.",
+      "usable_struct": true,
+      "para_lex": "Pick up something that's out of place and move it to a spot where it doesn't belong.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_and_place_simple-SaltShaker-None-Drawer-10",
+      "task_type": "pick_and_place_simple",
+      "task_desc": "move salt shaker from counter to drawer",
+      "gt": {
+        "object_target": "SaltShaker",
+        "mrecep_target": "",
+        "parent_target": "Drawer",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "To the drawer, the salt shaker should be moved from the counter.",
+      "usable_struct": true,
+      "para_lex": "Relocate the salt shaker from the countertop to a drawer.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_and_place_simple-PepperShaker-None-Drawer-10",
+      "task_type": "pick_and_place_simple",
+      "task_desc": "Put a salt shaker in a drawer.",
+      "gt": {
+        "object_target": "PepperShaker",
+        "mrecep_target": "",
+        "parent_target": "Drawer",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "In a drawer, a salt shaker is to be put.",
+      "usable_struct": true,
+      "para_lex": "Place the salt shaker inside a drawer.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_and_place_simple-PepperShaker-None-Drawer-10",
+      "task_type": "pick_and_place_simple",
+      "task_desc": "Place a salt shaker in a drawer.",
+      "gt": {
+        "object_target": "PepperShaker",
+        "mrecep_target": "",
+        "parent_target": "Drawer",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "In a drawer, a salt shaker is to be placed.",
+      "usable_struct": true,
+      "para_lex": "Put the salt shaker away in a drawer.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_and_place_simple-Vase-None-Safe-219",
+      "task_type": "pick_and_place_simple",
+      "task_desc": "Put a vase in a safe.",
+      "gt": {
+        "object_target": "Vase",
+        "mrecep_target": "",
+        "parent_target": "Safe",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "In a safe, a vase is to be put.",
+      "usable_struct": true,
+      "para_lex": "Place a vase inside a secure storage container.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_and_place_simple-Mug-None-Desk-308",
+      "task_type": "pick_and_place_simple",
+      "task_desc": "Move a mug from the shelves to the desk.",
+      "gt": {
+        "object_target": "Mug",
+        "mrecep_target": "",
+        "parent_target": "Desk",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "To the desk, move a mug from the shelves.",
+      "usable_struct": true,
+      "para_lex": "Take a mug off the shelves and put it on the desk.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_and_place_simple-Mug-None-Desk-308",
+      "task_type": "pick_and_place_simple",
+      "task_desc": "take a coffee mug from a book shelf and place it on a desk",
+      "gt": {
+        "object_target": "Mug",
+        "mrecep_target": "",
+        "parent_target": "Desk",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "On a desk, a coffee mug, taken from a book shelf, should be placed.",
+      "usable_struct": true,
+      "para_lex": "Grab a mug from the bookcase and set it down on the desk.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_and_place_simple-Plunger-None-Cabinet-424",
+      "task_type": "pick_and_place_simple",
+      "task_desc": "Put a plunger in the cabinet beneath the sink",
+      "gt": {
+        "object_target": "Plunger",
+        "mrecep_target": "",
+        "parent_target": "Cabinet",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "Beneath the sink, in the cabinet, a plunger is to be put.",
+      "usable_struct": true,
+      "para_lex": "Place a plunger inside the cupboard under the sink.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_and_place_simple-SaltShaker-None-Drawer-10",
+      "task_type": "pick_and_place_simple",
+      "task_desc": "place a salt shaker in one of the pullout drawers",
+      "gt": {
+        "object_target": "SaltShaker",
+        "mrecep_target": "",
+        "parent_target": "Drawer",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "In one of the pullout drawers, a salt shaker is to be placed.",
+      "usable_struct": true,
+      "para_lex": "Put a salt shaker inside one of the drawers that pull out.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_and_place_simple-Plunger-None-Cabinet-424",
+      "task_type": "pick_and_place_simple",
+      "task_desc": "Move a plunger to the cabinet",
+      "gt": {
+        "object_target": "Plunger",
+        "mrecep_target": "",
+        "parent_target": "Cabinet",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "To the cabinet, a plunger is to be moved.",
+      "usable_struct": true,
+      "para_lex": "Relocate the plunger to its storage place in the cabinet.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_and_place_simple-Pencil-None-Shelf-308",
+      "task_type": "pick_and_place_simple",
+      "task_desc": "Move the pencil to a different area of the desk.",
+      "gt": {
+        "object_target": "Pencil",
+        "mrecep_target": "",
+        "parent_target": "Shelf",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "To a different area of the desk, move the pencil.",
+      "usable_struct": true,
+      "para_lex": "Relocate the pencil to another part of the desk.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_and_place_simple-SoapBottle-None-Toilet-424",
+      "task_type": "pick_and_place_simple",
+      "task_desc": "Move a bottle of hand soap from the sink to the toilet.",
+      "gt": {
+        "object_target": "SoapBottle",
+        "mrecep_target": "",
+        "parent_target": "Toilet",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "To the toilet, move a bottle of hand soap from the sink.",
+      "usable_struct": true,
+      "para_lex": "Relocate a container of hand soap from beside the sink to the bathroom toilet.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_and_place_simple-BaseballBat-None-Bed-308",
+      "task_type": "pick_and_place_simple",
+      "task_desc": "Move the bat in the corner to the bed",
+      "gt": {
+        "object_target": "BaseballBat",
+        "mrecep_target": "",
+        "parent_target": "Bed",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "To the bed, move the bat that is in the corner.",
+      "usable_struct": true,
+      "para_lex": "Relocate the bat that's sitting in the corner over to the bed.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_and_place_simple-SaltShaker-None-Cabinet-10",
+      "task_type": "pick_and_place_simple",
+      "task_desc": "Place the salt shaker in the cabinet beside the fridge.",
+      "gt": {
+        "object_target": "SaltShaker",
+        "mrecep_target": "",
+        "parent_target": "Cabinet",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "Beside the fridge, in the cabinet is where the salt shaker should be placed.",
+      "usable_struct": true,
+      "para_lex": "Put the salt shaker in the cupboard next to the refrigerator.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_and_place_simple-Watch-None-Safe-219",
+      "task_type": "pick_and_place_simple",
+      "task_desc": "Move the watch from the cabinet to the safe",
+      "gt": {
+        "object_target": "Watch",
+        "mrecep_target": "",
+        "parent_target": "Safe",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "To the safe, move the watch from the cabinet.",
+      "usable_struct": true,
+      "para_lex": "Relocate the watch by taking it out of the cabinet and putting it into the safe.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_and_place_simple-Vase-None-Safe-219",
+      "task_type": "pick_and_place_simple",
+      "task_desc": "Put a vase in a safe.",
+      "gt": {
+        "object_target": "Vase",
+        "mrecep_target": "",
+        "parent_target": "Safe",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "In a safe, a vase is to be put.",
+      "usable_struct": true,
+      "para_lex": "Place a vase inside a safe location.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_and_place_simple-Vase-None-Safe-219",
+      "task_type": "pick_and_place_simple",
+      "task_desc": "Put the gold vase into the white safe",
+      "gt": {
+        "object_target": "Vase",
+        "mrecep_target": "",
+        "parent_target": "Safe",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "Into the white safe, the gold vase is to be put.",
+      "usable_struct": true,
+      "para_lex": "Place the gold vase inside the white safe.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_and_place_simple-Plunger-None-Cabinet-424",
+      "task_type": "pick_and_place_simple",
+      "task_desc": "move the plunger from behind the toilet to the cabinet",
+      "gt": {
+        "object_target": "Plunger",
+        "mrecep_target": "",
+        "parent_target": "Cabinet",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "From behind the toilet, the plunger is to be moved to the cabinet.",
+      "usable_struct": true,
+      "para_lex": "Relocate the plunger that's currently situated at the back of the toilet to its storage spot in the cabinet.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_and_place_simple-SaltShaker-None-Cabinet-10",
+      "task_type": "pick_and_place_simple",
+      "task_desc": "Place the salt shaker in the cabinet.",
+      "gt": {
+        "object_target": "SaltShaker",
+        "mrecep_target": "",
+        "parent_target": "Cabinet",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "In the cabinet, the salt shaker is to be placed.",
+      "usable_struct": true,
+      "para_lex": "Put the salt shaker away in the cabinet.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_and_place_simple-Mug-None-Desk-308",
+      "task_type": "pick_and_place_simple",
+      "task_desc": "take the mug from the desk shelf to put it on the desk.",
+      "gt": {
+        "object_target": "Mug",
+        "mrecep_target": "",
+        "parent_target": "Desk",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "On the desk, put the mug, which is to be taken from the desk shelf.",
+      "usable_struct": true,
+      "para_lex": "Pick up the mug off the shelf on your desk and place it down on the desk itself.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_and_place_simple-Watch-None-Safe-219",
+      "task_type": "pick_and_place_simple",
+      "task_desc": "Place a watch inside a safe.",
+      "gt": {
+        "object_target": "Watch",
+        "mrecep_target": "",
+        "parent_target": "Safe",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "Inside a safe, a watch is to be placed.",
+      "usable_struct": true,
+      "para_lex": "Put your watch in the safe.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_and_place_simple-Pencil-None-Shelf-308",
+      "task_type": "pick_and_place_simple",
+      "task_desc": "Move a pencil on the desk over. ",
+      "gt": {
+        "object_target": "Pencil",
+        "mrecep_target": "",
+        "parent_target": "Shelf",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "On the desk, a pencil needs to be moved over.",
+      "usable_struct": true,
+      "para_lex": "Shift the pencil that's on the desk to a different position.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_and_place_simple-SaltShaker-None-Drawer-10",
+      "task_type": "pick_and_place_simple",
+      "task_desc": "Put a salt shaker in a drawer next to the oven.",
+      "gt": {
+        "object_target": "SaltShaker",
+        "mrecep_target": "",
+        "parent_target": "Drawer",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "Next to the oven, a drawer is where a salt shaker should be put.",
+      "usable_struct": true,
+      "para_lex": "Place a salt shaker into the drawer beside the oven.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_and_place_simple-Pencil-None-Shelf-308",
+      "task_type": "pick_and_place_simple",
+      "task_desc": "Take the pencil from the desk, put it back on the desk",
+      "gt": {
+        "object_target": "Pencil",
+        "mrecep_target": "",
+        "parent_target": "Shelf",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "On the desk, put the pencil back after taking it from the desk.",
+      "usable_struct": true,
+      "para_lex": "Pick up the pencil that's on the desk and then place it back down on the desk.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_and_place_simple-BaseballBat-None-Bed-308",
+      "task_type": "pick_and_place_simple",
+      "task_desc": "Put the baseball bat on the bed",
+      "gt": {
+        "object_target": "BaseballBat",
+        "mrecep_target": "",
+        "parent_target": "Bed",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "On the bed, the baseball bat is to be put.",
+      "usable_struct": true,
+      "para_lex": "Place the baseball bat onto your bed.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_and_place_simple-SoapBottle-None-Toilet-424",
+      "task_type": "pick_and_place_simple",
+      "task_desc": "Place the green bottle on the toilet baisin.",
+      "gt": {
+        "object_target": "SoapBottle",
+        "mrecep_target": "",
+        "parent_target": "Toilet",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "On the toilet basin, the green bottle is to be placed.",
+      "usable_struct": true,
+      "para_lex": "Put the green bottle on the toilet basin.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_and_place_simple-PepperShaker-None-Drawer-10",
+      "task_type": "pick_and_place_simple",
+      "task_desc": "take the salt by the coffee machine, put it in the second drawer",
+      "gt": {
+        "object_target": "PepperShaker",
+        "mrecep_target": "",
+        "parent_target": "Drawer",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "In the second drawer, put the salt that is by the coffee machine.",
+      "usable_struct": true,
+      "para_lex": "Grab the salt that's sitting next to the coffee machine and place it inside the second drawer.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_and_place_simple-SoapBottle-None-Toilet-424",
+      "task_type": "pick_and_place_simple",
+      "task_desc": "place a soap dispenser on top of the toilet",
+      "gt": {
+        "object_target": "SoapBottle",
+        "mrecep_target": "",
+        "parent_target": "Toilet",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "On top of the toilet, a soap dispenser is to be placed.",
+      "usable_struct": true,
+      "para_lex": "Put a soap dispenser right on the toilet.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_and_place_with_movable_recep-ButterKnife-Cup-CounterTop-10",
+      "task_type": "pick_and_place_with_movable_recep",
+      "task_desc": "put a cup and knife on a counter top",
+      "gt": {
+        "object_target": "ButterKnife",
+        "mrecep_target": "Cup",
+        "parent_target": "CounterTop",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "On a counter top, a cup and knife are to be put.",
+      "usable_struct": true,
+      "para_lex": "Place a cup and a knife on the countertop.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_and_place_with_movable_recep-Spoon-Mug-CounterTop-10",
+      "task_type": "pick_and_place_with_movable_recep",
+      "task_desc": "Put a mug with a spoon inside of it on the counter.",
+      "gt": {
+        "object_target": "Spoon",
+        "mrecep_target": "Mug",
+        "parent_target": "CounterTop",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "On the counter, a mug should be put with a spoon inside of it.",
+      "usable_struct": true,
+      "para_lex": "Place a mug that contains a spoon on the countertop.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_and_place_with_movable_recep-Spoon-Pan-SinkBasin-10",
+      "task_type": "pick_and_place_with_movable_recep",
+      "task_desc": "Put a spoon and pan into the sink at once.",
+      "gt": {
+        "object_target": "Spoon",
+        "mrecep_target": "Pan",
+        "parent_target": "SinkBasin",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "Into the sink, put a spoon and pan at once.",
+      "usable_struct": true,
+      "para_lex": "Place both a spoon and a pan in the sink simultaneously.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_and_place_with_movable_recep-ButterKnife-Cup-SinkBasin-10",
+      "task_type": "pick_and_place_with_movable_recep",
+      "task_desc": "Take a cup from the microwave, place it in the sink and put the knife inside the cup.",
+      "gt": {
+        "object_target": "ButterKnife",
+        "mrecep_target": "Cup",
+        "parent_target": "SinkBasin",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "In the sink, place a cup that you take from the microwave, and inside the cup put the knife.",
+      "usable_struct": true,
+      "para_lex": "Remove a cup from the microwave, put it in the sink, and then insert the knife into the cup.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_and_place_with_movable_recep-Pencil-Bowl-Shelf-308",
+      "task_type": "pick_and_place_with_movable_recep",
+      "task_desc": "put a bowl and a pencil between the books on the desk",
+      "gt": {
+        "object_target": "Pencil",
+        "mrecep_target": "Bowl",
+        "parent_target": "Shelf",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "Between the books on the desk, a bowl and a pencil should be put.",
+      "usable_struct": true,
+      "para_lex": "Place a bowl and a pencil in the space separating the books that are on your desk.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_and_place_with_movable_recep-Fork-Cup-CounterTop-10",
+      "task_type": "pick_and_place_with_movable_recep",
+      "task_desc": "Put the container with fork on the counter ",
+      "gt": {
+        "object_target": "Fork",
+        "mrecep_target": "Cup",
+        "parent_target": "CounterTop",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "On the counter, put the container with fork.",
+      "usable_struct": true,
+      "para_lex": "Place the container that has a fork in it on the countertop.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_and_place_with_movable_recep-Spoon-Mug-CounterTop-10",
+      "task_type": "pick_and_place_with_movable_recep",
+      "task_desc": "Put a mug with spoon in it on the counter left of the stove. ",
+      "gt": {
+        "object_target": "Spoon",
+        "mrecep_target": "Mug",
+        "parent_target": "CounterTop",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "On the counter left of the stove, a mug with spoon in it should be put.",
+      "usable_struct": true,
+      "para_lex": "Place a mug containing a spoon on the countertop to the left of the stove.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_and_place_with_movable_recep-Fork-Cup-SinkBasin-10",
+      "task_type": "pick_and_place_with_movable_recep",
+      "task_desc": "Put a cup with a fork in the sink.",
+      "gt": {
+        "object_target": "Fork",
+        "mrecep_target": "Cup",
+        "parent_target": "SinkBasin",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "In the sink, a cup with a fork is to be put.",
+      "usable_struct": true,
+      "para_lex": "Place a cup that has a fork in it into the sink.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_and_place_with_movable_recep-Fork-Cup-CounterTop-10",
+      "task_type": "pick_and_place_with_movable_recep",
+      "task_desc": "place a cup with a fork in it on top of the kitchen counter",
+      "gt": {
+        "object_target": "Fork",
+        "mrecep_target": "Cup",
+        "parent_target": "CounterTop",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "On top of the kitchen counter, a cup with a fork in it is to be placed.",
+      "usable_struct": true,
+      "para_lex": "Put a cup that has a fork inside it up on the counter in the kitchen.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_and_place_with_movable_recep-Pencil-Bowl-Shelf-308",
+      "task_type": "pick_and_place_with_movable_recep",
+      "task_desc": "put a bowl with a pencil in it on the desk",
+      "gt": {
+        "object_target": "Pencil",
+        "mrecep_target": "Bowl",
+        "parent_target": "Shelf",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "On the desk, a bowl is to be placed, in which a pencil is.",
+      "usable_struct": true,
+      "para_lex": "Place a bowl containing a pencil onto the desk.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_and_place_with_movable_recep-Egg-Bowl-CounterTop-10",
+      "task_type": "pick_and_place_with_movable_recep",
+      "task_desc": "Put an egg in a bowl, on the counter. ",
+      "gt": {
+        "object_target": "Egg",
+        "mrecep_target": "Bowl",
+        "parent_target": "CounterTop",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "On the counter, in a bowl, an egg should be put.",
+      "usable_struct": true,
+      "para_lex": "Place an egg into a bowl that's sitting on the counter.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_and_place_with_movable_recep-KeyChain-Box-ArmChair-219",
+      "task_type": "pick_and_place_with_movable_recep",
+      "task_desc": "Put a cardboard box with keys in it on the seat of a blue chair.",
+      "gt": {
+        "object_target": "KeyChain",
+        "mrecep_target": "Box",
+        "parent_target": "ArmChair",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "On the seat of a blue chair, a cardboard box with keys in it is to be put.",
+      "usable_struct": true,
+      "para_lex": "Place a box made of cardboard that contains keys onto the seat of the chair that is blue.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_and_place_with_movable_recep-Egg-Bowl-CounterTop-10",
+      "task_type": "pick_and_place_with_movable_recep",
+      "task_desc": "Put an egg in a bowl on the counter. ",
+      "gt": {
+        "object_target": "Egg",
+        "mrecep_target": "Bowl",
+        "parent_target": "CounterTop",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "On the counter, in a bowl, an egg should be put.",
+      "usable_struct": true,
+      "para_lex": "Place an egg into a bowl that's sitting on the counter.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_and_place_with_movable_recep-Spoon-Pan-SinkBasin-10",
+      "task_type": "pick_and_place_with_movable_recep",
+      "task_desc": "Place a skillet containing a spoon into a sink. ",
+      "gt": {
+        "object_target": "Spoon",
+        "mrecep_target": "Pan",
+        "parent_target": "SinkBasin",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "Into a sink, a skillet containing a spoon is to be placed.",
+      "usable_struct": true,
+      "para_lex": "Put a pan that has a spoon in it into the kitchen sink.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_and_place_with_movable_recep-Fork-Cup-CounterTop-10",
+      "task_type": "pick_and_place_with_movable_recep",
+      "task_desc": "Put a green cup with a fork in it on the counter.",
+      "gt": {
+        "object_target": "Fork",
+        "mrecep_target": "Cup",
+        "parent_target": "CounterTop",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "On the counter, a green cup with a fork in it is to be put.",
+      "usable_struct": true,
+      "para_lex": "Place a cup that's green, containing a fork, onto the countertop.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_and_place_with_movable_recep-Spoon-Pan-SinkBasin-10",
+      "task_type": "pick_and_place_with_movable_recep",
+      "task_desc": "Put a pan with a spoon in it in the sink.",
+      "gt": {
+        "object_target": "Spoon",
+        "mrecep_target": "Pan",
+        "parent_target": "SinkBasin",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "In the sink, put a pan that has a spoon in it.",
+      "usable_struct": true,
+      "para_lex": "Place a pan that has a spoon inside it into the sink.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_and_place_with_movable_recep-Fork-Cup-SinkBasin-10",
+      "task_type": "pick_and_place_with_movable_recep",
+      "task_desc": "Put the cup from the microwave in the sink with a fork in it.",
+      "gt": {
+        "object_target": "Fork",
+        "mrecep_target": "Cup",
+        "parent_target": "SinkBasin",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "In the sink, place the cup that is in the microwave, and put a fork in it.",
+      "usable_struct": true,
+      "para_lex": "Place the cup that's in the microwave into the sink, making sure it has a fork inside it.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_and_place_with_movable_recep-ButterKnife-Cup-SinkBasin-10",
+      "task_type": "pick_and_place_with_movable_recep",
+      "task_desc": "Put a cup with a butter knife in it in the sink.",
+      "gt": {
+        "object_target": "ButterKnife",
+        "mrecep_target": "Cup",
+        "parent_target": "SinkBasin",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "In the sink, a cup that has a butter knife in it should be put.",
+      "usable_struct": true,
+      "para_lex": "Place a cup containing a butter knife into the sink.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_and_place_with_movable_recep-KeyChain-Box-ArmChair-219",
+      "task_type": "pick_and_place_with_movable_recep",
+      "task_desc": "put a box with the set of keys on to the blue chair",
+      "gt": {
+        "object_target": "KeyChain",
+        "mrecep_target": "Box",
+        "parent_target": "ArmChair",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "On the blue chair, place a box that contains the set of keys.",
+      "usable_struct": true,
+      "para_lex": "Place a box containing the set of keys onto the blue chair.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_and_place_with_movable_recep-ButterKnife-Cup-CounterTop-10",
+      "task_type": "pick_and_place_with_movable_recep",
+      "task_desc": "place a cup with a knife in it on the kitchen counter space",
+      "gt": {
+        "object_target": "ButterKnife",
+        "mrecep_target": "Cup",
+        "parent_target": "CounterTop",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "On the kitchen counter space, a cup that has a knife in it should be placed.",
+      "usable_struct": true,
+      "para_lex": "Put a cup containing a knife on the countertop in the kitchen.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_and_place_with_movable_recep-Fork-Cup-SinkBasin-10",
+      "task_type": "pick_and_place_with_movable_recep",
+      "task_desc": "Put a green glass containing a fork into the sink.",
+      "gt": {
+        "object_target": "Fork",
+        "mrecep_target": "Cup",
+        "parent_target": "SinkBasin",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "Into the sink, put a green glass containing a fork.",
+      "usable_struct": true,
+      "para_lex": "Place a fork inside a green glass and then put it in the sink.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_and_place_with_movable_recep-ButterKnife-Pan-SinkBasin-10",
+      "task_type": "pick_and_place_with_movable_recep",
+      "task_desc": "Place a pan with a knife in it into the sink.",
+      "gt": {
+        "object_target": "ButterKnife",
+        "mrecep_target": "Pan",
+        "parent_target": "SinkBasin",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "Into the sink, a pan that has a knife in it should be placed.",
+      "usable_struct": true,
+      "para_lex": "Put a pan that has a knife inside it into the sink.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_and_place_with_movable_recep-KeyChain-Box-ArmChair-219",
+      "task_type": "pick_and_place_with_movable_recep",
+      "task_desc": "Place a box with a set of keys on a chair.",
+      "gt": {
+        "object_target": "KeyChain",
+        "mrecep_target": "Box",
+        "parent_target": "ArmChair",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "On a chair, a box with a set of keys is to be placed.",
+      "usable_struct": true,
+      "para_lex": "Put a container holding a bunch of keys on a seat.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_and_place_with_movable_recep-Glassbottle-Plate-SinkBasin-10",
+      "task_type": "pick_and_place_with_movable_recep",
+      "task_desc": "Put a glass vase and a plate in the sink.",
+      "gt": {
+        "object_target": "Glassbottle",
+        "mrecep_target": "Plate",
+        "parent_target": "SinkBasin",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "In the sink, a glass vase and a plate are to be put.",
+      "usable_struct": true,
+      "para_lex": "Place a vase made of glass and a dish in the kitchen sink.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_and_place_with_movable_recep-ButterKnife-Cup-CounterTop-10",
+      "task_type": "pick_and_place_with_movable_recep",
+      "task_desc": "Move a knife and a green cup to the counter. ",
+      "gt": {
+        "object_target": "ButterKnife",
+        "mrecep_target": "Cup",
+        "parent_target": "CounterTop",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "To the counter, move a knife and a green cup.",
+      "usable_struct": true,
+      "para_lex": "Relocate the knife and the green cup over to the countertop.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_and_place_with_movable_recep-Spoon-Mug-CounterTop-10",
+      "task_type": "pick_and_place_with_movable_recep",
+      "task_desc": "Put a spoon in a mug on a counter.",
+      "gt": {
+        "object_target": "Spoon",
+        "mrecep_target": "Mug",
+        "parent_target": "CounterTop",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "On a counter, in a mug, a spoon is to be put.",
+      "usable_struct": true,
+      "para_lex": "Place a spoon inside a mug that's sitting on the counter.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_and_place_with_movable_recep-ButterKnife-Pan-SinkBasin-10",
+      "task_type": "pick_and_place_with_movable_recep",
+      "task_desc": "Put a pan with a knife in it in the sink.",
+      "gt": {
+        "object_target": "ButterKnife",
+        "mrecep_target": "Pan",
+        "parent_target": "SinkBasin",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "In the sink, a pan that has a knife in it should be put.",
+      "usable_struct": true,
+      "para_lex": "Place a pan containing a knife into the sink.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_and_place_with_movable_recep-ButterKnife-Cup-SinkBasin-10",
+      "task_type": "pick_and_place_with_movable_recep",
+      "task_desc": "put green cup and knife into sink basin",
+      "gt": {
+        "object_target": "ButterKnife",
+        "mrecep_target": "Cup",
+        "parent_target": "SinkBasin",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "Into the sink basin, the green cup and knife are to be put.",
+      "usable_struct": true,
+      "para_lex": "Place the green cup and the knife in the sink.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_and_place_with_movable_recep-Egg-Bowl-CounterTop-10",
+      "task_type": "pick_and_place_with_movable_recep",
+      "task_desc": "Move a bowl and egg to the counter.",
+      "gt": {
+        "object_target": "Egg",
+        "mrecep_target": "Bowl",
+        "parent_target": "CounterTop",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "To the counter, move a bowl and egg.",
+      "usable_struct": true,
+      "para_lex": "Take a bowl and an egg, and put them on the counter.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_and_place_with_movable_recep-ButterKnife-Pan-SinkBasin-10",
+      "task_type": "pick_and_place_with_movable_recep",
+      "task_desc": "Put a pan with a knife in it, in the sink.",
+      "gt": {
+        "object_target": "ButterKnife",
+        "mrecep_target": "Pan",
+        "parent_target": "SinkBasin",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "In the sink, put a pan that has a knife in it.",
+      "usable_struct": true,
+      "para_lex": "Place a pan containing a knife into the sink.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_and_place_with_movable_recep-Glassbottle-Plate-SinkBasin-10",
+      "task_type": "pick_and_place_with_movable_recep",
+      "task_desc": "Put a vase and plate from a cabinet into the sink",
+      "gt": {
+        "object_target": "Glassbottle",
+        "mrecep_target": "Plate",
+        "parent_target": "SinkBasin",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "Into the sink, a vase and plate from a cabinet are to be put.",
+      "usable_struct": true,
+      "para_lex": "Place a vase and a plate that are in the cabinet into the sink.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_and_place_with_movable_recep-Glassbottle-Plate-SinkBasin-10",
+      "task_type": "pick_and_place_with_movable_recep",
+      "task_desc": "Put a plate with a bottle on top of it in the sink.",
+      "gt": {
+        "object_target": "Glassbottle",
+        "mrecep_target": "Plate",
+        "parent_target": "SinkBasin",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "In the sink, a plate should be placed with a bottle on top of it.",
+      "usable_struct": true,
+      "para_lex": "Place a dish in the sink with a bottle sitting on it.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_and_place_with_movable_recep-Pencil-Bowl-Shelf-308",
+      "task_type": "pick_and_place_with_movable_recep",
+      "task_desc": "Move  the glass bowl containing a pencil from the desk near the window to the bookshelf on the other desk.",
+      "gt": {
+        "object_target": "Pencil",
+        "mrecep_target": "Bowl",
+        "parent_target": "Shelf",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "On the other desk, the bookshelf is where you should move the glass bowl containing a pencil, which is currently located on the desk near the window.",
+      "usable_struct": true,
+      "para_lex": "Relocate the bowl made of glass that holds a pencil, shifting it from the desk by the window over to the bookcase situated on the other desk.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-SoapBar-None-Cabinet-424",
+      "task_type": "pick_clean_then_place_in_recep",
+      "task_desc": "put a rinsed off bar of soap in to the cabinet",
+      "gt": {
+        "object_target": "SoapBar",
+        "mrecep_target": "",
+        "parent_target": "Cabinet",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "para_struct": "Into the cabinet, a rinsed off bar of soap is to be put.",
+      "usable_struct": true,
+      "para_lex": "Place a cleaned bar of soap into the cabinet after rinsing it.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-LettuceSliced-None-GarbageCan-10",
+      "task_type": "pick_clean_then_place_in_recep",
+      "task_desc": "Dispose of a lettuce slice after slicing and rinsing it off",
+      "gt": {
+        "object_target": "Lettuce",
+        "mrecep_target": "",
+        "parent_target": "GarbageCan",
+        "toggle_target": "",
+        "object_sliced": true,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "para_struct": "After slicing and rinsing it off in the sink, a lettuce slice should be disposed of.",
+      "usable_struct": true,
+      "para_lex": "After you've cut and washed a piece of lettuce, get rid of the slice.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-Cloth-None-Cabinet-424",
+      "task_type": "pick_clean_then_place_in_recep",
+      "task_desc": "rinse the rag in the sink and put it in the cabinet",
+      "gt": {
+        "object_target": "Cloth",
+        "mrecep_target": "",
+        "parent_target": "Cabinet",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "para_struct": "In the sink, rinse the rag, then put it in the cabinet.",
+      "usable_struct": true,
+      "para_lex": "Wash the cloth under the faucet in the sink, then place it inside the cupboard.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-LettuceSliced-None-GarbageCan-10",
+      "task_type": "pick_clean_then_place_in_recep",
+      "task_desc": "Place sliced lettuce into a bin.",
+      "gt": {
+        "object_target": "Lettuce",
+        "mrecep_target": "",
+        "parent_target": "GarbageCan",
+        "toggle_target": "",
+        "object_sliced": true,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "para_struct": "Into a bin, place sliced lettuce.",
+      "usable_struct": true,
+      "para_lex": "Put the cut lettuce in a container.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-SoapBar-None-CounterTop-424",
+      "task_type": "pick_clean_then_place_in_recep",
+      "task_desc": "Rinse off the soap and place it on the counter.",
+      "gt": {
+        "object_target": "SoapBar",
+        "mrecep_target": "",
+        "parent_target": "CounterTop",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "para_struct": "On the counter, the soap should be placed after rinsing off the soap.",
+      "usable_struct": true,
+      "para_lex": "Wash the soap clean and put it on the countertop.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-Plate-None-CounterTop-10",
+      "task_type": "pick_clean_then_place_in_recep",
+      "task_desc": "wash the dirty bowl before putting the bowl on the counter",
+      "gt": {
+        "object_target": "Plate",
+        "mrecep_target": "",
+        "parent_target": "CounterTop",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "para_struct": "On the counter, the bowl can be put only after the dirty bowl has been washed.",
+      "usable_struct": true,
+      "para_lex": "Clean the filthy dish before placing it on the countertop.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-Egg-None-Microwave-10",
+      "task_type": "pick_clean_then_place_in_recep",
+      "task_desc": "Put a clean egg in the microwave.",
+      "gt": {
+        "object_target": "Egg",
+        "mrecep_target": "",
+        "parent_target": "Microwave",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "para_struct": "In the microwave, a clean egg is to be put.",
+      "usable_struct": true,
+      "para_lex": "Place a fresh egg in the microwave.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-Knife-None-CounterTop-10",
+      "task_type": "pick_clean_then_place_in_recep",
+      "task_desc": "put a knife in the sink before standing it on the counter",
+      "gt": {
+        "object_target": "Knife",
+        "mrecep_target": "",
+        "parent_target": "CounterTop",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "para_struct": "On the counter, stand the knife after first putting it in the sink.",
+      "usable_struct": true,
+      "para_lex": "Place a knife in the sink initially, then position it upright on the countertop.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-Pan-None-CounterTop-10",
+      "task_type": "pick_clean_then_place_in_recep",
+      "task_desc": "Put a cleaned pan on the counter. ",
+      "gt": {
+        "object_target": "Pan",
+        "mrecep_target": "",
+        "parent_target": "CounterTop",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "para_struct": "On the counter, a cleaned pan is to be put.",
+      "usable_struct": true,
+      "para_lex": "Place a freshly washed pan on the countertop.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-Knife-None-CounterTop-10",
+      "task_type": "pick_clean_then_place_in_recep",
+      "task_desc": "Wash a knife in the sink to place on a countertop.",
+      "gt": {
+        "object_target": "Knife",
+        "mrecep_target": "",
+        "parent_target": "CounterTop",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "para_struct": "On a countertop, a knife is to be placed after being washed in the sink.",
+      "usable_struct": true,
+      "para_lex": "Clean a knife under the faucet and then put it on the counter.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-Plate-None-CounterTop-10",
+      "task_type": "pick_clean_then_place_in_recep",
+      "task_desc": "Put a clean yellow plate on the counter.",
+      "gt": {
+        "object_target": "Plate",
+        "mrecep_target": "",
+        "parent_target": "CounterTop",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "para_struct": "On the counter, a clean yellow plate is to be put.",
+      "usable_struct": true,
+      "para_lex": "Place a fresh yellow dish on the countertop.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-Bowl-None-Cabinet-10",
+      "task_type": "pick_clean_then_place_in_recep",
+      "task_desc": "Place a washed bowl in a cabinet.",
+      "gt": {
+        "object_target": "Bowl",
+        "mrecep_target": "",
+        "parent_target": "Cabinet",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "para_struct": "In a cabinet, a washed bowl is to be placed.",
+      "usable_struct": true,
+      "para_lex": "Put a clean bowl away in the cupboard.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-Bowl-None-Cabinet-10",
+      "task_type": "pick_clean_then_place_in_recep",
+      "task_desc": "Put a filled bowl of water in the cabinet left of the microwave.",
+      "gt": {
+        "object_target": "Bowl",
+        "mrecep_target": "",
+        "parent_target": "Cabinet",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "para_struct": "In the cabinet left of the microwave, a filled bowl of water is to be put.",
+      "usable_struct": true,
+      "para_lex": "Place a bowl filled with water inside the cupboard to the left of the microwave.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-Spatula-None-Drawer-10",
+      "task_type": "pick_clean_then_place_in_recep",
+      "task_desc": "Wash the spatula, put it in the first drawer",
+      "gt": {
+        "object_target": "Spatula",
+        "mrecep_target": "",
+        "parent_target": "Drawer",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "para_struct": "In the first drawer, the spatula should be put after it is washed.",
+      "usable_struct": true,
+      "para_lex": "Clean the spatula and then place it inside the top drawer.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-Spatula-None-Drawer-10",
+      "task_type": "pick_clean_then_place_in_recep",
+      "task_desc": "Clean a spatula to put it away.",
+      "gt": {
+        "object_target": "Spatula",
+        "mrecep_target": "",
+        "parent_target": "Drawer",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "para_struct": "To put it away, clean a spatula.",
+      "usable_struct": true,
+      "para_lex": "Before storing the spatula, give it a good wipe down.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-Knife-None-CounterTop-10",
+      "task_type": "pick_clean_then_place_in_recep",
+      "task_desc": "Place a clean knife on a plate on the counter.",
+      "gt": {
+        "object_target": "Knife",
+        "mrecep_target": "",
+        "parent_target": "CounterTop",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "para_struct": "On the counter, a plate should have a clean knife placed on it.",
+      "usable_struct": true,
+      "para_lex": "Put a clean knife onto a plate that's already on the counter.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-Plate-None-CounterTop-10",
+      "task_type": "pick_clean_then_place_in_recep",
+      "task_desc": "Put a clean plate on the counter.",
+      "gt": {
+        "object_target": "Plate",
+        "mrecep_target": "",
+        "parent_target": "CounterTop",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "para_struct": "On the counter, a clean plate is to be put.",
+      "usable_struct": true,
+      "para_lex": "Place a fresh plate on the countertop.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-SoapBar-None-CounterTop-424",
+      "task_type": "pick_clean_then_place_in_recep",
+      "task_desc": "Put a cleaned bar of soap on a counter.",
+      "gt": {
+        "object_target": "SoapBar",
+        "mrecep_target": "",
+        "parent_target": "CounterTop",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "para_struct": "On a counter, a cleaned bar of soap is to be put.",
+      "usable_struct": true,
+      "para_lex": "Place a freshly washed soap bar on the countertop.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-Egg-None-Microwave-10",
+      "task_type": "pick_clean_then_place_in_recep",
+      "task_desc": "Put a clean egg in the microwave.",
+      "gt": {
+        "object_target": "Egg",
+        "mrecep_target": "",
+        "parent_target": "Microwave",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "para_struct": "In the microwave, a clean egg is to be put.",
+      "usable_struct": true,
+      "para_lex": "Place a fresh egg in the microwave.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-Pan-None-CounterTop-10",
+      "task_type": "pick_clean_then_place_in_recep",
+      "task_desc": "Put a cleaned pan on a counter top.",
+      "gt": {
+        "object_target": "Pan",
+        "mrecep_target": "",
+        "parent_target": "CounterTop",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "para_struct": "On a counter top, a cleaned pan is to be put.",
+      "usable_struct": true,
+      "para_lex": "Place a freshly cleaned pan on the kitchen counter.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-SoapBar-None-Cabinet-424",
+      "task_type": "pick_clean_then_place_in_recep",
+      "task_desc": "put a rinse off bar of soap in to the cabinet",
+      "gt": {
+        "object_target": "SoapBar",
+        "mrecep_target": "",
+        "parent_target": "Cabinet",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "para_struct": "Into the cabinet, a rinse off bar of soap is to be put.",
+      "usable_struct": true,
+      "para_lex": "Place a bar of soap for rinsing in the cabinet.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-Cloth-None-CounterTop-424",
+      "task_type": "pick_clean_then_place_in_recep",
+      "task_desc": "Place a clean rag on a counter.",
+      "gt": {
+        "object_target": "Cloth",
+        "mrecep_target": "",
+        "parent_target": "CounterTop",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "para_struct": "On a counter, a clean rag is to be placed.",
+      "usable_struct": true,
+      "para_lex": "Put a fresh cloth down on the countertop.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-Bowl-None-Cabinet-10",
+      "task_type": "pick_clean_then_place_in_recep",
+      "task_desc": "Put a washed bowl away in a kitchen cabinet.",
+      "gt": {
+        "object_target": "Bowl",
+        "mrecep_target": "",
+        "parent_target": "Cabinet",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "para_struct": "In a kitchen cabinet, a washed bowl is to be put away.",
+      "usable_struct": true,
+      "para_lex": "Place a clean bowl in one of the cupboards in your kitchen.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-Cloth-None-CounterTop-424",
+      "task_type": "pick_clean_then_place_in_recep",
+      "task_desc": "Put a clean wash cloth on the counter.",
+      "gt": {
+        "object_target": "Cloth",
+        "mrecep_target": "",
+        "parent_target": "CounterTop",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "para_struct": "On the counter, a clean wash cloth should be put.",
+      "usable_struct": true,
+      "para_lex": "Place a fresh towel on the countertop.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-Cloth-None-CounterTop-424",
+      "task_type": "pick_clean_then_place_in_recep",
+      "task_desc": "Place a washed towel in the middle of two sinks",
+      "gt": {
+        "object_target": "Cloth",
+        "mrecep_target": "",
+        "parent_target": "CounterTop",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "para_struct": "In the middle of two sinks, a washed towel is to be placed.",
+      "usable_struct": true,
+      "para_lex": "Put a clean towel between the two sinks.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-Egg-None-Microwave-10",
+      "task_type": "pick_clean_then_place_in_recep",
+      "task_desc": "Put a washed egg in a microwave.",
+      "gt": {
+        "object_target": "Egg",
+        "mrecep_target": "",
+        "parent_target": "Microwave",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "para_struct": "In a microwave, a washed egg is to be put.",
+      "usable_struct": true,
+      "para_lex": "Place a clean egg inside the microwave.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-Spatula-None-Drawer-10",
+      "task_type": "pick_clean_then_place_in_recep",
+      "task_desc": "Put a clean spatula in a drawer.",
+      "gt": {
+        "object_target": "Spatula",
+        "mrecep_target": "",
+        "parent_target": "Drawer",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "para_struct": "In a drawer, a clean spatula is to be put.",
+      "usable_struct": true,
+      "para_lex": "Place a fresh spatula inside the drawer.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-Mug-None-CoffeeMachine-10",
+      "task_type": "pick_clean_then_place_in_recep",
+      "task_desc": "Fill up a mug with water and take to the coffee machine.",
+      "gt": {
+        "object_target": "Mug",
+        "mrecep_target": "",
+        "parent_target": "CoffeeMachine",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "para_struct": "To the coffee machine, take a mug filled up with water.",
+      "usable_struct": true,
+      "para_lex": "Grab a mug, fill it with water, and then head over to the coffee machine with it.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-LettuceSliced-None-GarbageCan-10",
+      "task_type": "pick_clean_then_place_in_recep",
+      "task_desc": "To wash a slice of lettuce and place it in the trash can.",
+      "gt": {
+        "object_target": "Lettuce",
+        "mrecep_target": "",
+        "parent_target": "GarbageCan",
+        "toggle_target": "",
+        "object_sliced": true,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "para_struct": "In the trash can, a slice of lettuce should be placed after it is washed.",
+      "usable_struct": true,
+      "para_lex": "Rinse a piece of lettuce and then toss it into the garbage bin.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-Cloth-None-Cabinet-424",
+      "task_type": "pick_clean_then_place_in_recep",
+      "task_desc": "Put a cleaned blue cloth in a cabinet.",
+      "gt": {
+        "object_target": "Cloth",
+        "mrecep_target": "",
+        "parent_target": "Cabinet",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "para_struct": "In a cabinet, a cleaned blue cloth is to be put.",
+      "usable_struct": true,
+      "para_lex": "Place a freshly cleaned blue rag inside the cupboard.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-Mug-None-CoffeeMachine-10",
+      "task_type": "pick_clean_then_place_in_recep",
+      "task_desc": "Put a cleaned mug on the coffee maker to the right of the stove.",
+      "gt": {
+        "object_target": "Mug",
+        "mrecep_target": "",
+        "parent_target": "CoffeeMachine",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "para_struct": "To the right of the stove, on the coffee maker, a cleaned mug is to be put.",
+      "usable_struct": true,
+      "para_lex": "Place a freshly cleaned mug beside the coffee machine, which is located to the right of the stove.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-Mug-None-CoffeeMachine-10",
+      "task_type": "pick_clean_then_place_in_recep",
+      "task_desc": "Pick up the white coffee cup, fill it in the sink, place it in the coffee maker. ",
+      "gt": {
+        "object_target": "Mug",
+        "mrecep_target": "",
+        "parent_target": "CoffeeMachine",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "para_struct": "In the sink, fill the white coffee cup, then place it in the coffee maker after picking it up.",
+      "usable_struct": true,
+      "para_lex": "Grab the white coffee cup, head to the sink to fill it up, and then put it in the coffee maker.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-Cloth-None-Cabinet-424",
+      "task_type": "pick_clean_then_place_in_recep",
+      "task_desc": "wash the cloth from the cabinet, put it back",
+      "gt": {
+        "object_target": "Cloth",
+        "mrecep_target": "",
+        "parent_target": "Cabinet",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "para_struct": "Put back the cloth from the cabinet after washing it.",
+      "usable_struct": true,
+      "para_lex": "Take the cloth out of the cabinet, give it a wash, and then return it to the cabinet.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-Pan-None-CounterTop-10",
+      "task_type": "pick_clean_then_place_in_recep",
+      "task_desc": "Place a washed pan on the counter.",
+      "gt": {
+        "object_target": "Pan",
+        "mrecep_target": "",
+        "parent_target": "CounterTop",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "para_struct": "On the counter, a washed pan is to be placed.",
+      "usable_struct": true,
+      "para_lex": "Put the cleaned pan on the countertop.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-SoapBar-None-CounterTop-424",
+      "task_type": "pick_clean_then_place_in_recep",
+      "task_desc": "Put a wet soap on the counter. ",
+      "gt": {
+        "object_target": "SoapBar",
+        "mrecep_target": "",
+        "parent_target": "CounterTop",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "para_struct": "On the counter, a wet soap is to be put.",
+      "usable_struct": true,
+      "para_lex": "Place a damp bar of soap on the countertop.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-SoapBar-None-Cabinet-424",
+      "task_type": "pick_clean_then_place_in_recep",
+      "task_desc": "Put a clean bar of soap in a cabinet.",
+      "gt": {
+        "object_target": "SoapBar",
+        "mrecep_target": "",
+        "parent_target": "Cabinet",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": true
+      },
+      "para_struct": "In a cabinet, a clean bar of soap should be put.",
+      "usable_struct": true,
+      "para_lex": "Place a fresh bar of soap inside the cabinet.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_cool_then_place_in_recep-Lettuce-None-CounterTop-10",
+      "task_type": "pick_cool_then_place_in_recep",
+      "task_desc": "chill the lettuce then return it to the counter",
+      "gt": {
+        "object_target": "Lettuce",
+        "mrecep_target": "",
+        "parent_target": "CounterTop",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": true,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "To the counter, the lettuce should be returned after it has been chilled.",
+      "usable_struct": true,
+      "para_lex": "First, put the lettuce in the fridge to cool it down, then bring it back out to the counter.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_cool_then_place_in_recep-Lettuce-None-SinkBasin-10",
+      "task_type": "pick_cool_then_place_in_recep",
+      "task_desc": "Place a cool lettuce in the sink.",
+      "gt": {
+        "object_target": "Lettuce",
+        "mrecep_target": "",
+        "parent_target": "SinkBasin",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": true,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "In the sink, a cool lettuce is to be placed.",
+      "usable_struct": true,
+      "para_lex": "Put some cold lettuce in the sink.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_cool_then_place_in_recep-Lettuce-None-CounterTop-10",
+      "task_type": "pick_cool_then_place_in_recep",
+      "task_desc": "Put chilled lettuce on the counter.",
+      "gt": {
+        "object_target": "Lettuce",
+        "mrecep_target": "",
+        "parent_target": "CounterTop",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": true,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "On the counter, chilled lettuce is to be put.",
+      "usable_struct": true,
+      "para_lex": "Place the cold lettuce on the countertop.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_cool_then_place_in_recep-Mug-None-Cabinet-10",
+      "task_type": "pick_cool_then_place_in_recep",
+      "task_desc": "Put a cold coffee up in the bottom cabinet. ",
+      "gt": {
+        "object_target": "Mug",
+        "mrecep_target": "",
+        "parent_target": "Cabinet",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": true,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "In the bottom cabinet, a cold coffee is to be put up.",
+      "usable_struct": true,
+      "para_lex": "Place the chilled coffee in the lower cupboard.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_cool_then_place_in_recep-Mug-None-Cabinet-10",
+      "task_type": "pick_cool_then_place_in_recep",
+      "task_desc": "Place a chilled mug in a cabinet.",
+      "gt": {
+        "object_target": "Mug",
+        "mrecep_target": "",
+        "parent_target": "Cabinet",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": true,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "In a cabinet, a chilled mug is to be placed.",
+      "usable_struct": true,
+      "para_lex": "Put a cold mug away in the cupboard.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_cool_then_place_in_recep-Tomato-None-Microwave-10",
+      "task_type": "pick_cool_then_place_in_recep",
+      "task_desc": "cook a chilled tomato",
+      "gt": {
+        "object_target": "Tomato",
+        "mrecep_target": "",
+        "parent_target": "Microwave",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": true,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "A chilled tomato is to be cooked.",
+      "usable_struct": true,
+      "para_lex": "Heat up a tomato that's been refrigerated.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_cool_then_place_in_recep-Mug-None-Cabinet-10",
+      "task_type": "pick_cool_then_place_in_recep",
+      "task_desc": "Put a chilled mug in a cabinet.",
+      "gt": {
+        "object_target": "Mug",
+        "mrecep_target": "",
+        "parent_target": "Cabinet",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": true,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "In a cabinet, a chilled mug is to be put.",
+      "usable_struct": true,
+      "para_lex": "Place a cold cup inside a cupboard.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_cool_then_place_in_recep-Pan-None-CounterTop-10",
+      "task_type": "pick_cool_then_place_in_recep",
+      "task_desc": "Put a cold pan on the counter top on top of the dishwasher. ",
+      "gt": {
+        "object_target": "Pan",
+        "mrecep_target": "",
+        "parent_target": "CounterTop",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": true,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "On the counter top on top of the dishwasher, a cold pan should be put.",
+      "usable_struct": true,
+      "para_lex": "Place a chilly pan on the countertop right above the dishwasher.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_cool_then_place_in_recep-Potato-None-Microwave-10",
+      "task_type": "pick_cool_then_place_in_recep",
+      "task_desc": "Put a chilled potato in the microwave. ",
+      "gt": {
+        "object_target": "Potato",
+        "mrecep_target": "",
+        "parent_target": "Microwave",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": true,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "In the microwave, a chilled potato is to be put.",
+      "usable_struct": true,
+      "para_lex": "Place a cold potato in the microwave.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_cool_then_place_in_recep-LettuceSliced-None-GarbageCan-10",
+      "task_type": "pick_cool_then_place_in_recep",
+      "task_desc": "Put a cold slice of lettuce in the garbage bin. ",
+      "gt": {
+        "object_target": "Lettuce",
+        "mrecep_target": "",
+        "parent_target": "GarbageCan",
+        "toggle_target": "",
+        "object_sliced": true,
+        "object_cool": true,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "In the garbage bin, a cold slice of lettuce is to be put.",
+      "usable_struct": true,
+      "para_lex": "Throw away a chilly piece of lettuce by placing it in the trash can.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_cool_then_place_in_recep-Pan-None-CounterTop-10",
+      "task_type": "pick_cool_then_place_in_recep",
+      "task_desc": "Put a chilled pan on the counter.",
+      "gt": {
+        "object_target": "Pan",
+        "mrecep_target": "",
+        "parent_target": "CounterTop",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": true,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "On the counter, a chilled pan is to be put.",
+      "usable_struct": true,
+      "para_lex": "Place a cooled pan on the countertop.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_cool_then_place_in_recep-Potato-None-Microwave-10",
+      "task_type": "pick_cool_then_place_in_recep",
+      "task_desc": "put a cooled potato inside the microwave",
+      "gt": {
+        "object_target": "Potato",
+        "mrecep_target": "",
+        "parent_target": "Microwave",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": true,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "Inside the microwave, a cooled potato is to be put.",
+      "usable_struct": true,
+      "para_lex": "Place a chilled potato in the microwave.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_cool_then_place_in_recep-BreadSliced-None-Microwave-10",
+      "task_type": "pick_cool_then_place_in_recep",
+      "task_desc": "Put a cold slice of bread in a microwave.",
+      "gt": {
+        "object_target": "Bread",
+        "mrecep_target": "",
+        "parent_target": "Microwave",
+        "toggle_target": "",
+        "object_sliced": true,
+        "object_cool": true,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "In a microwave, a cold slice of bread is to be put.",
+      "usable_struct": true,
+      "para_lex": "Place a chilled piece of bread inside the microwave.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_cool_then_place_in_recep-Lettuce-None-CounterTop-10",
+      "task_type": "pick_cool_then_place_in_recep",
+      "task_desc": "Put chilled lettuce on the counter. ",
+      "gt": {
+        "object_target": "Lettuce",
+        "mrecep_target": "",
+        "parent_target": "CounterTop",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": true,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "On the counter, chilled lettuce should be put.",
+      "usable_struct": true,
+      "para_lex": "Place the cold lettuce on the countertop.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_cool_then_place_in_recep-Pan-None-CounterTop-10",
+      "task_type": "pick_cool_then_place_in_recep",
+      "task_desc": "Place a chilled pan on a counter.",
+      "gt": {
+        "object_target": "Pan",
+        "mrecep_target": "",
+        "parent_target": "CounterTop",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": true,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "On a counter, a chilled pan is to be placed.",
+      "usable_struct": true,
+      "para_lex": "Put a cold pan on the countertop.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_cool_then_place_in_recep-TomatoSliced-None-CounterTop-10",
+      "task_type": "pick_cool_then_place_in_recep",
+      "task_desc": "Slice a tomato and cool a slice of it",
+      "gt": {
+        "object_target": "Tomato",
+        "mrecep_target": "",
+        "parent_target": "CounterTop",
+        "toggle_target": "",
+        "object_sliced": true,
+        "object_cool": true,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "A slice of it should be cooled after a tomato has been sliced.",
+      "usable_struct": true,
+      "para_lex": "Cut up a tomato and chill one of the pieces.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_cool_then_place_in_recep-TomatoSliced-None-CounterTop-10",
+      "task_type": "pick_cool_then_place_in_recep",
+      "task_desc": "Put a chilled slice of tomato on the counter. ",
+      "gt": {
+        "object_target": "Tomato",
+        "mrecep_target": "",
+        "parent_target": "CounterTop",
+        "toggle_target": "",
+        "object_sliced": true,
+        "object_cool": true,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "On the counter, a chilled slice of tomato is to be put.",
+      "usable_struct": true,
+      "para_lex": "Place a cold piece of tomato on the countertop.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_cool_then_place_in_recep-Egg-None-SinkBasin-10",
+      "task_type": "pick_cool_then_place_in_recep",
+      "task_desc": "Put a chilled egg into the sink.",
+      "gt": {
+        "object_target": "Egg",
+        "mrecep_target": "",
+        "parent_target": "SinkBasin",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": true,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "Into the sink, a chilled egg is to be put.",
+      "usable_struct": true,
+      "para_lex": "Place a cold egg in the sink.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_cool_then_place_in_recep-Potato-None-Microwave-10",
+      "task_type": "pick_cool_then_place_in_recep",
+      "task_desc": "place a potato inside the microwave",
+      "gt": {
+        "object_target": "Potato",
+        "mrecep_target": "",
+        "parent_target": "Microwave",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": true,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "Inside the microwave, a potato is to be placed.",
+      "usable_struct": true,
+      "para_lex": "Put a potato in the microwave.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_cool_then_place_in_recep-Lettuce-None-SinkBasin-10",
+      "task_type": "pick_cool_then_place_in_recep",
+      "task_desc": "To chill lettuce for cooking. ",
+      "gt": {
+        "object_target": "Lettuce",
+        "mrecep_target": "",
+        "parent_target": "SinkBasin",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": true,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "For cooking, chilling the lettuce is necessary.",
+      "usable_struct": true,
+      "para_lex": "For cooking, put the lettuce in the fridge to cool it down.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_cool_then_place_in_recep-LettuceSliced-None-GarbageCan-10",
+      "task_type": "pick_cool_then_place_in_recep",
+      "task_desc": "Place a cold lettuce slice in the black trash can.",
+      "gt": {
+        "object_target": "Lettuce",
+        "mrecep_target": "",
+        "parent_target": "GarbageCan",
+        "toggle_target": "",
+        "object_sliced": true,
+        "object_cool": true,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "In the black trash can, a cold lettuce slice is to be placed.",
+      "usable_struct": true,
+      "para_lex": "Put a chilled slice of lettuce into the black garbage bin.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_cool_then_place_in_recep-Bread-None-CounterTop-10",
+      "task_type": "pick_cool_then_place_in_recep",
+      "task_desc": "Cool some bread and the place it on the counter.",
+      "gt": {
+        "object_target": "Bread",
+        "mrecep_target": "",
+        "parent_target": "CounterTop",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": true,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "On the counter, place some bread after it has been cooled.",
+      "usable_struct": true,
+      "para_lex": "Let the bread chill, then put it on the countertop.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_cool_then_place_in_recep-Mug-None-CoffeeMachine-10",
+      "task_type": "pick_cool_then_place_in_recep",
+      "task_desc": "Move a chilled mug to the coffee maker. ",
+      "gt": {
+        "object_target": "Mug",
+        "mrecep_target": "",
+        "parent_target": "CoffeeMachine",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": true,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "To the coffee maker, move a chilled mug.",
+      "usable_struct": true,
+      "para_lex": "Take a cold cup from the fridge and put it by the coffee machine.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_cool_then_place_in_recep-Tomato-None-Microwave-10",
+      "task_type": "pick_cool_then_place_in_recep",
+      "task_desc": "Place a chilled tomato in a microwave.",
+      "gt": {
+        "object_target": "Tomato",
+        "mrecep_target": "",
+        "parent_target": "Microwave",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": true,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "In a microwave, a chilled tomato is to be placed.",
+      "usable_struct": true,
+      "para_lex": "Put a cold tomato in the microwave.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_cool_then_place_in_recep-TomatoSliced-None-CounterTop-10",
+      "task_type": "pick_cool_then_place_in_recep",
+      "task_desc": "Slice a tomato and cool it.",
+      "gt": {
+        "object_target": "Tomato",
+        "mrecep_target": "",
+        "parent_target": "CounterTop",
+        "toggle_target": "",
+        "object_sliced": true,
+        "object_cool": true,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "It should be cooled after a tomato is sliced.",
+      "usable_struct": true,
+      "para_lex": "Cut up a tomato, then chill it.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_cool_then_place_in_recep-Egg-None-SinkBasin-10",
+      "task_type": "pick_cool_then_place_in_recep",
+      "task_desc": "Pick up the egg, put it in the refrigerator and then put it in the sink. ",
+      "gt": {
+        "object_target": "Egg",
+        "mrecep_target": "",
+        "parent_target": "SinkBasin",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": true,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "In the sink and previously in the refrigerator, the egg should be put after being picked up.",
+      "usable_struct": true,
+      "para_lex": "Grab the egg, stick it in the fridge, and afterwards place it in the sink.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_cool_then_place_in_recep-LettuceSliced-None-GarbageCan-10",
+      "task_type": "pick_cool_then_place_in_recep",
+      "task_desc": "Put a chilled slice of lettuce in the trash can.",
+      "gt": {
+        "object_target": "Lettuce",
+        "mrecep_target": "",
+        "parent_target": "GarbageCan",
+        "toggle_target": "",
+        "object_sliced": true,
+        "object_cool": true,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "In the trash can, a chilled slice of lettuce is to be put.",
+      "usable_struct": true,
+      "para_lex": "Throw away a cold piece of lettuce from the fridge into the garbage bin.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_cool_then_place_in_recep-BreadSliced-None-Microwave-10",
+      "task_type": "pick_cool_then_place_in_recep",
+      "task_desc": "Put a cold slice of bread in the microwave.",
+      "gt": {
+        "object_target": "Bread",
+        "mrecep_target": "",
+        "parent_target": "Microwave",
+        "toggle_target": "",
+        "object_sliced": true,
+        "object_cool": true,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "In the microwave, a cold slice of bread is to be put.",
+      "usable_struct": true,
+      "para_lex": "Place a chilled piece of bread in the microwave.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_cool_then_place_in_recep-Mug-None-CoffeeMachine-10",
+      "task_type": "pick_cool_then_place_in_recep",
+      "task_desc": "get mug from coffee maker, chill, and return mug to coffee maker",
+      "gt": {
+        "object_target": "Mug",
+        "mrecep_target": "",
+        "parent_target": "CoffeeMachine",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": true,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "To coffee maker, return the mug after chilling it, which you should first get from coffee maker.",
+      "usable_struct": true,
+      "para_lex": "Grab the mug that's sitting by the coffee maker, put it in the fridge for a bit, and then put the mug back where you found it, by the coffee maker.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_cool_then_place_in_recep-BreadSliced-None-Microwave-10",
+      "task_type": "pick_cool_then_place_in_recep",
+      "task_desc": "placed a cooled slice of bread that you cut inside of the microwave",
+      "gt": {
+        "object_target": "Bread",
+        "mrecep_target": "",
+        "parent_target": "Microwave",
+        "toggle_target": "",
+        "object_sliced": true,
+        "object_cool": true,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "Inside of the microwave, a cooled slice of bread that you cut should be placed.",
+      "usable_struct": true,
+      "para_lex": "Put a slice of bread that has been cut and cooled into the microwave.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_cool_then_place_in_recep-Tomato-None-Microwave-10",
+      "task_type": "pick_cool_then_place_in_recep",
+      "task_desc": "Put a cooled tomato in the microwave",
+      "gt": {
+        "object_target": "Tomato",
+        "mrecep_target": "",
+        "parent_target": "Microwave",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": true,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "In the microwave, a cooled tomato is to be put.",
+      "usable_struct": true,
+      "para_lex": "Place a tomato that has cooled down inside the microwave.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_cool_then_place_in_recep-Lettuce-None-SinkBasin-10",
+      "task_type": "pick_cool_then_place_in_recep",
+      "task_desc": "Place chilled lettuce into a sink",
+      "gt": {
+        "object_target": "Lettuce",
+        "mrecep_target": "",
+        "parent_target": "SinkBasin",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": true,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "Into a sink, chilled lettuce is to be placed.",
+      "usable_struct": true,
+      "para_lex": "Put the cold lettuce in the sink.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_cool_then_place_in_recep-Bread-None-CounterTop-10",
+      "task_type": "pick_cool_then_place_in_recep",
+      "task_desc": "Put chilled bread on the counter, right of the fridge. ",
+      "gt": {
+        "object_target": "Bread",
+        "mrecep_target": "",
+        "parent_target": "CounterTop",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": true,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "On the counter, to the right of the fridge, place the chilled bread.",
+      "usable_struct": true,
+      "para_lex": "Place the cold bread on the countertop to the right of the refrigerator.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_cool_then_place_in_recep-Bread-None-CounterTop-10",
+      "task_type": "pick_cool_then_place_in_recep",
+      "task_desc": "Put a cool loaf of bread on the counter.",
+      "gt": {
+        "object_target": "Bread",
+        "mrecep_target": "",
+        "parent_target": "CounterTop",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": true,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "On the counter, a cool loaf of bread should be put.",
+      "usable_struct": true,
+      "para_lex": "Place a freshly baked loaf that has cooled down on the kitchen counter.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_cool_then_place_in_recep-Egg-None-SinkBasin-10",
+      "task_type": "pick_cool_then_place_in_recep",
+      "task_desc": "Put a chilled egg in the sink.",
+      "gt": {
+        "object_target": "Egg",
+        "mrecep_target": "",
+        "parent_target": "SinkBasin",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": true,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "In the sink, a chilled egg is to be put.",
+      "usable_struct": true,
+      "para_lex": "Place a cold egg in the sink.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_cool_then_place_in_recep-Mug-None-CoffeeMachine-10",
+      "task_type": "pick_cool_then_place_in_recep",
+      "task_desc": "Cool a mug in the fridge",
+      "gt": {
+        "object_target": "Mug",
+        "mrecep_target": "",
+        "parent_target": "CoffeeMachine",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": true,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "In the fridge, a mug should be cooled.",
+      "usable_struct": true,
+      "para_lex": "Put the mug in the refrigerator to chill it.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_heat_then_place_in_recep-Mug-None-CoffeeMachine-10",
+      "task_type": "pick_heat_then_place_in_recep",
+      "task_desc": "Put the warm mug on the coffee maker",
+      "gt": {
+        "object_target": "Mug",
+        "mrecep_target": "",
+        "parent_target": "CoffeeMachine",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": true,
+        "object_clean": false
+      },
+      "para_struct": "On the coffee maker, the warm mug is to be put.",
+      "usable_struct": true,
+      "para_lex": "Place the hot cup directly on top of the coffee machine.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_heat_then_place_in_recep-TomatoSliced-None-SinkBasin-10",
+      "task_type": "pick_heat_then_place_in_recep",
+      "task_desc": "Place a warm tomato slice in the sink.",
+      "gt": {
+        "object_target": "Tomato",
+        "mrecep_target": "",
+        "parent_target": "SinkBasin",
+        "toggle_target": "",
+        "object_sliced": true,
+        "object_cool": false,
+        "object_heat": true,
+        "object_clean": false
+      },
+      "para_struct": "In the sink, a warm tomato slice is to be placed.",
+      "usable_struct": true,
+      "para_lex": "Put a heated slice of tomato into the sink.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_heat_then_place_in_recep-TomatoSliced-None-SinkBasin-10",
+      "task_type": "pick_heat_then_place_in_recep",
+      "task_desc": "To heat a tomato slice and place it in the sink.",
+      "gt": {
+        "object_target": "Tomato",
+        "mrecep_target": "",
+        "parent_target": "SinkBasin",
+        "toggle_target": "",
+        "object_sliced": true,
+        "object_cool": false,
+        "object_heat": true,
+        "object_clean": false
+      },
+      "para_struct": "In the sink, a heated tomato slice should be placed.",
+      "usable_struct": true,
+      "para_lex": "Warm up a slice of tomato and then put it in the sink.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_heat_then_place_in_recep-Apple-None-Fridge-10",
+      "task_type": "pick_heat_then_place_in_recep",
+      "task_desc": "Put a heated apple next to the lettuce on the middle shelf in the refrigerator.",
+      "gt": {
+        "object_target": "Apple",
+        "mrecep_target": "",
+        "parent_target": "Fridge",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": true,
+        "object_clean": false
+      },
+      "para_struct": "On the middle shelf in the refrigerator, the lettuce should have a heated apple placed next to it.",
+      "usable_struct": true,
+      "para_lex": "Place a warmed-up apple adjacent to the lettuce on the fridge middle shelf.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_heat_then_place_in_recep-TomatoSliced-None-SinkBasin-10",
+      "task_type": "pick_heat_then_place_in_recep",
+      "task_desc": "Cook a slice of tomato",
+      "gt": {
+        "object_target": "Tomato",
+        "mrecep_target": "",
+        "parent_target": "SinkBasin",
+        "toggle_target": "",
+        "object_sliced": true,
+        "object_cool": false,
+        "object_heat": true,
+        "object_clean": false
+      },
+      "para_struct": "A slice of tomato is to be cooked.",
+      "usable_struct": true,
+      "para_lex": "Prepare a single piece of tomato by heating it.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_heat_then_place_in_recep-Apple-None-SinkBasin-10",
+      "task_type": "pick_heat_then_place_in_recep",
+      "task_desc": "Get an apple from the sink and heat it up in the microwave",
+      "gt": {
+        "object_target": "Apple",
+        "mrecep_target": "",
+        "parent_target": "SinkBasin",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": true,
+        "object_clean": false
+      },
+      "para_struct": "In the microwave, heat up an apple that you have retrieved from the sink.",
+      "usable_struct": true,
+      "para_lex": "Grab an apple that's sitting by the sink and warm it up in the microwave.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_heat_then_place_in_recep-PotatoSliced-None-Fridge-10",
+      "task_type": "pick_heat_then_place_in_recep",
+      "task_desc": "place a cooked potato slice in the fridge",
+      "gt": {
+        "object_target": "Potato",
+        "mrecep_target": "",
+        "parent_target": "Fridge",
+        "toggle_target": "",
+        "object_sliced": true,
+        "object_cool": false,
+        "object_heat": true,
+        "object_clean": false
+      },
+      "para_struct": "In the fridge, a cooked potato slice is to be placed.",
+      "usable_struct": true,
+      "para_lex": "Put a slice of cooked potato in the refrigerator.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_heat_then_place_in_recep-Mug-None-Cabinet-10",
+      "task_type": "pick_heat_then_place_in_recep",
+      "task_desc": "Place a heated mug in a cabinet.",
+      "gt": {
+        "object_target": "Mug",
+        "mrecep_target": "",
+        "parent_target": "Cabinet",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": true,
+        "object_clean": false
+      },
+      "para_struct": "In a cabinet, a heated mug is to be placed.",
+      "usable_struct": true,
+      "para_lex": "Put a warm cup in the cupboard.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_heat_then_place_in_recep-BreadSliced-None-CounterTop-10",
+      "task_type": "pick_heat_then_place_in_recep",
+      "task_desc": "Put a warm slice of bread on the counter. ",
+      "gt": {
+        "object_target": "Bread",
+        "mrecep_target": "",
+        "parent_target": "CounterTop",
+        "toggle_target": "",
+        "object_sliced": true,
+        "object_cool": false,
+        "object_heat": true,
+        "object_clean": false
+      },
+      "para_struct": "On the counter, a warm slice of bread is to be put.",
+      "usable_struct": true,
+      "para_lex": "Place a heated piece of bread on the countertop.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_heat_then_place_in_recep-Mug-None-Cabinet-10",
+      "task_type": "pick_heat_then_place_in_recep",
+      "task_desc": "heat up coffee in a mug and put it away inside the cabinet door",
+      "gt": {
+        "object_target": "Mug",
+        "mrecep_target": "",
+        "parent_target": "Cabinet",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": true,
+        "object_clean": false
+      },
+      "para_struct": "Inside the cabinet door, put away the coffee after heating it up in a mug.",
+      "usable_struct": true,
+      "para_lex": "Warm up some coffee in a mug, then store it behind the cabinet door.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_heat_then_place_in_recep-Apple-None-Fridge-10",
+      "task_type": "pick_heat_then_place_in_recep",
+      "task_desc": "Place a microwaved apple in the fridge.",
+      "gt": {
+        "object_target": "Apple",
+        "mrecep_target": "",
+        "parent_target": "Fridge",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": true,
+        "object_clean": false
+      },
+      "para_struct": "In the fridge, a microwaved apple is to be placed.",
+      "usable_struct": true,
+      "para_lex": "Put an apple that's been heated in the microwave into the refrigerator.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_heat_then_place_in_recep-Potato-None-GarbageCan-10",
+      "task_type": "pick_heat_then_place_in_recep",
+      "task_desc": "Place a microwaved potato into the black trash can.",
+      "gt": {
+        "object_target": "Potato",
+        "mrecep_target": "",
+        "parent_target": "GarbageCan",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": true,
+        "object_clean": false
+      },
+      "para_struct": "Into the black trash can, a microwaved potato is to be placed.",
+      "usable_struct": true,
+      "para_lex": "Put the potato you've heated up in the microwave into the black garbage bin.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_heat_then_place_in_recep-Mug-None-Cabinet-10",
+      "task_type": "pick_heat_then_place_in_recep",
+      "task_desc": "Put a warmed mug in the cabinet.",
+      "gt": {
+        "object_target": "Mug",
+        "mrecep_target": "",
+        "parent_target": "Cabinet",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": true,
+        "object_clean": false
+      },
+      "para_struct": "In the cabinet, a warmed mug should be put.",
+      "usable_struct": true,
+      "para_lex": "Place a heated cup in the cupboard.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_heat_then_place_in_recep-Egg-None-GarbageCan-10",
+      "task_type": "pick_heat_then_place_in_recep",
+      "task_desc": "To heat an egg and place it inside the black bin. ",
+      "gt": {
+        "object_target": "Egg",
+        "mrecep_target": "",
+        "parent_target": "GarbageCan",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": true,
+        "object_clean": false
+      },
+      "para_struct": "Inside the black bin, an egg is to be placed after it has been heated.",
+      "usable_struct": true,
+      "para_lex": "Warm up an egg and then put it in the black bin.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_heat_then_place_in_recep-Cup-None-Cabinet-10",
+      "task_type": "pick_heat_then_place_in_recep",
+      "task_desc": "Put a warm cup in the cabinet.",
+      "gt": {
+        "object_target": "Cup",
+        "mrecep_target": "",
+        "parent_target": "Cabinet",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": true,
+        "object_clean": false
+      },
+      "para_struct": "In the cabinet, a warm cup is to be put.",
+      "usable_struct": true,
+      "para_lex": "Place a heated mug inside the cupboard.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_heat_then_place_in_recep-Apple-None-GarbageCan-10",
+      "task_type": "pick_heat_then_place_in_recep",
+      "task_desc": "Put a warmed up apple in the trash can.",
+      "gt": {
+        "object_target": "Apple",
+        "mrecep_target": "",
+        "parent_target": "GarbageCan",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": true,
+        "object_clean": false
+      },
+      "para_struct": "In the trash can, a warmed up apple should be put.",
+      "usable_struct": true,
+      "para_lex": "Place a heated apple into the garbage bin.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_heat_then_place_in_recep-Apple-None-SinkBasin-10",
+      "task_type": "pick_heat_then_place_in_recep",
+      "task_desc": "Use the microwave to heat an apple.",
+      "gt": {
+        "object_target": "Apple",
+        "mrecep_target": "",
+        "parent_target": "SinkBasin",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": true,
+        "object_clean": false
+      },
+      "para_struct": "To heat an apple, the microwave is to be used.",
+      "usable_struct": true,
+      "para_lex": "To warm up an apple, use your microwave.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_heat_then_place_in_recep-AppleSliced-None-GarbageCan-10",
+      "task_type": "pick_heat_then_place_in_recep",
+      "task_desc": "Place a slice of cooked apple into the trash.",
+      "gt": {
+        "object_target": "Apple",
+        "mrecep_target": "",
+        "parent_target": "GarbageCan",
+        "toggle_target": "",
+        "object_sliced": true,
+        "object_cool": false,
+        "object_heat": true,
+        "object_clean": false
+      },
+      "para_struct": "Into the trash, a slice of cooked apple is to be placed.",
+      "usable_struct": true,
+      "para_lex": "Put a piece of cooked apple in the garbage.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_heat_then_place_in_recep-AppleSliced-None-CounterTop-10",
+      "task_type": "pick_heat_then_place_in_recep",
+      "task_desc": "To heat a piece of apple and place it on the counter to the right of the stove.",
+      "gt": {
+        "object_target": "Apple",
+        "mrecep_target": "",
+        "parent_target": "CounterTop",
+        "toggle_target": "",
+        "object_sliced": true,
+        "object_cool": false,
+        "object_heat": true,
+        "object_clean": false
+      },
+      "para_struct": "On the counter to the right of the stove, a piece of apple is to be placed after it has been heated.",
+      "usable_struct": true,
+      "para_lex": "Warm up an apple slice and put it down on the countertop beside the stove, on the right-hand side.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_heat_then_place_in_recep-AppleSliced-None-CounterTop-10",
+      "task_type": "pick_heat_then_place_in_recep",
+      "task_desc": "Put a microwaved chunk of apple on the counter.",
+      "gt": {
+        "object_target": "Apple",
+        "mrecep_target": "",
+        "parent_target": "CounterTop",
+        "toggle_target": "",
+        "object_sliced": true,
+        "object_cool": false,
+        "object_heat": true,
+        "object_clean": false
+      },
+      "para_struct": "On the counter, a microwaved chunk of apple is to be put.",
+      "usable_struct": true,
+      "para_lex": "Place a heated piece of apple that's been cooked in the microwave onto the countertop.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_heat_then_place_in_recep-Potato-None-GarbageCan-10",
+      "task_type": "pick_heat_then_place_in_recep",
+      "task_desc": "Put a cooked potato in the garbage can. ",
+      "gt": {
+        "object_target": "Potato",
+        "mrecep_target": "",
+        "parent_target": "GarbageCan",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": true,
+        "object_clean": false
+      },
+      "para_struct": "In the garbage can, a cooked potato is to be put.",
+      "usable_struct": true,
+      "para_lex": "Throw the baked potato away in the trash bin.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_heat_then_place_in_recep-Cup-None-Cabinet-10",
+      "task_type": "pick_heat_then_place_in_recep",
+      "task_desc": "Warm up the cup inside the cabinet.",
+      "gt": {
+        "object_target": "Cup",
+        "mrecep_target": "",
+        "parent_target": "Cabinet",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": true,
+        "object_clean": false
+      },
+      "para_struct": "Inside the cabinet, the cup is to be warmed up.",
+      "usable_struct": true,
+      "para_lex": "Heat up the cup that's in the cabinet.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_heat_then_place_in_recep-Tomato-None-GarbageCan-10",
+      "task_type": "pick_heat_then_place_in_recep",
+      "task_desc": "Heat a tomato and place in the bin. ",
+      "gt": {
+        "object_target": "Tomato",
+        "mrecep_target": "",
+        "parent_target": "GarbageCan",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": true,
+        "object_clean": false
+      },
+      "para_struct": "In the bin, a heated tomato should be placed.",
+      "usable_struct": true,
+      "para_lex": "Warm up a tomato and then put it in the trash can.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_heat_then_place_in_recep-Mug-None-CoffeeMachine-10",
+      "task_type": "pick_heat_then_place_in_recep",
+      "task_desc": "Place a warmed mug in a coffee machine.",
+      "gt": {
+        "object_target": "Mug",
+        "mrecep_target": "",
+        "parent_target": "CoffeeMachine",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": true,
+        "object_clean": false
+      },
+      "para_struct": "In a coffee machine, a warmed mug is to be placed.",
+      "usable_struct": true,
+      "para_lex": "Put a heated cup into the coffee maker.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_heat_then_place_in_recep-BreadSliced-None-CounterTop-10",
+      "task_type": "pick_heat_then_place_in_recep",
+      "task_desc": "slice and cook a piece of bread , put it on the counter top",
+      "gt": {
+        "object_target": "Bread",
+        "mrecep_target": "",
+        "parent_target": "CounterTop",
+        "toggle_target": "",
+        "object_sliced": true,
+        "object_cool": false,
+        "object_heat": true,
+        "object_clean": false
+      },
+      "para_struct": "On the counter top, put a piece of bread after slicing and cooking it.",
+      "usable_struct": true,
+      "para_lex": "Cut up a slice of bread, then heat it and place it on the countertop.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_heat_then_place_in_recep-Apple-None-Fridge-10",
+      "task_type": "pick_heat_then_place_in_recep",
+      "task_desc": "Put the cooked green apple in the fridge",
+      "gt": {
+        "object_target": "Apple",
+        "mrecep_target": "",
+        "parent_target": "Fridge",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": true,
+        "object_clean": false
+      },
+      "para_struct": "In the fridge, the cooked green apple is to be put.",
+      "usable_struct": true,
+      "para_lex": "Place the cooked green apple inside the refrigerator.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_heat_then_place_in_recep-Apple-None-GarbageCan-10",
+      "task_type": "pick_heat_then_place_in_recep",
+      "task_desc": "Put in the heated apple in the trash bin",
+      "gt": {
+        "object_target": "Apple",
+        "mrecep_target": "",
+        "parent_target": "GarbageCan",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": true,
+        "object_clean": false
+      },
+      "para_struct": "In the trash bin, place the heated apple.",
+      "usable_struct": true,
+      "para_lex": "Throw the warm apple away in the garbage can.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_heat_then_place_in_recep-PotatoSliced-None-Fridge-10",
+      "task_type": "pick_heat_then_place_in_recep",
+      "task_desc": "To heat a potato slice and place it in the fridge.",
+      "gt": {
+        "object_target": "Potato",
+        "mrecep_target": "",
+        "parent_target": "Fridge",
+        "toggle_target": "",
+        "object_sliced": true,
+        "object_cool": false,
+        "object_heat": true,
+        "object_clean": false
+      },
+      "para_struct": "In the fridge, a potato slice should be placed after it has been heated.",
+      "usable_struct": true,
+      "para_lex": "Warm up a slice of potato and then put it in the refrigerator.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_heat_then_place_in_recep-AppleSliced-None-GarbageCan-10",
+      "task_type": "pick_heat_then_place_in_recep",
+      "task_desc": "Put the heated slice apple in the trash bin",
+      "gt": {
+        "object_target": "Apple",
+        "mrecep_target": "",
+        "parent_target": "GarbageCan",
+        "toggle_target": "",
+        "object_sliced": true,
+        "object_cool": false,
+        "object_heat": true,
+        "object_clean": false
+      },
+      "para_struct": "In the trash bin, put the heated slice apple.",
+      "usable_struct": true,
+      "para_lex": "Discard the warmed-up apple slice by tossing it into the garbage can.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_heat_then_place_in_recep-Mug-None-CoffeeMachine-10",
+      "task_type": "pick_heat_then_place_in_recep",
+      "task_desc": "Move a heated mug to the base of the coffee maker.",
+      "gt": {
+        "object_target": "Mug",
+        "mrecep_target": "",
+        "parent_target": "CoffeeMachine",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": true,
+        "object_clean": false
+      },
+      "para_struct": "To the base of the coffee maker, move a heated mug.",
+      "usable_struct": true,
+      "para_lex": "Place a hot mug at the bottom of the coffee maker.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_heat_then_place_in_recep-Cup-None-Cabinet-10",
+      "task_type": "pick_heat_then_place_in_recep",
+      "task_desc": "Place a heated cup in a cabinet",
+      "gt": {
+        "object_target": "Cup",
+        "mrecep_target": "",
+        "parent_target": "Cabinet",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": true,
+        "object_clean": false
+      },
+      "para_struct": "In a cabinet, a heated cup should be placed.",
+      "usable_struct": true,
+      "para_lex": "Put a warm cup away in a cupboard.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_heat_then_place_in_recep-Apple-None-SinkBasin-10",
+      "task_type": "pick_heat_then_place_in_recep",
+      "task_desc": "Place a cooked apple into the sink.",
+      "gt": {
+        "object_target": "Apple",
+        "mrecep_target": "",
+        "parent_target": "SinkBasin",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": true,
+        "object_clean": false
+      },
+      "para_struct": "Into the sink, a cooked apple is to be placed.",
+      "usable_struct": true,
+      "para_lex": "Put a cooked apple in the sink.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_heat_then_place_in_recep-BreadSliced-None-CounterTop-10",
+      "task_type": "pick_heat_then_place_in_recep",
+      "task_desc": "Slice bread, heat bread, move knife and bread to counter.",
+      "gt": {
+        "object_target": "Bread",
+        "mrecep_target": "",
+        "parent_target": "CounterTop",
+        "toggle_target": "",
+        "object_sliced": true,
+        "object_cool": false,
+        "object_heat": true,
+        "object_clean": false
+      },
+      "para_struct": "To the counter, move the knife and the bread after you heat the bread and slice the bread.",
+      "usable_struct": true,
+      "para_lex": "Cut the bread, warm it up, then transfer the knife and loaf to the countertop.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_heat_then_place_in_recep-Egg-None-GarbageCan-10",
+      "task_type": "pick_heat_then_place_in_recep",
+      "task_desc": "Place a heated egg in a bin",
+      "gt": {
+        "object_target": "Egg",
+        "mrecep_target": "",
+        "parent_target": "GarbageCan",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": true,
+        "object_clean": false
+      },
+      "para_struct": "In a bin, a heated egg is to be placed.",
+      "usable_struct": true,
+      "para_lex": "Put a warmed-up egg into a container.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_heat_then_place_in_recep-PotatoSliced-None-Fridge-10",
+      "task_type": "pick_heat_then_place_in_recep",
+      "task_desc": "Putting a hot potato slice in the fridge",
+      "gt": {
+        "object_target": "Potato",
+        "mrecep_target": "",
+        "parent_target": "Fridge",
+        "toggle_target": "",
+        "object_sliced": true,
+        "object_cool": false,
+        "object_heat": true,
+        "object_clean": false
+      },
+      "para_struct": "In the fridge, a hot potato slice is to be put.",
+      "usable_struct": true,
+      "para_lex": "Place a warm piece of potato in the refrigerator.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_heat_then_place_in_recep-Tomato-None-GarbageCan-10",
+      "task_type": "pick_heat_then_place_in_recep",
+      "task_desc": "Heat a tomato and throw it away.",
+      "gt": {
+        "object_target": "Tomato",
+        "mrecep_target": "",
+        "parent_target": "GarbageCan",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": true,
+        "object_clean": false
+      },
+      "para_struct": "Away should be thrown a heated tomato.",
+      "usable_struct": true,
+      "para_lex": "Warm up a tomato, then get rid of it.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_heat_then_place_in_recep-Apple-None-GarbageCan-10",
+      "task_type": "pick_heat_then_place_in_recep",
+      "task_desc": "place a microwaved apple inside the garbage bin",
+      "gt": {
+        "object_target": "Apple",
+        "mrecep_target": "",
+        "parent_target": "GarbageCan",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": true,
+        "object_clean": false
+      },
+      "para_struct": "Inside the garbage bin, a microwaved apple is to be placed.",
+      "usable_struct": true,
+      "para_lex": "Put the apple that's been microwaved into the trash can.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_heat_then_place_in_recep-AppleSliced-None-GarbageCan-10",
+      "task_type": "pick_heat_then_place_in_recep",
+      "task_desc": "Put a slice of green apple in the trash can near the fridge. ",
+      "gt": {
+        "object_target": "Apple",
+        "mrecep_target": "",
+        "parent_target": "GarbageCan",
+        "toggle_target": "",
+        "object_sliced": true,
+        "object_cool": false,
+        "object_heat": true,
+        "object_clean": false
+      },
+      "para_struct": "Near the fridge, in the trash can, a slice of green apple should be put.",
+      "usable_struct": true,
+      "para_lex": "Toss a piece of green apple into the garbage bin beside the refrigerator.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_heat_then_place_in_recep-AppleSliced-None-CounterTop-10",
+      "task_type": "pick_heat_then_place_in_recep",
+      "task_desc": "put a cooked apple slice on to the counter",
+      "gt": {
+        "object_target": "Apple",
+        "mrecep_target": "",
+        "parent_target": "CounterTop",
+        "toggle_target": "",
+        "object_sliced": true,
+        "object_cool": false,
+        "object_heat": true,
+        "object_clean": false
+      },
+      "para_struct": "On the counter, a cooked apple slice is to be put.",
+      "usable_struct": true,
+      "para_lex": "Place a slice of cooked apple onto the countertop.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_heat_then_place_in_recep-Tomato-None-GarbageCan-10",
+      "task_type": "pick_heat_then_place_in_recep",
+      "task_desc": "Heat a tomato and place in a bin. ",
+      "gt": {
+        "object_target": "Tomato",
+        "mrecep_target": "",
+        "parent_target": "GarbageCan",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": true,
+        "object_clean": false
+      },
+      "para_struct": "In a bin, a heated tomato should be placed.",
+      "usable_struct": true,
+      "para_lex": "Warm up a tomato and put it in the bin.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_heat_then_place_in_recep-Potato-None-GarbageCan-10",
+      "task_type": "pick_heat_then_place_in_recep",
+      "task_desc": "Heat up a potato and put it in the trash.",
+      "gt": {
+        "object_target": "Potato",
+        "mrecep_target": "",
+        "parent_target": "GarbageCan",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": true,
+        "object_clean": false
+      },
+      "para_struct": "In the trash, put a potato after heating it up.",
+      "usable_struct": true,
+      "para_lex": "Warm a potato and then dispose of it in the garbage.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_heat_then_place_in_recep-Egg-None-GarbageCan-10",
+      "task_type": "pick_heat_then_place_in_recep",
+      "task_desc": "place a microwaved egg inside the garbage bin",
+      "gt": {
+        "object_target": "Egg",
+        "mrecep_target": "",
+        "parent_target": "GarbageCan",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": true,
+        "object_clean": false
+      },
+      "para_struct": "Inside the garbage bin, a microwaved egg is to be placed.",
+      "usable_struct": true,
+      "para_lex": "Put the egg that's been heated in the microwave into the trash can.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_two_obj_and_place-ToiletPaper-None-Cabinet-424",
+      "task_type": "pick_two_obj_and_place",
+      "task_desc": "Put toilet paper rolls in a cabinet under the sink.",
+      "gt": {
+        "object_target": "ToiletPaper",
+        "mrecep_target": "",
+        "parent_target": "Cabinet",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "In a cabinet under the sink, toilet paper rolls are to be put.",
+      "usable_struct": true,
+      "para_lex": "Place the cardboard tubes from the toilet paper in the cupboard beneath the sink.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_two_obj_and_place-KeyChain-None-Safe-219",
+      "task_type": "pick_two_obj_and_place",
+      "task_desc": "Put two sets of keys in the safe. ",
+      "gt": {
+        "object_target": "KeyChain",
+        "mrecep_target": "",
+        "parent_target": "Safe",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "In the safe, two sets of keys are to be put.",
+      "usable_struct": true,
+      "para_lex": "Place a couple of key sets inside the safe.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_two_obj_and_place-KeyChain-None-Safe-219",
+      "task_type": "pick_two_obj_and_place",
+      "task_desc": "Put two sets of keys in the safe. ",
+      "gt": {
+        "object_target": "KeyChain",
+        "mrecep_target": "",
+        "parent_target": "Safe",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "In the safe, two sets of keys are to be put.",
+      "usable_struct": true,
+      "para_lex": "Place a couple of key sets inside the safe.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_two_obj_and_place-ToiletPaper-None-Cabinet-424",
+      "task_type": "pick_two_obj_and_place",
+      "task_desc": "Place the toilet paper in the cabinet.",
+      "gt": {
+        "object_target": "ToiletPaper",
+        "mrecep_target": "",
+        "parent_target": "Cabinet",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "In the cabinet, the toilet paper is to be placed.",
+      "usable_struct": true,
+      "para_lex": "Put the toilet paper inside the cupboard.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_two_obj_and_place-Pillow-None-Sofa-219",
+      "task_type": "pick_two_obj_and_place",
+      "task_desc": "Put two pillows on the sofa.",
+      "gt": {
+        "object_target": "Pillow",
+        "mrecep_target": "",
+        "parent_target": "Sofa",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "On the sofa, two pillows are to be put.",
+      "usable_struct": true,
+      "para_lex": "Place a couple of cushions on the couch.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_two_obj_and_place-KeyChain-None-Safe-219",
+      "task_type": "pick_two_obj_and_place",
+      "task_desc": "put two sets of keys inside safe",
+      "gt": {
+        "object_target": "KeyChain",
+        "mrecep_target": "",
+        "parent_target": "Safe",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "Inside the safe, two sets of keys should be put.",
+      "usable_struct": true,
+      "para_lex": "Place a pair of keys, along with another pair, into the safe.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_two_obj_and_place-SoapBar-None-Cabinet-424",
+      "task_type": "pick_two_obj_and_place",
+      "task_desc": "To move two bars of soap to the cabinet. ",
+      "gt": {
+        "object_target": "SoapBar",
+        "mrecep_target": "",
+        "parent_target": "Cabinet",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "The cabinet is where two bars of soap are to be moved.",
+      "usable_struct": true,
+      "para_lex": "Relocate a pair of soap bars into the cabinet.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_two_obj_and_place-AppleSliced-None-CounterTop-10",
+      "task_type": "pick_two_obj_and_place",
+      "task_desc": "Put a piece of apple on a counter near another cut apple.",
+      "gt": {
+        "object_target": "Apple",
+        "mrecep_target": "",
+        "parent_target": "CounterTop",
+        "toggle_target": "",
+        "object_sliced": true,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "Near another cut apple, a counter is where a piece of apple should be put.",
+      "usable_struct": true,
+      "para_lex": "Place a slice of apple on the countertop beside a previously sliced apple.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_two_obj_and_place-CD-None-Safe-308",
+      "task_type": "pick_two_obj_and_place",
+      "task_desc": "Put the two disks from the desk into the safe.",
+      "gt": {
+        "object_target": "CD",
+        "mrecep_target": "",
+        "parent_target": "Safe",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "Into the safe, put the two disks from the desk.",
+      "usable_struct": true,
+      "para_lex": "Place the pair of disks that are on the desk inside the safe.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_two_obj_and_place-CD-None-Safe-308",
+      "task_type": "pick_two_obj_and_place",
+      "task_desc": "Secure two discs in a bedroom safe.",
+      "gt": {
+        "object_target": "CD",
+        "mrecep_target": "",
+        "parent_target": "Safe",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "In a bedroom safe, two discs are to be secured.",
+      "usable_struct": true,
+      "para_lex": "Lock two discs away in the safe in your bedroom.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_two_obj_and_place-SoapBar-None-Cabinet-424",
+      "task_type": "pick_two_obj_and_place",
+      "task_desc": "To move two bars of soap to the cabinet below the sink. ",
+      "gt": {
+        "object_target": "SoapBar",
+        "mrecep_target": "",
+        "parent_target": "Cabinet",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "The cabinet below the sink is where two bars of soap need to be moved to.",
+      "usable_struct": true,
+      "para_lex": "Relocate a pair of soap bars to the cupboard underneath the sink.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_two_obj_and_place-AppleSliced-None-CounterTop-10",
+      "task_type": "pick_two_obj_and_place",
+      "task_desc": "Put two apples on a counter the cut them into pieces.",
+      "gt": {
+        "object_target": "Apple",
+        "mrecep_target": "",
+        "parent_target": "CounterTop",
+        "toggle_target": "",
+        "object_sliced": true,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "On a counter, place two apples, then cut them into pieces.",
+      "usable_struct": true,
+      "para_lex": "Place a couple of apples on the countertop, then chop them up into chunks.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_two_obj_and_place-AppleSliced-None-CounterTop-10",
+      "task_type": "pick_two_obj_and_place",
+      "task_desc": "Place the sliced apple on the counter.",
+      "gt": {
+        "object_target": "Apple",
+        "mrecep_target": "",
+        "parent_target": "CounterTop",
+        "toggle_target": "",
+        "object_sliced": true,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "On the counter, the sliced apple is to be placed.",
+      "usable_struct": true,
+      "para_lex": "Put the cut apple down on the countertop.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_two_obj_and_place-PepperShaker-None-Drawer-10",
+      "task_type": "pick_two_obj_and_place",
+      "task_desc": "Place two salt shakers in a drawer.",
+      "gt": {
+        "object_target": "PepperShaker",
+        "mrecep_target": "",
+        "parent_target": "Drawer",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "In a drawer, two salt shakers are to be placed.",
+      "usable_struct": true,
+      "para_lex": "Put a pair of salt shakers away in a drawer.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_two_obj_and_place-SoapBar-None-Cabinet-424",
+      "task_type": "pick_two_obj_and_place",
+      "task_desc": "Put two bars of soap in the cabinet.",
+      "gt": {
+        "object_target": "SoapBar",
+        "mrecep_target": "",
+        "parent_target": "Cabinet",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "In the cabinet, two bars of soap are to be put.",
+      "usable_struct": true,
+      "para_lex": "Place a pair of soap bars inside the cabinet.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_two_obj_and_place-Pillow-None-Sofa-219",
+      "task_type": "pick_two_obj_and_place",
+      "task_desc": "Put two pillows on the couch.",
+      "gt": {
+        "object_target": "Pillow",
+        "mrecep_target": "",
+        "parent_target": "Sofa",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "On the couch, two pillows are to be put.",
+      "usable_struct": true,
+      "para_lex": "Place a couple of pillows on the sofa.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_two_obj_and_place-Pillow-None-Sofa-219",
+      "task_type": "pick_two_obj_and_place",
+      "task_desc": "Put two pillows on the sofa.",
+      "gt": {
+        "object_target": "Pillow",
+        "mrecep_target": "",
+        "parent_target": "Sofa",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "On the sofa, two pillows are to be put.",
+      "usable_struct": true,
+      "para_lex": "Place a couple of pillows on the couch.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_two_obj_and_place-PepperShaker-None-Drawer-10",
+      "task_type": "pick_two_obj_and_place",
+      "task_desc": "Put two shakers in a drawer.",
+      "gt": {
+        "object_target": "PepperShaker",
+        "mrecep_target": "",
+        "parent_target": "Drawer",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "In a drawer, two shakers are to be put.",
+      "usable_struct": true,
+      "para_lex": "Place a pair of shakers inside a drawer.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_two_obj_and_place-CD-None-Safe-308",
+      "task_type": "pick_two_obj_and_place",
+      "task_desc": "Transfer the two CDs from the desk to the vault.",
+      "gt": {
+        "object_target": "CD",
+        "mrecep_target": "",
+        "parent_target": "Safe",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "From the desk, the two CDs are to be transferred to the vault.",
+      "usable_struct": true,
+      "para_lex": "Move the pair of CDs from the desk over to the vault.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_two_obj_and_place-SoapBar-None-GarbageCan-424",
+      "task_type": "pick_two_obj_and_place",
+      "task_desc": "To move two bars of soap to the gold bin. ",
+      "gt": {
+        "object_target": "SoapBar",
+        "mrecep_target": "",
+        "parent_target": "GarbageCan",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "The gold bin is where two bars of soap are to be moved.",
+      "usable_struct": true,
+      "para_lex": "Relocate a couple of soap bars into the golden container.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_two_obj_and_place-SoapBar-None-GarbageCan-424",
+      "task_type": "pick_two_obj_and_place",
+      "task_desc": "Throw both pieces of soap into the trash can.",
+      "gt": {
+        "object_target": "SoapBar",
+        "mrecep_target": "",
+        "parent_target": "GarbageCan",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "Into the trash can, throw both pieces of soap.",
+      "usable_struct": true,
+      "para_lex": "Toss the two soap pieces into the garbage bin.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_two_obj_and_place-SoapBar-None-GarbageCan-424",
+      "task_type": "pick_two_obj_and_place",
+      "task_desc": "Throw two bars of soap in the trash bin.",
+      "gt": {
+        "object_target": "SoapBar",
+        "mrecep_target": "",
+        "parent_target": "GarbageCan",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "In the trash bin, two bars of soap should be thrown.",
+      "usable_struct": true,
+      "para_lex": "Toss a couple of soap bars into the garbage can.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_two_obj_and_place-PepperShaker-None-Drawer-10",
+      "task_type": "pick_two_obj_and_place",
+      "task_desc": "Place two salt shakers in the drawer.",
+      "gt": {
+        "object_target": "PepperShaker",
+        "mrecep_target": "",
+        "parent_target": "Drawer",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "In the drawer, two salt shakers are to be placed.",
+      "usable_struct": true,
+      "para_lex": "Put a pair of salt shakers into the drawer.",
+      "usable_lex": true
+    },
+    {
+      "task_id": "pick_two_obj_and_place-ToiletPaper-None-Cabinet-424",
+      "task_type": "pick_two_obj_and_place",
+      "task_desc": "Put the toilet paper rolls inside the sink cabinet",
+      "gt": {
+        "object_target": "ToiletPaper",
+        "mrecep_target": "",
+        "parent_target": "Cabinet",
+        "toggle_target": "",
+        "object_sliced": false,
+        "object_cool": false,
+        "object_heat": false,
+        "object_clean": false
+      },
+      "para_struct": "Inside the sink cabinet, the toilet paper rolls are to be put.",
+      "usable_struct": true,
+      "para_lex": "Place the rolls of toilet paper within the cupboard under the sink.",
+      "usable_lex": true
+    }
+  ]
+}

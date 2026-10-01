@@ -1,0 +1,68 @@
+{
+  "config": "depots",
+  "method": "pure_classical_no_llm",
+  "n_solved": 10,
+  "n_total": 10,
+  "rows": [
+    {
+      "inst": 2,
+      "solved": true,
+      "n_actions": 12,
+      "wallclock_sec": 0.8522906303405762
+    },
+    {
+      "inst": 3,
+      "solved": true,
+      "n_actions": 15,
+      "wallclock_sec": 0.5427889823913574
+    },
+    {
+      "inst": 4,
+      "solved": true,
+      "n_actions": 5,
+      "wallclock_sec": 0.01752924919128418
+    },
+    {
+      "inst": 5,
+      "solved": true,
+      "n_actions": 17,
+      "wallclock_sec": 0.057698726654052734
+    },
+    {
+      "inst": 6,
+      "solved": true,
+      "n_actions": 15,
+      "wallclock_sec": 2.097085952758789
+    },
+    {
+      "inst": 7,
+      "solved": true,
+      "n_actions": 11,
+      "wallclock_sec": 0.046000003814697266
+    },
+    {
+      "inst": 8,
+      "solved": true,
+      "n_actions": 16,
+      "wallclock_sec": 0.8483939170837402
+    },
+    {
+      "inst": 9,
+      "solved": true,
+      "n_actions": 15,
+      "wallclock_sec": 3.4741671085357666
+    },
+    {
+      "inst": 10,
+      "solved": true,
+      "n_actions": 9,
+      "wallclock_sec": 0.027665138244628906
+    },
+    {
+      "inst": 11,
+      "solved": true,
+      "n_actions": 5,
+      "wallclock_sec": 0.015486001968383789
+    }
+  ]
+}

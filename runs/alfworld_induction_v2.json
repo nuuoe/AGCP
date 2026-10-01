@@ -1,0 +1,180 @@
+{
+  "n_transitions": 10060,
+  "action_counts": {
+    "goto": 1614,
+    "inventory": 1613,
+    "look": 1613,
+    "examine": 1613,
+    "open": 1612,
+    "close": 1518,
+    "help": 1613,
+    "take": 1516,
+    "put": 1328,
+    "heat_with": 86,
+    "clean_with": 390,
+    "slice_with": 213,
+    "cool_with": 44,
+    "use": 227
+  },
+  "models": {
+    "goto": {
+      "pre_pos": [],
+      "eff_add": [
+        "at_recep(agent1,{a1})"
+      ],
+      "eff_del": [],
+      "n_examples": 1614
+    },
+    "inventory": {
+      "pre_pos": [],
+      "eff_add": [],
+      "eff_del": [],
+      "n_examples": 159
+    },
+    "look": {
+      "pre_pos": [],
+      "eff_add": [],
+      "eff_del": [],
+      "n_examples": 1210
+    },
+    "examine": {
+      "pre_pos": [],
+      "eff_add": [
+        "checked({a1})"
+      ],
+      "eff_del": [],
+      "n_examples": 866
+    },
+    "open": {
+      "pre_pos": [
+        "at_recep(agent1,{a1})",
+        "openable({a1})"
+      ],
+      "eff_add": [
+        "checked({a1})",
+        "opened({a1})"
+      ],
+      "eff_del": [],
+      "n_examples": 1612
+    },
+    "close": {
+      "pre_pos": [
+        "at_recep(agent1,{a1})",
+        "checked({a1})",
+        "openable({a1})",
+        "opened({a1})"
+      ],
+      "eff_add": [],
+      "eff_del": [
+        "opened({a1})"
+      ],
+      "n_examples": 1518
+    },
+    "take": {
+      "pre_pos": [
+        "at_recep(agent1,{a2})",
+        "inreceptacle({a1},{a2})",
+        "pickupable({a1})"
+      ],
+      "eff_add": [
+        "holds(agent1,{a1})"
+      ],
+      "eff_del": [
+        "inreceptacle({a1},{a2})"
+      ],
+      "n_examples": 1516
+    },
+    "put": {
+      "pre_pos": [
+        "at_recep(agent1,{a2})",
+        "holds(agent1,{a1})",
+        "pickupable({a1})"
+      ],
+      "eff_add": [
+        "inreceptacle({a1},{a2})"
+      ],
+      "eff_del": [
+        "holds(agent1,{a1})"
+      ],
+      "n_examples": 1328
+    },
+    "help": {
+      "pre_pos": [],
+      "eff_add": [],
+      "eff_del": [],
+      "n_examples": 139
+    },
+    "heat_with": {
+      "pre_pos": [
+        "at_recep(agent1,{a2})",
+        "cleanable({a1})",
+        "coolable({a1})",
+        "heatable({a1})",
+        "holds(agent1,{a1})",
+        "openable({a2})",
+        "pickupable({a1})",
+        "receptacletype({a2},microwavetype)"
+      ],
+      "eff_add": [
+        "ishot({a1})"
+      ],
+      "eff_del": [],
+      "n_examples": 6
+    },
+    "clean_with": {
+      "pre_pos": [
+        "at_recep(agent1,{a2})",
+        "cleanable({a1})",
+        "holds(agent1,{a1})",
+        "pickupable({a1})",
+        "receptacletype({a2},sinkbasintype)"
+      ],
+      "eff_add": [
+        "isclean({a1})"
+      ],
+      "eff_del": [],
+      "n_examples": 25
+    },
+    "slice_with": {
+      "pre_pos": [
+        "cleanable({a2})",
+        "coolable({a1})",
+        "holds(agent1,{a2})",
+        "pickupable({a1})",
+        "pickupable({a2})",
+        "sliceable({a1})"
+      ],
+      "eff_add": [
+        "issliced({a1})"
+      ],
+      "eff_del": [],
+      "n_examples": 46
+    },
+    "cool_with": {
+      "pre_pos": [
+        "at_recep(agent1,{a2})",
+        "coolable({a1})",
+        "holds(agent1,{a1})",
+        "openable({a2})",
+        "pickupable({a1})",
+        "receptacletype({a2},fridgetype)"
+      ],
+      "eff_add": [
+        "iscool({a1})"
+      ],
+      "eff_del": [],
+      "n_examples": 6
+    },
+    "use": {
+      "pre_pos": [
+        "objecttype({a1},desklamptype)",
+        "toggleable({a1})"
+      ],
+      "eff_add": [
+        "istoggled({a1})"
+      ],
+      "eff_del": [],
+      "n_examples": 15
+    }
+  }
+}

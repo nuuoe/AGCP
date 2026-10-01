@@ -1,0 +1,146 @@
+{
+  "threshold": 0.9,
+  "ipc_domains": [
+    "blocksworld",
+    "childsnack",
+    "ferry",
+    "floortile",
+    "miconic",
+    "rovers",
+    "satellite",
+    "sokoban",
+    "spanner",
+    "transport"
+  ],
+  "pb_domains": [
+    "depots"
+  ],
+  "n_sources_with_schemas": 11,
+  "n_targets_with_rollouts": 11,
+  "n_sig_match": 30,
+  "n_pairs_tested": 129,
+  "n_reuse_total": 12,
+  "n_cross_suite": 6,
+  "reuse_pairs": [
+    {
+      "source_suite": "ipc2023",
+      "source_domain": "childsnack",
+      "source_action": "move_tray",
+      "target_suite": "ipc2023",
+      "target_domain": "rovers",
+      "target_action": "navigate",
+      "f1": 1.0,
+      "cross_suite": false
+    },
+    {
+      "source_suite": "ipc2023",
+      "source_domain": "childsnack",
+      "source_action": "move_tray",
+      "target_suite": "ipc2023",
+      "target_domain": "transport",
+      "target_action": "drive",
+      "f1": 1.0,
+      "cross_suite": false
+    },
+    {
+      "source_suite": "ipc2023",
+      "source_domain": "childsnack",
+      "source_action": "move_tray",
+      "target_suite": "planbench",
+      "target_domain": "depots",
+      "target_action": "drive",
+      "f1": 1.0,
+      "cross_suite": true
+    },
+    {
+      "source_suite": "ipc2023",
+      "source_domain": "rovers",
+      "source_action": "navigate",
+      "target_suite": "ipc2023",
+      "target_domain": "childsnack",
+      "target_action": "move_tray",
+      "f1": 1.0,
+      "cross_suite": false
+    },
+    {
+      "source_suite": "ipc2023",
+      "source_domain": "rovers",
+      "source_action": "navigate",
+      "target_suite": "ipc2023",
+      "target_domain": "transport",
+      "target_action": "drive",
+      "f1": 1.0,
+      "cross_suite": false
+    },
+    {
+      "source_suite": "ipc2023",
+      "source_domain": "rovers",
+      "source_action": "navigate",
+      "target_suite": "planbench",
+      "target_domain": "depots",
+      "target_action": "drive",
+      "f1": 1.0,
+      "cross_suite": true
+    },
+    {
+      "source_suite": "ipc2023",
+      "source_domain": "transport",
+      "source_action": "drive",
+      "target_suite": "ipc2023",
+      "target_domain": "childsnack",
+      "target_action": "move_tray",
+      "f1": 1.0,
+      "cross_suite": false
+    },
+    {
+      "source_suite": "ipc2023",
+      "source_domain": "transport",
+      "source_action": "drive",
+      "target_suite": "ipc2023",
+      "target_domain": "rovers",
+      "target_action": "navigate",
+      "f1": 1.0,
+      "cross_suite": false
+    },
+    {
+      "source_suite": "ipc2023",
+      "source_domain": "transport",
+      "source_action": "drive",
+      "target_suite": "planbench",
+      "target_domain": "depots",
+      "target_action": "drive",
+      "f1": 1.0,
+      "cross_suite": true
+    },
+    {
+      "source_suite": "planbench",
+      "source_domain": "depots",
+      "source_action": "drive",
+      "target_suite": "ipc2023",
+      "target_domain": "childsnack",
+      "target_action": "move_tray",
+      "f1": 1.0,
+      "cross_suite": true
+    },
+    {
+      "source_suite": "planbench",
+      "source_domain": "depots",
+      "source_action": "drive",
+      "target_suite": "ipc2023",
+      "target_domain": "rovers",
+      "target_action": "navigate",
+      "f1": 1.0,
+      "cross_suite": true
+    },
+    {
+      "source_suite": "planbench",
+      "source_domain": "depots",
+      "source_action": "drive",
+      "target_suite": "ipc2023",
+      "target_domain": "transport",
+      "target_action": "drive",
+      "f1": 1.0,
+      "cross_suite": true
+    }
+  ]
+}

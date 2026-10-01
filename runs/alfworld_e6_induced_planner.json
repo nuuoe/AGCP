@@ -1,0 +1,1466 @@
+{
+  "parsed_json": "code/runs/alfworld_cloud_claude_sonnet.json",
+  "induction_cache": "code/runs/alfworld_induction_v2.json",
+  "planner": "greedy best-first over induced schemas (goal-regressed grounding); generic goto/open recovery; no LLM, no hand-coded policy, no GT",
+  "n_total": 114,
+  "n_execution_success": 41,
+  "execution_success_rate": 0.35964912280701755,
+  "per_type": {
+    "look_at_obj_in_light": {
+      "won": 5,
+      "n": 13
+    },
+    "pick_and_place_simple": {
+      "won": 19,
+      "n": 34
+    },
+    "pick_clean_then_place_in_recep": {
+      "won": 6,
+      "n": 27
+    },
+    "pick_cool_then_place_in_recep": {
+      "won": 7,
+      "n": 24
+    },
+    "pick_heat_then_place_in_recep": {
+      "won": 4,
+      "n": 16
+    }
+  },
+  "results": [
+    {
+      "task_id": "look_at_obj_in_light-Bowl-None-DeskLamp-316",
+      "task_type": "look_at_obj_in_light",
+      "plan": [
+        "use(desklamp_1)",
+        "goto(desk_1)",
+        "take(bowl_1,desk_1)"
+      ],
+      "plan_length": 3,
+      "n_exec_steps": 3,
+      "execution_success": true,
+      "fail_reason": "",
+      "n_goal_candidates": 1,
+      "seconds": 0.6
+    },
+    {
+      "task_id": "pick_and_place_simple-Mug-None-Dresser-311",
+      "task_type": "pick_and_place_simple",
+      "plan": [
+        "goto(diningtable_1)",
+        "take(mug_1,diningtable_1)",
+        "goto(dresser_1)",
+        "put(mug_1,dresser_1)"
+      ],
+      "plan_length": 4,
+      "n_exec_steps": 4,
+      "execution_success": true,
+      "fail_reason": "",
+      "n_goal_candidates": 1,
+      "seconds": 0.5
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-ButterKnife-None-Drawer-30",
+      "task_type": "pick_clean_then_place_in_recep",
+      "stage_failed": "planner_no_plan",
+      "n_goal_candidates": 81,
+      "execution_success": false,
+      "seconds": 272.6
+    },
+    {
+      "task_id": "pick_cool_then_place_in_recep-Pan-None-StoveBurner-18",
+      "task_type": "pick_cool_then_place_in_recep",
+      "stage_failed": "planner_no_plan",
+      "n_goal_candidates": 4,
+      "execution_success": false,
+      "seconds": 56.2
+    },
+    {
+      "task_id": "pick_heat_then_place_in_recep-Egg-None-CounterTop-2",
+      "task_type": "pick_heat_then_place_in_recep",
+      "stage_failed": "planner_no_plan",
+      "n_goal_candidates": 6,
+      "execution_success": false,
+      "seconds": 66.5
+    },
+    {
+      "task_id": "look_at_obj_in_light-CD-None-DeskLamp-302",
+      "task_type": "look_at_obj_in_light",
+      "plan": [
+        "use(desklamp_1)",
+        "goto(shelf_3)",
+        "take(cd_1,shelf_3)"
+      ],
+      "plan_length": 3,
+      "n_exec_steps": 4,
+      "execution_success": false,
+      "fail_reason": "plan exhausted",
+      "n_goal_candidates": 1,
+      "seconds": 0.6,
+      "goal_atoms_missing": []
+    },
+    {
+      "task_id": "pick_and_place_simple-SprayBottle-None-GarbageCan-409",
+      "task_type": "pick_and_place_simple",
+      "plan": [
+        "goto(countertop_1)",
+        "take(spraybottle_2,countertop_1)",
+        "goto(garbagecan_1)",
+        "put(spraybottle_2,garbagecan_1)"
+      ],
+      "plan_length": 4,
+      "n_exec_steps": 4,
+      "execution_success": true,
+      "fail_reason": "",
+      "n_goal_candidates": 2,
+      "seconds": 0.4
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-Fork-None-Drawer-8",
+      "task_type": "pick_clean_then_place_in_recep",
+      "stage_failed": "planner_no_plan",
+      "n_goal_candidates": 7,
+      "execution_success": false,
+      "seconds": 85.3
+    },
+    {
+      "task_id": "pick_cool_then_place_in_recep-Tomato-None-Microwave-13",
+      "task_type": "pick_cool_then_place_in_recep",
+      "plan": [
+        "goto(countertop_1)",
+        "take(tomato_1,countertop_1)",
+        "goto(fridge_1)",
+        "cool_with(tomato_1,fridge_1)",
+        "goto(microwave_1)",
+        "put(tomato_1,microwave_1)"
+      ],
+      "plan_length": 6,
+      "n_exec_steps": 7,
+      "execution_success": true,
+      "fail_reason": "",
+      "n_goal_candidates": 4,
+      "seconds": 15.3
+    },
+    {
+      "task_id": "pick_heat_then_place_in_recep-Egg-None-Fridge-14",
+      "task_type": "pick_heat_then_place_in_recep",
+      "plan": [
+        "goto(fridge_1)",
+        "take(egg_3,fridge_1)",
+        "goto(microwave_1)",
+        "heat_with(egg_3,microwave_1)",
+        "goto(fridge_1)",
+        "put(egg_3,fridge_1)"
+      ],
+      "plan_length": 6,
+      "n_exec_steps": 7,
+      "execution_success": true,
+      "fail_reason": "",
+      "n_goal_candidates": 4,
+      "seconds": 27.3
+    },
+    {
+      "task_id": "look_at_obj_in_light-AlarmClock-None-DeskLamp-323",
+      "task_type": "look_at_obj_in_light",
+      "plan": [
+        "use(desklamp_1)",
+        "goto(desk_1)",
+        "take(alarmclock_2,desk_1)"
+      ],
+      "plan_length": 3,
+      "n_exec_steps": 3,
+      "execution_success": true,
+      "fail_reason": "",
+      "n_goal_candidates": 6,
+      "seconds": 0.6
+    },
+    {
+      "task_id": "pick_and_place_simple-Pencil-None-Dresser-330",
+      "task_type": "pick_and_place_simple",
+      "plan": [
+        "goto(sidetable_1)",
+        "take(pencil_1,sidetable_1)",
+        "goto(dresser_1)",
+        "put(pencil_1,dresser_1)"
+      ],
+      "plan_length": 4,
+      "n_exec_steps": 4,
+      "execution_success": true,
+      "fail_reason": "",
+      "n_goal_candidates": 2,
+      "seconds": 1.5
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-Spatula-None-DiningTable-4",
+      "task_type": "pick_clean_then_place_in_recep",
+      "plan": [],
+      "plan_length": 0,
+      "n_exec_steps": 0,
+      "execution_success": false,
+      "fail_reason": "plan exhausted",
+      "n_goal_candidates": 2,
+      "seconds": 0.7,
+      "goal_atoms_missing": []
+    },
+    {
+      "task_id": "pick_cool_then_place_in_recep-Tomato-None-CounterTop-12",
+      "task_type": "pick_cool_then_place_in_recep",
+      "stage_failed": "planner_no_plan",
+      "n_goal_candidates": 6,
+      "execution_success": false,
+      "seconds": 60.8
+    },
+    {
+      "task_id": "pick_heat_then_place_in_recep-Plate-None-Cabinet-1",
+      "task_type": "pick_heat_then_place_in_recep",
+      "stage_failed": "planner_no_plan",
+      "n_goal_candidates": 27,
+      "execution_success": false,
+      "seconds": 92.7
+    },
+    {
+      "task_id": "look_at_obj_in_light-CD-None-DeskLamp-320",
+      "task_type": "look_at_obj_in_light",
+      "plan": [
+        "use(desklamp_1)",
+        "goto(desk_1)",
+        "take(cd_1,desk_1)"
+      ],
+      "plan_length": 3,
+      "n_exec_steps": 4,
+      "execution_success": false,
+      "fail_reason": "plan exhausted",
+      "n_goal_candidates": 3,
+      "seconds": 0.6,
+      "goal_atoms_missing": []
+    },
+    {
+      "task_id": "pick_and_place_simple-Tomato-None-Microwave-13",
+      "task_type": "pick_and_place_simple",
+      "plan": [
+        "goto(fridge_1)",
+        "take(tomato_3,fridge_1)",
+        "goto(microwave_1)",
+        "put(tomato_3,microwave_1)"
+      ],
+      "plan_length": 4,
+      "n_exec_steps": 6,
+      "execution_success": true,
+      "fail_reason": "",
+      "n_goal_candidates": 4,
+      "seconds": 21.8
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-SoapBar-None-Toilet-428",
+      "task_type": "pick_clean_then_place_in_recep",
+      "plan": [
+        "goto(countertop_1)",
+        "take(soapbar_3,countertop_1)",
+        "goto(sinkbasin_1)",
+        "clean_with(soapbar_3,sinkbasin_1)",
+        "goto(toilet_1)",
+        "put(soapbar_3,toilet_1)"
+      ],
+      "plan_length": 6,
+      "n_exec_steps": 6,
+      "execution_success": true,
+      "fail_reason": "",
+      "n_goal_candidates": 3,
+      "seconds": 1.4
+    },
+    {
+      "task_id": "pick_cool_then_place_in_recep-Mug-None-CoffeeMachine-16",
+      "task_type": "pick_cool_then_place_in_recep",
+      "plan": [
+        "goto(countertop_2)",
+        "take(mug_1,countertop_2)",
+        "goto(fridge_1)",
+        "cool_with(mug_1,fridge_1)"
+      ],
+      "plan_length": 4,
+      "n_exec_steps": 4,
+      "execution_success": true,
+      "fail_reason": "",
+      "n_goal_candidates": 1,
+      "seconds": 15.7
+    },
+    {
+      "task_id": "pick_heat_then_place_in_recep-Tomato-None-DiningTable-16",
+      "task_type": "pick_heat_then_place_in_recep",
+      "stage_failed": "planner_no_plan",
+      "n_goal_candidates": 3,
+      "execution_success": false,
+      "seconds": 179.6
+    },
+    {
+      "task_id": "look_at_obj_in_light-Pillow-None-DeskLamp-323",
+      "task_type": "look_at_obj_in_light",
+      "stage_failed": "no_goal_candidates",
+      "execution_success": false,
+      "seconds": 0.5
+    },
+    {
+      "task_id": "pick_and_place_simple-SprayBottle-None-Cabinet-413",
+      "task_type": "pick_and_place_simple",
+      "plan": [
+        "goto(dresser_1)",
+        "take(spraybottle_1,dresser_1)",
+        "goto(drawer_1)",
+        "put(spraybottle_1,drawer_1)"
+      ],
+      "plan_length": 4,
+      "n_exec_steps": 3,
+      "execution_success": false,
+      "fail_reason": "plan exhausted",
+      "n_goal_candidates": 12,
+      "seconds": 0.6,
+      "goal_atoms_missing": []
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-Ladle-None-CounterTop-8",
+      "task_type": "pick_clean_then_place_in_recep",
+      "stage_failed": "planner_no_plan",
+      "n_goal_candidates": 4,
+      "execution_success": false,
+      "seconds": 77.2
+    },
+    {
+      "task_id": "pick_cool_then_place_in_recep-Plate-None-CounterTop-1",
+      "task_type": "pick_cool_then_place_in_recep",
+      "stage_failed": "no_goal_candidates",
+      "execution_success": false,
+      "seconds": 1.0
+    },
+    {
+      "task_id": "pick_heat_then_place_in_recep-Plate-None-DiningTable-28",
+      "task_type": "pick_heat_then_place_in_recep",
+      "stage_failed": "planner_no_plan",
+      "n_goal_candidates": 8,
+      "execution_success": false,
+      "seconds": 50.0
+    },
+    {
+      "task_id": "look_at_obj_in_light-Vase-None-DeskLamp-303",
+      "task_type": "look_at_obj_in_light",
+      "plan": [
+        "use(desklamp_1)",
+        "goto(dresser_1)",
+        "take(cd_1,dresser_1)"
+      ],
+      "plan_length": 3,
+      "n_exec_steps": 4,
+      "execution_success": false,
+      "fail_reason": "plan exhausted",
+      "n_goal_candidates": 2,
+      "seconds": 0.8,
+      "goal_atoms_missing": []
+    },
+    {
+      "task_id": "pick_and_place_simple-CreditCard-None-Drawer-227",
+      "task_type": "pick_and_place_simple",
+      "plan": [
+        "goto(diningtable_1)",
+        "take(creditcard_1,diningtable_1)",
+        "goto(drawer_1)",
+        "put(creditcard_1,drawer_1)"
+      ],
+      "plan_length": 4,
+      "n_exec_steps": 5,
+      "execution_success": true,
+      "fail_reason": "",
+      "n_goal_candidates": 7,
+      "seconds": 2.8
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-DishSponge-None-CounterTop-403",
+      "task_type": "pick_clean_then_place_in_recep",
+      "plan": [
+        "goto(bathtubbasin_1)",
+        "take(dishsponge_2,bathtubbasin_1)",
+        "goto(countertop_1)",
+        "put(dishsponge_2,countertop_1)",
+        "goto(shelf_1)",
+        "take(dishsponge_1,shelf_1)",
+        "goto(sinkbasin_1)",
+        "clean_with(dishsponge_1,sinkbasin_1)",
+        "goto(countertop_1)",
+        "put(dishsponge_1,countertop_1)"
+      ],
+      "plan_length": 10,
+      "n_exec_steps": 10,
+      "execution_success": true,
+      "fail_reason": "",
+      "n_goal_candidates": 3,
+      "seconds": 3.7
+    },
+    {
+      "task_id": "pick_cool_then_place_in_recep-Tomato-None-GarbageCan-6",
+      "task_type": "pick_cool_then_place_in_recep",
+      "stage_failed": "planner_no_plan",
+      "n_goal_candidates": 2,
+      "execution_success": false,
+      "seconds": 50.8
+    },
+    {
+      "task_id": "pick_heat_then_place_in_recep-Potato-None-Fridge-12",
+      "task_type": "pick_heat_then_place_in_recep",
+      "stage_failed": "planner_no_plan",
+      "n_goal_candidates": 2,
+      "execution_success": false,
+      "seconds": 54.8
+    },
+    {
+      "task_id": "look_at_obj_in_light-Bowl-None-DeskLamp-301",
+      "task_type": "look_at_obj_in_light",
+      "plan": [
+        "use(desklamp_1)",
+        "goto(desk_1)",
+        "take(bowl_1,desk_1)"
+      ],
+      "plan_length": 3,
+      "n_exec_steps": 4,
+      "execution_success": false,
+      "fail_reason": "plan exhausted",
+      "n_goal_candidates": 1,
+      "seconds": 0.9,
+      "goal_atoms_missing": []
+    },
+    {
+      "task_id": "pick_and_place_simple-Book-None-Sofa-229",
+      "task_type": "pick_and_place_simple",
+      "plan": [
+        "goto(sidetable_3)",
+        "take(book_1,sidetable_3)",
+        "goto(armchair_1)",
+        "put(book_1,armchair_1)"
+      ],
+      "plan_length": 4,
+      "n_exec_steps": 4,
+      "execution_success": false,
+      "fail_reason": "plan exhausted",
+      "n_goal_candidates": 1,
+      "seconds": 0.6,
+      "goal_atoms_missing": []
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-Plate-None-CounterTop-19",
+      "task_type": "pick_clean_then_place_in_recep",
+      "stage_failed": "planner_no_plan",
+      "n_goal_candidates": 6,
+      "execution_success": false,
+      "seconds": 79.9
+    },
+    {
+      "task_id": "pick_cool_then_place_in_recep-Pot-None-DiningTable-21",
+      "task_type": "pick_cool_then_place_in_recep",
+      "stage_failed": "planner_no_plan",
+      "n_goal_candidates": 3,
+      "execution_success": false,
+      "seconds": 24.8
+    },
+    {
+      "task_id": "pick_heat_then_place_in_recep-Mug-None-CoffeeMachine-1",
+      "task_type": "pick_heat_then_place_in_recep",
+      "plan": [
+        "goto(countertop_2)",
+        "take(mug_2,countertop_2)",
+        "goto(microwave_1)",
+        "heat_with(mug_2,microwave_1)"
+      ],
+      "plan_length": 4,
+      "n_exec_steps": 4,
+      "execution_success": true,
+      "fail_reason": "",
+      "n_goal_candidates": 3,
+      "seconds": 3.5
+    },
+    {
+      "task_id": "look_at_obj_in_light-Pillow-None-DeskLamp-302",
+      "task_type": "look_at_obj_in_light",
+      "stage_failed": "no_goal_candidates",
+      "execution_success": false,
+      "seconds": 0.5
+    },
+    {
+      "task_id": "pick_and_place_simple-Vase-None-CoffeeTable-207",
+      "task_type": "pick_and_place_simple",
+      "plan": [
+        "goto(shelf_7)",
+        "take(vase_2,shelf_7)",
+        "goto(coffeetable_1)",
+        "put(vase_2,coffeetable_1)"
+      ],
+      "plan_length": 4,
+      "n_exec_steps": 4,
+      "execution_success": true,
+      "fail_reason": "",
+      "n_goal_candidates": 6,
+      "seconds": 0.6
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-SoapBar-None-Drawer-423",
+      "task_type": "pick_clean_then_place_in_recep",
+      "stage_failed": "no_goal_candidates",
+      "execution_success": false,
+      "seconds": 0.5
+    },
+    {
+      "task_id": "pick_cool_then_place_in_recep-Plate-None-Cabinet-27",
+      "task_type": "pick_cool_then_place_in_recep",
+      "plan": [
+        "goto(diningtable_1)",
+        "take(plate_1,diningtable_1)",
+        "goto(fridge_1)",
+        "put(plate_1,fridge_1)"
+      ],
+      "plan_length": 4,
+      "n_exec_steps": 5,
+      "execution_success": false,
+      "fail_reason": "plan exhausted",
+      "n_goal_candidates": 1,
+      "seconds": 2.3,
+      "goal_atoms_missing": []
+    },
+    {
+      "task_id": "pick_heat_then_place_in_recep-Apple-None-DiningTable-26",
+      "task_type": "pick_heat_then_place_in_recep",
+      "stage_failed": "planner_no_plan",
+      "n_goal_candidates": 2,
+      "execution_success": false,
+      "seconds": 38.1
+    },
+    {
+      "task_id": "look_at_obj_in_light-Box-None-DeskLamp-205",
+      "task_type": "look_at_obj_in_light",
+      "stage_failed": "planner_no_plan",
+      "n_goal_candidates": 2,
+      "execution_success": false,
+      "seconds": 14.7
+    },
+    {
+      "task_id": "pick_and_place_simple-CellPhone-None-Bed-324",
+      "task_type": "pick_and_place_simple",
+      "plan": [
+        "goto(drawer_9)",
+        "take(cellphone_2,drawer_9)",
+        "goto(bed_1)",
+        "put(cellphone_2,bed_1)"
+      ],
+      "plan_length": 4,
+      "n_exec_steps": 5,
+      "execution_success": true,
+      "fail_reason": "",
+      "n_goal_candidates": 2,
+      "seconds": 0.8
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-ButterKnife-None-CounterTop-8",
+      "task_type": "pick_clean_then_place_in_recep",
+      "stage_failed": "planner_no_plan",
+      "n_goal_candidates": 12,
+      "execution_success": false,
+      "seconds": 96.9
+    },
+    {
+      "task_id": "pick_cool_then_place_in_recep-Lettuce-None-CounterTop-1",
+      "task_type": "pick_cool_then_place_in_recep",
+      "stage_failed": "planner_no_plan",
+      "n_goal_candidates": 3,
+      "execution_success": false,
+      "seconds": 60.7
+    },
+    {
+      "task_id": "pick_heat_then_place_in_recep-Tomato-None-Fridge-23",
+      "task_type": "pick_heat_then_place_in_recep",
+      "stage_failed": "planner_no_plan",
+      "n_goal_candidates": 4,
+      "execution_success": false,
+      "seconds": 42.1
+    },
+    {
+      "task_id": "look_at_obj_in_light-CD-None-DeskLamp-314",
+      "task_type": "look_at_obj_in_light",
+      "plan": [
+        "use(desklamp_1)",
+        "goto(drawer_5)",
+        "take(cd_2,drawer_5)"
+      ],
+      "plan_length": 3,
+      "n_exec_steps": 5,
+      "execution_success": false,
+      "fail_reason": "plan exhausted",
+      "n_goal_candidates": 3,
+      "seconds": 0.5,
+      "goal_atoms_missing": []
+    },
+    {
+      "task_id": "pick_and_place_simple-Egg-None-Microwave-4",
+      "task_type": "pick_and_place_simple",
+      "plan": [
+        "goto(countertop_3)",
+        "take(egg_3,countertop_3)",
+        "goto(microwave_1)",
+        "put(egg_3,microwave_1)"
+      ],
+      "plan_length": 4,
+      "n_exec_steps": 5,
+      "execution_success": true,
+      "fail_reason": "",
+      "n_goal_candidates": 3,
+      "seconds": 1.0
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-Mug-None-CoffeeMachine-26",
+      "task_type": "pick_clean_then_place_in_recep",
+      "plan": [
+        "goto(countertop_1)",
+        "take(mug_2,countertop_1)",
+        "goto(sinkbasin_1)",
+        "clean_with(mug_2,sinkbasin_1)"
+      ],
+      "plan_length": 4,
+      "n_exec_steps": 4,
+      "execution_success": true,
+      "fail_reason": "",
+      "n_goal_candidates": 2,
+      "seconds": 1.6
+    },
+    {
+      "task_id": "pick_cool_then_place_in_recep-Bread-None-CounterTop-7",
+      "task_type": "pick_cool_then_place_in_recep",
+      "plan": [
+        "goto(countertop_2)",
+        "take(bread_1,countertop_2)",
+        "goto(fridge_1)",
+        "cool_with(bread_1,fridge_1)",
+        "goto(stoveburner_1)",
+        "put(bread_1,stoveburner_1)"
+      ],
+      "plan_length": 6,
+      "n_exec_steps": 5,
+      "execution_success": false,
+      "fail_reason": "not admissible: put('bread_1', 'stoveburner_1')",
+      "n_goal_candidates": 4,
+      "seconds": 3.1,
+      "goal_atoms_missing": [
+        "inreceptacle(bread_1,stoveburner_1)"
+      ]
+    },
+    {
+      "task_id": "pick_heat_then_place_in_recep-Mug-None-Cabinet-3",
+      "task_type": "pick_heat_then_place_in_recep",
+      "plan": [
+        "goto(coffeemachine_1)",
+        "take(mug_1,coffeemachine_1)",
+        "goto(cabinet_1)",
+        "put(mug_1,cabinet_1)",
+        "goto(countertop_1)",
+        "take(mug_1,countertop_1)",
+        "goto(microwave_1)",
+        "heat_with(mug_1,microwave_1)"
+      ],
+      "plan_length": 8,
+      "n_exec_steps": 9,
+      "execution_success": true,
+      "fail_reason": "",
+      "n_goal_candidates": 8,
+      "seconds": 1.7
+    },
+    {
+      "task_id": "look_at_obj_in_light-Laptop-None-DeskLamp-328",
+      "task_type": "look_at_obj_in_light",
+      "plan": [
+        "use(desklamp_1)",
+        "goto(desk_1)",
+        "take(laptop_1,desk_1)"
+      ],
+      "plan_length": 3,
+      "n_exec_steps": 3,
+      "execution_success": true,
+      "fail_reason": "",
+      "n_goal_candidates": 1,
+      "seconds": 0.4
+    },
+    {
+      "task_id": "pick_and_place_simple-Candle-None-Cart-401",
+      "task_type": "pick_and_place_simple",
+      "stage_failed": "no_goal_candidates",
+      "execution_success": false,
+      "seconds": 0.4
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-SoapBar-None-Toilet-410",
+      "task_type": "pick_clean_then_place_in_recep",
+      "plan": [
+        "goto(countertop_1)",
+        "take(soapbar_1,countertop_1)",
+        "goto(sinkbasin_1)",
+        "clean_with(soapbar_1,sinkbasin_1)",
+        "goto(toilet_1)",
+        "put(soapbar_1,toilet_1)"
+      ],
+      "plan_length": 6,
+      "n_exec_steps": 6,
+      "execution_success": true,
+      "fail_reason": "",
+      "n_goal_candidates": 3,
+      "seconds": 0.6
+    },
+    {
+      "task_id": "pick_cool_then_place_in_recep-Apple-None-Microwave-5",
+      "task_type": "pick_cool_then_place_in_recep",
+      "plan": [
+        "goto(countertop_2)",
+        "take(apple_1,countertop_2)",
+        "goto(fridge_1)",
+        "cool_with(apple_1,fridge_1)",
+        "goto(microwave_1)",
+        "put(apple_1,microwave_1)"
+      ],
+      "plan_length": 6,
+      "n_exec_steps": 7,
+      "execution_success": true,
+      "fail_reason": "",
+      "n_goal_candidates": 1,
+      "seconds": 6.0
+    },
+    {
+      "task_id": "pick_heat_then_place_in_recep-Potato-None-Fridge-11",
+      "task_type": "pick_heat_then_place_in_recep",
+      "stage_failed": "no_goal_candidates",
+      "execution_success": false,
+      "seconds": 0.8
+    },
+    {
+      "task_id": "look_at_obj_in_light-KeyChain-None-DeskLamp-327",
+      "task_type": "look_at_obj_in_light",
+      "plan": [
+        "use(desklamp_1)",
+        "goto(drawer_7)",
+        "take(keychain_4,drawer_7)"
+      ],
+      "plan_length": 3,
+      "n_exec_steps": 3,
+      "execution_success": true,
+      "fail_reason": "",
+      "n_goal_candidates": 4,
+      "seconds": 0.6
+    },
+    {
+      "task_id": "pick_and_place_simple-Watch-None-SideTable-222",
+      "task_type": "pick_and_place_simple",
+      "stage_failed": "no_goal_candidates",
+      "execution_success": false,
+      "seconds": 0.4
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-Tomato-None-CounterTop-25",
+      "task_type": "pick_clean_then_place_in_recep",
+      "stage_failed": "planner_no_plan",
+      "n_goal_candidates": 1,
+      "execution_success": false,
+      "seconds": 41.4
+    },
+    {
+      "task_id": "pick_cool_then_place_in_recep-Lettuce-None-CounterTop-11",
+      "task_type": "pick_cool_then_place_in_recep",
+      "stage_failed": "planner_no_plan",
+      "n_goal_candidates": 3,
+      "execution_success": false,
+      "seconds": 43.0
+    },
+    {
+      "task_id": "pick_heat_then_place_in_recep-Mug-None-SideTable-21",
+      "task_type": "pick_heat_then_place_in_recep",
+      "stage_failed": "planner_no_plan",
+      "n_goal_candidates": 3,
+      "execution_success": false,
+      "seconds": 25.3
+    },
+    {
+      "task_id": "look_at_obj_in_light-Statue-None-DeskLamp-216",
+      "task_type": "look_at_obj_in_light",
+      "plan": [
+        "use(desklamp_1)",
+        "goto(sidetable_1)",
+        "take(statue_2,sidetable_1)"
+      ],
+      "plan_length": 3,
+      "n_exec_steps": 3,
+      "execution_success": true,
+      "fail_reason": "",
+      "n_goal_candidates": 4,
+      "seconds": 0.4
+    },
+    {
+      "task_id": "pick_and_place_simple-Candle-None-Toilet-429",
+      "task_type": "pick_and_place_simple",
+      "stage_failed": "no_goal_candidates",
+      "execution_success": false,
+      "seconds": 0.3
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-ButterKnife-None-Drawer-8",
+      "task_type": "pick_clean_then_place_in_recep",
+      "stage_failed": "planner_no_plan",
+      "n_goal_candidates": 7,
+      "execution_success": false,
+      "seconds": 102.2
+    },
+    {
+      "task_id": "pick_cool_then_place_in_recep-Apple-None-CounterTop-14",
+      "task_type": "pick_cool_then_place_in_recep",
+      "stage_failed": "planner_no_plan",
+      "n_goal_candidates": 2,
+      "execution_success": false,
+      "seconds": 29.2
+    },
+    {
+      "task_id": "pick_heat_then_place_in_recep-Tomato-None-Fridge-24",
+      "task_type": "pick_heat_then_place_in_recep",
+      "stage_failed": "planner_no_plan",
+      "n_goal_candidates": 3,
+      "execution_success": false,
+      "seconds": 127.8
+    },
+    {
+      "task_id": "pick_and_place_simple-Bowl-None-CoffeeTable-201",
+      "task_type": "pick_and_place_simple",
+      "plan": [
+        "goto(diningtable_2)",
+        "take(bowl_1,diningtable_2)",
+        "goto(coffeetable_1)",
+        "put(bowl_1,coffeetable_1)"
+      ],
+      "plan_length": 4,
+      "n_exec_steps": 4,
+      "execution_success": true,
+      "fail_reason": "",
+      "n_goal_candidates": 1,
+      "seconds": 0.6
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-DishSponge-None-Cart-401",
+      "task_type": "pick_clean_then_place_in_recep",
+      "stage_failed": "no_goal_candidates",
+      "execution_success": false,
+      "seconds": 0.4
+    },
+    {
+      "task_id": "pick_cool_then_place_in_recep-Pan-None-DiningTable-7",
+      "task_type": "pick_cool_then_place_in_recep",
+      "stage_failed": "planner_no_plan",
+      "n_goal_candidates": 1,
+      "execution_success": false,
+      "seconds": 61.0
+    },
+    {
+      "task_id": "pick_heat_then_place_in_recep-Tomato-None-Fridge-15",
+      "task_type": "pick_heat_then_place_in_recep",
+      "stage_failed": "planner_no_plan",
+      "n_goal_candidates": 2,
+      "execution_success": false,
+      "seconds": 41.2
+    },
+    {
+      "task_id": "pick_and_place_simple-TissueBox-None-Toilet-426",
+      "task_type": "pick_and_place_simple",
+      "plan": [
+        "goto(countertop_1)",
+        "take(tissuebox_3,countertop_1)",
+        "goto(toilet_1)",
+        "put(tissuebox_3,toilet_1)"
+      ],
+      "plan_length": 4,
+      "n_exec_steps": 4,
+      "execution_success": true,
+      "fail_reason": "",
+      "n_goal_candidates": 3,
+      "seconds": 0.6
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-Lettuce-None-Fridge-19",
+      "task_type": "pick_clean_then_place_in_recep",
+      "stage_failed": "planner_no_plan",
+      "n_goal_candidates": 1,
+      "execution_success": false,
+      "seconds": 87.7
+    },
+    {
+      "task_id": "pick_cool_then_place_in_recep-Tomato-None-Microwave-18",
+      "task_type": "pick_cool_then_place_in_recep",
+      "plan": [
+        "goto(countertop_2)",
+        "take(tomato_1,countertop_2)",
+        "goto(fridge_1)",
+        "cool_with(tomato_1,fridge_1)",
+        "goto(microwave_1)",
+        "put(tomato_1,microwave_1)"
+      ],
+      "plan_length": 6,
+      "n_exec_steps": 7,
+      "execution_success": true,
+      "fail_reason": "",
+      "n_goal_candidates": 2,
+      "seconds": 4.4
+    },
+    {
+      "task_id": "pick_heat_then_place_in_recep-Mug-None-Cabinet-26",
+      "task_type": "pick_heat_then_place_in_recep",
+      "plan": [
+        "goto(coffeemachine_1)",
+        "take(mug_2,coffeemachine_1)",
+        "goto(cabinet_1)",
+        "put(mug_2,cabinet_1)",
+        "goto(countertop_1)",
+        "take(mug_2,countertop_1)",
+        "goto(microwave_1)",
+        "heat_with(mug_2,microwave_1)"
+      ],
+      "plan_length": 8,
+      "n_exec_steps": 8,
+      "execution_success": true,
+      "fail_reason": "",
+      "n_goal_candidates": 40,
+      "seconds": 4.3
+    },
+    {
+      "task_id": "pick_and_place_simple-CellPhone-None-ArmChair-318",
+      "task_type": "pick_and_place_simple",
+      "stage_failed": "no_goal_candidates",
+      "execution_success": false,
+      "seconds": 0.7
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-Cloth-None-Drawer-423",
+      "task_type": "pick_clean_then_place_in_recep",
+      "plan": [
+        "goto(countertop_2)",
+        "take(cloth_4,countertop_2)",
+        "goto(sinkbasin_1)",
+        "clean_with(cloth_4,sinkbasin_1)",
+        "goto(drawer_1)",
+        "put(cloth_4,drawer_1)"
+      ],
+      "plan_length": 6,
+      "n_exec_steps": 7,
+      "execution_success": true,
+      "fail_reason": "",
+      "n_goal_candidates": 32,
+      "seconds": 14.0
+    },
+    {
+      "task_id": "pick_cool_then_place_in_recep-Plate-None-Cabinet-7",
+      "task_type": "pick_cool_then_place_in_recep",
+      "stage_failed": "planner_no_plan",
+      "n_goal_candidates": 39,
+      "execution_success": false,
+      "seconds": 113.1
+    },
+    {
+      "task_id": "pick_heat_then_place_in_recep-Cup-None-Cabinet-22",
+      "task_type": "pick_heat_then_place_in_recep",
+      "stage_failed": "no_goal_candidates",
+      "execution_success": false,
+      "seconds": 1.0
+    },
+    {
+      "task_id": "pick_and_place_simple-CreditCard-None-ArmChair-201",
+      "task_type": "pick_and_place_simple",
+      "stage_failed": "no_goal_candidates",
+      "execution_success": false,
+      "seconds": 0.4
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-Cloth-None-Cabinet-405",
+      "task_type": "pick_clean_then_place_in_recep",
+      "stage_failed": "planner_no_plan",
+      "n_goal_candidates": 5,
+      "execution_success": false,
+      "seconds": 12.1
+    },
+    {
+      "task_id": "pick_cool_then_place_in_recep-WineBottle-None-DiningTable-17",
+      "task_type": "pick_cool_then_place_in_recep",
+      "stage_failed": "planner_no_plan",
+      "n_goal_candidates": 2,
+      "execution_success": false,
+      "seconds": 110.7
+    },
+    {
+      "task_id": "pick_and_place_simple-Mug-None-SideTable-329",
+      "task_type": "pick_and_place_simple",
+      "plan": [],
+      "plan_length": 0,
+      "n_exec_steps": 0,
+      "execution_success": false,
+      "fail_reason": "plan exhausted",
+      "n_goal_candidates": 2,
+      "seconds": 0.4,
+      "goal_atoms_missing": []
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-SoapBar-None-Cabinet-402",
+      "task_type": "pick_clean_then_place_in_recep",
+      "plan": [
+        "goto(garbagecan_1)",
+        "take(soapbar_4,garbagecan_1)",
+        "goto(sinkbasin_1)",
+        "clean_with(soapbar_4,sinkbasin_1)",
+        "put(soapbar_4,sinkbasin_1)"
+      ],
+      "plan_length": 5,
+      "n_exec_steps": 5,
+      "execution_success": false,
+      "fail_reason": "plan exhausted",
+      "n_goal_candidates": 8,
+      "seconds": 0.6,
+      "goal_atoms_missing": []
+    },
+    {
+      "task_id": "pick_cool_then_place_in_recep-Egg-None-Microwave-24",
+      "task_type": "pick_cool_then_place_in_recep",
+      "plan": [
+        "goto(diningtable_1)",
+        "take(egg_1,diningtable_1)",
+        "goto(fridge_1)",
+        "cool_with(egg_1,fridge_1)",
+        "goto(microwave_1)",
+        "put(egg_1,microwave_1)"
+      ],
+      "plan_length": 6,
+      "n_exec_steps": 7,
+      "execution_success": true,
+      "fail_reason": "",
+      "n_goal_candidates": 1,
+      "seconds": 6.7
+    },
+    {
+      "task_id": "pick_and_place_simple-SprayBottle-None-Toilet-418",
+      "task_type": "pick_and_place_simple",
+      "plan": [
+        "goto(cabinet_2)",
+        "take(spraybottle_1,cabinet_2)",
+        "goto(toilet_1)",
+        "put(spraybottle_1,toilet_1)"
+      ],
+      "plan_length": 4,
+      "n_exec_steps": 5,
+      "execution_success": true,
+      "fail_reason": "",
+      "n_goal_candidates": 2,
+      "seconds": 0.4
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-Lettuce-None-CounterTop-16",
+      "task_type": "pick_clean_then_place_in_recep",
+      "stage_failed": "planner_no_plan",
+      "n_goal_candidates": 4,
+      "execution_success": false,
+      "seconds": 194.1
+    },
+    {
+      "task_id": "pick_cool_then_place_in_recep-Cup-None-Microwave-17",
+      "task_type": "pick_cool_then_place_in_recep",
+      "plan": [
+        "goto(microwave_1)",
+        "take(cup_1,microwave_1)",
+        "goto(fridge_1)",
+        "cool_with(cup_1,fridge_1)",
+        "put(cup_1,fridge_1)"
+      ],
+      "plan_length": 5,
+      "n_exec_steps": 7,
+      "execution_success": false,
+      "fail_reason": "plan exhausted",
+      "n_goal_candidates": 1,
+      "seconds": 7.3,
+      "goal_atoms_missing": []
+    },
+    {
+      "task_id": "pick_and_place_simple-Newspaper-None-Sofa-224",
+      "task_type": "pick_and_place_simple",
+      "plan": [
+        "goto(sidetable_3)",
+        "take(newspaper_1,sidetable_3)",
+        "goto(sofa_1)",
+        "put(newspaper_1,sofa_1)"
+      ],
+      "plan_length": 4,
+      "n_exec_steps": 4,
+      "execution_success": true,
+      "fail_reason": "",
+      "n_goal_candidates": 1,
+      "seconds": 2.4
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-Ladle-None-DiningTable-27",
+      "task_type": "pick_clean_then_place_in_recep",
+      "stage_failed": "planner_no_plan",
+      "n_goal_candidates": 1,
+      "execution_success": false,
+      "seconds": 41.3
+    },
+    {
+      "task_id": "pick_cool_then_place_in_recep-Cup-None-SideTable-21",
+      "task_type": "pick_cool_then_place_in_recep",
+      "plan": [
+        "goto(countertop_1)",
+        "take(cup_1,countertop_1)",
+        "goto(fridge_1)",
+        "cool_with(cup_1,fridge_1)",
+        "goto(diningtable_1)",
+        "put(cup_1,diningtable_1)"
+      ],
+      "plan_length": 6,
+      "n_exec_steps": 6,
+      "execution_success": false,
+      "fail_reason": "plan exhausted",
+      "n_goal_candidates": 12,
+      "seconds": 18.8,
+      "goal_atoms_missing": []
+    },
+    {
+      "task_id": "pick_and_place_simple-SoapBottle-None-CounterTop-417",
+      "task_type": "pick_and_place_simple",
+      "plan": [
+        "goto(cabinet_4)",
+        "take(soapbottle_1,cabinet_4)",
+        "goto(countertop_1)",
+        "put(soapbottle_1,countertop_1)"
+      ],
+      "plan_length": 4,
+      "n_exec_steps": 5,
+      "execution_success": true,
+      "fail_reason": "",
+      "n_goal_candidates": 3,
+      "seconds": 0.4
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-Ladle-None-CounterTop-14",
+      "task_type": "pick_clean_then_place_in_recep",
+      "plan": [
+        "goto(countertop_1)",
+        "take(spoon_1,countertop_1)",
+        "goto(sinkbasin_1)",
+        "clean_with(spoon_1,sinkbasin_1)",
+        "goto(countertop_1)",
+        "put(spoon_1,countertop_1)"
+      ],
+      "plan_length": 6,
+      "n_exec_steps": 6,
+      "execution_success": false,
+      "fail_reason": "plan exhausted",
+      "n_goal_candidates": 4,
+      "seconds": 15.9,
+      "goal_atoms_missing": []
+    },
+    {
+      "task_id": "pick_cool_then_place_in_recep-Apple-None-GarbageCan-2",
+      "task_type": "pick_cool_then_place_in_recep",
+      "plan": [
+        "goto(countertop_2)",
+        "take(apple_1,countertop_2)",
+        "goto(fridge_1)",
+        "cool_with(apple_1,fridge_1)",
+        "goto(garbagecan_1)",
+        "put(apple_1,garbagecan_1)"
+      ],
+      "plan_length": 6,
+      "n_exec_steps": 6,
+      "execution_success": true,
+      "fail_reason": "",
+      "n_goal_candidates": 1,
+      "seconds": 3.2
+    },
+    {
+      "task_id": "pick_and_place_simple-RemoteControl-None-ArmChair-230",
+      "task_type": "pick_and_place_simple",
+      "stage_failed": "no_goal_candidates",
+      "execution_success": false,
+      "seconds": 0.3
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-ButterKnife-None-Drawer-2",
+      "task_type": "pick_clean_then_place_in_recep",
+      "stage_failed": "planner_no_plan",
+      "n_goal_candidates": 52,
+      "execution_success": false,
+      "seconds": 129.6
+    },
+    {
+      "task_id": "pick_cool_then_place_in_recep-Apple-None-Microwave-19",
+      "task_type": "pick_cool_then_place_in_recep",
+      "plan": [
+        "goto(diningtable_1)",
+        "take(apple_1,diningtable_1)",
+        "goto(microwave_1)",
+        "heat_with(apple_1,microwave_1)",
+        "put(apple_1,microwave_1)"
+      ],
+      "plan_length": 5,
+      "n_exec_steps": 6,
+      "execution_success": false,
+      "fail_reason": "plan exhausted",
+      "n_goal_candidates": 1,
+      "seconds": 4.9,
+      "goal_atoms_missing": []
+    },
+    {
+      "task_id": "pick_and_place_simple-WineBottle-None-Shelf-7",
+      "task_type": "pick_and_place_simple",
+      "plan": [
+        "goto(diningtable_1)",
+        "take(winebottle_1,diningtable_1)",
+        "goto(cabinet_1)",
+        "put(winebottle_1,cabinet_1)"
+      ],
+      "plan_length": 4,
+      "n_exec_steps": 5,
+      "execution_success": false,
+      "fail_reason": "plan exhausted",
+      "n_goal_candidates": 13,
+      "seconds": 3.7,
+      "goal_atoms_missing": []
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-Ladle-None-DiningTable-4",
+      "task_type": "pick_clean_then_place_in_recep",
+      "plan": [
+        "goto(countertop_2)",
+        "take(ladle_1,countertop_2)",
+        "goto(sinkbasin_1)",
+        "clean_with(ladle_1,sinkbasin_1)",
+        "goto(diningtable_1)",
+        "put(ladle_1,diningtable_1)"
+      ],
+      "plan_length": 6,
+      "n_exec_steps": 6,
+      "execution_success": true,
+      "fail_reason": "",
+      "n_goal_candidates": 2,
+      "seconds": 18.1
+    },
+    {
+      "task_id": "pick_cool_then_place_in_recep-Bowl-None-Cabinet-20",
+      "task_type": "pick_cool_then_place_in_recep",
+      "stage_failed": "planner_no_plan",
+      "n_goal_candidates": 13,
+      "execution_success": false,
+      "seconds": 49.4
+    },
+    {
+      "task_id": "pick_and_place_simple-Candle-None-Toilet-407",
+      "task_type": "pick_and_place_simple",
+      "plan": [
+        "goto(countertop_1)",
+        "take(candle_3,countertop_1)",
+        "goto(toilet_1)",
+        "put(candle_3,toilet_1)"
+      ],
+      "plan_length": 4,
+      "n_exec_steps": 4,
+      "execution_success": true,
+      "fail_reason": "",
+      "n_goal_candidates": 4,
+      "seconds": 0.5
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-ButterKnife-None-DiningTable-16",
+      "task_type": "pick_clean_then_place_in_recep",
+      "plan": [
+        "goto(sinkbasin_1)",
+        "take(knife_2,sinkbasin_1)",
+        "clean_with(knife_2,sinkbasin_1)",
+        "goto(diningtable_1)",
+        "put(knife_2,diningtable_1)"
+      ],
+      "plan_length": 5,
+      "n_exec_steps": 5,
+      "execution_success": false,
+      "fail_reason": "plan exhausted",
+      "n_goal_candidates": 2,
+      "seconds": 2.6,
+      "goal_atoms_missing": []
+    },
+    {
+      "task_id": "pick_cool_then_place_in_recep-Pan-None-StoveBurner-23",
+      "task_type": "pick_cool_then_place_in_recep",
+      "plan": [
+        "goto(stoveburner_1)",
+        "take(pan_1,stoveburner_1)",
+        "goto(fridge_1)",
+        "cool_with(pan_1,fridge_1)"
+      ],
+      "plan_length": 4,
+      "n_exec_steps": 4,
+      "execution_success": true,
+      "fail_reason": "",
+      "n_goal_candidates": 8,
+      "seconds": 2.2
+    },
+    {
+      "task_id": "pick_and_place_simple-Book-None-SideTable-329",
+      "task_type": "pick_and_place_simple",
+      "stage_failed": "no_goal_candidates",
+      "execution_success": false,
+      "seconds": 0.4
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-Ladle-None-DiningTable-16",
+      "task_type": "pick_clean_then_place_in_recep",
+      "stage_failed": "planner_no_plan",
+      "n_goal_candidates": 2,
+      "execution_success": false,
+      "seconds": 180.1
+    },
+    {
+      "task_id": "pick_and_place_simple-Box-None-Dresser-224",
+      "task_type": "pick_and_place_simple",
+      "plan": [
+        "goto(sidetable_2)",
+        "take(box_2,sidetable_2)",
+        "goto(dresser_1)",
+        "put(box_2,dresser_1)"
+      ],
+      "plan_length": 4,
+      "n_exec_steps": 4,
+      "execution_success": true,
+      "fail_reason": "",
+      "n_goal_candidates": 3,
+      "seconds": 2.3
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-Plate-None-Fridge-5",
+      "task_type": "pick_clean_then_place_in_recep",
+      "stage_failed": "planner_no_plan",
+      "n_goal_candidates": 2,
+      "execution_success": false,
+      "seconds": 93.6
+    },
+    {
+      "task_id": "pick_and_place_simple-Knife-None-SideTable-3",
+      "task_type": "pick_and_place_simple",
+      "plan": [
+        "goto(countertop_1)",
+        "take(knife_1,countertop_1)",
+        "goto(microwave_1)",
+        "put(knife_1,microwave_1)"
+      ],
+      "plan_length": 4,
+      "n_exec_steps": 4,
+      "execution_success": false,
+      "fail_reason": "not admissible: put('knife_1', 'microwave_1')",
+      "n_goal_candidates": 4,
+      "seconds": 1.3,
+      "goal_atoms_missing": [
+        "inreceptacle(knife_1,microwave_1)"
+      ]
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-Fork-None-CounterTop-23",
+      "task_type": "pick_clean_then_place_in_recep",
+      "stage_failed": "planner_no_plan",
+      "n_goal_candidates": 4,
+      "execution_success": false,
+      "seconds": 42.5
+    },
+    {
+      "task_id": "pick_and_place_simple-SoapBar-None-Cart-401",
+      "task_type": "pick_and_place_simple",
+      "plan": [
+        "goto(shelf_2)",
+        "take(soapbar_1,shelf_2)",
+        "goto(towelholder_1)",
+        "put(soapbar_1,towelholder_1)"
+      ],
+      "plan_length": 4,
+      "n_exec_steps": 3,
+      "execution_success": false,
+      "fail_reason": "not admissible: put('soapbar_1', 'towelholder_1')",
+      "n_goal_candidates": 2,
+      "seconds": 0.5,
+      "goal_atoms_missing": [
+        "inreceptacle(soapbar_1,towelholder_1)"
+      ]
+    },
+    {
+      "task_id": "pick_and_place_simple-SoapBottle-None-Cabinet-414",
+      "task_type": "pick_and_place_simple",
+      "stage_failed": "no_goal_candidates",
+      "execution_success": false,
+      "seconds": 0.4
+    },
+    {
+      "task_id": "pick_and_place_simple-SprayBottle-None-Toilet-415",
+      "task_type": "pick_and_place_simple",
+      "plan": [
+        "goto(countertop_1)",
+        "take(spraybottle_1,countertop_1)",
+        "goto(toilet_1)",
+        "put(spraybottle_1,toilet_1)"
+      ],
+      "plan_length": 4,
+      "n_exec_steps": 4,
+      "execution_success": true,
+      "fail_reason": "",
+      "n_goal_candidates": 4,
+      "seconds": 0.5
+    },
+    {
+      "task_id": "pick_and_place_simple-ToiletPaper-None-ToiletPaperHanger-415",
+      "task_type": "pick_and_place_simple",
+      "plan": [
+        "goto(drawer_3)",
+        "take(toiletpaper_1,drawer_3)",
+        "goto(toiletpaperhanger_1)",
+        "put(toiletpaper_1,toiletpaperhanger_1)"
+      ],
+      "plan_length": 4,
+      "n_exec_steps": 5,
+      "execution_success": true,
+      "fail_reason": "",
+      "n_goal_candidates": 2,
+      "seconds": 0.5
+    },
+    {
+      "task_id": "pick_and_place_simple-ToiletPaper-None-ToiletPaperHanger-406",
+      "task_type": "pick_and_place_simple",
+      "stage_failed": "no_goal_candidates",
+      "execution_success": false,
+      "seconds": 0.3
+    },
+    {
+      "task_id": "pick_and_place_simple-RemoteControl-None-Sofa-207",
+      "task_type": "pick_and_place_simple",
+      "plan": [
+        "goto(coffeetable_1)",
+        "take(remotecontrol_3,coffeetable_1)",
+        "goto(sofa_1)",
+        "put(remotecontrol_3,sofa_1)"
+      ],
+      "plan_length": 4,
+      "n_exec_steps": 4,
+      "execution_success": true,
+      "fail_reason": "",
+      "n_goal_candidates": 4,
+      "seconds": 0.6
+    },
+    {
+      "task_id": "pick_and_place_simple-Pencil-None-Desk-310",
+      "task_type": "pick_and_place_simple",
+      "plan": [
+        "goto(drawer_1)",
+        "take(pencil_1,drawer_1)",
+        "goto(desk_1)",
+        "put(pencil_1,desk_1)"
+      ],
+      "plan_length": 4,
+      "n_exec_steps": 5,
+      "execution_success": true,
+      "fail_reason": "",
+      "n_goal_candidates": 3,
+      "seconds": 0.5
+    }
+  ]
+}

@@ -1,0 +1,460 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "n_instances": 10,
+  "per_tag": {
+    "orig": 10,
+    "v1_swap": 0,
+    "v2_lex": 10,
+    "v3_dropthe": 0
+  },
+  "all_ok": 0,
+  "consistent": 0,
+  "rows": [
+    {
+      "inst": 2,
+      "nl_orig": "the red block is on top of the orange block and the blue block is on top of the red block",
+      "gt_atoms": [
+        "on(a,c)",
+        "on(b,a)"
+      ],
+      "results": {
+        "orig": {
+          "paraphrase": "the red block is on top of the orange block and the blue block is on top of the red block",
+          "llm_accepted": true,
+          "accuracy": 1.0,
+          "proposal": [
+            "on(a, c)",
+            "on(b, a)"
+          ]
+        },
+        "v1_swap": {
+          "paraphrase": "the orange block has the red block on top of it and the red block has the blue block on top of it",
+          "llm_accepted": false,
+          "accuracy": 0.0,
+          "proposal": [
+            "holding(c)",
+            "holding(a)",
+            "on(a, b)"
+          ]
+        },
+        "v2_lex": {
+          "paraphrase": "the red block is stacked above the orange block and the blue block is stacked above the red block",
+          "llm_accepted": true,
+          "accuracy": 1.0,
+          "proposal": [
+            "on(a, c)",
+            "on(b, a)"
+          ]
+        },
+        "v3_dropthe": {
+          "paraphrase": "block red is on top of block orange, and block blue is on top of block red",
+          "llm_accepted": false,
+          "accuracy": 0.0,
+          "proposal": [
+            "on(block(red), block(orange))",
+            "on(block(blue), block(red))"
+          ]
+        }
+      }
+    },
+    {
+      "inst": 3,
+      "nl_orig": "the blue block is on top of the red block and the orange block is on top of the blue block",
+      "gt_atoms": [
+        "on(b,a)",
+        "on(c,b)"
+      ],
+      "results": {
+        "orig": {
+          "paraphrase": "the blue block is on top of the red block and the orange block is on top of the blue block",
+          "llm_accepted": true,
+          "accuracy": 1.0,
+          "proposal": [
+            "on(b, a)",
+            "on(c, b)"
+          ]
+        },
+        "v1_swap": {
+          "paraphrase": "the red block has the blue block on top of it and the blue block has the orange block on top of it",
+          "llm_accepted": false,
+          "accuracy": 0.0,
+          "proposal": [
+            "on(a, b)",
+            "on(b, c)"
+          ]
+        },
+        "v2_lex": {
+          "paraphrase": "the blue block is stacked above the red block and the orange block is stacked above the blue block",
+          "llm_accepted": true,
+          "accuracy": 1.0,
+          "proposal": [
+            "on(b, a)",
+            "on(c, b)"
+          ]
+        },
+        "v3_dropthe": {
+          "paraphrase": "block blue is on top of block red, and block orange is on top of block blue",
+          "llm_accepted": false,
+          "accuracy": 0.0,
+          "proposal": [
+            "on(block_blue, block_red)",
+            "on(block_orange, block_blue)"
+          ]
+        }
+      }
+    },
+    {
+      "inst": 4,
+      "nl_orig": "the blue block is on top of the red block",
+      "gt_atoms": [
+        "on(b,a)"
+      ],
+      "results": {
+        "orig": {
+          "paraphrase": "the blue block is on top of the red block",
+          "llm_accepted": true,
+          "accuracy": 1.0,
+          "proposal": [
+            "on(b,a)"
+          ]
+        },
+        "v1_swap": {
+          "paraphrase": "the red block has the blue block on top of it",
+          "llm_accepted": false,
+          "accuracy": 0.0,
+          "proposal": [
+            "on(a, b)"
+          ]
+        },
+        "v2_lex": {
+          "paraphrase": "the blue block is stacked above the red block",
+          "llm_accepted": true,
+          "accuracy": 1.0,
+          "proposal": [
+            "on(b, a)"
+          ]
+        },
+        "v3_dropthe": {
+          "paraphrase": "block blue is on top of block red",
+          "llm_accepted": false,
+          "accuracy": 0.0,
+          "proposal": [
+            "on(blue, red)"
+          ]
+        }
+      }
+    },
+    {
+      "inst": 5,
+      "nl_orig": "the blue block is on top of the orange block and the orange block is on top of the red block",
+      "gt_atoms": [
+        "on(b,c)",
+        "on(c,a)"
+      ],
+      "results": {
+        "orig": {
+          "paraphrase": "the blue block is on top of the orange block and the orange block is on top of the red block",
+          "llm_accepted": true,
+          "accuracy": 1.0,
+          "proposal": [
+            "on(b, c)",
+            "on(c, a)"
+          ]
+        },
+        "v1_swap": {
+          "paraphrase": "the orange block has the blue block on top of it and the red block has the orange block on top of it",
+          "llm_accepted": false,
+          "accuracy": 0.5,
+          "proposal": [
+            "holding(c)",
+            "on(b, c)"
+          ]
+        },
+        "v2_lex": {
+          "paraphrase": "the blue block is stacked above the orange block and the orange block is stacked above the red block",
+          "llm_accepted": true,
+          "accuracy": 1.0,
+          "proposal": [
+            "on(b, c)",
+            "on(c, a)"
+          ]
+        },
+        "v3_dropthe": {
+          "paraphrase": "block blue is on top of block orange, and block orange is on top of block red",
+          "llm_accepted": false,
+          "accuracy": 0.0,
+          "proposal": [
+            "on(block_blue, block_orange)",
+            "on(block_orange, block_red)"
+          ]
+        }
+      }
+    },
+    {
+      "inst": 6,
+      "nl_orig": "the blue block is on top of the orange block and the orange block is on top of the red block",
+      "gt_atoms": [
+        "on(b,c)",
+        "on(c,a)"
+      ],
+      "results": {
+        "orig": {
+          "paraphrase": "the blue block is on top of the orange block and the orange block is on top of the red block",
+          "llm_accepted": true,
+          "accuracy": 1.0,
+          "proposal": [
+            "on(b, c)",
+            "on(c, a)"
+          ]
+        },
+        "v1_swap": {
+          "paraphrase": "the orange block has the blue block on top of it and the red block has the orange block on top of it",
+          "llm_accepted": false,
+          "accuracy": 0.5,
+          "proposal": [
+            "holding(c)",
+            "on(b, c)"
+          ]
+        },
+        "v2_lex": {
+          "paraphrase": "the blue block is stacked above the orange block and the orange block is stacked above the red block",
+          "llm_accepted": true,
+          "accuracy": 1.0,
+          "proposal": [
+            "on(b, c)",
+            "on(c, a)"
+          ]
+        },
+        "v3_dropthe": {
+          "paraphrase": "block blue is on top of block orange, and block orange is on top of block red",
+          "llm_accepted": false,
+          "accuracy": 0.0,
+          "proposal": [
+            "on(block_blue, block_orange)",
+            "on(block_orange, block_red)"
+          ]
+        }
+      }
+    },
+    {
+      "inst": 7,
+      "nl_orig": "the red block is on top of the blue block and the blue block is on top of the orange block",
+      "gt_atoms": [
+        "on(a,b)",
+        "on(b,c)"
+      ],
+      "results": {
+        "orig": {
+          "paraphrase": "the red block is on top of the blue block and the blue block is on top of the orange block",
+          "llm_accepted": true,
+          "accuracy": 1.0,
+          "proposal": [
+            "on(a, b)",
+            "on(b, c)"
+          ]
+        },
+        "v1_swap": {
+          "paraphrase": "the blue block has the red block on top of it and the orange block has the blue block on top of it",
+          "llm_accepted": false,
+          "accuracy": 0.5,
+          "proposal": [
+            "on(b, c)",
+            "on(c, b)"
+          ]
+        },
+        "v2_lex": {
+          "paraphrase": "the red block is stacked above the blue block and the blue block is stacked above the orange block",
+          "llm_accepted": true,
+          "accuracy": 1.0,
+          "proposal": [
+            "on(a, b)",
+            "on(b, c)"
+          ]
+        },
+        "v3_dropthe": {
+          "paraphrase": "block red is on top of block blue, and block blue is on top of block orange",
+          "llm_accepted": false,
+          "accuracy": 0.0,
+          "proposal": [
+            "on(block(red), block(blue))",
+            "on(block(blue), block(orange))"
+          ]
+        }
+      }
+    },
+    {
+      "inst": 8,
+      "nl_orig": "the red block is on top of the orange block",
+      "gt_atoms": [
+        "on(a,c)"
+      ],
+      "results": {
+        "orig": {
+          "paraphrase": "the red block is on top of the orange block",
+          "llm_accepted": true,
+          "accuracy": 1.0,
+          "proposal": [
+            "on(a, c)"
+          ]
+        },
+        "v1_swap": {
+          "paraphrase": "the orange block has the red block on top of it",
+          "llm_accepted": false,
+          "accuracy": 0.0,
+          "proposal": [
+            "on(c,x)"
+          ]
+        },
+        "v2_lex": {
+          "paraphrase": "the red block is stacked above the orange block",
+          "llm_accepted": true,
+          "accuracy": 1.0,
+          "proposal": [
+            "on(a, c)"
+          ]
+        },
+        "v3_dropthe": {
+          "paraphrase": "block red is on top of block orange",
+          "llm_accepted": false,
+          "accuracy": 0.0,
+          "proposal": [
+            "on(block(red), block(orange))"
+          ]
+        }
+      }
+    },
+    {
+      "inst": 9,
+      "nl_orig": "the orange block is on top of the red block",
+      "gt_atoms": [
+        "on(c,a)"
+      ],
+      "results": {
+        "orig": {
+          "paraphrase": "the orange block is on top of the red block",
+          "llm_accepted": true,
+          "accuracy": 1.0,
+          "proposal": [
+            "on(c, a)"
+          ]
+        },
+        "v1_swap": {
+          "paraphrase": "the red block has the orange block on top of it",
+          "llm_accepted": false,
+          "accuracy": 0.0,
+          "proposal": [
+            "on(a, c)"
+          ]
+        },
+        "v2_lex": {
+          "paraphrase": "the orange block is stacked above the red block",
+          "llm_accepted": true,
+          "accuracy": 1.0,
+          "proposal": [
+            "on(c, a)"
+          ]
+        },
+        "v3_dropthe": {
+          "paraphrase": "block orange is on top of block red",
+          "llm_accepted": false,
+          "accuracy": 0.0,
+          "proposal": [
+            "on(block_orange, block_red)"
+          ]
+        }
+      }
+    },
+    {
+      "inst": 10,
+      "nl_orig": "the red block is on top of the orange block and the orange block is on top of the blue block",
+      "gt_atoms": [
+        "on(a,c)",
+        "on(c,b)"
+      ],
+      "results": {
+        "orig": {
+          "paraphrase": "the red block is on top of the orange block and the orange block is on top of the blue block",
+          "llm_accepted": true,
+          "accuracy": 1.0,
+          "proposal": [
+            "on(a, c)",
+            "on(c, b)"
+          ]
+        },
+        "v1_swap": {
+          "paraphrase": "the orange block has the red block on top of it and the blue block has the orange block on top of it",
+          "llm_accepted": false,
+          "accuracy": 0.5,
+          "proposal": [
+            "holding(c)",
+            "on(c, b)"
+          ]
+        },
+        "v2_lex": {
+          "paraphrase": "the red block is stacked above the orange block and the orange block is stacked above the blue block",
+          "llm_accepted": true,
+          "accuracy": 1.0,
+          "proposal": [
+            "on(a, c)",
+            "on(c, b)"
+          ]
+        },
+        "v3_dropthe": {
+          "paraphrase": "block red is on top of block orange, and block orange is on top of block blue",
+          "llm_accepted": false,
+          "accuracy": 0.0,
+          "proposal": [
+            "on(block(red), block(orange))",
+            "on(block(orange), block(blue))"
+          ]
+        }
+      }
+    },
+    {
+      "inst": 11,
+      "nl_orig": "the blue block is on top of the red block and the orange block is on top of the blue block",
+      "gt_atoms": [
+        "on(b,a)",
+        "on(c,b)"
+      ],
+      "results": {
+        "orig": {
+          "paraphrase": "the blue block is on top of the red block and the orange block is on top of the blue block",
+          "llm_accepted": true,
+          "accuracy": 1.0,
+          "proposal": [
+            "on(b, a)",
+            "on(c, b)"
+          ]
+        },
+        "v1_swap": {
+          "paraphrase": "the red block has the blue block on top of it and the blue block has the orange block on top of it",
+          "llm_accepted": false,
+          "accuracy": 0.0,
+          "proposal": [
+            "on(a, b)",
+            "on(b, c)"
+          ]
+        },
+        "v2_lex": {
+          "paraphrase": "the blue block is stacked above the red block and the orange block is stacked above the blue block",
+          "llm_accepted": true,
+          "accuracy": 1.0,
+          "proposal": [
+            "on(b, a)",
+            "on(c, b)"
+          ]
+        },
+        "v3_dropthe": {
+          "paraphrase": "block blue is on top of block red, and block orange is on top of block blue",
+          "llm_accepted": false,
+          "accuracy": 0.0,
+          "proposal": [
+            "on(block_blue, block_red)",
+            "on(block_orange, block_blue)"
+          ]
+        }
+      }
+    }
+  ]
+}

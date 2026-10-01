@@ -1,0 +1,48 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "n_rollouts": 5,
+  "max_instances": 3,
+  "summary": {
+    "blocksworld": {
+      "n_solved": 3,
+      "n_total": 3,
+      "success_rate": 1.0
+    }
+  },
+  "rows": [
+    {
+      "domain": "blocksworld",
+      "n_solved": 3,
+      "n_total": 3,
+      "success_rate": 1.0,
+      "per_instance": [
+        {
+          "instance_id": 1,
+          "success": true,
+          "n_applied": 4,
+          "error": "",
+          "seconds": 13.390208959579468,
+          "plan": "(unstack b c)\n(put-down b)\n(pick-up c)\n(stack c b)"
+        },
+        {
+          "instance_id": 10,
+          "success": true,
+          "n_applied": 8,
+          "error": "",
+          "seconds": 11.503557920455933,
+          "plan": "(unstack c b)\n(put-down c)\n(pick-up b)\n(stack b c)\n(unstack d a)\n(put-down d)\n(pick-up a)\n(stack a d)"
+        },
+        {
+          "instance_id": 11,
+          "success": true,
+          "n_applied": 6,
+          "error": "",
+          "seconds": 9.358573198318481,
+          "plan": "(unstack a d)\n(put-down a)\n(pick-up d)\n(stack d a)\n(unstack b c)\n(stack b d)"
+        }
+      ]
+    }
+  ],
+  "total_solved": 3,
+  "total": 3
+}

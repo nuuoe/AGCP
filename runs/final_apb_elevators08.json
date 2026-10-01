@@ -1,0 +1,48 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "n_rollouts": 5,
+  "max_instances": 3,
+  "summary": {
+    "elevators08": {
+      "n_solved": 3,
+      "n_total": 3,
+      "success_rate": 1.0
+    }
+  },
+  "rows": [
+    {
+      "domain": "elevators08",
+      "n_solved": 3,
+      "n_total": 3,
+      "success_rate": 1.0,
+      "per_instance": [
+        {
+          "instance_id": 1,
+          "success": true,
+          "n_applied": 14,
+          "error": "",
+          "seconds": 40.94977784156799,
+          "plan": "(board p2 slow0-0 n2 n0 n1)\n(move-up-fast fast0 n0 n8)\n(board p0 fast0 n8 n0 n1)\n(move-down-fast fast0 n8 n4)\n(move-up-slow slow0-0 n2 n3)\n(board p1 slow0-0 n3 n1 n2)\n(move-up-slow slow0-0 n3 n4)\n(lea"
+        },
+        {
+          "instance_id": 10,
+          "success": true,
+          "n_applied": 30,
+          "error": "",
+          "seconds": 79.83316779136658,
+          "plan": "(board p3 fast0 n2 n0 n1)\n(move-up-fast fast0 n2 n6)\n(board p4 slow1-0 n5 n0 n1)\n(move-up-slow slow1-0 n5 n7)\n(move-down-slow slow0-0 n4 n3)\n(board p6 slow0-0 n3 n0 n1)\n(move-up-slow slow0-0 n3 n4)\n(b"
+        },
+        {
+          "instance_id": 11,
+          "success": true,
+          "n_applied": 20,
+          "error": "",
+          "seconds": 51.14335584640503,
+          "plan": "(move-down-slow slow0-0 n6 n0)\n(board p0 slow0-0 n0 n0 n1)\n(move-down-slow slow1-0 n8 n6)\n(move-up-slow slow0-0 n0 n6)\n(move-down-fast fast0 n6 n0)\n(board p1 fast0 n0 n0 n1)\n(move-up-fast fast0 n0 n6)"
+        }
+      ]
+    }
+  ],
+  "total_solved": 3,
+  "total": 3
+}

@@ -1,0 +1,48 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "n_rollouts": 5,
+  "max_instances": 3,
+  "summary": {
+    "nomystery11-bfs": {
+      "n_solved": 3,
+      "n_total": 3,
+      "success_rate": 1.0
+    }
+  },
+  "rows": [
+    {
+      "domain": "nomystery11-bfs",
+      "n_solved": 3,
+      "n_total": 3,
+      "success_rate": 1.0,
+      "per_instance": [
+        {
+          "instance_id": 1,
+          "success": true,
+          "n_applied": 11,
+          "error": "",
+          "seconds": 32.297935009002686,
+          "plan": "(drive t0 l2 l3 level30 level6 level36)\n(load p2 t0 l3)\n(drive t0 l3 l1 level19 level11 level30)\n(load p1 t0 l1)\n(drive t0 l1 l0 level6 level13 level19)\n(load p0 t0 l0)\n(unload p1 t0 l0)\n(unload p2 t0"
+        },
+        {
+          "instance_id": 11,
+          "success": true,
+          "n_applied": 13,
+          "error": "",
+          "seconds": 35.299870014190674,
+          "plan": "(drive t0 l2 l3 level20 level6 level26)\n(load p2 t0 l3)\n(drive t0 l3 l2 level14 level6 level20)\n(drive t0 l2 l0 level12 level2 level14)\n(load p0 t0 l0)\n(unload p2 t0 l0)\n(drive t0 l0 l2 level10 level2"
+        },
+        {
+          "instance_id": 12,
+          "success": true,
+          "n_applied": 14,
+          "error": "",
+          "seconds": 39.029115200042725,
+          "plan": "(load p1 t0 l3)\n(drive t0 l3 l0 level65 level12 level77)\n(drive t0 l0 l4 level51 level14 level65)\n(load p3 t0 l4)\n(load p0 t0 l4)\n(drive t0 l4 l2 level28 level23 level51)\n(unload p0 t0 l2)\n(drive t0 l"
+        }
+      ]
+    }
+  ],
+  "total_solved": 3,
+  "total": 3
+}

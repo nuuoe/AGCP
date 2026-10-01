@@ -84,7 +84,6 @@ python scripts/run_agcp_on_apb_simple.py --apb_root external/autoplanbench/autop
 - `mask_isolation_syntax_mystery.jsonl` was produced with the syntax-only grammar, which does not depend on the Mystery obfuscation map, so its candidates coincide with the Blocksworld syntax arm.
 - `run_agcp_on_planbench.py` counts completed instances only on success and `score_agcp_planbench.py` skips instances with an empty response. All reported PlanBench cells use pinned instance sets (`--specific_instances`; N=10 and the matched N=30 set), and `val_audit.py` cross-checks them with VAL.
 - `runs/planbench_responses/` holds the raw PlanBench-format decodes behind Table 1 and App. K; `score_agcp_planbench.py` reads such directories through `--plan_bench_root`.
-- The package also contains BabyAI/MiniGrid adapters, a PCFG prior and an adaptor cache from earlier work. The paper does not use them; the modules the paper relies on are `adaptive_pipeline`, `llm_propose`, `decoding/xgrammar_wrapper`, `grammars/generic_grammar`, `grammars/blocksworld_grammar`, `planning/blocksworld`, `planning/planbench_blocksworld`, `grammar_learning/reduce` and `grammar_learning/reduce_s`.
 
 ## Tests
 

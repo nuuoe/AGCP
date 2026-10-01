@@ -1,9 +1,0 @@
-root ::= plan
-plan ::= "{" ws "\"subgoals\"" ws ":" ws "[" ws subgoal_list ws "]" ws "}"
-subgoal_list ::= subgoal | subgoal "," ws subgoal_list
-subgoal ::= "{" ws "\"name\"" ws ":" ws string ws "," ws "\"actions\"" ws ":" ws action_list ws "}"
-action_list ::= "[" ws action_seq ws "]"
-action_seq ::= action | action "," ws action_seq
-action ::= "\"turn_left\"" | "\"turn_right\"" | "\"move_forward\"" | "\"pickup\"" | "\"drop\"" | "\"toggle\"" | "\"done\""
-string ::= "\"" [a-zA-Z0-9_ -]* "\""
-ws ::= [ \t\n\r]*

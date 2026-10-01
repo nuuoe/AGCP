@@ -57,7 +57,7 @@ def main() -> None:
           "type": "array",
           "items": {
             "type": "string",
-            "enum": ["turn_left", "turn_right", "move_forward", "pickup", "drop", "done"]
+            "enum": ["pickup", "putdown", "stack", "unstack"]
           }
         }
       },
@@ -68,7 +68,7 @@ def main() -> None:
 
     messages = [
         {"role": "system", "content": "Return only valid JSON."},
-        {"role": "user", "content": "Give a short BabyAI-style plan."},
+        {"role": "user", "content": "Give a short Blocksworld plan."},
     ]
     text = tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
     inputs = tokenizer(text, return_tensors="pt").to(model.device)
